@@ -8,7 +8,7 @@
 		<!-- <bobmediapath>${themePath}/../_bobmedia</bobmediapath> -->
 		<!-- choisir ce chemin pour mettre les gametheme et systheme dans le dossier _bobmedia (par défaut) idéal pour ne rien perdre lors des maj du theme-->
 		<!-- <bobmediapath>${themePath}</bobmediapath> choisir ce chemin pour mettre les gametheme et systheme directement dans le dossier theme : atention les mise à jour du thème écraseront vos gametheme et systheme -->
-		<bobmediapath>${themePath}/../_bobmedia</bobmediapath>
+		<bobmediapath>${themePath}</bobmediapath>
 		<!-- choisir ce chemin pour mettre les gametheme et systheme directement dans le dossier theme : atention les mise à jour du thème écraseront vos gametheme et systheme -->
 		
 		<!-- Utilisé par fanartstar theme standalone -->
@@ -97,14 +97,14 @@
 	<include>${themePath}/_common/_menu/menu.xml</include>
 	<!-- #### Partie vue système ############################################################# -->
 	<!-- Liste des vues dediees aux systèmes : systemview -->
-	<subset name="lismoi" displayName="${lismoi}">
-		<include name="tumasbienlu" displayName="${tumasbienlu}">${themePath}/_viewsystoption/sl-commun/splashounet.xml</include>
-		<include name="page1" displayName="${tumasbienlup1}">${themePath}/_viewsystoption/sl-commun/splashounet1.xml</include>
-		<include name="page2" displayName="${tumasbienlup2}">${themePath}/_viewsystoption/sl-commun/splashounet2.xml</include>
-		<include name="batocera" displayName="${batocerause}"/>
-		<include name="retrobat" displayName="${retrobatuse}"/>
+	<!-- <subset name="lismoi" displayName="${lismoi}"> -->
+		<!-- <include name="tumasbienlu" displayName="${tumasbienlu}">${themePath}/_viewsystoption/sl-commun/splashounet.xml</include> -->
+		<!-- <include name="page1" displayName="${tumasbienlup1}">${themePath}/_viewsystoption/sl-commun/splashounet1.xml</include> -->
+		<!-- <include name="page2" displayName="${tumasbienlup2}">${themePath}/_viewsystoption/sl-commun/splashounet2.xml</include> -->
+		<!-- <include name="batocera" displayName="${batocerause}"/> -->
+		<!-- <include name="retrobat" displayName="${retrobatuse}"/> -->
 		<!-- <include name="desactive" displayName="${desactive}"/> -->
-	</subset>
+	<!-- </subset> -->
 	<subset name="systemview" displayName="${systlist}">
 		<include name="fanartstarsyst" displayName="${fanartstarsyst}">${themePath}/_viewsyst/fanartstarsyst.xml</include>
 		<include name="fanartmodern" displayName="${fanartmodern}">${themePath}/_viewsyst/fanartmodern.xml</include>
@@ -199,6 +199,11 @@
 		<include name="nbrjeux" displayName="${yes}">${themePath}/_viewsystoption/sl-commun/nbrejeux.xml</include>
 		<include name="desactive" displayName="${no}">${themePath}/_viewsystoption/sl-commun/nbrejeux.xml</include>
 	</subset>
+	<subset name="systviewselec" displayName="${systviewselec}">
+		<include name="hardware" displayName="${hardware}"/>
+		<include name="charsystem" displayName="${charsystem}"/>
+		<include name="figurines" displayName="${figurines}"/>
+	</subset>
 	<!-- Quand MAJ remplacera le bloc en dessous  -->
 	<!-- <subset name="menuofficiel" displayName="${menuofficiel}"> -->
 	<!-- <include name="Desactive" ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|hyperspin|alekfull|hypermax|zspin" displayName="${desactive}"/> -->
@@ -233,19 +238,6 @@
 	</subset>
 	<subset name="systspacer003" displayName="  ">
 		<include name=" " displayName=" "/>
-	</subset>
-	<!-- ################################################################################# -->
-	<!-- ############## VUES Systeme : spécifique vues type Coinops ###################### -->
-	<!-- ################################################################################# -->
-	<subset name="vagues" ifSubset="systemview:coinopsnext1|copscurve" displayName="${vagueschoix}">
-		<include name="vaguebleue" displayName="${vaguebleue}">${themePath}/_viewsystoption/sl-coinops/vagueseffet.xml</include>
-		<include name="vagueviolet" displayName="${vagueviolet}">${themePath}/_viewsystoption/sl-coinops/vagueseffet.xml</include>
-		<include name="vaguerouge" displayName="${vaguerouge}">${themePath}/_viewsystoption/sl-coinops/vagueseffet.xml</include>
-		<include name="desactive" displayName="${desactive}"/>
-	</subset>
-	<subset name="cops2menu" ifSubset="systemview:coinopsnext2" displayName="${cops2menu}">
-		<include name="milieu" displayName="${milieu}"/>
-		<include name="bas" displayName="${bas}"/>
 	</subset>
 	<!-- ################################################################################# -->
 	<!-- ######################## VUES GAMELISTS actif ou non actif ######################################### -->

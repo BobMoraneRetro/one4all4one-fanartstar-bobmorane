@@ -14,93 +14,110 @@ license: creative commons CC-BY-NC-SA
 	<include>${themePath}/_systemmedia/description/${system.theme}.xml</include>
 	<view name="system">
 		<imagegrid name="imagegrid">
-			<pos>0 -0.4	</pos>
-			<size>1 0.6</size>
+			<pos>0 0.4</pos>
+			<size>1 0.51</size>
 			<scrollDirection>horizontal</scrollDirection>
-			<autoLayout>7 1</autoLayout>
-			<padding>0.03 0.05 0.03 0.12</padding>
+			<autoLayout>6 1</autoLayout>
+			<padding>0.03 0.1 0.03 0.12</padding>
+			<margin>0.035 0.1</margin>
 			<!-- <margin>0.001 0.06</margin> -->
 			<scrollbarColor>808080FF</scrollbarColor>
 			<scrollbarCorner>0</scrollbarCorner>
 			<scrollbarSize>0.003</scrollbarSize>
 			<autoLayoutSelectedZoom>1.2</autoLayoutSelectedZoom>
-			<margin>0.005 0.1</margin>
-			<!-- <animateSelection>true</animateSelection> -->
+			<!-- <cellProportion>0.1</cellProportion> -->
 			<centerSelection>false</centerSelection>
 			<zIndex>50</zIndex>
 			<itemTemplate>
 				<container>
-					<image name="nothumb">
-						<roundCorners>0.04</roundCorners>
-						<pos>0.5 0.6</pos>
+					<image name="thumb">
+						<roundCorners>0.03</roundCorners>
+						<pos>0.5 0.505</pos>
 						<origin>0.5</origin>
-						<minSize>1 0.96</minSize>
-						<path>${firstsystfanart}</path>
+						<minSize>1.15 1.39</minSize>
+						<path>${firstsystemimage}</path>
 						<!-- <saturation>0</saturation> -->
 						<zIndex>5</zIndex>
-						<!-- <shader> -->
-						<!-- <path>:/shaders/border.glsl</path> -->
-						<!-- <cornerRadius>0.03</cornerRadius> -->
-						<!-- <borderSize>0</borderSize> -->
-						<!-- <borderColor>00000080</borderColor> -->
-						<!-- <innerShadowSize>0.02</innerShadowSize> -->
-						<!-- <innerShadowColor>00000070</innerShadowColor> -->
-						<!-- <outerShadowSize>0.02</outerShadowSize> -->
-						<!-- <outerShadowColor>00000080</outerShadowColor> -->
-						<!-- </shader> -->
+						<shader>
+							<path>:/shaders/blur.glsl</path>
+							<pos>0 0</pos>
+							<blur>10</blur>
+							<zIndex>1</zIndex>
+							<blurColor>000000</blurColor>
+						</shader>
 						<linearSmooth>true</linearSmooth>
 						<storyboard event="open">
 							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
 						</storyboard>
 						<storyboard event="activate">
 							<animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/>
-							<animation property="y" to="0.65" begin="" duration="350" mode="bump"/>
+							<animation property="scale" to="1.2" begin="" duration="350" mode="easeOut"/>
+							<animation property="saturation" to="1" begin="" duration="150" mode="Linear"/>
 						</storyboard>
 						<storyboard event="deactivate">
 							<animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/>
-							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="scale" to="1" begin="" duration="350" mode="easeOut"/>
+							<animation property="saturation" to="0" begin="" duration="150" mode="Linear"/>
 						</storyboard>
 						<storyboard event="scroll">
 							<animation property="color" to="858585ff" begin="" duration="" mode="Linear"/>
-							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="scale" to="1" begin="" duration="350" mode="easeOut"/>
+							<animation property="saturation" to="0" begin="" duration="150" mode="Linear"/>
+							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
 						</storyboard>
 					</image>
-					<!-- <image name="nothumb"> -->
-					<!-- <pos>0.5 0.6</pos> -->
-					<!-- <origin>0.5</origin> -->
-					<!-- <rotation>0</rotation> -->
-					<!-- <minSize>0.38 0.96</minSize> -->
-					<!-- <path>${firstsystfanart}</path> -->
-					<!-- <saturation>0</saturation> -->
-					<!-- <zIndex>5</zIndex> -->
-					<!-- <shader> -->
-					<!-- <path>:/shaders/border.glsl</path> -->
-					<!-- <cornerRadius>0.03</cornerRadius> -->
-					<!-- <borderSize>0</borderSize> -->
-					<!-- <borderColor>00000080</borderColor> -->
-					<!-- <innerShadowSize>0.02</innerShadowSize> -->
-					<!-- <innerShadowColor>00000070</innerShadowColor> -->
-					<!-- <outerShadowSize>0.02</outerShadowSize> -->
-					<!-- <outerShadowColor>00000080</outerShadowColor> -->
-					<!-- </shader> -->
-					<!-- <linearSmooth>true</linearSmooth> -->
-					<!-- <storyboard event="open"> -->
-					<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
-					<!-- </storyboard> -->
-					<!-- <storyboard event="activate"> -->
-					<!-- <animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/> -->
-					<!-- <animation property="y" to="0.65" begin="" duration="350" mode="bump"/> -->
-					<!-- </storyboard> -->
-					<!-- <storyboard event="deactivate"> -->
-					<!-- <animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/> -->
-					<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
-					<!-- </storyboard> -->
-					<!-- <storyboard event="scroll"> -->
-					<!-- <animation property="color" to="858585ff" begin="" duration="" mode="Linear"/> -->
-					<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
-					<!-- </storyboard> -->
-					<!-- </image>			 -->
-					<image name="shadowlogo" pos="0.5 0.9" origin="0.5" maxSize="0.2" linearSmooth="true">
+					<image name="vignette">
+						<roundCorners>0.03</roundCorners>
+						<path>${themePath}/_viewsyst/fanartstar/vignette3.png</path>
+						<pos>0.5 0.505</pos>
+						<origin>0.5</origin>
+						<minSize>1.15 1.39</minSize>
+						<zIndex>5</zIndex>
+						<storyboard event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate">
+							<animation property="scale" to="1.2" begin="" duration="350" mode="easeOut"/>
+							<animation property="color" from="858585ff" to="FFFFFFFF" begin="10" duration="150" mode="Linear" autoReverse="true" repeat="forever"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="scale" to="1" begin="" duration="350" mode="easeOut"/>
+							<animation property="opacity" to="1" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="scale" to="1" begin="" duration="350" mode="easeOut"/>
+							<animation property="opacity" to="1" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</image>
+					<image name="cadre">
+						<path>${themePath}/_viewsyst/fanartstar/cadre.png</path>
+						<linearSmooth>true</linearSmooth>
+						<origin>0.5</origin>
+						<pos>0.51 0.5</pos>
+						<size>1.18 1.42</size>
+						<zIndex>7</zIndex>
+						<color>FFFFFFFF</color>
+						<storyboard event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate">
+							<animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/>
+							<animation property="scale" to="1.2" begin="" duration="350" mode="easeOut"/>
+							<animation property="color" from="858585ff" to="FFFFFFFF" begin="10" duration="150" mode="Linear" autoReverse="true" repeat="forever"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<!-- <animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/> -->
+							<animation property="scale" to="1" begin="" duration="350" mode="easeOut"/>
+							<animation property="opacity" to="1" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<!-- <animation property="color" to="858585ff" begin="" duration="" mode="Linear"/> -->
+							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
+							<animation property="scale" to="1" begin="" duration="350" mode="easeOut"/>
+							<animation property="opacity" to="1" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</image>
+					<image name="shadowlogo" pos="0.51 0.5" origin="0.5" maxSize="1" linearSmooth="true">
 						<path>firstfile(
                     "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
@@ -109,42 +126,46 @@ license: creative commons CC-BY-NC-SA
 						<color>000000</color>
 						<zIndex>6</zIndex>
 						<storyboard event="open">
-							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
 						</storyboard>
 						<storyboard event="activate">
-							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
-							<animation property="y" to="0.65" begin="" duration="350" mode="bump"/>
+							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
+							<!-- <animation property="y" to="0.65" begin="" duration="350" mode="bump"/> -->
+							<animation property="scale" to="1.1" begin="" duration="350" mode="bump"/>
 						</storyboard>
 						<storyboard event="deactivate">
-							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
-							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
+							<!-- <animation property="rotation" to="0" begin="" duration="150" mode="Linear"/> -->
+							<animation property="scale" to="1" begin="" duration="350" mode="bump"/>
 						</storyboard>
 						<storyboard event="scroll">
-							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
+							<animation property="scale" to="1" begin="" duration="350" mode="bump"/>
 						</storyboard>
 					</image>
-					<image name="logo" extra="true" pos="0.5 0.9" origin="0.5" maxSize="0.2" linearSmooth="true">
+					<image name="logo" extra="true" pos="0.51 0.5" origin="0.5" maxSize="1" linearSmooth="true">
+						<linearSmooth>true</linearSmooth>
 						<path>firstfile(
                     "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
 					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png")</path>
 						<zIndex>7</zIndex>
 						<storyboard event="open">
-							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
 						</storyboard>
 						<storyboard event="activate">
-							<animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/>
-							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
-							<animation property="y" to="0.65" begin="" duration="350" mode="bump"/>
+							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
+							<!-- <animation property="y" to="0.65" begin="" duration="350" mode="bump"/> -->
+							<animation property="scale" to="1.1" begin="" duration="350" mode="bump"/>
 						</storyboard>
 						<storyboard event="deactivate">
-							<animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/>
-							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
-							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
+							<!-- <animation property="rotation" to="0" begin="" duration="150" mode="Linear"/> -->
+							<animation property="scale" to="1" begin="" duration="350" mode="bump"/>
 						</storyboard>
 						<storyboard event="scroll">
-							<animation property="color" to="858585ff" begin="" duration="" mode="Linear"/>
-							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
+							<animation property="scale" to="1" begin="" duration="350" mode="bump"/>
 						</storyboard>
 					</image>
 				</container>
@@ -157,19 +178,34 @@ license: creative commons CC-BY-NC-SA
 		<!-- <origin>0.5 0.5</origin> -->
 		<!-- <zIndex>3</zIndex> -->
 		<!-- </image> -->
-		<image name="model" extra="true">
-			<path>${themePath}/_viewsyst/fanartstar/screenshot_04.jpg</path>
-			<size>1 1</size>
-			<pos>0.5 0.5</pos>
-			<origin>0.5 0.5</origin>
-			<zIndex>2</zIndex>
-		</image>
+		<!-- <image name="model" extra="true"> -->
+		<!-- <path>${themePath}/_viewsyst/fanartstar/screenshot_04.jpg</path> -->
+		<!-- <size>1 1</size> -->
+		<!-- <pos>0.5 0.5</pos> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <zIndex>2</zIndex> -->
+		<!-- </image> -->
 		<!-- ################################### Metadata et autres infos textuelles #############################################################################		 -->
+		<image name="shadowlogosysteme" extra="true">
+			<autoFade>false</autoFade>
+			<pos>0.052 0.193</pos>
+			<origin>0 1</origin>
+			<maxSize>0.25 0.12</maxSize>
+			<padding>3 3 -3 -3</padding>
+			<color>000000</color>
+			<path>firstfile(
+                    "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png")</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>80</zIndex>
+			<horizontalAlignment>left</horizontalAlignment>
+		</image>
 		<image name="logosysteme" extra="true">
 			<autoFade>false</autoFade>
-			<pos>0.2 0.2</pos>
-			<origin>0.5 1</origin>
-			<maxSize>0.25 0.18</maxSize>
+			<pos>0.052 0.193</pos>
+			<origin>0 1</origin>
+			<maxSize>0.25 0.12</maxSize>
 			<path>firstfile(
                     "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
@@ -180,62 +216,61 @@ license: creative commons CC-BY-NC-SA
 		</image>
 		<!-- Description du système -->
 		<text name="info1" extra="true">
-			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontPath>${themePath}/_viewsyst/fanartstar/fonts/TitilliumWeb-Regular.ttf</fontPath>
 			<color>ffffffff</color>
-			<pos>0.0525 0.305</pos>
-			<size>0.3 0.14</size>
+			<pos>0.0525 0.24</pos>
+			<size>0.43 0.15</size>
 			<alignment>left</alignment>
-			<fontSize>0.022</fontSize>
+			<verticalAlignment>top</verticalAlignment>
+			<fontSize>0.018</fontSize>
 			<singleLineScroll>false</singleLineScroll>
 			<glowColor>00000040</glowColor>
 			<glowOffset>0.8</glowOffset>
 			<glowSize>2</glowSize>
 			<lineSpacing>1.2</lineSpacing>
 			<visible>true</visible>
+			<zIndex>305</zIndex>
 		</text>
 		<!-- Nom du système -->
 		<text name="info2" extra="true">
-			<opacity>0.7</opacity>
-			<pos>0.253 0.238</pos>
-			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
-			<fontSize>0.025</fontSize>
-			<color>ffffffff</color>
-			<origin>0.5 0.5</origin>
-			<size>0.4 0.02</size>
-			<alignment>left</alignment>
-			<glowColor>00000016</glowColor>
-			<glowSize>3</glowSize>
-			<zIndex>305</zIndex>
+			<visible>false</visible>
 		</text>
 		<!-- Année de construction -->
 		<text name="info3" extra="true">
-			<!-- <fontPath>${themePath}/_viewgame/nesicaxlive/texgyre.otf</fontPath> -->
-			<opacity>0.7</opacity>
-			<pos>0.253 0.28</pos>
-			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
-			<fontSize>0.025</fontSize>
-			<color>ffffffff</color>
-			<origin>0.5 0.5</origin>
-			<size>0.4 0.02</size>
-			<alignment>left</alignment>
-			<glowColor>00000016</glowColor>
-			<glowSize>3</glowSize>
-			<zIndex>305</zIndex>
+			<visible>false</visible>
 		</text>
 		<!-- Constructeur -->
 		<text name="info4" extra="true">
-			<!-- <fontPath>${themePath}/_viewgame/nesicaxlive/texgyre.otf</fontPath> -->
-			<opacity>0.7</opacity>
-			<pos>0.3 0.28</pos>
-			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
-			<fontSize>0.025</fontSize>
-			<color>ffffffff</color>
-			<origin>0.5 0.5</origin>
-			<size>0.4 0.02</size>
+			<visible>false</visible>
+		</text>
+		<text name="manufacturerName" extra="static">
+			<origin>0 1</origin>
+			<text>${system.sortedBy}</text>
+			<!-- <alignment>left</alignment> -->
+			<!-- <verticalAlignment>top</verticalAlignment> -->
+			<fontPath>${themePath}/_viewsyst/fanartstar/fonts/TitilliumWeb-Light.ttf</fontPath>
+			<fontSize>0.040</fontSize>
+			<pos>0.0515 0.17</pos>
+			<size>0.942 0.28</size>
+			<color>C0C0C0</color>
+			<zIndex>100</zIndex>
+			<color>D0D0D0FF</color>
+			<glowColor>00000080</glowColor>
+			<glowSize>1</glowSize>
+		</text>
+		<text name="fullName" extra="true">
+			<text>${system.fullName}      ${system.releaseYearOrNull}</text>
 			<alignment>left</alignment>
-			<glowColor>00000016</glowColor>
-			<glowSize>3</glowSize>
-			<zIndex>305</zIndex>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${themePath}/_viewsyst/fanartstar/fonts/TitilliumWeb-Light.ttf</fontPath>
+			<fontSize>0.024</fontSize>
+			<pos>0.0515 0.2</pos>
+			<pos verticalScreen="true">0.03 0.10</pos>
+			<size>0.94 0.28</size>
+			<zIndex>100</zIndex>
+			<color>D0D0D0FF</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>1</glowSize>
 		</text>
 		<!-- <text name="info5" extra="true"> -->
 		<!-- <pos>0.5 0.5</pos> -->
@@ -357,9 +392,9 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 常玩的游戏 : {binding:mostPlayed}
 最后游玩 : {binding:lastPlayedDate}</text>
 			<verticalAlignment>center</verticalAlignment>
-			<pos>0.0525 0.4</pos>
+			<pos>0.0525 0.265</pos>
 			<size>0.3 0.14</size>
-			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontPath>${themePath}/_viewsyst/fanartstar/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
 			<fontSize>0.015</fontSize>
@@ -377,29 +412,235 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<lineSpacing>1.2</lineSpacing>
 		</text>
 		<text name="systemInfo">
-			<visible>false</visible>
-			<!-- <reflexion>0.20 0.0</reflexion> -->
-			<alignment>right</alignment>
-			<!-- <pos ifSubset="cops2menu:bas,systemview:coinopsnext2">0 0.81</pos> -->
-			<!-- <pos ifSubset="cops2menu:milieu,systemview:coinopsnext2">0 0.48</pos> -->
-			<!-- <pos ifSubset="systemview:copscurve|coinopsnext1">0 0.80</pos> -->
-			<!-- <pos ifSubset="systemview:hyperspin">0 0.75</pos> -->
-			<!-- <pos ifSubset="systemview:hypermax">0 0.75</pos> -->
-			<!-- <pos ifSubset="systemview:zspin">0 0.67</pos> -->
-			<!-- <pos ifSubset="systemview:nesicaxlive">0.87 0.16</pos> -->
-			<pos>0.32 0.58</pos>
-			<!-- <reflexion ifSubset="systemview:hyperspin|nesicaxlive">0 0</reflexion> -->
+			<visible>true</visible>
+			<alignment>center</alignment>
+			<pos>0.5 0.5</pos>
 			<size>0.68 0.05</size>
-			<backgroundColor>FFFFFF90</backgroundColor>
-			<!-- <color>DDDDDDD8</color> -->
-			<!-- <glowColor>000000</glowColor> -->
-			<!-- <glowSize>1</glowSize> -->
-			<!-- <glowOffset>2</glowOffset> -->
 			<fontPath>${themePath}/_viewgame/nesicaxlive/OpenSans_Condensed-Bold.ttf</fontPath>
 			<zIndex>1</zIndex>
 			<storyboard>
 				<animation property="opacity" from="0" to="1" duration="" mode="easeOut"/>
 			</storyboard>
 		</text>
+		<image name="mask" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>${themePath}/_viewsyst/fanartstar/bgmask.png</path>
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>4</zIndex>
+			<opacity>1</opacity>
+		</image>
+		<image name="blablacksyt" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<path>${themePath}/_common/images/black.png</path>
+			<size>1 1</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>51</zIndex>
+			<opacity>0</opacity>
+			<storyboard>
+				<animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="1200"/>
+			</storyboard>
+		</image>
+		<video name="gameplay" extra="true">
+			<default>${themePath}/_systemmedia/defaut/scotty.mp4</default>
+			<path>{system:random:video}</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>1 1</maxSize>
+			<delay>1</delay>
+			<effect>none</effect>
+			<zIndex>51</zIndex>
+			<opacity>1</opacity>
+		</video>
+		<image name="scanlines" extra="true">
+			<tile>true</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<path>${themePath}/_common/shaders/scanlines01.png</path>
+			<maxSize>1 1</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>51</zIndex>
+			<opacity>0</opacity>
+			<storyboard>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="550" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="bezel" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>${intbezelsyst}</path>
+			<maxSize>1 1</maxSize>
+			<pos>0.5 0.5</pos>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>51</zIndex>
+			<opacity>0</opacity>
+			<storyboard>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="550" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="maskvideo" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>${themePath}/_viewsyst/fanartstar/bgmask.png</path>
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>52</zIndex>
+			<opacity>0</opacity>
+			<storyboard>
+				<animation property="opacity" from="0" to="1" begin="900" duration="550" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="test" extra="true">
+			<path>${themePath}/_viewsyst/fanartstar/cadre.png</path>
+			<origin>1.5 1.5</origin>
+			<pos>0 0</pos>
+			<maxSize>0.5 0.5</maxSize>
+			<zIndex>999</zIndex>
+			<color>FFFFFFFF</color>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		
+		
+	<!-- ########## Si menu officiel sélectionné ############# -->
+		<image name="iconselec" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/icon.png</path>
+			<origin>1 0</origin>
+			<pos>0.2 0</pos>
+			<size>0.16 0.061</size>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<!-- <color>ffffff</color> -->
+		</image>
+		<image name="arcade" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/arcade.png</path>
+			<origin>0 0</origin>
+			<pos>0.277 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'arcade'">ffffff</color>
+		</image>
+		<image name="computer" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/ordi.png</path>
+			<origin>0 0</origin>
+			<pos>0.314 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'computer'">ffffff</color>
+		</image>
+		<image name="console" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/console.png</path>
+			<origin>0 0</origin>
+			<pos>0.3518 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'console'">ffffff</color>
+		</image>
+		<image name="extension" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/extension.png</path>
+			<origin>0 0</origin>
+			<pos>0.3895 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'extension'">ffffff</color>
+		</image>
+		<image name="mess" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/mess.png</path>
+			<origin>0 0</origin>
+			<pos>0.426 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'MESS'">ffffff</color>
+		</image>
+		<image name="pinball" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/pinball.png</path>
+			<origin>0 0</origin>
+			<pos>0.4643 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'pinball'">ffffff</color>
+		</image>
+		<image name="port" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/port.png</path>
+			<origin>0 0</origin>
+			<pos>0.501 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'port'">ffffff</color>
+		</image>
+		<image name="portable" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/portable.png</path>
+			<origin>0 0</origin>
+			<pos>0.539 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'portable'">ffffff</color>
+		</image>
+		<image name="system" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/system.png</path>
+			<origin>0 0</origin>
+			<pos>0.576 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'system'">ffffff</color>
+		</image>
+		<image name="autocollection" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectionauto.png</path>
+			<origin>0 0</origin>
+			<pos>0.6135 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'auto collection'">ffffff</color>
+		</image>
+		<image name="customcollecion" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectioncust.png</path>
+			<origin>0 0</origin>
+			<pos>0.651 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'custom collection'">ffffff</color>
+		</image>
+		<image name="retrobat" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/option.png</path>
+			<origin>0 0</origin>
+			<pos>0.688 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == ''">ffffff</color>
+		</image>
+		<control name="arcade, computer, console, extension, mess, pinball, port, portable, system, autocollection, customcollecion, retrobat">
+			<offsetX>0</offsetX>
+			<offsetY>0.915</offsetY>
+			<scale>0.7</scale>
+		</control>		
 	</view>
 </theme>

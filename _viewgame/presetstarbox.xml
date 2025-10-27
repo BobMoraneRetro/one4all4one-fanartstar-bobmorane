@@ -579,9 +579,11 @@
 			</storyboard>
 		</image>
 		<image name="screenshotgames_cadre" ifSubset="starvideo:starvideoang" extra="true">
-			<path>${themePath}/_viewgame/fanartstar/169.png</path>
+			<path>${themePath}/_viewgame/fanartstar/169alt1.png</path>
 			<pos>0.995 0.35</pos>
+			<pos>1 0.35</pos>
 			<size>0.38 0.488</size>
+			<size>0.39 0.505</size>
 			<origin>1 0.5</origin>
 			<effect>none</effect>
 			<zIndex>89</zIndex>
@@ -593,9 +595,9 @@
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>30</tiltAngleX>
 				<perspectiveDepth>0.8</perspectiveDepth>
-				<borderSize>5</borderSize>
-				<borderColorStart>000000</borderColorStart>
-				<borderColorEnd>000000</borderColorEnd>
+				<!-- <borderSize>5</borderSize> -->
+				<!-- <borderColorStart>000000</borderColorStart> -->
+				<!-- <borderColorEnd>000000</borderColorEnd> -->
 			</shader>
 		</image>
 		<image name="screenshotgames_fond" ifSubset="starvideo:starvideoang" extra="true">

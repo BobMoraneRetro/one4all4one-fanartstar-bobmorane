@@ -9,7 +9,9 @@ license: creative commons CC-BY-NC-SA
 	<variables>
 		<firstsystfanart>firstfile("${themePath}/_systemmedia/_fanartsysteme/fresh/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/custom/" + {system:theme} + ".jpg")</firstsystfanart>
 		<firstsystemimage>firstfile("${themePath}/_systemmedia/_fanartsysteme/custom/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/fresh/" + {system:theme} + ".jpg")</firstsystemimage>
-		<firstsystemhardaware>firstfile("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</firstsystemhardaware>
+		<firstsystemhardware>firstfile("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</firstsystemhardware>
+		<firstscharsystem>firstfile(,"${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png","${themePath}/../es-theme-Animatics-DX/art/figurines/" + {system:theme} + ".png")</firstscharsystem>
+		<firstsnapouille>firstfile("${themePath}/../es-theme-Animatics-DX/art/figurines/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</firstsnapouille>
 	</variables>
 	<include>${themePath}/_systemmedia/description/${system.theme}.xml</include>
 	<view name="system">
@@ -33,91 +35,14 @@ license: creative commons CC-BY-NC-SA
 			<maxLogoCount>11</maxLogoCount>
 			<itemTemplate>
 				<container>
-					<!-- <image name="nothumb"> -->
-						<!-- <pos>0.5 0.6</pos> -->
-						<!-- <origin>0.5</origin> -->
-						<!-- <rotation>0</rotation> -->
-						<!-- <minSize>0.38 0.96</minSize> -->
-						<!-- <path>${firstsystemimage}</path> -->
-						<!-- <path>${firstsystfanart}</path> -->
-						<!-- <saturation>0</saturation> -->
-						<!-- <zIndex>5</zIndex> -->
-						<!-- <shader> -->
-							<!-- <path>:/shaders/border.glsl</path> -->
-							<!-- <cornerRadius>0.03</cornerRadius> -->
-							<!-- <borderSize>0</borderSize> -->
-							<!-- <borderColor>00000080</borderColor> -->
-							<!-- <innerShadowSize>0.02</innerShadowSize> -->
-							<!-- <innerShadowColor>00000070</innerShadowColor> -->
-							<!-- <outerShadowSize>0.02</outerShadowSize> -->
-							<!-- <outerShadowColor>00000080</outerShadowColor> -->
-							<!-- <path>:/shaders/blur.glsl</path> -->
-							<!-- <size>1 1</size> -->
-							<!-- <pos>0 0</pos> -->
-							<!-- <blur>10</blur> -->
-							<!-- <zIndex>1</zIndex> -->
-							<!-- <blurColor>000000</blurColor> -->
-						<!-- </shader> -->
-						<!-- <linearSmooth>true</linearSmooth> -->
-						<!-- <storyboard event="open"> -->
-							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
-						<!-- </storyboard> -->
-						<!-- <storyboard event="activate"> -->
-							<!-- <animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/> -->
-							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
-							<!-- <animation property="y" to="0.65" begin="" duration="350" mode="bump"/> -->
-						<!-- </storyboard> -->
-						<!-- <storyboard event="deactivate"> -->
-							<!-- <animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/> -->
-							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
-							<!-- <animation property="rotation" to="0" begin="" duration="150" mode="Linear"/> -->
-						<!-- </storyboard> -->
-						<!-- <storyboard event="scroll"> -->
-							<!-- <animation property="color" to="858585ff" begin="" duration="" mode="Linear"/> -->
-							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
-						<!-- </storyboard> -->
-					<!-- </image> -->
-					<!-- <image name="nothumb"> -->
-						<!-- <pos>0.5 0.6</pos> -->
-						<!-- <origin>0.5</origin> -->
-						<!-- <rotation>0</rotation> -->
-						<!-- <minSize>0.38 0.96</minSize> -->
-						<!-- <path>${firstsystfanart}</path> -->
-						<!-- <saturation>0</saturation> -->
-						<!-- <zIndex>5</zIndex> -->
-						<!-- <shader> -->
-							<!-- <path>:/shaders/border.glsl</path> -->
-							<!-- <cornerRadius>0.03</cornerRadius> -->
-							<!-- <borderSize>0</borderSize> -->
-							<!-- <borderColor>00000080</borderColor> -->
-							<!-- <innerShadowSize>0.02</innerShadowSize> -->
-							<!-- <innerShadowColor>00000070</innerShadowColor> -->
-							<!-- <outerShadowSize>0.02</outerShadowSize> -->
-							<!-- <outerShadowColor>00000080</outerShadowColor> -->
-						<!-- </shader> -->
-						<!-- <linearSmooth>true</linearSmooth> -->
-						<!-- <storyboard event="open"> -->
-							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
-						<!-- </storyboard> -->
-						<!-- <storyboard event="activate"> -->
-							<!-- <animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/> -->
-							<!-- <animation property="y" to="0.65" begin="" duration="350" mode="bump"/> -->
-						<!-- </storyboard> -->
-						<!-- <storyboard event="deactivate"> -->
-							<!-- <animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/> -->
-							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
-						<!-- </storyboard> -->
-						<!-- <storyboard event="scroll"> -->
-							<!-- <animation property="color" to="858585ff" begin="" duration="" mode="Linear"/> -->
-							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
-						<!-- </storyboard> -->
-					<!-- </image> -->
 					<image name="shadohard">
 						<pos>0.5 0.55</pos>
 						<origin>0.5 0.5</origin>
-						<maxSize>0.45 0.45</maxSize>
-						<!-- <path>"${themePath}/_systemmedia/hardware/" + {system:theme} + ".png"</path> -->
-						<path>${firstsystemhardaware}</path>
+						<maxSize>0.4 0.4</maxSize>
+						<maxSize ifSubset="systviewselec:figurines">0.55 0.55</maxSize>
+						<path ifSubset="systviewselec:charsystem">${firstscharsystem}</path>
+						<path ifSubset="systviewselec:figurines">${firstsnapouille}</path>
+						<path ifSubset="systviewselec:hardware">${firstsystemhardware}</path>
 						<saturation>1</saturation>
 						<zIndex>5</zIndex>
 						<padding>3 3 -3 -3</padding>
@@ -126,36 +51,13 @@ license: creative commons CC-BY-NC-SA
 					<image name="hardware">
 						<pos>0.5 0.55</pos>
 						<origin>0.5 0.5</origin>
-						<maxSize>0.45 0.45</maxSize>
-						<!-- <path>"${themePath}/_systemmedia/hardware/" + {system:theme} + ".png"</path> -->
-						<path>${firstsystemhardaware}</path>
+						<maxSize>0.4 0.4</maxSize>
+						<maxSize ifSubset="systviewselec:figurines">0.55 0.55</maxSize>
+						<path ifSubset="systviewselec:charsystem">${firstscharsystem}</path>
+						<path ifSubset="systviewselec:figurines">${firstsnapouille}</path>
+						<path ifSubset="systviewselec:hardware">${firstsystemhardware}</path>
 						<saturation>0.7</saturation>
 						<zIndex>5</zIndex>
-						<!-- <shader> -->
-						<!-- <path>:/shaders/border.glsl</path> -->
-						<!-- <cornerRadius>0.03</cornerRadius> -->
-						<!-- <borderSize>0</borderSize> -->
-						<!-- <borderColor>00000080</borderColor> -->
-						<!-- <innerShadowSize>0.02</innerShadowSize> -->
-						<!-- <innerShadowColor>00000070</innerShadowColor> -->
-						<!-- <outerShadowSize>0.02</outerShadowSize> -->
-						<!-- <outerShadowColor>00000080</outerShadowColor> -->
-						<!-- </shader> -->
-						<!-- <storyboard event="open"> -->
-						<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
-						<!-- </storyboard> -->
-						<!-- <storyboard event="activate"> -->
-						<!-- <animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/> -->
-						<!-- <animation property="y" to="0.65" begin="" duration="350" mode="bump"/> -->
-						<!-- </storyboard> -->
-						<!-- <storyboard event="deactivate"> -->
-						<!-- <animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/> -->
-						<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
-						<!-- </storyboard> -->
-						<!-- <storyboard event="scroll"> -->
-						<!-- <animation property="color" to="858585ff" begin="" duration="" mode="Linear"/> -->
-						<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
-						<!-- </storyboard> -->
 					</image>
 					
 					<image name="shadowlogo" pos="0.5 0.9" origin="0.5" maxSize="0.2" linearSmooth="true">
@@ -218,8 +120,8 @@ license: creative commons CC-BY-NC-SA
 		<image name="whitedegrade" extra="true">
 			<path>${themePath}/_viewsyst/fanartstar/whitedegrade.png</path>
 			<maxSize>1 1</maxSize>
-			<pos>0.5 0.4</pos>
-			<origin>0.5 0.5</origin>
+			<pos>0.5 0.95</pos>
+			<origin>0.5 1</origin>
 			<zIndex>3</zIndex>
 		</image>
 		<!-- ################################### Metadata et autres infos textuelles #############################################################################		 -->
