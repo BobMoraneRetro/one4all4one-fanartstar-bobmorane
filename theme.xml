@@ -8,7 +8,7 @@
 		<!-- <bobmediapath>${themePath}/../_bobmedia</bobmediapath> -->
 		<!-- choisir ce chemin pour mettre les gametheme et systheme dans le dossier _bobmedia (par défaut) idéal pour ne rien perdre lors des maj du theme-->
 		<!-- <bobmediapath>${themePath}</bobmediapath> choisir ce chemin pour mettre les gametheme et systheme directement dans le dossier theme : atention les mise à jour du thème écraseront vos gametheme et systheme -->
-		<bobmediapath>${themePath}/../_bobmedia</bobmediapath>
+		<bobmediapath>${themePath}</bobmediapath>
 		<!-- choisir ce chemin pour mettre les gametheme et systheme directement dans le dossier theme : atention les mise à jour du thème écraseront vos gametheme et systheme -->
 		
 		<!-- Utilisé par fanartstar theme standalone -->
