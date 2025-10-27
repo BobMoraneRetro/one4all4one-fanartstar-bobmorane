@@ -40,6 +40,8 @@ license: creative commons CC-BY-NC-SA
 						<origin>0.5 0.5</origin>
 						<maxSize>0.4 0.4</maxSize>
 						<maxSize ifSubset="systviewselec:figurines">0.55 0.55</maxSize>
+						<maxSize ifSubset="systviewselec:charsystem">0.55 0.55</maxSize>
+						<maxSize ifSubset="systviewselec:hardware">0.35 0.35</maxSize>
 						<path ifSubset="systviewselec:charsystem">${firstscharsystem}</path>
 						<path ifSubset="systviewselec:figurines">${firstsnapouille}</path>
 						<path ifSubset="systviewselec:hardware">${firstsystemhardware}</path>
@@ -53,6 +55,8 @@ license: creative commons CC-BY-NC-SA
 						<origin>0.5 0.5</origin>
 						<maxSize>0.4 0.4</maxSize>
 						<maxSize ifSubset="systviewselec:figurines">0.55 0.55</maxSize>
+						<maxSize ifSubset="systviewselec:charsystem">0.55 0.55</maxSize>
+						<maxSize ifSubset="systviewselec:hardware">0.35 0.35</maxSize>
 						<path ifSubset="systviewselec:charsystem">${firstscharsystem}</path>
 						<path ifSubset="systviewselec:figurines">${firstsnapouille}</path>
 						<path ifSubset="systviewselec:hardware">${firstsystemhardware}</path>
