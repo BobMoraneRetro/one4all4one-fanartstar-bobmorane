@@ -1,0 +1,31 @@
+presetstarbox :
+* ${core3dart}
+* ${corefanart}
+* ${corefanarttest}
+* ${corefanarttestyes}
+* ${corefrontart}
+${extgameartpng}
+${extgamescreenjpg}
+${extgamesyst}
+${extgamevideoavi}
+${extgamevideomp4}
+${extmanufacturer}
+${freshbuildfanart}
+${freshbuildfanarttest}
+${freshbuildfanarttestyes}
+${intfanartfresh}
+${intlogoclearfrpng}
+${intlogoclearjppng}
+${intlogoclearpng}
+${intlogoclearuspng}
+${nodates}
+${noplaycount}
+${noplayerdata}
+${noratings}
+${playcount}
+${players}
+${presetstarbox}
+${standardsbuildsfanart}
+${standardsbuildsfanarttest}
+${standardsbuildsfanarttestyes}
+${themePath}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="coinops" displayName="${viewchoicecoinops}" inherits="gamecarousel">
+		<image name="screenshotscust" extra="true">
+			<!-- <pos>0.2485 0.565</pos> -->
+			<size>0.38 0.5</size>
+		</image>
+		<video name="prevvid" extra="true">
+			<visible>true</visible>
+			<size>0.38 0.485</size>
+		</video>
+	</customView>
+</theme>

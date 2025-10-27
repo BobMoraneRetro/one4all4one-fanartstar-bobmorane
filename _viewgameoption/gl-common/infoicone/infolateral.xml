@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="coinops" displayName="${viewchoicecoinops}" inherits="gamecarousel">
+
+<image name="md_notkidgame" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.98 0.42</pos>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/kid.png</path>
+<maxSize>0.02 0.024</maxSize>
+<linearSmooth>true</linearSmooth>
+<color>999999</color>
+<zIndex>998</zIndex>
+</image>
+	
+<image name="md_kidgame"> 
+<origin>0.5 0.5</origin>
+<pos>0.98 0.42</pos>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/kid.png</path>
+<maxSize>0.02 0.024</maxSize>
+<color>ffffff</color>
+<zIndex>999</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+
+<image name="pulse1" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.9795 0.42</pos>
+<maxSize>0.039 0.039</maxSize>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/pulse.png</path>
+<!-- <color>999999</color> -->
+<zIndex>998</zIndex>
+</image>
+
+<image name="md_nomanual" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.98 0.46</pos>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/book.png</path>
+<maxSize>0.02 0.024</maxSize>
+<color>999999</color>
+<zIndex>998</zIndex>
+</image>
+
+<image name="md_manual">
+<origin>0.5 0.5</origin>
+<pos>0.98 0.46</pos>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/book.png</path>
+<maxSize>0.02 0.024</maxSize>
+<color>ffffff</color>
+<zIndex>999</zIndex>
+</image>
+
+<image name="pulse2" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.9795 0.46</pos>
+<maxSize>0.039 0.039</maxSize>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/pulse.png</path>
+<!-- <color>999999</color> -->
+<zIndex>998</zIndex>
+</image>
+
+<image name="md_nosavestate" extra="true">
+<origin>0.5 0.5</origin>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/SaveState.png</path>
+<pos>0.98 0.5</pos>
+<maxSize>0.02 0.024</maxSize>
+<color>999999</color>
+<zIndex>998</zIndex>
+</image>
+
+<image name="md_savestate">
+<origin>0.5 0.5</origin>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/SaveState.png</path>
+<pos>0.98 0.5</pos>
+<maxSize>0.02 0.024</maxSize>
+<color>ffffff</color>
+<zIndex>999</zIndex>
+</image>
+
+<image name="pulse3" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.9795 0.5</pos>
+<maxSize>0.039 0.039</maxSize>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/pulse.png</path>
+<!-- <color>999999</color> -->
+<zIndex>998</zIndex>
+</image>
+
+<image name="md_notcheevos" extra="true">
+<origin>0.5 0.5</origin>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/Contest.png</path>
+<pos>0.98 0.54</pos>
+<maxSize>0.02 0.024</maxSize>
+<color>999999</color>
+<zIndex>998</zIndex>
+</image> 
+    
+<image name="md_cheevos">
+<origin>0.5 0.5</origin>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/Contest.png</path>
+<pos>0.98 0.54</pos>
+<maxSize>0.02 0.024</maxSize>
+<color>ffffff</color>
+<zIndex>999</zIndex>
+</image>	
+
+<image name="pulse4" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.9795 0.54</pos>
+<maxSize>0.039 0.039</maxSize>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/pulse.png</path>
+<!-- <color>999999</color> -->
+<zIndex>998</zIndex>
+</image>
+
+<image name="md_hiddenextra" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.98 0.58</pos>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/hidden.png</path>
+<maxSize>0.02 0.024</maxSize>
+<color>999999</color>
+<zIndex>998</zIndex>
+</image>
+
+<image name="md_hidden">
+<origin>0.5 0.5</origin>
+<pos>0.98 0.58</pos>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/hidden.png</path>
+<maxSize>0.02 0.024</maxSize>
+<color>ffffff</color>
+<zIndex>999</zIndex>
+</image>
+
+<image name="pulse5" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.9795 0.58</pos>
+<maxSize>0.039 0.039</maxSize>
+<path>./_ViewGameOption/GL-CoinOPSnext/InfoIcone/pulse.png</path>
+<zIndex>998</zIndex>
+</image>
+
+<control name="md_notkidgame,md_kidgame,md_nosavestate,md_savestate,md_nomanual,md_manual,md_cheevos,md_notcheevos,md_hidden,md_hiddenextra,pulse1,pulse2,pulse3,pulse4,pulse5" ifSubset="infocaroussel:bref">
+<storyboard event="open">
+<animation property="opacity" from="1" to="1" duration="400" mode="linear"/>
+<animation property="offsetX" to="0.15" duration="400" mode="easeIn" begin="1000"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+<animation property="offsetX" to="0.15" duration="600" mode="easeIn" begin="1000"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+<animation property="offsetX" to="0.15" duration="600" mode="easeIn" begin="1000"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" to="0" duration="1" mode="easeOut"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" to="0" duration="1" mode="easeOut"/>
+</storyboard>
+</control>
+
+	
+</customView>
+   
+</theme>

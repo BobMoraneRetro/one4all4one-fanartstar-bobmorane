@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Taille Game Video Vue CoinOPS Next -->
+		<customView name="coinops" inherits="gamecarousel">
+		<video name="prevvid" extra="true">
+			<visible>
+						!exists(${extgamevideoavi})
+			&amp;&amp;	!exists(${extgamevideomp4})	
+			&amp;&amp;	!exists("${themePath}/_speclayouts/layoutpergame/${system.theme}/" + stem({game:rom}) + ".xml")
+			</visible>
+		</video>
+		<gameextras name="gameextras">
+			<path>${themePath}/_speclayouts/layoutpergame/${system.theme}</path>
+		</gameextras>
+	</customView>
+</theme>

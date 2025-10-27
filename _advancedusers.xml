@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<subset name="systannonce" displayName="${systannounce}" appliesTo="coinops">
+		<include name="classiquesyst" displayName="${classiquesyst}">${themePath}/_viewgame/commune/systeme/nomsystem.xml</include>
+		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<subset name="infosmax" displayName="${infosmax}" appliesTo="coinops">
+		<include name="non" displayName="${no}"/>
+		<include name="oui" displayName="${yes}">${themePath}/_viewgameoption/gl-common/infosmax.xml</include>
+	</subset>
+	<subset name="hiscore" displayName="${hiscore}" appliesTo="coinops">
+		<include name="rankcadre" displayName="${rankcadre}">./_viewgameoption/gl-common/hi-score/hiscorecadre.xml</include>
+		<include name="rankupcenter" displayName="${rankupcenter}">./_viewgameoption/gl-common/hi-score/hiscorecentre.xml</include>
+		<include name="inactif" displayName="${inactif}"/>
+	</subset>
+	<subset name="hiscoretype" ifSubset="hiscore:rankupcenter|rankcadre" displayName="${hiscoretype}" appliesTo="coinops">
+		<include name="top3" displayName="${top3}"/>
+		<include name="top5" displayName="${top5}"/>
+		<include name="allrank" displayName="${allrank}"/>
+	</subset>
+	<subset name="gwheelbackgr" displayName="${gwheelbackgr}" appliesTo="coinops">
+		<include name="sisaccades" displayName="${sisaccades}"/>
+		<include name="logounified" displayName="${logounified}">${themePath}/_viewgameoption/gl-common/autounified.xml</include>
+		<include name="ovalcarbon" displayName="${ovalcarbon}">${themePath}/_viewgameoption/gl-common/autoovalcarbon.xml</include>
+		<include name="ovalsilver" displayName="${ovalsilver}">${themePath}/_viewgameoption/gl-common/autoovalsilver.xml</include>
+		<include name="rectcarbon" displayName="${rectcarbon}">${themePath}/_viewgameoption/gl-common/autorectcabon.xml</include>
+		<!-- <include name="hfsround" displayName="${hfsround}">${themePath}/_viewgameoption/gl-common/autoHFSround.xml</include> -->
+	</subset>
+	<subset name="letternav" displayName="${letternav}" appliesTo="coinops">
+		<include name="navhoricoinstyle" displayName="${navhoricoinstyle}">${themePath}/_viewgameoption/gl-common/navhoricoinstyle.xml</include>
+		<include name="navvertcoinstyle" displayName="${navvertcoinstyle}">${themePath}/_viewgameoption/gl-common/navvertcoinstyle.xml</include>
+		<include name="navvertposition" displayName="${navvertposition}">${themePath}/_viewgameoption/gl-common/navvertposition.xml</include>
+		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<subset name="spacerstar" displayName="${spacerstar}" appliesTo="${vide}">
+		<include name="desactive" displayName=" "/>
+	</subset>
+	<subset name="mediastar" displayName="${mediastar}" appliesTo="${vide}">
+		<include name="desactive" displayName=" "/>
+	</subset>
+	<subset name="gridcolor" displayName="${fanarstargridcolor}" appliesTo="presetstar169,presetstar43">
+		<include name="default" displayName="Par défaut"/>
+		<include name="griscl" displayName="Gris Sympa"/>
+		<include name="skyblue" displayName="Bleu Ciel"/>
+		<include name="purple" displayName="Violet"/>
+		<include name="red" displayName="Rouge"/>
+		<include name="aqua" displayName="Bleu Ciel"/>
+		<include name="orange" displayName="Orange"/>
+		<include name="green" displayName="Vert"/>
+		<include name="yellow" displayName="Jaune"/>
+		<include name="pink" displayName="Rose"/>
+		<include name="grey" displayName="Gris foncé"/>
+		<include name="lightgrey" displayName="Gris clair"/>
+		<include name="navy" displayName="Bleu alt"/>
+		<include name="violet" displayName="violet"/>
+		<include name="candy" displayName="candy"/>
+		<include name="redalt" displayName="Rouge Alt"/>
+		<include name="yellowalt" displayName="Jaune Alt"/>
+		<include name="greenalt" displayName="Vert Alt"/>
+		<include name="purplealt" displayName="Violet Alt"/>
+	</subset>
+		<subset name="customfanart" displayName="${customfanart}" appliesTo="presetstarbox">
+		<include name="fanartgamelist" displayName="${fanartgamelist}"/>
+		<include name="fanartcustom" displayName="${fanartcustom}"/>
+	</subset>
+	<subset name="starboxang" displayName="${starboxang}" appliesTo="presetstarbox">
+		<include name="active" displayName="${active}"/>
+		<include name="deactive" displayName="${deactive}"/>
+	</subset>
+	<subset name="starthumb" displayName="${starthumb}" appliesTo="presetstarbox">
+		<include name="starbox2d" displayName="${starbox2d}">./_viewgameoption/gl-fanartstar/2dbox.xml</include>
+		<include name="starbox3d" displayName="${starbox3d}">./_viewgameoption/gl-fanartstar/3dbox.xml</include>
+	</subset>
+	<subset name="starvideo" displayName="${starvideo}" appliesTo="presetstarbox">
+		<include name="starvideoang" displayName="${starvideoang}"/>
+		<include name="starvideodef" displayName="${starvideodef}"/>
+		<include name="starvideobig" displayName="${starvideobig}"/>
+	</subset>
+	<subset name="spacebox" displayName="${spacebox}" appliesTo="presetstarbox">
+		<include name="spacenorm" displayName="${spacenorm}"/>
+		<include name="spacevery" displayName="${spacevery}"/>
+		<include name="spacesmall" displayName="${spacesmall}"/>
+		<include name="spaceplus" displayName="${spaceplus}"/>
+		<include name="spacemore" displayName="${spacemore}"/>
+	</subset>
+	<subset name="squarecadre" displayName="${squarecadre}" appliesTo="presetsquare">
+		<include name="noirombre" displayName="${noirombre}"/>
+		<include name="blancombre" displayName="${blancombre}"/>
+		<include name="ombre" displayName="${ombre}"/>
+		<include name="rien" displayName="${rien}"/>
+	</subset>
+	<!-- <subset name="starthumb" displayName="${starthumb}" appliesTo="presetstarbox"> -->
+	<!-- <include name="starbox2d" displayName="${starbox2d}">./_viewgameoption/gl-coinopsnext/2dbox.xml</include> -->
+	<!-- <include name="starbox3d" displayName="${starbox3d}">./_viewgameoption/gl-coinopsnext/3dbox.xml</include> -->
+	<!-- </subset> -->
+</theme>

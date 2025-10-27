@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
+		<gamecarousel name="gamecarousel">
+			<maxLogoCount ifSubset="spacebox:spacemore">11</maxLogoCount>
+			<maxLogoCount ifSubset="spacebox:spaceplus">15</maxLogoCount>
+			<maxLogoCount ifSubset="spacebox:spacesmall">23</maxLogoCount>
+			<maxLogoCount ifSubset="spacebox:spacevery">33</maxLogoCount>
+			<maxLogoCount ifSubset="spacebox:spacenorm">21</maxLogoCount>
+			<scaledLogoSpacing ifSubset="spacebox:spacevery">5</scaledLogoSpacing>
+			<scaledLogoSpacing ifSubset="spacebox:spacesmall">2</scaledLogoSpacing>
+			<scaledLogoSpacing ifSubset="spacebox:spacenorm">1.5</scaledLogoSpacing>
+		</gamecarousel>
+	</customView>
+</theme>
