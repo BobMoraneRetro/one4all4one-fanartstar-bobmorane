@@ -108,6 +108,7 @@
 	<subset name="systemview" displayName="${systlist}">
 		<include name="fanartstarsyst" displayName="${fanartstarsyst}">${themePath}/_viewsyst/fanartstarsyst.xml</include>
 		<include name="fanartmodern" displayName="${fanartmodern}">${themePath}/_viewsyst/fanartmodern.xml</include>
+		<include name="fanartmodern2" displayName="${fanartmodern2}">${themePath}/_viewsyst/fanartmodern2.xml</include>
 		<!-- <include name="nesicaxlivetest" displayName="${systviewnesicatest}">${themePath}/_viewsyst/nesicaxlivetest.xml</include> -->
 	</subset>
 	<!-- ################################################################################# -->
@@ -166,12 +167,12 @@
 		<include name="logosimple" displayName="${logosimple}">${themePath}/_viewsystoption/sl-commun/wheellook.xml</include>
 	</subset>
 	<!-- NB: Possible d'ajouter si souhait de l'intégrer aux packs : ifSubset="Packinstall:Packactivate" -->
-	<include>${themePath}/_systemmedia/_logosyst/comic/_logocomic.xml</include>
-	<include>${themePath}/_systemmedia/_logosyst/hmaxcarbon/_ovalcarb.xml</include>
-	<include>${themePath}/_systemmedia/_logosyst/hmaxovalsilver/_hmaxovalsilver.xml</include>
-	<include>${themePath}/_systemmedia/_logosyst/nekhglass/_glassnekhros.xml</include>
-	<include>${themePath}/_systemmedia/_logosyst/hmaxrectfresh/_logorectfresh.xml</include>
-	<include>${themePath}/_systemmedia/_logosyst/hmaxrectrefl/_hmaxrectrefl.xml</include>
+	<!-- <include>${themePath}/_systemmedia/_logosyst/comic/_logocomic.xml</include> -->
+	<!-- <include>${themePath}/_systemmedia/_logosyst/hmaxcarbon/_ovalcarb.xml</include> -->
+	<!-- <include>${themePath}/_systemmedia/_logosyst/hmaxovalsilver/_hmaxovalsilver.xml</include> -->
+	<!-- <include>${themePath}/_systemmedia/_logosyst/nekhglass/_glassnekhros.xml</include> -->
+	<!-- <include>${themePath}/_systemmedia/_logosyst/hmaxrectfresh/_logorectfresh.xml</include> -->
+	<!-- <include>${themePath}/_systemmedia/_logosyst/hmaxrectrefl/_hmaxrectrefl.xml</include> -->
 	<!-- Choix des fanart à afficher sur la liste système -->
 	<subset name="imagefondcops1" displayName="${systviewfanart}">
 		<include name="fanartfreshone" displayName="${fanartfreshone}">${themePath}/_viewsystoption/sl-commun/fanartsyst.xml</include>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<theme>
-	<formatVersion>7</formatVersion>
-	<!-- Custom des fonts des jeux sans logo  -->
-
-	<!-- Taille Game Video Vue CoinOPS Next -->
-	<customView name="coinops" displayName="${viewchoicecoinops}" inherits="gamecarousel">
-	</customView>
-</theme>
