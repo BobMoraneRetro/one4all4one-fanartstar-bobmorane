@@ -6,24 +6,36 @@ license: creative commons CC-BY-NC-SA
 -->
 <theme>
 	<formatVersion>7</formatVersion>
+	<!-- Variables specifiques à la vue, en commentaire les variables communes utilisees figurant dans theme.xml -->
 	<variables>
-		<firstsystfanart>firstfile("${themePath}/_systemmedia/_fanartsysteme/fresh/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/custom/" + {system:theme} + ".jpg")</firstsystfanart>
-		<firstsystemimage>firstfile("${themePath}/_systemmedia/_fanartsysteme/custom/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/fresh/" + {system:theme} + ".jpg")</firstsystemimage>
-		<firstsystemhardaware>firstfile("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</firstsystemhardaware>
+		<firstsystfanart>firstfile("${themePath}/_systemmedia/_fanartsysteme/fresh/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/custom/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/default.png")</firstsystfanart>
+		<firstsystemimage>firstfile("${themePath}/_systemmedia/_fanartsysteme/custom/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/fresh/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/default.png")</firstsystemimage>
+		<firstsystemhardaware>firstfile("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png","${themePath}/_systemmedia/_fanartsysteme/default.png")</firstsystemhardaware>
+		<!-- <bobmediapath>${themePath}</bobmediapath> -->
+		<!-- <intbezelsyst>("${themePath}/_systemmedia/bezelsyst/" + ({system:theme}) + ".png")</intbezelsyst> -->
 	</variables>
 	<include>${themePath}/_systemmedia/description/${system.theme}.xml</include>
 	<view name="system">
+			<image name="mask" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>${themePath}/_viewsyst/fanartstar/bgmask.png</path>
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<zIndex>6</zIndex>
+			<opacity>1</opacity>
+		</image>
 		<carousel name="systemcarousel">
 			<zIndex>10</zIndex>
 			<type>horizontal</type>
-			<pos>-0.15 0.18</pos>
+			<pos>-0.21 0.22</pos>
 			<size>1.45 1</size>
 			<logoScale>1</logoScale>
 			<logoSize>0.150 0.150</logoSize>
 			<color>00000000</color>
 			<logoAlignment>bottom</logoAlignment>
 			<minLogoOpacity>1</minLogoOpacity>
-			<transitionSpeed>750</transitionSpeed>
+			<transitionSpeed ifSubset="video4starmodern:videoback">0</transitionSpeed>
+			<transitionSpeed ifSubset="video4starmodern:novideo">750</transitionSpeed>
 			<logoPos>0.5 0.5</logoPos>
 			<imageSource>thumbnail</imageSource>
 			<defaultTransition>instant</defaultTransition>
@@ -89,10 +101,14 @@ license: creative commons CC-BY-NC-SA
 						</storyboard>
 					</image>
 					<image name="cadre">
-						<path>${themePath}/_viewsyst/fanartstar/cadre.png</path>
+						<path>${themePath}/_viewsyst/fanartstar/cadre_m2.png</path>
 						<origin>0.5</origin>
 						<pos>0.51 0.5</pos>
+						<!-- modern 2 pertit -->
+						<pos>0.5 0.5</pos>
 						<size>1.18 1.42</size>
+						<!-- modern 2 petit -->
+						<size>1.16 1.42</size>
 						<zIndex>7</zIndex>
 						<color>FFFFFFFF</color>
 						<linearSmooth>true</linearSmooth>
@@ -105,13 +121,10 @@ license: creative commons CC-BY-NC-SA
 							<animation property="color" from="858585ff" to="FFFFFFFF" begin="10" duration="150" mode="Linear" autoReverse="true" repeat="forever"/>
 						</storyboard>
 						<storyboard event="deactivate">
-							<!-- <animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/> -->
 							<animation property="scale" to="1" begin="" duration="350" mode="easeOut"/>
 							<animation property="opacity" to="1" begin="" duration="" mode="Linear"/>
 						</storyboard>
 						<storyboard event="scroll">
-							<!-- <animation property="color" to="858585ff" begin="" duration="" mode="Linear"/> -->
-							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
 							<animation property="scale" to="1" begin="" duration="350" mode="easeOut"/>
 							<animation property="opacity" to="1" begin="" duration="" mode="Linear"/>
 						</storyboard>
@@ -120,25 +133,21 @@ license: creative commons CC-BY-NC-SA
 						<path>firstfile(
                     "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png")</path>
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png",
+					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".png",
+					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".svg")</path>
 						<padding>3 3 -3 -3</padding>
 						<color>000000</color>
 						<zIndex>6</zIndex>
 						<storyboard event="open">
-							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
 						</storyboard>
 						<storyboard event="activate">
-							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
-							<!-- <animation property="y" to="0.65" begin="" duration="350" mode="bump"/> -->
 							<animation property="scale" to="1.1" begin="" duration="350" mode="bump"/>
 						</storyboard>
 						<storyboard event="deactivate">
-							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
-							<!-- <animation property="rotation" to="0" begin="" duration="150" mode="Linear"/> -->
 							<animation property="scale" to="1" begin="" duration="350" mode="bump"/>
 						</storyboard>
 						<storyboard event="scroll">
-							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
 							<animation property="scale" to="1" begin="" duration="350" mode="bump"/>
 						</storyboard>
 					</image>
@@ -146,25 +155,38 @@ license: creative commons CC-BY-NC-SA
 						<path>firstfile(
                     "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png")</path>
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png",
+					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".png",
+					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".svg")</path>
 						<zIndex>7</zIndex>
 						<storyboard event="open">
-							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
 						</storyboard>
 						<storyboard event="activate">
-							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
-							<!-- <animation property="y" to="0.65" begin="" duration="350" mode="bump"/> -->
 							<animation property="scale" to="1.1" begin="" duration="350" mode="bump"/>
 						</storyboard>
 						<storyboard event="deactivate">
-							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
-							<!-- <animation property="rotation" to="0" begin="" duration="150" mode="Linear"/> -->
 							<animation property="scale" to="1" begin="" duration="350" mode="bump"/>
 						</storyboard>
 						<storyboard event="scroll">
-							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
 							<animation property="scale" to="1" begin="" duration="350" mode="bump"/>
 						</storyboard>
+						<text name="nameif">
+							<visible>!exists("${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png") &amp;&amp;
+			!exists("${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png") &amp;&amp;
+			!exists("${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png") &amp;&amp;
+			!exists("${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".png") &amp;&amp;
+			!exists("${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".svg")</visible>
+							<text>{system:name}</text>
+							<alignment>center</alignment>
+							<fontPath>${themePath}/_viewsyst/fanartstar/fonts/TitilliumWeb-Light.ttf</fontPath>
+							<fontSize>0.030</fontSize>
+							<pos>0.0515 0.2</pos>
+							<size>0.94 0.4</size>
+							<zIndex>100</zIndex>
+							<color>D0D0D0FF</color>
+							<glowColor>000000A0</glowColor>
+							<glowSize>1</glowSize>
+						</text>
 					</image>
 				</container>
 			</itemTemplate>
@@ -181,7 +203,6 @@ license: creative commons CC-BY-NC-SA
                     "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
 					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png")</path>
-			<!-- <linearSmooth>true</linearSmooth> -->
 			<zIndex>80</zIndex>
 			<horizontalAlignment>left</horizontalAlignment>
 		</image>
@@ -265,25 +286,17 @@ license: creative commons CC-BY-NC-SA
 Favorites : {binding:favorites} - Games played : {binding:gamesPlayed}
 Most played : {binding:mostPlayed} - Last played : {binding:lastPlayedDate}</text>
 			<text lang="ar">
-المفضلة : {binding:favorites}
-تم لعب المباريات : {binding:gamesPlayed}
-الأكثر لعبا : {binding:mostPlayed}
-اخر لعبه : {binding:lastPlayedDate}</text>
+المفضلة : {binding:favorites} - تم لعب المباريات : {binding:gamesPlayed}
+الأكثر لعبا : {binding:mostPlayed} - اخر لعبه : {binding:lastPlayedDate}</text>
 			<text region="br">
-Favoritos : {binding:favorites}
-Jogos Jogados : {binding:gamesPlayed}
-Mais jogados : {binding:mostPlayed}
-Última jogada : {binding:lastPlayedDate}</text>
+Favoritos : {binding:favorites} - Jogos Jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed} - Última jogada : {binding:lastPlayedDate}</text>
 			<text lang="ca">
-Preferits : {binding:favorites}
-Jocs jugats : {binding:gamesPlayed}
-Més jugats : {binding:mostPlayed}
-Últim moviment : {binding:lastPlayedDate}</text>
+Preferits : {binding:favorites} - Jocs jugats : {binding:gamesPlayed}
+Més jugats : {binding:mostPlayed} - Últim moviment : {binding:lastPlayedDate}</text>
 			<text lang="de">
-Favoriten : {binding:favorites}
-Spiele gespielt : {binding:gamesPlayed}
-Meist gespielt : {binding:mostPlayed}
-Letzter Zug : {binding:lastPlayedDate}</text>
+Favoriten : {binding:favorites} - Spiele gespielt : {binding:gamesPlayed}
+Meist gespielt : {binding:mostPlayed} - Letzter Zug : {binding:lastPlayedDate}</text>
 			<text lang="en">
 Favorites : {binding:favorites} - Games played : {binding:gamesPlayed}
 Most played : {binding:mostPlayed} - Last played : {binding:lastPlayedDate}</text>
@@ -291,87 +304,55 @@ Most played : {binding:mostPlayed} - Last played : {binding:lastPlayedDate}</tex
 Favorites : {binding:favorites} - Games played : {binding:gamesPlayed}
 Most played : {binding:mostPlayed} - Last played : {binding:lastPlayedDate}</text>
 			<text lang="es">
-Favoritos : {binding:favorites}
-Jugados : {binding:gamesPlayed}
-El más jugado : {binding:mostPlayed}
-Última partida : {binding:lastPlayedDate}</text>
+Favoritos : {binding:favorites} - Jugados : {binding:gamesPlayed}
+El más jugado : {binding:mostPlayed} - Última partida : {binding:lastPlayedDate}</text>
 			<text lang="fr">
-Favoris : {binding:favorites}
-Jeux joués : {binding:gamesPlayed}
-Le plus joué : {binding:mostPlayed}
-Dernière partie : {binding:lastPlayedDate}</text>
+Favoris : {binding:favorites} - Jeux joués : {binding:gamesPlayed}
+Le plus joué : {binding:mostPlayed} - Dernière partie : {binding:lastPlayedDate}</text>
 			<text lang="el">
-Αγαπημένα : {binding:favorites}
-Παιχνίδια που παίχτηκαν : {binding:gamesPlayed}
-Περισσότερα παίχτηκαν : {binding:mostPlayed}
-Τελευταία κίνηση : {binding:lastPlayedDate}</text>
+Αγαπημένα : {binding:favorites} - Παιχνίδια που παίχτηκαν : {binding:gamesPlayed}
+Περισσότερα παίχτηκαν : {binding:mostPlayed} - Τελευταία κίνηση : {binding:lastPlayedDate}</text>
 			<text lang="hu">
-Kedvencek : {binding:favorites}
-Játszottak : {binding:gamesPlayed}
-Gyakran játszott : {binding:mostPlayed}
-Utoljára játszott : {binding:lastPlayedDate}</text>
+Kedvencek : {binding:favorites} - Játszottak : {binding:gamesPlayed}
+Gyakran játszott : {binding:mostPlayed} - Utoljára játszott : {binding:lastPlayedDate}</text>
 			<text lang="it">
-Preferiti : {binding:favorites}
-Giochi giocati : {binding:gamesPlayed}
-Più giocati : {binding:mostPlayed}
-Ultimo giocato : {binding:lastPlayedDate}</text>
+Preferiti : {binding:favorites} - Giochi giocati : {binding:gamesPlayed}
+Più giocati : {binding:mostPlayed} - Ultimo giocato : {binding:lastPlayedDate}</text>
 			<text lang="jp">
-お気に入り : {binding:favorites}
-プレイしたゲーム : {binding:gamesPlayed}
-最もプレイされた : {binding:mostPlayed}
-最後の動き : {binding:lastPlayedDate}</text>
+お気に入り : {binding:favorites} - プレイしたゲーム : {binding:gamesPlayed}
+最もプレイされた : {binding:mostPlayed} - 最後の動き : {binding:lastPlayedDate}</text>
 			<text lang="ko">
-즐겨찾기 : {binding:favorites}
-플레이한 게임 : {binding:gamesPlayed}
-가장 많이 플레이한 것 : {binding:mostPlayed}
-마지막 플레이 {binding:lastPlayedDate}</text>
+즐겨찾기 : {binding:favorites} - 플레이한 게임 : {binding:gamesPlayed}
+가장 많이 플레이한 것 : {binding:mostPlayed} - 마지막 플레이 {binding:lastPlayedDate}</text>
 			<text lang="nl">
-Favorieten : {binding:favorites}
-Spellen gespeeld : {binding:gamesPlayed}
-Meest gespeeld : {binding:mostPlayed}
-Laatste zet : {binding:lastPlayedDate}</text>
+Favorieten : {binding:favorites} - Spellen gespeeld : {binding:gamesPlayed}
+Meest gespeeld : {binding:mostPlayed} - Laatste zet : {binding:lastPlayedDate}</text>
 			<text lang="pl">
-Ulubione : {binding:favorites}
-Rozegrane gry : {binding:gamesPlayed}
-Najczęściej grane : {binding:mostPlayed}
-Ostatnio grane : {binding:lastPlayedDate}</text>
+Ulubione : {binding:favorites} - Rozegrane gry : {binding:gamesPlayed}
+Najczęściej grane : {binding:mostPlayed} - Ostatnio grane : {binding:lastPlayedDate}</text>
 			<text lang="pt">
-Favoritos : {binding:favorites}
-Jogos jogados : {binding:gamesPlayed}
-Mais jogados : {binding:mostPlayed}
-Recém jogado : {binding:lastPlayedDate}</text>
+Favoritos : {binding:favorites} - Jogos jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed} - Recém jogado : {binding:lastPlayedDate}</text>
 			<text lang="pt_BR">
-Favoritos : {binding:favorites}
-Jogos Jogados : {binding:gamesPlayed}
-Mais jogados : {binding:mostPlayed}
-Última jogada : {binding:lastPlayedDate}</text>
+Favoritos : {binding:favorites} - Jogos Jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed} - Última jogada : {binding:lastPlayedDate}</text>
 			<text lang="ptbr">
-Favoritos : {binding:favorites}
-Jogos Jogados : {binding:gamesPlayed}
-Mais jogados : {binding:mostPlayed}
-Última jogada : {binding:lastPlayedDate}</text>
+Favoritos : {binding:favorites} - Jogos Jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed} - Última jogada : {binding:lastPlayedDate}</text>
 			<text lang="ro_RO">
-Favorite : {binding:favorites}
-Jocuri jucate : {binding:gamesPlayed}
-Cele mai jucate : {binding:mostPlayed}
-Ultima rulare : {binding:lastPlayedDate}</text>
+Favorite : {binding:favorites} - Jocuri jucate : {binding:gamesPlayed}
+Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate}</text>
 			<text lang="ru">
-Избранное : {binding:favorites}
-Игр сыграно : {binding:gamesPlayed}
-Часто запускаемое : {binding:mostPlayed}
-Последний запуск : {binding:lastPlayedDate}</text>
+Избранное : {binding:favorites} - Игр сыграно : {binding:gamesPlayed}
+Часто запускаемое : {binding:mostPlayed} - Последний запуск : {binding:lastPlayedDate}</text>
 			<text lang="uk">
-Вибране : {binding:favorites}
-Зіграні ігри : {binding:gamesPlayed}
-Більше грав : {binding:mostPlayed}
-Останній хід : {binding:lastPlayedDate}</text>
+Вибране : {binding:favorites} - Зіграні ігри : {binding:gamesPlayed}
+Більше грав : {binding:mostPlayed} - Останній хід : {binding:lastPlayedDate}</text>
 			<text lang="zh">
-最爱的游戏 : {binding:favorites}
-玩过的游戏 : {binding:gamesPlayed}
-常玩的游戏 : {binding:mostPlayed}
-最后游玩 : {binding:lastPlayedDate}</text>
+最爱的游戏 : {binding:favorites} - 玩过的游戏 : {binding:gamesPlayed}
+常玩的游戏 : {binding:mostPlayed} - 最后游玩 : {binding:lastPlayedDate}</text>
 			<verticalAlignment>center</verticalAlignment>
-			<pos>0.0525 0.265</pos>
+			<pos>0.0525 0.28</pos>
 			<size>0.3 0.14</size>
 			<fontPath>${themePath}/_viewsyst/fanartstar/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
 			<color>FFFFFF</color>
@@ -408,81 +389,16 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<lineSpacing>1.2</lineSpacing>
 			<fontPath>${themePath}/_viewsyst/fanartstar/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
 		</text>
-		<image name="mask" extra="true">
-			<origin>0.5 0.5</origin>
-			<path>${themePath}/_viewsyst/fanartstar/bgmask.png</path>
-			<size>1 1</size>
-			<pos>0.5 0.5</pos>
-			<zIndex>4</zIndex>
-			<opacity>1</opacity>
-		</image>
-		<image name="blablacksyt" extra="true">
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<path>${themePath}/_common/images/black.png</path>
-			<size>1 1</size>
-			<zIndex>51</zIndex>
-			<opacity>0</opacity>
-			<storyboard>
-				<animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="1200"/>
-			</storyboard>
-		</image>
-		<video name="gameplay" extra="true">
-			<default>${themePath}/_systemmedia/defaut/scotty.mp4</default>
-			<path>{system:random:video}</path>
-			<pos>0.5 0.5</pos>
-			<origin>0.5 0.5</origin>
-			<maxSize>1 1</maxSize>
-			<delay>1</delay>
-			<effect>none</effect>
-			<zIndex>51</zIndex>
-			<opacity>1</opacity>
-		</video>
-		<image name="scanlines" extra="true">
-			<tile>true</tile>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<path>${themePath}/_common/shaders/scanlines01.png</path>
-			<maxSize>1 1</maxSize>
-			<zIndex>51</zIndex>
-			<opacity>0</opacity>
-			<storyboard>
-				<animation property="opacity" from="0" to="1" begin="1000" duration="550" mode="easeIn"/>
-			</storyboard>
-		</image>
-		<image name="bezel" extra="true">
-			<origin>0.5 0.5</origin>
-			<path>${intbezelsyst}</path>
-			<maxSize>1 1</maxSize>
-			<pos>0.5 0.5</pos>
-			<linearSmooth>true</linearSmooth>
-			<zIndex>51</zIndex>
-			<opacity>0</opacity>
-			<storyboard>
-				<animation property="opacity" from="0" to="1" begin="1000" duration="550" mode="easeIn"/>
-			</storyboard>
-		</image>
-		<image name="maskvideo" extra="true">
-			<origin>0.5 0.5</origin>
-			<path>${themePath}/_viewsyst/fanartstar/bgmask.png</path>
-			<size>1 1</size>
-			<pos>0.5 0.5</pos>
-			<zIndex>52</zIndex>
-			<opacity>0</opacity>
-			<storyboard>
-				<animation property="opacity" from="0" to="1" begin="900" duration="550" mode="easeIn"/>
-			</storyboard>
-		</image>
 		<!-- <image name="test" extra="true"> -->
-			<!-- <path>${themePath}/_viewsyst/fanartstar/cadre.png</path> -->
-			<!-- <linearSmooth>true</linearSmooth> -->
-			<!-- <origin>1.5 1.5</origin> -->
-			<!-- <pos>0 0</pos> -->
-			<!-- <maxSize>0.5 0.5</maxSize> -->
-			<!-- <zIndex>999</zIndex> -->
-			<!-- <color>FFFFFFFF</color> -->
+		<!-- <path>${themePath}/_viewsyst/fanartstar/cadre_m2.png</path> -->
+		<!-- <linearSmooth>true</linearSmooth> -->
+		<!-- <origin>1.5 1.5</origin> -->
+		<!-- <pos>0 0</pos> -->
+		<!-- <maxSize>0.5 0.5</maxSize> -->
+		<!-- <zIndex>999</zIndex> -->
+		<!-- <color>FFFFFFFF</color> -->
 		<!-- </image> -->
-		<!-- ########## Si menu officiel sélectionné ############# -->
+		<!-- ########## Fil d arianne si menu officiel sélectionné ############# -->
 		<image name="iconselec" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/icon.png</path>
 			<origin>1 0</origin>
@@ -608,16 +524,6 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<offsetX>0.005</offsetX>
 			<offsetY>-0.15</offsetY>
 			<linearSmooth>true</linearSmooth>
-			<!-- <scale>0.8</scale> -->
 		</control>
-		<!-- <image name="fanartmodern2fond" extra="true"> -->
-			<!-- <path>${intfanartfresh}</path> -->
-			<!-- <pos>0 0.5</pos> -->
-			<!-- <origin>0 0.5</origin> -->
-			<!-- <size>1 1</size> -->
-			<!-- <zIndex>0</zIndex> -->
-			<!-- <linearSmooth>true</linearSmooth> -->
-			<!-- <autoFade>false</autoFade> -->
-		<!-- </image> -->
 	</view>
 </theme>

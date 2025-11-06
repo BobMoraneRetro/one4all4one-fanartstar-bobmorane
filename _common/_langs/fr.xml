@@ -348,11 +348,6 @@
 		<starboxang>Angle sur les boite de jeu</starboxang>
 		<active>Activé</active>
 		<deactive>Désactivé</deactive>
-		<spacevery>Espace --</spacevery>
-		<spacesmall>Espace -</spacesmall>
-		<spacenorm>Par défaut</spacenorm>
-		<spaceplus>Espace +</spaceplus>
-		<spacemore>Espace ++</spacemore>
 		<customfanart>Choix des Fanarts à utiliser</customfanart>
 		<fanartgamelist>Fanart du scrap dans la Gamelist</fanartgamelist>
 		<fanartcustom>Fanart custom dans _Gamemedia-NomSystem-medium_artwork</fanartcustom>
@@ -421,17 +416,46 @@
 		<nesicaxlivedemomode>NESiCAxLive mode Démo</nesicaxlivedemomode>
 		<wheelcolor>Wheel - Couleur des logos non selectionnés</wheelcolor>
 		<blackwhite>Noir et Blanc</blackwhite>
-		<colored>Couleur par défaut</colored>		
+		<colored>Couleur par défaut</colored>
 		<!-- Coinops luminosité des fonds système -->
 		<darkerlighter>Luminosité du fond</darkerlighter>
 		<normallum>lumineux (Défaut)</normallum>
 		<darklum>moyenne</darklum>
 		<darkerlum>sombre</darkerlum>
+		
+		
+		<!-- Spacer spécifique fanartstar -->
+		<spacerstar>--------- Medias recommandés pour la vue jeux Fanart Star = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ Début des options avancées spécifiques à la vue FanartStar boxart ↓   -------------------</mediastar>
+		<mediastar2>-------------------------    ↓ Début des options avancées spécifiques à la vue FanartStar 16/9 et 4/3 ↓   -------------------</mediastar2>
+		<mediastar3>----------------------------    ↓ Début des options avancées spécifiques à la vue FanartStar Carré ↓   -------------------</mediastar3>
 		<!-- fanartstar square -->
 		<squarecadre>Habillage des carrés désignants les jeux</squarecadre>
 		<noirombre>Cadre noir + ombre</noirombre>
 		<blancombre>Cadre blanc + ombre</blancombre>
 		<ombre>Ombre uniquement</ombre>
 		<rien>Aucun habillage</rien>
+		<!-- fanartstarsystem -->
+		<fanartstarsyst>Classique</fanartstarsyst>
+		<fanartmodern>Modern 1 (non compatible fil d'arianne)</fanartmodern>
+		<fanartmodern2>Modern 2 (compatible avec fil d'arianne)</fanartmodern2>
+		<video4starmodern>Video de gameplay sur la vue système</video4starmodern>
+		<novideo>Désactivé</novideo>
+		<videoback>Activé</videoback>
+		<systviewselec>Image du système dans la wheel</systviewselec>
+		<hardware>Hardware</hardware>
+		<charsystem>Personnages</charsystem>
+		<figurines>Figurines (le thème Animatics doit être installé)</figurines>
+		<!-- fanartstar boxart -->
+		<spacebox>Espace entre les boites de jeux</spacebox>
+		<spacevery>Espace --</spacevery>
+		<spacesmall>Espace -</spacesmall>
+		<spacenorm>Par défaut</spacenorm>
+		<spaceplus>Espace +</spaceplus>
+		<spacemore>Espace ++</spacemore>
+		<boxstarspeed>Vitesse de l'animation de défilement</boxstarspeed>
+		<stardefault>par défaut</stardefault>
+		<starslow1>+ lent</starslow1>
+		<starslow2>++ lent</starslow2>
 	</variables>
 </theme>

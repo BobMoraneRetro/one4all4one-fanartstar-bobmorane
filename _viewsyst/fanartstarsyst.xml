@@ -18,8 +18,8 @@ license: creative commons CC-BY-NC-SA
 		<carousel name="systemcarousel">
 			<zIndex>10</zIndex>
 			<type>horizontal</type>
-			<pos>-0.1 0.1</pos>
-			<pos ifHelpPrompts="true">-0.1 0.08</pos>
+			<pos>-0.015 0.08</pos>
+			<pos ifHelpPrompts="true">-0.015 0.08</pos>
 			<size>1.375 1</size>
 			<logoScale>1.5</logoScale>
 			<logoSize>0.350 0.350</logoSize>
@@ -63,7 +63,6 @@ license: creative commons CC-BY-NC-SA
 						<saturation>0.7</saturation>
 						<zIndex>5</zIndex>
 					</image>
-					
 					<image name="shadowlogo" pos="0.5 0.9" origin="0.5" maxSize="0.2" linearSmooth="true">
 						<path>firstfile(
                     "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
@@ -128,7 +127,32 @@ license: creative commons CC-BY-NC-SA
 			<origin>0.5 1</origin>
 			<zIndex>3</zIndex>
 		</image>
+		<video name="backgroundvideo" extra="true">
+			<default>${themePath}/_systemmedia/defaut/scotty.mp4</default>
+			<path>{random}</path>
+			<pos>0.053 0.63</pos>
+			<origin>0 0.5</origin>
+			<maxSize>0.2 0.25</maxSize>
+			<effect>none</effect>
+			<zIndex>4</zIndex>
+			<opacity>1</opacity>
+			<delay>0.3</delay>
+		</video>
 		<!-- ################################### Metadata et autres infos textuelles #############################################################################		 -->
+		<image name="logosystemeshadow" extra="true">
+			<autoFade>false</autoFade>
+			<pos>0.2 0.2</pos>
+			<origin>0.5 1</origin>
+			<maxSize>0.25 0.18</maxSize>
+			<padding>3 3 -3 -3</padding>
+			<color>000000</color>
+			<path>firstfile(
+                    "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png")</path>
+			<zIndex>80</zIndex>
+			<horizontalAlignment>left</horizontalAlignment>
+		</image>
 		<image name="logosysteme" extra="true">
 			<autoFade>false</autoFade>
 			<pos>0.2 0.2</pos>
@@ -246,10 +270,8 @@ Jugados : {binding:gamesPlayed}
 El más jugado : {binding:mostPlayed}
 Última partida : {binding:lastPlayedDate}</text>
 			<text lang="fr">
-Favoris : {binding:favorites}
-Jeux joués : {binding:gamesPlayed}
-Le plus joué : {binding:mostPlayed}
-Dernière partie : {binding:lastPlayedDate}</text>
+Favoris : {binding:favorites} - Jeux joués : {binding:gamesPlayed}
+Le plus joué : {binding:mostPlayed} - Dernière partie : {binding:lastPlayedDate}</text>
 			<text lang="el">
 Αγαπημένα : {binding:favorites}
 Παιχνίδια που παίχτηκαν : {binding:gamesPlayed}
@@ -365,5 +387,123 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 				<animation property="opacity" from="0" to="1" duration="" mode="easeOut"/>
 			</storyboard>
 		</text>
+				<!-- ########## Fil d arianne si menu officiel sélectionné ############# -->
+		<image name="arcade" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/arcade.png</path>
+			<origin>0 0	</origin>
+			<pos>0.005 0.2</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'arcade'">ffffff</color>
+		</image>
+		<image name="computer" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/ordi.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.242</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'computer'">ffffff</color>
+		</image>
+		<image name="console" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/console.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.284</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'console'">ffffff</color>
+		</image>
+		<image name="extension" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/extension.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.326</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'extension'">ffffff</color>
+		</image>
+		<image name="mess" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/mess.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.368</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'MESS'">ffffff</color>
+		</image>
+		<image name="pinball" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/pinball.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.4</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'pinball'">ffffff</color>
+		</image>
+		<image name="port" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/port.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.442</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'port'">ffffff</color>
+		</image>
+		<image name="portable" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/portable.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.484</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'portable'">ffffff</color>
+		</image>
+		<image name="system" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/system.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.526</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'system'">ffffff</color>
+		</image>
+		<image name="autocollection" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectionauto.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.568</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'auto collection'">ffffff</color>
+		</image>
+		<image name="customcollecion" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectioncust.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.6</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'custom collection'">ffffff</color>
+		</image>
+		<image name="retrobat" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/option.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.642</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == ''">ffffff</color>
+		</image>
+		<control name="arcade, computer, console, extension, mess, pinball, port, portable, system, autocollection, customcollecion, retrobat">
+			<offsetX>0.005</offsetX>
+			<offsetY>-0.05</offsetY>
+			<!-- <linearSmooth>true</linearSmooth> -->
+		</control>
 	</view>
 </theme>

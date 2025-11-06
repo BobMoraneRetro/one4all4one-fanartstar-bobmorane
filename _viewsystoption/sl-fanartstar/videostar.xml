@@ -1,0 +1,109 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<!-- mode de gestion 1 arriere plan puis premier plan		 -->
+		<!-- <image name="mask" extra="true"> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <path>${themePath}/_viewsyst/fanartstar/bgmask.png</path> -->
+		<!-- <size>1 1</size> -->
+		<!-- <pos>0.5 0.5</pos> -->
+		<!-- <zIndex>4</zIndex> -->
+		<!-- <opacity>1</opacity> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="zIndex" to="51" duration="" mode="linear" begin="2500"/> -->
+		<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- <image name="blablacksyt" extra="true"> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <pos>0.5 0.5</pos> -->
+		<!-- <path>${themePath}/_common/images/black.png</path> -->
+		<!-- <size>1 1</size> -->
+		<!-- <zIndex>2</zIndex> -->
+		<!-- <opacity>0</opacity> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="1200"/> -->
+		<!-- <animation property="zIndex" to="51" duration="" mode="linear" begin="2500"/> -->
+		<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- <video name="previewvidsys" extra="true"> -->
+		<!-- <default>${themePath}/_systemmedia/defaut/scotty.mp4</default> -->
+		<!-- <path>{system:random:video}</path> -->
+		<!-- <pos>0.5 0.5</pos> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <maxSize>1 1</maxSize> -->
+		<!-- <delay>1</delay> -->
+		<!-- <effect>none</effect> -->
+		<!-- <zIndex>2</zIndex> -->
+		<!-- <opacity>1</opacity> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="zIndex" to="51" duration="" mode="linear" begin="1500"/> -->
+		<!-- </storyboard> -->
+		<!-- </video> -->
+		<!-- <image name="scanlines" extra="true"> -->
+		<!-- <tile>true</tile> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <pos>0.5 0.5</pos> -->
+		<!-- <path>${themePath}/_common/shaders/scanlines01.png</path> -->
+		<!-- <maxSize>1 1</maxSize> -->
+		<!-- <zIndex>2</zIndex> -->
+		<!-- <opacity>0</opacity> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="1200"/> -->
+		<!-- <animation property="zIndex" to="51" duration="" mode="linear" begin="2500"/> -->
+		<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- <image name="bezel" extra="true"> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <path>${intbezelsyst}</path> -->
+		<!-- <maxSize>1 1</maxSize> -->
+		<!-- <pos>0.5 0.5</pos> -->
+		<!-- <linearSmooth>true</linearSmooth> -->
+		<!-- <zIndex>2</zIndex> -->
+		<!-- <opacity>0</opacity> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="1200"/> -->
+		<!-- <animation property="zIndex" to="51" duration="" mode="linear" begin="2500"/> -->
+		<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- mode de gestion 2 instant		 -->
+		<!-- Gestion des previews video -->
+		<!-- Mask de fond pour assombrir l'arriere plan -->
+		<image name="blablacksyt" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<path>${themePath}/_common/images/black.png</path>
+			<size>1 1</size>
+			<zIndex>3</zIndex>
+			<opacity>1</opacity>
+		</image>
+		<video name="backgroundvideo" extra="true">
+			<default>${themePath}/_systemmedia/defaut/scotty.mp4</default>
+			<path>{random}</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>1 1</maxSize>
+			<effect>none</effect>
+			<zIndex>4</zIndex>
+			<opacity>1</opacity>
+			<delay>0</delay>
+		</video>
+		<image name="scanlines" extra="true">
+			<tile>true</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<path>${themePath}/_common/shaders/scanlines01.png</path>
+			<maxSize>1 1</maxSize>
+			<zIndex>5</zIndex>
+			<opacity>1</opacity>
+		</image>
+		<image name="bezel" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>${intbezelsyst}</path>
+			<maxSize>1 1</maxSize>
+			<pos>0.5 0.5</pos>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>5</zIndex>
+			<opacity>1</opacity>
+		</image>
+	</view>
+</theme>

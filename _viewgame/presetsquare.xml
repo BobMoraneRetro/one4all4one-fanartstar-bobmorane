@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
+	<variables>
+		<standardsbuildsfanart>exists({game:fanart}) ? {game:fanart} : {game:thumbnail}</standardsbuildsfanart>
+		<freshbuildfanart>exists({game:image}) ? {game:image} : {game:thumbnail}</freshbuildfanart>
+		<standardsbuildsfanarttest>!exists({game:fanart})</standardsbuildsfanarttest>
+		<standardsbuildsfanarttestyes>exists({game:fanart})</standardsbuildsfanarttestyes>
+		<freshbuildfanarttest>!exists({game:image})</freshbuildfanarttest>
+		<freshbuildfanarttestyes>exists({game:image})</freshbuildfanarttestyes>
+	</variables>
 	<customView name="presetsquare" displayName="${presetsquare}" inherits="grid">
 		<control name="fanart_extra, defautfanartextra">
 			<visible>false</visible>
 		</control>
-		<!-- <video name="md_video"> -->
-		<!-- <visible>false</visible> -->
-		<!-- </video> -->
 		<imagegrid name="gamegrid">
 			<pos>0.02 0.75</pos>
 			<pos ifHelpPrompts="true">0.02 0.735</pos>
@@ -88,12 +93,6 @@
 						<zIndex ifSubset="squarecadre:ombre">1</zIndex>
 						<zIndex ifSubset="squarecadre:noirombre|blancombre">999</zIndex>
 					</image>
-					<!-- <image name="shadowlogo" pos="0.5" origin="0.55" maxSize="0.7" linearSmooth="true"> -->
-					<!-- <path>{game:marquee}</path> -->
-					<!-- <padding>3 3 -3 -3</padding> -->
-					<!-- <color>00000090</color> -->
-					<!-- <zIndex>5</zIndex> -->
-					<!-- </image> -->
 					<image name="logo" extra="true" pos="0.5" origin="0.55" maxSize="0.85" linearSmooth="true">
 						<path>{game:marquee}</path>
 						<zIndex>6</zIndex>
@@ -210,42 +209,6 @@
 			<linearSmooth>true</linearSmooth>
 			<zIndex>2</zIndex>
 		</image>
-		<!-- <image name="backfanart" extra="true"> -->
-		<!-- <visible ifSubset="custombuilds:standardbuilds">${standardsbuildsfanarttestyes}</visible> -->
-		<!-- <visible ifSubset="custombuilds:retrofreshbat">${freshbuildfanarttestyes}</visible> -->
-		<!-- <path ifSubset="custombuilds:standardbuilds">${standardsbuildsfanart}</path> -->
-		<!-- <path ifSubset="custombuilds:retrofreshbat">${freshbuildfanart}</path> -->
-		<!-- <autoFade>false</autoFade> -->
-		<!-- <pos>0.5 0.5</pos> -->
-		<!-- <size>0 1.02</size> -->
-		<!-- <origin>0.5 0.5</origin> -->
-		<!-- <zIndex>1</zIndex> -->
-		<!-- <clipRect>0 0 0.15 0</clipRect> -->
-		<!-- </image> -->
-		<!-- <screenshader name="blur2" extra="true"> -->
-		<!-- <path>:/shaders/blur.glsl</path> -->
-		<!-- <size>0.15 1</size> -->
-		<!-- <pos>0 0</pos> -->
-		<!-- <blur>10</blur> -->
-		<!-- <zIndex>3</zIndex> -->
-		<!-- <blurColor>000000</blurColor> -->
-		<!-- </screenshader> -->
-		<!-- <screenshader name="blur1" extra="true"> -->
-		<!-- <path>:/shaders/blur.glsl</path> -->
-		<!-- <size>0.18 1</size> -->
-		<!-- <pos>0 0</pos> -->
-		<!-- <blur>8</blur> -->
-		<!-- <zIndex>3</zIndex> -->
-		<!-- <blurColor>000000</blurColor> -->
-		<!-- </screenshader> -->
-		<!-- <screenshader name="blur" extra="true"> -->
-		<!-- <path>:/shaders/blur.glsl</path> -->
-		<!-- <size>0.2 1</size> -->
-		<!-- <pos>0 0</pos> -->
-		<!-- <blur>6</blur> -->
-		<!-- <zIndex>3</zIndex> -->
-		<!-- <blurColor>000000</blurColor> -->
-		<!-- </screenshader> -->
 		<image name="overlayarrete" extra="true">
 			<path>${themePath}/_viewgame/fanartstar/overlayarrete.png</path>
 			<size>1 1</size>
@@ -253,13 +216,6 @@
 			<origin>0.5 0.5</origin>
 			<zIndex>3</zIndex>
 		</image>
-		<!-- <image name="overlay" extra="true"> -->
-		<!-- <path>${themePath}/_viewgame/fanartstar/overlay.png</path> -->
-		<!-- <size>1 1</size> -->
-		<!-- <pos>0.5 0.5</pos> -->
-		<!-- <origin>0.5 0.5</origin> -->
-		<!-- <zIndex>3</zIndex> -->
-		<!-- </image> -->
 		<video name="md_video">
 			<pos>0.049 0.44</pos>
 			<maxSize>0.35 0.35</maxSize>
@@ -284,8 +240,14 @@
 			<autoFade>false</autoFade>
 			<origin>0.5 0.5</origin>
 			<pos>0.942 0.052</pos>
-			<path>firstfile("${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
-			"${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path>
+			<!-- <path>firstfile("${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png", -->
+			<!-- "${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path> -->
+			<path>firstfile(
+                    "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + ({game:system:theme}) + "-${lang}.png",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + ({game:system:theme}) + "-" + {game:region} +".png",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + ({game:system:theme}) + ".png",
+					"${themePath}/../es-theme-carbon//art/logos/" + ({game:system:theme}) + ".png",
+					"${themePath}/../es-theme-carbon//art/logos/" + ({game:system:theme}) + ".svg")</path>
 			<maxSize>0.1 0.1</maxSize>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>91</zIndex>
@@ -295,8 +257,14 @@
 			<autoFade>false</autoFade>
 			<origin>0.5 0.5</origin>
 			<pos>0.94 0.05</pos>
-			<path>firstfile("${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
-			"${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path>
+			<!-- <path>firstfile("${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png", -->
+			<!-- "${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path> -->
+			<path>firstfile(
+                    "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + ({game:system:theme}) + "-${lang}.png",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + ({game:system:theme}) + "-" + {game:region} +".png",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + ({game:system:theme}) + ".png",
+					"${themePath}/../es-theme-carbon//art/logos/" + ({game:system:theme}) + ".png",
+					"${themePath}/../es-theme-carbon//art/logos/" + ({game:system:theme}) + ".svg")</path>
 			<maxSize>0.1 0.1</maxSize>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>91</zIndex>
@@ -351,40 +319,6 @@
 			<lineSpacing>1.1</lineSpacing>
 			<opacity>0.8</opacity>
 		</text>
-		<image name="playblack" extra="true">
-			<tile>false</tile>
-			<origin>0.5 0.5</origin>
-			<pos>0.085 0.72</pos>
-			<maxSize>0.085 0.085</maxSize>
-			<zIndex>305</zIndex>
-			<linearSmooth>true</linearSmooth>
-			<horizontalAlignment>left</horizontalAlignment>
-			<path>${themePath}/_viewgame/fanartstar/Bvierge.png</path>
-		</image>
-		<text name="binds_playcount" extra="true">
-			<visible>{game:playcount} &gt; 0 ? 1 : 0</visible>
-			<color>FFFFFF</color>
-			<text>{game:playcount} ${playcount}</text>
-			<origin>0.5 0.5</origin>
-			<pos>0.085 0.7185</pos>
-			<size>0.08 0.035</size>
-			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
-			<alignment>center</alignment>
-			<fontSize>0.020</fontSize>
-			<zIndex>305</zIndex>
-		</text>
-		<text name="binds_noplaycount" extra="true">
-			<visible>{game:playcount} &gt; 0 ? 0 : 1</visible>
-			<color>FFFFFF</color>
-			<text>${nogametime}</text>
-			<origin>0.5 0.5</origin>
-			<pos>0.085 0.7185</pos>
-			<size>0.08 0.035</size>
-			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
-			<alignment>center</alignment>
-			<fontSize>0.020</fontSize>
-			<zIndex>305</zIndex>
-		</text>
 		<image name="dateblack" extra="true">
 			<tile>false</tile>
 			<origin>0.5 0.5</origin>
@@ -431,7 +365,7 @@
 			<horizontalAlignment>left</horizontalAlignment>
 			<path>${themePath}/_viewgame/fanartstar/Bvierge.png</path>
 		</image>
-		<!-- Début Nombre de joueurs avec prise en compte singulier et pluriel -->
+		<!-- Début Nombre de joueurs et de partie avec prise en compte singulier et pluriel -->
 		<text name="binds_players" extra="true">
 			<visible>{game:players} &gt; 1 ? 1 : 0</visible>
 			<visible>{game:players} == 1 ? 0 : 1 &amp;&amp; {game:players} &lt; 1 ? 0 : 1 </visible>
@@ -470,7 +404,53 @@
 			<fontSize>0.020</fontSize>
 			<zIndex>305</zIndex>
 		</text>
-		<!-- Fin Nombre de joueurs avec prise en compte singulier et pluriel -->
+		<image name="playblack" extra="true">
+			<tile>false</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.085 0.72</pos>
+			<maxSize>0.085 0.085</maxSize>
+			<zIndex>305</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<horizontalAlignment>left</horizontalAlignment>
+			<path>${themePath}/_viewgame/fanartstar/Bvierge.png</path>
+		</image>
+		<text name="binds_playcount_one" extra="true">
+			<visible>{game:playcount} == 1 ? 1 : 0</visible>
+			<color>FFFFFF</color>
+			<text>{game:playcount} ${playcountone}</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.085 0.7185</pos>
+			<size>0.08 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>305</zIndex>
+		</text>
+		<text name="binds_playcount" extra="true">
+			<visible>{game:playcount} &gt; 1 ? 1 : 0</visible>
+			<color>FFFFFF</color>
+			<text>{game:playcount} ${playcount}</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.085 0.7185</pos>
+			<size>0.08 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>305</zIndex>
+		</text>
+		<text name="binds_noplaycount" extra="true">
+			<visible>{game:playcount} &gt; 0 ? 0 : 1</visible>
+			<color>FFFFFF</color>
+			<text>${nogametime}</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.085 0.7185</pos>
+			<size>0.08 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>305</zIndex>
+		</text>
+		<!-- Début Nombre de joueurs et de partie avec prise en compte singulier et pluriel -->
 		<image name="notation" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.31 0.72</pos>
@@ -505,21 +485,11 @@
 			<zIndex>205</zIndex>
 			<opacity>0.7</opacity>
 		</control>
-		<control name="binds_player_one,binds_players,binds_noplayers,binds_releasedate,binds_noreleasedate,binds_playcount,binds_noplaycount,binds_rating,binds_norating">
+		<control name="binds_player_one,binds_players,binds_noplayers,binds_releasedate,binds_noreleasedate,binds_playcount,binds_playcount_one,binds_noplaycount,binds_rating,binds_norating">
 			<color>FFFFFF</color>
 			<opacity>0.5</opacity>
 		</control>
-		<!-- <image name="star" extra="true"> -->
-		<!-- <origin>0.5 0.5</origin> -->
-		<!-- <pos>0.31 0.72</pos> -->
-		<!-- <maxSize>0.085 0.085</maxSize> -->
-		<!-- <zIndex>305</zIndex> -->
-		<!-- <linearSmooth>true</linearSmooth> -->
-		<!-- <horizontalAlignment>left</horizontalAlignment> -->
-		<!-- <unfilledPath>:/star_filled.svg</unfilledPath> -->
-		<!-- </image> -->
-
-<!-- Début petit menu playlist avec 2 playlist prises en compte niquement -->
+		<!-- Début petit menu playlist avec 2 playlist prises en compte niquement -->
 		<text name="longpress" extra="true">
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<text>Appuie long sur "select"</text>
@@ -626,7 +596,6 @@
 				<animation property="opacity" to="0" begin="3000" duration="1500" mode="linear" autoreverse="" repeat=""/>
 			</storyboard>
 		</control>
-<!-- Fin petit menu playlist avec 2 playlist prises en compte niquement -->
-
+		<!-- Fin petit menu playlist avec 2 playlist prises en compte niquement -->
 	</customView>
 </theme>
