@@ -21,11 +21,11 @@
 	<include>${themePath}/_ViewGame/presetstar43.xml</include>
 	<include>${themePath}/_ViewGame/presetstarbox.xml</include>
 	<!-- <include>${themePath}/_viewgame/PresetLaunchbox.xml</include> -->
-	<!-- <include>${themePath}/_viewgame/presetshowbig.xml</include> -->
-	<!-- <include>${themePath}/_viewGame/presetshowsmall.xml</include> -->
+	<include>${themePath}/_viewgame/presetshowbig.xml</include>
+	<include>${themePath}/_viewGame/presetshowsmall.xml</include>
 	<!-- <include>${themePath}/_ViewGame/presetaura.xml</include> -->
-	<!-- <include>${themePath}/_viewgame/presetspeedbull.xml</include> -->
-	<!-- <include>${themePath}/_viewgame/presettraviolta_alt.xml</include> -->
+	<include>${themePath}/_viewgame/presetspeedbull.xml</include>
+	<include>${themePath}/_viewgame/presettraviolta_alt.xml</include>
 	<!-- <include>${themePath}/_viewgame/presetnesicaxlive1.xml</include> -->
 	<!-- <include>${themePath}/_viewgame/presetnesicademomode.xml</include> -->
 	<!-- <include>${themePath}/_viewgame/presetnesicaxlive2.xml</include> -->
