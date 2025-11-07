@@ -144,7 +144,8 @@
 						</shader>
 					</image>
 					<image name="nothumb">
-						<visible>!exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<visible ifSubset="starthumb:starbox2d">!exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<visible ifSubset="starthumb:starbox3d">!exists({game:boxart}) &amp;&amp; !exists(${core3dart})</visible>
 						<pos>0.5 0.6</pos>
 						<origin>0.5</origin>
 						<rotation>0</rotation>
@@ -195,13 +196,14 @@
 						</storyboard>
 					</image>
 					<image name="nothumbmarq">
-						<visible>!exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<visible ifSubset="starthumb:starbox2d">!exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<visible ifSubset="starthumb:starbox3d">!exists({game:boxart}) &amp;&amp; !exists(${core3dart})</visible>
 						<pos>0.5 0.55</pos>
 						<origin>0.5</origin>
 						<rotation>0</rotation>
 						<maxSize>0.33 1</maxSize>
 						<path>{game:marquee}</path>
-						<path if="{system.theme} == 'switch'">${extgameartpng}</path>
+						<!-- <path if="{system.theme} == 'switch'">${extgameartpng}</path> -->
 						<shader>
 							<path>:/shaders/border.glsl</path>
 							<cornerRadius>0.03</cornerRadius>
@@ -234,7 +236,8 @@
 						</storyboard>
 					</image>
 					<text name="gamename" if="{system.theme} == 'switch'">
-						<visible>!exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<visible ifSubset="starthumb:starbox2d">!exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<visible ifSubset="starthumb:starbox3d">!exists({game:boxart}) &amp;&amp; !exists(${core3dart})</visible>
 						<origin>0.5</origin>
 						<text>{game:name}</text>
 						<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
@@ -269,7 +272,8 @@
 						</storyboard>
 					</text>
 					<text name="gamename" if="{system.theme} != 'switch'">
-						<visible>!exists({game:marquee}) &amp;&amp; !exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<visible ifSubset="starthumb:starbox2d">!exists({game:marquee}) &amp;&amp; !exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<visible ifSubset="starthumb:starbox3d">!exists({game:marquee}) &amp;&amp; !exists({game:boxart}) &amp;&amp; !exists(${core3dart})</visible>
 						<origin>0.5</origin>
 						<text>{game:name}</text>
 						<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
