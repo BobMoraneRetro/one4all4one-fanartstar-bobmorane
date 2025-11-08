@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<theme defaultView="coinops">
+<theme defaultView="presetstarbox">
 	<!-- <theme> -->
 	<formatVersion>7</formatVersion>
 	<variables>
@@ -168,6 +168,10 @@
 	<subset name="video4starmodern" ifSubset="systemview:fanartmodern|fanartmodern2" displayName="${video4starmodern}">
 		<include name="novideo" displayName="${novideo}"/>
 		<include name="videoback" displayName="${videoback}">${themePath}/_viewsystoption/sl-fanartstar/videostar.xml</include>
+	</subset>
+	<subset name="video4starclassic" ifSubset="systemview:fanartstarsyst" displayName="${video4starclassic}">
+		<include name="novideo" displayName="${novideo}"/>
+		<include name="videoback" displayName="${videoback}"/>
 	</subset>
 	<!-- Choix des types de présentation des systèmes -->
 	<include>${themePath}/_systemmedia/videosyst/hyperspin/_hyperspin.xml</include>

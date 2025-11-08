@@ -71,20 +71,6 @@ license: creative commons CC-BY-NC-SA
 						<padding>3 3 -3 -3</padding>
 						<color>000000</color>
 						<zIndex>6</zIndex>
-						<storyboard event="open">
-							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
-						</storyboard>
-						<storyboard event="activate">
-							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
-							<!-- <animation property="y" to="0.65" begin="" duration="350" mode="bump"/> -->
-						</storyboard>
-						<storyboard event="deactivate">
-							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
-							<!-- <animation property="rotation" to="0" begin="" duration="150" mode="Linear"/> -->
-						</storyboard>
-						<storyboard event="scroll">
-							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
-						</storyboard>
 					</image>
 					<image name="logo" extra="true" pos="0.5 0.9" origin="0.5" maxSize="0.2" linearSmooth="true">
 						<path>firstfile(
@@ -97,17 +83,12 @@ license: creative commons CC-BY-NC-SA
 						</storyboard>
 						<storyboard event="activate">
 							<animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/>
-							<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
-							<!-- <animation property="y" to="0.65" begin="" duration="350" mode="bump"/> -->
 						</storyboard>
 						<storyboard event="deactivate">
 							<animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/>
-							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
-							<!-- <animation property="rotation" to="0" begin="" duration="150" mode="Linear"/> -->
 						</storyboard>
 						<storyboard event="scroll">
 							<animation property="color" to="858585ff" begin="" duration="" mode="Linear"/>
-							<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
 						</storyboard>
 					</image>
 				</container>
@@ -127,7 +108,10 @@ license: creative commons CC-BY-NC-SA
 			<origin>0.5 1</origin>
 			<zIndex>3</zIndex>
 		</image>
-		<video name="backgroundvideo" extra="true">
+		<video name="gameplayvideostar" extra="true">
+			
+			<visible ifSubset="video4starclassic:videoback">true</visible>
+			<visible ifSubset="video4starclassic:novideo">false</visible>
 			<default>${themePath}/_systemmedia/defaut/scotty.mp4</default>
 			<path>{random}</path>
 			<pos>0.053 0.63</pos>
@@ -138,6 +122,7 @@ license: creative commons CC-BY-NC-SA
 			<opacity>1</opacity>
 			<delay>0.3</delay>
 		</video>
+
 		<!-- ################################### Metadata et autres infos textuelles #############################################################################		 -->
 		<image name="logosystemeshadow" extra="true">
 			<autoFade>false</autoFade>
@@ -171,8 +156,9 @@ license: creative commons CC-BY-NC-SA
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<color>ffffffff</color>
 			<pos>0.0525 0.305</pos>
-			<size>0.35 0.14</size>
+			<size>0.35 0.1</size>
 			<alignment>left</alignment>
+			<verticalAlignment>top</verticalAlignment>
 			<fontSize>0.022</fontSize>
 			<singleLineScroll>false</singleLineScroll>
 			<glowColor>00000040</glowColor>
@@ -391,7 +377,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 				<animation property="opacity" from="0" to="1" duration="" mode="easeOut"/>
 			</storyboard>
 		</text>
-				<!-- ########## Fil d arianne si menu officiel sélectionné ############# -->
+		<!-- ########## Fil d arianne si menu officiel sélectionné ############# -->
 		<image name="arcade" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/arcade.png</path>
 			<origin>0 0	</origin>

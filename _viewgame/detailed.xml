@@ -14,6 +14,99 @@
 		<image name="md_image">
 			<visible>false</visible>
 		</image>
+		<textlist name="gamelist">
+			<pos>0.025 0.6</pos>
+			<size>0.55 0.35</size>
+			<lines>17</lines>
+			<horizontalMargin>0.005</horizontalMargin>
+			<scrollbarColor>96969620</scrollbarColor>
+			<scrollbarCorner>0.49</scrollbarCorner>
+			<scrollbarSize>0.0065</scrollbarSize>
+			<scrollbarAlignment>outerright</scrollbarAlignment>
+			<itemTemplate>
+				<image name="selectionBackground">
+					<path>${themePath}/_viewgame/detailed/white.png</path>
+					<color>transparent</color>
+					<roundCorners>8</roundCorners>
+					<storyboard event="activate">
+						<animation property="color" to="660d06"/>
+					</storyboard>
+					<storyboard event="deactivate">
+						<animation property="color" to="transparent"/>
+					</storyboard>
+					<container>
+						<padding>6 0</padding>
+						<text name="nameId" pos="0 0" size="1 1">
+							<text>{grid:label}</text>
+							<size>0.48 1</size>
+							<extraTextColor>606060</extraTextColor>
+							<verticalAlignment>center</verticalAlignment>
+							<fontPath>${themePath}/_viewgame/detailed/Cabin-Regular.ttf</fontPath>
+							<multiLine>false</multiLine>
+							<autoScrollDelay>250</autoScrollDelay>
+							<fontSize>0.020</fontSize>
+							<color>C0C0C0</color>
+							<storyboard event="activate">
+								<animation property="color" to="FFFFFFFF"/>
+								<animation property="singleLineScroll" to="true"/>
+							</storyboard>
+							<storyboard event="deactivate">
+								<animation property="color" to="C0C0C0"/>
+								<animation property="singleLineScroll" to="false"/>
+							</storyboard>
+						</text>
+						<text name="genreId" pos="0.5 0" size="0.2 1">
+							<text>{game:genre}</text>
+							<verticalAlignment>center</verticalAlignment>
+							<alignment>left</alignment>
+							<fontPath>${themePath}/_viewgame/detailed/Cabin-Regular.ttf</fontPath>
+							<fontSize>0.016</fontSize>
+							<color>A0A0A0</color>
+							<multiLine>false</multiLine>
+							<autoScrollDelay>250</autoScrollDelay>
+							<storyboard event="activate">
+								<animation property="singleLineScroll" to="true"/>
+							</storyboard>
+							<storyboard event="deactivate">
+								<animation property="singleLineScroll" to="false"/>
+							</storyboard>
+						</text>
+						<text name="publisherId" pos="0.7 0" size="0.2 1">
+							<text>{game:publisher}</text>
+							<verticalAlignment>center</verticalAlignment>
+							<alignment>left</alignment>
+							<fontPath>${themePath}/_viewgame/detailed/Cabin-Regular.ttf</fontPath>
+							<fontSize>0.016</fontSize>
+							<color>A0A0A0</color>
+							<multiLine>false</multiLine>
+							<autoScrollDelay>250</autoScrollDelay>
+							<storyboard event="activate">
+								<animation property="singleLineScroll" to="true"/>
+							</storyboard>
+							<storyboard event="deactivate">
+								<animation property="singleLineScroll" to="false"/>
+							</storyboard>
+						</text>
+						<text name="releasedateId" pos="0.9 0" size="0.1 1">
+							<text>{game:stars}</text>
+							<verticalAlignment>center</verticalAlignment>
+							<alignment>left</alignment>
+							<fontPath>${themePath}/_viewgame/detailed/Cabin-Regular.ttf</fontPath>
+							<fontSize>0.016</fontSize>
+							<color>FFCC00D0</color>
+							<multiLine>false</multiLine>
+							<autoScrollDelay>250</autoScrollDelay>
+							<storyboard event="activate">
+								<animation property="singleLineScroll" to="true"/>
+							</storyboard>
+							<storyboard event="deactivate">
+								<animation property="singleLineScroll" to="false"/>
+							</storyboard>
+						</text>
+					</container>
+				</image>
+			</itemTemplate>
+		</textlist>
 		<image name="fanartPresetback" if="{system.theme} == 'windows' 
 			|| {system.theme} == 'switch'" extra="true">
 			<visible ifSubset="custombuilds:standardbuilds">exists({game:fanart})</visible>
@@ -130,99 +223,6 @@
 			<color>C0C0C0</color>
 			<fontPath>${themePath}/_viewgame/detailed/Cabin-Regular.ttf</fontPath>
 		</text>
-		<textlist name="gamelist">
-			<pos>0.025 0.6</pos>
-			<size>0.55 0.35</size>
-			<lines>17</lines>
-			<horizontalMargin>0.005</horizontalMargin>
-			<scrollbarColor>96969620</scrollbarColor>
-			<scrollbarCorner>0.49</scrollbarCorner>
-			<scrollbarSize>0.0065</scrollbarSize>
-			<scrollbarAlignment>outerright</scrollbarAlignment>
-			<itemTemplate>
-				<image name="selectionBackground">
-					<path>${themePath}/_viewgame/detailed/white.png</path>
-					<color>transparent</color>
-					<roundCorners>8</roundCorners>
-					<storyboard event="activate">
-						<animation property="color" to="660d06"/>
-					</storyboard>
-					<storyboard event="deactivate">
-						<animation property="color" to="transparent"/>
-					</storyboard>
-					<container>
-						<padding>6 0</padding>
-						<text name="nameId" pos="0 0" size="1 1">
-							<text>{grid:label}</text>
-							<size>0.48 1</size>
-							<extraTextColor>606060</extraTextColor>
-							<verticalAlignment>center</verticalAlignment>
-							<fontPath>${themePath}/_viewgame/detailed/Cabin-Regular.ttf</fontPath>
-							<multiLine>false</multiLine>
-							<autoScrollDelay>250</autoScrollDelay>
-							<fontSize>0.020</fontSize>
-							<color>C0C0C0</color>
-							<storyboard event="activate">
-								<animation property="color" to="FFFFFFFF"/>
-								<animation property="singleLineScroll" to="true"/>
-							</storyboard>
-							<storyboard event="deactivate">
-								<animation property="color" to="C0C0C0"/>
-								<animation property="singleLineScroll" to="false"/>
-							</storyboard>
-						</text>
-						<text name="genreId" pos="0.5 0" size="0.2 1">
-							<text>{game:genre}</text>
-							<verticalAlignment>center</verticalAlignment>
-							<alignment>left</alignment>
-							<fontPath>${themePath}/_viewgame/detailed/Cabin-Regular.ttf</fontPath>
-							<fontSize>0.016</fontSize>
-							<color>A0A0A0</color>
-							<multiLine>false</multiLine>
-							<autoScrollDelay>250</autoScrollDelay>
-							<storyboard event="activate">
-								<animation property="singleLineScroll" to="true"/>
-							</storyboard>
-							<storyboard event="deactivate">
-								<animation property="singleLineScroll" to="false"/>
-							</storyboard>
-						</text>
-						<text name="publisherId" pos="0.7 0" size="0.2 1">
-							<text>{game:publisher}</text>
-							<verticalAlignment>center</verticalAlignment>
-							<alignment>left</alignment>
-							<fontPath>${themePath}/_viewgame/detailed/Cabin-Regular.ttf</fontPath>
-							<fontSize>0.016</fontSize>
-							<color>A0A0A0</color>
-							<multiLine>false</multiLine>
-							<autoScrollDelay>250</autoScrollDelay>
-							<storyboard event="activate">
-								<animation property="singleLineScroll" to="true"/>
-							</storyboard>
-							<storyboard event="deactivate">
-								<animation property="singleLineScroll" to="false"/>
-							</storyboard>
-						</text>
-						<text name="releasedateId" pos="0.9 0" size="0.1 1">
-							<text>{game:stars}</text>
-							<verticalAlignment>center</verticalAlignment>
-							<alignment>left</alignment>
-							<fontPath>${themePath}/_viewgame/detailed/Cabin-Regular.ttf</fontPath>
-							<fontSize>0.016</fontSize>
-							<color>FFCC00D0</color>
-							<multiLine>false</multiLine>
-							<autoScrollDelay>250</autoScrollDelay>
-							<storyboard event="activate">
-								<animation property="singleLineScroll" to="true"/>
-							</storyboard>
-							<storyboard event="deactivate">
-								<animation property="singleLineScroll" to="false"/>
-							</storyboard>
-						</text>
-					</container>
-				</image>
-			</itemTemplate>
-		</textlist>
 		<video name="PreviewVid" extra="true">
 			<path>{game:video}</path>
 			<delay>0.3</delay>
