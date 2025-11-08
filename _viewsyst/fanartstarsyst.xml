@@ -109,7 +109,6 @@ license: creative commons CC-BY-NC-SA
 			<zIndex>3</zIndex>
 		</image>
 		<video name="gameplayvideostar" extra="true">
-			
 			<visible ifSubset="video4starclassic:videoback">true</visible>
 			<visible ifSubset="video4starclassic:novideo">false</visible>
 			<default>${themePath}/_systemmedia/defaut/scotty.mp4</default>
@@ -122,7 +121,6 @@ license: creative commons CC-BY-NC-SA
 			<opacity>1</opacity>
 			<delay>0.3</delay>
 		</video>
-
 		<!-- ################################### Metadata et autres infos textuelles #############################################################################		 -->
 		<image name="logosystemeshadow" extra="true">
 			<autoFade>false</autoFade>

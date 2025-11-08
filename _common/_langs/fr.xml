@@ -442,7 +442,8 @@
 		<video4starmodern>Video de gameplay sur la vue système</video4starmodern>
 		<video4starclassic>Video de gameplay sur la vue système</video4starclassic>
 		<novideo>Désactivé</novideo>
-		<videoback>Activé</videoback>
+		<videoback>Activé (fond en plein écran)</videoback>
+		<videoangled>Activé (petite en angle)</videoangled>
 		<systviewselec>Image du système dans la wheel</systviewselec>
 		<hardware>Hardware</hardware>
 		<charsystem>Personnages</charsystem>

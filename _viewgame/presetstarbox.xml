@@ -340,7 +340,7 @@
 			<pos>0.5 0.5</pos>
 			<size>0 1</size>
 			<origin>0.5 0.5</origin>
-			<linearSmooth>true</linearSmooth>
+			<!-- <linearSmooth>true</linearSmooth> -->
 			<zIndex>1</zIndex>
 		</image>
 		<screenshader name="blurback" extra="true">

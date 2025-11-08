@@ -166,6 +166,7 @@
 		<include name="fanartcustom" displayName="${fanartsystcustom}">${themePath}/_viewsystoption/sl-commun/fanartsyst.xml</include>
 	</subset>
 	<subset name="video4starmodern" ifSubset="systemview:fanartmodern|fanartmodern2" displayName="${video4starmodern}">
+		<include name="videoangled" displayName="${videoangled}"/>
 		<include name="novideo" displayName="${novideo}"/>
 		<include name="videoback" displayName="${videoback}">${themePath}/_viewsystoption/sl-fanartstar/videostar.xml</include>
 	</subset>
