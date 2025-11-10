@@ -114,9 +114,6 @@
 			<autoFade>false</autoFade>
 			<path ifSubset="custombuilds:standardbuilds">${standardsbuildsfanart}</path>
 			<path ifSubset="custombuilds:retrofreshbat">${freshbuildfanart}</path>
-			<gradientType>horizontal</gradientType>
-			<linearSmooth>true</linearSmooth>
-			<zIndex>4</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
@@ -143,7 +140,6 @@
 			<path>${intfanartfresh}</path>
 			<opacity>0.5</opacity>
 			<saturation>0</saturation>
-			<gradientType>horizontal</gradientType>
 			<linearSmooth>true</linearSmooth>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
@@ -159,7 +155,6 @@
 			<path ifSubset="custombuilds:standardbuilds">{game:fanart}</path>
 			<path ifSubset="custombuilds:retrofreshbat">{game:image}</path>
 			<autoFade>false</autoFade>
-			<gradientType>horizontal</gradientType>
 			<linearSmooth>true</linearSmooth>
 			<pos>0.5 0.5</pos>
 			<pos if="{system.theme} == 'windows' 

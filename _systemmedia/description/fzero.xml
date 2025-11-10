@@ -1,9 +1,9 @@
-<theme>
+ï»¿<theme>
 	<formatVersion>4</formatVersion>
 
 	<view name="system">
 		<text name="info1" extra="true">
-			<text>F-Zero is a series of futuristic racing video games originally created by Nintendo EAD with multiple games developed by outside companies. The first game was released for the Super Famicom in Japan in 1990, and along with North America’s Super Nintendo Entertainment System in 1991; its success prompted Nintendo to create multiple sequels on subsequent gaming consoles.</text>
+			<text>F-Zero is a series of futuristic racing video games originally created by Nintendo EAD with multiple games developed by outside companies. The first game was released for the Super Famicom in Japan in 1990, and along with North Americaï¿½s Super Nintendo Entertainment System in 1991; its success prompted Nintendo to create multiple sequels on subsequent gaming consoles.</text>
 		</text>
 
 		
@@ -26,20 +26,4 @@
 
 				
 	</view>
-
-		<customView name="HCoinSpin">
-      <image name="art3" extra="true">
-         <path>./../assets/coinops/default.png</path>
-         <zIndex>7</zIndex>
-      </image>
-	</customView>
-
-
-	<customView name="CoinOps Details">
-      <image name="art3" extra="true">
-         <path>./../assets/coinops/default.png</path>
-         <zIndex>7</zIndex>
-      </image>
-	</customView>
-
 </theme>

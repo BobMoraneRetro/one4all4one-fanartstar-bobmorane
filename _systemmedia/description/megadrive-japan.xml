@@ -1,4 +1,4 @@
-<theme>
+﻿<theme>
 	<formatVersion>4</formatVersion>
 
 	<view name="system">
@@ -138,21 +138,4 @@
          <zIndex>5</zIndex>
       </image>
 	   </customView>
-
-	   	<customView name="HCoinSpin">
-      <image name="art3" extra="true">
-         <path>./../assets/coinops/megadrive.png</path>
-         <zIndex>7</zIndex>
-      </image>
-	</customView>
-
-
-	<customView name="CoinOps Details">
-      <image name="art3" extra="true">
-         <path>./../assets/coinops/megadrive.png</path>
-         <zIndex>7</zIndex>
-      </image>
-	</customView>
-
-
 </theme>

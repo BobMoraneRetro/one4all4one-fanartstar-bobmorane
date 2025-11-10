@@ -1,4 +1,4 @@
-<theme>
+﻿<theme>
 	<formatVersion>4</formatVersion>
 
 	<view name="system">
@@ -58,19 +58,4 @@
 			<text>ENTWICKLER:</text>
 		</text>
 	</view>
-
-	<customView name="HCoinSpin">
-      <image name="art3" extra="true">
-         <path>./../assets/coinops/neogeo.png</path>
-         <zIndex>7</zIndex>
-      </image>
-	</customView>
-
-
-	<customView name="CoinOps Details">
-      <image name="art3" extra="true">
-         <path>./../assets/coinops/neogeo.png</path>
-         <zIndex>7</zIndex>
-      </image>
-	</customView>
 </theme>

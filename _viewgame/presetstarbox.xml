@@ -38,6 +38,7 @@
 						<path ifSubset="starthumb:starbox2d">firstfile(${corefrontart},{game:thumbnail})</path>
 						<storyboard ifSubset="starboxang:deactive" event="activate">
 							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<!-- <animation property="x" from="0.5" to="0.75" begin="" duration="450"/> -->
 						</storyboard>
 						<storyboard ifSubset="starboxang:deactive" event="deactivate">
 							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>

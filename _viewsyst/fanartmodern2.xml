@@ -10,9 +10,8 @@ license: creative commons CC-BY-NC-SA
 	<variables>
 		<firstsystfanart>firstfile("${themePath}/_systemmedia/_fanartsysteme/fresh/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/custom/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/default.png")</firstsystfanart>
 		<firstsystemimage>firstfile("${themePath}/_systemmedia/_fanartsysteme/custom/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/fresh/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/default.png")</firstsystemimage>
-		<firstsystemhardaware>firstfile("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png","${themePath}/_systemmedia/_fanartsysteme/default.png")</firstsystemhardaware>
+		<firstsystemhardware>firstfile("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png","${themePath}/_systemmedia/_fanartsysteme/default.png")</firstsystemhardware>
 		<!-- <bobmediapath>${themePath}</bobmediapath> -->
-		<!-- <intbezelsyst>("${themePath}/_systemmedia/bezelsyst/" + ({system:theme}) + ".png")</intbezelsyst> -->
 	</variables>
 	<include>${themePath}/_systemmedia/description/${system.theme}.xml</include>
 	<view name="system">
@@ -103,10 +102,10 @@ license: creative commons CC-BY-NC-SA
 					<image name="cadre">
 						<path>${themePath}/_viewsyst/fanartstar/cadre_m2.png</path>
 						<origin>0.5</origin>
-						<pos>0.51 0.5</pos>
-						<!-- modern 2 pertit -->
+						<!-- <pos>0.51 0.5</pos> -->
+						<!-- <size>1.18 1.42</size> -->
+						<!-- modern 2 petit -->
 						<pos>0.5 0.5</pos>
-						<size>1.18 1.42</size>
 						<!-- modern 2 petit -->
 						<size>1.16 1.42</size>
 						<zIndex>7</zIndex>
@@ -194,9 +193,9 @@ license: creative commons CC-BY-NC-SA
 <!-- ### Screens et gameplay video angle de 30 degrés ################################################################################################# -->
 		<image name="randomgamecadre" ifSubset="video4starmodern:videoangled"  extra="true">
 			<path>${themePath}/_viewgame/fanartstar/169alt1.png</path>
-			<pos>0.995 0.35</pos>
+			<!--<pos>0.995 0.35</pos> -->
+			<!-- <size>0.38 0.488</size> -->
 			<pos>1 0.35</pos>
-			<size>0.38 0.488</size>
 			<size>0.39 0.505</size>
 			<origin>1 0.5</origin>
 			<effect>none</effect>
@@ -309,8 +308,8 @@ license: creative commons CC-BY-NC-SA
 			<fontSize>0.040</fontSize>
 			<pos>0.0515 0.17</pos>
 			<size>0.942 0.28</size>
-			<color>C0C0C0</color>
 			<zIndex>100</zIndex>
+			<!-- <color>C0C0C0</color> -->
 			<color>D0D0D0FF</color>
 			<glowColor>00000080</glowColor>
 			<glowSize>1</glowSize>
@@ -322,7 +321,6 @@ license: creative commons CC-BY-NC-SA
 			<fontPath>${themePath}/_viewsyst/fanartstar/fonts/TitilliumWeb-Light.ttf</fontPath>
 			<fontSize>0.024</fontSize>
 			<pos>0.0515 0.2</pos>
-			<pos verticalScreen="true">0.03 0.10</pos>
 			<size>0.94 0.28</size>
 			<zIndex>100</zIndex>
 			<color>D0D0D0FF</color>
@@ -409,10 +407,6 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
 			<fontSize>0.015</fontSize>
-			<lineSpacing>1.3</lineSpacing>
-			<glowColor>00000040</glowColor>
-			<glowOffset>0.8</glowOffset>
-			<glowSize>2</glowSize>
 			<zIndex>150</zIndex>
 			<singleLineScroll>false</singleLineScroll>
 			<glowColor>00000040</glowColor>
@@ -428,17 +422,12 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
 			<fontSize>0.035</fontSize>
-			<lineSpacing>1.3</lineSpacing>
-			<glowColor>00000040</glowColor>
-			<glowOffset>0.8</glowOffset>
-			<glowSize>2</glowSize>
 			<zIndex>150</zIndex>
 			<singleLineScroll>false</singleLineScroll>
 			<glowColor>00000040</glowColor>
 			<glowOffset>0.8</glowOffset>
 			<glowSize>2</glowSize>
 			<lineSpacing>1.2</lineSpacing>
-			<fontPath>${themePath}/_viewsyst/fanartstar/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
 		</text>
 		<!-- <image name="test" extra="true"> -->
 		<!-- <path>${themePath}/_viewsyst/fanartstar/cadre_m2.png</path> -->
@@ -461,7 +450,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 		</image>
 		<image name="arcade" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/arcade.png</path>
-			<origin>0 0	</origin>
+			<origin>0 0</origin>
 			<pos>0.005 0.2</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
@@ -553,7 +542,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'auto collection'">ffffff</color>
 		</image>
-		<image name="customcollecion" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="customcollection" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectioncust.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.6</pos>
@@ -571,10 +560,9 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == ''">ffffff</color>
 		</image>
-		<control name="arcade, computer, console, extension, mess, pinball, port, portable, system, autocollection, customcollecion, retrobat">
+		<control name="arcade, computer, console, extension, mess, pinball, port, portable, system, autocollection, customcollection, retrobat">
 			<offsetX>0.005</offsetX>
 			<offsetY>-0.15</offsetY>
-			<linearSmooth>true</linearSmooth>
 		</control>
 	</view>
 </theme>

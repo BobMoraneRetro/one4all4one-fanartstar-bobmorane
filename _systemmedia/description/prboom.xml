@@ -1,4 +1,4 @@
-<theme>
+﻿<theme>
 	<formatVersion>4</formatVersion>
 
 	<view name="system">
@@ -55,19 +55,4 @@
 		</text> 	
 		
 	</view>
-
-		<customView name="HCoinSpin">
-      <image extra="true" name="art3">
-         <path>./../assets/coinops/ports.png</path>
-         <zIndex>7</zIndex>
-      </image>
-	</customView>
-
-
-	<customView name="CoinOps Details">
-      <image extra="true" name="art3">
-         <path>./../assets/coinops/ports.png</path>
-         <zIndex>7</zIndex>
-      </image>
-	</customView>
 </theme>
