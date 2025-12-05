@@ -5,7 +5,7 @@
 		<image name="fanartflix" extra="true">
 			<autoFade>false</autoFade>
 			<path ifSubset="imagefondcops1:fanartfreshone">${intfanartfresh}</path>
-			<path ifSubset="imagefondcops1:fanartcustom">${intfanartfresh}</path>
+			<!-- <path ifSubset="imagefondcops1:fanartcustom">${intfanartfresh}</path> -->
 			<path ifSubset="imagefondcops1:fanartcustom">${intfanartcustom}</path>
 			<origin>0 0</origin>
 			<pos>-0.015 0</pos>

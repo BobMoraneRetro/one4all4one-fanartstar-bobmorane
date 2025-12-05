@@ -68,7 +68,10 @@ license: creative commons CC-BY-NC-SA
 						<path>firstfile(
                     "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png")</path>
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".svg")</path>
 						<padding>3 3 -3 -3</padding>
 						<color>000000</color>
 						<zIndex>6</zIndex>
@@ -77,7 +80,10 @@ license: creative commons CC-BY-NC-SA
 						<path>firstfile(
                     "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png")</path>
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".svg")</path>
 						<zIndex>7</zIndex>
 						<storyboard event="open">
 							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
@@ -133,7 +139,10 @@ license: creative commons CC-BY-NC-SA
 			<path>firstfile(
                     "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png")</path>
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".svg")</path>
 			<zIndex>80</zIndex>
 			<horizontalAlignment>left</horizontalAlignment>
 		</image>
@@ -145,7 +154,10 @@ license: creative commons CC-BY-NC-SA
 			<path>firstfile(
                     "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png")</path>
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".svg")</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>80</zIndex>
 			<horizontalAlignment>left</horizontalAlignment>

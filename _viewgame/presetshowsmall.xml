@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
+	<variables>
+		<standardsbuildsfanart>exists({game:fanart}) ? {game:fanart} : {game:thumbnail}</standardsbuildsfanart>
+		<freshbuildfanart>exists({game:image}) ? {game:image} : {game:thumbnail}</freshbuildfanart>
+		<standardsbuildsfanarttest>!exists({game:fanart})</standardsbuildsfanarttest>
+		<freshbuildfanarttest>!exists({game:image})</freshbuildfanarttest>
+		<intbezelgame>("${themePath}/_systemmedia/bezelsyst/" + ({game:system:theme}) + ".png")</intbezelgame>
+		<!-- <nodates>Pas de date</nodates> -->
+		<!-- <noplaycount>Jamais lancé</noplaycount> -->
+		<!-- <noplayerdata>Inconnu</noplayerdata> -->
+		<!-- <noratings>Pas de note</noratings> -->
+		<!-- <playcountone>partie</playcountone> -->
+		<!-- <playcount>parties</playcount> -->
+		<!-- <playerss>joueurs</playerss> -->
+		<!-- <player>joueur</player> -->
+		<!-- <presetshowsmall>Simple : RFE Show Small preview</presetshowsmall> -->
+	</variables>
 	<customView name="presetshowsmall" displayName="${presetshowsmall}" inherits="gamecarousel">
 		<control name="fanart_extra,screenshot_extra,video_extra">
 			<visible>false</visible>

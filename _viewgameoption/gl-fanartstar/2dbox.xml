@@ -3,12 +3,18 @@
 	<formatVersion>7</formatVersion>
 	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
 		<gamecarousel name="gamecarousel">
-			<maxLogoCount ifSubset="spacebox:spacemore">9</maxLogoCount>
-			<maxLogoCount ifSubset="spacebox:spaceplus">10</maxLogoCount>
+			<maxLogoCount ifSubset="spacebox:spacemmmmore">7</maxLogoCount>
+			<maxLogoCount ifSubset="spacebox:spacemmmore">8</maxLogoCount>
+			<maxLogoCount ifSubset="spacebox:spacemmore">9</maxLogoCount>
+			<maxLogoCount ifSubset="spacebox:spacemore">10</maxLogoCount>
 			<maxLogoCount ifSubset="spacebox:spacesmall">12</maxLogoCount>
-			<maxLogoCount ifSubset="spacebox:spacevery">17</maxLogoCount>
+			<maxLogoCount ifSubset="spacebox:spacessmall">17</maxLogoCount>
+			<maxLogoCount ifSubset="spacebox:spacesssmall">22</maxLogoCount>
+			<maxLogoCount ifSubset="spacebox:spacessssmall">27</maxLogoCount>
 			<maxLogoCount ifSubset="spacebox:spacenorm">11</maxLogoCount>
-			<scaledLogoSpacing ifSubset="spacebox:spacevery">3</scaledLogoSpacing>
+			<scaledLogoSpacing ifSubset="spacebox:spacessssmall">8</scaledLogoSpacing>
+			<scaledLogoSpacing ifSubset="spacebox:spacesssmall">5</scaledLogoSpacing>
+			<scaledLogoSpacing ifSubset="spacebox:spacessmall">3</scaledLogoSpacing>
 			<scaledLogoSpacing ifSubset="spacebox:spacesmall">1</scaledLogoSpacing>
 			<scaledLogoSpacing ifSubset="spacebox:spacenorm">0.2</scaledLogoSpacing>
 		</gamecarousel>

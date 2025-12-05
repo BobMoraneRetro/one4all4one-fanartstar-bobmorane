@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
+	<variables>
+		<intfanartfresh>${bobmediapath}/_systemmedia/_fanartsysteme/fresh/${system.theme}.jpg</intfanartfresh>
+		<intbezelsyst>("${themePath}/_systemmedia/bezelsyst/" + ({system:theme}) + ".png")</intbezelsyst>
+		<extgamesyst>${themePath}/_systemmedia/_logosyst/clearlogos/{game:system}.png</extgamesyst>
+		<!-- <nodates>Pas de date</nodates> -->
+		<!-- <noplaycount>Jamais lancé</noplaycount> -->
+		<!-- <noplayerdata>Inconnu</noplayerdata> -->
+		<!-- <noratings>Pas de note</noratings> -->
+		<!-- <playcountone>partie</playcountone> -->
+		<!-- <playcount>parties</playcount> -->
+		<!-- <playerss>joueurs</playerss> -->
+		<!-- <player>joueur</player> -->
+		<!-- <presettraviolta_alt>Simple : RFE traviolta</presettraviolta_alt> -->
+	</variables>
 	<customView name="presettraviolta_alt" displayName="${presettraviolta_alt}" inherits="gamecarousel">
 		<control name="fanart_extra,screenshot_extra,video_extra">
 			<visible>false</visible>

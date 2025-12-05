@@ -450,11 +450,15 @@
 		<figurines>Figurines (le thème Animatics doit être installé)</figurines>
 		<!-- fanartstar boxart -->
 		<spacebox>Espace entre les boites de jeux</spacebox>
-		<spacevery>Espace --</spacevery>
+		<spacessssmall>Espace ----</spacessssmall>
+		<spacesssmall>Espace ---</spacesssmall>
+		<spacessmall>Espace --</spacessmall>
 		<spacesmall>Espace -</spacesmall>
 		<spacenorm>Par défaut</spacenorm>
-		<spaceplus>Espace +</spaceplus>
-		<spacemore>Espace ++</spacemore>
+		<spacemore>Espace +</spacemore>
+		<spacemmore>Espace ++</spacemmore>
+		<spacemmmore>Espace +++</spacemmmore>
+		<spacemmmmore>Espace ++++</spacemmmmore>	
 		<boxstarspeed>Vitesse de l'animation de défilement</boxstarspeed>
 		<stardefault>par défaut</stardefault>
 		<starslow1>+ lent</starslow1>

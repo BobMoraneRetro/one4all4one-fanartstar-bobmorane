@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme defaultView="presetstarbox">
 	<formatVersion>7</formatVersion>
+	<variables>
+		<core3dart>			("${bobmediapath}/_gamemedia/"  + ({game:system:theme}) + "/medium_artwork/artwork_3d/" + stem({game:rom}) + ".png")</core3dart>
+		<corefanart>		("${bobmediapath}/_gamemedia/"  + ({game:system:theme}) + "/medium_artwork/fanart/" + stem({game:rom}) + ".jpg")</corefanart>
+		<corefanarttest>!exists("${bobmediapath}/_gamemedia/"  + ({game:system:theme}) + "/medium_artwork/fanart/" + stem({game:rom}) + ".jpg")</corefanarttest>
+		<corefanarttestyes>exists("${bobmediapath}/_gamemedia/"  + ({game:system:theme}) + "/medium_artwork/fanart/" + stem({game:rom}) + ".jpg")</corefanarttestyes>
+		<corefrontart>		("${bobmediapath}/_gamemedia/"  + ({game:system:theme}) + "/medium_artwork/artwork_front/" + stem({game:rom}) + ".png")</corefrontart>
+		<extgameartpng>("${themePath}/../../../../roms/${system.theme}/@Media/wheel - Art/" + stem({game:rom}) + "-wheel.png")</extgameartpng>
+		<extgamescreenjpg>("${bobmediapath}/_gamemedia/"  + ({game:system:theme}) + "/screenshots/" + stem({game:rom}) + ".jpg")</extgamescreenjpg>
+		<extgamesyst>${themePath}/_systemmedia/_logosyst/clearlogos/{game:system}.png</extgamesyst>
+		<extgamevideoavi>("${bobmediapath}/_gamemedia/"  + ({game:system:theme}) + "/video/" + stem({game:rom}) + ".avi")</extgamevideoavi>
+		<extgamevideomp4>("${bobmediapath}/_gamemedia/"  + ({game:system:theme}) + "/video/" + stem({game:rom}) + ".mp4")</extgamevideomp4>
+		<extmanufacturer>${bobmediapath}/_gamemedia/_manufacturer/{game:publisher}.png</extmanufacturer>
+		<freshbuildfanart>exists({game:image}) ? {game:image} : {game:thumbnail}</freshbuildfanart>
+		<freshbuildfanarttest>!exists({game:image})</freshbuildfanarttest>
+		<freshbuildfanarttestyes>exists({game:image})</freshbuildfanarttestyes>
+		<intfanartfresh>${bobmediapath}/_systemmedia/_fanartsysteme/fresh/${system.theme}.jpg</intfanartfresh>
+		<intlogoclearpng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</intlogoclearpng>
+		<intlogoclearfrpng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}-fr.png</intlogoclearfrpng>
+		<intlogoclearuspng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}-us.png</intlogoclearuspng>
+		<intlogoclearjppng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}-jp.png</intlogoclearjppng>
+		<standardsbuildsfanart>exists({game:fanart}) ? {game:fanart} : {game:thumbnail}</standardsbuildsfanart>
+		<standardsbuildsfanarttest>!exists({game:fanart})</standardsbuildsfanarttest>
+		<standardsbuildsfanarttestyes>exists({game:fanart})</standardsbuildsfanarttestyes>
+		<!-- <nodates>Pas de date</nodates> -->
+		<!-- <noplaycount>Jamais lancé</noplaycount> -->
+		<!-- <noplayerdata>Inconnu</noplayerdata> -->
+		<!-- <noratings>Pas de note</noratings> -->
+		<!-- <playcount>parties</playcount> -->
+		<!-- <players>joueur(s)</players> -->
+		<!-- <presetstarbox>FanartStar Boxart</presetstarbox> -->
+	</variables>
 	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
 		<control name="fanart_extra,screenshot_extra,video_extra">
 			<visible>false</visible>
@@ -677,7 +708,7 @@
 			<horizontalAlignment>left</horizontalAlignment>
 		</image>
 		<text name="gamename" extra="true">
-			<text>{game:name}</text>
+			<text>{game:name} ( {game:lang} )</text>
 			<opacity>0.7</opacity>
 			<pos>0.253 0.238</pos>
 			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>

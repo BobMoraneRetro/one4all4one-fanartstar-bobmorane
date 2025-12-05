@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
+	<variables>
+		<standardsbuildsfanart>exists({game:fanart}) ? {game:fanart} : {game:thumbnail}</standardsbuildsfanart>
+		<freshbuildfanart>exists({game:image}) ? {game:image} : {game:thumbnail}</freshbuildfanart>
+		<standardsbuildsfanarttestyes>exists({game:fanart})</standardsbuildsfanarttestyes>
+		<freshbuildfanarttestyes>exists({game:image})</freshbuildfanarttestyes>
+		<intfanartfresh>${bobmediapath}/_systemmedia/_fanartsysteme/fresh/${system.theme}.jpg</intfanartfresh>
+		<intlogoclearpng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</intlogoclearpng>
+		<extlogoclear>${bobmediapath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</extlogoclear>
+		<extgameartpng>("${themePath}/../../../../roms/${system.theme}/@Media/wheel - Art/" + stem({game:rom}) + "-wheel.png")</extgameartpng>
+		<extgamesyst>${themePath}/_systemmedia/_logosyst/clearlogos/{game:system}.png</extgamesyst>
+	</variables>
 	<view name="detailed">
 		<text name="md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate, md_lbl_rating, md_lbl_genre, md_developer, md_publisher, md_name, md_flag, md_description, md_genre, md_players, md_playcount">
 			<visible>false</visible>

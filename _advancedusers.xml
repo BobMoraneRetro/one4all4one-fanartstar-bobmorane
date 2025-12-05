@@ -17,10 +17,14 @@
 	</subset>
 	<subset name="spacebox" displayName="${spacebox}" appliesTo="presetstarbox">
 		<include name="spacenorm" displayName="${spacenorm}"/>
-		<include name="spacevery" displayName="${spacevery}"/>
+		<include name="spacessssmall" displayName="${spacessssmall}"/>
+		<include name="spacesssmall" displayName="${spacesssmall}"/>
+		<include name="spacessmall" displayName="${spacessmall}"/>
 		<include name="spacesmall" displayName="${spacesmall}"/>
-		<include name="spaceplus" displayName="${spaceplus}"/>
 		<include name="spacemore" displayName="${spacemore}"/>
+		<include name="spacemmore" displayName="${spacemmore}"/>
+		<include name="spacemmmore" displayName="${spacemmmore}"/>
+		<include name="spacemmmmore" displayName="${spacemmmmore}"/>
 	</subset>
 	<subset name="boxstarspeed" displayName="${boxstarspeed}" appliesTo="presetstarbox">
 		<include name="stardefault" displayName="${default}"/>

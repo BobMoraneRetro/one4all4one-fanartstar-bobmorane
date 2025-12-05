@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
+	<variables>
+		<standardsbuildsfanart>exists({game:fanart}) ? {game:fanart} : {game:thumbnail}</standardsbuildsfanart>
+		<freshbuildfanart>exists({game:image}) ? {game:image} : {game:thumbnail}</freshbuildfanart>
+		<standardsbuildsfanarttest>!exists({game:fanart})</standardsbuildsfanarttest>
+		<freshbuildfanarttest>!exists({game:image})</freshbuildfanarttest>
+		<intfanartfresh>${bobmediapath}/_systemmedia/_fanartsysteme/fresh/${system.theme}.jpg</intfanartfresh>
+		<!-- <viewbasicgrid>Basic : Vue grille basique</viewbasicgrid> -->
+	</variables>
 	<view name="grid" displayName="${viewbasicgrid}">
 		<imagegrid name="gamegrid">
 			<imageSource>image</imageSource>

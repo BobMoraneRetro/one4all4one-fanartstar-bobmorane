@@ -8,6 +8,21 @@
 		<standardsbuildsfanarttestyes>exists({game:fanart})</standardsbuildsfanarttestyes>
 		<freshbuildfanarttest>!exists({game:image})</freshbuildfanarttest>
 		<freshbuildfanarttestyes>exists({game:image})</freshbuildfanarttestyes>
+		<intfanartfresh>${bobmediapath}/_systemmedia/_fanartsysteme/fresh/${system.theme}.jpg</intfanartfresh>
+		<!-- <nodates>Pas de date</nodates> -->
+		<!-- <noplaycount>Jamais lancé</noplaycount> -->
+		<!-- <noplayerdata>Inconnu</noplayerdata> -->
+		<!-- <noratings>Pas de note</noratings> -->
+		<!-- <playcountone>partie</playcountone> -->
+		<!-- <playcount>parties</playcount> -->
+		<!-- <playerss>joueurs</playerss> -->
+		<!-- <player>joueur</player> -->
+		<!-- <nogametime>Jamais joué</nogametime> -->
+		<!-- <presgame1>C'est un Jeu de type</presgame1> -->
+		<!-- <presgame2>développé par</presgame2> -->
+		<!-- <presgame3>jouable sur</presgame3> -->
+		<!-- <presgame4>- Langues disponibles :</presgame4> -->
+		<!-- <presetsquare>FanartStar carré</presetsquare> -->
 	</variables>
 	<customView name="presetsquare" displayName="${presetsquare}" inherits="grid">
 		<control name="fanart_extra, defautfanartextra">

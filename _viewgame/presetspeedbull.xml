@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
+	<variables>
+		<intfanartfresh>${bobmediapath}/_systemmedia/_fanartsysteme/fresh/${system.theme}.jpg</intfanartfresh>
+		<!-- <nodates>Pas de date</nodates> -->
+		<!-- <noplaycount>Jamais lancé</noplaycount> -->
+		<!-- <noplayerdata>Inconnu</noplayerdata> -->
+		<!-- <noratings>Pas de note</noratings> -->
+		<!-- <playcountone>partie</playcountone> -->
+		<!-- <playcount>parties</playcount> -->
+		<!-- <playerss>joueurs</playerss> -->
+		<!-- <player>joueur</player> -->
+		<!-- <nogametime>Jamais joué</nogametime> -->
+		<!-- <nomjeulabel>Nom du jeu :</nomjeulabel> -->
+		<!-- <genrelabel>Genre :</genrelabel> -->
+		<!-- <devlabel>Developpeur :</devlabel> -->
+		<!-- <langlabel>Langues :</langlabel> -->
+		<!-- <gametimelabel>Temps de jeu :</gametimelabel> -->
+		<!-- <lastgamelabel>Dernière partie :</lastgamelabel> -->
+		<!-- <presetspeedbull>Simple : RFE speedbull</presetspeedbull> -->
+	</variables>
 	<customView name="presetspeedbull" displayName="${presetspeedbull}" inherits="gamecarousel">
 		<control name="fanart_extra,screenshot_extra,video_extra">
 			<visible>false</visible>

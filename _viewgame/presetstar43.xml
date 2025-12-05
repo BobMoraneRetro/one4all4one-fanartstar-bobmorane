@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
+	<variables>
+		<standardsbuildsfanart>exists({game:fanart}) ? {game:fanart} : {game:thumbnail}</standardsbuildsfanart>
+		<freshbuildfanart>exists({game:image}) ? {game:image} : {game:thumbnail}</freshbuildfanart>
+		<standardsbuildsfanarttest>!exists({game:fanart})</standardsbuildsfanarttest>
+		<standardsbuildsfanarttestyes>exists({game:fanart})</standardsbuildsfanarttestyes>
+		<freshbuildfanarttest>!exists({game:image})</freshbuildfanarttest>
+		<freshbuildfanarttestyes>exists({game:image})</freshbuildfanarttestyes>
+		<intfanartfresh>${bobmediapath}/_systemmedia/_fanartsysteme/fresh/${system.theme}.jpg</intfanartfresh>
+		<intlogoclearpng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</intlogoclearpng>
+		<!-- <nodates>Pas de date</nodates> -->
+		<!-- <noplaycount>Jamais lancé</noplaycount> -->
+		<!-- <noplayerdata>Inconnu</noplayerdata> -->
+		<!-- <noratings>Pas de note</noratings> -->
+		<!-- <playcount>parties</playcount> -->
+		<!-- <players>joueur(s)</players> -->
+		<!-- <presgame1>C'est un Jeu de type</presgame1> -->
+		<!-- <presgame2>développé par</presgame2> -->
+		<!-- <presgame3>jouable sur</presgame3> -->
+		<!-- <presgame4>- Langues disponibles :</presgame4> -->
+		<!-- <presetstar43>FanartStar 4/3</presetstar43> -->
+	</variables>
 	<customView name="presetstar43" displayName="${presetstar43}" inherits="grid">
 		<control name="fanart_extra, defautfanartextra">
 			<visible>false</visible>

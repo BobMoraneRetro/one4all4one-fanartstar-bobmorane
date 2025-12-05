@@ -40,6 +40,7 @@
 		<!-- System Chemin pour les logos systèmes supplémentaires -->
 		<extlogobd>${themePath}/_systemmedia/_logosyst/comic/${system.theme}.png</extlogobd>
 		<extlogohcarbon>${themePath}/_systemmedia/_logosyst/hmaxcarbon/${system.theme}.png</extlogohcarbon>
+		<extlogohcarbonfresh>${themePath}/_systemmedia/_logosyst/hmaxcarbonfresh/${system.theme}.png</extlogohcarbonfresh>
 		<exthmaxovalsilver>${themePath}/_systemmedia/_logosyst/hmaxovalsilver/${system.theme}.png</exthmaxovalsilver>
 		<extlogohrect>${themePath}/_systemmedia/_logosyst/hmaxrect/${system.theme}.png</extlogohrect>
 		<extglassnekhros>${themePath}/_systemmedia/_logosyst/nekhglass/${system.theme}.png</extglassnekhros>
@@ -51,6 +52,7 @@
 		<intlogoclearfrpng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}-fr.png</intlogoclearfrpng>
 		<intlogoclearuspng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}-us.png</intlogoclearuspng>
 		<intlogoclearjppng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}-jp.png</intlogoclearjppng>
+		<extlogoclear>${bobmediapath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</extlogoclear>
 		<!-- Jeux : Condition si fanart ou box 2d -->
 		<!-- System : Vidéos de présentation système : videosyst.xml -->
 		<extspinxml>${bobmediapath}/_systemmedia/videosyst/hyperspin/${system.theme}.xml</extspinxml>
@@ -62,6 +64,7 @@
 		<extvideofresh>${themePath}/../../videothemes/${system.theme}.mp4</extvideofresh>
 		<!-- System Gestion des bezels système : videosyst.xml -->
 		<intbezelsyst>("${themePath}/_systemmedia/bezelsyst/" + ({system:theme}) + ".png")</intbezelsyst>
+		<extbezelsyst>("${themePath}/_systemmedia/bezelsyst/" + ({system:theme}) + ".png")</extbezelsyst>
 		<!-- System & Jeux : bezel du système associé au jeu -->
 		<intbezelgame>("${themePath}/_systemmedia/bezelsyst/" + ({game:system:theme}) + ".png")</intbezelgame>
 		<!-- System : Actif si absence de systheme.xml dans le thème hyperbat : videosyst.xml, fanartsyst.xml -->
