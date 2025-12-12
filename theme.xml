@@ -97,10 +97,6 @@
 	<!-- Liste des vues dediees aux systèmes : systemview -->
 	<subset name="lismoi" displayName="${lismoi}">
 	<include name="tumasbienlu" displayName="${tumasbienlu}">${themePath}/_viewsystoption/sl-commun/splashounet.xml</include>
-	<!-- <include name="page1" displayName="${tumasbienlup1}">${themePath}/_viewsystoption/sl-commun/splashounet1.xml</include> -->
-	<!-- <include name="page2" displayName="${tumasbienlup2}">${themePath}/_viewsystoption/sl-commun/splashounet2.xml</include> -->
-	<!-- <include name="batocera" displayName="${batocerause}"/> -->
-	<!-- <include name="retrobat" displayName="${retrobatuse}"/> -->
 	<include name="desactive" displayName="${desactive}"/>
 	</subset>
 	<subset name="systemview" displayName="${systlist}">
