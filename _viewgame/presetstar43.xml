@@ -280,9 +280,21 @@
 			<path>${themePath}/_viewgame/fanartstar/Bvierge.png</path>
 		</image>
 		<text name="binds_playcount" extra="true">
-			<visible>{game:playcount} &gt; 0 ? 1 : 0</visible>
+			<visible>{game:playcount} &gt; 1 ? 1 : 0</visible>
 			<color>FFFFFF</color>
 			<text>{game:playcount} ${playcount}</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.085 0.7185</pos>
+			<size>0.08 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>305</zIndex>
+		</text>
+		<text name="binds_playcount_one" extra="true">
+			<visible>{game:playcount} == 1 ? 1 : 0</visible>
+			<color>FFFFFF</color>
+			<text>{game:playcount} ${playcountone}</text>
 			<origin>0.5 0.5</origin>
 			<pos>0.085 0.7185</pos>
 			<size>0.08 0.035</size>
@@ -349,9 +361,24 @@
 			<horizontalAlignment>left</horizontalAlignment>
 			<path>${themePath}/_viewgame/fanartstar/Bvierge.png</path>
 		</image>
+<!-- DEBUT DATA NB JOUEURS AVEC GESTION PLURIEL SINGULIER -->
 		<text name="binds_players" extra="true">
-			<visible>{game:players} &gt; 0 ? 1 : 0</visible>
-			<text>{game:players} ${players}</text>
+			<visible>{game:players} &gt; 1 ? 1 : 0</visible>
+			<visible>{game:players} == 1 ? 0 : 1 &amp;&amp; {game:players} &lt; 1 ? 0 : 1 </visible>
+			<text>{game:players} ${playerss}</text>
+			<color>FFFFFF</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.235 0.7185</pos>
+			<size>0.075 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>305</zIndex>
+		</text>
+		<text name="binds_player_one" extra="true">
+			<visible>{game:players} == 0 ? 0 : 1</visible>
+			<visible>{game:players} == 1 ? 1 : 0</visible>
+			<text>{game:players} ${player}</text>
 			<color>FFFFFF</color>
 			<origin>0.5 0.5</origin>
 			<pos>0.235 0.7185</pos>
@@ -373,6 +400,7 @@
 			<fontSize>0.020</fontSize>
 			<zIndex>305</zIndex>
 		</text>
+<!-- FIN DATA NB JOUEURS AVEC GESTION PLURIEL SINGULIER -->
 		<image name="notation" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.31 0.72</pos>
@@ -417,7 +445,7 @@
 			<zIndex>205</zIndex>
 			<opacity>0.7</opacity>
 		</control>
-		<control name="binds_players,binds_noplayers,binds_releasedate,binds_noreleasedate,binds_playcount,binds_noplaycount,developer,binds_rating,binds_norating,md_description">
+		<control name="binds_player_one,binds_players,binds_noplayers,binds_releasedate,binds_noreleasedate,binds_playcount_one,binds_playcount,binds_noplaycount,developer,binds_rating,binds_norating,md_description">
 			<color>FFFFFF</color>
 			<opacity>0.5</opacity>
 		</control>
