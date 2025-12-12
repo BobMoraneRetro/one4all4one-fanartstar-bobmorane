@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
+		<gamecarousel name="gamecarousel">
+			<maxLogoCount>9</maxLogoCount>
+		</gamecarousel>
+	</customView>
+</theme>
