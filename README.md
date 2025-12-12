@@ -21,16 +21,12 @@ You can find help on discord here: https://discord.com/invite/msnaz7Kev7
 | ------------- | ------------- | ------------- |
 | ![Hardware](https://github.com/user-attachments/assets/b6ae675b-15db-447b-aee2-ec5c73f19539)  | ![Character](https://github.com/user-attachments/assets/19bedf2a-cb9a-4d26-a011-491f337074c0)  | ![Figurine](https://github.com/user-attachments/assets/da9e943f-d9cb-4428-a9b6-1ee50807f561)  | 
 
-| Defaut generic theme for gameview  | Defaut generic theme for systemview
+| Boxart 3D gameview  | Boxart 2D gameview
 | ------------- | ------------- |
-| ![genericdefaut](https://github.com/user-attachments/assets/ee95b902-d2af-4d89-9061-52a467ea8d7b)  | ![genericsystem](https://github.com/user-attachments/assets/f6023f97-7684-43e4-bf42-7feef0e6cffd)  | 
+| ![3Dboxart](https://github.com/user-attachments/assets/1346c0f9-7d76-4dfd-9034-8ec4b743c700)  | ![2Dboxart](https://github.com/user-attachments/assets/a6909e4e-4227-4524-8f8d-d3ac31f13207)  | 
 
-# Tool to create Gameview, System-view or System-defaut view
 
-You can make your own theme for games or system with the app' we develop, like old hypertheme : just put some artwork, place the video, place boxart or what you want and choose animation to apply on each image and video and generate it automatically. Preview it in real time on your 2nd screen directly in retrobat or batocera by navigate on the game (no reboot needed)
-Yo can even import *.psd with artwork aldready in place. Explanation, tutorial and up to date app' version availlable on discord
 
-![Image](https://github.com/user-attachments/assets/29c2b596-d2cf-4d8e-b5ae-ee1d484aa2e2)
 
 ### License :
 Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)  
