@@ -14,7 +14,7 @@ Description :
 
 ---  
 
-# Game and system theme add-on
+# Game and system View
 You can find help on discord here: https://discord.com/invite/msnaz7Kev7
 
 | System View Classic Hardware | System View Classic Character | System View Classic Figurine  |
