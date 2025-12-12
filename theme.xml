@@ -170,8 +170,8 @@
 		<include name="videoback" displayName="${videoback}">${themePath}/_viewsystoption/sl-fanartstar/videostar.xml</include>
 	</subset>
 	<subset name="video4starclassic" ifSubset="systemview:fanartstarsyst" displayName="${video4starclassic}">
-		<include name="novideo" displayName="${novideo}"/>
 		<include name="videoback" displayName="${videoback}"/>
+		<include name="novideo" displayName="${novideo}"/>
 	</subset>
 	<!-- Choix des types de présentation des systèmes -->
 	<include>${themePath}/_systemmedia/videosyst/hyperspin/_hyperspin.xml</include>
