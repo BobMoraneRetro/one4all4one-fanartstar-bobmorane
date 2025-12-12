@@ -3,7 +3,7 @@
 	<formatVersion>7</formatVersion>
 	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
 		<gamecarousel name="gamecarousel">
-			<maxLogoCount>9</maxLogoCount>
+			<maxLogoCount ifSubset="spacebox:spacenorm,fanartstarrotated:nostarrotate">9</maxLogoCount>
 		</gamecarousel>
 	</customView>
 </theme>

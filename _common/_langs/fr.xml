@@ -463,5 +463,8 @@
 		<stardefault>par défaut</stardefault>
 		<starslow1>+ lent</starslow1>
 		<starslow2>++ lent</starslow2>
-	</variables>
+		<fanartstarrotated>Rotation des boites SNES,N64,NGAGE,Solarus</fanartstarrotated>
+		<starrotate>Oui</starrotate>
+		<nostarrotate>Non</nostarrotate>
+</variables>
 </theme>

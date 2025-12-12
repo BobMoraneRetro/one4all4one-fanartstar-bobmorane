@@ -26,7 +26,7 @@
 		<include name="spacemmmore" displayName="${spacemmmore}"/>
 		<include name="spacemmmmore" displayName="${spacemmmmore}"/>
 	</subset>
-	<subset name="fanartstarrotated" displayName="${rotated}" appliesTo="presetstarbox">
+	<subset name="fanartstarrotated" displayName="${fanartstarrotated}" appliesTo="presetstarbox">
 		<include name="starrotate" displayName="${starrotate}">./_viewgameoption/gl-fanartstar/rotatedon.xml</include>
 		<include name="nostarrotate" displayName="${nostarrotate}">./_viewgameoption/gl-fanartstar/rotatedoff.xml</include>
 	</subset>
