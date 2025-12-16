@@ -9,10 +9,10 @@
 		<include name="non" displayName="${no}"/>
 		<include name="oui" displayName="${yes}">${themePath}/_viewgameoption/gl-common/infosmax.xml</include>
 	</subset>
-	<subset name="spacerstar" displayName="${spacerstar}" appliesTo="${vide}">
+	<subset name="spacerstar" displayName="${spacerstar}" appliesTo="presetstarbox">
 		<include name="desactive" displayName=" "/>
 	</subset>
-	<subset name="mediastar" displayName="${mediastar}" appliesTo="${vide}">
+	<subset name="mediastar" displayName="${mediastar}" appliesTo="presetstarbox">
 		<include name="desactive" displayName=" "/>
 	</subset>
 	<subset name="spacebox" displayName="${spacebox}" appliesTo="presetstarbox">
@@ -52,7 +52,7 @@
 		<include name="starvideodef" displayName="${starvideodef}"/>
 		<include name="starvideobig" displayName="${starvideobig}"/>
 	</subset>
-	<subset name="mediastar2" displayName="${mediastar2}" appliesTo="${vide}">
+	<subset name="mediastar2" displayName="${mediastar2}" appliesTo="presetstar169,presetstar43">
 		<include name="desactive" displayName=" "/>
 	</subset>
 	<subset name="gridcolor" displayName="${fanarstargridcolor}" appliesTo="presetstar169,presetstar43">
@@ -76,7 +76,7 @@
 		<include name="greenalt" displayName="Vert Alt"/>
 		<include name="purplealt" displayName="Violet Alt"/>
 	</subset>
-	<subset name="mediastar3" displayName="${mediastar3}" appliesTo="${vide}">
+	<subset name="mediastar3" displayName="${mediastar3}" appliesTo="presetsquare">
 		<include name="desactive" displayName=" "/>
 	</subset>	
 	<subset name="squarecadre" displayName="${squarecadre}" appliesTo="presetsquare">
