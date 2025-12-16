@@ -161,5 +161,8 @@
 		<starrotate>Oui</starrotate>
 		<nostarrotate>Non</nostarrotate>
 		<jeux>jeux</jeux>
+		<longselect>Appuie long sur "select"</longselect>
+		<favuniquement>Favoris uniquement</favuniquement>
+		<tslesjeux>Tous les jeux</tslesjeux>
 	</variables>
 </theme>

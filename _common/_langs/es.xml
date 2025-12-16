@@ -77,6 +77,9 @@
 		<speedslow2>Lento++</speedslow2>
 		<speedslow1>Lento+</speedslow1>
 		<default>Por defecto</default>
-		<jeux>jogos</jeux>
+		<jeux>juegos</jeux>
+		<longselect>Pulsación larga de "select"</longselect>
+		<favuniquement>Solo favoritos</favuniquement>
+		<tslesjeux>Todos los juegos</tslesjeux>
 	</variables>
 </theme>

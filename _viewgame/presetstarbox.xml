@@ -747,7 +747,7 @@
 		<!-- Début petit menu playlist avec 2 playlist prises en compte niquement -->
 		<text name="longpress" extra="true">
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
-			<text>Appuie long sur "select"</text>
+			<text>${longselect}</text>
 			<fontSize>0.02</fontSize>
 			<pos>0.053 0.45</pos>
 			<color>ffffffff</color>
@@ -764,7 +764,7 @@
 		</text>
 		<text name="allgames_select" extra="true">
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
-			<text>Tous les jeux</text>
+			<text>${tslesjeux}</text>
 			<fontSize>0.02</fontSize>
 			<pos>0.053 0.45</pos>
 			<color>ffea00</color>
@@ -782,7 +782,7 @@
 		<text name="allgames_noselect" extra="true">
 			<visible>startswith(lower({system:filter}), "favoris")</visible>
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
-			<text>Tous les jeux</text>
+			<text>${tslesjeux}</text>
 			<fontSize>0.02</fontSize>
 			<pos>0.053 0.45</pos>
 			<color>ffffffff</color>
@@ -800,7 +800,7 @@
 		<text name="favoris_noselect" extra="true">
 			<!-- <visible>startswith(lower({system:filter}), "favoris")</visible> -->
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
-			<text>Favoris uniquement</text>
+			<text>${Favuniquement}</text>
 			<fontSize>0.02</fontSize>
 			<pos>0.12 0.45</pos>
 			<color>ffffffff</color>
@@ -816,9 +816,9 @@
 			<opacity>0.8</opacity>
 		</text>
 		<text name="favoris_select" extra="true">
-			<visible>startswith(lower({system:filter}), "favoris")</visible>
+			<visible>startswith(lower({system:filter}), "fav")</visible>
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
-			<text>Favoris uniquement</text>
+			<text>${Favuniquement}</text>
 			<fontSize>0.02</fontSize>
 			<pos>0.12 0.45</pos>
 			<color>ffea00</color>
