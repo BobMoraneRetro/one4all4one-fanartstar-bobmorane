@@ -31,7 +31,6 @@
 		<no>No</no>
 		<rien>No</rien>
 		<desactive>Desactivado</desactive>
-		<vide>   </vide>
 		<!-- lista de vistas de sistema -->
 		<systlist>Vista de lista de sistemas</systlist>
 		<viewbasicgrid>Básico : Vista de cuadrícula simple</viewbasicgrid>
@@ -81,5 +80,10 @@
 		<longselect>Pulsación larga de "select"</longselect>
 		<favuniquement>Solo favoritos</favuniquement>
 		<tslesjeux>Todos los juegos</tslesjeux>
+		<breadcrumbsonoff>Menú vertical a la izquierda (vista clásica del sistema)</breadcrumbsonoff>
+		<metadataonoff>Información del sistema (vista clásica del sistema)</metadataonoff>
+		<!-- ######## VARIABLES NON UTILISÃ‰ES (commentÃ©es) ######## -->
+		<!-- Total: 1 variables -->
+		<!-- <vide>   </vide> -->
 	</variables>
 </theme>

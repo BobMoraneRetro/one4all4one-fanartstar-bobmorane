@@ -116,7 +116,8 @@ license: creative commons CC-BY-NC-SA
 			<zIndex>3</zIndex>
 		</image>
 		<video name="gameplayvideostar" extra="true">
-			<visible ifSubset="video4starclassic:videoback">true</visible>
+			<visible ifSubset="video4starclassic:videoback,metadataonoff:deactivate">false</visible>
+			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">true</visible>
 			<visible ifSubset="video4starclassic:novideo">false</visible>
 			<default>${themePath}/_systemmedia/defaut/scotty.mp4</default>
 			<path>{random}</path>
@@ -128,6 +129,63 @@ license: creative commons CC-BY-NC-SA
 			<opacity>1</opacity>
 			<delay>0.3</delay>
 		</video>
+		<video name="gameplayvideostarangled" ifSubset="video4starmodern:videoangled" extra="true">
+			<visible ifSubset="metadataonoff:deactivate">true</visible>
+			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">false</visible>
+			<path>{random}</path>
+			<delay>0.3</delay>
+			<pos>0.995 0.35</pos>
+			<size>0.38 0.47</size>
+			<origin>1 0.5</origin>
+			<effect>none</effect>
+			<zIndex>4</zIndex>
+			<offsetX>-0.6</offsetX>
+			<offsetY>0.1</offsetY>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>0</tiltAngle>
+				<tiltAngleX>-30</tiltAngleX>
+				<perspectiveDepth>0.8</perspectiveDepth>
+			</shader>
+		</video>
+		<image name="cadreclassic" ifSubset="metadataonoff:deactivate" extra="true">
+			<visible ifSubset="metadataonoff:deactivate">true</visible>
+			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">false</visible>
+			<path>${themePath}/_viewgame/fanartstar/169alt1.png</path>
+			<pos>1 0.35</pos>
+			<size>0.39 0.505</size>
+			<origin>1 0.5</origin>
+			<effect>none</effect>
+			<zIndex>3</zIndex>
+			<autoFade>false</autoFade>
+						<offsetX>-0.6</offsetX>
+			<offsetY>0.1</offsetY>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>0</tiltAngle>
+				<tiltAngleX>-30</tiltAngleX>
+				<perspectiveDepth>0.8</perspectiveDepth>
+			</shader>
+		</image>
+		<image name="fondclassic" ifSubset="metadataonoff:deactivate" extra="true">
+			<visible ifSubset="metadataonoff:deactivate">true</visible>
+			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">false</visible>
+			<path>${themePath}/_viewgame/fanartstar/fiber.png</path>
+			<pos>0.995 0.35</pos>
+			<size>0.38 0.472</size>
+			<origin>1 0.5</origin>
+			<effect>none</effect>
+			<zIndex>3</zIndex>
+			<autoFade>false</autoFade>
+						<offsetX>-0.6</offsetX>
+			<offsetY>0.1</offsetY>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>0</tiltAngle>
+				<tiltAngleX>-30</tiltAngleX>
+				<perspectiveDepth>0.8</perspectiveDepth>
+			</shader>
+		</image>
 		<!-- ################################### Metadata et autres infos textuelles #############################################################################		 -->
 		<image name="logosystemeshadow" extra="true">
 			<autoFade>false</autoFade>
@@ -382,6 +440,10 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 				<animation property="opacity" from="0" to="1" mode="easeOut"/>
 			</storyboard>
 		</text>
+		<control name="info1,info2,systfullname,info3,info4,systemInfoEx">
+			<visible ifSubset="metadataonoff:deactivate">false</visible>
+			<visible ifSubset="metadataonoff:active">true</visible>
+		</control>
 		<!-- ########## Fil d arianne si menu officiel sélectionné ############# -->
 		<image name="arcade" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/arcade.png</path>
@@ -497,6 +559,8 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<color if="{system.hardwareType} == ''">ffffff</color>
 		</image>
 		<control name="arcade, computer, console, extension, mess, pinball, port, portable, system, autocollection, customcollection, retrobat">
+			<visible ifSubset="breadcrumbsonoff:deactivate">false</visible>
+			<visible ifSubset="breadcrumbsonoff:active">true</visible>
 			<offsetX>0.005</offsetX>
 			<offsetY>-0.05</offsetY>
 		</control>

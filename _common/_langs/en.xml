@@ -31,7 +31,6 @@
 		<no>No</no>
 		<rien>No</rien>
 		<desactive>Disabled</desactive>
-		<vide>   </vide>
 		<!-- system view list -->
 		<systlist>System list view</systlist>
 		<viewbasicgrid>Basic : Simple grid view</viewbasicgrid>
@@ -164,5 +163,10 @@
 		<longselect>Long press on "select"</longselect>
 		<favuniquement>Favorites only</favuniquement>
 		<tslesjeux>All games</tslesjeux>
+		<breadcrumbsonoff>Left vertical menu (classic system view)</breadcrumbsonoff>
+		<metadataonoff>System information (classic system view)</metadataonoff>
+		<!-- ######## VARIABLES NON UTILISÃ‰ES (commentÃ©es) ######## -->
+		<!-- Total: 1 variables -->
+		<!-- <vide>   </vide> -->
 	</variables>
 </theme>

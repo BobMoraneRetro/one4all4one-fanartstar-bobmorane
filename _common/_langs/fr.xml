@@ -31,7 +31,6 @@
 		<no>Non</no>
 		<rien>Non</rien>
 		<desactive>Désactivé</desactive>
-		<vide>   </vide>
 		<!-- liste des vues systemes -->
 		<systlist>Vue pour la liste des systèmes</systlist>
 		<viewbasicgrid>Basic : Vue grille basique</viewbasicgrid>
@@ -164,5 +163,10 @@
 		<longselect>Appuie long sur "select"</longselect>
 		<favuniquement>Favoris uniquement</favuniquement>
 		<tslesjeux>Tous les jeux</tslesjeux>
+		<breadcrumbsonoff>Menu vertical à gauche (classic systview)</breadcrumbsonoff>
+		<metadataonoff>Info sur le système (classic systview)</metadataonoff>
+		<!-- ######## VARIABLES NON UTILISÃ‰ES (commentÃ©es) ######## -->
+		<!-- Total: 1 variables -->
+		<!-- <vide>   </vide> -->
 	</variables>
 </theme>

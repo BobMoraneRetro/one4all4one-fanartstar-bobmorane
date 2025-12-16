@@ -800,7 +800,7 @@
 		<text name="favoris_noselect" extra="true">
 			<!-- <visible>startswith(lower({system:filter}), "favoris")</visible> -->
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
-			<text>${Favuniquement}</text>
+			<text>${favuniquement}</text>
 			<fontSize>0.02</fontSize>
 			<pos>0.12 0.45</pos>
 			<color>ffffffff</color>
@@ -818,7 +818,7 @@
 		<text name="favoris_select" extra="true">
 			<visible>startswith(lower({system:filter}), "fav")</visible>
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
-			<text>${Favuniquement}</text>
+			<text>${favuniquement}</text>
 			<fontSize>0.02</fontSize>
 			<pos>0.12 0.45</pos>
 			<color>ffea00</color>

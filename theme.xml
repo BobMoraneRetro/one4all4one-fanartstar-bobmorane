@@ -200,6 +200,14 @@
 		<include name="charsystem" displayName="${charsystem}"/>
 		<include name="figurines" displayName="${figurines}"/>
 	</subset>
+	<subset name="breadcrumbsonoff" ifSubset="systemview:fanartstarsyst" displayName="${breadcrumbsonoff}">
+		<include name="active" displayName="${active}"/>
+		<include name="deactivate" displayName="${desactive}"/>
+	</subset>
+	<subset name="metadataonoff" ifSubset="systemview:fanartstarsyst" displayName="${metadataonoff}">
+		<include name="active" displayName="${active}"/>
+		<include name="deactivate" displayName="${desactive}"/>
+	</subset>
 	<!-- Quand MAJ remplacera le bloc en dessous  -->
 	<!-- <subset name="menuofficiel" displayName="${menuofficiel}"> -->
 	<!-- <include name="Desactive" ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|hyperspin|alekfull|hypermax|zspin" displayName="${desactive}"/> -->
