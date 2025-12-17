@@ -156,7 +156,7 @@ license: creative commons CC-BY-NC-SA
 			<size>0.39 0.505</size>
 			<origin>1 0.5</origin>
 			<effect>none</effect>
-			<zIndex>3</zIndex>
+			<zIndex>4</zIndex>
 			<autoFade>false</autoFade>
 						<offsetX>-0.6</offsetX>
 			<offsetY>0.1</offsetY>

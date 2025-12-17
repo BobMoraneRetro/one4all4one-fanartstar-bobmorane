@@ -139,7 +139,7 @@
 		<video4starmodern>Gameplay video on system view</video4starmodern>
 		<video4starclassic>Gameplay video on system view</video4starclassic>
 		<novideo>Disabled</novideo>
-		<videoback>Enabled (fullscreen background)</videoback>
+		<videoback>Enabled</videoback>
 		<videoangled>Enabled (small angled)</videoangled>
 		<systviewselec>System image in the wheel</systviewselec>
 		<hardware>Hardware</hardware>
