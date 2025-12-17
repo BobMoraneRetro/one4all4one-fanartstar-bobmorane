@@ -2,6 +2,7 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<variables lang="fr">
+
 		<nodates>Pas de date</nodates>
 		<playcountone>partie</playcountone>
 		<playcount>parties</playcount>
@@ -168,5 +169,6 @@
 		<!-- ######## VARIABLES NON UTILISÃ‰ES (commentÃ©es) ######## -->
 		<!-- Total: 1 variables -->
 		<!-- <vide>   </vide> -->
-	</variables>
+	
+</variables>
 </theme>
