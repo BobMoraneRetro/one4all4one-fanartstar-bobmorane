@@ -109,10 +109,11 @@
 	<!-- ################ Vue Systeme : options communes toutes vues ##################### -->
 	<!-- ################################################################################# -->
 	<!-- Première déclaration permettant le placement du menu "région" dans le menu principal-->
-	<region region="fr">Region des systèmes</region>
-	<region region="eu">Region des systèmes</region>
+	<region region="fr">Region fr</region>
+	<region region="eu">Region eu</region>
 	<region region="us">region us</region>
 	<region region="jp">region jp</region>
+	<region region="br">region br</region>
 	<!-- Build Custom : suffixe des fanart -->
 	<subset name="custombuilds" displayName="${packcustombuild}">
 		<include name="standardbuilds" displayName="${packcustombuildsno}"/>
@@ -174,12 +175,12 @@
 		<include name="videoback" displayName="${videoback}"/>
 	</subset>
 	<!-- Choix des types de présentation des systèmes -->
-	<include>${themePath}/_systemmedia/videosyst/hyperspin/_hyperspin.xml</include>
-	<include>${themePath}/_systemmedia/videosyst/hyperspinxporunified/_hyperspinorunified.xml</include>
-	<include>${themePath}/_systemmedia/videosyst/hyperpie/_hyperpie.xml</include>
-	<include>${themePath}/_systemmedia/videosyst/unified/_unified.xml</include>
-	<include>${themePath}/_systemmedia/videosyst/hyperspinxp/_hyperspinxp.xml</include>
-	<include>${themePath}/_systemmedia/videosyst/hyperspinxpcinematic/_hyperspinorder.xml</include>
+	<!-- <include>${themePath}/_systemmedia/videosyst/hyperspin/_hyperspin.xml</include> -->
+	<!-- <include>${themePath}/_systemmedia/videosyst/hyperspinxporunified/_hyperspinorunified.xml</include> -->
+	<!-- <include>${themePath}/_systemmedia/videosyst/hyperpie/_hyperpie.xml</include> -->
+	<!-- <include>${themePath}/_systemmedia/videosyst/unified/_unified.xml</include> -->
+	<!-- <include>${themePath}/_systemmedia/videosyst/hyperspinxp/_hyperspinxp.xml</include> -->
+	<!-- <include>${themePath}/_systemmedia/videosyst/hyperspinxpcinematic/_hyperspinorder.xml</include> -->
 	<!-- <subset name="videofondcops1" ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|hyperspin|tetanos" displayName="${systviewvideo}"> -->
 	<!-- <include name="gameplay" displayName="${gameplay}">${themePath}/_viewsystoption/sl-commun/videosyst.xml</include> -->
 	<!-- <include name="gameplayp" displayName="${gameplayp}">${themePath}/_viewsystoption/sl-commun/videosyst.xml</include> -->

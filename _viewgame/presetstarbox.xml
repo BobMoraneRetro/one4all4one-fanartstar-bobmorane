@@ -115,9 +115,6 @@
 			<path ifSubset="custombuilds:retrofreshbat,customfanart:fanartcustom">firstfile(${corefanart},${freshbuildfanart},${standardsbuildsfanart})</path>
 			<path ifSubset="custombuilds:standardbuilds,customfanart:fanartgamelist">${standardsbuildsfanart}</path>
 			<path ifSubset="custombuilds:retrofreshbat,customfanart:fanartgamelist">${freshbuildfanart}</path>
-			<path ifSubset="customfanart:fanartcustom">${corefanart}</path>
-			<path ifSubset="custombuilds:standardbuilds">${standardsbuildsfanart}</path>
-			<path ifSubset="custombuilds:retrofreshbat">${freshbuildfanart}</path>
 			<autoFade>false</autoFade>
 			<pos>0.5 0</pos>
 			<size>0 0.8</size>
