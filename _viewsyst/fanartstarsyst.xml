@@ -119,6 +119,7 @@ license: creative commons CC-BY-NC-SA
 			<visible ifSubset="video4starclassic:videoback,metadataonoff:deactivate">false</visible>
 			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">true</visible>
 			<visible ifSubset="video4starclassic:novideo">false</visible>
+			<!-- <visible ifSubset="video4starclassic:videoback,metadataonoff:active">true</visible> -->
 			<default>${themePath}/_systemmedia/defaut/scotty.mp4</default>
 			<path>{random}</path>
 			<pos>0.053 0.62</pos>
@@ -132,6 +133,7 @@ license: creative commons CC-BY-NC-SA
 		<video name="gameplayvideostarangled" ifSubset="video4starmodern:videoangled" extra="true">
 			<visible ifSubset="metadataonoff:deactivate">true</visible>
 			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">false</visible>
+			<visible ifSubset="video4starclassic:novideo">false</visible>
 			<path>{random}</path>
 			<delay>0.3</delay>
 			<pos>0.995 0.35</pos>
@@ -151,6 +153,7 @@ license: creative commons CC-BY-NC-SA
 		<image name="cadreclassic" ifSubset="metadataonoff:deactivate" extra="true">
 			<visible ifSubset="metadataonoff:deactivate">true</visible>
 			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">false</visible>
+			<visible ifSubset="video4starclassic:novideo">false</visible>
 			<path>${themePath}/_viewgame/fanartstar/169alt1.png</path>
 			<pos>1 0.35</pos>
 			<size>0.39 0.505</size>
@@ -170,6 +173,7 @@ license: creative commons CC-BY-NC-SA
 		<image name="fondclassic" ifSubset="metadataonoff:deactivate" extra="true">
 			<visible ifSubset="metadataonoff:deactivate">true</visible>
 			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">false</visible>
+			<visible ifSubset="video4starclassic:novideo">false</visible>
 			<path>${themePath}/_viewgame/fanartstar/fiber.png</path>
 			<pos>0.995 0.35</pos>
 			<size>0.38 0.472</size>
@@ -497,7 +501,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 		<image name="pinball" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/pinball.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.4</pos>
+			<pos>0.005 0.41</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<saturation>0</saturation>
@@ -507,7 +511,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 		<image name="port" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/port.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.442</pos>
+			<pos>0.005 0.452</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<color>7d7d7d</color>
@@ -516,7 +520,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 		<image name="portable" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/portable.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.484</pos>
+			<pos>0.005 0.494</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<color>7d7d7d</color>
@@ -525,7 +529,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 		<image name="system" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/system.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.526</pos>
+			<pos>0.005 0.536</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<color>7d7d7d</color>
@@ -534,7 +538,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 		<image name="autocollection" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectionauto.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.568</pos>
+			<pos>0.005 0.578</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<color>7d7d7d</color>
@@ -543,7 +547,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 		<image name="customcollection" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectioncust.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.6</pos>
+			<pos>0.005 0.62</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<color>7d7d7d</color>
@@ -552,7 +556,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 		<image name="retrobat" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/option.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.642</pos>
+			<pos>0.005 0.662</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<color>7d7d7d</color>
