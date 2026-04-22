@@ -130,7 +130,7 @@ license: creative commons CC-BY-NC-SA
 			<opacity>1</opacity>
 			<delay>0.3</delay>
 		</video>
-		<video name="gameplayvideostarangled" ifSubset="video4starmodern:videoangled" extra="true">
+		<video name="gameplayvideostarangled" ifSubset="metadataonoff:deactivate"  extra="true">
 			<visible ifSubset="metadataonoff:deactivate">true</visible>
 			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">false</visible>
 			<visible ifSubset="video4starclassic:novideo">false</visible>
@@ -161,7 +161,7 @@ license: creative commons CC-BY-NC-SA
 			<effect>none</effect>
 			<zIndex>4</zIndex>
 			<autoFade>false</autoFade>
-						<offsetX>-0.6</offsetX>
+			<offsetX>-0.6</offsetX>
 			<offsetY>0.1</offsetY>
 			<shader>
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
