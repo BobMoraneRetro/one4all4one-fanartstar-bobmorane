@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="en">
+		<nodates>No date</nodates>
+		<playcountone>play</playcountone>
+		<playcount>plays</playcount>
+		<noplaycount>Never launched</noplaycount>
+		<playerss>players</playerss>
+		<player>player</player>
+		<nogametime>Never played</nogametime>
+		<noplayerdata>Unknown</noplayerdata>
+		<noratings>No rating</noratings>
+		<presgame1>This is a game of type</presgame1>
+		<presgame2>developed by</presgame2>
+		<presgame3>playable on</presgame3>
+		<presgame4>- Available languages :</presgame4>
+		<nomjeulabel>Game name :</nomjeulabel>
+		<genrelabel>Genre :</genrelabel>
+		<devlabel>Developer :</devlabel>
+		<langlabel>Languages :</langlabel>
+		<gametimelabel>Play time :</gametimelabel>
+		<lastgamelabel>Last played :</lastgamelabel>
+		<!-- ####### LOGOS ###### -->
+		<logosimple>Simple logo (Full + Region)</logosimple>
+		<!-- ###################### -->
+		<fanartfreshone>Fanarts selected by FreshOne only</fanartfreshone>
+		<fanartsystcustom>Fanarts from custom folder, otherwise FreshOne</fanartsystcustom>
+		<!-- ###################### -->
+		<yes>Yes</yes>
+		<no>No</no>
+		<rien>No</rien>
+		<desactive>Disabled</desactive>
+		<!-- system view list -->
+		<systlist>System list view</systlist>
+		<viewbasicgrid>Basic : Simple grid view</viewbasicgrid>
+		<viewchoicecoinops>Customisable : RFE coinops</viewchoicecoinops>
+		<viewchoice.hyperbat>Customisable : HS Hyperbat</viewchoice.hyperbat>
+		<presetsquare>FanartStar square</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetspeedbull>Simple : RFE speedbull</presetspeedbull>
+		<presettraviolta_alt>Simple : RFE traviolta</presettraviolta_alt>
+		<presetshowbig>Simple : RFE Show Big preview</presetshowbig>
+		<presetshowsmall>Simple : RFE Show Small preview</presetshowsmall>
+		<!-- Fanart suffix -->
+		<packcustombuild>SCRAP - Fanart structure?</packcustombuild>
+		<packcustombuildsno>Fanart with "-fanart" suffix (default)</packcustombuildsno>
+		<packretrofreshbat>Fanart with "-image" suffix</packretrofreshbat>
+		<!-- help management -->
+		<iconset>Help - Help icon appearance</iconset>
+		<colorhelp>Help - Help text colors</colorhelp>
+		<systviewvideo>System view - Animated system presentation</systviewvideo>
+		<systviewfanart>System view - System fanart selection</systviewfanart>
+		<systviewtotal>System view - Show number of games</systviewtotal>
+		<!-- ############ -->
+		<!-- official category menu display -->
+		<menuofficiel>Show breadcrumb navigation</menuofficiel>
+		<menutxt>Official hardware sort: horizontal text</menutxt>
+		<menuorb>Official hardware sort: horizontal orb</menuorb>
+		<menuorbvert>Official hardware sort: vertical orb</menuorbvert>
+		<menuorbcrcl>Official hardware sort: half-circle orb</menuorbcrcl>
+		<menucust>Bob custom hardware sort: horizontal text</menucust>
+		<menucustorb>Bob custom hardware sort: horizontal orb</menucustorb>
+		<menucustorbvert>Bob custom hardware sort: vertical orb</menucustorbvert>
+		<menucustorbcrcl>Bob custom hardware sort: half-circle orb</menucustorbcrcl>
+		<menutxtzspin>Official hardware sort: vertical text</menutxtzspin>
+		<menutxtzspincust>Bob custom hardware sort: vertical text</menutxtzspincust>
+		<!-- Max info console -->
+		<infosmax>Show max info console?</infosmax>
+		<!-- Brief display on system startup -->
+		<systannounce>Show current system on startup</systannounce>
+		<classiquesyst>Zoom-out disappearance</classiquesyst>
+		<default>Set by theme</default>
+		<speedslow2>Slow++</speedslow2>
+		<speedslow1>Slow+</speedslow1>
+		<default>Default</default>
+		<spacerstar>-----------------------------    ↓ Start of advanced options specific to Fanart Star views ↓   -------------------</spacerstar>
+		<mediastar>-------------------------- Recommended media for Fanart Star game view = Video, Marquee, Thumbnail ---------------</mediastar>
+		<fanarstargridcolor>Grid color</fanarstargridcolor>
+		<starvideo>Preview video size</starvideo>
+		<starvideobig>Large</starvideobig>
+		<starvideodef>Standard</starvideodef>
+		<starvideoang>Angled</starvideoang>
+		<starthumb>Display 2D or 3D covers?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starboxang>Game box angle</starboxang>
+		<active>Enabled</active>
+		<deactive>Disabled</deactive>
+		<customfanart>Choose fanarts to use</customfanart>
+		<fanartgamelist>Scraped fanart in the Gamelist</fanartgamelist>
+		<fanartcustom>Custom fanart in _Gamemedia-SystemName-medium_artwork</fanartcustom>
+		<!-- Welcome message -->
+		<lismoi>Welcome message</lismoi>
+		<tumasbienlu>Home and Credits</tumasbienlu>
+		<hyperspin>ADDON : Unified Hyperspin-style image and gameplay</hyperspin>
+		<gameplayp1>Small random gameplay video with bezel if available</gameplayp1>
+		<gameplay1>Large random gameplay video with bezel if available</gameplay1>
+		<gameplayp>Small random gameplay video</gameplayp>
+		<gameplay>Large random gameplay video</gameplay>
+		<custom>Custom video from custom folder</custom>
+		<default>Default</default>
+		<skyblue>sky blue</skyblue>
+		<purple>purple</purple>
+		<red>red</red>
+		<aqua>sky blue</aqua>
+		<orange>orange</orange>
+		<green>green</green>
+		<yellow>yellow</yellow>
+		<pink>pink</pink>
+		<grey>dark grey</grey>
+		<lightgrey>light grey</lightgrey>
+		<navy>blue alt</navy>
+		<violet>violet</violet>
+		<candy>candy</candy>
+		<redalt>red alt</redalt>
+		<yellowalt>yellow alt</yellowalt>
+		<greenalt>green alt</greenalt>
+		<purplealt>purple alt</purplealt>
+		<iconsetposition>Button position</iconsetposition>
+		<!-- FanartStar specific spacer -->
+		<spacerstar>--------- Recommended media for Fanart Star game view = Fanart, Video, Marquee, Thumbnail, Boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ Start of advanced options specific to FanartStar boxart view ↓   -------------------</mediastar>
+		<mediastar2>-------------------------    ↓ Start of advanced options specific to FanartStar 16/9 and 4/3 view ↓   -------------------</mediastar2>
+		<mediastar3>----------------------------    ↓ Start of advanced options specific to FanartStar Square view ↓   -------------------</mediastar3>
+		<!-- fanartstar square -->
+		<squarecadre>Style of squares representing games</squarecadre>
+		<noirombre>Black frame + shadow</noirombre>
+		<blancombre>White frame + shadow</blancombre>
+		<ombre>Shadow only</ombre>
+		<rien>No decoration</rien>
+		<!-- fanartstarsystem -->
+		<fanartstarsyst>Classic</fanartstarsyst>
+		<fanartmodern>Modern 1 (breadcrumb incompatible)</fanartmodern>
+		<fanartmodern2>Modern 2 (breadcrumb compatible)</fanartmodern2>
+		<video4starmodern>Gameplay video on system view</video4starmodern>
+		<video4starclassic>Gameplay video on system view</video4starclassic>
+		<novideo>Disabled</novideo>
+		<videoback>Enabled (fullscreen background)</videoback>
+		<videoangled>Enabled (small angled)</videoangled>
+		<systviewselec>System image in the wheel</systviewselec>
+		<hardware>Hardware</hardware>
+		<charsystem>Characters</charsystem>
+		<figurines>Figurines (Animatics theme must be installed)</figurines>
+		<!-- fanartstar boxart -->
+		<spacebox>Space between game boxes</spacebox>
+		<spacessssmall>Space ----</spacessssmall>
+		<spacesssmall>Space ---</spacesssmall>
+		<spacessmall>Space --</spacessmall>
+		<spacesmall>Space -</spacesmall>
+		<spacenorm>Default</spacenorm>
+		<spacemore>Space +</spacemore>
+		<spacemmore>Space ++</spacemmore>
+		<spacemmmore>Space +++</spacemmmore>
+		<spacemmmmore>Space ++++</spacemmmmore>
+		<boxstarspeed>Scroll animation speed</boxstarspeed>
+		<fanartstarrotated>Rotation of SNES, N64, NGAGE, Solarus boxes</fanartstarrotated>
+		<starrotate>Yes</starrotate>
+		<nostarrotate>No</nostarrotate>
+		<jeux>games</jeux>
+		<longselect>Long press on "select"</longselect>
+		<favuniquement>Favorites only</favuniquement>
+		<tslesjeux>All games</tslesjeux>
+		<breadcrumbsonoff>Left vertical menu (classic system view)</breadcrumbsonoff>
+		<metadataonoff>System information (classic system view)</metadataonoff>
+		<!-- ######## VARIABLES NON UTILISÃ‰ES (commentÃ©es) ######## -->
+		<!-- Total: 1 variables -->
+		<!-- <vide>   </vide> -->
+	</variables>
+</theme>

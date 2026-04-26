@@ -362,7 +362,7 @@
 		<image name="marqueetitre" extra="true">
 			<autoFade>false</autoFade>
 			<pos>0.2 0.2</pos>
-			<origin>0.5 1</origin>
+			<origin>0.5 1</origin>à)
 			<maxSize>0.25 0.18</maxSize>
 			<path>{game:marquee}</path>
 			<!-- <path if="{system.theme} == 'switch'">${extgameartpng}</path> -->
@@ -760,6 +760,7 @@
 			<opacity>0</opacity>
 		</text>
 		<text name="allgames_select" extra="true">
+			<visible>!startswith(lower({system:filter}), "fav")</visible>
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<text>${tslesjeux}</text>
 			<fontSize>0.02</fontSize>
@@ -777,7 +778,7 @@
 			<opacity>0.8</opacity>
 		</text>
 		<text name="allgames_noselect" extra="true">
-			<visible>startswith(lower({system:filter}), "favoris")</visible>
+			<visible>startswith(lower({system:filter}), "fav")</visible>
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<text>${tslesjeux}</text>
 			<fontSize>0.02</fontSize>
@@ -795,11 +796,12 @@
 			<opacity>0.8</opacity>
 		</text>
 		<text name="favoris_noselect" extra="true">
-			<!-- <visible>startswith(lower({system:filter}), "favoris")</visible> -->
+			<visible>!startswith(lower({system:filter}), "fav")</visible>
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<text>${favuniquement}</text>
 			<fontSize>0.02</fontSize>
 			<pos>0.12 0.45</pos>
+			<pos lang="es">0.14 0.45</pos>
 			<color>ffffffff</color>
 			<glowColor>00000080</glowColor>
 			<glowOffset>1</glowOffset>
@@ -818,6 +820,7 @@
 			<text>${favuniquement}</text>
 			<fontSize>0.02</fontSize>
 			<pos>0.12 0.45</pos>
+			<pos lang="es">0.14 0.45</pos>
 			<color>ffea00</color>
 			<glowColor>00000080</glowColor>
 			<glowOffset>1</glowOffset>

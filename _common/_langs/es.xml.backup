@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="es">
+		<nodates>Sin fecha</nodates>
+		<playcountone>partida</playcountone>
+		<playcount>partidas</playcount>
+		<noplaycount>Nunca iniciado</noplaycount>
+		<playerss>jugadores</playerss>
+		<player>jugador</player>
+		<nogametime>Nunca jugado</nogametime>
+		<noplayerdata>Desconocido</noplayerdata>
+		<noratings>Sin puntuación</noratings>
+		<presgame1>Este es un juego de tipo</presgame1>
+		<presgame2>desarrollado por</presgame2>
+		<presgame3>jugable en</presgame3>
+		<presgame4>- Idiomas disponibles :</presgame4>
+		<nomjeulabel>Nombre del juego :</nomjeulabel>
+		<genrelabel>Género :</genrelabel>
+		<devlabel>Desarrollador :</devlabel>
+		<langlabel>Idiomas :</langlabel>
+		<gametimelabel>Tiempo de juego :</gametimelabel>
+		<lastgamelabel>Última partida :</lastgamelabel>
+		<!-- ####### LOGOS ###### -->
+		<logosimple>Logo simple (Completo + Región)</logosimple>
+		<!-- ###################### -->
+		<fanartfreshone>Fanarts seleccionados únicamente por FreshOne</fanartfreshone>
+		<fanartsystcustom>Fanarts de la carpeta custom, si no FreshOne</fanartsystcustom>
+		<!-- ###################### -->
+		<yes>Sí</yes>
+		<no>No</no>
+		<rien>No</rien>
+		<desactive>Desactivado</desactive>
+		<!-- lista de vistas de sistema -->
+		<systlist>Vista de lista de sistemas</systlist>
+		<viewbasicgrid>Básico : Vista de cuadrícula simple</viewbasicgrid>
+		<viewchoicecoinops>Personalizable : RFE coinops</viewchoicecoinops>
+		<viewchoice.hyperbat>Personalizable : HS Hyperbat</viewchoice.hyperbat>
+		<presetsquare>FanartStar cuadrado</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetspeedbull>Simple : RFE speedbull</presetspeedbull>
+		<presettraviolta_alt>Simple : RFE traviolta</presettraviolta_alt>
+		<presetshowbig>Simple : RFE Show vista previa grande</presetshowbig>
+		<presetshowsmall>Simple : RFE Show vista previa pequeña</presetshowsmall>
+		<!-- Sufijo fanart -->
+		<packcustombuild>SCRAP - ¿Estructura fanart?</packcustombuild>
+		<packcustombuildsno>Fanart con sufijo "-fanart" (por defecto)</packcustombuildsno>
+		<packretrofreshbat>Fanart con sufijo "-image"</packretrofreshbat>
+		<!-- gestión de ayuda -->
+		<iconset>Ayuda - Apariencia de los iconos de ayuda</iconset>
+		<colorhelp>Ayuda - Colores del texto de ayuda</colorhelp>
+		<systviewvideo>Vista de sistema - Presentación animada del sistema</systviewvideo>
+		<systviewfanart>Vista de sistema - Selección de fanarts del sistema</systviewfanart>
+		<systviewtotal>Vista de sistema - Mostrar número de juegos</systviewtotal>
+		<!-- ############ -->
+		<!-- menú oficial de categorías -->
+		<menuofficiel>Mostrar navegación de migas de pan</menuofficiel>
+		<menutxt>Orden de hardware oficial: texto horizontal</menutxt>
+		<menuorb>Orden de hardware oficial: orbe horizontal</menuorb>
+		<menuorbvert>Orden de hardware oficial: orbe vertical</menuorbvert>
+		<menuorbcrcl>Orden de hardware oficial: orbe semicircular</menuorbcrcl>
+		<menucust>Orden de hardware personalizado de Bob: texto horizontal</menucust>
+		<menucustorb>Orden de hardware personalizado de Bob: orbe horizontal</menucustorb>
+		<menucustorbvert>Orden de hardware personalizado de Bob: orbe vertical</menucustorbvert>
+		<menucustorbcrcl>Orden de hardware personalizado de Bob: orbe semicircular</menucustorbcrcl>
+		<menutxtzspin>Orden de hardware oficial: texto vertical</menutxtzspin>
+		<menutxtzspincust>Orden de hardware personalizado de Bob: texto vertical</menutxtzspincust>
+		<!-- consola max -->
+		<infosmax>¿Mostrar consola de información máxima?</infosmax>
+		<!-- anuncio al iniciar -->
+		<systannounce>Mostrar el sistema actual al iniciar</systannounce>
+		<classiquesyst>Desaparición con zoom hacia atrás</classiquesyst>
+		<default>Definido por el tema</default>
+		<speedslow2>Lento++</speedslow2>
+		<speedslow1>Lento+</speedslow1>
+		<default>Por defecto</default>
+		<jeux>juegos</jeux>
+		<longselect>Pulsación larga de "select"</longselect>
+		<favuniquement>Solo favoritos</favuniquement>
+		<tslesjeux>Todos los juegos</tslesjeux>
+		<breadcrumbsonoff>Menú vertical a la izquierda (vista clásica del sistema)</breadcrumbsonoff>
+		<metadataonoff>Información del sistema (vista clásica del sistema)</metadataonoff>
+		<!-- ######## VARIABLES NON UTILISÃ‰ES (commentÃ©es) ######## -->
+		<!-- Total: 1 variables -->
+		<!-- <vide>   </vide> -->
+	</variables>
+</theme>
