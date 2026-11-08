@@ -1729,40 +1729,40 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
 			<zIndex>900</zIndex>
 		</image>
-		<image name="arianeconsarcade" extra="static">
+		<text name="arianeconsarcade" extra="static">
 			<visible>false</visible>
 			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
 			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
-			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/arcade.png</path>
-			<origin>0.5 0.5</origin>
-			<pos>0.026 0.5700</pos>
-			<maxSize>0.042 0.03</maxSize>
-			<linearSmooth>true</linearSmooth>
-			<saturation>0</saturation>
-			<saturation if="{system.manufacturer} == 'Arcade'">1</saturation>
+			<text>ARCADE</text>
+			<pos>0.003 0.5550</pos>
+			<size>0.046 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+			<alignment>center</alignment>
 			<color>7d7d7dff</color>
 			<color if="{system.manufacturer} == 'Arcade'">ffffffff</color>
 			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
-			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
 			<zIndex>900</zIndex>
-		</image>
-		<image name="arianeconsports" extra="static">
+		</text>
+		<text name="arianeconsports" extra="static">
 			<visible>false</visible>
 			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
 			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
-			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/port.png</path>
-			<origin>0.5 0.5</origin>
-			<pos>0.026 0.6100</pos>
-			<maxSize>0.042 0.03</maxSize>
-			<linearSmooth>true</linearSmooth>
-			<saturation>0</saturation>
-			<saturation if="{system.manufacturer} == 'Ports'">1</saturation>
+			<text>PORTS</text>
+			<pos>0.003 0.5950</pos>
+			<size>0.046 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+			<alignment>center</alignment>
 			<color>7d7d7dff</color>
 			<color if="{system.manufacturer} == 'Ports'">ffffffff</color>
 			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
-			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
 			<zIndex>900</zIndex>
-		</image>
+		</text>
 		<text name="arianeconsautres" extra="static">
 			<visible>false</visible>
 			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>

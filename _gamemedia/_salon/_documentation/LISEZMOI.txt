@@ -5,6 +5,7 @@ Dans ce dossier :
   LISEZMOI.txt (français), README.txt (English), LEEME.txt (español), LEIAME.txt (português)
   LISEZMOI_decors.txt  : liste et description des décors fournis (README_backgrounds.txt, LEEME_fondos.txt, LEIAME_fundos.txt)
   exemple_complet.xml  : fichier de réglages avec TOUTES les options, à copier sous le nom du système
+  ..\_outil\Calage ecran salon.bat : outil Windows : mesure l'écran transparent d'un décor, crée ou modifie son <système>.xml (tous les réglages)
 
 Emplacement des fichiers :
   par défaut        : <thème>/_gamemedia/_salon/  (le dossier parent de celui-ci)

@@ -292,25 +292,28 @@
 		<planche01>01 - Види систем</planche01>
 		<planche02>02 - Класичний вигляд: зображення системи</planche02>
 		<planche03>03 - Класичний вигляд: подробиці</planche03>
-		<planche04>04 - Фанарти систем, Modern і Z-Spin</planche04>
-		<planche05>05 - 11 видів ігор</planche05>
-		<planche06>06 - FanartStar Boxart: коробки та відомості</planche06>
-		<planche07>07 - FanartStar Boxart: відео</planche07>
-		<planche08>08 - Коробки та носії</planche08>
-		<planche09>09 - 22 футляри</planche09>
-		<planche10>10 - Носій: налаштування за системами</planche10>
-		<planche11>11 - Фанарти ігор і вибір</planche11>
-		<planche12>12 - Big Art, Spotlight, Квадрат, 16/9 і 4/3</planche12>
-		<planche13>13 - Види RFE</planche13>
-		<planche14>14 - RFE Retrofist: екран телевізора</planche14>
-		<planche15>15 - Show Big &amp; Small: коробка, що перевертається</planche15>
-		<planche16>16 - Спільні параметри видів ігор</planche16>
-		<planche17>17 - Загальні: звуки, довідка, годинник</planche17>
-		<planche18>18 - Налаштування власними теками</planche18>
-		<planche19>19 - Власні медіафайли ігор</planche19>
-		<planche20>20 - Оформлення теки</planche20>
-		<planche21>21 - Яке зображення переможе?</planche21>
-		<planche22>22 - Згруповані системи</planche22>
-		<planche23>23 - Слабкий комп'ютер і посилання</planche23>
+		<planche04>04 - Класичний вигляд: навігаційний ланцюжок</planche04>
+		<planche05>05 - Фанарти систем, Modern і Z-Spin</planche05>
+		<planche06>06 - 12 видів ігор</planche06>
+		<planche07>07 - FanartStar Boxart: коробки та відомості</planche07>
+		<planche08>08 - FanartStar Boxart: відео</planche08>
+		<planche09>09 - Коробки та носії</planche09>
+		<planche10>10 - 22 футляри</planche10>
+		<planche11>11 - Носій: налаштування за системами</planche11>
+		<planche12>12 - Фанарти ігор і вибір</planche12>
+		<planche13>13 - Big Art, Spotlight, Квадрат, 16/9 і 4/3</planche13>
+		<planche14>14 - Види RFE</planche14>
+		<planche15>15 - RFE Retrofist: екран телевізора</planche15>
+		<planche16>16 - Show Big &amp; Small: коробка, що перевертається</planche16>
+		<planche17>17 - Спільні параметри видів ігор</planche17>
+		<planche18>18 - Назва гри, оцінка та інтервал</planche18>
+		<planche19>19 - Загальні: звуки, довідка, годинник</planche19>
+		<planche20>20 - Налаштування власними теками</planche20>
+		<planche21>21 - Власні медіафайли ігор</planche21>
+		<planche22>22 - Оформлення теки</planche22>
+		<planche23>23 - Яке зображення переможе?</planche23>
+		<planche24>24 - Згруповані системи</planche24>
+		<planche25>25 - RetroAchievements</planche25>
+		<planche26>26 - Слабкий комп'ютер і посилання</planche26>
 	</variables>
 </theme>

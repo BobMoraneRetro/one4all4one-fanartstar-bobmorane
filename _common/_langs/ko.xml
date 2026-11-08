@@ -292,25 +292,28 @@
 		<planche01>01 - 시스템 보기</planche01>
 		<planche02>02 - 클래식 보기: 시스템 이미지</planche02>
 		<planche03>03 - 클래식 보기: 세부 사항</planche03>
-		<planche04>04 - 시스템 팬아트, Modern 및 Z-Spin</planche04>
-		<planche05>05 - 11가지 게임 보기</planche05>
-		<planche06>06 - FanartStar Boxart: 박스와 정보</planche06>
-		<planche07>07 - FanartStar Boxart: 동영상</planche07>
-		<planche08>08 - 박스와 매체</planche08>
-		<planche09>09 - 22가지 케이스</planche09>
-		<planche10>10 - 매체: 시스템별 설정</planche10>
-		<planche11>11 - 게임 팬아트와 선택</planche11>
-		<planche12>12 - Big Art, Spotlight, 정사각형, 16/9 및 4/3</planche12>
-		<planche13>13 - RFE 보기</planche13>
-		<planche14>14 - RFE Retrofist: TV 화면</planche14>
-		<planche15>15 - Show Big &amp; Small: 뒤집히는 박스</planche15>
-		<planche16>16 - 게임 보기 공통 옵션</planche16>
-		<planche17>17 - 일반: 사운드, 도움말, 시계</planche17>
-		<planche18>18 - 나만의 폴더로 사용자 지정</planche18>
-		<planche19>19 - 게임 사용자 미디어</planche19>
-		<planche20>20 - 폴더 꾸미기</planche20>
-		<planche21>21 - 어떤 이미지가 이길까?</planche21>
-		<planche22>22 - 그룹화된 시스템</planche22>
-		<planche23>23 - 저사양 기기와 링크</planche23>
+		<planche04>04 - 클래식 보기: 탐색 경로</planche04>
+		<planche05>05 - 시스템 팬아트, Modern 및 Z-Spin</planche05>
+		<planche06>06 - 12가지 게임 보기</planche06>
+		<planche07>07 - FanartStar Boxart: 박스와 정보</planche07>
+		<planche08>08 - FanartStar Boxart: 동영상</planche08>
+		<planche09>09 - 박스와 매체</planche09>
+		<planche10>10 - 22가지 케이스</planche10>
+		<planche11>11 - 매체: 시스템별 설정</planche11>
+		<planche12>12 - 게임 팬아트와 선택</planche12>
+		<planche13>13 - Big Art, Spotlight, 정사각형, 16/9 및 4/3</planche13>
+		<planche14>14 - RFE 보기</planche14>
+		<planche15>15 - RFE Retrofist: TV 화면</planche15>
+		<planche16>16 - Show Big &amp; Small: 뒤집히는 박스</planche16>
+		<planche17>17 - 게임 보기 공통 옵션</planche17>
+		<planche18>18 - 게임 이름, 평점 및 간격</planche18>
+		<planche19>19 - 일반: 사운드, 도움말, 시계</planche19>
+		<planche20>20 - 나만의 폴더로 사용자 지정</planche20>
+		<planche21>21 - 게임 사용자 미디어</planche21>
+		<planche22>22 - 폴더 꾸미기</planche22>
+		<planche23>23 - 어떤 이미지가 이길까?</planche23>
+		<planche24>24 - 그룹화된 시스템</planche24>
+		<planche25>25 - RetroAchievements</planche25>
+		<planche26>26 - 저사양 기기와 링크</planche26>
 	</variables>
 </theme>

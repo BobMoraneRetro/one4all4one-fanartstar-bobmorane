@@ -292,25 +292,28 @@
 		<planche01>01 - Les vistes de sistemes</planche01>
 		<planche02>02 - Vista clàssica: la imatge del sistema</planche02>
 		<planche03>03 - Vista clàssica: els detalls</planche03>
-		<planche04>04 - Fanarts de sistema, Modern i Z-Spin</planche04>
-		<planche05>05 - Les 11 vistes de jocs</planche05>
-		<planche06>06 - FanartStar Boxart: caixes i informació</planche06>
-		<planche07>07 - FanartStar Boxart: el vídeo</planche07>
-		<planche08>08 - Caixes i suports</planche08>
-		<planche09>09 - Les 22 caràtules</planche09>
-		<planche10>10 - El suport: ajustos per sistema</planche10>
-		<planche11>11 - Fanarts dels jocs i selecció</planche11>
-		<planche12>12 - Big Art, Spotlight, Quadrat, 16/9 i 4/3</planche12>
-		<planche13>13 - Les vistes RFE</planche13>
-		<planche14>14 - RFE Retrofist: la pantalla de la TV</planche14>
-		<planche15>15 - Show Big &amp; Small: la caixa que es gira</planche15>
-		<planche16>16 - Opcions comunes de les vistes de jocs</planche16>
-		<planche17>17 - General: sons, ajuda, rellotge</planche17>
-		<planche18>18 - Personalitza amb les teves carpetes</planche18>
-		<planche19>19 - Mitjans propis dels jocs</planche19>
-		<planche20>20 - Vestir una carpeta</planche20>
-		<planche21>21 - Quina imatge guanya?</planche21>
-		<planche22>22 - Els sistemes agrupats</planche22>
-		<planche23>23 - Màquina poc potent i enllaços</planche23>
+		<planche04>04 - Vista clàssica: la ruta de navegació</planche04>
+		<planche05>05 - Fanarts de sistema, Modern i Z-Spin</planche05>
+		<planche06>06 - Les 12 vistes de jocs</planche06>
+		<planche07>07 - FanartStar Boxart: caixes i informació</planche07>
+		<planche08>08 - FanartStar Boxart: el vídeo</planche08>
+		<planche09>09 - Caixes i suports</planche09>
+		<planche10>10 - Les 22 caràtules</planche10>
+		<planche11>11 - El suport: ajustos per sistema</planche11>
+		<planche12>12 - Fanarts dels jocs i selecció</planche12>
+		<planche13>13 - Big Art, Spotlight, Quadrat, 16/9 i 4/3</planche13>
+		<planche14>14 - Les vistes RFE</planche14>
+		<planche15>15 - RFE Retrofist: la pantalla de la TV</planche15>
+		<planche16>16 - Show Big &amp; Small: la caixa que es gira</planche16>
+		<planche17>17 - Opcions comunes de les vistes de jocs</planche17>
+		<planche18>18 - Nom del joc, nota i espaiat</planche18>
+		<planche19>19 - General: sons, ajuda, rellotge</planche19>
+		<planche20>20 - Personalitza amb les teves carpetes</planche20>
+		<planche21>21 - Mitjans propis dels jocs</planche21>
+		<planche22>22 - Vestir una carpeta</planche22>
+		<planche23>23 - Quina imatge guanya?</planche23>
+		<planche24>24 - Els sistemes agrupats</planche24>
+		<planche25>25 - RetroAchievements</planche25>
+		<planche26>26 - Màquina poc potent i enllaços</planche26>
 	</variables>
 </theme>

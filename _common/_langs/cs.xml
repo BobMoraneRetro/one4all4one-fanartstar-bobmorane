@@ -292,25 +292,28 @@
 		<planche01>01 - Zobrazení systémů</planche01>
 		<planche02>02 - Klasické zobrazení: obrázek systému</planche02>
 		<planche03>03 - Klasické zobrazení: podrobnosti</planche03>
-		<planche04>04 - Fanarty systémů, Modern a Z-Spin</planche04>
-		<planche05>05 - 11 zobrazení her</planche05>
-		<planche06>06 - FanartStar Boxart: krabice a informace</planche06>
-		<planche07>07 - FanartStar Boxart: video</planche07>
-		<planche08>08 - Krabice a nosiče</planche08>
-		<planche09>09 - 22 obalů</planche09>
-		<planche10>10 - Nosič: nastavení podle systému</planche10>
-		<planche11>11 - Fanarty her a výběr</planche11>
-		<planche12>12 - Big Art, Spotlight, Čtverec, 16/9 a 4/3</planche12>
-		<planche13>13 - Zobrazení RFE</planche13>
-		<planche14>14 - RFE Retrofist: obrazovka televize</planche14>
-		<planche15>15 - Show Big &amp; Small: otáčející se krabice</planche15>
-		<planche16>16 - Společné volby zobrazení her</planche16>
-		<planche17>17 - Obecné: zvuky, nápověda, hodiny</planche17>
-		<planche18>18 - Přizpůsobení vlastními složkami</planche18>
-		<planche19>19 - Vlastní média her</planche19>
-		<planche20>20 - Oblékání složky</planche20>
-		<planche21>21 - Který obrázek vyhraje?</planche21>
-		<planche22>22 - Seskupené systémy</planche22>
-		<planche23>23 - Slabý počítač a odkazy</planche23>
+		<planche04>04 - Klasické zobrazení: drobečková navigace</planche04>
+		<planche05>05 - Fanarty systémů, Modern a Z-Spin</planche05>
+		<planche06>06 - 12 zobrazení her</planche06>
+		<planche07>07 - FanartStar Boxart: krabice a informace</planche07>
+		<planche08>08 - FanartStar Boxart: video</planche08>
+		<planche09>09 - Krabice a nosiče</planche09>
+		<planche10>10 - 22 obalů</planche10>
+		<planche11>11 - Nosič: nastavení podle systému</planche11>
+		<planche12>12 - Fanarty her a výběr</planche12>
+		<planche13>13 - Big Art, Spotlight, Čtverec, 16/9 a 4/3</planche13>
+		<planche14>14 - Zobrazení RFE</planche14>
+		<planche15>15 - RFE Retrofist: obrazovka televize</planche15>
+		<planche16>16 - Show Big &amp; Small: otáčející se krabice</planche16>
+		<planche17>17 - Společné volby zobrazení her</planche17>
+		<planche18>18 - Název hry, hodnocení a rozestupy</planche18>
+		<planche19>19 - Obecné: zvuky, nápověda, hodiny</planche19>
+		<planche20>20 - Přizpůsobení vlastními složkami</planche20>
+		<planche21>21 - Vlastní média her</planche21>
+		<planche22>22 - Oblékání složky</planche22>
+		<planche23>23 - Který obrázek vyhraje?</planche23>
+		<planche24>24 - Seskupené systémy</planche24>
+		<planche25>25 - RetroAchievements</planche25>
+		<planche26>26 - Slabý počítač a odkazy</planche26>
 	</variables>
 </theme>

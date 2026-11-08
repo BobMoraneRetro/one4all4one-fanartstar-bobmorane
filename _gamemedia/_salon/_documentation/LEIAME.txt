@@ -5,6 +5,7 @@ Nesta pasta :
   LISEZMOI.txt (français), README.txt (English), LEEME.txt (español), LEIAME.txt (português)
   LEIAME_fundos.txt   : lista e descrição dos cenários fornecidos (LISEZMOI_decors.txt, README_backgrounds.txt, LEEME_fondos.txt)
   exemple_complet.xml : arquivo de ajustes com TODAS as opções, para copiar com o nome do sistema
+  ..\_outil\Calage ecran salon.bat : ferramenta Windows: mede a tela transparente de um cenário, cria ou modifica seu <sistema>.xml (todos os ajustes)
 
 Local dos arquivos :
   padrão          : <tema>/_gamemedia/_salon/  (a pasta acima desta)

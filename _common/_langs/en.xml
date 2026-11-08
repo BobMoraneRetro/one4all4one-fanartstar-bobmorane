@@ -292,25 +292,28 @@
 		<planche01>01 - The system views</planche01>
 		<planche02>02 - Classic view: the system image</planche02>
 		<planche03>03 - Classic view: the details</planche03>
-		<planche04>04 - System fanarts, Modern and Z-Spin</planche04>
-		<planche05>05 - The 11 game views</planche05>
-		<planche06>06 - FanartStar Boxart: boxes and info</planche06>
-		<planche07>07 - FanartStar Boxart: the video</planche07>
-		<planche08>08 - Boxes and media</planche08>
-		<planche09>09 - The 22 cases</planche09>
-		<planche10>10 - The medium: per-system settings</planche10>
-		<planche11>11 - Game fanarts and selection</planche11>
-		<planche12>12 - Big Art, Spotlight, Square, 16/9 and 4/3</planche12>
-		<planche13>13 - The RFE views</planche13>
-		<planche14>14 - RFE Retrofist: the TV screen</planche14>
-		<planche15>15 - Show Big &amp; Small: the flipping box</planche15>
-		<planche16>16 - Common options of the game views</planche16>
-		<planche17>17 - General: sounds, help, clock</planche17>
-		<planche18>18 - Customize with your folders</planche18>
-		<planche19>19 - Custom game media</planche19>
-		<planche20>20 - Dressing a folder</planche20>
-		<planche21>21 - Which image wins?</planche21>
-		<planche22>22 - Grouped systems</planche22>
-		<planche23>23 - Low-end machine and links</planche23>
+		<planche04>04 - Classic view: the breadcrumb</planche04>
+		<planche05>05 - System fanarts, Modern and Z-Spin</planche05>
+		<planche06>06 - The 12 game views</planche06>
+		<planche07>07 - FanartStar Boxart: boxes and info</planche07>
+		<planche08>08 - FanartStar Boxart: the video</planche08>
+		<planche09>09 - Boxes and media</planche09>
+		<planche10>10 - The 22 cases</planche10>
+		<planche11>11 - The medium: per-system settings</planche11>
+		<planche12>12 - Game fanarts and selection</planche12>
+		<planche13>13 - Big Art, Spotlight, Square, 16/9 and 4/3</planche13>
+		<planche14>14 - The RFE views</planche14>
+		<planche15>15 - RFE Retrofist: the TV screen</planche15>
+		<planche16>16 - Show Big &amp; Small: the flipping box</planche16>
+		<planche17>17 - Common options of the game views</planche17>
+		<planche18>18 - Game name, rating and spacing</planche18>
+		<planche19>19 - General: sounds, help, clock</planche19>
+		<planche20>20 - Customize with your folders</planche20>
+		<planche21>21 - Custom game media</planche21>
+		<planche22>22 - Dressing a folder</planche22>
+		<planche23>23 - Which image wins?</planche23>
+		<planche24>24 - Grouped systems</planche24>
+		<planche25>25 - RetroAchievements</planche25>
+		<planche26>26 - Low-end machine and links</planche26>
 	</variables>
 </theme>

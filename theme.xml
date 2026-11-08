@@ -68,6 +68,9 @@
 		<include name="planche21" displayName="${planche21}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
 		<include name="planche22" displayName="${planche22}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
 		<include name="planche23" displayName="${planche23}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche24" displayName="${planche24}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche25" displayName="${planche25}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche26" displayName="${planche26}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
 		<include name="desactive" displayName="${desactive}"/>
 	</subset>
 	<region region="fr">Region fr</region>

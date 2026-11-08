@@ -53,6 +53,12 @@
 			<path ifSubset="lismoiv3:planche22">${themePath}/_viewsystoption/sl-commun/planches/${lang}/22.png</path>
 			<path ifSubset="lismoiv3:planche23">${themePath}/_viewsystoption/sl-commun/planches/en/23.png</path>
 			<path ifSubset="lismoiv3:planche23">${themePath}/_viewsystoption/sl-commun/planches/${lang}/23.png</path>
+			<path ifSubset="lismoiv3:planche24">${themePath}/_viewsystoption/sl-commun/planches/en/24.png</path>
+			<path ifSubset="lismoiv3:planche24">${themePath}/_viewsystoption/sl-commun/planches/${lang}/24.png</path>
+			<path ifSubset="lismoiv3:planche25">${themePath}/_viewsystoption/sl-commun/planches/en/25.png</path>
+			<path ifSubset="lismoiv3:planche25">${themePath}/_viewsystoption/sl-commun/planches/${lang}/25.png</path>
+			<path ifSubset="lismoiv3:planche26">${themePath}/_viewsystoption/sl-commun/planches/en/26.png</path>
+			<path ifSubset="lismoiv3:planche26">${themePath}/_viewsystoption/sl-commun/planches/${lang}/26.png</path>
 			<size>1 1</size>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
