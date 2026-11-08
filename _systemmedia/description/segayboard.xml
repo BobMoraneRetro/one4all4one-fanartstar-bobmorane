@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega Y Board, the powerful sprite-scaling arcade board of 1988, home to Galaxy Force II, Power Drift and G-LOC.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>A Sega Y Board, potente placa de arcade com escala de sprites de 1988, com Galaxy Force II, Power Drift e G-LOC.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega Y Board, the powerful sprite-scaling arcade board of 1988, home to Galaxy Force II, Power Drift and G-LOC.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La Sega Y Board, potente placa arcade con escalado de sprites de 1988, con Galaxy Force II, Power Drift y G-LOC.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La Sega Y Board, puissante carte arcade à zoom de sprites de 1988, qui a accueilli Galaxy Force II, Power Drift et G-LOC.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas Y Board, die leistungsstarke Sprite-Skalierungs-Platine von 1988, Heimat von Galaxy Force II, Power Drift und G-LOC.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Y Board</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1988</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

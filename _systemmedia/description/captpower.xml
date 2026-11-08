@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Interactive toy system by Mattel linked to the Captain Power TV series: toy guns reacted to signals hidden in the broadcast and on VHS tapes.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Sistema de brinquedos interativos da Mattel ligado à série Captain Power: armas de brinquedo reagiam a sinais escondidos na transmissão e nas fitas VHS.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Interactive toy system by Mattel linked to the Captain Power TV series: toy guns reacted to signals hidden in the broadcast and on VHS tapes.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Sistema de juguetes interactivos de Mattel ligado a la serie Captain Power: pistolas que reaccionaban a señales ocultas en la emisión y las cintas VHS.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Système de jouets interactifs de Mattel lié à la série Captain Power : des pistolets réagissaient aux signaux cachés dans l'émission et les cassettes VHS.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Interaktives Spielzeugsystem von Mattel zur Serie Captain Power: Spielzeugwaffen reagierten auf in Sendung und VHS-Kassetten versteckte Signale.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Captain Power</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1987</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Mattel</text>
+		</text>
+	</view>
+</theme>

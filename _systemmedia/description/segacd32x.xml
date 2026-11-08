@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Games that required both the Sega CD and the 32X add-ons at once on the Genesis.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos que exigiam ao mesmo tempo o Sega CD e o 32X no Genesis.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Games that required both the Sega CD and the 32X add-ons at once on the Genesis.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos que requerían a la vez el Sega CD y el 32X en la Genesis.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux nécessitant à la fois le Sega CD et le 32X sur la Genesis.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Spiele, die gleichzeitig Sega CD und 32X am Genesis benötigten.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Sega CD 32X</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1994</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

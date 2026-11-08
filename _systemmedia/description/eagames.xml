@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PC games from Electronic Arts, launched through the EA app (formerly Origin).</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de PC da Electronic Arts, iniciados pelo aplicativo da EA (antigo Origin).</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PC games from Electronic Arts, launched through the EA app (formerly Origin).</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de PC de Electronic Arts, lanzados desde la aplicación de EA (antes Origin).</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux PC d'Electronic Arts, lancés via l'application EA (anciennement Origin).</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PC-Spiele von Electronic Arts, gestartet über die EA-App (früher Origin).</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>EA Games</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2011</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Electronic Arts</text>
+		</text>
+	</view>
+</theme>

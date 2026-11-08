@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Namco System 12, an improved PlayStation-based arcade board, home to Tekken 3 and Soulcalibur.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Namco System 12, placa de arcade melhorada baseada no PlayStation, com Tekken 3 e Soulcalibur.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Namco System 12, an improved PlayStation-based arcade board, home to Tekken 3 and Soulcalibur.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Namco System 12, placa arcade mejorada basada en la PlayStation, con Tekken 3 y Soulcalibur.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Namco System 12, carte arcade améliorée basée sur la PlayStation, qui a accueilli Tekken 3 et Soulcalibur.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Namco System 12, eine verbesserte Arcade-Platine auf PlayStation-Basis, Heimat von Tekken 3 und Soulcalibur.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>System 12</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

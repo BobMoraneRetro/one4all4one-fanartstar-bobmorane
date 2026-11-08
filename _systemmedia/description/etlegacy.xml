@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>ET: Legacy, the open-source continuation of Wolfenstein: Enemy Territory, the free team-based multiplayer shooter of 2003.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>ET: Legacy, a continuação livre de Wolfenstein: Enemy Territory, o jogo de tiro multijogador em equipe gratuito de 2003.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>ET: Legacy, the open-source continuation of Wolfenstein: Enemy Territory, the free team-based multiplayer shooter of 2003.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>ET: Legacy, la continuación libre de Wolfenstein: Enemy Territory, el shooter multijugador por equipos gratuito de 2003.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>ET: Legacy, la suite libre de Wolfenstein : Enemy Territory, le jeu de tir multijoueur en équipe gratuit de 2003.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>ET: Legacy, die quelloffene Fortführung von Wolfenstein: Enemy Territory, dem kostenlosen Team-Multiplayer-Shooter von 2003.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>ET: Legacy</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2010</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

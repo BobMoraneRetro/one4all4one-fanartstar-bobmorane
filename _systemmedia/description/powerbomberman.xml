@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Power Bomberman, a fan-made Bomberman game for PC with up to many players in local multiplayer.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Power Bomberman, jogo de Bomberman feito por fãs para PC, para vários jogadores no modo local.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Power Bomberman, a fan-made Bomberman game for PC with up to many players in local multiplayer.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Power Bomberman, juego de Bomberman hecho por fans para PC, para varios jugadores en local.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Power Bomberman, jeu Bomberman créé par des fans pour PC, jouable à plusieurs en local.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Power Bomberman, ein von Fans erstelltes Bomberman-Spiel für PC mit lokalem Mehrspielermodus.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Power Bomberman</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

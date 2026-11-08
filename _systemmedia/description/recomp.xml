@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Console games statically recompiled into native PC programs, with modern resolutions, frame rates and controls.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de console recompilados como programas nativos de PC, com resoluções, taxa de quadros e controles modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Console games statically recompiled into native PC programs, with modern resolutions, frame rates and controls.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de consola recompilados como programas nativos de PC, con resoluciones, tasa de imágenes y controles modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux de console recompilés en programmes PC natifs, avec résolutions, fréquence d'images et commandes modernes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Konsolenspiele, statisch in native PC-Programme rekompiliert, mit modernen Auflösungen, Bildraten und Steuerungen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Recomp</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

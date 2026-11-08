@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>RealRTCW, an enhanced version of Return to Castle Wolfenstein with modernised graphics, weapons and gameplay.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>RealRTCW, versão melhorada de Return to Castle Wolfenstein com gráficos, armas e jogabilidade modernizados.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>RealRTCW, an enhanced version of Return to Castle Wolfenstein with modernised graphics, weapons and gameplay.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>RealRTCW, versión mejorada de Return to Castle Wolfenstein con gráficos, armas y jugabilidad modernizados.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>RealRTCW, version améliorée de Return to Castle Wolfenstein, aux graphismes, armes et mécaniques modernisés.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>RealRTCW, eine verbesserte Fassung von Return to Castle Wolfenstein mit modernisierter Grafik, Waffen und Spielmechanik.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>RealRTCW</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2016</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

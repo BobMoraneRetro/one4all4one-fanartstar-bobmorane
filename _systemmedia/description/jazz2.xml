@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Jazz² Resurrection, a native reimplementation of Jazz Jackrabbit 2, Epic MegaGames' 1998 platform game starring a green rabbit.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jazz² Resurrection, reimplementação nativa de Jazz Jackrabbit 2, o jogo de plataforma da Epic MegaGames de 1998 com um coelho verde.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Jazz² Resurrection, a native reimplementation of Jazz Jackrabbit 2, Epic MegaGames' 1998 platform game starring a green rabbit.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Jazz² Resurrection, reimplementación nativa de Jazz Jackrabbit 2, el plataformas de Epic MegaGames de 1998 protagonizado por un conejo verde.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jazz² Resurrection, réécriture native de Jazz Jackrabbit 2, le jeu de plates-formes d'Epic MegaGames sorti en 1998 avec un lapin vert.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Jazz² Resurrection, eine native Neuimplementierung von Jazz Jackrabbit 2, dem Jump'n'Run von Epic MegaGames von 1998 mit einem grünen Hasen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Jazz Jackrabbit 2</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1998</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sony's eighth-generation console, released in 2013, one of the best-selling consoles of all time.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console de oitava geração da Sony lançado em 2013, um dos consoles mais vendidos da história.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sony's eighth-generation console, released in 2013, one of the best-selling consoles of all time.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola de octava generación de Sony lanzada en 2013, una de las consolas más vendidas de la historia.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console de huitième génération de Sony sortie en 2013, l'une des consoles les plus vendues de l'histoire.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sonys Konsole der achten Generation von 2013, eine der meistverkauften Konsolen aller Zeiten.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PlayStation 4</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2013</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sony</text>
+		</text>
+	</view>
+</theme>

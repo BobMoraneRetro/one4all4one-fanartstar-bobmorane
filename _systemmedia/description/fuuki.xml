@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Fuuki, a Japanese developer of the 1990s known for the fighting game Asura Blade.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Fuuki, desenvolvedora japonesa dos anos 90 conhecida pelo jogo de luta Asura Blade.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Fuuki, a Japanese developer of the 1990s known for the fighting game Asura Blade.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Fuuki, desarrollador japonés de los 90 conocido por el juego de lucha Asura Blade.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade de Fuuki, développeur japonais des années 1990 connu pour le jeu de combat Asura Blade.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Fuuki, einem japanischen Entwickler der 1990er, bekannt für das Kampfspiel Asura Blade.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Fuuki</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Fuuki</text>
+		</text>
+	</view>
+</theme>

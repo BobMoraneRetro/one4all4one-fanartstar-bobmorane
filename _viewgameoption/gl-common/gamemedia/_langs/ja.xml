@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ja">
+		<packcustombuildsno>接尾辞 "-fanart" のファンアート(デフォルト)</packcustombuildsno>
+		<packretrofreshbat>接尾辞 "-image" のファンアート</packretrofreshbat>
+		<scrapedboxart>gamelist内の "-boxart" の3Dボックス</scrapedboxart>
+		<scrapedthumbnail>gamelist内の "-thumbnail" の3Dボックス</scrapedthumbnail>
+		<gamemedianon>いいえ：ゲームリストのメディアのみ</gamemedianon>
+		<gamemediaoui>はい：カスタムメディアを優先、なければゲームリスト</gamemediaoui>
+		<gamemediaseul>のみ：カスタムメディアのみ（gamelistで補わない）</gamemediaseul>
+		<intheme>テーマフォルダ - デフォルト</intheme>
+		<extfolder>外部フォルダ</extfolder>
+		<opt_custombuilds>詳細設定 - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>詳細設定 - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>詳細設定 - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>詳細設定 - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

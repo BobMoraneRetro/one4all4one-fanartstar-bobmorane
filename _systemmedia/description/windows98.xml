@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Games for Windows 98, the golden age of 3D-accelerated PC gaming at the turn of the millennium.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos para Windows 98, a era de ouro dos jogos de PC com aceleração 3D na virada do milênio.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Games for Windows 98, the golden age of 3D-accelerated PC gaming at the turn of the millennium.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos para Windows 98, la edad de oro del juego en PC con aceleración 3D en el cambio de milenio.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux pour Windows 98, l'âge d'or du jeu PC accéléré en 3D au tournant du millénaire.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Spiele für Windows 98, das goldene Zeitalter des 3D-beschleunigten PC-Spiels um die Jahrtausendwende.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Windows 98</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1998</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Microsoft</text>
+		</text>
+	</view>
+</theme>

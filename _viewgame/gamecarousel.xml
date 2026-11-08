@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
+	${media_fanart_orthumb} : média « fanart_orthumb » du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_image} : capture du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${path_common} : dossier _common du thème (définie dans theme.xml)
+-->
 <theme>
 	<formatVersion>7</formatVersion>
-	<variables>
-		<standardsbuildsfanart>exists({game:fanart}) ? {game:fanart} : {game:thumbnail}</standardsbuildsfanart>
-		<freshbuildfanart>exists({game:image}) ? {game:image} : {game:thumbnail}</freshbuildfanart>
-	</variables>
 	<view name="gamecarousel">
 		<text name="md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate, md_lbl_rating, md_lbl_genre, md_developer, md_publisher, md_name, md_description, md_genre, md_players, md_playcount">
 			<visible>false</visible>
@@ -19,6 +23,18 @@
 			<visible>false</visible>
 		</image>
 		<gamecarousel name="gamecarousel">
+			<scrollSound ifSubset="gamewheelsound:bulle">${path_common}/scrollsound/bulle.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clic">${path_common}/scrollsound/clic.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clicgrave">${path_common}/scrollsound/clicgrave.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:frottement">${path_common}/scrollsound/frottement.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:poc">${path_common}/scrollsound/poc.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360blade">${path_common}/scrollsound/xbox360-BladeSwitch_1.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360onglet">${path_common}/scrollsound/xbox360-tab_Switch.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360focus">${path_common}/scrollsound/xbox360-vk_Focus.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360touche">${path_common}/scrollsound/xbox360-vk_Select.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360retour">${path_common}/scrollsound/xbox360-btn_backG.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360selection">${path_common}/scrollsound/xbox360-snd_buttonselect.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:wheelclic">${path_common}/scrollsound/wheelclic.wav</scrollSound>
 			<type>vertical_wheel</type>
 			<pos>0.4 0</pos>
 			<size>1 1</size>
@@ -42,9 +58,9 @@
 			<fontSize>0.025</fontSize>
 		</text>
 		<image name="fanart_extra" extra="true">
+			<visible>{game:rom} != '..'</visible>
 			<autoFade>false</autoFade>
-			<path ifSubset="custombuilds:standardbuilds">${standardsbuildsfanart}</path>
-			<path ifSubset="custombuilds:retrofreshbat">${freshbuildfanart}</path>
+			<path>${media_fanart_orthumb}</path>
 			<pos>0.7 0.5</pos>
 			<size>0 1.07</size>
 			<origin>0.5 0.5</origin>
@@ -55,15 +71,15 @@
 			<zIndex>4</zIndex>
 		</image>
 		<image name="screenshot_extra" extra="true">
-			<path>{game:image}</path>
+			<path>${media_image}</path>
 			<pos>0.25 0.5</pos>
-			<maxSize>0.44 0.5</maxSize>
+			<minSize>0.375 0.5</minSize>
 			<origin>0.5 0.5</origin>
 			<zIndex>100</zIndex>
 			<scaleOrigin>0.15 0.15</scaleOrigin>
 			<autoFade>false</autoFade>
-			<shader>
-				<path>:/shaders/border.glsl</path>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>0.03</cornerRadius>
 				<borderSize>0.022</borderSize>
 				<borderColor>ffffff30</borderColor>
@@ -91,13 +107,47 @@
 			</storyboard>
 		</image>
 		<video name="video_extra" extra="true">
-			<path>{game:video}</path>
+			<path>${media_video}</path>
 			<delay>0.4</delay>
 			<pos>0.25 0.5</pos>
-			<maxSize>0.4 0.5</maxSize>
+			<minSize>0.375 0.5</minSize>
 			<origin>0.5 0.5</origin>
 			<zIndex>101</zIndex>
 			<effect>none</effect>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>0.03</cornerRadius>
+				<borderSize>0.022</borderSize>
+				<borderColor>ffffff30</borderColor>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
 		</video>
+		<image name="base_retourfond" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${themePath}/_viewgame/commun/retour/retour_fond.jpg</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<minSize>1 1</minSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>3</zIndex>
+		</image>
+		<image name="base_retourconsole" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${firstsystemhardware}</path>
+			<pos>0.7 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.4 0.5</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>5</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+		</image>
 	</view>
 </theme>

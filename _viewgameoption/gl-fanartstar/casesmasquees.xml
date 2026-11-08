@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetstarbox}, ${presetstarboxloop}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
+		<control name="playblack,dateblack,playerblack,notation,binds_playcount_one,binds_playcount,binds_noplaycount,binds_releasedate,binds_noreleasedate,binds_players,binds_player_one,binds_noplayers,binds_notefond,binds_note1,binds_note2,binds_note3,binds_note4,binds_note5,binds_norating,binds_notechiffre">
+			<visible>false</visible>
+		</control>
+		<text name="stardescription" extra="true">
+			<pos>0.0525 0.262</pos>
+			<size>0.3 0.167</size>
+		</text>
+	</customView>
+	<customView name="presetstarboxloop" displayName="${presetstarboxloop}" inherits="grid">
+		<control name="playblack,dateblack,playerblack,notation,binds_playcount_one,binds_playcount,binds_noplaycount,binds_releasedate,binds_noreleasedate,binds_players,binds_player_one,binds_noplayers,binds_notefond,binds_note1,binds_note2,binds_note3,binds_note4,binds_note5,binds_norating,binds_notechiffre">
+			<visible>false</visible>
+		</control>
+		<text name="stardescription" extra="true">
+			<pos>0.0525 0.262</pos>
+			<size>0.3 0.167</size>
+		</text>
+	</customView>
+</theme>

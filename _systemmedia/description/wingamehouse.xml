@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Casual PC games from GameHouse, a publisher of puzzle, hidden object and time management games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos casuais de PC da GameHouse, editora de jogos de quebra-cabeça, objetos escondidos e gerenciamento de tempo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Casual PC games from GameHouse, a publisher of puzzle, hidden object and time management games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos casuales de PC de GameHouse, editor de juegos de puzles, objetos ocultos y gestión del tiempo.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux PC grand public de GameHouse, éditeur de jeux de réflexion, d'objets cachés et de gestion du temps.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Gelegenheitsspiele für PC von GameHouse, einem Anbieter von Rätsel-, Wimmelbild- und Zeitmanagement-Spielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>GameHouse</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1998</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Real Networks</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Digital pinball tables by Malzbies.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Mesas de pinball digitais da Malzbies.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Digital pinball tables by Malzbies.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Mesas de pinball digitales de Malzbies.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Flippers numériques de Malzbies.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Digitale Flippertische von Malzbies.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pinball Malzbies</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2012</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

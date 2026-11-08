@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Tiger Electronics' LCD handheld games, licensed versions of famous films, cartoons and video games from the late 1980s and 1990s.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Os jogos portáteis LCD da Tiger Electronics, versões licenciadas de filmes, desenhos e videogames famosos dos anos 80 e 90.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Tiger Electronics' LCD handheld games, licensed versions of famous films, cartoons and video games from the late 1980s and 1990s.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Los juegos portátiles LCD de Tiger Electronics, versiones con licencia de películas, dibujos y videojuegos famosos de los 80 y 90.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Les jeux portables LCD de Tiger Electronics, versions sous licence de films, dessins animés et jeux vidéo célèbres des années 1980 et 1990.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>LCD-Handheldspiele von Tiger Electronics, lizenzierte Fassungen berühmter Filme, Zeichentrickserien und Videospiele der 1980er und 1990er.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Tiger</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1989</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Tiger Electronics</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,220 @@
+Vista «RFE Retrofist Nostalgia» (Salón): un fondo por sistema
+=============================================================
+
+En esta carpeta:
+  LISEZMOI.txt (français), README.txt (English), LEEME.txt (español), LEIAME.txt (português)
+  LEEME_fondos.txt    : lista y descripción de los fondos incluidos (LISEZMOI_decors.txt, README_backgrounds.txt, LEIAME_fundos.txt)
+  exemple_complet.xml : archivo de ajustes con TODAS las opciones, para copiar con el nombre del sistema
+
+Ubicación de los archivos:
+  por defecto      : <tema>/_gamemedia/_salon/  (la carpeta padre de esta)
+  carpeta externa  : themes/_bobmedia/_gamemedia/_salon/  (junto a los temas), si la opción
+                     «Ubicación de los fondos de la vista RFE Retrofist Nostalgia» = Carpeta externa
+  Las rutas citadas más abajo (_viewgame/..., collections.info) parten de la raíz del tema.
+
+Para cada sistema:
+  <sistema>.png  : fondo de 1920x1080, pantalla de la TV TRANSPARENTE (el vídeo pasa por debajo)
+  <sistema>.xml  : ajustes del sistema (opcional)
+  _default.png   : fondo por defecto de los sistemas 4:3 (si el sistema no tiene el suyo)
+  _default.xml   : ajustes de _default.png
+  _default16.png : fondo por defecto de los sistemas 16:9: ps3, ps4, xbox360,
+                   wiiu, switch, psvita, windows, steam
+                   (lista en _viewgame/presetsalon.xml, variable salon_defaut)
+  _default16.xml : ajustes de _default16.png
+  Fondos por defecto según el tipo de sistema (arcade, computers, portable...): ver LEEME_fondos.txt.
+  No poner salon_disque_tourne en estos archivos por defecto: se leen después de la vista y anularían la rotación de los sistemas de CD.
+
+Orden de lectura de los ajustes (cada archivo sustituye lo anterior, solo para las líneas que contiene):
+  1. valores de la vista (_viewgame/presetsalon.xml, = ajustes de wii)
+  2. _default.xml (sistemas 4:3) o _default16.xml (sistemas 16:9)
+  3. <sistema>.xml
+Un archivo puede contener una sola línea (p. ej. wiiu.xml: solo la rotación del disco).
+
+Ajustes de <sistema>.xml (coordenadas en fracción de pantalla, 0 0 = arriba a la izquierda, 1 1 = abajo a la derecha):
+  salon_video_pos      centro de la pantalla de la TV                ej. 0.5 0.2625
+  salon_video_taille   ancho alto de la pantalla de la TV            ej. 0.3906 0.388
+  salon_video_etiree   false = el vídeo conserva sus proporciones (maxSize, posibles bandas negras)
+                       true  = el vídeo se estira para llenar toda la pantalla de la TV (size)
+  salon_capture_pos    centro de la captura del juego                ej. 0.5 0.2625
+  salon_capture_taille ancho alto de la captura                      ej. 0.3906 0.388
+                       (captura mostrada cuando el juego no tiene vídeo, y antes del vídeo con la opción
+                        «Vídeo del juego: Captura y luego vídeo»; misma regla estirada/proporciones que el vídeo)
+                       Poner las dos líneas en cada <sistema>.xml: si no, se aplican las de _default.xml.
+  Disco (coordenadas DENTRO de la casilla de la caja del carrusel: 0.5 = centro de la caja):
+  salon_disque_depart  x del disco oculto detrás de la caja          ej. 0.5
+  salon_disque_x       x del disco una vez fuera (borde derecho 0.69) ej. 0.69
+  salon_disque_y       altura del centro del disco                   ej. 0.65
+  salon_disque_taille  tamaño máximo del disco (= ancho de la caja)  ej. 0.38 0.675
+  salon_disque_tourne  true = el disco gira, false = el soporte sale sin girar
+                       (por defecto true para los sistemas de CD/DVD, false para los cartuchos)
+  salon_support_mixte  true = sistema que mezcla discos y tarjetas/cartuchos: decide la forma de la imagen
+                       (imagen redonda, 4 esquinas transparentes = disco que gira; si no, soporte fijo).
+                       Por defecto true para wiiu, xbox360, windows y las colecciones (nombres de TEMA de es_systems).
+                       Tiene prioridad sobre salon_disque_tourne. Usa un shader de detección: reservarlo a los sistemas
+                       que lo necesitan; no ponerlo en _default.xml salvo para imponerlo a todos.
+  salon_couleur        color multiplicado sobre el vídeo y la captura (FFFFFFFF = ninguno, por defecto)
+  salon_saturation     1 = normal (por defecto), 0 = blanco y negro; con salon_couleur 8BAC0F = pantalla verde de Game Boy
+  salon_calque         imagen colocada sobre la pantalla (cristal, rejilla LCD), vacío = ninguna (por defecto)
+                       ej. gb.xml: <salon_calque>${path_salon}/gb_ecran.png</salon_calque>
+  salon_ecran2         true = 2.ª pantalla (2 consolas unidas por cable link): mismo vídeo, captura, color y capa que la 1.ª.
+                       false por defecto. Con: salon_video2_pos (centro de la 2.ª pantalla) y salon_video2_taille
+                       (ancho alto). La 1.ª pantalla conserva salon_video_pos/taille. Ej. gbc2players.xml.
+  Perspectiva de la pantalla (TV vista de lado, pantalla inclinada, marco de fotos torcido):
+  salon_perspective    0 = ninguna (por defecto); 1 = por ángulos; 2 = por las 4 esquinas de la pantalla
+    1, por ángulos (mismo principio que la vista Boxart): el vídeo y la captura conservan su zona
+       (salon_video_pos/taille, salon_capture_pos/taille, siempre estirados) y se inclinan:
+       salon_persp_angle_x    rotación alrededor del eje vertical, en grados    ej. 20 (probar -20 para el otro lado)
+       salon_persp_angle_y    rotación alrededor del eje horizontal, en grados  ej. 0
+       salon_persp_profondeur 1 = por defecto; más pequeño = imagen más grande
+       Ajuste a tientas. salon_saturation no se aplica en este modo (salon_couleur sí).
+    2, por las 4 esquinas: el vídeo, la captura, el fondo negro y la capa se ajustan exactamente a la pantalla del fondo.
+       Anotar en el PNG del fondo las 4 esquinas de la pantalla (en píxeles, x y, como en «Medir la pantalla»):
+       salon_coin_hg   esquina superior izquierda      ej. 702 205
+       salon_coin_hd   esquina superior derecha        ej. 1254 190
+       salon_coin_bd   esquina inferior derecha        ej. 1262 571
+       salon_coin_bg   esquina inferior izquierda      ej. 696 560
+       salon_coins_proportions  0 = la imagen llena la pantalla (por defecto), 1 = proporciones conservadas (bandas negras)
+       salon_video_pos/taille y salon_capture_pos/taille no se usan en este modo.
+    La 2.ª pantalla (salon_ecran2) siempre queda sin perspectiva.
+
+Medir la pantalla: x del centro = (izquierda + derecha) / 2 / 1920, y = (arriba + abajo) / 2 / 1080,
+ancho = (derecha - izquierda) / 1920, alto = (abajo - arriba) / 1080.
+Copiar wii.xml (o exemple_complet.xml) con el nombre del sistema y cambiar los valores.
+
+Ejemplo: fondo de PS1 (psx.png, 1920x1080)
+  1. Abrir el PNG en un programa de imagen y anotar los bordes de la pantalla de la TV (zona transparente):
+       izquierda = 711 px   derecha = 1266 px   arriba = 198 px   abajo = 565 px
+  2. Centro de la pantalla (salon_video_pos):
+       x = (711 + 1266) / 2 / 1920 = 988,5 / 1920 = 0.5148
+       y = (198 + 565)  / 2 / 1080 = 381,5 / 1080 = 0.3532
+  3. Tamaño de la pantalla (salon_video_taille):
+       ancho = (1266 - 711) / 1920 = 555 / 1920 = 0.2891  (redondeado un poco hacia arriba: 0.2896)
+       alto  = (565 - 198)  / 1080 = 367 / 1080 = 0.3398  (redondeado un poco hacia arriba: 0.3407)
+  4. En psx.xml (punto como separador decimal, x y luego y separadas por un espacio):
+       <salon_video_pos>0.5148 0.3532</salon_video_pos>
+       <salon_video_taille>0.2896 0.3407</salon_video_taille>
+  Consejo: redondear el tamaño ligeramente hacia arriba para evitar un filete entre el vídeo y el marco de la TV.
+  El vídeo conserva sus proporciones: si la pantalla del fondo no tiene el mismo formato, un fondo negro rellena los lados.
+
+Tamaño del soporte (disco / cartucho) por sistema: salon_disque_taille y salon_disque_x se CALCULAN
+(un valor por modo «Caja de juego a mostrar»: caja 2D = thumb, caja 3D = boxart) a la escala real de la caja mostrada,
+con un máximo del 85 % de la caja. También los usa la vista Boxart.
+
+Ejemplos de <sistema>.xml según la situación
+  Todos los archivos tienen la misma envoltura; solo cambian las líneas entre <variables> y </variables>:
+    <?xml version="1.0" encoding="UTF-8"?>
+    <theme>
+    	<formatVersion>7</formatVersion>
+    	<variables>
+    		... líneas de abajo ...
+    	</variables>
+    </theme>
+  Poner solo las líneas útiles: una línea ausente conserva el valor de la vista o del archivo por defecto.
+  exemple_complet.xml contiene todas las líneas posibles.
+
+  1. Consola de cartucho, TV 4:3, vídeo estirado para llenar la pantalla (ej. snes.xml):
+       <salon_video_pos>0.51 0.31</salon_video_pos>
+       <salon_video_taille>0.3 0.33</salon_video_taille>
+       <salon_capture_pos>0.51 0.31</salon_capture_pos>
+       <salon_capture_taille>0.3 0.33</salon_capture_taille>
+       <salon_video_etiree>true</salon_video_etiree>
+     El cartucho sale de la caja sin girar (por defecto en los cartuchos); su tamaño se ajusta como el disco (ejemplos 3 y 4).
+
+  2. TV 16:9 con juegos 4:3: proporciones conservadas, bandas negras a los lados (ej. windows.xml):
+       las mismas 4 líneas de posición/tamaño que el ejemplo 1, y luego
+       <salon_video_etiree>false</salon_video_etiree>
+
+  3. Consola de disco, disco que gira, tamaño del disco calculado para cada modo «Caja de juego» (ej. psx.xml):
+       <salon_video_pos>0.5148 0.3532</salon_video_pos>
+       <salon_video_taille>0.2922 0.3449</salon_video_taille>
+       <salon_capture_pos>0.5148 0.3532</salon_capture_pos>
+       <salon_capture_taille>0.2922 0.3449</salon_capture_taille>
+       <salon_disque_depart>0.5</salon_disque_depart>
+       <salon_disque_y>0.65</salon_disque_y>
+       <salon_disque_taille ifSubset="boxorthumb:thumb">0.2900 0.5156</salon_disque_taille>
+       <salon_disque_taille ifSubset="boxorthumb:boxart">0.2447 0.4350</salon_disque_taille>
+       <salon_disque_x ifSubset="boxorthumb:thumb">0.6900</salon_disque_x>
+       <salon_disque_x ifSubset="boxorthumb:boxart">0.6772</salon_disque_x>
+     thumb = caja 2D, boxart = caja 3D (dejar las líneas boxart al final: opción por defecto). La rotación ya está activa en los sistemas de CD/DVD.
+
+  4. Mismo tamaño de disco sea cual sea el modo «Caja de juego» (ajuste manual, sin ifSubset):
+       <salon_disque_x>0.69</salon_disque_x>
+       <salon_disque_y>0.65</salon_disque_y>
+       <salon_disque_taille>0.36 0.64</salon_disque_taille>
+     Para un disco más pequeño, bajar los dos valores de salon_disque_taille en la misma proporción.
+
+  5. Cambiar solo la rotación (archivo de una sola línea):
+       disco que sale sin girar     : <salon_disque_tourne>false</salon_disque_tourne>
+       soporte que gira (ej. CD)    : <salon_disque_tourne>true</salon_disque_tourne>
+
+  6. Sistema o colección que mezcla discos y cartuchos (ej. burnout.xml, Dragon Ball Z.xml):
+       líneas de posición/tamaño de la pantalla, y luego
+       <salon_video_etiree>false</salon_video_etiree>
+       <salon_support_mixte>true</salon_support_mixte>
+     Imagen redonda (4 esquinas transparentes) = disco que gira; otra forma = soporte fijo.
+     Tiene prioridad sobre salon_disque_tourne.
+
+  7. PSP (UMD): solo gira el disco visible en la carcasa; la carcasa y el centro «UMD» quedan fijos.
+     Añadir solo si las imágenes UMD usadas no están centradas como las originales
+     (valores por defecto abajo, en fracción de la imagen del soporte):
+       <salon_umd_cx>0.5</salon_umd_cx>                  centro horizontal del disco
+       <salon_umd_cy>0.49</salon_umd_cy>                 centro vertical del disco
+       <salon_umd_rayon>0.45</salon_umd_rayon>           radio de la parte que gira
+       <salon_umd_rayon_centre>0.23</salon_umd_rayon_centre>  radio del centro fijo
+     La rotación se desactiva con la opción «Rotación de los UMD (PSP)».
+
+  8. Pantalla LCD monocroma (ej. gb.xml): vídeo estirado, tono verde, capa de píxeles:
+       líneas de posición/tamaño de la pantalla, y luego
+       <salon_video_etiree>true</salon_video_etiree>
+       <salon_couleur>A9840C</salon_couleur>
+       <salon_saturation>0</salon_saturation>
+       <salon_calque>${path_salon}/gb_ecran.png</salon_calque>
+     La capa es un PNG colocado en la carpeta _salon; ${path_salon} apunta a esa carpeta (o a _bobmedia según la opción).
+     Vídeo solo en blanco y negro: <salon_saturation>0</salon_saturation> sin salon_couleur.
+
+  9. Dos pantallas (2 consolas unidas, ej. gbc2players.xml):
+       <salon_video_pos>0.3526 0.3194</salon_video_pos>      1.ª pantalla (la captura se ajusta como para una sola pantalla)
+       <salon_video_taille>0.1109 0.1843</salon_video_taille>
+       <salon_capture_pos>0.3526 0.3194</salon_capture_pos>
+       <salon_capture_taille>0.1109 0.1843</salon_capture_taille>
+       <salon_ecran2>true</salon_ecran2>
+       <salon_video2_pos>0.6534 0.3194</salon_video2_pos>    2.ª pantalla
+       <salon_video2_taille>0.1104 0.1843</salon_video2_taille>
+       <salon_video_etiree>true</salon_video_etiree>
+
+  10. Pantalla vertical o página (ej. library.xml: revistas, manuales): la zona es más alta que ancha,
+      la imagen se estira para llenar la página:
+       <salon_video_pos>0.499 0.5366</salon_video_pos>
+       <salon_video_taille>0.1896 0.4361</salon_video_taille>
+       <salon_capture_pos>0.499 0.5366</salon_capture_pos>
+       <salon_capture_taille>0.1896 0.4361</salon_capture_taille>
+       <salon_video_etiree>true</salon_video_etiree>
+
+  11. Captura colocada en otro sitio que el vídeo (ej. captura en un marco de fotos del fondo, vídeo en la TV):
+       salon_capture_pos / salon_capture_taille con las medidas del marco de fotos,
+       salon_video_pos / salon_video_taille con las de la TV.
+
+  12. Colección: mismo contenido que un <sistema>.xml.
+       colección automática  : auto-<nombre>.xml (ej. auto-lightgun.xml)
+       colección personal    : nombre exacto de la colección, espacios incluidos (ej. Dragon Ball Z.xml)
+     Una colección suele mezclar soportes: poner salon_support_mixte en true (ejemplo 6).
+
+  13. Archivos por defecto (_default.xml, _default16.xml, arcade.xml, portable.xml...): poner las 4 líneas
+      de posición/tamaño de la pantalla y salon_video_etiree. No poner salon_disque_tourne
+      ni salon_support_mixte: sustituirían el valor propio de cada sistema.
+
+  14. TV vista de lado: la pantalla del fondo es un cuadrilátero (perspectiva por las 4 esquinas):
+       <salon_perspective>2</salon_perspective>
+       <salon_coin_hg>702 205</salon_coin_hg>
+       <salon_coin_hd>1254 190</salon_coin_hd>
+       <salon_coin_bd>1262 571</salon_coin_bd>
+       <salon_coin_bg>696 560</salon_coin_bg>
+     Valores en píxeles del PNG del fondo (x y). Para conservar las proporciones del vídeo: <salon_coins_proportions>1</salon_coins_proportions>.
+     Variante por ángulos, ajustada a tientas:
+       <salon_perspective>1</salon_perspective>
+       <salon_persp_angle_x>20</salon_persp_angle_x>
+       <salon_persp_angle_y>0</salon_persp_angle_y>
+       <salon_persp_profondeur>1</salon_persp_profondeur>
+
+Colecciones automáticas: nombre de tema auto-<nombre> (auto-favorites, auto-lastplayed, auto-allgames, auto-lightgun, auto-wheel...)
+Colecciones personales: el archivo lleva el nombre exacto de la colección (espacios incluidos), lista de nombres reconocidos: collections.info (raíz del tema)

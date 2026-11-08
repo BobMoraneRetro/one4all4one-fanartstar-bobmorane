@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ja">
+		<desactive>無効</desactive>
+		<default>デフォルト</default>
+		<active>有効</active>
+		<novideo>無効</novideo>
+		<videoback>有効</videoback>
+		<intheme>テーマフォルダ - デフォルト</intheme>
+		<extfolder>外部フォルダ</extfolder>
+		<nodates>日付なし</nodates>
+		<playcountone>回プレイ</playcountone>
+		<playcount>回プレイ</playcount>
+		<noplaycount>未起動</noplaycount>
+		<playerss>人</playerss>
+		<player>人</player>
+		<nogametime>未プレイ</nogametime>
+		<noplayerdata>不明</noplayerdata>
+		<noratings>評価なし</noratings>
+		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>ゲーム - ゲーム名</opt_nomjeu>
+		<nomjeucomplet>完全</nomjeucomplet>
+		<nomjeucourt>括弧なし</nomjeucourt>
+		<presgame1>ジャンル：</presgame1>
+		<presgame2>開発：</presgame2>
+		<presgame3>対応機種：</presgame3>
+		<presgame4>- 対応言語 :</presgame4>
+		<nomjeulabel>ゲーム名 :</nomjeulabel>
+		<genrelabel>ジャンル :</genrelabel>
+		<devlabel>開発者 :</devlabel>
+		<langlabel>言語 :</langlabel>
+		<gametimelabel>プレイ時間 :</gametimelabel>
+		<lastgamelabel>最終プレイ:</lastgamelabel>
+		<viewbasicgrid>Basic: 基本グリッド表示</viewbasicgrid>
+		<jeux>ゲーム</jeux>
+		<longselect>"select" 長押し</longselect>
+		<favuniquement>お気に入りのみ</favuniquement>
+		<tslesjeux>すべてのゲーム</tslesjeux>
+		<fanartstarsyst>クラシック</fanartstarsyst>
+		<fanartmodern>モダン1（パンくずリスト非対応）</fanartmodern>
+		<fanartmodern2>モダン2（パンくずリスト対応）</fanartmodern2>
+		<fanartfreshone>FreshOne選定のファンアートのみ</fanartfreshone>
+		<fanartsystcustom>customフォルダのファンアート、なければFreshOne</fanartsystcustom>
+		<videoangled>有効（小さく斜め）</videoangled>
+		<hardware>ハードウェア</hardware>
+		<charsystem>キャラクター</charsystem>
+		<figurines>フィギュア（Animaticsテーマが必要）</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>ボタンの位置</iconsetposition>
+		<skyblue>スカイブルー</skyblue>
+		<purple>紫</purple>
+		<red>赤</red>
+		<aqua>スカイブルー</aqua>
+		<orange>オレンジ</orange>
+		<green>緑</green>
+		<yellow>黄</yellow>
+		<pink>ピンク</pink>
+		<grey>ダークグレー</grey>
+		<lightgrey>ライトグレー</lightgrey>
+		<navy>青 alt</navy>
+		<violet>紫</violet>
+		<candy>candy</candy>
+		<redalt>赤 alt</redalt>
+		<yellowalt>黄 alt</yellowalt>
+		<greenalt>緑 alt</greenalt>
+		<purplealt>紫 alt</purplealt>
+		<classiquesyst>ズームアウトで消える</classiquesyst>
+		<no>いいえ</no>
+		<yes>はい</yes>
+		<thumb>2Dボックス用に調整</thumb>
+		<boxart>3Dボックス用に調整</boxart>
+		<starrotate>はい</starrotate>
+		<nostarrotate>いいえ</nostarrotate>
+		<deactive>無効</deactive>
+		<speedslow1>遅い+</speedslow1>
+		<speedslow2>遅い++</speedslow2>
+		<starvideoang>傾斜</starvideoang>
+		<starvideodef>標準</starvideodef>
+		<starvideobig>大</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>やさしいグレー</griscl>
+		<noirombre>黒枠＋影</noirombre>
+		<blancombre>白枠＋影</blancombre>
+		<ombre>影のみ</ombre>
+		<rien>装飾なし</rien>
+		<presetshowbig>RFE Show 大きいプレビュー</presetshowbig>
+		<presetshowsmall>RFE Show 小さいプレビュー</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar スクエア</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (高速ナビゲーション)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>大きなパネルの下（Steam風）</deckgauche>
+		<deckcentre>列の中央（ズーム＋光彩）</deckcentre>
+		<decknormal>標準</decknormal>
+		<spotvideodroite>右側、ボックスの上</spotvideodroite>
+		<spotvideoaucune>無効</spotvideoaucune>
+		<spotvideogauche>左側、情報付き</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>ロゴを表示</decklogogarder>
+		<decklogobandeau>情報バー（ロゴ非表示）</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>前のフォルダに戻る</retourdossier>
+		<ra_moncompte>マイアカウント</ra_moncompte>
+		<ra_succesjeu>ゲームの実績</ra_succesjeu>
+		<opt_raaffichage>ゲーム - RetroAchievements (外部ツール)</opt_raaffichage>
+		<raaffichagepermanent>常に表示</raaffichagepermanent>
+		<raaffichagetemporaire>数秒間</raaffichagetemporaire>
+		<noteetoile>星</noteetoile>
+		<notecoeur>ハート</notecoeur>
+		<notemanette>ゲームパッド</notemanette>
+		<notepouce>いいね</notepouce>
+		<notetrophee>トロフィー</notetrophee>
+		<notefantome>おばけ</notefantome>
+		<notecrane>ドクロ</notecrane>
+		<notepourcent>％表示</notepourcent>
+		<wheelclic>Hyperspin風クリック</wheelclic>
+		<bulle>泡</bulle>
+		<clic>シンプルなクリック</clic>
+		<clicgrave>低音クリック</clicgrave>
+		<frottement>こすれ音</frottement>
+		<poc>ポン</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>全般 - ようこそメッセージ</opt_lismoi>
+		<opt_iconset>全般 - ヘルプアイコンの外観</opt_iconset>
+		<opt_colorhelp>全般 - ヘルプテキストの色</opt_colorhelp>
+		<opt_horlogecouleur>全般 - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>全般 - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>システム - システム一覧の表示</opt_systemview>
+		<opt_imagefondcops1>システム - システムのファンアート選択</opt_imagefondcops1>
+		<opt_video4starmodern>システム - システムビューのゲームプレイ動画</opt_video4starmodern>
+		<opt_video4starclassic>システム - システムビューのゲームプレイ動画</opt_video4starclassic>
+		<opt_systviewselec>システム - ホイールのシステム画像</opt_systviewselec>
+		<opt_breadcrumbsonoff>システム - 左側の縦メニュー（クラシックシステムビュー）</opt_breadcrumbsonoff>
+		<arianeauto>自動（システムの並び順に合わせる）</arianeauto>
+		<arianecategories>カテゴリー（ハードウェアの種類順）</arianecategories>
+		<arianealpha>A～Zの文字（アルファベット順）</arianealpha>
+		<arianealphavoisines>文字と前後の文字（アルファベット順）</arianealphavoisines>
+		<arianeconstructeur>メーカー（メーカー順）</arianeconstructeur>
+		<arianedecennie>年代（発売年順）</arianedecennie>
+		<arianeautres>その他</arianeautres>
+		<opt_metadataonoff>システム - システム情報（クラシックシステムビュー）</opt_metadataonoff>
+		<opt_systannonce>ゲーム - 起動時に現在のシステムを表示</opt_systannonce>
+		<opt_infosmax>ゲーム - 詳細情報コンソールを表示しますか？</opt_infosmax>
+		<opt_gamewheelsound>全般 - スクロール時の音</opt_gamewheelsound>
+		<opt_boxorthumb>ゲーム - 表示するゲームボックス</opt_boxorthumb>
+		<opt_fanarttransition>ゲーム - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>ゲーム - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>ゲーム - ディスクの回転</opt_cdvitesse>
+		<cdnormale>標準</cdnormale>
+		<cdlente>遅い</cdlente>
+		<cdrapide>速い</cdrapide>
+		<cdtresrapide>とても速い</cdtresrapide>
+		<cdimmobile>静止</cdimmobile>
+		<opt_umdrotation>ゲーム - UMDの回転（PSP）</opt_umdrotation>
+		<opt_selectionvaleur>ゲーム - 選択中のゲームを強調</opt_selectionvaleur>
+		<selegere>弱</selegere>
+		<selmarquee>強</selmarquee>
+		<opt_videojeu>ゲーム - ゲーム動画</opt_videojeu>
+		<vjcapture>スクリーンショットの後に動画</vjcapture>
+		<vjseule>動画のみ</vjseule>
+		<vjfondu>フェード付き動画</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>ゲーム - Box case type</opt_typeboite>
+		<opt_contourboite>ゲーム - Box outline (case)</opt_contourboite>
+		<opt_deckespace>ゲーム - ボックスの間隔</opt_deckespace>
+		<opt_iconenote>ゲーム - 評価アイコン</opt_iconenote>
+		<opt_extfolderbezelsyst>詳細設定 - システムのベゼル</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>詳細設定 - ゲームパブリッシャーのロゴ</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>詳細設定 - システムのファンアート</opt_extfolderfanart>
+		<opt_extfolderlogosyst>詳細設定 - システムロゴ</opt_extfolderlogosyst>
+		<opt_extfoldersalon>詳細設定 - RFE Retrofist Nostalgia ビューの背景の場所</opt_extfoldersalon>
+		<opt_perfmachine>詳細設定 - 低性能マシンモード</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - 背景のビネット</opt_salonvignette>
+		<vignleger>弱</vignleger>
+		<vignfort>強</vignfort>
+		<opt_deckselection>BIG ART - 選択したゲームの位置</opt_deckselection>
+		<opt_decklogovideo>BIG ART - 動画中のロゴ</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - 動画</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - SNES、N64、NGAGE、Solarusのボックスを回転</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - ゲームボックスの角度</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - ゲームメディア（ディスク、カートリッジ）</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - スクロールアニメーションの速度</opt_boxstarspeed>
+		<opt_starvideo>BOXART - プレビュー動画のサイズ</opt_starvideo>
+		<opt_starvideocadre>BOXART - プレビュー動画の枠</opt_starvideocadre>
+		<vcadreactuel>現在の枠</vcadreactuel>
+		<vcadreombre>影のみ</vcadreombre>
+		<vcadreecranfin>細いベゼル</vcadreecranfin>
+		<vcadrebois>木製</vcadrebois>
+		<vcadremetal>ヘアライン金属</vcadremetal>
+		<vcadrelumineux>発光スクリーン</vcadrelumineux>
+		<vcadretv>ブラウン管テレビ</vcadretv>
+		<vcadregalerie>ギャラリー</vcadregalerie>
+		<vcadrepolaroid>ポラロイド</vcadrepolaroid>
+		<vcadreneon>ネオン</vcadreneon>
+		<vcadrehologramme>ホログラム</vcadrehologramme>
+		<vcadreverre>すりガラス</vcadreverre>
+		<vcadrecarbone>カーボンLED</vcadrecarbone>
+		<vcadreneondouble>ダブルネオン</vcadreneondouble>
+		<vcadregaming>ゲーミング</vcadregaming>
+		<vcadrepinceau>筆跡</vcadrepinceau>
+		<vcadretechnodore>ゴールドテック</vcadretechnodore>
+		<vcadretechnoargent>シルバーテック</vcadretechnoargent>
+		<vcadreneonelec>電撃ネオン</vcadreneonelec>
+		<vcadrevitre>ガラス</vcadrevitre>
+		<vcadreflammes>炎</vcadreflammes>
+		<vcadreencre>インク</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - 回転するケースの側面</opt_boite3dtranche>
+		<b3tcharniere>片側にロゴ、反対側は開口部</b3tcharniere>
+		<b3tdeuxcotes>両側にロゴ</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - グリッドの色</opt_gridcolor>
+		<opt_squarecadre>スクエア - ゲームを表す四角形のスタイル</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>システム - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>システム - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>システム - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>システム - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>ゲーム - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - ようこそ・クレジット</planche00>
+		<planche01>01 - システムビュー</planche01>
+		<planche02>02 - クラシックビュー：システム画像</planche02>
+		<planche03>03 - クラシックビュー：詳細</planche03>
+		<planche04>04 - システムのファンアート、Modern と Z-Spin</planche04>
+		<planche05>05 - 11 のゲームビュー</planche05>
+		<planche06>06 - FanartStar Boxart：ボックスと情報</planche06>
+		<planche07>07 - FanartStar Boxart：動画</planche07>
+		<planche08>08 - ボックスとメディア</planche08>
+		<planche09>09 - 22 種類のケース</planche09>
+		<planche10>10 - メディア：システムごとの設定</planche10>
+		<planche11>11 - ゲームのファンアートと選択</planche11>
+		<planche12>12 - Big Art、Spotlight、スクエア、16/9 と 4/3</planche12>
+		<planche13>13 - RFE ビュー</planche13>
+		<planche14>14 - RFE Retrofist：テレビ画面</planche14>
+		<planche15>15 - Show Big &amp; Small：裏返るボックス</planche15>
+		<planche16>16 - ゲームビュー共通オプション</planche16>
+		<planche17>17 - 全般：サウンド、ヘルプ、時計</planche17>
+		<planche18>18 - 自分のフォルダーでカスタマイズ</planche18>
+		<planche19>19 - ゲームのカスタムメディア</planche19>
+		<planche20>20 - フォルダーを飾る</planche20>
+		<planche21>21 - どの画像が優先？</planche21>
+		<planche22>22 - グループ化されたシステム</planche22>
+		<planche23>23 - 低スペック機とリンク</planche23>
+	</variables>
+</theme>

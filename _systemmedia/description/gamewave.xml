@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>DVD-based family console by ZAPiT Games, focused on quiz and party games played with several remote controls.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console familiar baseado em DVD da ZAPiT Games, focado em jogos de perguntas e de festa com vários controles remotos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>DVD-based family console by ZAPiT Games, focused on quiz and party games played with several remote controls.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola familiar basada en DVD de ZAPiT Games, centrada en juegos de preguntas y de fiesta con varios mandos a distancia.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console familiale à base de DVD de ZAPiT Games, centrée sur les quiz et les jeux de société joués avec plusieurs télécommandes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>DVD-basierte Familienkonsole von ZAPiT Games mit Quiz- und Partyspielen für mehrere Fernbedienungen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Game Wave</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2005</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>ZAPiT Games</text>
+		</text>
+	</view>
+</theme>

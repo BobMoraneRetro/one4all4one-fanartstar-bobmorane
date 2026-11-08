@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Pinball M, Zen Studios' collection of horror-themed digital pinball tables for mature players.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Pinball M, a coleção de mesas de pinball digitais de terror da Zen Studios, para público adulto.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Pinball M, Zen Studios' collection of horror-themed digital pinball tables for mature players.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Pinball M, la colección de mesas de pinball digitales de terror de Zen Studios, para público adulto.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Pinball M, la collection de flippers numériques de Zen Studios sur le thème de l'horreur, pour un public adulte.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Pinball M, Zen Studios' Sammlung digitaler Flippertische mit Horror-Thema für Erwachsene.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pinball M</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2023</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Zen Studios</text>
+		</text>
+	</view>
+</theme>

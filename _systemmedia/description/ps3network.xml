@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Digital games for the PlayStation 3 sold on the PlayStation Network: small independent titles, arcade games and classics.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos digitais de PlayStation 3 vendidos na PlayStation Network: pequenos títulos independentes, jogos de arcade e clássicos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Digital games for the PlayStation 3 sold on the PlayStation Network: small independent titles, arcade games and classics.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos digitales de PlayStation 3 vendidos en PlayStation Network: pequeños títulos independientes, juegos arcade y clásicos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux PlayStation 3 dématérialisés vendus sur le PlayStation Network : petits titres indépendants, jeux d'arcade et classiques.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Digitale PlayStation-3-Spiele aus dem PlayStation Network: kleine Indie-Titel, Arcade-Spiele und Klassiker.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PS3 Network</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2006</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sony</text>
+		</text>
+	</view>
+</theme>

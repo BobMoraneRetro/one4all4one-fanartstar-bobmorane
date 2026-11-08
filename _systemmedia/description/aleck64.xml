@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade board derived from the Nintendo 64, developed by Seta with Nintendo, which ran a small library of Japanese arcade games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Placa de arcade derivada do Nintendo 64, desenvolvida pela Seta com a Nintendo, com um pequeno catálogo de jogos de arcade japoneses.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade board derived from the Nintendo 64, developed by Seta with Nintendo, which ran a small library of Japanese arcade games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Placa arcade derivada de la Nintendo 64, desarrollada por Seta con Nintendo, con un pequeño catálogo de juegos de arcade japoneses.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Carte arcade dérivée de la Nintendo 64, développée par Seta avec Nintendo, qui a accueilli une petite ludothèque de jeux d'arcade japonais.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Vom Nintendo 64 abgeleitete Arcade-Platine, von Seta zusammen mit Nintendo entwickelt, mit einer kleinen Auswahl japanischer Arcade-Spiele.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Aleck 64</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1998</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Seta / Nintendo</text>
+		</text>
+	</view>
+</theme>

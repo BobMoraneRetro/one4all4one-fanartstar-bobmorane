@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${path_game_media} : dossier des médias perso des jeux (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des médias perso »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${extfolder}, ${gamemedianon}, ${gamemediaoui}, ${gamemediaseul}, ${intheme}, ${opt_custombuilds}, ${opt_extfoldergamemedia}, ${opt_gamemedia}, ${opt_scrap3dbox}, ${packcustombuildsno}, ${packretrofreshbat}, ${scrapedboxart}, ${scrapedthumbnail}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<include>${themePath}/_viewgameoption/gl-common/gamemedia/_langs/fr.xml</include>
+	<include>${themePath}/_viewgameoption/gl-common/gamemedia/_langs/${lang}.xml</include>
+	<variables>
+		<path_game_media ifSubset="extfoldergamemedia:extfolder">${themePath}/../_bobmedia/_gamemedia/</path_game_media>
+		<path_game_media ifSubset="extfoldergamemedia:intheme">${themePath}/_gamemedia/</path_game_media>
+		<gm_box3d>("${path_game_media}" + ({game:system:theme}) + "/3dbox/" + stem({game:rom}) + ".png")</gm_box3d>
+		<gm_box2d>("${path_game_media}" + ({game:system:theme}) + "/2dbox/" + stem({game:rom}) + ".png")</gm_box2d>
+		<gm_fanart>("${path_game_media}" + ({game:system:theme}) + "/fanart/" + stem({game:rom}) + ".jpg")</gm_fanart>
+		<gm_marquee>("${path_game_media}" + ({game:system:theme}) + "/logo/" + stem({game:rom}) + ".png")</gm_marquee>
+		<gm_video>("${path_game_media}" + ({game:system:theme}) + "/video/" + stem({game:rom}) + ".mp4")</gm_video>
+		<gm_video_avi>("${path_game_media}" + ({game:system:theme}) + "/video/" + stem({game:rom}) + ".avi")</gm_video_avi>
+		<gm_image>("${path_game_media}" + ({game:system:theme}) + "/screenshot/" + stem({game:rom}) + ".png")</gm_image>
+		<gm_image_jpg>("${path_game_media}" + ({game:system:theme}) + "/screenshot/" + stem({game:rom}) + ".jpg")</gm_image_jpg>
+		<gm_disc>("${path_game_media}" + ({game:system:theme}) + "/disc/" + stem({game:rom}) + ".png")</gm_disc>
+		<gm_cartridge>("${path_game_media}" + ({game:system:theme}) + "/cartridge/" + stem({game:rom}) + ".png")</gm_cartridge>
+	</variables>
+	<subset name="custombuilds" displayName="${opt_custombuilds}">
+		<include name="standardbuilds" displayName="${packcustombuildsno}">${themePath}/_viewgameoption/gl-common/gamemedia/fanartinfanart.xml</include>
+		<include name="retrofreshbat" displayName="${packretrofreshbat}">${themePath}/_viewgameoption/gl-common/gamemedia/fanartinimage.xml</include>
+	</subset>
+	<subset name="scrap3dbox" displayName="${opt_scrap3dbox}">
+		<include name="scrapedboxart" displayName="${scrapedboxart}">${themePath}/_viewgameoption/gl-common/gamemedia/3dinboxart.xml</include>
+		<include name="scrapedthumbnail" displayName="${scrapedthumbnail}">${themePath}/_viewgameoption/gl-common/gamemedia/3dinthumbnail.xml</include>
+	</subset>
+	<subset name="gamemedia" displayName="${opt_gamemedia}">
+		<include name="non" displayName="${gamemedianon}"/>
+		<include name="oui" displayName="${gamemediaoui}"/>
+		<include name="seul" displayName="${gamemediaseul}"/>
+	</subset>
+	<subset name="extfoldergamemedia" displayName="${opt_extfoldergamemedia}">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+	<include>${themePath}/_viewgameoption/gl-common/gamemedia/medias.xml</include>
+</theme>

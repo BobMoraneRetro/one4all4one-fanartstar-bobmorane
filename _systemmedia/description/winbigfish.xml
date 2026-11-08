@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Casual PC games from Big Fish Games: hidden object, puzzle, time management and adventure titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos casuais de PC da Big Fish Games: objetos escondidos, quebra-cabeças, gerenciamento de tempo e aventura.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Casual PC games from Big Fish Games: hidden object, puzzle, time management and adventure titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos casuales de PC de Big Fish Games: objetos ocultos, puzles, gestión del tiempo y aventura.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux PC grand public de Big Fish Games : objets cachés, réflexion, gestion du temps et aventure.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Gelegenheitsspiele für PC von Big Fish Games: Wimmelbild-, Rätsel-, Zeitmanagement- und Abenteuerspiele.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Big Fish Games</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2002</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Big Fish Games</text>
+		</text>
+	</view>
+</theme>

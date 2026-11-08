@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Taito Type X, the PC-based arcade platform of 2004, home to many fighting and shoot'em up games, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Taito Type X, plataforma de arcade baseada em PC de 2004, com muitos jogos de luta e shoot'em ups, jogada aqui pelo TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Taito Type X, the PC-based arcade platform of 2004, home to many fighting and shoot'em up games, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Taito Type X, plataforma arcade basada en PC de 2004, con muchos juegos de lucha y shoot'em ups, jugada aquí con TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Taito Type X, plate-forme d'arcade sur base PC de 2004, qui a accueilli de nombreux jeux de combat et shoot'em up, jouée ici via TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Taito Type X, die PC-basierte Arcade-Plattform von 2004 mit vielen Kampfspielen und Shoot'em ups, hier über TeknoParrot spielbar.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Taito Type X</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2004</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Taito</text>
+		</text>
+	</view>
+</theme>

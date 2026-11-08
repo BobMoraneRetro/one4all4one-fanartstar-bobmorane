@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Run and gun games: side-scrolling action where you shoot while moving, in the style of Contra and Metal Slug.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos run and gun: ação com rolagem lateral em que se atira em movimento, no estilo de Contra e Metal Slug.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Run and gun games: side-scrolling action where you shoot while moving, in the style of Contra and Metal Slug.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos run and gun: acción de desplazamiento lateral disparando sin parar, al estilo de Contra y Metal Slug.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux de run and gun : action à défilement horizontal où l'on tire en courant, dans le style de Contra et Metal Slug.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Run-and-Gun-Spiele: seitlich scrollende Action, bei der man im Laufen schießt, im Stil von Contra und Metal Slug.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Run and Gun</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2023</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="es">
+		<packcustombuildsno>Fanart con sufijo "-fanart" (por defecto)</packcustombuildsno>
+		<packretrofreshbat>Fanart con sufijo "-image"</packretrofreshbat>
+		<scrapedboxart>Caja 3D con "-boxart" en la gamelist</scrapedboxart>
+		<scrapedthumbnail>Caja 3D con "-thumbnail" en la gamelist</scrapedthumbnail>
+		<gamemedianon>No: solo medios de la gamelist</gamemedianon>
+		<gamemediaoui>Sí: primero medios personalizados, si no la gamelist</gamemediaoui>
+		<gamemediaseul>Solo: solo medios personalizados (sin recurrir a la gamelist)</gamemediaseul>
+		<intheme>Carpeta del tema - Por defecto</intheme>
+		<extfolder>Carpeta externa</extfolder>
+		<opt_custombuilds>AVANZADO - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>AVANZADO - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>AVANZADO - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>AVANZADO - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

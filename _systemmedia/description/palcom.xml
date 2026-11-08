@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Pioneer's Palcom, a Japanese MSX computer combined with a LaserDisc player for interactive video games and software.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Palcom da Pioneer, computador MSX japonês combinado com um reprodutor de LaserDisc para jogos e programas de vídeo interativo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Pioneer's Palcom, a Japanese MSX computer combined with a LaserDisc player for interactive video games and software.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Palcom de Pioneer, ordenador MSX japonés combinado con un reproductor LaserDisc para juegos y programas de vídeo interactivo.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Palcom de Pioneer, ordinateur MSX japonais associé à un lecteur LaserDisc pour des jeux et logiciels vidéo interactifs.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Pioneers Palcom, ein japanischer MSX-Computer mit LaserDisc-Spieler für interaktive Videospiele und Software.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Palcom</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1990</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Pioneer</text>
+		</text>
+	</view>
+</theme>

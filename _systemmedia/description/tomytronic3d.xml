@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Tomy's Tomytronic 3D handheld games of 1983, viewed through binoculars to give a stereoscopic 3D effect.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Os jogos portáteis Tomytronic 3D da Tomy de 1983, vistos através de binóculos para um efeito 3D estereoscópico.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Tomy's Tomytronic 3D handheld games of 1983, viewed through binoculars to give a stereoscopic 3D effect.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Los juegos portátiles Tomytronic 3D de Tomy de 1983, vistos a través de unos binoculares para lograr un efecto 3D estereoscópico.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Les jeux portables Tomytronic 3D de Tomy sortis en 1983, regardés à travers des jumelles pour un effet 3D stéréoscopique.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Tomys Handheld-Spiele Tomytronic 3D von 1983, die man durch ein Fernglas betrachtete, um einen stereoskopischen 3D-Effekt zu erzielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Tomytronic 3D</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Tomy</text>
+		</text>
+	</view>
+</theme>

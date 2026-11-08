@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Low-cost handheld console from the Hong Kong company TimeTop, the colour successor of the GameKing.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console portátil de baixo custo da empresa de Hong Kong TimeTop, sucessor em cores do GameKing.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Low-cost handheld console from the Hong Kong company TimeTop, the colour successor of the GameKing.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola portátil de bajo coste de la empresa hongkonesa TimeTop, sucesora en color de la GameKing.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console portable à bas prix de la société hongkongaise TimeTop, successeur en couleur de la GameKing.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Günstige Handheld-Konsole der Hongkonger Firma TimeTop, farbiger Nachfolger des GameKing.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>GameKing 3</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2003</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>TimeTop</text>
+		</text>
+	</view>
+</theme>

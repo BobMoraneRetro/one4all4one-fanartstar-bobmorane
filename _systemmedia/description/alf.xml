@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Soviet-era TV game console from the early 1990s, produced in the USSR and running a handful of built-in games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console de jogos de TV do fim da era soviética, fabricado na URSS no início dos anos 90 com alguns jogos integrados.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Soviet-era TV game console from the early 1990s, produced in the USSR and running a handful of built-in games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola de juegos de TV de finales de la era soviética, fabricada en la URSS a principios de los 90 con unos pocos juegos integrados.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console de jeu TV de la fin de l'époque soviétique, produite en URSS au début des années 1990 avec une poignée de jeux intégrés.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>TV-Spielkonsole aus der späten Sowjetzeit, Anfang der 1990er-Jahre in der UdSSR hergestellt, mit einigen eingebauten Spielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Alf TV Game</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1991</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Tsvetotron</text>
+		</text>
+	</view>
+</theme>

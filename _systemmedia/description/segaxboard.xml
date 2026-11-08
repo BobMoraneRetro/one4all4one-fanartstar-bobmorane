@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega X Board, the sprite-scaling arcade board of the late 1980s, home to After Burner, Thunder Blade and Super Monaco GP.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>A Sega X Board, placa de arcade com escala de sprites do fim dos anos 80, com After Burner, Thunder Blade e Super Monaco GP.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega X Board, the sprite-scaling arcade board of the late 1980s, home to After Burner, Thunder Blade and Super Monaco GP.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La Sega X Board, placa arcade con escalado de sprites de finales de los 80, con After Burner, Thunder Blade y Super Monaco GP.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La Sega X Board, carte arcade à zoom de sprites de la fin des années 1980, qui a accueilli After Burner, Thunder Blade et Super Monaco GP.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas X Board, die Sprite-Skalierungs-Platine der späten 1980er, Heimat von After Burner, Thunder Blade und Super Monaco GP.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>X Board</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1987</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

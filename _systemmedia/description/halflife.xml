@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Half-Life, Valve's 1998 first-person shooter following Gordon Freeman at Black Mesa, played here through a native engine.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Half-Life, o jogo de tiro em primeira pessoa da Valve de 1998 que acompanha Gordon Freeman em Black Mesa, jogado aqui com um motor nativo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Half-Life, Valve's 1998 first-person shooter following Gordon Freeman at Black Mesa, played here through a native engine.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Half-Life, el shooter en primera persona de Valve de 1998 que sigue a Gordon Freeman en Black Mesa, jugado aquí con un motor nativo.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Half-Life, le FPS de Valve sorti en 1998 qui suit Gordon Freeman à Black Mesa, joué ici via un moteur natif.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Half-Life, Valves Ego-Shooter von 1998 um Gordon Freeman in Black Mesa, hier über eine native Engine gespielt.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Half-Life</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1998</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Valve</text>
+		</text>
+	</view>
+</theme>

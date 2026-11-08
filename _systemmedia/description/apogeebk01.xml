@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Soviet home computer compatible with the Radio-86RK, assembled from kits and popular among Russian hobbyists.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador soviético compatível com o Radio-86RK, montado a partir de kits e popular entre os entusiastas russos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Soviet home computer compatible with the Radio-86RK, assembled from kits and popular among Russian hobbyists.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador soviético compatible con el Radio-86RK, montado a partir de kits y popular entre los aficionados rusos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur soviétique compatible Radio-86RK, assemblé à partir de kits et populaire chez les amateurs russes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sowjetischer, zum Radio-86RK kompatibler Heimcomputer, aus Bausätzen montiert und bei russischen Bastlern beliebt.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Apogee BK-01</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1988</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Zavod BRA</text>
+		</text>
+	</view>
+</theme>

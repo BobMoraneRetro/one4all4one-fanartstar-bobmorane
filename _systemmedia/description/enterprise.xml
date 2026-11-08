@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>British Z80 home computer of 1985 with advanced graphics and sound for its time, sold as the Enterprise 64 and 128.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico britânico com Z80 de 1985, com gráficos e som avançados para a época, vendido como Enterprise 64 e 128.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>British Z80 home computer of 1985 with advanced graphics and sound for its time, sold as the Enterprise 64 and 128.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico británico con Z80 de 1985, con gráficos y sonido avanzados para su época, vendido como Enterprise 64 y 128.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial britannique à Z80 de 1985, aux graphismes et au son avancés pour l'époque, vendu en versions Enterprise 64 et 128.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Britischer Z80-Heimcomputer von 1985 mit für seine Zeit fortschrittlicher Grafik und Sound, verkauft als Enterprise 64 und 128.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Enterprise</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1985</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Enterprise Computers</text>
+		</text>
+	</view>
+</theme>

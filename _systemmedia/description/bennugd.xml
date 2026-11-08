@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Games made with BennuGD, a free and open-source game development language descended from Fenix and DIV Games Studio.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos criados com BennuGD, linguagem livre de desenvolvimento de jogos herdeira do Fenix e do DIV Games Studio.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Games made with BennuGD, a free and open-source game development language descended from Fenix and DIV Games Studio.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos creados con BennuGD, lenguaje libre de desarrollo de juegos heredero de Fenix y DIV Games Studio.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux créés avec BennuGD, langage libre de création de jeux issu de Fenix et de DIV Games Studio.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Spiele, die mit BennuGD erstellt wurden, einer freien Spieleentwicklungssprache in der Nachfolge von Fenix und DIV Games Studio.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>BennuGD</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2017</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

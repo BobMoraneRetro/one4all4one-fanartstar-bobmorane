@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>OpenJKDF2, a reimplementation of Star Wars Jedi Knight: Dark Forces II, LucasArts' 1997 shooter with lightsaber combat.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>OpenJKDF2, reimplementação de Star Wars Jedi Knight: Dark Forces II, o jogo de tiro da LucasArts de 1997 com combates de sabre de luz.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>OpenJKDF2, a reimplementation of Star Wars Jedi Knight: Dark Forces II, LucasArts' 1997 shooter with lightsaber combat.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>OpenJKDF2, reimplementación de Star Wars Jedi Knight: Dark Forces II, el shooter de LucasArts de 1997 con combates de sable láser.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>OpenJKDF2, réécriture de Star Wars Jedi Knight : Dark Forces II, le jeu de tir de LucasArts sorti en 1997, avec combats au sabre laser.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>OpenJKDF2, eine Neuimplementierung von Star Wars Jedi Knight: Dark Forces II, dem LucasArts-Shooter von 1997 mit Lichtschwertkämpfen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Jedi Knight: DF2</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1997</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>LucasArts</text>
+		</text>
+	</view>
+</theme>

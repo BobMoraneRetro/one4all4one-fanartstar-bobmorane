@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>EACA's System-80, a TRS-80 compatible computer sold as the Video Genie in Europe.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O System-80 da EACA, computador compatível com o TRS-80 vendido na Europa como Video Genie.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>EACA's System-80, a TRS-80 compatible computer sold as the Video Genie in Europe.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El System-80 de EACA, ordenador compatible con el TRS-80 vendido en Europa como Video Genie.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le System-80 d'EACA, ordinateur compatible TRS-80 vendu en Europe sous le nom Video Genie.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>EACAs System-80, ein TRS-80-kompatibler Computer, in Europa als Video Genie verkauft.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>System-80</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1980</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>EACA Computers Ltd</text>
+		</text>
+	</view>
+</theme>

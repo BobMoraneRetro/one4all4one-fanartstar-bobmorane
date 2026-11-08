@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Hungarian home computer by Videoton, released in 1985-1986, close to the Enterprise and widely used in Hungarian schools.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico húngaro da Videoton lançado em 1985-1986, muito usado nas escolas húngaras.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Hungarian home computer by Videoton, released in 1985-1986, close to the Enterprise and widely used in Hungarian schools.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico húngaro de Videoton lanzado en 1985-1986, muy usado en las escuelas húngaras.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial hongrois de Videoton sorti en 1985-1986, très utilisé dans les écoles hongroises.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Ungarischer Heimcomputer von Videoton aus den Jahren 1985-1986, weit verbreitet in ungarischen Schulen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Videoton TVC</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1986</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Videoton</text>
+		</text>
+	</view>
+</theme>

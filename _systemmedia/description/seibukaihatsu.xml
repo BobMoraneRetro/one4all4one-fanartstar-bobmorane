@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Seibu Kaihatsu, the Japanese developer of the Raiden shoot'em up series.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Seibu Kaihatsu, a desenvolvedora japonesa da série de shoot'em ups Raiden.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Seibu Kaihatsu, the Japanese developer of the Raiden shoot'em up series.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Seibu Kaihatsu, el desarrollador japonés de la serie de shoot'em ups Raiden.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade de Seibu Kaihatsu, le développeur japonais de la série de shoot'em up Raiden.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Seibu Kaihatsu, dem japanischen Entwickler der Shoot'em-up-Reihe Raiden.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Seibu Kaihatsu</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Seibu Kaihatsu</text>
+		</text>
+	</view>
+</theme>

@@ -1,6 +1,5 @@
 <theme>
 	<formatVersion>4</formatVersion>
-	
 	<view name="menu, system, detailed, gamecarousel, grid">
 		<helpsystem name="help">
 			<iconColor>FFFFFFFF</iconColor>
@@ -15,7 +14,6 @@
 			<iconR>./snesalt/r.png</iconR>
 			<iconStart>./snesalt/start.png</iconStart>
 			<iconSelect>./snesalt/select.png</iconSelect>
-		</helpsystem>		
+		</helpsystem>
 	</view>
-	
 </theme>

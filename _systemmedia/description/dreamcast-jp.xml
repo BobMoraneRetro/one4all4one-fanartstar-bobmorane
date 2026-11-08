@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The Japanese releases of the Dreamcast library, including many titles never released in the West.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>As versões japonesas da biblioteca do Dreamcast, com muitos títulos nunca lançados no Ocidente.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>The Japanese releases of the Dreamcast library, including many titles never released in the West.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Las versiones japonesas del catálogo de Dreamcast, con muchos títulos que nunca salieron en Occidente.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Les versions japonaises de la ludothèque Dreamcast, dont de nombreux titres jamais sortis en Occident.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Die japanischen Fassungen der Dreamcast-Spiele, darunter viele Titel, die nie im Westen erschienen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Dreamcast (Japan)</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1998</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

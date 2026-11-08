@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="oc">
+		<desactive>Desactivat</desactive>
+		<default>Per defaut</default>
+		<active>Activat</active>
+		<novideo>Desactivat</novideo>
+		<videoback>Activat</videoback>
+		<intheme>Dorsièr del tèma - Per defaut</intheme>
+		<extfolder>Dorsièr extèrne</extfolder>
+		<nodates>Pas de data</nodates>
+		<playcountone>partida</playcountone>
+		<playcount>partidas</playcount>
+		<noplaycount>Jamai aviat</noplaycount>
+		<playerss>jogaires</playerss>
+		<player>jogaire</player>
+		<nogametime>Pas jamai jogat</nogametime>
+		<noplayerdata>Desconegut</noplayerdata>
+		<noratings>Pas de nòta</noratings>
+		<notesur100>sus 100</notesur100>
+		<opt_nomjeu>JÒCS - Nom del jòc</opt_nomjeu>
+		<nomjeucomplet>Complet</nomjeucomplet>
+		<nomjeucourt>Sens parentèsis</nomjeucourt>
+		<presgame1>Es un jòc de tipe</presgame1>
+		<presgame2>desvolopat per</presgame2>
+		<presgame3>jogable sus</presgame3>
+		<presgame4>- Lengas disponiblas :</presgame4>
+		<nomjeulabel>Nom del jòc :</nomjeulabel>
+		<genrelabel>Genre :</genrelabel>
+		<devlabel>Desvolopaire :</devlabel>
+		<langlabel>Lengas :</langlabel>
+		<gametimelabel>Temps de jòc :</gametimelabel>
+		<lastgamelabel>Darrièra partida :</lastgamelabel>
+		<viewbasicgrid>Basic : Vista en grasilha basica</viewbasicgrid>
+		<jeux>jòcs</jeux>
+		<longselect>Quichada longa sus "select"</longselect>
+		<favuniquement>Sonque los favorits</favuniquement>
+		<tslesjeux>Totes los jòcs</tslesjeux>
+		<fanartstarsyst>Classica</fanartstarsyst>
+		<fanartmodern>Modèrna 1 (pas compatibla amb lo fial d'Ariana)</fanartmodern>
+		<fanartmodern2>Modèrna 2 (compatibla amb lo fial d'Ariana)</fanartmodern2>
+		<fanartfreshone>Sonque los fanarts seleccionats per FreshOne</fanartfreshone>
+		<fanartsystcustom>Fanarts del dorsièr custom, siquenon FreshOne</fanartsystcustom>
+		<videoangled>Activat (pichon en angle)</videoangled>
+		<hardware>Material</hardware>
+		<charsystem>Personatges</charsystem>
+		<figurines>Figurinas (lo tèma Animatics deu èsser installat)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>Posicion dels botons</iconsetposition>
+		<skyblue>blau cèl</skyblue>
+		<purple>violeta</purple>
+		<red>roja</red>
+		<aqua>blau cèl</aqua>
+		<orange>irange</orange>
+		<green>verda</green>
+		<yellow>jauna</yellow>
+		<pink>ròsa</pink>
+		<grey>gris escur</grey>
+		<lightgrey>gris clar</lightgrey>
+		<navy>blava alt</navy>
+		<violet>violeta</violet>
+		<candy>candy</candy>
+		<redalt>roja alt</redalt>
+		<yellowalt>jauna alt</yellowalt>
+		<greenalt>verda alt</greenalt>
+		<purplealt>violeta alt</purplealt>
+		<classiquesyst>Desaparicion en zoom arrièr</classiquesyst>
+		<no>Non</no>
+		<yes>Òc</yes>
+		<thumb>Calibrat per bóstia en 2D</thumb>
+		<boxart>Calibrat per bóstia en 3D</boxart>
+		<starrotate>Òc</starrotate>
+		<nostarrotate>Non</nostarrotate>
+		<deactive>Desactivat</deactive>
+		<speedslow1>Lent+</speedslow1>
+		<speedslow2>Lent++</speedslow2>
+		<starvideoang>Inclinada</starvideoang>
+		<starvideodef>Estandard</starvideodef>
+		<starvideobig>Granda</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Gris simpatic</griscl>
+		<noirombre>Quadre negre + ombra</noirombre>
+		<blancombre>Quadre blanc + ombra</blancombre>
+		<ombre>Ombra solament</ombre>
+		<rien>Cap d'abilhatge</rien>
+		<presetshowbig>RFE Show apercebut grand</presetshowbig>
+		<presetshowsmall>RFE Show apercebut pichon</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar carrat</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (Navigacion mai rapida)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Jos lo panèl grand (coma Steam)</deckgauche>
+		<deckcentre>Al centre de la rengada (zoom + alo)</deckcentre>
+		<decknormal>Normal</decknormal>
+		<spotvideodroite>A drecha, sus las bóstias</spotvideodroite>
+		<spotvideoaucune>Desactivada</spotvideoaucune>
+		<spotvideogauche>A esquèrra, amb las informacions</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Gardar lo lògo</decklogogarder>
+		<decklogobandeau>Bandèu d'informacions (lògo amagat)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Tornar al dorsièr precedent</retourdossier>
+		<ra_moncompte>Mon compte</ra_moncompte>
+		<ra_succesjeu>Succèsses del jòc</ra_succesjeu>
+		<opt_raaffichage>JÒCS - RetroAchievements (esplech extèrne)</opt_raaffichage>
+		<raaffichagepermanent>Afichatge permanent</raaffichagepermanent>
+		<raaffichagetemporaire>Qualques segondas</raaffichagetemporaire>
+		<noteetoile>Estela</noteetoile>
+		<notecoeur>Còr</notecoeur>
+		<notemanette>Manòta</notemanette>
+		<notepouce>Poce amont</notepouce>
+		<notetrophee>Trofèu</notetrophee>
+		<notefantome>Fantauma</notefantome>
+		<notecrane>Cran</notecrane>
+		<notepourcent>En %</notepourcent>
+		<wheelclic>Clic a la faiçon Hyperspin</wheelclic>
+		<bulle>Bomborla</bulle>
+		<clic>Clic simple</clic>
+		<clicgrave>Clic grèu</clicgrave>
+		<frottement>Fretadís</frottement>
+		<poc>Poc</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>GENERAL - Messatge d'acuèlh</opt_lismoi>
+		<opt_iconset>GENERAL - Aparéncia de las icònas d'ajuda</opt_iconset>
+		<opt_colorhelp>GENERAL - Colors del tèxte d'ajuda</opt_colorhelp>
+		<opt_horlogecouleur>GENERAL - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>GENERAL - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>SISTÈMAS - Vista per la lista dels sistèmas</opt_systemview>
+		<opt_imagefondcops1>SISTÈMAS - Causida dels fanarts del sistèma</opt_imagefondcops1>
+		<opt_video4starmodern>SISTÈMAS - Vidèo de gameplay sus la vista sistèma</opt_video4starmodern>
+		<opt_video4starclassic>SISTÈMAS - Vidèo de gameplay sus la vista sistèma</opt_video4starclassic>
+		<opt_systviewselec>SISTÈMAS - Imatge del sistèma dins la ròda</opt_systviewselec>
+		<opt_breadcrumbsonoff>SISTÈMAS - Menú vertical a esquèrra (vista sistèma classica)</opt_breadcrumbsonoff>
+		<arianeauto>Automatic (segon la tria dels sistèmas)</arianeauto>
+		<arianecategories>Categorias (tria per tipe de material)</arianecategories>
+		<arianealpha>Letras de A a Z (tria alfabetica)</arianealpha>
+		<arianealphavoisines>Letra e sas vesinas (tria alfabetica)</arianealphavoisines>
+		<arianeconstructeur>Fabricants (tria per fabricant)</arianeconstructeur>
+		<arianedecennie>Decennis (tria per annada de sortida)</arianedecennie>
+		<arianeautres>AUTRES</arianeautres>
+		<opt_metadataonoff>SISTÈMAS - Informacion sul sistèma (vista sistèma classica)</opt_metadataonoff>
+		<opt_systannonce>JÒCS - Afichar lo sistèma en cors a la dobertura</opt_systannonce>
+		<opt_infosmax>JÒCS - Afichar la consòla d'informacion maximala ?</opt_infosmax>
+		<opt_gamewheelsound>GENERAL - Son pendent lo desfilament</opt_gamewheelsound>
+		<opt_boxorthumb>JÒCS - Bóstia de jòc d'afichar</opt_boxorthumb>
+		<opt_fanarttransition>JÒCS - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>JÒCS - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>JÒCS - Rotacion del disc</opt_cdvitesse>
+		<cdnormale>Normala</cdnormale>
+		<cdlente>Lenta</cdlente>
+		<cdrapide>Rapida</cdrapide>
+		<cdtresrapide>Fòrça rapida</cdtresrapide>
+		<cdimmobile>Immobila</cdimmobile>
+		<opt_umdrotation>JÒCS - Rotacion dels UMD (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>JÒCS - Metre en valor lo jòc seleccionat</opt_selectionvaleur>
+		<selegere>Leugièra</selegere>
+		<selmarquee>Marcada</selmarquee>
+		<opt_videojeu>JÒCS - Vidèo del jòc</opt_videojeu>
+		<vjcapture>Captura puèi vidèo</vjcapture>
+		<vjseule>Vidèo sonque</vjseule>
+		<vjfondu>Vidèo en fondut</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>JÒCS - Box case type</opt_typeboite>
+		<opt_contourboite>JÒCS - Box outline (case)</opt_contourboite>
+		<opt_deckespace>JÒCS - Espaçament de las bóstias</opt_deckespace>
+		<opt_iconenote>JÒCS - Icòna de nòta</opt_iconenote>
+		<opt_extfolderbezelsyst>AVANÇAT - Bezels dels sistèmas</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>AVANÇAT - Lògos dels editors de jòcs</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>AVANÇAT - Fanart dels sistèmas</opt_extfolderfanart>
+		<opt_extfolderlogosyst>AVANÇAT - Lògo sistèma</opt_extfolderlogosyst>
+		<opt_extfoldersalon>AVANÇAT - Emplaçament dels decòrs de la vista RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_perfmachine>AVANÇAT - Mòde maquina pauc potenta</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - Vinhetatge del decòr</opt_salonvignette>
+		<vignleger>Leugièr</vignleger>
+		<vignfort>Fòrt</vignfort>
+		<opt_deckselection>BIG ART - Posicion del jòc seleccionat</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Lògo pendent la vidèo</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Vidèo</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - Rotacion de las bóstias SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - Angle suls bóstias de jòc</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Supòrt del jòc (disc, cartocha)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Velocitat de l'animacion de desfilament</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Talha de la vidèo d'apercebut</opt_starvideo>
+		<opt_starvideocadre>BOXART - Quadre de la vidèo d apercebut</opt_starvideocadre>
+		<vcadreactuel>Quadre actual</vcadreactuel>
+		<vcadreombre>Ombra sola</vcadreombre>
+		<vcadreecranfin>Bordura fina</vcadreecranfin>
+		<vcadrebois>Fusta</vcadrebois>
+		<vcadremetal>Metal raspalhat</vcadremetal>
+		<vcadrelumineux>Ecran luminós</vcadrelumineux>
+		<vcadretv>Televisor CRT</vcadretv>
+		<vcadregalerie>Galariá</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Ologramma</vcadrehologramme>
+		<vcadreverre>Veire esmerilat</vcadreverre>
+		<vcadrecarbone>Carbòni LED</vcadrecarbone>
+		<vcadreneondouble>Neon doble</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Pincelada</vcadrepinceau>
+		<vcadretechnodore>Tecno daurat</vcadretechnodore>
+		<vcadretechnoargent>Tecno argentat</vcadretechnoargent>
+		<vcadreneonelec>Neon electric</vcadreneonelec>
+		<vcadrevitre>Veire</vcadrevitre>
+		<vcadreflammes>Flamas</vcadreflammes>
+		<vcadreencre>Tinta</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Tranchas de la bóstia que se vira</opt_boite3dtranche>
+		<b3tcharniere>Lògo d'un costat, obertura de l'autre</b3tcharniere>
+		<b3tdeuxcotes>Lògo dels dos costats</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - Color de la grasilha</opt_gridcolor>
+		<opt_squarecadre>CARRAT - Abilhatge dels carrats que representan los jòcs</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>SISTÈMAS - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>SISTÈMAS - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>SISTÈMAS - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>SISTÈMAS - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>JÒCS - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Benvenguda e crèdits</planche00>
+		<planche01>01 - Las vistas de sistèmas</planche01>
+		<planche02>02 - Vista classica: l'imatge del sistèma</planche02>
+		<planche03>03 - Vista classica: los detalhs</planche03>
+		<planche04>04 - Fanarts de sistèma, Modern e Z-Spin</planche04>
+		<planche05>05 - Las 11 vistas de jòcs</planche05>
+		<planche06>06 - FanartStar Boxart: bóstias e informacions</planche06>
+		<planche07>07 - FanartStar Boxart: la vidèo</planche07>
+		<planche08>08 - Bóstias e supòrts</planche08>
+		<planche09>09 - Los 22 estuchs</planche09>
+		<planche10>10 - Lo supòrt: reglatges per sistèma</planche10>
+		<planche11>11 - Fanarts dels jòcs e seleccion</planche11>
+		<planche12>12 - Big Art, Spotlight, Carrat, 16/9 e 4/3</planche12>
+		<planche13>13 - Las vistas RFE</planche13>
+		<planche14>14 - RFE Retrofist: l'ecran de la TV</planche14>
+		<planche15>15 - Show Big &amp; Small: la bóstia que se vira</planche15>
+		<planche16>16 - Opcions comunas de las vistas de jòcs</planche16>
+		<planche17>17 - General: sons, ajuda, relòtge</planche17>
+		<planche18>18 - Personalizar amb tos dorsièrs</planche18>
+		<planche19>19 - Mèdias personals dels jòcs</planche19>
+		<planche20>20 - Abilhar un dorsièr</planche20>
+		<planche21>21 - Quin imatge ganha?</planche21>
+		<planche22>22 - Los sistèmas agropats</planche22>
+		<planche23>23 - Maquina pauc potenta e ligams</planche23>
+	</variables>
+</theme>

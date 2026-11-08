@@ -1,6 +1,5 @@
 ﻿<theme>
     <formatVersion>4</formatVersion>
-
     <view name="system">
         <text name="info1" extra="true">
             <text>Pinball FX3 is the BIGGEST, most COMMUNITY-focused pinball game ever created. Advanced multiplayer features including matchups, user-generated tournaments and league play create endless opportunity for pinball competition.</text>
@@ -20,15 +19,12 @@
         <text name="info1" extra="true" lang="DE">
             <text>Pinball FX3 ist das GRÖSSTE auf die COMMUNITY fokussierte Flipperspiel, das es ja gab. Fortgeschrittene Multiplayer-Funktionen wie Matchups, vom Benutzer erstellte Turniere und Ligaspiel sorgen für endlose Möglichkeiten im Flipperwettbewerb.</text>
         </text>
-
         <text name="info2" extra="true">
             <text>PinballFX3</text>
         </text>
-
         <text name="info3" extra="true">
             <text>1980</text>
         </text>
-
         <text name="info4" extra="true">
             <text>Zen Studios</text>
         </text>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>TheXTech, a native C++ port of the Super Mario Bros. X fan game engine, with its episodes and levels.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>TheXTech, port nativo em C++ do motor do jogo de fãs Super Mario Bros. X, com seus episódios e fases.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>TheXTech, a native C++ port of the Super Mario Bros. X fan game engine, with its episodes and levels.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>TheXTech, port nativo en C++ del motor del juego de fans Super Mario Bros. X, con sus episodios y niveles.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>TheXTech, portage natif en C++ du moteur du jeu de fans Super Mario Bros. X, avec ses épisodes et niveaux.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>TheXTech, ein nativer C++-Port der Engine des Fan-Spiels Super Mario Bros. X, mit dessen Episoden und Levels.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>TheXTech</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2020</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Wohlstand</text>
+		</text>
+	</view>
+</theme>

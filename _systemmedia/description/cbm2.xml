@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Commodore's business computer line of 1982, intended as a successor to the PET, also known as the B series.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Linha de computadores profissionais da Commodore de 1982, pensada para suceder o PET, também chamada de série B.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Commodore's business computer line of 1982, intended as a successor to the PET, also known as the B series.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Línea de ordenadores profesionales de Commodore de 1982, pensada para suceder al PET, también llamada serie B.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Gamme d'ordinateurs professionnels de Commodore sortie en 1982, conçue pour succéder au PET, aussi appelée série B.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Commodores Bürocomputer-Reihe von 1982, als Nachfolger des PET gedacht, auch B-Serie genannt.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>CBM-II</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1982</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Commodore</text>
+		</text>
+	</view>
+</theme>

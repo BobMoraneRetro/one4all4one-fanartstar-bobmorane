@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Japanese home computer by Sord, sold in Japan and Europe from 1982, with sprite graphics similar to those of the MSX.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico japonês da Sord, vendido no Japão e na Europa a partir de 1982, com gráficos de sprites parecidos com os do MSX.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Japanese home computer by Sord, sold in Japan and Europe from 1982, with sprite graphics similar to those of the MSX.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico japonés de Sord, vendido en Japón y Europa desde 1982, con gráficos de sprites parecidos a los del MSX.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial japonais de Sord, vendu au Japon et en Europe à partir de 1982, avec des graphismes à sprites proches de ceux du MSX.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Japanischer Heimcomputer von Sord, ab 1982 in Japan und Europa verkauft, mit Sprite-Grafik ähnlich dem MSX.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Sord M5</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sord</text>
+		</text>
+	</view>
+</theme>

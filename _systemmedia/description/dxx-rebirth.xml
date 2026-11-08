@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>DXX-Rebirth, the source port of Descent and Descent II, the six-degrees-of-freedom shooters from Parallax Software.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>DXX-Rebirth, port de Descent e Descent II, os jogos de tiro com seis graus de liberdade da Parallax Software.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>DXX-Rebirth, the source port of Descent and Descent II, the six-degrees-of-freedom shooters from Parallax Software.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>DXX-Rebirth, port de Descent y Descent II, los shooters con seis grados de libertad de Parallax Software.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>DXX-Rebirth, portage de Descent et Descent II, les jeux de tir à six degrés de liberté de Parallax Software.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>DXX-Rebirth, der Source-Port von Descent und Descent II, den Shootern mit sechs Freiheitsgraden von Parallax Software.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>DXX-Rebirth</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1998</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

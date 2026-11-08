@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Source port of Quake II, id Software's 1997 science-fiction shooter against the Strogg.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Port de Quake II, o jogo de tiro de ficção científica da id Software de 1997 contra os Strogg.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Source port of Quake II, id Software's 1997 science-fiction shooter against the Strogg.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Port de Quake II, el shooter de ciencia ficción de id Software de 1997 contra los Strogg.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Portage de Quake II, le FPS de science-fiction d'id Software sorti en 1997, contre les Strogg.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Source-Port von Quake II, dem Science-Fiction-Shooter von id Software aus dem Jahr 1997 gegen die Strogg.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Quake II</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1997</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>id Software</text>
+		</text>
+	</view>
+</theme>

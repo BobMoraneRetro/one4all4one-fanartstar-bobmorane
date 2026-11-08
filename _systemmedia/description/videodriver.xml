@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's Video Driver, a 1988 driving game combining a steering wheel controller with video footage.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Video Driver da Sega, jogo de direção de 1988 que combinava um volante com sequências de vídeo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's Video Driver, a 1988 driving game combining a steering wheel controller with video footage.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Video Driver de Sega, juego de conducción de 1988 que combinaba un volante con secuencias de vídeo.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Video Driver de Sega, jeu de conduite de 1988 associant un volant à des séquences vidéo.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas Video Driver, ein Fahrspiel von 1988, das ein Lenkrad mit Videoaufnahmen verband.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Video Driver</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1988</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

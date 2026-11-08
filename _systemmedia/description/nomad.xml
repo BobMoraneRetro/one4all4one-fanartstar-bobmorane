@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's 1995 portable Mega Drive, the Nomad, which played original Mega Drive cartridges on the go.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Mega Drive portátil da Sega de 1995, o Nomad, que rodava os cartuchos originais do Mega Drive em qualquer lugar.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's 1995 portable Mega Drive, the Nomad, which played original Mega Drive cartridges on the go.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La Mega Drive portátil de Sega de 1995, la Nomad, que leía los cartuchos originales de Mega Drive en cualquier lugar.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La Mega Drive portable de Sega sortie en 1995, la Nomad, qui lisait les cartouches Mega Drive d'origine en déplacement.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas tragbares Mega Drive von 1995, der Nomad, der Original-Mega-Drive-Module unterwegs abspielte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Nomad</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1995</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

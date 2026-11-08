@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiercouleurjeu} : valeur : 0 (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
+	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
+	${media_box2d} : boîte 2D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box2d_missing} : vrai si le média « box2d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box3d} : boîte 3D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box3d_missing} : vrai si le média « box3d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_support} : support physique du jeu (cartouche, ou disque pour les systèmes à disque) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_support_exists} : vrai si le média « support » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${salon_disque_depart} : vue Salon : x du disque caché derrière la boîte sélectionnée (définie dans _gamemedia/_salon/ (14 fichiers))
+	${salon_disque_taille} : vue Salon : taille maximale du disque (définie dans _gamemedia/_salon/ (97 fichiers) ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
+	${salon_disque_tourne} : vue Salon : true = le disque tourne (systèmes CD/DVD par défaut), false = il sort sans tourner ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/ (4 fichiers))
+	${salon_disque_x} : vue Salon : x du disque une fois sorti de la boîte (définie dans _gamemedia/_salon/ (97 fichiers) ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
+	${salon_disque_y} : vue Salon : hauteur du centre du disque (définie dans _gamemedia/_salon/ (17 fichiers) ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
+	${salon_support_mixte} : vue Salon : true = disques et cartes mélangés, la forme de l image (ronde ou non) décide de la rotation (shader support_tourne) ; défaut wiiu, xbox360, openbor, mugen, ikemen, windows et les collections (définie dans _gamemedia/_salon/ (12 fichiers))
+	${salon_support_umd} : vue Salon : true = support UMD (psp) : seul le disque intérieur tourne (shader support_umd), la coque reste fixe (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _viewgame/presetsalon.xml ; valeur selon l option « JEUX - Rotation des UMD (PSP) »)
+	${salon_umd_cx} : vue Salon : UMD : centre horizontal du disque dans l image du support (fraction de la largeur) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _viewgame/presetsalon.xml)
+	${salon_umd_cy} : vue Salon : UMD : centre vertical du disque dans l image du support (fraction de la hauteur) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _viewgame/presetsalon.xml)
+	${salon_umd_rayon} : vue Salon : UMD : rayon du disque qui tourne (fraction de la largeur de l image) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _viewgame/presetsalon.xml)
+	${salon_umd_rayon_centre} : vue Salon : UMD : rayon du centre fixe (moyeu « UMD ») qui ne tourne pas (fraction de la largeur de l image) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _viewgame/presetsalon.xml)
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetstarbox}, ${presetstarboxloop}
+-->
 <theme>
 	<formatVersion>7</formatVersion>
 	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
@@ -21,183 +49,721 @@
 			<defaultTransition>instant</defaultTransition>
 			<itemTemplate>
 				<container>
-				<image name="thumbnailstd">
-						<visible>false</visible>
-						<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">true</visible>
+					<image name="boxartdisque" if="${salon_support_mixte}">
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path ifSubset="starsupport:supportnon"></path>
+						<path ifSubset="starsupport:supportoui">${media_support}</path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/support_tourne.glsl</path>
+						<path ifSubset="perfmachine:perflow"></path>
+							<u_rond>1</u_rond>
+						</shader>
+						<opacity>0</opacity>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="7000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="7600" duration="14000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="2000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="2600" duration="4000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="1000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="1600" duration="2000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="4000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="4600" duration="8000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="rotation" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="boxartdisqueplein" if="${salon_disque_tourne} &amp;&amp; !${salon_support_mixte}">
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path ifSubset="starsupport:supportnon"></path>
+						<path ifSubset="starsupport:supportoui">${media_support}</path>
+						<path ifSubset="perfmachine:perflow"></path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<opacity>0</opacity>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="7000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="7600" duration="14000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="2000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="2600" duration="4000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="1000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="1600" duration="2000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="4000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="4600" duration="8000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="rotation" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="boxartdisquefixe" if="${salon_support_mixte}">
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path ifSubset="starsupport:supportnon"></path>
+						<path ifSubset="starsupport:supportoui">${media_support}</path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/support_tourne.glsl</path>
+						<path ifSubset="perfmachine:perflow"></path>
+							<u_rond>0</u_rond>
+						</shader>
+						<opacity>0</opacity>
+						<storyboard event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="boxartcartouche" if="!${salon_disque_tourne} &amp;&amp; !${salon_support_mixte} &amp;&amp; !${salon_support_umd}">
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path ifSubset="starsupport:supportnon"></path>
+						<path ifSubset="starsupport:supportoui">${media_support}</path>
+						<path ifSubset="perfmachine:perflow"></path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<opacity>0</opacity>
+						<storyboard event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="rotation" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="boxartumd" if="${salon_support_umd} &amp;&amp; !${salon_support_mixte}">
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path ifSubset="starsupport:supportnon"></path>
+						<path ifSubset="starsupport:supportoui">${media_support}</path>
+						<path ifSubset="perfmachine:perflow"></path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/support_umd.glsl</path>
+							<u_angle>0</u_angle>
+							<u_centreX>${salon_umd_cx}</u_centreX>
+							<u_centreY>${salon_umd_cy}</u_centreY>
+							<u_rayon>${salon_umd_rayon}</u_rayon>
+							<u_rayonCentre>${salon_umd_rayon_centre}</u_rayonCentre>
+						</shader>
+						<opacity>0</opacity>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="7000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="7600" duration="14000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="2000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="2600" duration="4000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="1000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="1600" duration="2000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="4000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="4600" duration="8000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="shader.u_angle" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="thumbnailstd" if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
 						<pos>0.5 0.6</pos>
 						<origin>0.5</origin>
 						<rotation>0</rotation>
 						<maxSize>0.475 1</maxSize>
-						<path>{game:thumbnail}</path>
-						<path ifSubset="starthumb:starbox3d">firstfile(${core3dart},{game:boxart})</path>
-						<path ifSubset="starthumb:starbox2d">firstfile(${corefrontart},{game:thumbnail})</path>
-						<storyboard ifSubset="starboxang:deactive" event="activate">
+						<path>${media_box2d}</path>
+						<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
+						<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="activate">
 							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
 						</storyboard>
-						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="deactivate">
 							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard ifSubset="starboxang:active" event="open">
 							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
 						</storyboard>
-						<storyboard ifSubset="starboxang:active" event="activate">
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="activate">
 							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
 							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
 						</storyboard>
-						<storyboard ifSubset="starboxang:active" event="deactivate">
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="deactivate">
 							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
 							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="scroll">
 							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
 						</storyboard>
-						<shader>
-							<path>:/shaders/border.glsl</path>
-							<cornerRadius>0.03</cornerRadius>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
-							<borderColor>00000080</borderColor>
-							<innerShadowSize>0.02</innerShadowSize>
-							<innerShadowColor>00000070</innerShadowColor>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
 							<outerShadowSize>0.02</outerShadowSize>
-							<outerShadowColor>00000080</outerShadowColor>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
 						</shader>
 					</image>
-					<image name="thumbnail">
-						<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">false</visible>
+					<image name="thumbnail" if="{system.theme} != 'snes' &amp;&amp; {system.theme} != 'n64' &amp;&amp; {system.theme} != 'gameandwatch' &amp;&amp; {system.theme} != 'solarus' &amp;&amp; {system.theme} != 'ngage'">
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
 						<pos>0.5 0.6</pos>
 						<origin>0.5</origin>
 						<rotation>0</rotation>
 						<maxSize>0.39 1</maxSize>
-						<path>{game:thumbnail}</path>
-						<path ifSubset="starthumb:starbox3d">firstfile(${core3dart},{game:boxart})</path>
-						<path ifSubset="starthumb:starbox2d">firstfile(${corefrontart},{game:thumbnail})</path>
-						<storyboard ifSubset="starboxang:deactive" event="activate">
+						<path>${media_box2d}</path>
+						<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
+						<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="activate">
 							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
 						</storyboard>
-						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="deactivate">
 							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard ifSubset="starboxang:active" event="open">
 							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
 						</storyboard>
-						<storyboard ifSubset="starboxang:active" event="activate">
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="activate">
 							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
 							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
 						</storyboard>
-						<storyboard ifSubset="starboxang:active" event="deactivate">
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="deactivate">
 							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
 							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="scroll">
 							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
 						</storyboard>
-						<shader>
-							<path>:/shaders/border.glsl</path>
-							<cornerRadius>0.03</cornerRadius>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
-							<borderColor>00000080</borderColor>
-							<innerShadowSize>0.02</innerShadowSize>
-							<innerShadowColor>00000070</innerShadowColor>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
 							<outerShadowSize>0.02</outerShadowSize>
-							<outerShadowColor>00000080</outerShadowColor>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
 						</shader>
 					</image>
 					<image name="nothumb">
-						<visible ifSubset="starthumb:starbox3d">!exists({game:boxart}) &amp;&amp; !exists(${core3dart})</visible>
-						<visible ifSubset="starthumb:starbox2d">!exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
 						<pos>0.5 0.6</pos>
 						<origin>0.5</origin>
 						<rotation>0</rotation>
 						<minSize>0.38 0.96</minSize>
-						<minSize if="{system.theme} == 'dreamcast' 
-						|| {system.theme} == '3do' 
-						|| {system.theme} == 'amigacdtv' 
-						|| {system.theme} == 'amigacd32' 
-						|| {system.theme} == 'gx4000' 
-						|| {system.theme} == 'cdi' 
-						|| {system.theme} == 'neogeocd' 
-						|| {system.theme} == 'pce-cd' 
-						|| {system.theme} == 'pcfx' 
-						|| {system.theme} == 'psx' 
-						|| {system.theme} == 'saturn' 
+						<minSize if="{system.theme} == 'dreamcast'
+						|| {system.theme} == '3do'
+						|| {system.theme} == 'amigacdtv'
+						|| {system.theme} == 'amigacd32'
+						|| {system.theme} == 'gx4000'
+						|| {system.theme} == 'cdi'
+						|| {system.theme} == 'neogeocd'
+						|| {system.theme} == 'pce-cd'
+						|| {system.theme} == 'pcfx'
+						|| {system.theme} == 'psx'
+						|| {system.theme} == 'saturn'
 						|| {system.theme} == 'segacd'">0.38 0.69</minSize>
 						<path>${intfanartfresh}</path>
 						<saturation>0.7</saturation>
-						<shader>
-							<path>:/shaders/border.glsl</path>
-							<cornerRadius>0.03</cornerRadius>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
-							<borderColor>00000080</borderColor>
-							<innerShadowSize>0.02</innerShadowSize>
-							<innerShadowColor>00000070</innerShadowColor>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
 							<outerShadowSize>0.02</outerShadowSize>
-							<outerShadowColor>00000080</outerShadowColor>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
 						</shader>
-						<storyboard ifSubset="starboxang:deactive" event="activate">
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="activate">
 							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
 						</storyboard>
-						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="deactivate">
 							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard ifSubset="starboxang:active" event="open">
 							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
 						</storyboard>
-						<storyboard ifSubset="starboxang:active" event="activate">
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="activate">
 							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
 							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
 						</storyboard>
-						<storyboard ifSubset="starboxang:active" event="deactivate">
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="deactivate">
 							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
 							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</image>
+					<image name="retourfond">
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
+						<visible>{game:rom} == '..'</visible>
+						<pos>0.5 0.6</pos>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<minSize>0.38 0.96</minSize>
+						<minSize if="{system.theme} == 'dreamcast'
+						|| {system.theme} == '3do'
+						|| {system.theme} == 'amigacdtv'
+						|| {system.theme} == 'amigacd32'
+						|| {system.theme} == 'gx4000'
+						|| {system.theme} == 'cdi'
+						|| {system.theme} == 'neogeocd'
+						|| {system.theme} == 'pce-cd'
+						|| {system.theme} == 'pcfx'
+						|| {system.theme} == 'psx'
+						|| {system.theme} == 'saturn'
+						|| {system.theme} == 'segacd'">0.38 0.69</minSize>
+						<path>${intfanartfresh}</path>
+						<saturation>0.4</saturation>
+						<color>5A5A5AFF</color>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.02</outerShadowSize>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+						</shader>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="scroll">
 							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
 						</storyboard>
 					</image>
 					<image name="nothumbmarq">
-						<visible ifSubset="starthumb:starbox3d">!exists({game:boxart}) &amp;&amp; !exists(${core3dart})</visible>
-						<visible ifSubset="starthumb:starbox2d">!exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing}</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing}</visible>
 						<pos>0.5 0.55</pos>
 						<origin>0.5</origin>
 						<rotation>0</rotation>
 						<maxSize>0.33 1</maxSize>
-						<path>{game:marquee}</path>
-						<shader>
-							<path>:/shaders/border.glsl</path>
-							<cornerRadius>0.03</cornerRadius>
+						<path>${media_marquee}</path>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
-							<borderColor>00000080</borderColor>
-							<innerShadowSize>0.02</innerShadowSize>
-							<innerShadowColor>00000070</innerShadowColor>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
 							<outerShadowSize>0.02</outerShadowSize>
-							<outerShadowColor>00000080</outerShadowColor>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
 						</shader>
-						<storyboard ifSubset="starboxang:deactive" event="activate">
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="activate">
 							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
 						</storyboard>
-						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="deactivate">
 							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard ifSubset="starboxang:active" event="open">
 							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
 						</storyboard>
-						<storyboard ifSubset="starboxang:active" event="activate">
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="activate">
 							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
 							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
 						</storyboard>
-						<storyboard ifSubset="starboxang:active" event="deactivate">
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="deactivate">
 							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
 							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="scroll">
 							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
 						</storyboard>
 					</image>
-					<text name="gamename" if="{system.theme} != 'switch'">
-						<visible ifSubset="starthumb:starbox3d">!exists({game:marquee}) &amp;&amp; !exists({game:boxart}) &amp;&amp; !exists(${core3dart})</visible>
-						<visible ifSubset="starthumb:starbox2d">!exists({game:marquee}) &amp;&amp; !exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+					<image name="retourfleche">
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
+						<visible>{game:rom} == '..'</visible>
+						<pos>0.5 0.38</pos>
 						<origin>0.5</origin>
-						<text>{game:name}</text>
+						<rotation>0</rotation>
+						<maxSize>0.14 0.22</maxSize>
+						<path>${themePath}/_viewgame/commun/retour/retour.png</path>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="activate">
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="activate">
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="activate">
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="deactivate">
+							<animation property="y" to="0.43" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="deactivate">
+							<animation property="y" to="0.43" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="deactivate">
+							<animation property="y" to="0.43" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.43" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.43" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.43" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.43" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</image>
+					<text name="gamename" if="{system.theme} != 'switch'">
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
+						<visible ifSubset="boxorthumb:boxart">${media_marquee_missing} &amp;&amp; ${media_box3d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_marquee_missing} &amp;&amp; ${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<origin>0.5</origin>
+						<storyboard ifSubset="selectionvaleur:legere" event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="selectionvaleur:marquee" event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="selectionvaleur:legere" event="deactivate">
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="selectionvaleur:marquee" event="deactivate">
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<text>${titrejeu}</text>
 						<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
 						<color>FFFFFF</color>
 						<alignment>center</alignment>
@@ -232,5 +798,910 @@
 				</container>
 			</itemTemplate>
 		</gamecarousel>
+	</customView>
+	<customView name="presetstarboxloop" displayName="${presetstarboxloop}" inherits="grid">
+		<imagegrid name="gamegrid">
+			<zIndex>10</zIndex>
+			<imageSource>thumbnail</imageSource>
+			<scrollDirection>horizontalCenter</scrollDirection>
+			<scrollLoop>true</scrollLoop>
+			<padding>0 0.425 0 0.15</padding>
+			<autoLayoutSelectedZoom>1</autoLayoutSelectedZoom>
+			<animateSelection>true</animateSelection>
+			<showVideoAtDelay>-1</showVideoAtDelay>
+			<itemTemplate>
+				<container>
+					<image name="boxartdisque" if="${salon_support_mixte}">
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path ifSubset="starsupport:supportnon"></path>
+						<path ifSubset="starsupport:supportoui">${media_support}</path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/support_tourne.glsl</path>
+						<path ifSubset="perfmachine:perflow"></path>
+							<u_rond>1</u_rond>
+						</shader>
+						<opacity>0</opacity>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="7000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="7600" duration="14000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="2000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="2600" duration="4000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="1000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="1600" duration="2000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="4000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="4600" duration="8000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="rotation" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="boxartdisqueplein" if="${salon_disque_tourne} &amp;&amp; !${salon_support_mixte}">
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path ifSubset="starsupport:supportnon"></path>
+						<path ifSubset="starsupport:supportoui">${media_support}</path>
+						<path ifSubset="perfmachine:perflow"></path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<opacity>0</opacity>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="7000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="7600" duration="14000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="2000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="2600" duration="4000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="1000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="1600" duration="2000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="4000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="4600" duration="8000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="rotation" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="boxartdisquefixe" if="${salon_support_mixte}">
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path ifSubset="starsupport:supportnon"></path>
+						<path ifSubset="starsupport:supportoui">${media_support}</path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/support_tourne.glsl</path>
+						<path ifSubset="perfmachine:perflow"></path>
+							<u_rond>0</u_rond>
+						</shader>
+						<opacity>0</opacity>
+						<storyboard event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="boxartcartouche" if="!${salon_disque_tourne} &amp;&amp; !${salon_support_mixte} &amp;&amp; !${salon_support_umd}">
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path ifSubset="starsupport:supportnon"></path>
+						<path ifSubset="starsupport:supportoui">${media_support}</path>
+						<path ifSubset="perfmachine:perflow"></path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<opacity>0</opacity>
+						<storyboard event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="rotation" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="boxartumd" if="${salon_support_umd} &amp;&amp; !${salon_support_mixte}">
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path ifSubset="starsupport:supportnon"></path>
+						<path ifSubset="starsupport:supportoui">${media_support}</path>
+						<path ifSubset="perfmachine:perflow"></path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/support_umd.glsl</path>
+							<u_angle>0</u_angle>
+							<u_centreX>${salon_umd_cx}</u_centreX>
+							<u_centreY>${salon_umd_cy}</u_centreY>
+							<u_rayon>${salon_umd_rayon}</u_rayon>
+							<u_rayonCentre>${salon_umd_rayon_centre}</u_rayonCentre>
+						</shader>
+						<opacity>0</opacity>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="7000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="7600" duration="14000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="2000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="2600" duration="4000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="1000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="1600" duration="2000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="4000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="4600" duration="8000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="shader.u_angle" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="thumbnailstd" if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
+						<pos>0.5 0.7333</pos>
+						<scale>0.6667</scale>
+						<scaleOrigin>0 0</scaleOrigin>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>0.475 1</maxSize>
+						<path>${media_box2d}</path>
+						<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
+						<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.02</outerShadowSize>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+						</shader>
+					</image>
+					<image name="thumbnail" if="{system.theme} != 'snes' &amp;&amp; {system.theme} != 'n64' &amp;&amp; {system.theme} != 'gameandwatch' &amp;&amp; {system.theme} != 'solarus' &amp;&amp; {system.theme} != 'ngage'">
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
+						<pos>0.5 0.7333</pos>
+						<scale>0.6667</scale>
+						<scaleOrigin>0 0</scaleOrigin>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>0.39 1</maxSize>
+						<path>${media_box2d}</path>
+						<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
+						<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.02</outerShadowSize>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+						</shader>
+					</image>
+					<image name="nothumb">
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<pos>0.5 0.7333</pos>
+						<scale>0.6667</scale>
+						<scaleOrigin>0 0</scaleOrigin>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<minSize>0.38 0.96</minSize>
+						<minSize if="{system.theme} == 'dreamcast'
+						|| {system.theme} == '3do'
+						|| {system.theme} == 'amigacdtv'
+						|| {system.theme} == 'amigacd32'
+						|| {system.theme} == 'gx4000'
+						|| {system.theme} == 'cdi'
+						|| {system.theme} == 'neogeocd'
+						|| {system.theme} == 'pce-cd'
+						|| {system.theme} == 'pcfx'
+						|| {system.theme} == 'psx'
+						|| {system.theme} == 'saturn'
+						|| {system.theme} == 'segacd'">0.38 0.69</minSize>
+						<path>${intfanartfresh}</path>
+						<saturation>0.7</saturation>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.02</outerShadowSize>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+						</shader>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+					</image>
+					<image name="retourfond">
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
+						<visible>{game:rom} == '..'</visible>
+						<pos>0.5 0.7333</pos>
+						<scale>0.6667</scale>
+						<scaleOrigin>0 0</scaleOrigin>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<minSize>0.38 0.96</minSize>
+						<minSize if="{system.theme} == 'dreamcast'
+						|| {system.theme} == '3do'
+						|| {system.theme} == 'amigacdtv'
+						|| {system.theme} == 'amigacd32'
+						|| {system.theme} == 'gx4000'
+						|| {system.theme} == 'cdi'
+						|| {system.theme} == 'neogeocd'
+						|| {system.theme} == 'pce-cd'
+						|| {system.theme} == 'pcfx'
+						|| {system.theme} == 'psx'
+						|| {system.theme} == 'saturn'
+						|| {system.theme} == 'segacd'">0.38 0.69</minSize>
+						<path>${intfanartfresh}</path>
+						<saturation>0.4</saturation>
+						<color>5A5A5AFF</color>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.02</outerShadowSize>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+						</shader>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+					</image>
+					<image name="nothumbmarq">
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing}</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing}</visible>
+						<pos>0.5 0.7</pos>
+						<scale>0.6667</scale>
+						<scaleOrigin>0 0</scaleOrigin>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>0.33 1</maxSize>
+						<path>${media_marquee}</path>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.02</outerShadowSize>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+						</shader>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+					</image>
+					<image name="retourfleche">
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
+						<visible>{game:rom} == '..'</visible>
+						<pos>0.5 0.5867</pos>
+						<scale>0.6667</scale>
+						<scaleOrigin>0 0</scaleOrigin>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>0.14 0.22</maxSize>
+						<path>${themePath}/_viewgame/commun/retour/retour.png</path>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.43" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.43" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.43" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:aucune" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.62" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:legere" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.62" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive,selectionvaleur:marquee" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.62" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.43" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.43" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.43" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:aucune" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.62" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:legere" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.62" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active,selectionvaleur:marquee" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.62" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.62" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+					</image>
+					<text name="gamename" if="{system.theme} != 'switch'">
+						<opacity ifSubset="selectionvaleur:legere">0.7</opacity>
+						<opacity ifSubset="selectionvaleur:marquee">0.45</opacity>
+						<visible ifSubset="boxorthumb:boxart">${media_marquee_missing} &amp;&amp; ${media_box3d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_marquee_missing} &amp;&amp; ${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<origin>0.5</origin>
+						<storyboard ifSubset="selectionvaleur:legere" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="selectionvaleur:marquee" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="selectionvaleur:legere" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" duration="250" mode="easeOut"/>
+							<animation property="opacity" to="0.7" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="selectionvaleur:marquee" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" duration="250" mode="easeOut"/>
+							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
+						</storyboard>
+						<text>${titrejeu}</text>
+						<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<fontSize>0.025</fontSize>
+						<lineSpacing>1</lineSpacing>
+						<size>0.3 2</size>
+						<pos>0.5 0.8667</pos>
+						<scale>0.6667</scale>
+						<scaleOrigin>0 0</scaleOrigin>
+						<glowColor>00000066</glowColor>
+						<glowSize>2</glowSize>
+						<zIndex>400</zIndex>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="scale" to="1" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="scale" to="0.6667" duration="250" mode="easeOut"/>
+							<animation property="y" to="0.7333" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+					</text>
+				</container>
+			</itemTemplate>
+		</imagegrid>
 	</customView>
 </theme>

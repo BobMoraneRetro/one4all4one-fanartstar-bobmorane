@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="zh">
+		<packcustombuildsno>带 "-fanart" 后缀的背景图(默认)</packcustombuildsno>
+		<packretrofreshbat>带 "-image" 后缀的背景图</packretrofreshbat>
+		<scrapedboxart>gamelist 中带 "-boxart" 的 3D 盒子</scrapedboxart>
+		<scrapedthumbnail>gamelist 中带 "-thumbnail" 的 3D 盒子</scrapedthumbnail>
+		<gamemedianon>否：仅使用游戏列表媒体</gamemedianon>
+		<gamemediaoui>是：优先自定义媒体，否则游戏列表</gamemediaoui>
+		<gamemediaseul>仅：仅自定义媒体（不回退到 gamelist）</gamemediaseul>
+		<intheme>主题文件夹 - 默认</intheme>
+		<extfolder>外部文件夹</extfolder>
+		<opt_custombuilds>高级 - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>高级 - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>高级 - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>高级 - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

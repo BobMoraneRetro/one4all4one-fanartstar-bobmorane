@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>DICE, the Discrete Integrated Circuit Emulator, simulates early 1970s arcade games built from logic chips without a processor, such as Pong.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>DICE (Discrete Integrated Circuit Emulator) simula os primeiros jogos de arcade dos anos 70, feitos com circuitos lógicos sem processador, como Pong.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>DICE, the Discrete Integrated Circuit Emulator, simulates early 1970s arcade games built from logic chips without a processor, such as Pong.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>DICE (Discrete Integrated Circuit Emulator) simula los primeros juegos de arcade de los 70, hechos con circuitos lógicos sin procesador, como Pong.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>DICE (Discrete Integrated Circuit Emulator) simule les premiers jeux d'arcade des années 1970, construits en circuits logiques sans processeur, comme Pong.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>DICE (Discrete Integrated Circuit Emulator) simuliert frühe Arcade-Spiele der 1970er-Jahre aus Logikbausteinen ohne Prozessor, etwa Pong.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>DICE</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1972</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

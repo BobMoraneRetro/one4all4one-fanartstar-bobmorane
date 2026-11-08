@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="uk">
+		<desactive>Вимкнено</desactive>
+		<default>За замовчуванням</default>
+		<active>Увімкнено</active>
+		<novideo>Вимкнено</novideo>
+		<videoback>Увімкнено</videoback>
+		<intheme>Тека теми - Типово</intheme>
+		<extfolder>Зовнішня тека</extfolder>
+		<nodates>Немає дати</nodates>
+		<playcountone>гра</playcountone>
+		<playcount>ігор</playcount>
+		<noplaycount>Жодного разу не запускалася</noplaycount>
+		<playerss>гравці</playerss>
+		<player>гравець</player>
+		<nogametime>Жодного разу не грали</nogametime>
+		<noplayerdata>Невідомо</noplayerdata>
+		<noratings>Немає оцінки</noratings>
+		<notesur100>із 100</notesur100>
+		<opt_nomjeu>ІГРИ - Назва гри</opt_nomjeu>
+		<nomjeucomplet>Повна</nomjeucomplet>
+		<nomjeucourt>Без дужок</nomjeucourt>
+		<presgame1>Це гра жанру</presgame1>
+		<presgame2>розробник</presgame2>
+		<presgame3>платформа</presgame3>
+		<presgame4>- Доступні мови :</presgame4>
+		<nomjeulabel>Назва гри :</nomjeulabel>
+		<genrelabel>Жанр :</genrelabel>
+		<devlabel>Розробник :</devlabel>
+		<langlabel>Мови :</langlabel>
+		<gametimelabel>Час гри :</gametimelabel>
+		<lastgamelabel>Остання гра:</lastgamelabel>
+		<viewbasicgrid>Basic: Проста сітка</viewbasicgrid>
+		<jeux>ігор</jeux>
+		<longselect>Довге натискання "select"</longselect>
+		<favuniquement>Лише обране</favuniquement>
+		<tslesjeux>Усі ігри</tslesjeux>
+		<fanartstarsyst>Класичний</fanartstarsyst>
+		<fanartmodern>Сучасний 1 (несумісний з навігаційним ланцюжком)</fanartmodern>
+		<fanartmodern2>Сучасний 2 (сумісний з навігаційним ланцюжком)</fanartmodern2>
+		<fanartfreshone>Лише фанарти, відібрані FreshOne</fanartfreshone>
+		<fanartsystcustom>Фанарти з теки custom, інакше FreshOne</fanartsystcustom>
+		<videoangled>Увімкнено (маленьке, під кутом)</videoangled>
+		<hardware>Обладнання</hardware>
+		<charsystem>Персонажі</charsystem>
+		<figurines>Фігурки (потрібна тема Animatics)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>Розташування кнопок</iconsetposition>
+		<skyblue>небесно-блакитний</skyblue>
+		<purple>фіолетовий</purple>
+		<red>червоний</red>
+		<aqua>небесно-блакитний</aqua>
+		<orange>помаранчевий</orange>
+		<green>зелений</green>
+		<yellow>жовтий</yellow>
+		<pink>рожевий</pink>
+		<grey>темно-сірий</grey>
+		<lightgrey>світло-сірий</lightgrey>
+		<navy>синій alt</navy>
+		<violet>фіолетовий</violet>
+		<candy>candy</candy>
+		<redalt>червоний alt</redalt>
+		<yellowalt>жовтий alt</yellowalt>
+		<greenalt>зелений alt</greenalt>
+		<purplealt>фіолетовий alt</purplealt>
+		<classiquesyst>Зникнення з віддаленням</classiquesyst>
+		<no>Ні</no>
+		<yes>Так</yes>
+		<thumb>Під 2D-коробку</thumb>
+		<boxart>Під 3D-коробку</boxart>
+		<starrotate>Так</starrotate>
+		<nostarrotate>Ні</nostarrotate>
+		<deactive>Вимкнено</deactive>
+		<speedslow1>Повільно+</speedslow1>
+		<speedslow2>Повільно++</speedslow2>
+		<starvideoang>Нахилене</starvideoang>
+		<starvideodef>Стандарт</starvideodef>
+		<starvideobig>Велике</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Приємний сірий</griscl>
+		<noirombre>Чорна рамка + тінь</noirombre>
+		<blancombre>Біла рамка + тінь</blancombre>
+		<ombre>Лише тінь</ombre>
+		<rien>Без оформлення</rien>
+		<presetshowbig>RFE Show великий перегляд</presetshowbig>
+		<presetshowsmall>RFE Show малий перегляд</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar квадрат</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (Швидша навігація)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Під великою панеллю (як у Steam)</deckgauche>
+		<deckcentre>У центрі ряду (збільшення + сяйво)</deckcentre>
+		<decknormal>Звичайно</decknormal>
+		<spotvideodroite>Праворуч, поверх коробок</spotvideodroite>
+		<spotvideoaucune>Вимкнено</spotvideoaucune>
+		<spotvideogauche>Ліворуч, з інформацією</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Залишити логотип</decklogogarder>
+		<decklogobandeau>Інфосмуга (логотип приховано)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Назад до попередньої теки</retourdossier>
+		<ra_moncompte>Мій акаунт</ra_moncompte>
+		<ra_succesjeu>Досягнення гри</ra_succesjeu>
+		<opt_raaffichage>ІГРИ - RetroAchievements (зовнішній інструмент)</opt_raaffichage>
+		<raaffichagepermanent>Постійний показ</raaffichagepermanent>
+		<raaffichagetemporaire>Кілька секунд</raaffichagetemporaire>
+		<noteetoile>Зірка</noteetoile>
+		<notecoeur>Серце</notecoeur>
+		<notemanette>Геймпад</notemanette>
+		<notepouce>Палець угору</notepouce>
+		<notetrophee>Кубок</notetrophee>
+		<notefantome>Привид</notefantome>
+		<notecrane>Череп</notecrane>
+		<notepourcent>У %</notepourcent>
+		<wheelclic>Клацання в стилі Hyperspin</wheelclic>
+		<bulle>Бульбашка</bulle>
+		<clic>Просте клацання</clic>
+		<clicgrave>Глухе клацання</clicgrave>
+		<frottement>Тертя</frottement>
+		<poc>Хлопок</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>ЗАГАЛЬНІ - Вітальне повідомлення</opt_lismoi>
+		<opt_iconset>ЗАГАЛЬНІ - Вигляд значків довідки</opt_iconset>
+		<opt_colorhelp>ЗАГАЛЬНІ - Кольори тексту довідки</opt_colorhelp>
+		<opt_horlogecouleur>ЗАГАЛЬНІ - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>ЗАГАЛЬНІ - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>СИСТЕМИ - Вигляд списку систем</opt_systemview>
+		<opt_imagefondcops1>СИСТЕМИ - Вибір фанартів системи</opt_imagefondcops1>
+		<opt_video4starmodern>СИСТЕМИ - Відео геймплею у вигляді систем</opt_video4starmodern>
+		<opt_video4starclassic>СИСТЕМИ - Відео геймплею у вигляді систем</opt_video4starclassic>
+		<opt_systviewselec>СИСТЕМИ - Зображення системи в колесі</opt_systviewselec>
+		<opt_breadcrumbsonoff>СИСТЕМИ - Вертикальне меню ліворуч (класичний вигляд систем)</opt_breadcrumbsonoff>
+		<arianeauto>Автоматично (за сортуванням систем)</arianeauto>
+		<arianecategories>Категорії (сортування за типом обладнання)</arianecategories>
+		<arianealpha>Літери від A до Z (за абеткою)</arianealpha>
+		<arianealphavoisines>Літера та сусідні (за абеткою)</arianealphavoisines>
+		<arianeconstructeur>Виробники (за виробником)</arianeconstructeur>
+		<arianedecennie>Десятиліття (за роком випуску)</arianedecennie>
+		<arianeautres>ІНШІ</arianeautres>
+		<opt_metadataonoff>СИСТЕМИ - Інформація про систему (класичний вигляд систем)</opt_metadataonoff>
+		<opt_systannonce>ІГРИ - Показувати поточну систему під час відкриття</opt_systannonce>
+		<opt_infosmax>ІГРИ - Показати розширену інфопанель?</opt_infosmax>
+		<opt_gamewheelsound>ЗАГАЛЬНІ - Звук прокручування</opt_gamewheelsound>
+		<opt_boxorthumb>ІГРИ - Коробка гри для відображення</opt_boxorthumb>
+		<opt_fanarttransition>ІГРИ - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>ІГРИ - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>ІГРИ - Обертання диска</opt_cdvitesse>
+		<cdnormale>Звичайне</cdnormale>
+		<cdlente>Повільне</cdlente>
+		<cdrapide>Швидке</cdrapide>
+		<cdtresrapide>Дуже швидке</cdtresrapide>
+		<cdimmobile>Нерухомий</cdimmobile>
+		<opt_umdrotation>ІГРИ - Обертання UMD (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>ІГРИ - Виділяти вибрану гру</opt_selectionvaleur>
+		<selegere>Слабко</selegere>
+		<selmarquee>Сильно</selmarquee>
+		<opt_videojeu>ІГРИ - Відео гри</opt_videojeu>
+		<vjcapture>Знімок, потім відео</vjcapture>
+		<vjseule>Лише відео</vjseule>
+		<vjfondu>Відео з плавною появою</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>ІГРИ - Box case type</opt_typeboite>
+		<opt_contourboite>ІГРИ - Box outline (case)</opt_contourboite>
+		<opt_deckespace>ІГРИ - Відстань між коробками</opt_deckespace>
+		<opt_iconenote>ІГРИ - Значок оцінки</opt_iconenote>
+		<opt_extfolderbezelsyst>ДОДАТКОВО - Рамки (bezel) систем</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>ДОДАТКОВО - Логотипи видавців ігор</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>ДОДАТКОВО - Фанарт систем</opt_extfolderfanart>
+		<opt_extfolderlogosyst>ДОДАТКОВО - Логотип системи</opt_extfolderlogosyst>
+		<opt_extfoldersalon>ДОДАТКОВО - Розташування фонів виду RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_perfmachine>ДОДАТКОВО - Режим для слабких машин</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - Віньєтування фону</opt_salonvignette>
+		<vignleger>Слабке</vignleger>
+		<vignfort>Сильне</vignfort>
+		<opt_deckselection>BIG ART - Положення вибраної гри</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Логотип під час відео</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Відео</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - Поворот коробок SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - Кут коробок ігор</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Носій гри (диск, картридж)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Швидкість анімації прокручування</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Розмір відео попереднього перегляду</opt_starvideo>
+		<opt_starvideocadre>BOXART - Рамка відео попереднього перегляду</opt_starvideocadre>
+		<vcadreactuel>Поточна рамка</vcadreactuel>
+		<vcadreombre>Лише тінь</vcadreombre>
+		<vcadreecranfin>Тонка рамка</vcadreecranfin>
+		<vcadrebois>Дерево</vcadrebois>
+		<vcadremetal>Шліфований метал</vcadremetal>
+		<vcadrelumineux>Сяйний екран</vcadrelumineux>
+		<vcadretv>ЕПТ-телевізор</vcadretv>
+		<vcadregalerie>Галерея</vcadregalerie>
+		<vcadrepolaroid>Полароїд</vcadrepolaroid>
+		<vcadreneon>Неон</vcadreneon>
+		<vcadrehologramme>Голограма</vcadrehologramme>
+		<vcadreverre>Матове скло</vcadreverre>
+		<vcadrecarbone>Карбон LED</vcadrecarbone>
+		<vcadreneondouble>Подвійний неон</vcadreneondouble>
+		<vcadregaming>Ігрова</vcadregaming>
+		<vcadrepinceau>Мазки пензля</vcadrepinceau>
+		<vcadretechnodore>Золоте техно</vcadretechnodore>
+		<vcadretechnoargent>Срібне техно</vcadretechnoargent>
+		<vcadreneonelec>Електричний неон</vcadreneonelec>
+		<vcadrevitre>Скло</vcadrevitre>
+		<vcadreflammes>Полум’я</vcadreflammes>
+		<vcadreencre>Чорнило</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Торці коробки, що обертається</opt_boite3dtranche>
+		<b3tcharniere>Логотип з одного боку, відкривання з іншого</b3tcharniere>
+		<b3tdeuxcotes>Логотип з обох боків</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - Колір сітки</opt_gridcolor>
+		<opt_squarecadre>КВАДРАТ - Оформлення квадратів з іграми</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>СИСТЕМИ - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>СИСТЕМИ - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>СИСТЕМИ - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>СИСТЕМИ - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>ІГРИ - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Вітання та подяки</planche00>
+		<planche01>01 - Види систем</planche01>
+		<planche02>02 - Класичний вигляд: зображення системи</planche02>
+		<planche03>03 - Класичний вигляд: подробиці</planche03>
+		<planche04>04 - Фанарти систем, Modern і Z-Spin</planche04>
+		<planche05>05 - 11 видів ігор</planche05>
+		<planche06>06 - FanartStar Boxart: коробки та відомості</planche06>
+		<planche07>07 - FanartStar Boxart: відео</planche07>
+		<planche08>08 - Коробки та носії</planche08>
+		<planche09>09 - 22 футляри</planche09>
+		<planche10>10 - Носій: налаштування за системами</planche10>
+		<planche11>11 - Фанарти ігор і вибір</planche11>
+		<planche12>12 - Big Art, Spotlight, Квадрат, 16/9 і 4/3</planche12>
+		<planche13>13 - Види RFE</planche13>
+		<planche14>14 - RFE Retrofist: екран телевізора</planche14>
+		<planche15>15 - Show Big &amp; Small: коробка, що перевертається</planche15>
+		<planche16>16 - Спільні параметри видів ігор</planche16>
+		<planche17>17 - Загальні: звуки, довідка, годинник</planche17>
+		<planche18>18 - Налаштування власними теками</planche18>
+		<planche19>19 - Власні медіафайли ігор</planche19>
+		<planche20>20 - Оформлення теки</planche20>
+		<planche21>21 - Яке зображення переможе?</planche21>
+		<planche22>22 - Згруповані системи</planche22>
+		<planche23>23 - Слабкий комп'ютер і посилання</planche23>
+	</variables>
+</theme>

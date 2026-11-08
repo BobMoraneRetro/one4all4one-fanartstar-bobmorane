@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Soviet 16-bit home computer of the Elektronika BK series, built around a PDP-11 compatible processor and widely used in schools.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico soviético de 16 bits da série Elektronika BK, com processador compatível com PDP-11 e muito usado em escolas.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Soviet 16-bit home computer of the Elektronika BK series, built around a PDP-11 compatible processor and widely used in schools.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico soviético de 16 bits de la serie Elektronika BK, con un procesador compatible con PDP-11 y muy usado en escuelas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial soviétique 16 bits de la série Elektronika BK, doté d'un processeur compatible PDP-11 et très répandu dans les écoles.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sowjetischer 16-Bit-Heimcomputer der Reihe Elektronika BK mit PDP-11-kompatiblem Prozessor, weit verbreitet in Schulen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Elektronika BK</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1985</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Elektronika</text>
+		</text>
+	</view>
+</theme>

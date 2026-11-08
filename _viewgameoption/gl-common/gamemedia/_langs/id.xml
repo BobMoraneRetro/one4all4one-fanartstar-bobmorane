@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="id">
+		<packcustombuildsno>Fanart dengan akhiran "-fanart" (bawaan)</packcustombuildsno>
+		<packretrofreshbat>Fanart dengan akhiran "-image"</packretrofreshbat>
+		<scrapedboxart>Kotak 3D dengan "-boxart" di gamelist</scrapedboxart>
+		<scrapedthumbnail>Kotak 3D dengan "-thumbnail" di gamelist</scrapedthumbnail>
+		<gamemedianon>Tidak: hanya media gamelist</gamemedianon>
+		<gamemediaoui>Ya: media kustom dulu, jika tidak gamelist</gamemediaoui>
+		<gamemediaseul>Hanya: hanya media kustom (tanpa cadangan gamelist)</gamemediaseul>
+		<intheme>Folder tema - Bawaan</intheme>
+		<extfolder>Folder eksternal</extfolder>
+		<opt_custombuilds>LANJUTAN - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>LANJUTAN - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>LANJUTAN - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>LANJUTAN - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

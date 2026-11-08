@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<boitiertype>7</boitiertype>
+		<boitiertype if="{system.theme} == 'xbox' || {system.theme} == 'xbox360'">1</boitiertype>
+		<boitiertype if="{system.theme} == 'megacd' || {system.theme} == 'segacd'">6</boitiertype>
+		<boitiertype if="{system.theme} == 'saturn'">3</boitiertype>
+		<boitiertype if="{system.theme} == 'psx'">5</boitiertype>
+		<boitiertype if="{system.theme} == 'megadrive' || {system.theme} == 'mastersystem'">4</boitiertype>
+		<boitiertype if="{system.theme} == 'snes'">8</boitiertype>
+		<boitiertype if="{system.theme} == 'nds'">10</boitiertype>
+		<boitiertype if="{system.theme} == '3ds'">11</boitiertype>
+		<boitiertype if="{system.theme} == 'psp'">12</boitiertype>
+		<boitiertype if="{system.theme} == 'ps3'">13</boitiertype>
+		<boitiertype if="{system.theme} == 'wii' || {system.theme} == 'wiiu'">1</boitiertype>
+		<boitiertype if="{system.theme} == '3do' || {system.theme} == 'amigacd32'">15</boitiertype>
+		<boitiertype if="{system.theme} == 'windows'">20</boitiertype>
+		<boitiertype if="{system.theme} == 'dreamcast'">17</boitiertype>
+		<boitiertype if="{system.theme} == 'zxspectrum' || {system.theme} == 'c64' || {system.theme} == 'amstradcpc'">18</boitiertype>
+		<boitiertype if="{system.theme} == 'oric'">19</boitiertype>
+		<boitiertype if="{system.theme} == 'wiiu'">1</boitiertype>
+		<boitiertype if="{system.theme} == 'ps2' || {system.theme} == 'gc'">1</boitiertype>
+		<boitiertype if="{system.theme} == 'xboxone' || {system.theme} == 'switch'">1</boitiertype>
+		<boitiertype if="{system.theme} == 'ps4' || {system.theme} == 'ps5'">13</boitiertype>
+		<boitiertype if="{system.theme} == 'psvita'">12</boitiertype>
+		<boitiertype if="{system.theme} == 'pcengine' || {system.theme} == 'supergrafx' || {system.theme} == 'pce-cd' || {system.theme} == 'neogeocd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd'">5</boitiertype>
+		<boitiertype if="{system.theme} == 'sega32x'">4</boitiertype>
+		<boitiertype if="{system.theme} == 'gamegear' || {system.theme} == 'sg-1000'">2</boitiertype>
+		<boitiertype if="{system.theme} == 'nes' || {system.theme} == 'n64' || {system.theme} == 'gb' || {system.theme} == 'gbc' || {system.theme} == 'gba' || {system.theme} == 'virtualboy' || {system.theme} == 'atarilynx' || {system.theme} == 'atarijaguar' || {system.theme} == 'atari5200' || {system.theme} == 'atari7800' || {system.theme} == 'vectrex' || {system.theme} == 'amiga500' || {system.theme} == 'amiga1200' || {system.theme} == 'amiga4000' || {system.theme} == 'atarist' || {system.theme} == 'pc' || {system.theme} == 'exodos'">8</boitiertype>
+		<boitiertype if="{system.theme} == 'atari2600' || {system.theme} == 'colecovision' || {system.theme} == 'intellivision'">9</boitiertype>
+		<boitiercouleur>00000000</boitiercouleur>
+		<boitiercouleur if="{system.theme} == 'xbox'">68A82CFF</boitiercouleur>
+		<boitiercouleur if="{system.theme} == 'xbox360'">7AB929CC</boitiercouleur>
+		<boitiercouleur if="{system.theme} == 'xboxone'">107C10FF</boitiercouleur>
+		<boitiercouleur if="{system.theme} == 'wii'">F0F0F0FF</boitiercouleur>
+		<boitiercouleur if="{system.theme} == 'switch'">E60012FF</boitiercouleur>
+		<boitiercouleur if="{system.theme} == 'ps4'">0B57B8FF</boitiercouleur>
+		<boitiercouleur if="{system.theme} == 'ps5'">0070D1FF</boitiercouleur>
+		<boitiercouleur if="{system.theme} == 'ps2'|| {system.theme} == 'ps3'|| {system.theme} == 'gc'">0D0D10FF</boitiercouleur>
+		<boitiercouleur if="{system.theme} == 'wiiu'">2DA8E0FF</boitiercouleur>
+		<boitiercouleur if="{system.theme} == 'psvita'">1E5BAAB3</boitiercouleur>
+		<boitiertype if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">inlist('xbox,xbox360,wii,wiiu,ps2,gc,xboxone,switch', {game:system:theme}) ? 1 : (inlist('megacd,segacd', {game:system:theme}) ? 6 : (inlist('saturn', {game:system:theme}) ? 3 : (inlist('psx,pcengine,supergrafx,pce-cd,neogeocd,pcfx,atarijaguarcd', {game:system:theme}) ? 5 : (inlist('megadrive,mastersystem,sega32x', {game:system:theme}) ? 4 : (inlist('snes,nes,n64,gb,gbc,gba,virtualboy,atarilynx,atarijaguar,atari5200,atari7800,vectrex,amiga500,amiga1200,amiga4000,atarist,pc,exodos', {game:system:theme}) ? 8 : (inlist('nds', {game:system:theme}) ? 10 : (inlist('3ds', {game:system:theme}) ? 11 : (inlist('psp,psvita', {game:system:theme}) ? 12 : (inlist('ps3,ps4,ps5', {game:system:theme}) ? 13 : (inlist('3do,amigacd32', {game:system:theme}) ? 15 : (inlist('windows', {game:system:theme}) ? 20 : (inlist('dreamcast', {game:system:theme}) ? 17 : (inlist('zxspectrum,c64,amstradcpc', {game:system:theme}) ? 18 : (inlist('oric', {game:system:theme}) ? 19 : (inlist('gamegear,sg-1000', {game:system:theme}) ? 2 : (inlist('atari2600,colecovision,intellivision', {game:system:theme}) ? 9 : (7)))))))))))))))))</boitiertype>
+		<boitiercouleurjeu>0</boitiercouleurjeu>
+		<boitiercouleurjeu if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">inlist('xbox', {game:system:theme}) ? 6988543 : (inlist('xbox360', {game:system:theme}) ? 8053426 : (inlist('xboxone', {game:system:theme}) ? 1175871 : (inlist('wii', {game:system:theme}) ? 15711999 : (inlist('switch', {game:system:theme}) ? 14942527 : (inlist('ps4', {game:system:theme}) ? 875391 : (inlist('ps5', {game:system:theme}) ? 118079 : (inlist('ps2,ps3,gc', {game:system:theme}) ? 799039 : (inlist('wiiu', {game:system:theme}) ? 3059199 : (inlist('psvita', {game:system:theme}) ? 1927852 : (0))))))))))</boitiercouleurjeu>
+		<boitiertype ifSubset="typeboite:t0">0</boitiertype>
+		<boitiertype ifSubset="typeboite:t1">1</boitiertype>
+		<boitiertype ifSubset="typeboite:t2">2</boitiertype>
+		<boitiertype ifSubset="typeboite:t3">3</boitiertype>
+		<boitiertype ifSubset="typeboite:t4">4</boitiertype>
+		<boitiertype ifSubset="typeboite:t5">5</boitiertype>
+		<boitiertype ifSubset="typeboite:t6">6</boitiertype>
+		<boitiertype ifSubset="typeboite:t7">7</boitiertype>
+		<boitiertype ifSubset="typeboite:t8">8</boitiertype>
+		<boitiertype ifSubset="typeboite:t9">9</boitiertype>
+		<boitiertype ifSubset="typeboite:t10">10</boitiertype>
+		<boitiertype ifSubset="typeboite:t11">11</boitiertype>
+		<boitiertype ifSubset="typeboite:t12">12</boitiertype>
+		<boitiertype ifSubset="typeboite:t13">13</boitiertype>
+		<boitiertype ifSubset="typeboite:t14">14</boitiertype>
+		<boitiertype ifSubset="typeboite:t15">15</boitiertype>
+		<boitiertype ifSubset="typeboite:t16">16</boitiertype>
+		<boitiertype ifSubset="typeboite:t17">17</boitiertype>
+		<boitiertype ifSubset="typeboite:t18">18</boitiertype>
+		<boitiertype ifSubset="typeboite:t19">19</boitiertype>
+		<boitiertype ifSubset="typeboite:t20">20</boitiertype>
+		<boitiertype ifSubset="typeboite:t21">21</boitiertype>
+	</variables>
+</theme>

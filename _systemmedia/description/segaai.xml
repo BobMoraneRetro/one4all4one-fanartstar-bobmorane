@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's 1986 educational computer for Japanese schools, with a touch pad and software designed for learning.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador educativo da Sega de 1986 para escolas japonesas, com mesa sensível ao toque e programas de aprendizado.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's 1986 educational computer for Japanese schools, with a touch pad and software designed for learning.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador educativo de Sega de 1986 para las escuelas japonesas, con tableta táctil y programas de aprendizaje.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur éducatif de Sega sorti en 1986 pour les écoles japonaises, avec une tablette tactile et des logiciels d'apprentissage.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas Lerncomputer von 1986 für japanische Schulen mit Touchpad und Lernsoftware.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Sega AI</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1986</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

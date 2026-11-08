@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Casino slot machine games from International Game Technology.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de caça-níqueis de cassino da International Game Technology.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Casino slot machine games from International Game Technology.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de máquinas tragamonedas de casino de International Game Technology.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux de machines à sous de casino d'International Game Technology.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Casino-Spielautomaten von International Game Technology.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>IGT Slots</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2017</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>International Game Technology</text>
+		</text>
+	</view>
+</theme>

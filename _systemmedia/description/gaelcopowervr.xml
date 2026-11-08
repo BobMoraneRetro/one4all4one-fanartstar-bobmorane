@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from the Spanish developer Gaelco running on PowerVR-based hardware, such as the Ring Riders racing games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da desenvolvedora espanhola Gaelco em hardware baseado em PowerVR, como os jogos de corrida Ring Riders.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from the Spanish developer Gaelco running on PowerVR-based hardware, such as the Ring Riders racing games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade del desarrollador español Gaelco sobre hardware basado en PowerVR, como los juegos de carreras Ring Riders.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade du développeur espagnol Gaelco sur matériel à base de PowerVR, comme les jeux de course Ring Riders.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele des spanischen Entwicklers Gaelco auf PowerVR-basierter Hardware, etwa die Rennspiele Ring Riders.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Gaelco PowerVR</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Gaelco</text>
+		</text>
+	</view>
+</theme>

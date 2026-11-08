@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>WASM-4, a fantasy console for small retro games built with WebAssembly, with a 160x160 screen and four colours.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>WASM-4, console de fantasia para pequenos jogos retrô feitos com WebAssembly, com tela de 160x160 e quatro cores.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>WASM-4, a fantasy console for small retro games built with WebAssembly, with a 160x160 screen and four colours.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>WASM-4, consola de fantasía para pequeños juegos retro hechos con WebAssembly, con pantalla de 160x160 y cuatro colores.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>WASM-4, console imaginaire pour petits jeux rétro créés en WebAssembly, avec un écran de 160x160 et quatre couleurs.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>WASM-4, eine Fantasy-Konsole für kleine Retro-Spiele mit WebAssembly, mit 160x160-Bildschirm und vier Farben.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>WASM-4</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2021</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

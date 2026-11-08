@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Psikyo, the Japanese developer of fast-paced shoot'em ups such as Strikers 1945 and Gunbird.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Psikyo, desenvolvedora japonesa de shoot'em ups rápidos como Strikers 1945 e Gunbird.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Psikyo, the Japanese developer of fast-paced shoot'em ups such as Strikers 1945 and Gunbird.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Psikyo, desarrollador japonés de shoot'em ups rápidos como Strikers 1945 y Gunbird.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade de Psikyo, développeur japonais de shoot'em up nerveux comme Strikers 1945 et Gunbird.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Psikyo, dem japanischen Entwickler rasanter Shoot'em ups wie Strikers 1945 und Gunbird.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Psikyo</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Psikyo</text>
+		</text>
+	</view>
+</theme>

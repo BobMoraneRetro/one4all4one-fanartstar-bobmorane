@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Mitchell Corporation, the Japanese developer of Pang (Buster Bros.) and puzzle games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Mitchell Corporation, desenvolvedora japonesa de Pang (Buster Bros.) e jogos de quebra-cabeça.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Mitchell Corporation, the Japanese developer of Pang (Buster Bros.) and puzzle games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Mitchell Corporation, desarrollador japonés de Pang (Buster Bros.) y juegos de puzles.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade de Mitchell Corporation, développeur japonais de Pang (Buster Bros.) et de jeux de réflexion.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Mitchell Corporation, dem japanischen Entwickler von Pang (Buster Bros.) und Rätselspielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Mitchell</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Mitchell Corporation</text>
+		</text>
+	</view>
+</theme>

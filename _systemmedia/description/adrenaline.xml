@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PC-based arcade cabinets from Adrenaline Amusements, a Canadian maker of family and redemption games, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Máquinas de arcade baseadas em PC da Adrenaline Amusements, fabricante canadense de jogos familiares e de prêmios, jogadas aqui pelo TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PC-based arcade cabinets from Adrenaline Amusements, a Canadian maker of family and redemption games, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Máquinas recreativas basadas en PC de Adrenaline Amusements, fabricante canadiense de juegos familiares y de premios, jugadas aquí con TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Bornes d'arcade sur base PC d'Adrenaline Amusements, fabricant canadien de jeux familiaux et à tickets, jouées ici via TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PC-basierte Arcade-Automaten von Adrenaline Amusements, einem kanadischen Hersteller von Familien- und Ticketspielen, hier über TeknoParrot spielbar.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Adrenaline</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Adrenaline Amusements</text>
+		</text>
+	</view>
+</theme>

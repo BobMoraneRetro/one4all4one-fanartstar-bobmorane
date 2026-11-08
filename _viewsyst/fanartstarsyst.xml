@@ -1,28 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-By Bob Morane
-license: creative commons CC-BY-NC-SA
-! Not for sale or donation request !
+	Variables utilisées dans ce fichier :
+	${firstscharsystem} : Vue système classique, option Personnages : personnage du système, sinon figurine Animatics (définie dans theme.xml)
+	${firstsnapouille} : Vue système classique, option Figurines : figurine Animatics, sinon personnage du système (définie dans theme.xml)
+	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
+	${manettechemin} : image de la manette du système : version de la région, sinon PNG, sinon SVG (_common/controllers) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Manette flottante (vue classique) »)
+	${manettehalopos} : position du halo sous la manette flottante (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Vidéo de gameplay sur la vue système »)
+	${manettehalotaille} : taille du halo sous la manette flottante (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Vidéo de gameplay sur la vue système »)
+	${manettehalovisible} : halo sous la manette flottante : seulement si l option est activée ET si le système a une image de manette (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Manette flottante (vue classique) »)
+	${manettepos} : position de la manette flottante (coin haut gauche si vidéo, place de la vidéo sinon) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Vidéo de gameplay sur la vue système »)
+	${manettetaille} : taille de la manette flottante (petite si vidéo, grande sinon) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Vidéo de gameplay sur la vue système »)
+	${manettevisible} : manette flottante affichée (option SYSTÈMES - Manette flottante) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Manette flottante (vue classique) »)
+	${metaanneepolice} : taille de l année et du fabricant, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metaanneepos} : position de l année, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metadescpolice} : taille de police de la description du système, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metadescpos} : position de la description du système, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metadescsize} : taille du bloc description du système, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metafabpos} : position du fabricant, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metastatscompacte} : opacité des statistiques sur 4 lignes (présentation compacte) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : affichées (vue classique) », « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metastatsstandard} : opacité des statistiques sur 2 lignes (présentation standard) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : affichées (vue classique) », « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metatitrepolice} : taille du titre du système (nom + nombre de jeux), vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${path_common} : dossier _common du thème (définie dans theme.xml)
+	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${arianeautres}, ${jeux}
 -->
 <theme>
 	<formatVersion>7</formatVersion>
-	<variables>
-		<!-- <bobmediapath>${themePath}</bobmediapath> -->
-		<firstscharsystem>		firstfile("${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png","${themePath}/../es-theme-Animatics-DX/art/figurines/" + {system:theme} + ".png")</firstscharsystem>
-		<firstsnapouille>		firstfile("${themePath}/../es-theme-Animatics-DX/art/figurines/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</firstsnapouille>
-		<firstsystemhardware>	firstfile("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</firstsystemhardware>
-		<firstsystfanart>		firstfile("${themePath}/_systemmedia/_fanartsysteme/fresh/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/custom/" + {system:theme} + ".jpg")</firstsystfanart>
-		<firstsystemimage>		firstfile("${themePath}/_systemmedia/_fanartsysteme/custom/" + {system:theme} + ".jpg","${themePath}/_systemmedia/_fanartsysteme/fresh/" + {system:theme} + ".jpg")</firstsystemimage>
-	</variables>
 	<include>${themePath}/_systemmedia/description/${system.theme}.xml</include>
+	<variables>
+		<manettevisible ifSubset="manetteflottante:manettenon">false</manettevisible>
+		<manettevisible ifSubset="manetteflottante:manetteoui">true</manettevisible>
+		<manettevisible ifSubset="manetteflottante:hardwareoui">true</manettevisible>
+		<manettehalovisible ifSubset="manetteflottante:manettenon">false</manettehalovisible>
+		<manettehalovisible ifSubset="manetteflottante:manetteoui">exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg") || exists("${themePath}/_common/controllers/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettehalovisible>
+		<manettehalovisible ifSubset="manetteflottante:manetteoui" if="{system.hardwareType} == 'arcade'">exists("${themePath}/_systemmedia/hardware/${region}/" + {system:theme} + ".png") || exists("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg") || exists("${themePath}/_common/controllers/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettehalovisible>
+		<manettehalovisible ifSubset="manetteflottante:hardwareoui">exists("${themePath}/_systemmedia/hardware/${region}/" + {system:theme} + ".png") || exists("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg") || exists("${themePath}/_common/controllers/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettehalovisible>
+		<manettechemin>firstfile("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png", "${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg", "${themePath}/_common/controllers/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettechemin>
+		<manettechemin if="{system.hardwareType} == 'arcade'">firstfile("${themePath}/_systemmedia/hardware/${region}/" + {system:theme} + ".png", "${themePath}/_systemmedia/hardware/" + {system:theme} + ".png", "${themePath}/_common/controllers/${region}/" + {system:theme} + ".png", "${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg", "${themePath}/_common/controllers/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettechemin>
+		<manettechemin ifSubset="manetteflottante:hardwareoui">firstfile("${themePath}/_systemmedia/hardware/${region}/" + {system:theme} + ".png", "${themePath}/_systemmedia/hardware/" + {system:theme} + ".png", "${themePath}/_common/controllers/${region}/" + {system:theme} + ".png", "${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg", "${themePath}/_common/controllers/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettechemin>
+		<manettepos ifSubset="video4starclassic:videoback">0.036 0.088</manettepos>
+		<manettepos ifSubset="video4starclassic:novideo">0.13 0.58</manettepos>
+		<manettetaille ifSubset="video4starclassic:videoback">0.067 0.08</manettetaille>
+		<manettetaille ifSubset="video4starclassic:novideo">0.17 0.17</manettetaille>
+		<manettehalopos ifSubset="video4starclassic:videoback">0.036 0.138</manettehalopos>
+		<manettehalopos ifSubset="video4starclassic:novideo">0.13 0.68</manettehalopos>
+		<manettehalotaille ifSubset="video4starclassic:videoback">0.058 0.014</manettehalotaille>
+		<manettehalotaille ifSubset="video4starclassic:novideo">0.14 0.03</manettehalotaille>
+		<metatitrepolice ifSubset="metasyst:metastandard">0.025</metatitrepolice>
+		<metatitrepolice ifSubset="metasyst:metacompacte">0.019</metatitrepolice>
+		<metaanneepolice ifSubset="metasyst:metastandard">0.025</metaanneepolice>
+		<metaanneepolice ifSubset="metasyst:metacompacte">0.017</metaanneepolice>
+		<metaanneepos ifSubset="metasyst:metastandard">0.253 0.28</metaanneepos>
+		<metaanneepos ifSubset="metasyst:metacompacte">0.253 0.264</metaanneepos>
+		<metafabpos ifSubset="metasyst:metastandard">0.3 0.28</metafabpos>
+		<metafabpos ifSubset="metasyst:metacompacte">0.288 0.264</metafabpos>
+		<metafabpos ifSubset="metasyst:metastandard" if="${screen.ratio} == '4/3'">0.315 0.28</metafabpos>
+		<metafabpos ifSubset="metasyst:metacompacte" if="${screen.ratio} == '4/3'">0.293 0.264</metafabpos>
+		<metadescpos ifSubset="metasyst:metastandard">0.0525 0.305</metadescpos>
+		<metadescpos ifSubset="metasyst:metacompacte">0.0525 0.283</metadescpos>
+		<metadescsize ifSubset="metasyst:metastandard">0.4 0.1</metadescsize>
+		<metadescsize ifSubset="metasyst:metacompacte">0.33 0.085</metadescsize>
+		<metadescsize ifSubset="metasyst:metastandard" if="${screen.ratio} == '4/3'">0.533 0.1</metadescsize>
+		<metadescsize ifSubset="metasyst:metacompacte" if="${screen.ratio} == '4/3'">0.44 0.085</metadescsize>
+		<metadescpolice ifSubset="metasyst:metastandard">0.022</metadescpolice>
+		<metadescpolice ifSubset="metasyst:metacompacte">0.016</metadescpolice>
+		<metastatsstandard ifSubset="metasyst:metastandard">1</metastatsstandard>
+		<metastatsstandard ifSubset="metasyst:metacompacte">0</metastatsstandard>
+		<metastatscompacte ifSubset="metasyst:metastandard">0</metastatscompacte>
+		<metastatscompacte ifSubset="metasyst:metacompacte">1</metastatscompacte>
+		<metastatsstandard ifSubset="metadataonoff:deactivate">0</metastatsstandard>
+		<metastatscompacte ifSubset="metadataonoff:deactivate">0</metastatscompacte>
+	</variables>
 	<view name="system">
 		<carousel name="systemcarousel">
+			<scrollSound ifSubset="gamewheelsound:bulle">${path_common}/scrollsound/bulle.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clic">${path_common}/scrollsound/clic.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clicgrave">${path_common}/scrollsound/clicgrave.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:frottement">${path_common}/scrollsound/frottement.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:poc">${path_common}/scrollsound/poc.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360blade">${path_common}/scrollsound/xbox360-BladeSwitch_1.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360onglet">${path_common}/scrollsound/xbox360-tab_Switch.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360focus">${path_common}/scrollsound/xbox360-vk_Focus.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360touche">${path_common}/scrollsound/xbox360-vk_Select.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360retour">${path_common}/scrollsound/xbox360-btn_backG.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360selection">${path_common}/scrollsound/xbox360-snd_buttonselect.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:wheelclic">${path_common}/scrollsound/wheelclic.wav</scrollSound>
 			<zIndex>10</zIndex>
 			<type>horizontal</type>
 			<pos>-0.015 0.08</pos>
 			<pos ifHelpPrompts="true">-0.014 0.08</pos>
 			<size>1.375 1</size>
-			<logoScale>1.5</logoScale>
+			<logoScale ifSubset="systviewselec:charsystem">1.5</logoScale>
+			<logoScale ifSubset="systviewselec:figurines">1.5</logoScale>
+			<logoScale ifSubset="systviewselec:rondhursty">1.5</logoScale>
+			<logoScale ifSubset="systviewselec:hardware">1.5</logoScale>
+			<logoScale ifSubset="systviewselec:logosseuls">1.3</logoScale>
 			<logoSize>0.350 0.350</logoSize>
 			<color>00000000</color>
 			<logoAlignment>bottom</logoAlignment>
@@ -37,6 +109,11 @@ license: creative commons CC-BY-NC-SA
 			<itemTemplate>
 				<container>
 					<image name="shadohard">
+						<visible ifSubset="systviewselec:charsystem">true</visible>
+						<visible ifSubset="systviewselec:figurines">true</visible>
+						<visible ifSubset="systviewselec:rondhursty">false</visible>
+						<visible ifSubset="systviewselec:hardware">true</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<pos>0.5 0.55</pos>
 						<origin>0.5 0.5</origin>
 						<maxSize>0.4 0.4</maxSize>
@@ -52,6 +129,11 @@ license: creative commons CC-BY-NC-SA
 						<color>000000</color>
 					</image>
 					<image name="hardware">
+						<visible ifSubset="systviewselec:charsystem">true</visible>
+						<visible ifSubset="systviewselec:figurines">true</visible>
+						<visible ifSubset="systviewselec:rondhursty">false</visible>
+						<visible ifSubset="systviewselec:hardware">true</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<pos>0.5 0.55</pos>
 						<origin>0.5 0.5</origin>
 						<maxSize>0.4 0.4</maxSize>
@@ -64,26 +146,124 @@ license: creative commons CC-BY-NC-SA
 						<saturation>0.7</saturation>
 						<zIndex>5</zIndex>
 					</image>
+					<image name="rondombre">
+						<visible ifSubset="systviewselec:charsystem">false</visible>
+						<visible ifSubset="systviewselec:figurines">false</visible>
+						<visible ifSubset="systviewselec:rondhursty">true</visible>
+						<visible ifSubset="systviewselec:hardware">false</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
+						<path>firstfile("${path_syst_logo}/roundsilver/" + {system:theme} + ".png", "${path_syst_logo}/roundsilver/_defaut/defaut.png")</path>
+						<pos>0.5 0.74</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.6 0.6</maxSize>
+						<padding>3 3 -3 -3</padding>
+						<color>000000</color>
+						<zIndex>5</zIndex>
+						<storyboard event="activate">
+							<animation property="y" to="0.64" duration="250" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.74" duration="250" mode="easeOut"/>
+						</storyboard>
+					</image>
+					<image name="rond">
+						<visible ifSubset="systviewselec:charsystem">false</visible>
+						<visible ifSubset="systviewselec:figurines">false</visible>
+						<visible ifSubset="systviewselec:rondhursty">true</visible>
+						<visible ifSubset="systviewselec:hardware">false</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
+						<path>firstfile("${path_syst_logo}/roundsilver/" + {system:theme} + ".png", "${path_syst_logo}/roundsilver/_defaut/defaut.png")</path>
+						<pos>0.5 0.74</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.6 0.6</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<zIndex>5</zIndex>
+						<storyboard event="activate">
+							<animation property="y" to="0.64" duration="250" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.74" duration="250" mode="easeOut"/>
+						</storyboard>
+					</image>
+					<image name="rondconsole">
+						<visible ifSubset="systviewselec:charsystem">false</visible>
+						<visible ifSubset="systviewselec:figurines">false</visible>
+						<visible ifSubset="systviewselec:rondhursty">!exists("${path_syst_logo}/roundsilver/" + {system:theme} + ".png")</visible>
+						<visible ifSubset="systviewselec:hardware">false</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
+						<path>firstfile("${themePath}/_systemmedia/hardware/${region}/" + {system:theme} + ".png", "${themePath}/_systemmedia/hardware/" + {system:theme} + ".png", "${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</path>
+						<pos>0.5 0.70</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.34 0.26</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<saturation>0.8</saturation>
+						<zIndex>5.5</zIndex>
+						<storyboard event="activate">
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.70" duration="250" mode="easeOut"/>
+						</storyboard>
+					</image>
+					<image name="rondnom">
+						<visible ifSubset="systviewselec:charsystem">false</visible>
+						<visible ifSubset="systviewselec:figurines">false</visible>
+						<visible ifSubset="systviewselec:rondhursty">!exists("${path_syst_logo}/roundsilver/" + {system:theme} + ".png")</visible>
+						<visible ifSubset="systviewselec:hardware">false</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
+						<path>firstfile("${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png", "${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png", "${path_syst_logo}/clearlogos/" + {system:theme} + ".png", "${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
+						<pos>0.5 0.86</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.40 0.11</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<zIndex>5.6</zIndex>
+						<storyboard event="activate">
+							<animation property="y" to="0.76" duration="250" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.86" duration="250" mode="easeOut"/>
+						</storyboard>
+					</image>
 					<image name="shadowlogo" pos="0.5 0.9" origin="0.5" maxSize="0.2" linearSmooth="true">
+						<pos ifSubset="systviewselec:charsystem">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:figurines">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:rondhursty">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:hardware">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:logosseuls">0.5 0.87</pos>
+						<visible ifSubset="systviewselec:rondhursty">false</visible>
+						<visible ifSubset="systviewselec:charsystem">true</visible>
+						<visible ifSubset="systviewselec:figurines">true</visible>
+						<visible ifSubset="systviewselec:hardware">true</visible>
+						<visible ifSubset="systviewselec:logosseuls">true</visible>
 						<path>firstfile(
-                    "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".svg")</path>
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
 						<padding>3 3 -3 -3</padding>
 						<color>000000</color>
 						<zIndex>6</zIndex>
 					</image>
 					<image name="logo" extra="true" pos="0.5 0.9" origin="0.5" maxSize="0.2" linearSmooth="true">
+						<pos ifSubset="systviewselec:charsystem">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:figurines">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:rondhursty">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:hardware">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:logosseuls">0.5 0.87</pos>
+						<visible ifSubset="systviewselec:rondhursty">false</visible>
+						<visible ifSubset="systviewselec:charsystem">true</visible>
+						<visible ifSubset="systviewselec:figurines">true</visible>
+						<visible ifSubset="systviewselec:hardware">true</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<path>firstfile(
-                    "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".svg")</path>
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
 						<zIndex>7</zIndex>
 						<storyboard event="open">
 							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
@@ -98,6 +278,42 @@ license: creative commons CC-BY-NC-SA
 							<animation property="color" to="858585ff" begin="" mode="Linear"/>
 						</storyboard>
 					</image>
+					<image name="logogris" extra="true" pos="0.5 0.9" origin="0.5" maxSize="0.2" linearSmooth="true">
+						<pos ifSubset="systviewselec:charsystem">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:figurines">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:rondhursty">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:hardware">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:logosseuls">0.5 0.87</pos>
+						<visible ifSubset="systviewselec:rondhursty">false</visible>
+						<visible ifSubset="systviewselec:charsystem">false</visible>
+						<visible ifSubset="systviewselec:figurines">false</visible>
+						<visible ifSubset="systviewselec:hardware">false</visible>
+						<visible ifSubset="systviewselec:logosseuls">true</visible>
+						<path>firstfile(
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
+						<saturation>0</saturation>
+						<zIndex>7</zIndex>
+						<storyboard event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate">
+							<animation property="saturation" to="1" duration="150" mode="Linear"/>
+							<animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="saturation" to="0" duration="250" mode="Linear"/>
+							<animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="saturation" to="0" duration="250" mode="Linear"/>
+							<animation property="color" to="858585ff" begin="" mode="Linear"/>
+						</storyboard>
+					</image>
 				</container>
 			</itemTemplate>
 		</carousel>
@@ -108,7 +324,23 @@ license: creative commons CC-BY-NC-SA
 			<origin>0.5 0.5</origin>
 			<zIndex>3</zIndex>
 		</image>
+		<image name="bandelogos" extra="true">
+			<visible ifSubset="systviewselec:charsystem">false</visible>
+			<visible ifSubset="systviewselec:figurines">false</visible>
+			<visible ifSubset="systviewselec:rondhursty">false</visible>
+			<visible ifSubset="systviewselec:hardware">false</visible>
+			<visible ifSubset="systviewselec:logosseuls">true</visible>
+			<path>${themePath}/_viewsyst/fanartstar/bande_logos.png</path>
+			<pos>0 0.865</pos>
+			<size>1 0.135</size>
+			<zIndex>3</zIndex>
+		</image>
 		<image name="whitedegrade" extra="true">
+			<visible ifSubset="systviewselec:charsystem">true</visible>
+			<visible ifSubset="systviewselec:figurines">true</visible>
+			<visible ifSubset="systviewselec:rondhursty">true</visible>
+			<visible ifSubset="systviewselec:hardware">true</visible>
+			<visible ifSubset="systviewselec:logosseuls">false</visible>
 			<path>${themePath}/_viewsyst/fanartstar/whitedegrade.png</path>
 			<maxSize>1 1</maxSize>
 			<pos>0.5 0.95</pos>
@@ -119,7 +351,6 @@ license: creative commons CC-BY-NC-SA
 			<visible ifSubset="video4starclassic:videoback,metadataonoff:deactivate">false</visible>
 			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">true</visible>
 			<visible ifSubset="video4starclassic:novideo">false</visible>
-			<!-- <visible ifSubset="video4starclassic:videoback,metadataonoff:active">true</visible> -->
 			<default>${themePath}/_systemmedia/defaut/scotty.mp4</default>
 			<path>{random}</path>
 			<pos>0.053 0.62</pos>
@@ -129,6 +360,14 @@ license: creative commons CC-BY-NC-SA
 			<zIndex>4</zIndex>
 			<opacity>1</opacity>
 			<delay>0.3</delay>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
+				<frameType>1</frameType>
+				<glassAmount>0.35</glassAmount>
+				<outerShadowColor>00000090</outerShadowColor>
+				<borderColor>FFFFFFFF</borderColor>
+				<borderSize>0.008</borderSize>
+			</shader>
 		</video>
 		<video name="gameplayvideostarangled" ifSubset="metadataonoff:deactivate"  extra="true">
 			<visible ifSubset="metadataonoff:deactivate">true</visible>
@@ -143,7 +382,7 @@ license: creative commons CC-BY-NC-SA
 			<zIndex>4</zIndex>
 			<offsetX>-0.6</offsetX>
 			<offsetY>0.1</offsetY>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>-30</tiltAngleX>
@@ -163,7 +402,7 @@ license: creative commons CC-BY-NC-SA
 			<autoFade>false</autoFade>
 			<offsetX>-0.6</offsetX>
 			<offsetY>0.1</offsetY>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>-30</tiltAngleX>
@@ -183,14 +422,13 @@ license: creative commons CC-BY-NC-SA
 			<autoFade>false</autoFade>
 						<offsetX>-0.6</offsetX>
 			<offsetY>0.1</offsetY>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>-30</tiltAngleX>
 				<perspectiveDepth>0.8</perspectiveDepth>
 			</shader>
 		</image>
-		<!-- ################################### Metadata et autres infos textuelles #############################################################################		 -->
 		<image name="logosystemeshadow" extra="true">
 			<autoFade>false</autoFade>
 			<pos>0.2 0.2</pos>
@@ -199,12 +437,12 @@ license: creative commons CC-BY-NC-SA
 			<padding>3 3 -3 -3</padding>
 			<color>000000</color>
 			<path>firstfile(
-                    "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".svg")</path>
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
 			<zIndex>80</zIndex>
 			<horizontalAlignment>left</horizontalAlignment>
 		</image>
@@ -214,33 +452,31 @@ license: creative commons CC-BY-NC-SA
 			<origin>0.5 1</origin>
 			<maxSize>0.25 0.18</maxSize>
 			<path>firstfile(
-                    "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + {system:theme} + ".svg")</path>
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>80</zIndex>
 			<horizontalAlignment>left</horizontalAlignment>
 		</image>
-		<!-- Description du système -->
 		<text name="info1" extra="true">
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<color>ffffffff</color>
-			<pos>0.0525 0.305</pos>
-			<size>0.4 0.1</size>
+			<pos>${metadescpos}</pos>
+			<size>${metadescsize}</size>
+			<autoScroll if="${screen.ratio} == '4/3'">vertical</autoScroll>
 			<alignment>left</alignment>
 			<verticalAlignment>top</verticalAlignment>
-			<fontSize>0.022</fontSize>
-			<singleLineScroll>false</singleLineScroll>
+			<fontSize>${metadescpolice}</fontSize>
 			<glowColor>00000040</glowColor>
 			<glowOffset>0.8</glowOffset>
 			<glowSize>2</glowSize>
 			<lineSpacing>1.2</lineSpacing>
 			<visible>true</visible>
 		</text>
-		<!-- Nom du système -->
 		<text name="info2" extra="true">
 			<visible>false</visible>
 		</text>
@@ -248,23 +484,23 @@ license: creative commons CC-BY-NC-SA
 			<text>{system:fullName}        ({binding:total} ${jeux})</text>
 			<opacity>0.7</opacity>
 			<pos>0.253 0.238</pos>
+			<pos if="${screen.ratio} == '4/3'">0.3197 0.238</pos>
 			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
-			<fontSize>0.025</fontSize>
+			<fontSize>${metatitrepolice}</fontSize>
 			<color>ffffffff</color>
 			<origin>0.5 0.5</origin>
 			<size>0.4 0.02</size>
+			<size if="${screen.ratio} == '4/3'">0.533 0.02</size>
 			<alignment>left</alignment>
 			<glowColor>00000016</glowColor>
 			<glowSize>3</glowSize>
 			<zIndex>305</zIndex>
 		</text>
-		<!-- Année de construction -->
 		<text name="info3" extra="true">
-			<!-- <fontPath>${themePath}/_viewgame/nesicaxlive/texgyre.otf</fontPath> -->
 			<opacity>0.7</opacity>
-			<pos>0.253 0.28</pos>
+			<pos>${metaanneepos}</pos>
 			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
-			<fontSize>0.025</fontSize>
+			<fontSize>${metaanneepolice}</fontSize>
 			<color>ffffffff</color>
 			<origin>0.5 0.5</origin>
 			<size>0.4 0.02</size>
@@ -273,13 +509,11 @@ license: creative commons CC-BY-NC-SA
 			<glowSize>3</glowSize>
 			<zIndex>305</zIndex>
 		</text>
-		<!-- Constructeur -->
 		<text name="info4" extra="true">
-			<!-- <fontPath>${themePath}/_viewgame/nesicaxlive/texgyre.otf</fontPath> -->
 			<opacity>0.7</opacity>
-			<pos>0.3 0.28</pos>
+			<pos>${metafabpos}</pos>
 			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
-			<fontSize>0.025</fontSize>
+			<fontSize>${metaanneepolice}</fontSize>
 			<color>ffffffff</color>
 			<origin>0.5 0.5</origin>
 			<size>0.4 0.02</size>
@@ -288,16 +522,7 @@ license: creative commons CC-BY-NC-SA
 			<glowSize>3</glowSize>
 			<zIndex>305</zIndex>
 		</text>
-		<!-- <text name="info5" extra="true"> -->
-		<!-- <pos>0.5 0.5</pos> -->
-		<!-- <zIndex>80</zIndex> -->
-		<!-- <visible>false</visible> -->
-		<!-- </text> -->
 		<text name="systemInfoEx" extra="true">
-			<!-- possible bindings are :
-{binding:total}, {binding:played}, {binding:favorites}, {binding:hidden}, {binding:gamesPlayed}
-{binding:mostPlayed}, {binding:lastPlayedDate}
--->
 			<text>
 Favorites : {binding:favorites} - Games played : {binding:gamesPlayed}
 Most played : {binding:mostPlayed} - Last played : {binding:lastPlayedDate}</text>
@@ -408,11 +633,145 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<verticalAlignment>center</verticalAlignment>
 			<pos>0.0525 0.37</pos>
 			<size>0.3 0.14</size>
+			<size if="${screen.ratio} == '4/3'">0.4 0.14</size>
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
 			<fontSize>0.015</fontSize>
 			<zIndex>150</zIndex>
+			<opacity>${metastatsstandard}</opacity>
+			<singleLineScroll>false</singleLineScroll>
+			<glowColor>00000040</glowColor>
+			<glowOffset>0.8</glowOffset>
+			<glowSize>2</glowSize>
+			<lineSpacing>1.2</lineSpacing>
+		</text>
+		<text name="systemInfoExCompacte" extra="true">
+			<text>
+Favorites : {binding:favorites}
+Games played : {binding:gamesPlayed}
+Most played : {binding:mostPlayed}
+Last played : {binding:lastPlayedDate}</text>
+			<text lang="ar">
+المفضلة : {binding:favorites}
+تم لعب المباريات : {binding:gamesPlayed}
+الأكثر لعبا : {binding:mostPlayed}
+اخر لعبه : {binding:lastPlayedDate}</text>
+			<text region="br">
+Favoritos : {binding:favorites}
+Jogos Jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed}
+Última jogada : {binding:lastPlayedDate}</text>
+			<text lang="ca">
+Preferits : {binding:favorites}
+Jocs jugats : {binding:gamesPlayed}
+Més jugats : {binding:mostPlayed}
+Últim moviment : {binding:lastPlayedDate}</text>
+			<text lang="de">
+Favoriten : {binding:favorites}
+Spiele gespielt : {binding:gamesPlayed}
+Meist gespielt : {binding:mostPlayed}
+Letzter Zug : {binding:lastPlayedDate}</text>
+			<text lang="en">
+Favorites : {binding:favorites}
+Games played : {binding:gamesPlayed}
+Most played : {binding:mostPlayed}
+Last played : {binding:lastPlayedDate}</text>
+			<text lang="en_GB">
+Favorites : {binding:favorites}
+Games played : {binding:gamesPlayed}
+Most played : {binding:mostPlayed}
+Last played : {binding:lastPlayedDate}</text>
+			<text lang="es">
+Favoritos : {binding:favorites}
+Jugados : {binding:gamesPlayed}
+El más jugado : {binding:mostPlayed}
+Última partida : {binding:lastPlayedDate}</text>
+			<text lang="fr">
+Favoris : {binding:favorites}
+Jeux joués : {binding:gamesPlayed}
+Le plus joué : {binding:mostPlayed}
+Dernière partie : {binding:lastPlayedDate}</text>
+			<text lang="el">
+Αγαπημένα : {binding:favorites}
+Παιχνίδια που παίχτηκαν : {binding:gamesPlayed}
+Περισσότερα παίχτηκαν : {binding:mostPlayed}
+Τελευταία κίνηση : {binding:lastPlayedDate}</text>
+			<text lang="hu">
+Kedvencek : {binding:favorites}
+Játszottak : {binding:gamesPlayed}
+Gyakran játszott : {binding:mostPlayed}
+Utoljára játszott : {binding:lastPlayedDate}</text>
+			<text lang="it">
+Preferiti : {binding:favorites}
+Giochi giocati : {binding:gamesPlayed}
+Più giocati : {binding:mostPlayed}
+Ultimo giocato : {binding:lastPlayedDate}</text>
+			<text lang="jp">
+お気に入り : {binding:favorites}
+プレイしたゲーム : {binding:gamesPlayed}
+最もプレイされた : {binding:mostPlayed}
+最後の動き : {binding:lastPlayedDate}</text>
+			<text lang="ko">
+즐겨찾기 : {binding:favorites}
+플레이한 게임 : {binding:gamesPlayed}
+가장 많이 플레이한 것 : {binding:mostPlayed}
+마지막 플레이 : {binding:lastPlayedDate}</text>
+			<text lang="nl">
+Favorieten : {binding:favorites}
+Spellen gespeeld : {binding:gamesPlayed}
+Meest gespeeld : {binding:mostPlayed}
+Laatste zet : {binding:lastPlayedDate}</text>
+			<text lang="pl">
+Ulubione : {binding:favorites}
+Rozegrane gry : {binding:gamesPlayed}
+Najczęściej grane : {binding:mostPlayed}
+Ostatnio grane : {binding:lastPlayedDate}</text>
+			<text lang="pt">
+Favoritos : {binding:favorites}
+Jogos jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed}
+Recém jogado : {binding:lastPlayedDate}</text>
+			<text lang="pt_BR">
+Favoritos : {binding:favorites}
+Jogos Jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed}
+Última jogada : {binding:lastPlayedDate}</text>
+			<text lang="ptbr">
+Favoritos : {binding:favorites}
+Jogos Jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed}
+Última jogada : {binding:lastPlayedDate}</text>
+			<text lang="ro_RO">
+Favorite : {binding:favorites}
+Jocuri jucate : {binding:gamesPlayed}
+Cele mai jucate : {binding:mostPlayed}
+Ultima rulare : {binding:lastPlayedDate}</text>
+			<text lang="ru">
+Избранное : {binding:favorites}
+Игр сыграно : {binding:gamesPlayed}
+Часто запускаемое : {binding:mostPlayed}
+Последний запуск : {binding:lastPlayedDate}</text>
+			<text lang="uk">
+Вибране : {binding:favorites}
+Зіграні ігри : {binding:gamesPlayed}
+Більше грав : {binding:mostPlayed}
+Останній хід : {binding:lastPlayedDate}</text>
+			<text lang="zh">
+最爱的游戏 : {binding:favorites}
+玩过的游戏 : {binding:gamesPlayed}
+常玩的游戏 : {binding:mostPlayed}
+最后游玩 : {binding:lastPlayedDate}</text>
+			<verticalAlignment>top</verticalAlignment>
+			<pos>0.0525 0.372</pos>
+			<size>0.3 0.1</size>
+			<size if="${screen.ratio} == '4/3'">0.4 0.1</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<color>FFFFFF</color>
+			<alignment>left</alignment>
+			<fontSize>0.0135</fontSize>
+			<zIndex>150</zIndex>
+			<opacity>${metastatscompacte}</opacity>
 			<singleLineScroll>false</singleLineScroll>
 			<glowColor>00000040</glowColor>
 			<glowOffset>0.8</glowOffset>
@@ -421,35 +780,20 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 		</text>
 		<text name="systemInfo">
 			<visible>false</visible>
-			<!-- <reflexion>0.20 0.0</reflexion> -->
 			<alignment>right</alignment>
-			<!-- <pos ifSubset="cops2menu:bas,systemview:coinopsnext2">0 0.81</pos> -->
-			<!-- <pos ifSubset="cops2menu:milieu,systemview:coinopsnext2">0 0.48</pos> -->
-			<!-- <pos ifSubset="systemview:copscurve|coinopsnext1">0 0.80</pos> -->
-			<!-- <pos ifSubset="systemview:hyperspin">0 0.75</pos> -->
-			<!-- <pos ifSubset="systemview:hypermax">0 0.75</pos> -->
-			<!-- <pos ifSubset="systemview:zspin">0 0.67</pos> -->
-			<!-- <pos ifSubset="systemview:nesicaxlive">0.87 0.16</pos> -->
 			<pos>0.32 0.58</pos>
-			<!-- <reflexion ifSubset="systemview:hyperspin|nesicaxlive">0 0</reflexion> -->
 			<size>0.68 0.05</size>
 			<backgroundColor>FFFFFF90</backgroundColor>
-			<!-- <color>DDDDDDD8</color> -->
-			<!-- <glowColor>000000</glowColor> -->
-			<!-- <glowSize>1</glowSize> -->
-			<!-- <glowOffset>2</glowOffset> -->
-			<!-- <fontPath>${themePath}/_viewgame/nesicaxlive/OpenSans_Condensed-Bold.ttf</fontPath> -->
 			<zIndex>1</zIndex>
 			<storyboard>
 				<animation property="opacity" from="0" to="1" mode="easeOut"/>
 			</storyboard>
 		</text>
-		<control name="info1,info2,systfullname,info3,info4,systemInfoEx">
+		<control name="info1,systfullname,info3,info4,systemInfoEx">
 			<visible ifSubset="metadataonoff:deactivate">false</visible>
 			<visible ifSubset="metadataonoff:active">true</visible>
 		</control>
-		<!-- ########## Fil d arianne si menu officiel sélectionné ############# -->
-		<image name="arcade" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="arcade" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/arcade.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.2</pos>
@@ -459,7 +803,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'arcade'">ffffff</color>
 		</image>
-		<image name="computer" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="computer" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/ordi.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.242</pos>
@@ -469,7 +813,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'computer'">ffffff</color>
 		</image>
-		<image name="console" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="console" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/console.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.284</pos>
@@ -479,7 +823,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'console'">ffffff</color>
 		</image>
-		<image name="extension" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="extension" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/extension.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.326</pos>
@@ -489,7 +833,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'extension'">ffffff</color>
 		</image>
-		<image name="mess" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="mess" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/mess.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.368</pos>
@@ -498,7 +842,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'MESS'">ffffff</color>
 		</image>
-		<image name="pinball" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="pinball" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/pinball.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.41</pos>
@@ -508,7 +852,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'pinball'">ffffff</color>
 		</image>
-		<image name="port" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="port" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/port.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.452</pos>
@@ -517,7 +861,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'port'">ffffff</color>
 		</image>
-		<image name="portable" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="portable" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/portable.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.494</pos>
@@ -526,7 +870,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'portable'">ffffff</color>
 		</image>
-		<image name="system" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="system" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/system.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.536</pos>
@@ -535,7 +879,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'system'">ffffff</color>
 		</image>
-		<image name="autocollection" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="autocollection" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectionauto.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.578</pos>
@@ -544,7 +888,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'auto collection'">ffffff</color>
 		</image>
-		<image name="customcollection" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="customcollection" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectioncust.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.62</pos>
@@ -553,7 +897,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'custom collection'">ffffff</color>
 		</image>
-		<image name="retrobat" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="retrobat" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/option.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.662</pos>
@@ -564,9 +908,1035 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 		</image>
 		<control name="arcade, computer, console, extension, mess, pinball, port, portable, system, autocollection, customcollection, retrobat">
 			<visible ifSubset="breadcrumbsonoff:deactivate">false</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'alpha' || {settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup' || {settings.SortSystems} == 'releaseDate'">false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">false</visible>
+			<visible ifSubset="breadcrumbsonoff:decennie">false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">false</visible>
+			<visible ifSubset="breadcrumbsonoff:alphavoisines">false</visible>
 			<visible ifSubset="breadcrumbsonoff:active">true</visible>
 			<offsetX>0.005</offsetX>
 			<offsetY>-0.05</offsetY>
+			<maxSize if="${screen.ratio} == '4/3'">0.0267 0.07</maxSize>
 		</control>
+		<text name="arianechiffre" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>#</text>
+			<pos>0.006 0.1500</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, '0') || startswith({system.fullName}, '1') || startswith({system.fullName}, '2') || startswith({system.fullName}, '3') || startswith({system.fullName}, '4') || startswith({system.fullName}, '5') || startswith({system.fullName}, '6') || startswith({system.fullName}, '7') || startswith({system.fullName}, '8') || startswith({system.fullName}, '9')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeA" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>A</text>
+			<pos>0.006 0.1689</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'a') || startswith({system.fullName}, 'A')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeB" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>B</text>
+			<pos>0.006 0.1878</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'b') || startswith({system.fullName}, 'B')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeC" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>C</text>
+			<pos>0.006 0.2067</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'c') || startswith({system.fullName}, 'C')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeD" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>D</text>
+			<pos>0.006 0.2256</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'd') || startswith({system.fullName}, 'D')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeE" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>E</text>
+			<pos>0.006 0.2445</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'e') || startswith({system.fullName}, 'E')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeF" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>F</text>
+			<pos>0.006 0.2634</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'f') || startswith({system.fullName}, 'F')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeG" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>G</text>
+			<pos>0.006 0.2823</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'g') || startswith({system.fullName}, 'G')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeH" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>H</text>
+			<pos>0.006 0.3012</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'h') || startswith({system.fullName}, 'H')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeI" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>I</text>
+			<pos>0.006 0.3201</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'i') || startswith({system.fullName}, 'I')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeJ" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>J</text>
+			<pos>0.006 0.3390</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'j') || startswith({system.fullName}, 'J')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeK" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>K</text>
+			<pos>0.006 0.3579</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'k') || startswith({system.fullName}, 'K')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeL" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>L</text>
+			<pos>0.006 0.3768</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'l') || startswith({system.fullName}, 'L')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeM" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>M</text>
+			<pos>0.006 0.3957</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'm') || startswith({system.fullName}, 'M')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeN" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>N</text>
+			<pos>0.006 0.4146</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'n') || startswith({system.fullName}, 'N')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeO" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>O</text>
+			<pos>0.006 0.4335</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'o') || startswith({system.fullName}, 'O')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeP" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>P</text>
+			<pos>0.006 0.4524</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'p') || startswith({system.fullName}, 'P')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeQ" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>Q</text>
+			<pos>0.006 0.4713</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'q') || startswith({system.fullName}, 'Q')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeR" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>R</text>
+			<pos>0.006 0.4902</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'r') || startswith({system.fullName}, 'R')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeS" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>S</text>
+			<pos>0.006 0.5091</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 's') || startswith({system.fullName}, 'S')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeT" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>T</text>
+			<pos>0.006 0.5280</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 't') || startswith({system.fullName}, 'T')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeU" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>U</text>
+			<pos>0.006 0.5469</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'u') || startswith({system.fullName}, 'U')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeV" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>V</text>
+			<pos>0.006 0.5658</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'v') || startswith({system.fullName}, 'V')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeW" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>W</text>
+			<pos>0.006 0.5847</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'w') || startswith({system.fullName}, 'W')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeX" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>X</text>
+			<pos>0.006 0.6036</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'x') || startswith({system.fullName}, 'X')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeY" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>Y</text>
+			<pos>0.006 0.6225</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'y') || startswith({system.fullName}, 'Y')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeZ" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alpha">true</visible>
+			<text>Z</text>
+			<pos>0.006 0.6414</pos>
+			<size>0.03 0.0189</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0165</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="startswith({system.fullName}, 'z') || startswith({system.fullName}, 'Z')">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeavant2" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alphavoisines">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'alpha'">true</visible>
+			<text></text>
+			<text if="startswith({system.fullName}, 'b') || startswith({system.fullName}, 'B')">#</text>
+			<text if="startswith({system.fullName}, 'c') || startswith({system.fullName}, 'C')">A</text>
+			<text if="startswith({system.fullName}, 'd') || startswith({system.fullName}, 'D')">B</text>
+			<text if="startswith({system.fullName}, 'e') || startswith({system.fullName}, 'E')">C</text>
+			<text if="startswith({system.fullName}, 'f') || startswith({system.fullName}, 'F')">D</text>
+			<text if="startswith({system.fullName}, 'g') || startswith({system.fullName}, 'G')">E</text>
+			<text if="startswith({system.fullName}, 'h') || startswith({system.fullName}, 'H')">F</text>
+			<text if="startswith({system.fullName}, 'i') || startswith({system.fullName}, 'I')">G</text>
+			<text if="startswith({system.fullName}, 'j') || startswith({system.fullName}, 'J')">H</text>
+			<text if="startswith({system.fullName}, 'k') || startswith({system.fullName}, 'K')">I</text>
+			<text if="startswith({system.fullName}, 'l') || startswith({system.fullName}, 'L')">J</text>
+			<text if="startswith({system.fullName}, 'm') || startswith({system.fullName}, 'M')">K</text>
+			<text if="startswith({system.fullName}, 'n') || startswith({system.fullName}, 'N')">L</text>
+			<text if="startswith({system.fullName}, 'o') || startswith({system.fullName}, 'O')">M</text>
+			<text if="startswith({system.fullName}, 'p') || startswith({system.fullName}, 'P')">N</text>
+			<text if="startswith({system.fullName}, 'q') || startswith({system.fullName}, 'Q')">O</text>
+			<text if="startswith({system.fullName}, 'r') || startswith({system.fullName}, 'R')">P</text>
+			<text if="startswith({system.fullName}, 's') || startswith({system.fullName}, 'S')">Q</text>
+			<text if="startswith({system.fullName}, 't') || startswith({system.fullName}, 'T')">R</text>
+			<text if="startswith({system.fullName}, 'u') || startswith({system.fullName}, 'U')">S</text>
+			<text if="startswith({system.fullName}, 'v') || startswith({system.fullName}, 'V')">T</text>
+			<text if="startswith({system.fullName}, 'w') || startswith({system.fullName}, 'W')">U</text>
+			<text if="startswith({system.fullName}, 'x') || startswith({system.fullName}, 'X')">V</text>
+			<text if="startswith({system.fullName}, 'y') || startswith({system.fullName}, 'Y')">W</text>
+			<text if="startswith({system.fullName}, 'z') || startswith({system.fullName}, 'Z')">X</text>
+			<text if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'"></text>
+			<pos>0.0045 0.2812</pos>
+			<size>0.0330 0.0375</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0300</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7d80</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeavant1" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alphavoisines">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'alpha'">true</visible>
+			<text></text>
+			<text if="startswith({system.fullName}, 'a') || startswith({system.fullName}, 'A')">#</text>
+			<text if="startswith({system.fullName}, 'b') || startswith({system.fullName}, 'B')">A</text>
+			<text if="startswith({system.fullName}, 'c') || startswith({system.fullName}, 'C')">B</text>
+			<text if="startswith({system.fullName}, 'd') || startswith({system.fullName}, 'D')">C</text>
+			<text if="startswith({system.fullName}, 'e') || startswith({system.fullName}, 'E')">D</text>
+			<text if="startswith({system.fullName}, 'f') || startswith({system.fullName}, 'F')">E</text>
+			<text if="startswith({system.fullName}, 'g') || startswith({system.fullName}, 'G')">F</text>
+			<text if="startswith({system.fullName}, 'h') || startswith({system.fullName}, 'H')">G</text>
+			<text if="startswith({system.fullName}, 'i') || startswith({system.fullName}, 'I')">H</text>
+			<text if="startswith({system.fullName}, 'j') || startswith({system.fullName}, 'J')">I</text>
+			<text if="startswith({system.fullName}, 'k') || startswith({system.fullName}, 'K')">J</text>
+			<text if="startswith({system.fullName}, 'l') || startswith({system.fullName}, 'L')">K</text>
+			<text if="startswith({system.fullName}, 'm') || startswith({system.fullName}, 'M')">L</text>
+			<text if="startswith({system.fullName}, 'n') || startswith({system.fullName}, 'N')">M</text>
+			<text if="startswith({system.fullName}, 'o') || startswith({system.fullName}, 'O')">N</text>
+			<text if="startswith({system.fullName}, 'p') || startswith({system.fullName}, 'P')">O</text>
+			<text if="startswith({system.fullName}, 'q') || startswith({system.fullName}, 'Q')">P</text>
+			<text if="startswith({system.fullName}, 'r') || startswith({system.fullName}, 'R')">Q</text>
+			<text if="startswith({system.fullName}, 's') || startswith({system.fullName}, 'S')">R</text>
+			<text if="startswith({system.fullName}, 't') || startswith({system.fullName}, 'T')">S</text>
+			<text if="startswith({system.fullName}, 'u') || startswith({system.fullName}, 'U')">T</text>
+			<text if="startswith({system.fullName}, 'v') || startswith({system.fullName}, 'V')">U</text>
+			<text if="startswith({system.fullName}, 'w') || startswith({system.fullName}, 'W')">V</text>
+			<text if="startswith({system.fullName}, 'x') || startswith({system.fullName}, 'X')">W</text>
+			<text if="startswith({system.fullName}, 'y') || startswith({system.fullName}, 'Y')">X</text>
+			<text if="startswith({system.fullName}, 'z') || startswith({system.fullName}, 'Z')">Y</text>
+			<text if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'"></text>
+			<pos>0.0012 0.3225</pos>
+			<size>0.0396 0.0450</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0360</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dc0</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianelettre" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alphavoisines">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'alpha'">true</visible>
+			<text></text>
+			<text if="startswith({system.fullName}, '0') || startswith({system.fullName}, '1') || startswith({system.fullName}, '2') || startswith({system.fullName}, '3') || startswith({system.fullName}, '4') || startswith({system.fullName}, '5') || startswith({system.fullName}, '6') || startswith({system.fullName}, '7') || startswith({system.fullName}, '8') || startswith({system.fullName}, '9')">#</text>
+			<text if="startswith({system.fullName}, 'a') || startswith({system.fullName}, 'A')">A</text>
+			<text if="startswith({system.fullName}, 'b') || startswith({system.fullName}, 'B')">B</text>
+			<text if="startswith({system.fullName}, 'c') || startswith({system.fullName}, 'C')">C</text>
+			<text if="startswith({system.fullName}, 'd') || startswith({system.fullName}, 'D')">D</text>
+			<text if="startswith({system.fullName}, 'e') || startswith({system.fullName}, 'E')">E</text>
+			<text if="startswith({system.fullName}, 'f') || startswith({system.fullName}, 'F')">F</text>
+			<text if="startswith({system.fullName}, 'g') || startswith({system.fullName}, 'G')">G</text>
+			<text if="startswith({system.fullName}, 'h') || startswith({system.fullName}, 'H')">H</text>
+			<text if="startswith({system.fullName}, 'i') || startswith({system.fullName}, 'I')">I</text>
+			<text if="startswith({system.fullName}, 'j') || startswith({system.fullName}, 'J')">J</text>
+			<text if="startswith({system.fullName}, 'k') || startswith({system.fullName}, 'K')">K</text>
+			<text if="startswith({system.fullName}, 'l') || startswith({system.fullName}, 'L')">L</text>
+			<text if="startswith({system.fullName}, 'm') || startswith({system.fullName}, 'M')">M</text>
+			<text if="startswith({system.fullName}, 'n') || startswith({system.fullName}, 'N')">N</text>
+			<text if="startswith({system.fullName}, 'o') || startswith({system.fullName}, 'O')">O</text>
+			<text if="startswith({system.fullName}, 'p') || startswith({system.fullName}, 'P')">P</text>
+			<text if="startswith({system.fullName}, 'q') || startswith({system.fullName}, 'Q')">Q</text>
+			<text if="startswith({system.fullName}, 'r') || startswith({system.fullName}, 'R')">R</text>
+			<text if="startswith({system.fullName}, 's') || startswith({system.fullName}, 'S')">S</text>
+			<text if="startswith({system.fullName}, 't') || startswith({system.fullName}, 'T')">T</text>
+			<text if="startswith({system.fullName}, 'u') || startswith({system.fullName}, 'U')">U</text>
+			<text if="startswith({system.fullName}, 'v') || startswith({system.fullName}, 'V')">V</text>
+			<text if="startswith({system.fullName}, 'w') || startswith({system.fullName}, 'W')">W</text>
+			<text if="startswith({system.fullName}, 'x') || startswith({system.fullName}, 'X')">X</text>
+			<text if="startswith({system.fullName}, 'y') || startswith({system.fullName}, 'Y')">Y</text>
+			<text if="startswith({system.fullName}, 'z') || startswith({system.fullName}, 'Z')">Z</text>
+			<text if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'"></text>
+			<pos>-0.0175 0.3613</pos>
+			<size>0.0770 0.0875</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0700</fontSize>
+			<alignment>center</alignment>
+			<color>ffffffff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeapres1" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alphavoisines">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'alpha'">true</visible>
+			<text></text>
+			<text if="startswith({system.fullName}, '0') || startswith({system.fullName}, '1') || startswith({system.fullName}, '2') || startswith({system.fullName}, '3') || startswith({system.fullName}, '4') || startswith({system.fullName}, '5') || startswith({system.fullName}, '6') || startswith({system.fullName}, '7') || startswith({system.fullName}, '8') || startswith({system.fullName}, '9')">A</text>
+			<text if="startswith({system.fullName}, 'a') || startswith({system.fullName}, 'A')">B</text>
+			<text if="startswith({system.fullName}, 'b') || startswith({system.fullName}, 'B')">C</text>
+			<text if="startswith({system.fullName}, 'c') || startswith({system.fullName}, 'C')">D</text>
+			<text if="startswith({system.fullName}, 'd') || startswith({system.fullName}, 'D')">E</text>
+			<text if="startswith({system.fullName}, 'e') || startswith({system.fullName}, 'E')">F</text>
+			<text if="startswith({system.fullName}, 'f') || startswith({system.fullName}, 'F')">G</text>
+			<text if="startswith({system.fullName}, 'g') || startswith({system.fullName}, 'G')">H</text>
+			<text if="startswith({system.fullName}, 'h') || startswith({system.fullName}, 'H')">I</text>
+			<text if="startswith({system.fullName}, 'i') || startswith({system.fullName}, 'I')">J</text>
+			<text if="startswith({system.fullName}, 'j') || startswith({system.fullName}, 'J')">K</text>
+			<text if="startswith({system.fullName}, 'k') || startswith({system.fullName}, 'K')">L</text>
+			<text if="startswith({system.fullName}, 'l') || startswith({system.fullName}, 'L')">M</text>
+			<text if="startswith({system.fullName}, 'm') || startswith({system.fullName}, 'M')">N</text>
+			<text if="startswith({system.fullName}, 'n') || startswith({system.fullName}, 'N')">O</text>
+			<text if="startswith({system.fullName}, 'o') || startswith({system.fullName}, 'O')">P</text>
+			<text if="startswith({system.fullName}, 'p') || startswith({system.fullName}, 'P')">Q</text>
+			<text if="startswith({system.fullName}, 'q') || startswith({system.fullName}, 'Q')">R</text>
+			<text if="startswith({system.fullName}, 'r') || startswith({system.fullName}, 'R')">S</text>
+			<text if="startswith({system.fullName}, 's') || startswith({system.fullName}, 'S')">T</text>
+			<text if="startswith({system.fullName}, 't') || startswith({system.fullName}, 'T')">U</text>
+			<text if="startswith({system.fullName}, 'u') || startswith({system.fullName}, 'U')">V</text>
+			<text if="startswith({system.fullName}, 'v') || startswith({system.fullName}, 'V')">W</text>
+			<text if="startswith({system.fullName}, 'w') || startswith({system.fullName}, 'W')">X</text>
+			<text if="startswith({system.fullName}, 'x') || startswith({system.fullName}, 'X')">Y</text>
+			<text if="startswith({system.fullName}, 'y') || startswith({system.fullName}, 'Y')">Z</text>
+			<text if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'"></text>
+			<pos>0.0012 0.4525</pos>
+			<size>0.0396 0.0450</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0360</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dc0</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianeapres2" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:alphavoisines">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'alpha'">true</visible>
+			<text></text>
+			<text if="startswith({system.fullName}, '0') || startswith({system.fullName}, '1') || startswith({system.fullName}, '2') || startswith({system.fullName}, '3') || startswith({system.fullName}, '4') || startswith({system.fullName}, '5') || startswith({system.fullName}, '6') || startswith({system.fullName}, '7') || startswith({system.fullName}, '8') || startswith({system.fullName}, '9')">B</text>
+			<text if="startswith({system.fullName}, 'a') || startswith({system.fullName}, 'A')">C</text>
+			<text if="startswith({system.fullName}, 'b') || startswith({system.fullName}, 'B')">D</text>
+			<text if="startswith({system.fullName}, 'c') || startswith({system.fullName}, 'C')">E</text>
+			<text if="startswith({system.fullName}, 'd') || startswith({system.fullName}, 'D')">F</text>
+			<text if="startswith({system.fullName}, 'e') || startswith({system.fullName}, 'E')">G</text>
+			<text if="startswith({system.fullName}, 'f') || startswith({system.fullName}, 'F')">H</text>
+			<text if="startswith({system.fullName}, 'g') || startswith({system.fullName}, 'G')">I</text>
+			<text if="startswith({system.fullName}, 'h') || startswith({system.fullName}, 'H')">J</text>
+			<text if="startswith({system.fullName}, 'i') || startswith({system.fullName}, 'I')">K</text>
+			<text if="startswith({system.fullName}, 'j') || startswith({system.fullName}, 'J')">L</text>
+			<text if="startswith({system.fullName}, 'k') || startswith({system.fullName}, 'K')">M</text>
+			<text if="startswith({system.fullName}, 'l') || startswith({system.fullName}, 'L')">N</text>
+			<text if="startswith({system.fullName}, 'm') || startswith({system.fullName}, 'M')">O</text>
+			<text if="startswith({system.fullName}, 'n') || startswith({system.fullName}, 'N')">P</text>
+			<text if="startswith({system.fullName}, 'o') || startswith({system.fullName}, 'O')">Q</text>
+			<text if="startswith({system.fullName}, 'p') || startswith({system.fullName}, 'P')">R</text>
+			<text if="startswith({system.fullName}, 'q') || startswith({system.fullName}, 'Q')">S</text>
+			<text if="startswith({system.fullName}, 'r') || startswith({system.fullName}, 'R')">T</text>
+			<text if="startswith({system.fullName}, 's') || startswith({system.fullName}, 'S')">U</text>
+			<text if="startswith({system.fullName}, 't') || startswith({system.fullName}, 'T')">V</text>
+			<text if="startswith({system.fullName}, 'u') || startswith({system.fullName}, 'U')">W</text>
+			<text if="startswith({system.fullName}, 'v') || startswith({system.fullName}, 'V')">X</text>
+			<text if="startswith({system.fullName}, 'w') || startswith({system.fullName}, 'W')">Y</text>
+			<text if="startswith({system.fullName}, 'x') || startswith({system.fullName}, 'X')">Z</text>
+			<text if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'"></text>
+			<pos>0.0045 0.5012</pos>
+			<size>0.0330 0.0375</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.0300</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7d80</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<image name="arianeconsnintendo" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/constructeurs/nintendo.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.026 0.1700</pos>
+			<maxSize>0.042 0.03</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.manufacturer} == 'Nintendo'">1</saturation>
+			<color>7d7d7dff</color>
+			<color if="{system.manufacturer} == 'Nintendo'">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
+			<zIndex>900</zIndex>
+		</image>
+		<image name="arianeconssega" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/constructeurs/sega.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.026 0.2100</pos>
+			<maxSize>0.042 0.03</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.manufacturer} == 'Sega'">1</saturation>
+			<color>7d7d7dff</color>
+			<color if="{system.manufacturer} == 'Sega'">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
+			<zIndex>900</zIndex>
+		</image>
+		<image name="arianeconssony" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/constructeurs/sony.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.026 0.2500</pos>
+			<maxSize>0.042 0.03</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.manufacturer} == 'Sony'">1</saturation>
+			<color>7d7d7dff</color>
+			<color if="{system.manufacturer} == 'Sony'">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
+			<zIndex>900</zIndex>
+		</image>
+		<image name="arianeconsmicrosoft" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/constructeurs/microsoft.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.026 0.2900</pos>
+			<maxSize>0.042 0.03</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.manufacturer} == 'Microsoft'">1</saturation>
+			<color>7d7d7dff</color>
+			<color if="{system.manufacturer} == 'Microsoft'">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
+			<zIndex>900</zIndex>
+		</image>
+		<image name="arianeconsatari" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/constructeurs/atari.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.026 0.3300</pos>
+			<maxSize>0.042 0.03</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.manufacturer} == 'Atari'">1</saturation>
+			<color>7d7d7dff</color>
+			<color if="{system.manufacturer} == 'Atari'">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
+			<zIndex>900</zIndex>
+		</image>
+		<image name="arianeconscommodore" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/constructeurs/commodore.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.026 0.3700</pos>
+			<maxSize>0.042 0.03</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.manufacturer} == 'Commodore'">1</saturation>
+			<color>7d7d7dff</color>
+			<color if="{system.manufacturer} == 'Commodore'">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
+			<zIndex>900</zIndex>
+		</image>
+		<image name="arianeconsnec" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/constructeurs/nec.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.026 0.4100</pos>
+			<maxSize>0.042 0.03</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.manufacturer} == 'NEC'">1</saturation>
+			<color>7d7d7dff</color>
+			<color if="{system.manufacturer} == 'NEC'">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
+			<zIndex>900</zIndex>
+		</image>
+		<image name="arianeconssnk" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/constructeurs/snk.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.026 0.4500</pos>
+			<maxSize>0.042 0.03</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.manufacturer} == 'SNK'">1</saturation>
+			<color>7d7d7dff</color>
+			<color if="{system.manufacturer} == 'SNK'">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
+			<zIndex>900</zIndex>
+		</image>
+		<text name="arianeconssharp" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
+			<text>SHARP</text>
+			<pos>0.003 0.4750</pos>
+			<size>0.046 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="{system.manufacturer} == 'Sharp'">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<image name="arianeconsbandai" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/constructeurs/bandai.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.026 0.5300</pos>
+			<maxSize>0.042 0.03</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.manufacturer} == 'Bandai'">1</saturation>
+			<color>7d7d7dff</color>
+			<color if="{system.manufacturer} == 'Bandai'">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
+			<zIndex>900</zIndex>
+		</image>
+		<image name="arianeconsarcade" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/arcade.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.026 0.5700</pos>
+			<maxSize>0.042 0.03</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.manufacturer} == 'Arcade'">1</saturation>
+			<color>7d7d7dff</color>
+			<color if="{system.manufacturer} == 'Arcade'">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
+			<zIndex>900</zIndex>
+		</image>
+		<image name="arianeconsports" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/port.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.026 0.6100</pos>
+			<maxSize>0.042 0.03</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.manufacturer} == 'Ports'">1</saturation>
+			<color>7d7d7dff</color>
+			<color if="{system.manufacturer} == 'Ports'">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<saturation if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">0</saturation>
+			<zIndex>900</zIndex>
+		</image>
+		<text name="arianeconsautres" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:constructeur">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'manufacturer' || {settings.SortSystems} == 'subgroup'">true</visible>
+			<text>${arianeautres}</text>
+			<pos>0.003 0.6350</pos>
+			<size>0.046 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.013</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="{system.manufacturer} != 'Nintendo' &amp;&amp; {system.manufacturer} != 'Sega' &amp;&amp; {system.manufacturer} != 'Sony' &amp;&amp; {system.manufacturer} != 'Microsoft' &amp;&amp; {system.manufacturer} != 'Atari' &amp;&amp; {system.manufacturer} != 'Commodore' &amp;&amp; {system.manufacturer} != 'NEC' &amp;&amp; {system.manufacturer} != 'SNK' &amp;&amp; {system.manufacturer} != 'Sharp' &amp;&amp; {system.manufacturer} != 'Bandai' &amp;&amp; {system.manufacturer} != 'Arcade' &amp;&amp; {system.manufacturer} != 'Ports' &amp;&amp; {system.hardwareType} != 'auto collection' &amp;&amp; {system.hardwareType} != 'custom collection'">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianedec1970" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:decennie">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'releaseDate'">true</visible>
+			<text>1970</text>
+			<pos>0.003 0.1700</pos>
+			<size>0.046 0.0500</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="tointeger('{system.releaseYear}') > 0 &amp;&amp; tointeger('{system.releaseYear}') &lt; 1980">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianedec1980" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:decennie">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'releaseDate'">true</visible>
+			<text>1980</text>
+			<pos>0.003 0.2200</pos>
+			<size>0.046 0.0500</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="tointeger('{system.releaseYear}') >= 1980 &amp;&amp; tointeger('{system.releaseYear}') &lt; 1990">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianedec1990" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:decennie">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'releaseDate'">true</visible>
+			<text>1990</text>
+			<pos>0.003 0.2700</pos>
+			<size>0.046 0.0500</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="tointeger('{system.releaseYear}') >= 1990 &amp;&amp; tointeger('{system.releaseYear}') &lt; 2000">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianedec2000" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:decennie">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'releaseDate'">true</visible>
+			<text>2000</text>
+			<pos>0.003 0.3200</pos>
+			<size>0.046 0.0500</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="tointeger('{system.releaseYear}') >= 2000 &amp;&amp; tointeger('{system.releaseYear}') &lt; 2010">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianedec2010" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:decennie">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'releaseDate'">true</visible>
+			<text>2010</text>
+			<pos>0.003 0.3700</pos>
+			<size>0.046 0.0500</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="tointeger('{system.releaseYear}') >= 2010 &amp;&amp; tointeger('{system.releaseYear}') &lt; 2020">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianedec2020" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:decennie">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'releaseDate'">true</visible>
+			<text>2020</text>
+			<pos>0.003 0.4200</pos>
+			<size>0.046 0.0500</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<alignment>center</alignment>
+			<color>7d7d7dff</color>
+			<color if="tointeger('{system.releaseYear}') >= 2020">ffffffff</color>
+			<color if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">7d7d7dff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<text name="arianedecannee" extra="static">
+			<visible>false</visible>
+			<visible ifSubset="breadcrumbsonoff:decennie">true</visible>
+			<visible ifSubset="breadcrumbsonoff:auto" if="{settings.SortSystems} == 'releaseDate'">true</visible>
+			<text>{system:releaseYear}</text>
+			<text if="tointeger('{system.releaseYear}') &lt;= 0"></text>
+			<text if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'"></text>
+			<pos>0.0 0.4800</pos>
+			<size>0.052 0.05</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.034</fontSize>
+			<alignment>center</alignment>
+			<color>ffffffff</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>900</zIndex>
+		</text>
+		<image name="manetteombre" extra="true">
+			<visible>${manettehalovisible}</visible>
+			<path>${themePath}/_viewsyst/fanartstar/halo_manette.png</path>
+			<pos>${manettehalopos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${manettehalotaille}</size>
+			<zIndex>8.9</zIndex>
+			<storyboard ifSubset="perfmachine:perfnormal">
+				<animation property="opacity" from="0" to="0.35" duration="400" mode="easeOut"/>
+				<animation property="scale" from="1" to="0.85" begin="400" duration="1600" mode="easeInOut" autoReverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow">
+				<animation property="opacity" from="0" to="0.35" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="0"/>
+			</storyboard>
+		</image>
+		<image name="manette" extra="true">
+			<visible>${manettevisible}</visible>
+			<path>${manettechemin}</path>
+			<pos>${manettepos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${manettetaille}</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>9</zIndex>
+			<storyboard ifSubset="perfmachine:perfnormal">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+				<animation property="offsetY" from="0" to="-0.012" begin="400" duration="1600" mode="easeInOut" autoReverse="true" repeat="forever"/>
+				<animation property="rotation" from="0" to="-1.5" duration="1150" mode="easeInOut"/>
+				<animation property="rotation" from="-1.5" to="1.5" begin="1150" duration="2300" mode="easeInOut" autoReverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="0"/>
+			</storyboard>
+		</image>
 	</view>
 </theme>

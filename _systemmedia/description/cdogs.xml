@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>C-Dogs SDL, an open-source top-down shooter descended from the 1997 MS-DOS game Cyberdogs, playable solo or with friends.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>C-Dogs SDL, jogo de tiro com visão de cima de código aberto, herdeiro do jogo de MS-DOS Cyberdogs de 1997, para um ou vários jogadores.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>C-Dogs SDL, an open-source top-down shooter descended from the 1997 MS-DOS game Cyberdogs, playable solo or with friends.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>C-Dogs SDL, shooter cenital de código abierto heredero del juego de MS-DOS Cyberdogs de 1997, para uno o varios jugadores.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>C-Dogs SDL, jeu de tir en vue de dessus libre, héritier du jeu MS-DOS Cyberdogs de 1997, jouable seul ou à plusieurs.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>C-Dogs SDL, ein quelloffener Top-down-Shooter in der Nachfolge des MS-DOS-Spiels Cyberdogs von 1997, allein oder gemeinsam spielbar.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>C-Dogs SDL</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

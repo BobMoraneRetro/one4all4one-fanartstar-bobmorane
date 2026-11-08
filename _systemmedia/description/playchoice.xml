@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Nintendo's PlayChoice-10 arcade system, which offered up to ten NES games in one cabinet, paid by playing time.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O sistema de arcade PlayChoice-10 da Nintendo, que oferecia até dez jogos de NES em uma máquina, pagos por tempo de jogo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Nintendo's PlayChoice-10 arcade system, which offered up to ten NES games in one cabinet, paid by playing time.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El sistema arcade PlayChoice-10 de Nintendo, que ofrecía hasta diez juegos de NES en una máquina, pagados por tiempo de juego.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le système d'arcade PlayChoice-10 de Nintendo, qui proposait jusqu'à dix jeux NES dans une borne, payés au temps de jeu.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Nintendos Arcade-System PlayChoice-10, das bis zu zehn NES-Spiele in einem Automaten anbot, bezahlt nach Spielzeit.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PlayChoice-10</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1986</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+</theme>

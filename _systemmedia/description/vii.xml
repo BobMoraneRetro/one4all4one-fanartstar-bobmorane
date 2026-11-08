@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Chinese motion-controlled console of 2007, similar to the Wii, with simple built-in and cartridge games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console chinês com controle de movimento de 2007, parecido com o Wii, com jogos simples integrados e em cartucho.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Chinese motion-controlled console of 2007, similar to the Wii, with simple built-in and cartridge games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola china con control por movimiento de 2007, parecida a la Wii, con juegos sencillos integrados y en cartucho.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console chinoise à détection de mouvement sortie en 2007, proche de la Wii, avec des jeux simples intégrés et en cartouche.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Chinesische Bewegungssteuerungs-Konsole von 2007, ähnlich der Wii, mit einfachen eingebauten und Modulspielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Vii</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2007</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Jungle Soft / KenSingTon / Siatronics</text>
+		</text>
+	</view>
+</theme>

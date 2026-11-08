@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Epoch's Japanese cartridge console of 1981, with controls built into the console and simple, colourful games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console japonês de cartuchos da Epoch de 1981, com os controles integrados ao console e jogos simples e coloridos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Epoch's Japanese cartridge console of 1981, with controls built into the console and simple, colourful games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola japonesa de cartuchos de Epoch de 1981, con los controles integrados en la consola y juegos sencillos y coloridos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console japonaise à cartouches d'Epoch sortie en 1981, avec les commandes intégrées à la console et des jeux simples et colorés.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Japanische Modulkonsole von Epoch aus dem Jahr 1981, mit in die Konsole eingebauten Reglern und einfachen, bunten Spielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Cassette Vision</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1981</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Epoch</text>
+		</text>
+	</view>
+</theme>

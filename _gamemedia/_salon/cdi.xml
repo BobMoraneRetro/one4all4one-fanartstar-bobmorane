@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<salon_video_etiree>true</salon_video_etiree>
+		<salon_disque_taille ifSubset="boxorthumb:boxart">0.6 0.6</salon_disque_taille>
+		<salon_disque_taille ifSubset="boxorthumb:thumb">0.2891 0.47</salon_disque_taille>
+		<salon_disque_x ifSubset="boxorthumb:boxart">0.6777</salon_disque_x>
+		<salon_disque_x ifSubset="boxorthumb:thumb">0.6900</salon_disque_x>
+		<salon_disque_y ifSubset="boxorthumb:boxart">0.63</salon_disque_y>
+		<salon_disque_y ifSubset="boxorthumb:thumb">0.63</salon_disque_y>
+	</variables>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PC-based arcade games from Wahlap, a Chinese arcade manufacturer, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade baseados em PC da Wahlap, fabricante chinesa de fliperamas, jogados aqui pelo TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PC-based arcade games from Wahlap, a Chinese arcade manufacturer, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade basados en PC de Wahlap, fabricante chino de recreativas, jugados aquí con TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade sur base PC de Wahlap, fabricant d'arcade chinois, joués ici via TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PC-basierte Arcade-Spiele von Wahlap, einem chinesischen Arcade-Hersteller, hier über TeknoParrot spielbar.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Wahlap</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2010</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Wahlap</text>
+		</text>
+	</view>
+</theme>

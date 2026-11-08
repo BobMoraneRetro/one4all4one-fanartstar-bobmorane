@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Swedish home computer built around a Z80 processor, widely used in Swedish schools and offices in the late 1970s and early 1980s.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico sueco baseado em um processador Z80, muito usado em escolas e escritórios suecos no fim dos anos 70.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Swedish home computer built around a Z80 processor, widely used in Swedish schools and offices in the late 1970s and early 1980s.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico sueco basado en un procesador Z80, muy usado en escuelas y oficinas suecas a finales de los años 70.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur domestique suédois basé sur un processeur Z80, très utilisé dans les écoles et les bureaux suédois à la fin des années 1970.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Schwedischer Heimcomputer mit Z80-Prozessor, Ende der 1970er-Jahre in schwedischen Schulen und Büros weit verbreitet.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>ABC 80</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1978</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Luxor Datorer AB</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Adventure games from Pendulo Studios, the Spanish developer of the Runaway series and Yesterday.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de aventura da Pendulo Studios, a desenvolvedora espanhola da série Runaway e de Yesterday.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Adventure games from Pendulo Studios, the Spanish developer of the Runaway series and Yesterday.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Aventuras gráficas de Pendulo Studios, el desarrollador español de la serie Runaway y Yesterday.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'aventure de Pendulo Studios, le développeur espagnol de la série Runaway et de Yesterday.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Adventures von Pendulo Studios, dem spanischen Entwickler der Runaway-Reihe und von Yesterday.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pendulo Studios</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2003</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Pendulo Studios</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Early cartridge console sold in Europe around 1979 under several names, including the Acetronic MPU-1000, compatible with the Interton VC 4000.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console de cartuchos antigo vendido na Europa por volta de 1979 com vários nomes, entre eles Acetronic MPU-1000, compatível com o Interton VC 4000.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Early cartridge console sold in Europe around 1979 under several names, including the Acetronic MPU-1000, compatible with the Interton VC 4000.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola de cartuchos temprana vendida en Europa hacia 1979 con varios nombres, entre ellos Acetronic MPU-1000, compatible con la Interton VC 4000.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console à cartouches des débuts, vendue en Europe vers 1979 sous plusieurs noms dont l'Acetronic MPU-1000, compatible avec l'Interton VC 4000.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Frühe Modulkonsole, um 1979 unter mehreren Namen in Europa verkauft, darunter Acetronic MPU-1000, kompatibel zum Interton VC 4000.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>MPU-1000</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1979</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Acetronic</text>
+		</text>
+	</view>
+</theme>

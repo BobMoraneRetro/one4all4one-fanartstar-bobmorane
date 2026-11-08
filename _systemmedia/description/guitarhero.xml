@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Guitar Hero, the rhythm game series played with a guitar-shaped controller, which made music games a worldwide phenomenon.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Guitar Hero, a série de jogos de ritmo jogada com um controle em forma de guitarra, que tornou os jogos musicais um fenômeno mundial.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Guitar Hero, the rhythm game series played with a guitar-shaped controller, which made music games a worldwide phenomenon.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Guitar Hero, la serie de juegos de ritmo con un mando en forma de guitarra, que convirtió los juegos musicales en un fenómeno mundial.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Guitar Hero, la série de jeux de rythme jouée avec une manette en forme de guitare, qui a fait des jeux musicaux un phénomène mondial.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Guitar Hero, die Rhythmusspiel-Reihe mit gitarrenförmigem Controller, die Musikspiele zu einem weltweiten Phänomen machte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Guitar Hero</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2005</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Activision</text>
+		</text>
+	</view>
+</theme>

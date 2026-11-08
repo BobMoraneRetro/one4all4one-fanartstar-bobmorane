@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PC-based arcade games from Universal Space (UNIS), a Chinese maker of family and redemption games, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade baseados em PC da Universal Space (UNIS), fabricante chinesa de jogos familiares e de prêmios, jogados aqui pelo TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PC-based arcade games from Universal Space (UNIS), a Chinese maker of family and redemption games, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade basados en PC de Universal Space (UNIS), fabricante chino de juegos familiares y de premios, jugados aquí con TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade sur base PC d'Universal Space (UNIS), fabricant chinois de jeux familiaux et à tickets, joués ici via TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PC-basierte Arcade-Spiele von Universal Space (UNIS), einem chinesischen Hersteller von Familien- und Ticketspielen, hier über TeknoParrot.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Unis</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2005</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

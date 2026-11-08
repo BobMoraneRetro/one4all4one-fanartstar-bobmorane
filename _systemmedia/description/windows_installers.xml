@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Installers for Windows games: run them to add new PC games to your collection.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Instaladores de jogos de Windows: execute-os para adicionar novos jogos de PC à sua coleção.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Installers for Windows games: run them to add new PC games to your collection.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Instaladores de juegos de Windows: ejecútalos para añadir nuevos juegos de PC a tu colección.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Programmes d'installation de jeux Windows : lancez-les pour ajouter de nouveaux jeux PC à votre collection.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Installationsprogramme für Windows-Spiele: Starte sie, um deiner Sammlung neue PC-Spiele hinzuzufügen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Windows Installers</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Microsoft</text>
+		</text>
+	</view>
+</theme>

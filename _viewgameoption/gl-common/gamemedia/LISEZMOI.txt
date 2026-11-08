@@ -1,0 +1,83 @@
+MODULE GAMEMEDIA - médias des jeux (gamelist ou médias perso)
+===============================================================
+
+BRANCHEMENT DANS UN THÈME
+  Dans theme.xml, AVANT l'inclusion des vues, une seule ligne :
+      <include>${themePath}/_viewgameoption/gl-common/gamemedia/gamemedia.xml</include>
+  Le module apporte lui-même ses options, ses variables et ses libellés (32 langues).
+  Variables du thème nécessaires : ${path_syst_fanart} (fanart du système, pour les chaînes de secours).
+
+DOSSIERS (dossiers ordinaires : _Euro, _USA... ; systèmes groupés : dossier au nom du sous-système)
+  Pour un dossier, après le gamelist (et le média perso selon l option), le thème cherche, dans cet ordre :
+  <thème ou _bobmedia>/_gamemedia/_dossiers/logo/<dossier>.png         logo        -> ${media_marquee}, ${media_wheel}
+                                          /fanart/<dossier>.jpg (.png)   fanart      -> ${media_fanart}...
+                                          /3dbox/<dossier>.png           boîte 3D    -> ${media_box3d}
+                                          /2dbox/<dossier>.png           boîte 2D    -> ${media_box2d}
+                                          /screenshot/<dossier>.png (.jpg) capture   -> ${media_image}
+                                          /video/<dossier>.mp4 (.avi)    vidéo       -> ${media_video}
+  puis les médias système portant le nom du dossier (cas des systèmes groupés) :
+    logo   : _systemmedia/_logosyst/folderlogos/<dossier>.png, puis clearlogos (langue, région, neutre)
+    fanart : _systemmedia/_fanartsysteme/custom/<dossier>.jpg, puis fresh/<dossier>.jpg
+    capture / vidéo : _systemmedia/videosyst/subsystem/<dossier> puis /<système>.png .jpg .mp4 (thème ou _bobmedia)
+  <dossier> = nom exact du dossier (ex. _Euro). Ces chemins sont ajoutés à la fin des chaînes (après le gamelist et les
+  médias perso) : un jeu n est concerné que s il n a pas le média et qu un fichier porte exactement son nom.
+  Pas de condition « ? : » dans ces variables : le moteur ne la lit pas à l intérieur d un firstfile(...).
+  Variable du thème nécessaire en plus : ${path_syst_logo}.
+
+OPTIONS AJOUTÉES (Options du thème, section Scrap)
+  custombuilds        SCRAP - Structure fanart : fanart dans -fanart ou dans -image du gamelist
+  scrap3dbox          Où est scrappée la boîte 3D : dans -boxart ou dans -thumbnail
+  gamemedia           SCRAP - Médias perso (_gamemedia) : Non (défaut) / Oui
+  extfoldergamemedia  Source - Média des jeux hors gamelist.xml : dossier du thème / ../_bobmedia
+
+ARBORESCENCE DES MÉDIAS PERSO (sans suffixe : le fichier porte le nom de la rom)
+  <thème ou _bobmedia>/_gamemedia/<système>/3dbox/<rom>.png       boîte 3D            -> ${media_box3d}
+                                           /2dbox/<rom>.png       boîte 2D            -> ${media_box2d}
+                                           /fanart/<rom>.jpg      fanart              -> ${media_fanart}
+                                           /logo/<rom>.png        logo / marquee      -> ${media_marquee}
+  ${media_wheel}      : logo perso (dossier logo), sinon le champ wheel du gamelist (remplace md_wheel)
+                                           /video/<rom>.mp4 (ou .avi) vidéo               -> ${media_video}
+                                           /screenshot/<rom>.png (.jpg) capture           -> ${media_image}
+                                           /disc/<rom>.png        disque (systèmes CD)-> ${media_disc}
+                                           /cartridge/<rom>.png   cartouche           -> ${media_cartridge}
+                                           /cabs/<rom>.png        borne (prévu, pas encore utilisé : ${gm_cabs})
+                                           /roundwheel/<rom>.png  wheel rond (prévu, pas encore utilisé : ${gm_roundwheel})
+  Noms de dossiers en minuscules (Batocera est sensible à la casse).
+  Si le fichier perso n'existe pas, le média du gamelist est utilisé.
+
+VARIABLES À UTILISER DANS LES VUES
+  Pour chaque média X : ${media_X} (chemin), ${media_X_exists}, ${media_X_missing} (pour <visible>)
+  X = box3d, box2d, marquee, video, image, disc, cartridge
+  Fanart : ${media_fanart}, ${media_fanart_exists}, ${media_fanart_missing},
+           ${media_fanart_orthumb} (sinon thumbnail), ${media_fanart_orsyst} (sinon fanart du système),
+           ${media_fanart_chain} (sinon capture, image, thumbnail, boxart, fanart du système)
+  Le choix boîte 2D / 3D de la vue se fait dans la vue, entre ${media_box2d} et ${media_box3d}.
+  Support physique : ${media_support} (+ _exists, _missing, _orthumb = sinon thumbnail) prend le dossier disc
+  pour les systèmes à disque, cartridge pour les autres, sinon {game:cartridge} du gamelist.
+  Liste des systèmes à disque (noms <theme> de es_systems.cfg), à garder identique dans medias.xml
+  et dans les blocs <control ... if="..."> des vues qui font tourner le CD :
+    psx, ps2, ps3, saturn, megacd, dreamcast, 3do, cdi, amigacd32, amigacdtv, neogeocd, pce-cd, pcfx, atarijaguarcd, gc, wii, xbox, xbox360, fmtowns
+    (valeurs de la balise <theme> d'es_systems.cfg : ce sont aussi les noms des dossiers _gamemedia)
+  Vues presetshowsmall, presetshowbig, presetspeedbull : tout disque affiché tourne (perso ou gamelist).
+  Limite (presettraviolta_alt seulement) : la rotation est déclenchée par enabled="exists({game:cartridge})"
+  (attribut lu sans variables, nécessaire car la vue affiche la jaquette à défaut de support) :
+  un disque uniquement perso (sans support dans le gamelist) s affiche sans tourner.
+
+PERFORMANCES
+  Option sur Non : aucun surcoût (les variables valent directement {game:...}).
+  Option sur Oui : une vérification de fichier de plus par média affiché, à chaque changement de jeu.
+
+RÈGLE TECHNIQUE (à respecter si on ajoute des variables)
+  Toute valeur qui utilise une autre variable doit contenir un {game:...} écrit en clair,
+  sinon EmulationStation la calcule au chargement du thème et obtient un chemin vide.
+  Lignes « oui » puis « non » : la ligne de l'option par défaut est toujours écrite en dernier.
+
+LIMITES CONNUES (images À L INTÉRIEUR des listes)
+  Les éléments d une liste qui utilise <imageSource> ne lisent qu un champ du gamelist, jamais _gamemedia.
+  Il faut un modèle de vignette (itemTemplate) avec ${media_...} pour qu ils suivent les médias perso.
+  - Fait : carrousels Boxart (rotatedon/off), showbig, showsmall, traviolta, speedbull, gamecarousel
+           (gamecarousel : _viewgame/gamecarousel_items.xml, inclus en dernier dans theme.xml).
+  - Restent sur le gamelist : listes de 16/9 et 4/3 (fanarts), grid (captures), Big Art (boîtes : choix 2D/3D OK).
+  Piège moteur : un <view name="grid"> s applique aussi à toutes les customView inherits="grid". Le modèle de grid
+  (_viewgame/grid_items.xml, prêt mais NON inclus) ne peut être activé que si presetstar169, presetstar43 et presetdeck
+  ont leur propre itemTemplate (sinon ils prendraient celui de grid).

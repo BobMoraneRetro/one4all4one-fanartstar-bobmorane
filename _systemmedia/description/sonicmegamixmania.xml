@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sonic Megamix Mania, a fan-made project that brings the content of Sonic Megamix into Sonic Mania.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Sonic Megamix Mania, projeto de fãs que leva o conteúdo de Sonic Megamix para Sonic Mania.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sonic Megamix Mania, a fan-made project that brings the content of Sonic Megamix into Sonic Mania.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Sonic Megamix Mania, proyecto de fans que lleva el contenido de Sonic Megamix a Sonic Mania.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Sonic Megamix Mania, projet de fans qui intègre le contenu de Sonic Megamix dans Sonic Mania.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sonic Megamix Mania, ein Fan-Projekt, das die Inhalte von Sonic Megamix in Sonic Mania bringt.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Sonic Megamix Mania</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2026</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Ports Sega</text>
+		</text>
+	</view>
+</theme>

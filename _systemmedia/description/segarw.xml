@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's RingWide arcade board, a lower-cost companion to the RingEdge, used for many racing and light gun games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>A placa de arcade RingWide da Sega, versão mais econômica da RingEdge, usada em muitos jogos de corrida e de pistola.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's RingWide arcade board, a lower-cost companion to the RingEdge, used for many racing and light gun games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La placa arcade RingWide de Sega, versión más económica de la RingEdge, usada en muchos juegos de carreras y de pistola.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La carte arcade RingWide de Sega, version plus économique de la RingEdge, utilisée pour de nombreux jeux de course et de tir au pistolet.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas Arcade-Platine RingWide, eine günstigere Schwester der RingEdge, genutzt für viele Renn- und Lightgun-Spiele.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>RingWide</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2009</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

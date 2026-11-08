@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${salon_ecran2} : vue Salon : true = 2e écran (2 consoles reliées, ex. gbc2players), même vidéo, capture, couleur et calque que le 1er ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _gamemedia/_salon/gbc2players.xml, _viewgame/presetsalon.xml)
+	${salon_video_etiree} : vue Salon : true = vidéo étirée à la taille de l écran de la TV (size), false = proportions gardées (maxSize) ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (45 fichiers))
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetdeck}, ${presetsalon}, ${presetshowbig}, ${presetshowsmall}, ${presetspeedbull}, ${presetspotlight}, ${presetsquare}, ${presetstarbox}, ${presetstarboxloop}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
+		<image name="screenshotgames" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<visible>!(${media_video_exists})</visible>
+		</image>
+		<image name="screenshotgames" ifSubset="starvideo:starvideoang" extra="true">
+			<visible>!(${media_video_exists})</visible>
+		</image>
+		<video name="videogameplay" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<delay>0</delay>
+			<storyboard event="open">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videogameplay" ifSubset="starvideo:starvideoang" extra="true">
+			<delay>0</delay>
+			<storyboard event="open">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+	</customView>
+	<customView name="presetstarboxloop" displayName="${presetstarboxloop}" inherits="grid">
+		<image name="screenshotgames" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<visible>!(${media_video_exists})</visible>
+		</image>
+		<image name="screenshotgames" ifSubset="starvideo:starvideoang" extra="true">
+			<visible>!(${media_video_exists})</visible>
+		</image>
+		<video name="videogameplay" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<delay>0</delay>
+			<storyboard event="open">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="videogameplay" ifSubset="starvideo:starvideoang" extra="true">
+			<delay>0</delay>
+			<storyboard event="open">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+	</customView>
+	<customView name="presetsalon" displayName="${presetsalon}" inherits="gamecarousel">
+		<video name="salonvideo" if="!${salon_video_etiree}" extra="true">
+			<storyboard event="open">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+		</video>
+		<video name="salonvideoetiree" if="${salon_video_etiree}" extra="true">
+			<storyboard event="open">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+		</video>
+		<video name="salonvideo2" if="${salon_ecran2} &amp;&amp; !${salon_video_etiree}" extra="true">
+			<storyboard event="open">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+		</video>
+		<video name="salonvideoetiree2" if="${salon_ecran2} &amp;&amp; ${salon_video_etiree}" extra="true">
+			<storyboard event="open">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+		</video>
+	</customView>
+	<customView name="presetdeck" displayName="${presetdeck}" inherits="grid">
+		<video name="deck_video" extra="true">
+			<delay>0</delay>
+			<effect>none</effect>
+			<storyboard event="open">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+		</video>
+	</customView>
+	<customView name="presetspotlight" displayName="${presetspotlight}" inherits="grid">
+		<video name="spot_video" extra="true">
+			<delay>0</delay>
+			<storyboard event="open" ifSubset="spotvideo:droite">
+				<animation property="x" from="1.300" to="1.300" duration="0"/>
+				<animation property="x" from="1.300" to="0.9887" begin="1500" duration="600" mode="easeOut"/>
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate" ifSubset="spotvideo:droite">
+				<animation property="x" from="1.300" to="1.300" duration="0"/>
+				<animation property="x" from="1.300" to="0.9887" begin="1500" duration="600" mode="easeOut"/>
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+		</video>
+		<video name="spot_videogauche" extra="true">
+			<delay>0</delay>
+			<effect>none</effect>
+			<storyboard event="open">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+		</video>
+	</customView>
+	<customView name="presetsquare" displayName="${presetsquare}" inherits="grid">
+		<video name="grid_video" extra="true">
+			<delay>0</delay>
+			<storyboard event="open">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+		</video>
+		<image name="grid_capture" extra="true">
+			<visible>!(${media_video_exists})</visible>
+		</image>
+	</customView>
+	<customView name="presetshowbig" displayName="${presetshowbig}" inherits="gamecarousel">
+		<video name="previewvidpreset" extra="true">
+			<delay>0</delay>
+			<storyboard event="open">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+		</video>
+	</customView>
+	<customView name="presetshowsmall" displayName="${presetshowsmall}" inherits="gamecarousel">
+		<video name="previewvidpreset" extra="true">
+			<delay>0</delay>
+			<storyboard event="open">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="100" duration="300" mode="easeOut"/>
+			</storyboard>
+		</video>
+	</customView>
+	<customView name="presetspeedbull" displayName="${presetspeedbull}" inherits="gamecarousel">
+		<video name="videogame" extra="true">
+			<delay>0</delay>
+			<storyboard event="activate">
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="opacity" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="300" mode="easeOut"/>
+			</storyboard>
+		</video>
+	</customView>
+</theme>

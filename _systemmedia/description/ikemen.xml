@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>IKEMEN GO, an open-source fighting game engine compatible with M.U.G.E.N content, used for many fan-made fighting games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>IKEMEN GO, motor livre de jogos de luta compatível com conteúdo do M.U.G.E.N, usado em muitos jogos de fãs.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>IKEMEN GO, an open-source fighting game engine compatible with M.U.G.E.N content, used for many fan-made fighting games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>IKEMEN GO, motor libre de juegos de lucha compatible con contenido de M.U.G.E.N, usado en muchos juegos de fans.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>IKEMEN GO, moteur libre de jeux de combat compatible avec les contenus M.U.G.E.N, utilisé pour de nombreux jeux de fans.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>IKEMEN GO, eine quelloffene Kampfspiel-Engine, kompatibel mit M.U.G.E.N-Inhalten, Basis vieler Fan-Kampfspiele.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>IKEMEN GO</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

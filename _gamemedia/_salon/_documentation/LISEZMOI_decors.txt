@@ -1,0 +1,78 @@
+Vue « RFE Retrofist Nostalgia » : décors fournis
+================================================
+
+Chaque décor <nom>.png est accompagné de <nom>.xml (ses réglages). Réglages possibles : voir LISEZMOI.txt.
+
+Décors par défaut
+  _default.png   : décor par défaut des systèmes 4:3 (si le système n a pas le sien)
+  _default16.png : décor par défaut des systèmes 16:9 (ps3, ps4, xbox360, wiiu, switch, psvita, windows, steam)
+  arcade.png     : décor par défaut des systèmes d arcade (tous ceux de type arcade dans es_systems : mame, fbneo, naomi...)
+  arcade.xml     : réglages de arcade.png (à la place de _default.xml pour ces systèmes)
+  computers.png  : décor par défaut des systèmes ordinateurs (type computer dans es_systems : amiga, c64, amstradcpc...)
+  extension.png  : décor par défaut des extensions de consoles (type extension dans es_systems : megacd, sega32x, fds, satellaview, sufami, n64dd, sgb, *-msu...)
+  pinball.png    : décor par défaut des flippers (type pinball dans es_systems : vpinball, fpinball, pinballfx...)
+  port.png       : décor par défaut des ports (type port dans es_systems : doom, quake, scummvm, soh, sonic-mania...)
+  portable.png   : décor par défaut des consoles portables (type portable dans es_systems : gb, gbc, gamegear, nds, psp...)
+  auto-collection.png : décor par défaut des collections automatiques (tous les jeux, favoris, derniers joués, genres...)
+  custom-collection.png : décor par défaut des collections perso (créées par l utilisateur)
+  retrobat.png   : décor du système RetroBat et décor par défaut des systèmes sans type (kodi)
+
+Systèmes
+  3do.png        : 3DO (salon 1993 dédié à la Panasonic FZ-1, néon 3DO, écran 4:3)
+  3ds.png        : Nintendo 3DS (3DS aqua ouverte de face sur un bureau de fan : figurines, cartes RA, bloc « ? » ; écran du haut 5:3 = écran de la vidéo)
+  3ds.xml        : écran du haut, étirée : vidéo et capture en plein écran ; taille/position de la cartouche
+  atarilynx.png  : Atari Lynx (la console de face sur un bureau en bois, jeux et cartouches Lynx ; son écran = écran de la vidéo)
+  atomiswave.png : Atomiswave (borne assise Sammy Atomiswave dans une salle d arcade japonaise de nuit, figurines, carte mère et cartouches, machine pachislot ; écran en perspective 4 coins)
+  atomiswave_ecran.png : calque scanlines de l écran Atomiswave (1 ligne sombre sur 3 + léger vignetage), déformé avec la vidéo
+  cave.png       : CAVE (Sega New Astro City écran vertical dans une salle hommage aux shoot'em up CAVE : tirs néon au plafond, avion DoDonPachi suspendu, médailles abeilles, maquettes, blouson de pilote ; perspective 4 coins)
+  cave_ecran.png : calque scanlines VERTICALES de l écran cave (sens tate comme les bornes d origine), déformé avec la vidéo
+  dreamcast.png  : Dreamcast (chambre de fan, écran 4:3)
+  gamegear.png   : Game Gear (la console sur un présentoir en plexi posé sur des cartons, chambre 1992 : peluche Sonic et figurine Tails, affiches Sonic 2, Streets of Rage et Mortal Kombat, Wide Gear, Master Gear Converter, TV Tuner, lampe de bureau) ; écran LCD en haut, étirée
+  gamegear_ecran.png : calque grille LCD de l écran Game Gear (grille sombre de 3 px, lignes et colonnes), posé sur la vidéo
+  gb.png         : Game Boy (la console posée de face sur une étagère 1990, son écran LCD = écran de la vidéo)
+  gb.xml         : salon_couleur A9840C + salon_saturation 0 + calque gb_ecran.png = écran olive façon DMG
+  gb_ecran.png   : calque écran LCD Game Boy (voile vert + grille claire de 3 px), posé sur la vidéo
+  gba.png        : Game Boy Advance (GBA violette de face sur un bureau, figurines Samus et Link, cartouches ; son écran = écran de la vidéo)
+  gbc.png        : Game Boy Color (GBC Atomic Purple en gros plan, chambre de soirée vers 2000 dans les tons sombres bleu/violet,
+                   Game Boy Camera/Printer, Pocket Pikachu, figurines, lampe à lave ; son écran LCD = écran de la vidéo)
+  gbc.xml        : écran 10:9 étiré, couleurs d origine ; taille/position de la cartouche dans le carrousel
+  gbc2players.png : Game Boy Color 2 joueurs (2 GBC violette et turquoise reliées par câble link, chambre de nuit vers 2000, 2 écrans)
+  gbc2players.xml : 2 écrans (salon_ecran2 true + salon_video2_pos/taille) ; taille/position de la cartouche
+  gc.png         : GameCube (nom de thème gc : chambre de fan 2002, trophées façon Melee, écran 4:3)
+  library.png    : Library (magazines, manuels : page verticale sur un pupitre, image étirée pour remplir la page)
+  megaduck.png   : Mega Duck (la console de face sur une étagère 1993, boîte Creatronic, son écran LCD = écran de la vidéo)
+  megaduck.xml   : même écran olive que gb (salon_couleur A9840C + salon_saturation 0)
+  megaduck_ecran.png : calque écran LCD de megaduck.png (262x245 px)
+  mess.png       : MESS (atelier de machines rares)
+  neogeo.png     : Neo Geo (bureau de fan SNK : console AES avec cartouche The King of Fighters '94 et stick, TV de face, enseigne Neo Geo, mini borne, figurines, affiches, lampe à lave) ; écran 4:3 en haut, étirée
+  ngp.png        : Neo Geo Pocket (la console Platinum Silver sur un présentoir en plexi, étagère de fan SNK fin des années 90 : boîte de la console, figurines Terry et Kyo, magazine japonais, baladeur CD, mini borne, plaque de logos SNK) ; écran LCD au centre, étirée
+  ngpc.png       : Neo Geo Pocket Color (la console bleu transparent sur une étagère de collectionneur SNK : boîte et notices, figurine Mai Shiranui, Sonic Pocket Adventure, char Metal Slug, pin's Metal Slug, King of Fighters et Neo Geo, porte-clés Terry et Athena, baladeur CD et appareil photo NeoGeo Pocket) ; écran LCD au centre, étirée
+  openlara.png   : OpenLara (Tomb Raider : caverne-temple dans la jungle, statue géante qui tient la TV à droite, saut de l ange de Lara devant la cascade ; remplace port.png pour ce système) ; écran à droite, perspective 4 coins (salon_perspective 2)
+  ps2.png        : PlayStation 2 (TV cathodique Sony sur un meuble de fan, PS2 et manettes, boîtes de jeux, écran 4:3)
+  psp.png        : PSP (la PSP-1000 sur un présentoir en plexi posé sur des boîtes UMD, bureau de 2007 de nuit : figurines Kratos et Patapon, peluches, affiches God of War, Crisis Core et Metal Gear Solid Peace Walker, UMD, Memory Stick, écouteurs) ; écran 16:9 en haut, étirée
+  screenshots.png : Screenshots (cadre photo numérique 16:9)
+  snes.png       : Super Nintendo (chambre de fan années 90, lampe Super Nintendo, affiches, console et manettes sur le bureau, écran 4:3)
+  vectrex.png    : Vectrex (la console de face sur un bureau, son écran vertical = écran de la vidéo, boîtes et overlays de jeux)
+  wii.png        : Wii (TV 16:9 sur un meuble blanc, console, Wiimote et Nunchuk, rangée de jeux Wii au premier plan)
+  wiiu.png       : Wii U (bureau blanc de fan, GamePad sur son socle, amiibo, jeux Wii U ; écran 16:9)
+  windows.png    : Windows (setup PC gamer moderne, écran 16:9 ; remplace _default16 pour ce système)
+  windows.xml    : non étirée : vieux jeux PC en 4:3
+  xbox.png       : Xbox (meuble de fan vert et noir, TV cathodique, console Xbox et manettes, figurine Master Chief, écran 4:3)
+
+Collections
+  auto-lightgun.png : collection automatique Lightgun (stand de tir forain, collection de pistolets) ; non étirée, support mixte
+  auto-racedriving.png : collection automatique Course (genre « Race, Driving » de resources/genres.xml => thème auto-racedriving) :
+                   garage de stand, télé dans un mur de pneus, F1 qui sort du mur ; écran 16:9, non étirée, supports mixtes
+  burnout.png    : collection Burnout (Burnout.xcc : voiture qui traverse le mur du salon) ; formats mélangés 4:3/16:9 : non étirée, support mixte
+  castlevania.png : collection Castlevania (Castlevania.xcc : salon gothique du château de Dracula) ; non étirée, support mixte
+  Dragon Ball Z.png : collection Dragon Ball Z (Dragon Ball Z.xcc : salon Capsule Corp, Shenron) ; non étirée, support mixte
+  onimusha.png   : collection Onimusha (collection à créer sous ce nom : demeure de samouraï envahie par les démons) ; non étirée, support mixte
+  Resident Evil.png : collection Resident Evil (hall du commissariat R.P.D. de RE2, grande toile de projection en perspective, projecteur au plafond, mallette de virus et Mr. Raccoon sur le comptoir, Mr. X qui traverse le mur) ; perspective 4 coins (plein écran), support mixte
+  streets of rage.png : collection streets of rage (bar au néon après la bagarre, écran à droite) ; non étirée, support mixte
+  Tomb Raider.png : collection Tomb Raider (même décor que openlara.png) ; perspective 4 coins (plein écran), support mixte
+
+Variantes (dossier extérieur _bobmedia seulement) : les fichiers *_alt.png (3ds_alt, gbc_alt) et Dragonball.png sont des
+versions de rechange, jamais lues automatiquement : renommer en <système>.png pour les utiliser.
+
+Collections automatiques : nom de thème auto-<nom> (auto-favorites, auto-lastplayed, auto-allgames, auto-lightgun, auto-wheel...)
+Collections perso : le fichier porte le nom exact de la collection (espaces compris), liste des noms reconnus : collections.info (racine du thème)

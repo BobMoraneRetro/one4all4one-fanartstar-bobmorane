@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Free games by Locomalito, the Spanish independent developer of retro-styled titles such as Maldita Castilla and Hydorah.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos gratuitos do Locomalito, desenvolvedor independente espanhol de títulos de estilo retrô como Maldita Castilla e Hydorah.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Free games by Locomalito, the Spanish independent developer of retro-styled titles such as Maldita Castilla and Hydorah.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos gratuitos de Locomalito, desarrollador independiente español de títulos de estilo retro como Maldita Castilla e Hydorah.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux gratuits de Locomalito, développeur indépendant espagnol de titres au style rétro comme Maldita Castilla et Hydorah.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Kostenlose Spiele von Locomalito, dem spanischen Indie-Entwickler von Retro-Titeln wie Maldita Castilla und Hydorah.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Locomalito</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2007</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Locomalito</text>
+		</text>
+	</view>
+</theme>

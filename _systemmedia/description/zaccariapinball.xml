@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Zaccaria Pinball, faithful digital recreations of the tables of the Italian pinball maker Zaccaria.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Zaccaria Pinball, recriações digitais fiéis das mesas da fabricante italiana de pinball Zaccaria.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Zaccaria Pinball, faithful digital recreations of the tables of the Italian pinball maker Zaccaria.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Zaccaria Pinball, recreaciones digitales fieles de las mesas del fabricante italiano Zaccaria.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Zaccaria Pinball, recréations numériques fidèles des flippers du fabricant italien Zaccaria.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Zaccaria Pinball, getreue digitale Nachbildungen der Flippertische des italienischen Herstellers Zaccaria.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Zaccaria Pinball</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2016</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Magic Pixel</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ru">
+		<desactive>Выключено</desactive>
+		<default>По умолчанию</default>
+		<active>Включено</active>
+		<novideo>Выключено</novideo>
+		<videoback>Включено</videoback>
+		<intheme>Папка темы - По умолчанию</intheme>
+		<extfolder>Внешняя папка</extfolder>
+		<nodates>Нет даты</nodates>
+		<playcountone>игра</playcountone>
+		<playcount>игр</playcount>
+		<noplaycount>Ни разу не запускалась</noplaycount>
+		<playerss>игроки</playerss>
+		<player>игрок</player>
+		<nogametime>Ни разу не играли</nogametime>
+		<noplayerdata>Неизвестно</noplayerdata>
+		<noratings>Нет оценки</noratings>
+		<notesur100>из 100</notesur100>
+		<opt_nomjeu>ИГРЫ - Название игры</opt_nomjeu>
+		<nomjeucomplet>Полное</nomjeucomplet>
+		<nomjeucourt>Без скобок</nomjeucourt>
+		<presgame1>Это игра жанра</presgame1>
+		<presgame2>разработчик</presgame2>
+		<presgame3>платформа</presgame3>
+		<presgame4>- Доступные языки :</presgame4>
+		<nomjeulabel>Название игры :</nomjeulabel>
+		<genrelabel>Жанр :</genrelabel>
+		<devlabel>Разработчик :</devlabel>
+		<langlabel>Языки :</langlabel>
+		<gametimelabel>Время игры :</gametimelabel>
+		<lastgamelabel>Последняя игра:</lastgamelabel>
+		<viewbasicgrid>Basic: Простая сетка</viewbasicgrid>
+		<jeux>игр</jeux>
+		<longselect>Долгое нажатие "select"</longselect>
+		<favuniquement>Только избранное</favuniquement>
+		<tslesjeux>Все игры</tslesjeux>
+		<fanartstarsyst>Классический</fanartstarsyst>
+		<fanartmodern>Современный 1 (несовместим с навигационной цепочкой)</fanartmodern>
+		<fanartmodern2>Современный 2 (совместим с навигационной цепочкой)</fanartmodern2>
+		<fanartfreshone>Только фанарты, отобранные FreshOne</fanartfreshone>
+		<fanartsystcustom>Фанарты из папки custom, иначе FreshOne</fanartsystcustom>
+		<videoangled>Включено (маленькое, под углом)</videoangled>
+		<hardware>Оборудование</hardware>
+		<charsystem>Персонажи</charsystem>
+		<figurines>Фигурки (требуется тема Animatics)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>Положение кнопок</iconsetposition>
+		<skyblue>небесно-голубой</skyblue>
+		<purple>фиолетовый</purple>
+		<red>красный</red>
+		<aqua>небесно-голубой</aqua>
+		<orange>оранжевый</orange>
+		<green>зелёный</green>
+		<yellow>жёлтый</yellow>
+		<pink>розовый</pink>
+		<grey>тёмно-серый</grey>
+		<lightgrey>светло-серый</lightgrey>
+		<navy>синий alt</navy>
+		<violet>фиолетовый</violet>
+		<candy>candy</candy>
+		<redalt>красный alt</redalt>
+		<yellowalt>жёлтый alt</yellowalt>
+		<greenalt>зелёный alt</greenalt>
+		<purplealt>фиолетовый alt</purplealt>
+		<classiquesyst>Исчезновение с отдалением</classiquesyst>
+		<no>Нет</no>
+		<yes>Да</yes>
+		<thumb>Под 2D-коробку</thumb>
+		<boxart>Под 3D-коробку</boxart>
+		<starrotate>Да</starrotate>
+		<nostarrotate>Нет</nostarrotate>
+		<deactive>Выключено</deactive>
+		<speedslow1>Медленно+</speedslow1>
+		<speedslow2>Медленно++</speedslow2>
+		<starvideoang>Наклонное</starvideoang>
+		<starvideodef>Стандарт</starvideodef>
+		<starvideobig>Большое</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Приятный серый</griscl>
+		<noirombre>Чёрная рамка + тень</noirombre>
+		<blancombre>Белая рамка + тень</blancombre>
+		<ombre>Только тень</ombre>
+		<rien>Без оформления</rien>
+		<presetshowbig>RFE Show большой просмотр</presetshowbig>
+		<presetshowsmall>RFE Show малый просмотр</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar квадрат</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (Быстрая навигация)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Под большой панелью (как в Steam)</deckgauche>
+		<deckcentre>В центре ряда (увеличение + свечение)</deckcentre>
+		<decknormal>Обычно</decknormal>
+		<spotvideodroite>Справа, поверх коробок</spotvideodroite>
+		<spotvideoaucune>Отключено</spotvideoaucune>
+		<spotvideogauche>Слева, с информацией</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Оставить логотип</decklogogarder>
+		<decklogobandeau>Инфополоса (логотип скрыт)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Назад к предыдущей папке</retourdossier>
+		<ra_moncompte>Мой аккаунт</ra_moncompte>
+		<ra_succesjeu>Достижения игры</ra_succesjeu>
+		<opt_raaffichage>ИГРЫ - RetroAchievements (внешний инструмент)</opt_raaffichage>
+		<raaffichagepermanent>Постоянный показ</raaffichagepermanent>
+		<raaffichagetemporaire>Несколько секунд</raaffichagetemporaire>
+		<noteetoile>Звезда</noteetoile>
+		<notecoeur>Сердце</notecoeur>
+		<notemanette>Геймпад</notemanette>
+		<notepouce>Палец вверх</notepouce>
+		<notetrophee>Кубок</notetrophee>
+		<notefantome>Призрак</notefantome>
+		<notecrane>Череп</notecrane>
+		<notepourcent>В %</notepourcent>
+		<wheelclic>Щелчок в стиле Hyperspin</wheelclic>
+		<bulle>Пузырь</bulle>
+		<clic>Простой щелчок</clic>
+		<clicgrave>Глухой щелчок</clicgrave>
+		<frottement>Трение</frottement>
+		<poc>Хлопок</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>ОБЩИЕ - Приветственное сообщение</opt_lismoi>
+		<opt_iconset>ОБЩИЕ - Вид значков справки</opt_iconset>
+		<opt_colorhelp>ОБЩИЕ - Цвета текста справки</opt_colorhelp>
+		<opt_horlogecouleur>ОБЩИЕ - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>ОБЩИЕ - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>СИСТЕМЫ - Вид списка систем</opt_systemview>
+		<opt_imagefondcops1>СИСТЕМЫ - Выбор фанартов системы</opt_imagefondcops1>
+		<opt_video4starmodern>СИСТЕМЫ - Видео геймплея в виде систем</opt_video4starmodern>
+		<opt_video4starclassic>СИСТЕМЫ - Видео геймплея в виде систем</opt_video4starclassic>
+		<opt_systviewselec>СИСТЕМЫ - Изображение системы в колесе</opt_systviewselec>
+		<opt_breadcrumbsonoff>СИСТЕМЫ - Вертикальное меню слева (классический вид систем)</opt_breadcrumbsonoff>
+		<arianeauto>Автоматически (по сортировке систем)</arianeauto>
+		<arianecategories>Категории (сортировка по типу оборудования)</arianecategories>
+		<arianealpha>Буквы от A до Z (по алфавиту)</arianealpha>
+		<arianealphavoisines>Буква и соседние (по алфавиту)</arianealphavoisines>
+		<arianeconstructeur>Производители (по производителю)</arianeconstructeur>
+		<arianedecennie>Десятилетия (по году выпуска)</arianedecennie>
+		<arianeautres>ДРУГИЕ</arianeautres>
+		<opt_metadataonoff>СИСТЕМЫ - Информация о системе (классический вид систем)</opt_metadataonoff>
+		<opt_systannonce>ИГРЫ - Показывать текущую систему при открытии</opt_systannonce>
+		<opt_infosmax>ИГРЫ - Показать расширенную инфопанель?</opt_infosmax>
+		<opt_gamewheelsound>ОБЩИЕ - Звук прокрутки</opt_gamewheelsound>
+		<opt_boxorthumb>ИГРЫ - Отображаемая коробка игры</opt_boxorthumb>
+		<opt_fanarttransition>ИГРЫ - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>ИГРЫ - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>ИГРЫ - Вращение диска</opt_cdvitesse>
+		<cdnormale>Обычное</cdnormale>
+		<cdlente>Медленное</cdlente>
+		<cdrapide>Быстрое</cdrapide>
+		<cdtresrapide>Очень быстрое</cdtresrapide>
+		<cdimmobile>Неподвижный</cdimmobile>
+		<opt_umdrotation>ИГРЫ - Вращение UMD (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>ИГРЫ - Выделять выбранную игру</opt_selectionvaleur>
+		<selegere>Слабо</selegere>
+		<selmarquee>Сильно</selmarquee>
+		<opt_videojeu>ИГРЫ - Видео игры</opt_videojeu>
+		<vjcapture>Скриншот, затем видео</vjcapture>
+		<vjseule>Только видео</vjseule>
+		<vjfondu>Видео с плавным появлением</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>ИГРЫ - Box case type</opt_typeboite>
+		<opt_contourboite>ИГРЫ - Box outline (case)</opt_contourboite>
+		<opt_deckespace>ИГРЫ - Расстояние между коробками</opt_deckespace>
+		<opt_iconenote>ИГРЫ - Значок оценки</opt_iconenote>
+		<opt_extfolderbezelsyst>ДОПОЛНИТЕЛЬНО - Рамки (bezel) систем</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>ДОПОЛНИТЕЛЬНО - Логотипы издателей игр</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>ДОПОЛНИТЕЛЬНО - Фанарт систем</opt_extfolderfanart>
+		<opt_extfolderlogosyst>ДОПОЛНИТЕЛЬНО - Логотип системы</opt_extfolderlogosyst>
+		<opt_extfoldersalon>ДОПОЛНИТЕЛЬНО - Расположение фонов вида RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_perfmachine>ДОПОЛНИТЕЛЬНО - Режим для слабых машин</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - Виньетирование фона</opt_salonvignette>
+		<vignleger>Слабое</vignleger>
+		<vignfort>Сильное</vignfort>
+		<opt_deckselection>BIG ART - Положение выбранной игры</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Логотип во время видео</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Видео</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - Поворот коробок SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - Угол коробок игр</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Носитель игры (диск, картридж)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Скорость анимации прокрутки</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Размер видео предпросмотра</opt_starvideo>
+		<opt_starvideocadre>BOXART - Рамка видео предпросмотра</opt_starvideocadre>
+		<vcadreactuel>Текущая рамка</vcadreactuel>
+		<vcadreombre>Только тень</vcadreombre>
+		<vcadreecranfin>Тонкая рамка</vcadreecranfin>
+		<vcadrebois>Дерево</vcadrebois>
+		<vcadremetal>Шлифованный металл</vcadremetal>
+		<vcadrelumineux>Светящийся экран</vcadrelumineux>
+		<vcadretv>ЭЛТ-телевизор</vcadretv>
+		<vcadregalerie>Галерея</vcadregalerie>
+		<vcadrepolaroid>Полароид</vcadrepolaroid>
+		<vcadreneon>Неон</vcadreneon>
+		<vcadrehologramme>Голограмма</vcadrehologramme>
+		<vcadreverre>Матовое стекло</vcadreverre>
+		<vcadrecarbone>Карбон LED</vcadrecarbone>
+		<vcadreneondouble>Двойной неон</vcadreneondouble>
+		<vcadregaming>Игровая</vcadregaming>
+		<vcadrepinceau>Мазки кисти</vcadrepinceau>
+		<vcadretechnodore>Золотое техно</vcadretechnodore>
+		<vcadretechnoargent>Серебряное техно</vcadretechnoargent>
+		<vcadreneonelec>Электрический неон</vcadreneonelec>
+		<vcadrevitre>Стекло</vcadrevitre>
+		<vcadreflammes>Пламя</vcadreflammes>
+		<vcadreencre>Чернила</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Торцы переворачивающейся коробки</opt_boite3dtranche>
+		<b3tcharniere>Логотип с одной стороны, открывание с другой</b3tcharniere>
+		<b3tdeuxcotes>Логотип с обеих сторон</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - Цвет сетки</opt_gridcolor>
+		<opt_squarecadre>КВАДРАТ - Оформление квадратов с играми</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>СИСТЕМЫ - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>СИСТЕМЫ - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>СИСТЕМЫ - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>СИСТЕМЫ - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>ИГРЫ - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Приветствие и благодарности</planche00>
+		<planche01>01 - Виды систем</planche01>
+		<planche02>02 - Классический вид: изображение системы</planche02>
+		<planche03>03 - Классический вид: подробности</planche03>
+		<planche04>04 - Фанарты систем, Modern и Z-Spin</planche04>
+		<planche05>05 - 11 видов игр</planche05>
+		<planche06>06 - FanartStar Boxart: коробки и сведения</planche06>
+		<planche07>07 - FanartStar Boxart: видео</planche07>
+		<planche08>08 - Коробки и носители</planche08>
+		<planche09>09 - 22 футляра</planche09>
+		<planche10>10 - Носитель: настройки по системам</planche10>
+		<planche11>11 - Фанарты игр и выбор</planche11>
+		<planche12>12 - Big Art, Spotlight, Квадрат, 16/9 и 4/3</planche12>
+		<planche13>13 - Виды RFE</planche13>
+		<planche14>14 - RFE Retrofist: экран телевизора</planche14>
+		<planche15>15 - Show Big &amp; Small: переворачивающаяся коробка</planche15>
+		<planche16>16 - Общие параметры видов игр</planche16>
+		<planche17>17 - Общие: звуки, справка, часы</planche17>
+		<planche18>18 - Настройка своими папками</planche18>
+		<planche19>19 - Свои медиафайлы игр</planche19>
+		<planche20>20 - Оформление папки</planche20>
+		<planche21>21 - Какое изображение победит?</planche21>
+		<planche22>22 - Сгруппированные системы</planche22>
+		<planche23>23 - Слабый компьютер и ссылки</planche23>
+	</variables>
+</theme>

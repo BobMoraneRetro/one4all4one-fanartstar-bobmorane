@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The Ur-Quan Masters, the open-source port of Star Control II, the celebrated 1992 space exploration and adventure game.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>The Ur-Quan Masters, port livre de Star Control II, o célebre jogo de exploração espacial e aventura de 1992.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>The Ur-Quan Masters, the open-source port of Star Control II, the celebrated 1992 space exploration and adventure game.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>The Ur-Quan Masters, port libre de Star Control II, el célebre juego de exploración espacial y aventura de 1992.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>The Ur-Quan Masters, portage libre de Star Control II, le célèbre jeu d'exploration spatiale et d'aventure de 1992.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>The Ur-Quan Masters, der quelloffene Port von Star Control II, dem gefeierten Weltraum-Abenteuerspiel von 1992.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Ur-Quan Masters</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

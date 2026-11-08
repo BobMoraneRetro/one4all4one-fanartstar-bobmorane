@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PC-based arcade games from Global VR, the American maker of racing, hunting and sports cabinets, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade baseados em PC da Global VR, fabricante americana de máquinas de corrida, caça e esportes, jogados aqui pelo TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PC-based arcade games from Global VR, the American maker of racing, hunting and sports cabinets, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade basados en PC de Global VR, fabricante estadounidense de máquinas de carreras, caza y deportes, jugados aquí con TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade sur base PC de Global VR, fabricant américain de bornes de course, de chasse et de sport, joués ici via TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PC-basierte Arcade-Spiele von Global VR, dem US-Hersteller von Renn-, Jagd- und Sportautomaten, hier über TeknoParrot spielbar.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Global VR</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Global VR</text>
+		</text>
+	</view>
+</theme>

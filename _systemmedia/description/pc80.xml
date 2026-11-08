@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>NEC's 1979 PC-8001, one of the first successful Japanese personal computers and the start of the PC-8000 series.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O PC-8001 da NEC de 1979, um dos primeiros computadores pessoais japoneses de sucesso e o início da série PC-8000.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>NEC's 1979 PC-8001, one of the first successful Japanese personal computers and the start of the PC-8000 series.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El PC-8001 de NEC de 1979, uno de los primeros ordenadores personales japoneses de éxito y el inicio de la serie PC-8000.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le PC-8001 de NEC sorti en 1979, l'un des premiers ordinateurs personnels japonais à succès et le début de la série PC-8000.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>NECs PC-8001 von 1979, einer der ersten erfolgreichen japanischen Personal Computer und Beginn der PC-8000-Reihe.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PC-8001</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1979</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>NEC</text>
+		</text>
+	</view>
+</theme>

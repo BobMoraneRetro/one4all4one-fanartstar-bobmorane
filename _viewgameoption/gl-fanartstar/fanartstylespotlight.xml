@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetdeck}, ${presetshowbig}, ${presetshowsmall}, ${presetspotlight}, ${presetsquare}, ${presetstar169}, ${presetstar43}, ${presetstarbox}, ${presetstarboxloop}, ${presettraviolta_alt}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
+		<image name="fanart" extra="true">
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+		<image name="defautfanart" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="presetstarboxloop" displayName="${presetstarboxloop}" inherits="grid">
+		<image name="fanart" extra="true">
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+		<image name="defautfanart" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="presetsquare" displayName="${presetsquare}" inherits="grid">
+		<image name="fanart" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+		<image name="defautfanart" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="presetstar169" displayName="${presetstar169}" inherits="grid">
+		<image name="fanart" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+		<image name="defautfanart" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="presetstar43" displayName="${presetstar43}" inherits="grid">
+		<image name="fanart" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+		<image name="defautfanart" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.45" to="0.5" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="presettraviolta_alt" displayName="${presettraviolta_alt}" inherits="gamecarousel">
+		<image name="fanartpreset" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="presetspotlight" displayName="${presetspotlight}" inherits="grid">
+		<image name="spot_fond" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="presetdeck" displayName="${presetdeck}" inherits="grid">
+		<image name="deck_fond" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="presetshowbig" displayName="${presetshowbig}" inherits="gamecarousel">
+		<image name="fanartpresetshow" ifSubset="showvideo:showvideofenetre" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="presetshowsmall" displayName="${presetshowsmall}" inherits="gamecarousel">
+		<image name="fanartpresetshow" ifSubset="showvideo:showvideofenetre" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="-0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.9" to="1" duration="200" mode="easeOut"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="250" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="0.035" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.015" begin="300" duration="14000" mode="easeInOut"/>
+				<animation property="scale" from="1.10" to="1" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetX" from="0.035" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.015" to="0" begin="14300" duration="14000" mode="easeInOut"/>
+			</storyboard>
+		</image>
+	</customView>
+</theme>

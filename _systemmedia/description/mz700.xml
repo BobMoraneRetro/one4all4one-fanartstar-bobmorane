@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sharp's 1982 MZ-700 home computer, sold in Japan and Europe, with an optional built-in plotter printer.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O computador doméstico MZ-700 da Sharp de 1982, vendido no Japão e na Europa, com impressora plotter integrada opcional.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sharp's 1982 MZ-700 home computer, sold in Japan and Europe, with an optional built-in plotter printer.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El ordenador doméstico MZ-700 de Sharp de 1982, vendido en Japón y Europa, con impresora trazadora integrada opcional.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>L'ordinateur familial MZ-700 de Sharp sorti en 1982, vendu au Japon et en Europe, avec une imprimante traceur intégrée en option.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sharps Heimcomputer MZ-700 von 1982, in Japan und Europa verkauft, mit optionalem eingebautem Plotter-Drucker.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>MZ-700</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1982</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sharp</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiercouleurjeu} : valeur : 0 (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
+	${boxart_ecart_selection_2d} : valeur : 2.20 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_ecart_selection_3d} : valeur : 3.80 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_nb_boites_2d} : Boxart (presetstarbox, carrousel) : nombre de boîtes affichées et écart, boîtes 2D puis 3D (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_nb_boites_2d_horizontales} : vue Salon : nombre de boîtes 2D horizontales (snes, n64...) selon le cran d espacement (= starlogos2d x 0.8) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_nb_boites_3d} : valeur : 29 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
+	${media_box2d} : boîte 2D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box2d_missing} : vrai si le média « box2d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box3d} : boîte 3D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box3d_missing} : vrai si le média « box3d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_image} : capture du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_support} : support physique du jeu (cartouche, ou disque pour les systèmes à disque) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_support_exists} : vrai si le média « support » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${path_salon} : vue RFE Retrofist Nostalgia : dossier _salon (décors et réglages par système), dans le thème ou dans _bobmedia/_gamemedia (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des décors de la vue RFE Retrofist Nostalgia »)
+	${salon_calque} : vue Salon : image posée sur l écran (vitre, quadrillage LCD...), vide = aucune ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_capture_pos} : vue Salon : centre de la capture d écran du jeu ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_capture_taille} : vue Salon : largeur hauteur de la capture d écran du jeu ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_coin_bd} : vue Salon : perspective 4 coins, coin bas-droit de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_coin_bg} : vue Salon : perspective 4 coins, coin bas-gauche de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_coin_hd} : vue Salon : perspective 4 coins, coin haut-droit de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_coin_hg} : vue Salon : perspective 4 coins, coin haut-gauche de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_coins_proportions} : vue Salon : perspective 4 coins, 0 = l image remplit l écran, 1 = proportions gardées (bandes noires) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_couleur} : vue Salon : couleur multipliée sur la vidéo et la capture (FFFFFFFF = aucune ; ex. 8BAC0F pour la Game Boy) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_defaut} : vue Salon : décor et réglages par défaut, _default (systèmes 4:3), _default16 (systèmes 16:9 listés), ou selon le type du système : arcade, computers (computer), extension, pinball, port, portable, auto-collection, custom-collection, retrobat (type vide : retrobat, kodi, screenshots) (définie dans ce fichier)
+	${salon_disque_depart} : vue Salon : x du disque caché derrière la boîte sélectionnée (définie dans ce fichier)
+	${salon_disque_taille} : vue Salon : taille maximale du disque (définie dans ce fichier ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
+	${salon_disque_tourne} : vue Salon : true = le disque tourne (systèmes CD/DVD par défaut), false = il sort sans tourner ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_disque_x} : vue Salon : x du disque une fois sorti de la boîte (définie dans ce fichier ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
+	${salon_disque_y} : vue Salon : hauteur du centre du disque (définie dans ce fichier ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
+	${salon_ecran2} : vue Salon : true = 2e écran (2 consoles reliées, ex. gbc2players), même vidéo, capture, couleur et calque que le 1er ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_persp_angle_x} : vue Salon : perspective par angles, rotation autour de l axe vertical en degrés (shader Angled_border_gradient, tiltAngleX) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_persp_angle_y} : vue Salon : perspective par angles, rotation autour de l axe horizontal en degrés (tiltAngle) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_persp_profondeur} : vue Salon : perspective par angles, profondeur (1 = normale, plus petit = plus marquée) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_perspective} : vue Salon : perspective de l écran du décor (0 = aucune, 1 = angles, 2 = 4 coins) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_saturation} : vue Salon : saturation de la vidéo et de la capture (1 = normale, 0 = noir et blanc, à combiner avec salon_couleur) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_support_mixte} : vue Salon : true = disques et cartes mélangés, la forme de l image (ronde ou non) décide de la rotation (shader support_tourne) ; défaut wiiu, xbox360, openbor, mugen, ikemen, windows et les collections (définie dans ce fichier)
+	${salon_support_umd} : vue Salon : true = support UMD (psp) : seul le disque intérieur tourne (shader support_umd), la coque reste fixe (définie dans ce fichier ; valeur selon l option « JEUX - Rotation des UMD (PSP) »)
+	${salon_umd_cx} : vue Salon : UMD : centre horizontal du disque dans l image du support (fraction de la largeur) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_umd_cy} : vue Salon : UMD : centre vertical du disque dans l image du support (fraction de la hauteur) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_umd_rayon} : vue Salon : UMD : rayon du disque qui tourne (fraction de la largeur de l image) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_umd_rayon_centre} : vue Salon : UMD : rayon du centre fixe (moyeu « UMD ») qui ne tourne pas (fraction de la largeur de l image) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_video2_pos} : vue Salon : centre du 2e écran (si salon_ecran2) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_video2_taille} : vue Salon : largeur hauteur du 2e écran (si salon_ecran2) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_video_etiree} : vue Salon : true = vidéo étirée à la taille de l écran de la TV (size), false = proportions gardées (maxSize) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_video_pos} : vue Salon : centre de l écran de la TV (vidéo sous le décor) (définie dans ce fichier)
+	${salon_video_taille} : vue Salon : largeur hauteur de l écran de la TV (définie dans ce fichier)
+	${selopacite} : opacité des jeux non sélectionnés dans les grilles (1, 0.7 ou 0.45) (définie dans ce fichier ; valeur selon l option « JEUX - Mise en valeur du jeu sélectionné »)
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetsalon}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<selopacite ifSubset="selectionvaleur:legere">0.7</selopacite>
+		<selopacite ifSubset="selectionvaleur:marquee">0.45</selopacite>
+		<selopacite ifSubset="selectionvaleur:aucune">1</selopacite>
+		<salon_video_pos>0.5 0.2625</salon_video_pos>
+		<salon_video_taille>0.3906 0.388</salon_video_taille>
+		<salon_capture_pos>0.5 0.2625</salon_capture_pos>
+		<salon_capture_taille>0.3906 0.388</salon_capture_taille>
+		<salon_disque_depart>0.5</salon_disque_depart>
+		<salon_disque_x>0.69</salon_disque_x>
+		<salon_disque_y>0.65</salon_disque_y>
+		<salon_disque_taille>0.36 0.64</salon_disque_taille>
+		<salon_video_etiree>false</salon_video_etiree>
+		<salon_disque_tourne>false</salon_disque_tourne>
+		<salon_disque_tourne if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' ||
+					{system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' ||
+					{system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' ||
+					{system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns' || {system.theme} == 'wiiu' || {system.theme} == 'ps4' || {system.theme} == 'ps5' || {system.theme} == 'snes-msu1'">true</salon_disque_tourne>
+		<salon_couleur>FFFFFFFF</salon_couleur>
+		<salon_saturation>1</salon_saturation>
+		<salon_calque></salon_calque>
+		<salon_ecran2>false</salon_ecran2>
+		<salon_video2_pos>0.5 0.5</salon_video2_pos>
+		<salon_video2_taille>0 0</salon_video2_taille>
+		<salon_support_mixte>false</salon_support_mixte>
+		<salon_support_mixte if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360' || {system.theme} == 'openbor' || {system.theme} == 'mugen' || {system.theme} == 'ikemen' || {system.theme} == 'windows'">true</salon_support_mixte>
+		<salon_support_mixte if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">true</salon_support_mixte>
+		<salon_support_umd>false</salon_support_umd>
+		<salon_support_umd if="{system.theme} == 'psp'">true</salon_support_umd>
+		<salon_support_umd ifSubset="umdrotation:umdnon">false</salon_support_umd>
+		<salon_support_umd ifSubset="umdrotation:umdoui" if="{system.theme} == 'psp'">true</salon_support_umd>
+		<salon_umd_cx>0.5</salon_umd_cx>
+		<salon_umd_cy>0.49</salon_umd_cy>
+		<salon_umd_rayon>0.45</salon_umd_rayon>
+		<salon_umd_rayon_centre>0.23</salon_umd_rayon_centre>
+		<salon_perspective>0</salon_perspective>
+		<salon_persp_angle_x>0</salon_persp_angle_x>
+		<salon_persp_angle_y>0</salon_persp_angle_y>
+		<salon_persp_profondeur>1</salon_persp_profondeur>
+		<salon_coin_hg>0 0</salon_coin_hg>
+		<salon_coin_hd>1920 0</salon_coin_hd>
+		<salon_coin_bd>1920 1080</salon_coin_bd>
+		<salon_coin_bg>0 1080</salon_coin_bg>
+		<salon_coins_proportions>0</salon_coins_proportions>
+		<salon_defaut>_default</salon_defaut>
+		<salon_defaut if="{system.theme} == 'ps3' || {system.theme} == 'ps4' || {system.theme} == 'xbox360' || {system.theme} == 'wiiu' || {system.theme} == 'switch' || {system.theme} == 'psvita' || {system.theme} == 'windows' || {system.theme} == 'steam'">_default16</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'arcade'">arcade</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'computer'">computers</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'extension'">extension</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'pinball'">pinball</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'port'">port</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'portable'">portable</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'auto collection'">auto-collection</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'custom collection'">custom-collection</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == ''">retrobat</salon_defaut>
+	</variables>
+	<include>${path_salon}/${salon_defaut}.xml</include>
+	<include>${path_salon}/${system.theme}.xml</include>
+	<customView name="presetsalon" displayName="${presetsalon}" inherits="gamecarousel">
+		<control name="fanart_extra,screenshot_extra,video_extra">
+			<visible>false</visible>
+		</control>
+		<image name="md_image">
+			<visible>false</visible>
+		</image>
+		<image name="gamecarouselLogo">
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="salonfond" extra="true">
+			<path>firstfile("${path_salon}/" + {system:theme} + ".png", "${path_salon}/${salon_defaut}.png")</path>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>5</zIndex>
+		</image>
+		<image name="salonvignettage" extra="true">
+			<visible ifSubset="salonvignette:leger">true</visible>
+			<visible ifSubset="salonvignette:fort">true</visible>
+			<visible ifSubset="salonvignette:aucun">false</visible>
+			<path>${themePath}/_viewgame/fanartstar/overlay.png</path>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<color>000000</color>
+			<opacity ifSubset="salonvignette:leger">0.6</opacity>
+			<opacity ifSubset="salonvignette:fort">1</opacity>
+			<zIndex>6</zIndex>
+		</image>
+		<image name="salonnoir" if="${salon_perspective} == 0" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/salon/noir.png</path>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<zIndex>2.5</zIndex>
+		</image>
+		<image name="salonimage" if="!${salon_video_etiree} &amp;&amp; ${salon_perspective} == 0" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_capture_taille}</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecapture" if="!${salon_video_etiree} &amp;&amp; ${salon_perspective} == 0" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_capture_taille}</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="salonimageetiree" if="${salon_video_etiree} &amp;&amp; ${salon_perspective} == 0" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_capture_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecaptureetiree" if="${salon_video_etiree} &amp;&amp; ${salon_perspective} == 0" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_capture_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<video name="salonvideo" if="!${salon_video_etiree} &amp;&amp; ${salon_perspective} == 0" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_video_taille}</maxSize>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>3</zIndex>
+		</video>
+		<video name="salonvideoetiree" if="${salon_video_etiree} &amp;&amp; ${salon_perspective} == 0" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>3</zIndex>
+		</video>
+		<image name="saloncalque" if="${salon_perspective} == 0" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${salon_calque}</path>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>4</zIndex>
+		</image>
+		<image name="salonnoirangles" if="${salon_perspective} == 1" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/salon/noir.png</path>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>${salon_persp_angle_y}</tiltAngle>
+				<tiltAngleX>${salon_persp_angle_x}</tiltAngleX>
+				<perspectiveDepth>${salon_persp_profondeur}</perspectiveDepth>
+				<borderSize>0</borderSize>
+			</shader>
+			<zIndex>2.5</zIndex>
+		</image>
+		<image name="salonimageangles" if="${salon_perspective} == 1" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_capture_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>${salon_persp_angle_y}</tiltAngle>
+				<tiltAngleX>${salon_persp_angle_x}</tiltAngleX>
+				<perspectiveDepth>${salon_persp_profondeur}</perspectiveDepth>
+				<borderSize>0</borderSize>
+			</shader>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecaptureangles" if="${salon_perspective} == 1" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_capture_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>${salon_persp_angle_y}</tiltAngle>
+				<tiltAngleX>${salon_persp_angle_x}</tiltAngleX>
+				<perspectiveDepth>${salon_persp_profondeur}</perspectiveDepth>
+				<borderSize>0</borderSize>
+			</shader>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<video name="salonvideoangles" if="${salon_perspective} == 1" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>${salon_persp_angle_y}</tiltAngle>
+				<tiltAngleX>${salon_persp_angle_x}</tiltAngleX>
+				<perspectiveDepth>${salon_persp_profondeur}</perspectiveDepth>
+				<borderSize>0</borderSize>
+			</shader>
+			<zIndex>3</zIndex>
+		</video>
+		<image name="saloncalqueangles" if="${salon_perspective} == 1" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${salon_calque}</path>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>${salon_persp_angle_y}</tiltAngle>
+				<tiltAngleX>${salon_persp_angle_x}</tiltAngleX>
+				<perspectiveDepth>${salon_persp_profondeur}</perspectiveDepth>
+				<borderSize>0</borderSize>
+			</shader>
+			<zIndex>4</zIndex>
+		</image>
+		<image name="salonnoircoins" if="${salon_perspective} == 2" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/salon/noir.png</path>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<shader>
+				<path>${themePath}/_common/shaders/ecran_4coins.glsl</path>
+				<coinHG>${salon_coin_hg}</coinHG>
+				<coinHD>${salon_coin_hd}</coinHD>
+				<coinBD>${salon_coin_bd}</coinBD>
+				<coinBG>${salon_coin_bg}</coinBG>
+				<proportions>${salon_coins_proportions}</proportions>
+				<saturationEcran>1</saturationEcran>
+			</shader>
+			<zIndex>2.5</zIndex>
+		</image>
+		<image name="salonimagecoins" if="${salon_perspective} == 2" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<shader>
+				<path>${themePath}/_common/shaders/ecran_4coins.glsl</path>
+				<coinHG>${salon_coin_hg}</coinHG>
+				<coinHD>${salon_coin_hd}</coinHD>
+				<coinBD>${salon_coin_bd}</coinBD>
+				<coinBG>${salon_coin_bg}</coinBG>
+				<proportions>${salon_coins_proportions}</proportions>
+				<saturationEcran>${salon_saturation}</saturationEcran>
+			</shader>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecapturecoins" if="${salon_perspective} == 2" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<shader>
+				<path>${themePath}/_common/shaders/ecran_4coins.glsl</path>
+				<coinHG>${salon_coin_hg}</coinHG>
+				<coinHD>${salon_coin_hd}</coinHD>
+				<coinBD>${salon_coin_bd}</coinBD>
+				<coinBG>${salon_coin_bg}</coinBG>
+				<proportions>${salon_coins_proportions}</proportions>
+				<saturationEcran>${salon_saturation}</saturationEcran>
+			</shader>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<video name="salonvideocoins" if="${salon_perspective} == 2" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<shader>
+				<path>${themePath}/_common/shaders/ecran_4coins.glsl</path>
+				<coinHG>${salon_coin_hg}</coinHG>
+				<coinHD>${salon_coin_hd}</coinHD>
+				<coinBD>${salon_coin_bd}</coinBD>
+				<coinBG>${salon_coin_bg}</coinBG>
+				<proportions>${salon_coins_proportions}</proportions>
+				<saturationEcran>${salon_saturation}</saturationEcran>
+			</shader>
+			<zIndex>3</zIndex>
+		</video>
+		<image name="saloncalquecoins" if="${salon_perspective} == 2" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${salon_calque}</path>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>${themePath}/_common/shaders/ecran_4coins.glsl</path>
+				<coinHG>${salon_coin_hg}</coinHG>
+				<coinHD>${salon_coin_hd}</coinHD>
+				<coinBD>${salon_coin_bd}</coinBD>
+				<coinBG>${salon_coin_bg}</coinBG>
+				<proportions>${salon_coins_proportions}</proportions>
+				<saturationEcran>1</saturationEcran>
+			</shader>
+			<zIndex>4</zIndex>
+		</image>
+		<image name="salonnoir2" if="${salon_ecran2}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/salon/noir.png</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<zIndex>2.5</zIndex>
+		</image>
+		<image name="salonimage2" if="${salon_ecran2} &amp;&amp; !${salon_video_etiree}" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_video2_taille}</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecapture2" if="${salon_ecran2} &amp;&amp; !${salon_video_etiree}" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_video2_taille}</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="salonimageetiree2" if="${salon_ecran2} &amp;&amp; ${salon_video_etiree}" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecaptureetiree2" if="${salon_ecran2} &amp;&amp; ${salon_video_etiree}" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<video name="salonvideo2" if="${salon_ecran2} &amp;&amp; !${salon_video_etiree}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_video2_taille}</maxSize>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>3</zIndex>
+		</video>
+		<video name="salonvideoetiree2" if="${salon_ecran2} &amp;&amp; ${salon_video_etiree}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>3</zIndex>
+		</video>
+		<image name="saloncalque2" if="${salon_ecran2}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${salon_calque}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>4</zIndex>
+		</image>
+		<gamecarousel name="gamecarousel">
+			<zIndex>10</zIndex>
+			<type>horizontal</type>
+			<pos>-0.1 0.1</pos>
+			<pos ifHelpPrompts="true">-0.1 0.08</pos>
+			<size>1.45 1</size>
+			<logoScale>1.5</logoScale>
+			<logoSize>0.350 0.350</logoSize>
+			<color>00000000</color>
+			<logoAlignment>bottom</logoAlignment>
+			<minLogoOpacity>1</minLogoOpacity>
+			<transitionSpeed ifSubset="boxstarspeed:starslow2">2000</transitionSpeed>
+			<transitionSpeed ifSubset="boxstarspeed:starslow1">1500</transitionSpeed>
+			<transitionSpeed ifSubset="boxstarspeed:stardefault">750</transitionSpeed>
+			<logoPos>0.15 0.5</logoPos>
+			<imageSource>thumbnail</imageSource>
+			<defaultTransition>instant</defaultTransition>
+			<maxLogoCount ifSubset="boxorthumb:boxart">${boxart_nb_boites_3d}</maxLogoCount>
+			<maxLogoCount ifSubset="boxorthumb:thumb">${boxart_nb_boites_2d}</maxLogoCount>
+			<maxLogoCount ifSubset="boxorthumb:thumb" if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">${boxart_nb_boites_2d_horizontales}</maxLogoCount>
+			<scaledLogoSpacing ifSubset="boxorthumb:boxart">${boxart_ecart_selection_3d}</scaledLogoSpacing>
+			<scaledLogoSpacing ifSubset="boxorthumb:thumb">${boxart_ecart_selection_2d}</scaledLogoSpacing>
+			<itemTemplate>
+				<container>
+					<image name="salondisque" if="${salon_support_mixte}">
+						<visible>${media_support_exists}</visible>
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path>${media_support}</path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/support_tourne.glsl</path>
+						<path ifSubset="perfmachine:perflow"></path>
+							<u_rond>1</u_rond>
+						</shader>
+						<opacity>0</opacity>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="7000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="7600" duration="14000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="2000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="2600" duration="4000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="1000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="1600" duration="2000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="4000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="4600" duration="8000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="rotation" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="salondisqueplein" if="${salon_disque_tourne} &amp;&amp; !${salon_support_mixte}">
+						<visible>${media_support_exists}</visible>
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path>${media_support}</path>
+						<path ifSubset="perfmachine:perflow"></path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<opacity>0</opacity>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="7000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="7600" duration="14000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="2000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="2600" duration="4000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="1000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="1600" duration="2000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="4000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="4600" duration="8000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="rotation" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="salondisquefixe" if="${salon_support_mixte}">
+						<visible>${media_support_exists}</visible>
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path>${media_support}</path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/support_tourne.glsl</path>
+						<path ifSubset="perfmachine:perflow"></path>
+							<u_rond>0</u_rond>
+						</shader>
+						<opacity>0</opacity>
+						<storyboard event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="saloncartouche" if="!${salon_disque_tourne} &amp;&amp; !${salon_support_mixte} &amp;&amp; !${salon_support_umd}">
+						<visible>${media_support_exists}</visible>
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path>${media_support}</path>
+						<path ifSubset="perfmachine:perflow"></path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<opacity>0</opacity>
+						<storyboard event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="rotation" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="salonumd" if="${salon_support_umd} &amp;&amp; !${salon_support_mixte}">
+						<visible>${media_support_exists}</visible>
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path>${media_support}</path>
+						<path ifSubset="perfmachine:perflow"></path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/support_umd.glsl</path>
+							<u_angle>0</u_angle>
+							<u_centreX>${salon_umd_cx}</u_centreX>
+							<u_centreY>${salon_umd_cy}</u_centreY>
+							<u_rayon>${salon_umd_rayon}</u_rayon>
+							<u_rayonCentre>${salon_umd_rayon_centre}</u_rayonCentre>
+						</shader>
+						<opacity>0</opacity>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="7000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="7600" duration="14000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="2000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="2600" duration="4000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="1000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="1600" duration="2000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="4000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="4600" duration="8000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="shader.u_angle" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="thumbnailjp" if="{system.theme} != 'snes' &amp;&amp; {system.theme} != 'n64' &amp;&amp; {system.theme} != 'gameandwatch' &amp;&amp; {system.theme} != 'solarus' &amp;&amp; {system.theme} != 'ngage'">
+						<opacity>${selopacite}</opacity>
+						<pos>0.5 0.6</pos>
+						<origin>0.5</origin>
+						<maxSize>0.38 1</maxSize>
+						<path>${media_box2d}</path>
+						<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
+						<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.02</outerShadowSize>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+						</shader>
+					</image>
+					<image name="thumbnailstd" if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">
+						<opacity>${selopacite}</opacity>
+						<pos>0.5 0.6</pos>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>0.475 1</maxSize>
+						<path>${media_box2d}</path>
+						<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
+						<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.02</outerShadowSize>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+						</shader>
+					</image>
+					<image name="nothumb">
+						<opacity>${selopacite}</opacity>
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<pos>0.5 0.6</pos>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<minSize>0.38 0.96</minSize>
+						<minSize if="{system.theme} == 'dreamcast'
+						|| {system.theme} == '3do'
+						|| {system.theme} == 'amigacdtv'
+						|| {system.theme} == 'amigacd32'
+						|| {system.theme} == 'gx4000'
+						|| {system.theme} == 'cdi'
+						|| {system.theme} == 'neogeocd'
+						|| {system.theme} == 'pce-cd'
+						|| {system.theme} == 'pcfx'
+						|| {system.theme} == 'psx'
+						|| {system.theme} == 'saturn'
+						|| {system.theme} == 'segacd'">0.38 0.69</minSize>
+						<path>${intfanartfresh}</path>
+						<saturation>0.7</saturation>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.02</outerShadowSize>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+						</shader>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</image>
+					<image name="retourfond">
+						<opacity>${selopacite}</opacity>
+						<visible>{game:rom} == '..'</visible>
+						<pos>0.5 0.6</pos>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<minSize>0.38 0.96</minSize>
+						<minSize if="{system.theme} == 'dreamcast'
+						|| {system.theme} == '3do'
+						|| {system.theme} == 'amigacdtv'
+						|| {system.theme} == 'amigacd32'
+						|| {system.theme} == 'gx4000'
+						|| {system.theme} == 'cdi'
+						|| {system.theme} == 'neogeocd'
+						|| {system.theme} == 'pce-cd'
+						|| {system.theme} == 'pcfx'
+						|| {system.theme} == 'psx'
+						|| {system.theme} == 'saturn'
+						|| {system.theme} == 'segacd'">0.38 0.69</minSize>
+						<path>${intfanartfresh}</path>
+						<saturation>0.4</saturation>
+						<color>5A5A5AFF</color>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.02</outerShadowSize>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+						</shader>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</image>
+					<image name="nothumbmarq">
+						<opacity>${selopacite}</opacity>
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing}</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing}</visible>
+						<pos>0.5 0.55</pos>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>0.33 1</maxSize>
+						<path>${media_marquee}</path>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.02</outerShadowSize>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+						</shader>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</image>
+					<image name="retourfleche">
+						<opacity>${selopacite}</opacity>
+						<visible>{game:rom} == '..'</visible>
+						<pos>0.5 0.38</pos>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>0.14 0.22</maxSize>
+						<path>${themePath}/_viewgame/commun/retour/retour.png</path>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.43" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.48" begin="250" duration="350" mode="easeIn"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.43" begin="" duration="" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.43" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</image>
+					<text name="gamenamesw" if="{system.theme} == 'switch'">
+						<opacity>${selopacite}</opacity>
+						<visible ifSubset="boxorthumb:boxart">${media_marquee_missing} &amp;&amp; ${media_box3d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_marquee_missing} &amp;&amp; ${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<origin>0.5</origin>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<text>${titrejeu}</text>
+						<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<fontSize>0.025</fontSize>
+						<lineSpacing>1</lineSpacing>
+						<size>0.3 2</size>
+						<pos>0.5 0.9</pos>
+						<glowColor>00000066</glowColor>
+						<glowSize>2</glowSize>
+						<zIndex>400</zIndex>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</text>
+					<text name="gamename" if="{system.theme} != 'switch'">
+						<opacity>${selopacite}</opacity>
+						<visible ifSubset="boxorthumb:boxart">${media_marquee_missing} &amp;&amp; ${media_box3d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_marquee_missing} &amp;&amp; ${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<origin>0.5</origin>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<text>${titrejeu}</text>
+						<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<fontSize>0.025</fontSize>
+						<lineSpacing>1</lineSpacing>
+						<size>0.3 2</size>
+						<pos>0.5 0.8</pos>
+						<glowColor>00000066</glowColor>
+						<glowSize>2</glowSize>
+						<zIndex>400</zIndex>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</text>
+				</container>
+			</itemTemplate>
+		</gamecarousel>
+	</customView>
+</theme>

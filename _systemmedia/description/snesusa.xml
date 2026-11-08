@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The North American releases of the Super Nintendo Entertainment System library.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>As versões norte-americanas da biblioteca do Super Nintendo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>The North American releases of the Super Nintendo Entertainment System library.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Las versiones norteamericanas del catálogo de Super Nintendo.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Les versions nord-américaines de la ludothèque de la Super Nintendo.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Die nordamerikanischen Fassungen der Super-Nintendo-Spiele.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>SNES (USA)</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1991</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+</theme>

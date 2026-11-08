@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Brezzasoft, a Japanese developer founded by former Taito staff, known for 2000s shoot'em ups.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Brezzasoft, desenvolvedora japonesa fundada por ex-funcionários da Taito, conhecida por shoot'em ups dos anos 2000.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Brezzasoft, a Japanese developer founded by former Taito staff, known for 2000s shoot'em ups.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Brezzasoft, desarrollador japonés fundado por ex empleados de Taito, conocido por shoot'em ups de los años 2000.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade de Brezzasoft, développeur japonais fondé par d'anciens employés de Taito, connu pour des shoot'em up des années 2000.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Brezzasoft, einem von ehemaligen Taito-Mitarbeitern gegründeten japanischen Entwickler, bekannt für Shoot'em ups der 2000er.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Brezzasoft</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Brezzasoft</text>
+		</text>
+	</view>
+</theme>

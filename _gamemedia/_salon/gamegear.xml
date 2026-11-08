@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<salon_video_pos>0.5057 0.2792</salon_video_pos>
+		<salon_video_taille>0.1271 0.1917</salon_video_taille>
+		<salon_capture_pos>0.5057 0.2792</salon_capture_pos>
+		<salon_capture_taille>0.1271 0.1917</salon_capture_taille>
+		<salon_video_etiree>true</salon_video_etiree>
+		<salon_calque>${path_salon}/gamegear_ecran.png</salon_calque>
+		<salon_disque_taille ifSubset="boxorthumb:boxart">0.2021 0.3617</salon_disque_taille>
+		<salon_disque_taille ifSubset="boxorthumb:thumb">0.2080 0.3722</salon_disque_taille>
+		<salon_disque_x ifSubset="boxorthumb:boxart">0.6449</salon_disque_x>
+		<salon_disque_x ifSubset="boxorthumb:thumb">0.6900</salon_disque_x>
+	</variables>
+</theme>

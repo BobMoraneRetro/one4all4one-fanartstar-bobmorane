@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Dreamcast shoot'em ups, a genre in which the console is particularly rich, with many arcade conversions and late releases.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Os shoot'em ups do Dreamcast, um gênero em que o console é especialmente rico, com muitas conversões de arcade e lançamentos tardios.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Dreamcast shoot'em ups, a genre in which the console is particularly rich, with many arcade conversions and late releases.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Los shoot'em ups de Dreamcast, un género en el que la consola es especialmente rica, con muchas conversiones de arcade y lanzamientos tardíos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Les shoot'em up de la Dreamcast, un genre où la console est particulièrement riche, avec de nombreuses conversions d'arcade et des sorties tardives.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Shoot'em ups der Dreamcast, ein Genre, in dem die Konsole besonders reich ist, mit vielen Arcade-Umsetzungen und späten Veröffentlichungen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Dreamcast Shmup</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1999</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

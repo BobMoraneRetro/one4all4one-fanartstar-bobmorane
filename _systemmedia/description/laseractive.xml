@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Pioneer's 1993 LaserDisc player that accepted modules to play Mega-LD and LD-ROM² games, combining video with Sega and NEC hardware.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Reprodutor de LaserDisc da Pioneer de 1993 que aceitava módulos para jogos Mega-LD e LD-ROM², combinando vídeo com hardware da Sega e da NEC.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Pioneer's 1993 LaserDisc player that accepted modules to play Mega-LD and LD-ROM² games, combining video with Sega and NEC hardware.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Reproductor LaserDisc de Pioneer de 1993 que aceptaba módulos para jugar a juegos Mega-LD y LD-ROM², combinando vídeo con hardware de Sega y NEC.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Lecteur LaserDisc de Pioneer sorti en 1993, qui acceptait des modules pour jouer aux jeux Mega-LD et LD-ROM², mariant vidéo et matériel Sega et NEC.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Pioneers LaserDisc-Spieler von 1993, der mit Modulen Mega-LD- und LD-ROM²-Spiele abspielte und Video mit Sega- und NEC-Hardware verband.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>LaserActive</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1993</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Pioneer</text>
+		</text>
+	</view>
+</theme>

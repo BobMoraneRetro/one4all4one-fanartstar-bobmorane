@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PC-based arcade games from Konami, such as its music and fighting titles of the 2000s, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade baseados em PC da Konami, como seus títulos musicais e de luta dos anos 2000, jogados aqui pelo TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PC-based arcade games from Konami, such as its music and fighting titles of the 2000s, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade basados en PC de Konami, como sus títulos musicales y de lucha de los 2000, jugados aquí con TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade sur base PC de Konami, comme ses titres musicaux et de combat des années 2000, joués ici via TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PC-basierte Arcade-Spiele von Konami, etwa Musik- und Kampfspiele der 2000er, hier über TeknoParrot spielbar.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Konami PC-based</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

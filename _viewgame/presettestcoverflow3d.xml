@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${cf3_angle} : vue de test Coverflow 3D : angle des boîtes de côté, en degrés (shader boite3d_coverflow) (définie dans ce fichier)
+	${cf3_ecart} : vue de test Coverflow 3D : décalage des boîtes de côté vers l extérieur, en largeur de boîte (définie dans ce fichier)
+	${cf3_taille} : vue de test Coverflow 3D : taille des éléments de la boîte 3D dans leur case du carrousel ou de la grille, selon le format de boîte du système (la boîte occupe 60 % de l élément) (définie dans ce fichier)
+	${media_box2d} : boîte 2D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box2d_missing} : vrai si le média « box2d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<cf3_taille>2.39 1.564</cf3_taille>
+		<cf3_taille if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcenginecd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == 'segacd' || {system.theme} == 'megacd'">2.39 1.11</cf3_taille>
+		<cf3_taille if="{system.theme} == 'nds' || {system.theme} == '3ds'">2.39 1.248</cf3_taille>
+		<cf3_taille if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'">2.84 0.958</cf3_taille>
+		<cf3_taille if="{system.theme} == 'switch' || {system.theme} == 'windows'">2.39 1.79</cf3_taille>
+		<cf3_angle>55</cf3_angle>
+		<cf3_ecart>0.25</cf3_ecart>
+	</variables>
+	<customView name="presettestcoverflow3d" displayName="TEST - Coverflow 3D" inherits="gamecarousel">
+		<image name="fanart_extra" extra="true">
+			<pos>0.5 0.5</pos>
+			<size>0 0</size>
+			<minSize>1 1</minSize>
+			<color>606060FF</color>
+			<colorEnd>606060FF</colorEnd>
+			<zIndex>4</zIndex>
+		</image>
+		<image name="screenshot_extra" extra="true">
+			<visible>false</visible>
+		</image>
+		<video name="video_extra" extra="true">
+			<visible>false</visible>
+		</video>
+		<image name="cf_degrade" extra="true">
+			<path>${themePath}/_viewgame/fanartstar/overlaydown.png</path>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<size>1 0.5</size>
+			<zIndex>5</zIndex>
+		</image>
+		<gamecarousel name="gamecarousel">
+			<type>horizontal</type>
+			<pos>0 0.14</pos>
+			<size>1 0.62</size>
+			<logoSize>0.11 0.42</logoSize>
+			<logoScale>1.35</logoScale>
+			<logoRotation>0</logoRotation>
+			<maxLogoCount>13</maxLogoCount>
+			<logoAlignment>center</logoAlignment>
+			<color>00000000</color>
+			<minLogoOpacity>1</minLogoOpacity>
+			<imageSource>thumbnail</imageSource>
+			<zIndex>10</zIndex>
+			<itemTemplate>
+				<container>
+					<image name="tranche">
+						<path>${media_box2d}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${cf3_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_coverflow.glsl</path>
+							<u_mode>2.0</u_mode>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.12</u_pitch>
+							<u_angle>${cf3_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<ecart>${cf3_ecart}</ecart>
+							<sens>-1</sens>
+							<pas>0.07692</pas>
+							<zoomSelection>1.35</zoomSelection>
+						</shader>
+					</image>
+					<image name="logotranche">
+						<path>${media_marquee}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${cf3_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_coverflow.glsl</path>
+							<u_mode>3.2</u_mode>
+							<u_logo_scale>0.8</u_logo_scale>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.12</u_pitch>
+							<u_angle>${cf3_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<ecart>${cf3_ecart}</ecart>
+							<sens>-1</sens>
+							<pas>0.07692</pas>
+							<zoomSelection>1.35</zoomSelection>
+						</shader>
+					</image>
+					<image name="face">
+						<path>${media_box2d}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${cf3_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_coverflow.glsl</path>
+							<u_mode>0.0</u_mode>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.12</u_pitch>
+							<u_angle>${cf3_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<ecart>${cf3_ecart}</ecart>
+							<sens>-1</sens>
+							<pas>0.07692</pas>
+							<zoomSelection>1.35</zoomSelection>
+						</shader>
+					</image>
+					<text name="nomjeu">
+						<visible>${media_box2d_missing}</visible>
+						<text>{game:name}</text>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>0.9 0.9</size>
+						<fontPath>${themePath}/_common/fonts/Cabin-Bold.ttf</fontPath>
+						<fontSize>0.03</fontSize>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<glowColor>00000099</glowColor>
+						<glowSize>2</glowSize>
+					</text>
+				</container>
+			</itemTemplate>
+		</gamecarousel>
+		<text name="cf_titre" extra="true">
+			<text>{game:name}</text>
+			<pos>0.5 0.86</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.8 0.05</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.04</fontSize>
+			<color>FFFFFF</color>
+			<alignment>center</alignment>
+			<glowColor>000000AA</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>20</zIndex>
+		</text>
+		<text name="cf_infos" extra="true">
+			<text>{game:releaseyear}  •  {game:genre}  •  {game:publisher}</text>
+			<pos>0.5 0.91</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.8 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.022</fontSize>
+			<color>DDDDDD</color>
+			<alignment>center</alignment>
+			<zIndex>20</zIndex>
+		</text>
+	</customView>
+</theme>

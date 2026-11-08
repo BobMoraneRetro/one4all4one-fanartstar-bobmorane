@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Demoscene productions for the Commodore Amiga: real-time audiovisual shows that pushed the machine far beyond its limits.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Produções da demoscene para Commodore Amiga: espetáculos audiovisuais em tempo real que levavam a máquina além dos seus limites.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Demoscene productions for the Commodore Amiga: real-time audiovisual shows that pushed the machine far beyond its limits.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Producciones de la demoscene para Commodore Amiga: espectáculos audiovisuales en tiempo real que llevaban la máquina más allá de sus límites.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Productions de la demoscene sur Commodore Amiga : des démonstrations audiovisuelles en temps réel qui poussaient la machine bien au-delà de ses limites.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Werke der Demoszene für den Commodore Amiga: audiovisuelle Echtzeit-Shows, die die Maschine weit über ihre Grenzen trieben.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Amiga Demo</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Commodore</text>
+		</text>
+	</view>
+</theme>

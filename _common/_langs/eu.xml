@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="eu">
+		<desactive>Desgaitua</desactive>
+		<default>Lehenetsia</default>
+		<active>Gaitua</active>
+		<novideo>Desgaituta</novideo>
+		<videoback>Gaituta</videoback>
+		<intheme>Gaiaren karpeta - Lehenetsia</intheme>
+		<extfolder>Kanpoko karpeta</extfolder>
+		<nodates>Datarik ez</nodates>
+		<playcountone>partida</playcountone>
+		<playcount>partida</playcount>
+		<noplaycount>Inoiz ez abiarazia</noplaycount>
+		<playerss>jokalari</playerss>
+		<player>jokalari</player>
+		<nogametime>Inoiz jokatu gabea</nogametime>
+		<noplayerdata>Ezezaguna</noplayerdata>
+		<noratings>Baloraziorik ez</noratings>
+		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>JOKOAK - Jokoaren izena</opt_nomjeu>
+		<nomjeucomplet>Osoa</nomjeucomplet>
+		<nomjeucourt>Parentesirik gabe</nomjeucourt>
+		<presgame1>Mota honetako jokoa da:</presgame1>
+		<presgame2>garatzailea:</presgame2>
+		<presgame3>plataforma:</presgame3>
+		<presgame4>- Hizkuntza erabilgarriak :</presgame4>
+		<nomjeulabel>Jokoaren izena :</nomjeulabel>
+		<genrelabel>Generoa :</genrelabel>
+		<devlabel>Garatzailea :</devlabel>
+		<langlabel>Hizkuntzak :</langlabel>
+		<gametimelabel>Joko-denbora :</gametimelabel>
+		<lastgamelabel>Azken partida:</lastgamelabel>
+		<viewbasicgrid>Basic: Sareta ikuspegi oinarrizkoa</viewbasicgrid>
+		<jeux>jokoak</jeux>
+		<longselect>Sakatze luzea "select"-en</longselect>
+		<favuniquement>Gogokoak soilik</favuniquement>
+		<tslesjeux>Joko guztiak</tslesjeux>
+		<fanartstarsyst>Klasikoa</fanartstarsyst>
+		<fanartmodern>Modernoa 1 (ogi-apurren nabigazioarekin bateraezina)</fanartmodern>
+		<fanartmodern2>Modernoa 2 (ogi-apurren nabigazioarekin bateragarria)</fanartmodern2>
+		<fanartfreshone>FreshOne-k hautatutako fanartak soilik</fanartfreshone>
+		<fanartsystcustom>custom karpetako fanartak, bestela FreshOne</fanartsystcustom>
+		<videoangled>Gaituta (txikia, angeluan)</videoangled>
+		<hardware>Hardwarea</hardware>
+		<charsystem>Pertsonaiak</charsystem>
+		<figurines>Irudiak (Animatics gaia instalatuta egon behar da)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>Botoien kokapena</iconsetposition>
+		<skyblue>zeru urdina</skyblue>
+		<purple>bioleta</purple>
+		<red>gorria</red>
+		<aqua>zeru urdina</aqua>
+		<orange>laranja</orange>
+		<green>berdea</green>
+		<yellow>horia</yellow>
+		<pink>arrosa</pink>
+		<grey>gris iluna</grey>
+		<lightgrey>gris argia</lightgrey>
+		<navy>urdina alt</navy>
+		<violet>bioleta</violet>
+		<candy>candy</candy>
+		<redalt>gorria alt</redalt>
+		<yellowalt>horia alt</yellowalt>
+		<greenalt>berdea alt</greenalt>
+		<purplealt>bioleta alt</purplealt>
+		<classiquesyst>Desagerpena atzerako zoomarekin</classiquesyst>
+		<no>Ez</no>
+		<yes>Bai</yes>
+		<thumb>2D kutxarako kalibratua</thumb>
+		<boxart>3D kutxarako kalibratua</boxart>
+		<starrotate>Bai</starrotate>
+		<nostarrotate>Ez</nostarrotate>
+		<deactive>Desgaitua</deactive>
+		<speedslow1>Motela+</speedslow1>
+		<speedslow2>Motela++</speedslow2>
+		<starvideoang>Inklinatua</starvideoang>
+		<starvideodef>Estandarra</starvideodef>
+		<starvideobig>Handia</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Gris atsegina</griscl>
+		<noirombre>Marko beltza + itzala</noirombre>
+		<blancombre>Marko zuria + itzala</blancombre>
+		<ombre>Itzala bakarrik</ombre>
+		<rien>Apaingarririk gabe</rien>
+		<presetshowbig>RFE Show aurrebista handia</presetshowbig>
+		<presetshowsmall>RFE Show aurrebista txikia</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar karratua</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (Nabigazio azkarragoa)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Panel handiaren azpian (Steam bezala)</deckgauche>
+		<deckcentre>Errenkadaren erdian (zooma + distira)</deckcentre>
+		<decknormal>Normala</decknormal>
+		<spotvideodroite>Eskuinean, kutxen gainean</spotvideodroite>
+		<spotvideoaucune>Desgaituta</spotvideoaucune>
+		<spotvideogauche>Ezkerrean, informazioarekin</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Logoa mantendu</decklogogarder>
+		<decklogobandeau>Informazio banda (logoa ezkutatuta)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Itzuli aurreko karpetara</retourdossier>
+		<ra_moncompte>Nire kontua</ra_moncompte>
+		<ra_succesjeu>Jokoaren lorpenak</ra_succesjeu>
+		<opt_raaffichage>JOKOAK - RetroAchievements (kanpoko tresna)</opt_raaffichage>
+		<raaffichagepermanent>Bistaratze iraunkorra</raaffichagepermanent>
+		<raaffichagetemporaire>Segundo batzuk</raaffichagetemporaire>
+		<noteetoile>Izarra</noteetoile>
+		<notecoeur>Bihotza</notecoeur>
+		<notemanette>Kontrolagailua</notemanette>
+		<notepouce>Hatz lodia gora</notepouce>
+		<notetrophee>Garaikurra</notetrophee>
+		<notefantome>Mamua</notefantome>
+		<notecrane>Garezurra</notecrane>
+		<notepourcent>%-tan</notepourcent>
+		<wheelclic>Hyperspin estiloko klika</wheelclic>
+		<bulle>Burbuila</bulle>
+		<clic>Klik sinplea</clic>
+		<clicgrave>Klik sakona</clicgrave>
+		<frottement>Igurtzia</frottement>
+		<poc>Poc</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>OROKORRA - Ongietorri mezua</opt_lismoi>
+		<opt_iconset>OROKORRA - Laguntza ikonoen itxura</opt_iconset>
+		<opt_colorhelp>OROKORRA - Laguntza testuaren koloreak</opt_colorhelp>
+		<opt_horlogecouleur>OROKORRA - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>OROKORRA - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>SISTEMAK - Sistemen zerrendaren ikuspegia</opt_systemview>
+		<opt_imagefondcops1>SISTEMAK - Sistemaren fanarten aukeraketa</opt_imagefondcops1>
+		<opt_video4starmodern>SISTEMAK - Joko-bideoa sistemen ikuspegian</opt_video4starmodern>
+		<opt_video4starclassic>SISTEMAK - Joko-bideoa sistemen ikuspegian</opt_video4starclassic>
+		<opt_systviewselec>SISTEMAK - Sistemaren irudia gurpilean</opt_systviewselec>
+		<opt_breadcrumbsonoff>SISTEMAK - Ezkerreko menu bertikala (sistema ikuspegi klasikoa)</opt_breadcrumbsonoff>
+		<arianeauto>Automatikoa (sistemen ordenaren arabera)</arianeauto>
+		<arianecategories>Kategoriak (hardware motaren arabera)</arianecategories>
+		<arianealpha>A-tik Z-ra letrak (ordena alfabetikoa)</arianealpha>
+		<arianealphavoisines>Letra eta bere auzokoak (ordena alfabetikoa)</arianealphavoisines>
+		<arianeconstructeur>Fabrikatzaileak (fabrikatzailearen arabera)</arianeconstructeur>
+		<arianedecennie>Hamarkadak (argitaratze urtearen arabera)</arianedecennie>
+		<arianeautres>BESTEAK</arianeautres>
+		<opt_metadataonoff>SISTEMAK - Sistemari buruzko informazioa (sistema ikuspegi klasikoa)</opt_metadataonoff>
+		<opt_systannonce>JOKOAK - Uneko sistema erakutsi irekitzean</opt_systannonce>
+		<opt_infosmax>JOKOAK - Informazio-kontsola osoa erakutsi?</opt_infosmax>
+		<opt_gamewheelsound>OROKORRA - Korritzeko soinua</opt_gamewheelsound>
+		<opt_boxorthumb>JOKOAK - Erakutsi beharreko joko kutxa</opt_boxorthumb>
+		<opt_fanarttransition>JOKOAK - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>JOKOAK - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>JOKOAK - Diskoaren biraketa</opt_cdvitesse>
+		<cdnormale>Normala</cdnormale>
+		<cdlente>Motela</cdlente>
+		<cdrapide>Azkarra</cdrapide>
+		<cdtresrapide>Oso azkarra</cdtresrapide>
+		<cdimmobile>Geldirik</cdimmobile>
+		<opt_umdrotation>JOKOAK - UMDen biraketa (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>JOKOAK - Hautatutako jokoa nabarmendu</opt_selectionvaleur>
+		<selegere>Arina</selegere>
+		<selmarquee>Nabaria</selmarquee>
+		<opt_videojeu>JOKOAK - Jokoaren bideoa</opt_videojeu>
+		<vjcapture>Pantaila-argazkia eta gero bideoa</vjcapture>
+		<vjseule>Bideoa soilik</vjseule>
+		<vjfondu>Bideoa pixkanaka agertuz</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>JOKOAK - Box case type</opt_typeboite>
+		<opt_contourboite>JOKOAK - Box outline (case)</opt_contourboite>
+		<opt_deckespace>JOKOAK - Kutxen arteko tartea</opt_deckespace>
+		<opt_iconenote>JOKOAK - Balorazio ikonoa</opt_iconenote>
+		<opt_extfolderbezelsyst>AURRERATUA - Sistemen bezelak</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>AURRERATUA - Joko argitaratzaileen logoak</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>AURRERATUA - Sistemen fanarta</opt_extfolderfanart>
+		<opt_extfolderlogosyst>AURRERATUA - Sistemaren logoa</opt_extfolderlogosyst>
+		<opt_extfoldersalon>AURRERATUA - RFE Retrofist Nostalgia ikuspegiaren hondoen kokapena</opt_extfoldersalon>
+		<opt_perfmachine>AURRERATUA - Makina ahulerako modua</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - Hondoaren bineteatua</opt_salonvignette>
+		<vignleger>Arina</vignleger>
+		<vignfort>Indartsua</vignfort>
+		<opt_deckselection>BIG ART - Hautatutako jokoaren kokapena</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Logoa bideoan zehar</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Bideoa</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - SNES, N64, NGAGE, Solarus kutxen biraketa</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - Joko kutxen angelua</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Jokoaren euskarria (diskoa, kartutxoa)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Korritze animazioaren abiadura</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Aurrebista bideoaren tamaina</opt_starvideo>
+		<opt_starvideocadre>BOXART - Aurrebistako bideoaren markoa</opt_starvideocadre>
+		<vcadreactuel>Uneko markoa</vcadreactuel>
+		<vcadreombre>Itzala soilik</vcadreombre>
+		<vcadreecranfin>Ertz mehea</vcadreecranfin>
+		<vcadrebois>Egurra</vcadrebois>
+		<vcadremetal>Metal eskuilatua</vcadremetal>
+		<vcadrelumineux>Pantaila argitsua</vcadrelumineux>
+		<vcadretv>CRT telebista</vcadretv>
+		<vcadregalerie>Galeria</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neoia</vcadreneon>
+		<vcadrehologramme>Holograma</vcadrehologramme>
+		<vcadreverre>Beira lausotua</vcadreverre>
+		<vcadrecarbone>Karbono LED</vcadrecarbone>
+		<vcadreneondouble>Neoi bikoitza</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Pintzelkadak</vcadrepinceau>
+		<vcadretechnodore>Tekno urrea</vcadretechnodore>
+		<vcadretechnoargent>Tekno zilarra</vcadretechnoargent>
+		<vcadreneonelec>Neoi elektrikoa</vcadreneonelec>
+		<vcadrevitre>Beira</vcadrevitre>
+		<vcadreflammes>Garrak</vcadreflammes>
+		<vcadreencre>Tinta</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Biratzen den kutxaren ertzak</opt_boite3dtranche>
+		<b3tcharniere>Logoa alde batean, irekiera bestean</b3tcharniere>
+		<b3tdeuxcotes>Logoa bi aldeetan</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - Saretaren kolorea</opt_gridcolor>
+		<opt_squarecadre>KARRATUA - Jokoak irudikatzen dituzten karratuen itxura</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>SISTEMAK - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>SISTEMAK - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>SISTEMAK - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>SISTEMAK - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>JOKOAK - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Ongi etorri eta kredituak</planche00>
+		<planche01>01 - Sistemen ikuspegiak</planche01>
+		<planche02>02 - Ikuspegi klasikoa: sistemaren irudia</planche02>
+		<planche03>03 - Ikuspegi klasikoa: xehetasunak</planche03>
+		<planche04>04 - Sistemaren fanartak, Modern eta Z-Spin</planche04>
+		<planche05>05 - Jokoen 11 ikuspegiak</planche05>
+		<planche06>06 - FanartStar Boxart: kutxak eta informazioa</planche06>
+		<planche07>07 - FanartStar Boxart: bideoa</planche07>
+		<planche08>08 - Kutxak eta euskarriak</planche08>
+		<planche09>09 - 22 kaxak</planche09>
+		<planche10>10 - Euskarria: ezarpenak sistemaka</planche10>
+		<planche11>11 - Jokoen fanartak eta hautapena</planche11>
+		<planche12>12 - Big Art, Spotlight, Karratua, 16/9 eta 4/3</planche12>
+		<planche13>13 - RFE ikuspegiak</planche13>
+		<planche14>14 - RFE Retrofist: telebistaren pantaila</planche14>
+		<planche15>15 - Show Big &amp; Small: buelta ematen duen kutxa</planche15>
+		<planche16>16 - Jokoen ikuspegien aukera komunak</planche16>
+		<planche17>17 - Orokorra: soinuak, laguntza, erlojua</planche17>
+		<planche18>18 - Pertsonalizatu zure karpetekin</planche18>
+		<planche19>19 - Jokoen multimedia propioa</planche19>
+		<planche20>20 - Karpeta bat jantzi</planche20>
+		<planche21>21 - Zein irudik irabazten du?</planche21>
+		<planche22>22 - Taldekatutako sistemak</planche22>
+		<planche23>23 - Makina ahula eta estekak</planche23>
+	</variables>
+</theme>

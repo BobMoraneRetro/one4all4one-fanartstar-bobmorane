@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Tandy's low-cost TRS-80 MC-10 micro colour computer of 1983, a small machine with a chiclet keyboard.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O TRS-80 MC-10 da Tandy, pequeno computador colorido de baixo custo de 1983, com teclado de borracha.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Tandy's low-cost TRS-80 MC-10 micro colour computer of 1983, a small machine with a chiclet keyboard.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El TRS-80 MC-10 de Tandy, pequeño ordenador a color de bajo coste de 1983, con teclado de goma.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le TRS-80 MC-10 de Tandy, petit ordinateur couleur bon marché sorti en 1983, au clavier gomme.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Tandys günstiger TRS-80 MC-10 von 1983, ein kleiner Farbcomputer mit Gummitastatur.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>MC-10</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Tandy Radio Shack</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetshowbig}, ${presetshowsmall}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="presetshowbig" displayName="${presetshowbig}" inherits="gamecarousel">
+		<image name="fanartpresetshow" extra="true">
+			<zIndex>2</zIndex>
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="10"/>
+			</storyboard>
+		</image>
+		<image name="fanartpresetshow" ifSubset="fanarttransition:fanartdefautvue|fanartaucune" extra="true">
+			<storyboard event="open">
+				<animation property="opacity" from="1" to="1" duration="10"/>
+			</storyboard>
+		</image>
+		<video name="previewvidpreset" extra="true">
+			<origin>1 0</origin>
+			<pos>0.98 0.04</pos>
+			<maxSize>0.34 0.34</maxSize>
+			<zIndex>11</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>1</cornerRadius>
+				<borderSize>0.01</borderSize>
+				<borderColor>000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>000000</innerShadowColor>
+				<outerShadowSize>0.02</outerShadowSize>
+				<outerShadowColor>000000</outerShadowColor>
+			</shader>
+		</video>
+		<control name="bezelvideo,scanline">
+			<visible>false</visible>
+		</control>
+	</customView>
+	<customView name="presetshowsmall" displayName="${presetshowsmall}" inherits="gamecarousel">
+		<image name="fanartpresetshow" extra="true">
+			<zIndex>1</zIndex>
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="10"/>
+			</storyboard>
+		</image>
+		<image name="fanartpresetshow" ifSubset="fanarttransition:fanartdefautvue|fanartaucune" extra="true">
+			<storyboard event="open">
+				<animation property="opacity" from="1" to="1" duration="10"/>
+			</storyboard>
+		</image>
+		<video name="previewvidpreset" extra="true">
+			<origin>1 0</origin>
+			<pos>0.98 0.04</pos>
+			<maxSize>0.34 0.34</maxSize>
+			<zIndex>11</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>1</cornerRadius>
+				<borderSize>0.01</borderSize>
+				<borderColor>000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>000000</innerShadowColor>
+				<outerShadowSize>0.02</outerShadowSize>
+				<outerShadowColor>000000</outerShadowColor>
+			</shader>
+		</video>
+		<control name="scanline">
+			<visible>false</visible>
+		</control>
+	</customView>
+</theme>

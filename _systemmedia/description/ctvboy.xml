@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Gakken's Japanese console of 1983, with its controller built into the unit and a small cartridge library.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console japonês da Gakken de 1983, com o controle integrado ao aparelho e uma pequena biblioteca de cartuchos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Gakken's Japanese console of 1983, with its controller built into the unit and a small cartridge library.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola japonesa de Gakken de 1983, con el mando integrado en la unidad y un pequeño catálogo de cartuchos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console japonaise de Gakken sortie en 1983, avec la manette intégrée à l'appareil et une petite ludothèque à cartouches.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Japanische Konsole von Gakken aus dem Jahr 1983 mit eingebautem Steuerelement und kleiner Modulauswahl.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>TV Boy</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Gakken</text>
+		</text>
+	</view>
+</theme>

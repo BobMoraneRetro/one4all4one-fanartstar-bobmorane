@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Nintendo's console for the Chinese market, a Nintendo 64 built into a controller, with games downloaded onto a memory card.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console da Nintendo para o mercado chinês: um Nintendo 64 embutido em um controle, com jogos baixados em um cartão de memória.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Nintendo's console for the Chinese market, a Nintendo 64 built into a controller, with games downloaded onto a memory card.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola de Nintendo para el mercado chino: una Nintendo 64 integrada en un mando, con juegos descargados en una tarjeta de memoria.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console de Nintendo pour le marché chinois : une Nintendo 64 intégrée à une manette, avec des jeux téléchargés sur une carte mémoire.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Nintendos Konsole für den chinesischen Markt: ein in einen Controller eingebautes Nintendo 64, mit auf eine Speicherkarte geladenen Spielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>iQue Player</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2003</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>iQue / Nintendo</text>
+		</text>
+	</view>
+</theme>

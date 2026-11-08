@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Native engine for Tomb Raider II, the 1997 sequel that took Lara Croft from Venice to Tibet.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Motor nativo para Tomb Raider II, a sequência de 1997 que leva Lara Croft de Veneza ao Tibete.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Native engine for Tomb Raider II, the 1997 sequel that took Lara Croft from Venice to Tibet.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Motor nativo para Tomb Raider II, la secuela de 1997 que lleva a Lara Croft de Venecia al Tíbet.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Moteur natif pour Tomb Raider II, la suite de 1997 qui emmène Lara Croft de Venise au Tibet.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Native Engine für Tomb Raider II, die Fortsetzung von 1997, die Lara Croft von Venedig bis Tibet führt.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Tomb Raider II</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1997</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Core Design / Eidos</text>
+		</text>
+	</view>
+</theme>

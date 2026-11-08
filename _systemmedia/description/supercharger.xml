@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Starpath's Supercharger, a 1982 add-on for the Atari 2600 that loaded games from audio cassettes and added extra memory.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Supercharger da Starpath, acessório de 1982 para o Atari 2600 que carregava jogos de fitas cassete e acrescentava memória.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Starpath's Supercharger, a 1982 add-on for the Atari 2600 that loaded games from audio cassettes and added extra memory.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Supercharger de Starpath, accesorio de 1982 para la Atari 2600 que cargaba juegos desde casetes de audio y añadía memoria.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Supercharger de Starpath, extension de 1982 pour l'Atari 2600 qui chargeait les jeux depuis des cassettes audio et ajoutait de la mémoire.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Starpaths Supercharger, eine Erweiterung für das Atari 2600 von 1982, die Spiele von Audiokassetten lud und Speicher hinzufügte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Supercharger</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1982</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Starpath</text>
+		</text>
+	</view>
+</theme>

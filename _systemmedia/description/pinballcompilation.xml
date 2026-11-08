@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>A compilation of pinball games from various systems.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Uma compilação de jogos de pinball de vários sistemas.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>A compilation of pinball games from various systems.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Una recopilación de juegos de pinball de distintos sistemas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Une compilation de jeux de flipper issus de différents systèmes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Eine Sammlung von Flipperspielen verschiedener Systeme.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pinball</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

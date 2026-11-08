@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega Channel, the 1994 cable TV service that let Mega Drive owners download and play games at home.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Sega Channel, o serviço por cabo de 1994 que permitia aos donos de Mega Drive baixar e jogar jogos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega Channel, the 1994 cable TV service that let Mega Drive owners download and play games at home.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Sega Channel, el servicio por cable de 1994 que permitía a los usuarios de Mega Drive descargar y jugar juegos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Sega Channel, le service par câble de 1994 qui permettait aux possesseurs de Mega Drive de télécharger et jouer à des jeux.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sega Channel, der Kabeldienst von 1994, über den Mega-Drive-Besitzer Spiele herunterladen und spielen konnten.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Sega Channel</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1994</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

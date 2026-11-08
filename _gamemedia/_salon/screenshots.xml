@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<salon_video_pos>0.5 0.4528</salon_video_pos>
+		<salon_video_taille>0.3031 0.3222</salon_video_taille>
+		<salon_capture_pos>0.5 0.4528</salon_capture_pos>
+		<salon_capture_taille>0.3031 0.3222</salon_capture_taille>
+		<salon_video_etiree>false</salon_video_etiree>
+	</variables>
+</theme>

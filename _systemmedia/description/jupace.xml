@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>British home computer of 1982 by Jupiter Cantab, unusual for using the Forth language instead of BASIC.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico britânico da Jupiter Cantab de 1982, incomum por usar a linguagem Forth em vez de BASIC.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>British home computer of 1982 by Jupiter Cantab, unusual for using the Forth language instead of BASIC.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico británico de Jupiter Cantab de 1982, singular por usar el lenguaje Forth en lugar de BASIC.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial britannique de Jupiter Cantab sorti en 1982, original par son utilisation du langage Forth à la place du BASIC.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Britischer Heimcomputer von Jupiter Cantab aus dem Jahr 1982, ungewöhnlich, weil er Forth statt BASIC nutzte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Jupiter Ace</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1981</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Jupiter Cantab</text>
+		</text>
+	</view>
+</theme>

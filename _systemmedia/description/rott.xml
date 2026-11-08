@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Source port of Rise of the Triad, Apogee's 1994 fast-paced first-person shooter.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Port de Rise of the Triad, o rápido jogo de tiro em primeira pessoa da Apogee de 1994.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Source port of Rise of the Triad, Apogee's 1994 fast-paced first-person shooter.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Port de Rise of the Triad, el rápido shooter en primera persona de Apogee de 1994.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Portage de Rise of the Triad, le FPS nerveux d'Apogee sorti en 1994.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Source-Port von Rise of the Triad, Apogees rasantem Ego-Shooter von 1994.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Rise of the Triad</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1994</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Apogee</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Modern Windows games designed in the spirit of classic arcade titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos modernos de Windows feitos no espírito dos clássicos de arcade.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Modern Windows games designed in the spirit of classic arcade titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos modernos de Windows creados con el espíritu de los clásicos de arcade.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux Windows modernes conçus dans l'esprit des classiques de l'arcade.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Moderne Windows-Spiele im Stil klassischer Arcade-Titel.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Arcade Neo Retro</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2024</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

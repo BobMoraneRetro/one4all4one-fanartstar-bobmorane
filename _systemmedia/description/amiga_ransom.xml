@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Commodore Amiga games packaged in a ready-to-play collection, launched directly without setting up the emulator.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de Commodore Amiga reunidos em uma coleção pronta para jogar, iniciados diretamente sem configurar o emulador.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Commodore Amiga games packaged in a ready-to-play collection, launched directly without setting up the emulator.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de Commodore Amiga reunidos en una colección lista para jugar, lanzados directamente sin configurar el emulador.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux Commodore Amiga réunis dans une collection prête à jouer, lancés directement sans configurer l'émulateur.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Commodore-Amiga-Spiele in einer spielfertigen Sammlung, direkt startbar ohne Einrichtung des Emulators.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Amiga</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Commodore</text>
+		</text>
+	</view>
+</theme>

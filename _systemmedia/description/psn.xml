@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Digital games from the PlayStation Network, Sony's online store and service launched in 2006.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos digitais da PlayStation Network, a loja e o serviço online da Sony lançados em 2006.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Digital games from the PlayStation Network, Sony's online store and service launched in 2006.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos digitales de PlayStation Network, la tienda y el servicio en línea de Sony lanzados en 2006.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux dématérialisés du PlayStation Network, la boutique et le service en ligne de Sony lancés en 2006.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Digitale Spiele aus dem PlayStation Network, Sonys 2006 gestartetem Online-Shop und -Dienst.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PlayStation Network</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2006</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sony</text>
+		</text>
+	</view>
+</theme>

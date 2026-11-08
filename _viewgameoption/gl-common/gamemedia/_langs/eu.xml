@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="eu">
+		<packcustombuildsno>Fanart "-fanart" atzizkiarekin (lehenetsia)</packcustombuildsno>
+		<packretrofreshbat>Fanart "-image" atzizkiarekin</packretrofreshbat>
+		<scrapedboxart>3D kutxa "-boxart"-ekin gamelist-ean</scrapedboxart>
+		<scrapedthumbnail>3D kutxa "-thumbnail"-ekin gamelist-ean</scrapedthumbnail>
+		<gamemedianon>Ez: gamelisteko multimedia soilik</gamemedianon>
+		<gamemediaoui>Bai: lehenik multimedia pertsonala, bestela gamelista</gamemediaoui>
+		<gamemediaseul>Soilik: multimedia pertsonalizatua soilik (gamelist-era jo gabe)</gamemediaseul>
+		<intheme>Gaiaren karpeta - Lehenetsia</intheme>
+		<extfolder>Kanpoko karpeta</extfolder>
+		<opt_custombuilds>AURRERATUA - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>AURRERATUA - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>AURRERATUA - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>AURRERATUA - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

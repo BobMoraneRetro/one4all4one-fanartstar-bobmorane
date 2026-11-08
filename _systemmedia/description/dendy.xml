@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Famicom clone sold by Steepler in Russia from 1992, hugely popular and the first console for a whole generation of Russian players.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Clone do Famicom vendido pela Steepler na Rússia a partir de 1992, muito popular: o primeiro console de toda uma geração de jogadores russos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Famicom clone sold by Steepler in Russia from 1992, hugely popular and the first console for a whole generation of Russian players.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Clon de la Famicom vendido por Steepler en Rusia desde 1992, muy popular: la primera consola de toda una generación de jugadores rusos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Clone de la Famicom vendu par Steepler en Russie à partir de 1992, extrêmement populaire : la première console de toute une génération de joueurs russes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Famicom-Klon, ab 1992 von Steepler in Russland verkauft, enorm beliebt und die erste Konsole einer ganzen Generation russischer Spieler.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Dendy</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Steepler</text>
+		</text>
+	</view>
+</theme>

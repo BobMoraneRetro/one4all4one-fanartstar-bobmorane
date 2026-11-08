@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>OD-Commander, a file manager for handheld and embedded systems, useful for browsing and managing your files.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>OD-Commander, gerenciador de arquivos para portáteis e sistemas embarcados, útil para navegar e organizar seus arquivos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>OD-Commander, a file manager for handheld and embedded systems, useful for browsing and managing your files.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>OD-Commander, gestor de archivos para portátiles y sistemas embebidos, útil para explorar y organizar tus archivos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>OD-Commander, gestionnaire de fichiers pour consoles portables et systèmes embarqués, pratique pour parcourir et organiser vos fichiers.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>OD-Commander, ein Dateimanager für Handhelds und eingebettete Systeme zum Durchsuchen und Verwalten deiner Dateien.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>OD Commander</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2022</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

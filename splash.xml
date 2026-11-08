@@ -4,8 +4,6 @@
   <variables>
     <baseColor>8b0000</baseColor>
     <gradientEndColor>6b2020</gradientEndColor>
-    <backgroundColor>252525</backgroundColor>
-    <centerFadeColor>8b000050</centerFadeColor>
   </variables>
   <view name="splash">
     <splash name="splash">

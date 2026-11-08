@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetdeck}, ${presetspotlight}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="presetspotlight" displayName="${presetspotlight}" inherits="grid">
+		<image name="spot_fond" extra="true">
+			<storyboard event="open">
+				<animation property="opacity" from="1" to="1" duration="0"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="1" to="1" duration="0"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="1" to="1" duration="0"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="presetdeck" displayName="${presetdeck}" inherits="grid">
+		<image name="deck_fond" extra="true">
+			<storyboard event="open">
+				<animation property="opacity" from="1" to="1" duration="0"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="0"/>
+			</storyboard>
+		</image>
+	</customView>
+</theme>

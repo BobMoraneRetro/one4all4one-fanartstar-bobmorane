@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's 1985 Japanese console, the forerunner of the Master System, with which it shares most of its games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console japonês da Sega de 1985, precursor do Master System, com o qual compartilha a maioria dos jogos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's 1985 Japanese console, the forerunner of the Master System, with which it shares most of its games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola japonesa de Sega de 1985, precursora de la Master System, con la que comparte la mayoría de sus juegos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console japonaise de Sega sortie en 1985, ancêtre de la Master System, avec laquelle elle partage l'essentiel de ses jeux.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas japanische Konsole von 1985, Vorläufer des Master System, mit dem sie die meisten Spiele teilt.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Mark III</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1985</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

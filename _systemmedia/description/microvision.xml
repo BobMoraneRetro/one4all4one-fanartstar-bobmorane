@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Milton Bradley's 1979 handheld, the first with interchangeable cartridges, each carrying its own processor.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console portátil da Milton Bradley de 1979, o primeiro com cartuchos intercambiáveis, cada um com seu próprio processador.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Milton Bradley's 1979 handheld, the first with interchangeable cartridges, each carrying its own processor.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola portátil de Milton Bradley de 1979, la primera con cartuchos intercambiables, cada uno con su propio procesador.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console portable de Milton Bradley sortie en 1979, la première à cartouches interchangeables, chacune contenant son propre processeur.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Milton Bradleys Handheld von 1979, der erste mit austauschbaren Modulen, von denen jedes einen eigenen Prozessor enthielt.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Microvision</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1979</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Milton Bradley Company</text>
+		</text>
+	</view>
+</theme>

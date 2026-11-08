@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Commodore's low-cost console-computer of 1982, sold mainly in Japan, a forerunner of the Commodore 64 with a membrane keyboard.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador-console de baixo custo da Commodore de 1982, vendido principalmente no Japão, precursor do Commodore 64 com teclado de membrana.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Commodore's low-cost console-computer of 1982, sold mainly in Japan, a forerunner of the Commodore 64 with a membrane keyboard.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador-consola de bajo coste de Commodore de 1982, vendido sobre todo en Japón, precursor del Commodore 64 con teclado de membrana.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur-console bon marché de Commodore sorti en 1982, vendu surtout au Japon, précurseur du Commodore 64 au clavier à membrane.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Günstiger Konsolen-Computer von Commodore aus dem Jahr 1982, vor allem in Japan verkauft, Vorläufer des C64 mit Folientastatur.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Max Machine</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1982</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Commodore</text>
+		</text>
+	</view>
+</theme>

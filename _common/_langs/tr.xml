@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="tr">
+		<desactive>Devre dışı</desactive>
+		<default>Varsayılan</default>
+		<active>Etkin</active>
+		<novideo>Devre dışı</novideo>
+		<videoback>Etkin</videoback>
+		<intheme>Tema klasörü - Varsayılan</intheme>
+		<extfolder>Harici klasör</extfolder>
+		<nodates>Tarih yok</nodates>
+		<playcountone>oynama</playcountone>
+		<playcount>oynama</playcount>
+		<noplaycount>Hiç başlatılmadı</noplaycount>
+		<playerss>oyuncu</playerss>
+		<player>oyuncu</player>
+		<nogametime>Hiç oynanmadı</nogametime>
+		<noplayerdata>Bilinmiyor</noplayerdata>
+		<noratings>Puan yok</noratings>
+		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>OYUNLAR - Oyun adı</opt_nomjeu>
+		<nomjeucomplet>Tam</nomjeucomplet>
+		<nomjeucourt>Parantezsiz</nomjeucourt>
+		<presgame1>Bu oyunun türü</presgame1>
+		<presgame2>geliştiren</presgame2>
+		<presgame3>platform</presgame3>
+		<presgame4>- Mevcut diller :</presgame4>
+		<nomjeulabel>Oyun adı :</nomjeulabel>
+		<genrelabel>Tür :</genrelabel>
+		<devlabel>Geliştirici :</devlabel>
+		<langlabel>Diller :</langlabel>
+		<gametimelabel>Oynama süresi :</gametimelabel>
+		<lastgamelabel>Son oynama:</lastgamelabel>
+		<viewbasicgrid>Basic: Temel ızgara görünümü</viewbasicgrid>
+		<jeux>oyun</jeux>
+		<longselect>"select"e uzun basma</longselect>
+		<favuniquement>Yalnızca favoriler</favuniquement>
+		<tslesjeux>Tüm oyunlar</tslesjeux>
+		<fanartstarsyst>Klasik</fanartstarsyst>
+		<fanartmodern>Modern 1 (içerik yolu ile uyumsuz)</fanartmodern>
+		<fanartmodern2>Modern 2 (içerik yolu ile uyumlu)</fanartmodern2>
+		<fanartfreshone>Yalnızca FreshOne tarafından seçilen fanartlar</fanartfreshone>
+		<fanartsystcustom>custom klasöründeki fanartlar, yoksa FreshOne</fanartsystcustom>
+		<videoangled>Etkin (küçük, eğik)</videoangled>
+		<hardware>Donanım</hardware>
+		<charsystem>Karakterler</charsystem>
+		<figurines>Figürler (Animatics teması kurulu olmalı)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>Düğmelerin konumu</iconsetposition>
+		<skyblue>gök mavisi</skyblue>
+		<purple>mor</purple>
+		<red>kırmızı</red>
+		<aqua>gök mavisi</aqua>
+		<orange>turuncu</orange>
+		<green>yeşil</green>
+		<yellow>sarı</yellow>
+		<pink>pembe</pink>
+		<grey>koyu gri</grey>
+		<lightgrey>açık gri</lightgrey>
+		<navy>mavi alt</navy>
+		<violet>mor</violet>
+		<candy>candy</candy>
+		<redalt>kırmızı alt</redalt>
+		<yellowalt>sarı alt</yellowalt>
+		<greenalt>yeşil alt</greenalt>
+		<purplealt>mor alt</purplealt>
+		<classiquesyst>Geri yakınlaştırmayla kaybolma</classiquesyst>
+		<no>Hayır</no>
+		<yes>Evet</yes>
+		<thumb>2D kutu için ayarlı</thumb>
+		<boxart>3D kutu için ayarlı</boxart>
+		<starrotate>Evet</starrotate>
+		<nostarrotate>Hayır</nostarrotate>
+		<deactive>Devre dışı</deactive>
+		<speedslow1>Yavaş+</speedslow1>
+		<speedslow2>Yavaş++</speedslow2>
+		<starvideoang>Eğik</starvideoang>
+		<starvideodef>Standart</starvideodef>
+		<starvideobig>Büyük</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Hoş gri</griscl>
+		<noirombre>Siyah çerçeve + gölge</noirombre>
+		<blancombre>Beyaz çerçeve + gölge</blancombre>
+		<ombre>Yalnızca gölge</ombre>
+		<rien>Süsleme yok</rien>
+		<presetshowbig>RFE Show büyük önizleme</presetshowbig>
+		<presetshowsmall>RFE Show küçük önizleme</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar kare</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (Daha hızlı gezinme)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Büyük panelin altında (Steam gibi)</deckgauche>
+		<deckcentre>Sıranın ortasında (yakınlaştırma + parlama)</deckcentre>
+		<decknormal>Normal</decknormal>
+		<spotvideodroite>Sağda, kutuların üzerinde</spotvideodroite>
+		<spotvideoaucune>Kapalı</spotvideoaucune>
+		<spotvideogauche>Solda, bilgilerle</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Logoyu koru</decklogogarder>
+		<decklogobandeau>Bilgi bandı (logo gizli)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Önceki klasöre dön</retourdossier>
+		<ra_moncompte>Hesabım</ra_moncompte>
+		<ra_succesjeu>Oyun başarımları</ra_succesjeu>
+		<opt_raaffichage>OYUNLAR - RetroAchievements (harici araç)</opt_raaffichage>
+		<raaffichagepermanent>Sürekli görünür</raaffichagepermanent>
+		<raaffichagetemporaire>Birkaç saniye</raaffichagetemporaire>
+		<noteetoile>Yıldız</noteetoile>
+		<notecoeur>Kalp</notecoeur>
+		<notemanette>Oyun kolu</notemanette>
+		<notepouce>Beğeni</notepouce>
+		<notetrophee>Kupa</notetrophee>
+		<notefantome>Hayalet</notefantome>
+		<notecrane>Kafatası</notecrane>
+		<notepourcent>% olarak</notepourcent>
+		<wheelclic>Hyperspin tarzı tık</wheelclic>
+		<bulle>Baloncuk</bulle>
+		<clic>Basit tık</clic>
+		<clicgrave>Derin tık</clicgrave>
+		<frottement>Sürtünme</frottement>
+		<poc>Pop</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>GENEL - Karşılama mesajı</opt_lismoi>
+		<opt_iconset>GENEL - Yardım simgelerinin görünümü</opt_iconset>
+		<opt_colorhelp>GENEL - Yardım metni renkleri</opt_colorhelp>
+		<opt_horlogecouleur>GENEL - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>GENEL - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>SİSTEMLER - Sistem listesi görünümü</opt_systemview>
+		<opt_imagefondcops1>SİSTEMLER - Sistem fanart seçimi</opt_imagefondcops1>
+		<opt_video4starmodern>SİSTEMLER - Sistem görünümünde oynanış videosu</opt_video4starmodern>
+		<opt_video4starclassic>SİSTEMLER - Sistem görünümünde oynanış videosu</opt_video4starclassic>
+		<opt_systviewselec>SİSTEMLER - Çarktaki sistem görseli</opt_systviewselec>
+		<opt_breadcrumbsonoff>SİSTEMLER - Solda dikey menü (klasik sistem görünümü)</opt_breadcrumbsonoff>
+		<arianeauto>Otomatik (sistem sıralamasına göre)</arianeauto>
+		<arianecategories>Kategoriler (donanım türüne göre sıralama)</arianecategories>
+		<arianealpha>A'dan Z'ye harfler (alfabetik sıralama)</arianealpha>
+		<arianealphavoisines>Harf ve komşuları (alfabetik sıralama)</arianealphavoisines>
+		<arianeconstructeur>Üreticiler (üreticiye göre sıralama)</arianeconstructeur>
+		<arianedecennie>On yıllar (çıkış yılına göre sıralama)</arianedecennie>
+		<arianeautres>DİĞER</arianeautres>
+		<opt_metadataonoff>SİSTEMLER - Sistem bilgisi (klasik sistem görünümü)</opt_metadataonoff>
+		<opt_systannonce>OYUNLAR - Açılışta geçerli sistemi göster</opt_systannonce>
+		<opt_infosmax>OYUNLAR - Genişletilmiş bilgi konsolu gösterilsin mi?</opt_infosmax>
+		<opt_gamewheelsound>GENEL - Kaydırma sesi</opt_gamewheelsound>
+		<opt_boxorthumb>OYUNLAR - Gösterilecek oyun kutusu</opt_boxorthumb>
+		<opt_fanarttransition>OYUNLAR - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>OYUNLAR - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>OYUNLAR - Disk dönüşü</opt_cdvitesse>
+		<cdnormale>Normal</cdnormale>
+		<cdlente>Yavaş</cdlente>
+		<cdrapide>Hızlı</cdrapide>
+		<cdtresrapide>Çok hızlı</cdtresrapide>
+		<cdimmobile>Sabit</cdimmobile>
+		<opt_umdrotation>OYUNLAR - UMD dönüşü (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>OYUNLAR - Seçili oyunu öne çıkar</opt_selectionvaleur>
+		<selegere>Hafif</selegere>
+		<selmarquee>Belirgin</selmarquee>
+		<opt_videojeu>OYUNLAR - Oyun videosu</opt_videojeu>
+		<vjcapture>Önce ekran görüntüsü, sonra video</vjcapture>
+		<vjseule>Yalnızca video</vjseule>
+		<vjfondu>Yumuşak geçişli video</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>OYUNLAR - Box case type</opt_typeboite>
+		<opt_contourboite>OYUNLAR - Box outline (case)</opt_contourboite>
+		<opt_deckespace>OYUNLAR - Kutular arası boşluk</opt_deckespace>
+		<opt_iconenote>OYUNLAR - Puan simgesi</opt_iconenote>
+		<opt_extfolderbezelsyst>GELİŞMİŞ - Sistem bezelleri</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>GELİŞMİŞ - Oyun yayıncısı logoları</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>GELİŞMİŞ - Sistem fanartı</opt_extfolderfanart>
+		<opt_extfolderlogosyst>GELİŞMİŞ - Sistem logosu</opt_extfolderlogosyst>
+		<opt_extfoldersalon>GELİŞMİŞ - RFE Retrofist Nostalgia görünümü arka planlarının konumu</opt_extfoldersalon>
+		<opt_perfmachine>GELİŞMİŞ - Düşük güçlü makine modu</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - Arka plan vinyeti</opt_salonvignette>
+		<vignleger>Hafif</vignleger>
+		<vignfort>Güçlü</vignfort>
+		<opt_deckselection>BIG ART - Seçili oyunun konumu</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Video sırasında logo</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - SNES, N64, NGAGE, Solarus kutularının döndürülmesi</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - Oyun kutularının açısı</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Oyun ortamı (disk, kartuş)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Kaydırma animasyonu hızı</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Önizleme videosu boyutu</opt_starvideo>
+		<opt_starvideocadre>BOXART - Önizleme videosu çerçevesi</opt_starvideocadre>
+		<vcadreactuel>Mevcut çerçeve</vcadreactuel>
+		<vcadreombre>Yalnızca gölge</vcadreombre>
+		<vcadreecranfin>İnce çerçeve</vcadreecranfin>
+		<vcadrebois>Ahşap</vcadrebois>
+		<vcadremetal>Fırçalanmış metal</vcadremetal>
+		<vcadrelumineux>Parlayan ekran</vcadrelumineux>
+		<vcadretv>Tüplü TV</vcadretv>
+		<vcadregalerie>Galeri</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Buzlu cam</vcadreverre>
+		<vcadrecarbone>Karbon LED</vcadrecarbone>
+		<vcadreneondouble>Çift neon</vcadreneondouble>
+		<vcadregaming>Oyuncu</vcadregaming>
+		<vcadrepinceau>Fırça darbeleri</vcadrepinceau>
+		<vcadretechnodore>Altın tekno</vcadretechnodore>
+		<vcadretechnoargent>Gümüş tekno</vcadretechnoargent>
+		<vcadreneonelec>Elektrikli neon</vcadreneonelec>
+		<vcadrevitre>Cam</vcadrevitre>
+		<vcadreflammes>Alevler</vcadreflammes>
+		<vcadreencre>Mürekkep</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Dönen kutunun yan yüzleri</opt_boite3dtranche>
+		<b3tcharniere>Bir yanda logo, diğer yanda açılış</b3tcharniere>
+		<b3tdeuxcotes>İki yanda da logo</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - Izgara rengi</opt_gridcolor>
+		<opt_squarecadre>KARE - Oyunları temsil eden karelerin görünümü</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>SİSTEMLER - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>SİSTEMLER - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>SİSTEMLER - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>SİSTEMLER - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>OYUNLAR - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Hoş geldin ve teşekkürler</planche00>
+		<planche01>01 - Sistem görünümleri</planche01>
+		<planche02>02 - Klasik görünüm: sistem görseli</planche02>
+		<planche03>03 - Klasik görünüm: ayrıntılar</planche03>
+		<planche04>04 - Sistem fanartları, Modern ve Z-Spin</planche04>
+		<planche05>05 - 11 oyun görünümü</planche05>
+		<planche06>06 - FanartStar Boxart: kutular ve bilgiler</planche06>
+		<planche07>07 - FanartStar Boxart: video</planche07>
+		<planche08>08 - Kutular ve ortamlar</planche08>
+		<planche09>09 - 22 kutu kabı</planche09>
+		<planche10>10 - Ortam: sisteme göre ayarlar</planche10>
+		<planche11>11 - Oyun fanartları ve seçim</planche11>
+		<planche12>12 - Big Art, Spotlight, Kare, 16/9 ve 4/3</planche12>
+		<planche13>13 - RFE görünümleri</planche13>
+		<planche14>14 - RFE Retrofist: televizyon ekranı</planche14>
+		<planche15>15 - Show Big &amp; Small: dönen kutu</planche15>
+		<planche16>16 - Oyun görünümlerinin ortak seçenekleri</planche16>
+		<planche17>17 - Genel: sesler, yardım, saat</planche17>
+		<planche18>18 - Kendi klasörlerinle özelleştir</planche18>
+		<planche19>19 - Kişisel oyun medyası</planche19>
+		<planche20>20 - Bir klasörü giydirmek</planche20>
+		<planche21>21 - Hangi görsel kazanır?</planche21>
+		<planche22>22 - Gruplanmış sistemler</planche22>
+		<planche23>23 - Zayıf makine ve bağlantılar</planche23>
+	</variables>
+</theme>

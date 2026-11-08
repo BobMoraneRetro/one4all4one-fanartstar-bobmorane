@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Hotline Miami, the brutal top-down action series set in a neon-soaked 1980s Miami, with a celebrated synthwave soundtrack.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Hotline Miami, a série de ação brutal com visão de cima em uma Miami neon dos anos 80, com uma trilha synthwave aclamada.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Hotline Miami, the brutal top-down action series set in a neon-soaked 1980s Miami, with a celebrated synthwave soundtrack.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Hotline Miami, la serie de acción brutal con vista cenital en un Miami de neón de los 80, con una célebre banda sonora synthwave.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Hotline Miami, la série d'action brutale en vue de dessus dans un Miami des années 1980 aux couleurs néon, à la bande-son synthwave réputée.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Hotline Miami, die brutale Top-down-Action-Reihe im neonbunten Miami der 1980er mit gefeiertem Synthwave-Soundtrack.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Hotline Miami</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2012</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Dennaton Games / Devolver Digital</text>
+		</text>
+	</view>
+</theme>

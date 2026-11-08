@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Xbox Live Arcade, Microsoft's digital store of small games and arcade classics, launched on the original Xbox.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Xbox Live Arcade, a loja digital da Microsoft de pequenos jogos e clássicos de arcade, lançada no primeiro Xbox.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Xbox Live Arcade, Microsoft's digital store of small games and arcade classics, launched on the original Xbox.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Xbox Live Arcade, la tienda digital de Microsoft de pequeños juegos y clásicos arcade, lanzada en la primera Xbox.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Xbox Live Arcade, la boutique numérique de Microsoft de petits jeux et de classiques de l'arcade, lancée sur la première Xbox.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Xbox Live Arcade, Microsofts Digitalshop für kleine Spiele und Arcade-Klassiker, gestartet auf der ersten Xbox.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Xbox Live Arcade</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2004</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Microsoft</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Native engine for the first Tomb Raider, Core Design's 1996 action-adventure that introduced Lara Croft.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Motor nativo para o primeiro Tomb Raider, a aventura de ação da Core Design de 1996 que apresentou Lara Croft.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Native engine for the first Tomb Raider, Core Design's 1996 action-adventure that introduced Lara Croft.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Motor nativo para el primer Tomb Raider, la aventura de acción de Core Design de 1996 que dio a conocer a Lara Croft.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Moteur natif pour le premier Tomb Raider, le jeu d'action-aventure de Core Design sorti en 1996 qui a fait connaître Lara Croft.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Native Engine für das erste Tomb Raider, Core Designs Action-Adventure von 1996, mit dem Lara Croft bekannt wurde.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Tomb Raider</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1996</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Core Design / Eidos</text>
+		</text>
+	</view>
+</theme>

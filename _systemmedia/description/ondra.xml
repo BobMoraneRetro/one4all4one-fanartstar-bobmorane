@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Czechoslovak home computer designed by Tesla in 1985, a simple and affordable machine for schools and homes.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico tchecoslovaco criado pela Tesla em 1985, uma máquina simples e acessível para escolas e lares.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Czechoslovak home computer designed by Tesla in 1985, a simple and affordable machine for schools and homes.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico checoslovaco diseñado por Tesla en 1985, una máquina sencilla y asequible para escuelas y hogares.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial tchécoslovaque conçu par Tesla en 1985, machine simple et abordable pour les écoles et les foyers.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Tschechoslowakischer Heimcomputer von Tesla aus dem Jahr 1985, ein einfaches und günstiges Gerät für Schulen und Haushalte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Ondra</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1985</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Tesla Liberec</text>
+		</text>
+	</view>
+</theme>

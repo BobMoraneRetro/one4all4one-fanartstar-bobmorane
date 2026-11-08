@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Karaoke: sing along to your favourite songs with lyrics displayed on screen.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Karaokê: cante suas músicas favoritas com a letra na tela.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Karaoke: sing along to your favourite songs with lyrics displayed on screen.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Karaoke: canta tus canciones favoritas con la letra en pantalla.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Karaoké : chantez vos chansons préférées avec les paroles affichées à l'écran.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Karaoke: Singe deine Lieblingslieder mit dem Text auf dem Bildschirm.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Karaoke</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

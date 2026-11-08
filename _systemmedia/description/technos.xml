@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Technos Japan, the creator of Double Dragon, Renegade and the Kunio-kun series.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Technos Japan, criadora de Double Dragon, Renegade e da série Kunio-kun.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Technos Japan, the creator of Double Dragon, Renegade and the Kunio-kun series.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Technos Japan, creador de Double Dragon, Renegade y la serie Kunio-kun.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade de Technos Japan, créateur de Double Dragon, Renegade et de la série Kunio-kun.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Technos Japan, dem Schöpfer von Double Dragon, Renegade und der Kunio-kun-Reihe.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Technos</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Technos Japan</text>
+		</text>
+	</view>
+</theme>

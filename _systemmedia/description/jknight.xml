@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>OpenJK, the source port of Star Wars Jedi Knight: Jedi Academy and Jedi Outcast, with modern fixes and widescreen support.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>OpenJK, port de Star Wars Jedi Knight: Jedi Academy e Jedi Outcast, com correções modernas e suporte a tela larga.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>OpenJK, the source port of Star Wars Jedi Knight: Jedi Academy and Jedi Outcast, with modern fixes and widescreen support.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>OpenJK, port de Star Wars Jedi Knight: Jedi Academy y Jedi Outcast, con correcciones modernas y soporte de pantalla panorámica.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>OpenJK, portage de Star Wars Jedi Knight : Jedi Academy et Jedi Outcast, avec corrections modernes et prise en charge de l'écran large.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>OpenJK, der Source-Port von Star Wars Jedi Knight: Jedi Academy und Jedi Outcast, mit modernen Korrekturen und Breitbild.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Jedi Academy</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2003</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

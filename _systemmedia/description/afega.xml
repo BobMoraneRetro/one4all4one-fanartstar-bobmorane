@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Afega, a small South Korean developer of the 1990s known for shoot'em ups such as Red Hawk.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Afega, pequeno desenvolvedor sul-coreano dos anos 90 conhecido por shoot'em ups como Red Hawk.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Afega, a small South Korean developer of the 1990s known for shoot'em ups such as Red Hawk.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Afega, pequeño desarrollador surcoreano de los años 90 conocido por shoot'em ups como Red Hawk.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade d'Afega, petit développeur sud-coréen des années 1990 connu pour des shoot'em up comme Red Hawk.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Afega, einem kleinen südkoreanischen Entwickler der 1990er-Jahre, bekannt für Shoot'em ups wie Red Hawk.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Afega</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Afega</text>
+		</text>
+	</view>
+</theme>

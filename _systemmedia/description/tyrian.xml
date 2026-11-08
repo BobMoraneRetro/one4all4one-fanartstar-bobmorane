@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>OpenTyrian, the open-source port of Tyrian, the 1995 vertical shoot'em up released as freeware.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>OpenTyrian, port livre de Tyrian, o shoot'em up vertical de 1995 que se tornou gratuito.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>OpenTyrian, the open-source port of Tyrian, the 1995 vertical shoot'em up released as freeware.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>OpenTyrian, port libre de Tyrian, el shoot'em up vertical de 1995 que pasó a ser gratuito.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>OpenTyrian, portage libre de Tyrian, le shoot'em up vertical de 1995 devenu gratuit.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>OpenTyrian, der quelloffene Port von Tyrian, dem vertikalen Shoot'em up von 1995, das heute Freeware ist.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Tyrian</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1995</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

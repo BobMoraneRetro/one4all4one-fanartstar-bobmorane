@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Modern 8-bit computer designed by David Murray (The 8-Bit Guy), built around a 65C02 processor in the spirit of the 1980s machines.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador moderno de 8 bits criado por David Murray (The 8-Bit Guy), com processador 65C02 no espírito das máquinas dos anos 80.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Modern 8-bit computer designed by David Murray (The 8-Bit Guy), built around a 65C02 processor in the spirit of the 1980s machines.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador moderno de 8 bits diseñado por David Murray (The 8-Bit Guy), con un procesador 65C02 al estilo de las máquinas de los 80.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur 8 bits moderne conçu par David Murray (The 8-Bit Guy), basé sur un processeur 65C02 dans l'esprit des machines des années 1980.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Moderner 8-Bit-Computer von David Murray (The 8-Bit Guy) mit 65C02-Prozessor im Geist der 1980er-Jahre.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Commander X16</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2019</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>The 8-Bit Guy</text>
+		</text>
+	</view>
+</theme>

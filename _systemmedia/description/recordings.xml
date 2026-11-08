@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Your recordings: gameplay videos captured while playing, viewable from the frontend.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Suas gravações: vídeos de partidas capturados enquanto você joga, visíveis pela interface.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Your recordings: gameplay videos captured while playing, viewable from the frontend.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Tus grabaciones: vídeos de partidas capturados mientras juegas, visibles desde la interfaz.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Vos enregistrements : vidéos de parties capturées pendant le jeu, à regarder depuis l'interface.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Deine Aufnahmen: beim Spielen aufgenommene Videos, über die Oberfläche abspielbar.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Recordings</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

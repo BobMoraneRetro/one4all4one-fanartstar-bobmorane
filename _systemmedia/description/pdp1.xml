@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>DEC's PDP-1 minicomputer of 1959-1961, on which Spacewar!, one of the very first video games, was created at MIT in 1962.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O minicomputador PDP-1 da DEC, no qual Spacewar!, um dos primeiros videogames, foi criado no MIT em 1962.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>DEC's PDP-1 minicomputer of 1959-1961, on which Spacewar!, one of the very first video games, was created at MIT in 1962.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El miniordenador PDP-1 de DEC, en el que se creó Spacewar!, uno de los primeros videojuegos, en el MIT en 1962.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le mini-ordinateur PDP-1 de DEC, sur lequel Spacewar!, l'un des tout premiers jeux vidéo, a été créé au MIT en 1962.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>DECs Minicomputer PDP-1, auf dem 1962 am MIT Spacewar!, eines der allerersten Videospiele, entstand.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PDP-1</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1961</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Digital Equipment Corporation</text>
+		</text>
+	</view>
+</theme>

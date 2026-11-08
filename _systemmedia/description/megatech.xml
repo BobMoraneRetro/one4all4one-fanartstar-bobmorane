@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's Mega-Tech arcade system, which let players choose among several Mega Drive and Master System games paid by time.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O sistema de arcade Mega-Tech da Sega, que oferecia vários jogos de Mega Drive e Master System pagos por tempo de jogo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's Mega-Tech arcade system, which let players choose among several Mega Drive and Master System games paid by time.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El sistema arcade Mega-Tech de Sega, que ofrecía varios juegos de Mega Drive y Master System pagados por tiempo.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le système d'arcade Mega-Tech de Sega, qui proposait plusieurs jeux Mega Drive et Master System, payés au temps de jeu.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas Arcade-System Mega-Tech, das mehrere Mega-Drive- und Master-System-Spiele gegen Spielzeit anbot.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Mega-Tech</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

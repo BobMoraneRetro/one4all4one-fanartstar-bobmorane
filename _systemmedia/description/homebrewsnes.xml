@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Homebrew games for NES: independent creations released long after the commercial life of the console.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos homebrew para NES: criações independentes lançadas muito depois do fim comercial do console.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Homebrew games for NES: independent creations released long after the commercial life of the console.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos homebrew para NES: creaciones independientes lanzadas mucho después del final comercial de la consola.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux homebrew pour NES : créations indépendantes sorties bien après la fin de la vie commerciale de la console.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Homebrew-Spiele für NES: unabhängige Werke, die lange nach dem Verkaufsende der Konsole erschienen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>NES Homebrew</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1986</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+</theme>

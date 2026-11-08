@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PolyGame Master 2, IGS's second arcade system, home to Oriental Legend 2 and Knights of Valour 2 New Legend.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>PolyGame Master 2, o segundo sistema de arcade da IGS, com Oriental Legend 2 e Knights of Valour 2 New Legend.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PolyGame Master 2, IGS's second arcade system, home to Oriental Legend 2 and Knights of Valour 2 New Legend.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>PolyGame Master 2, el segundo sistema arcade de IGS, con Oriental Legend 2 y Knights of Valour 2 New Legend.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>PolyGame Master 2, le second système d'arcade d'IGS, qui a accueilli Oriental Legend 2 et Knights of Valour 2 New Legend.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PolyGame Master 2, das zweite Arcade-System von IGS mit Oriental Legend 2 und Knights of Valour 2 New Legend.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PGM2</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2007</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>IGS</text>
+		</text>
+	</view>
+</theme>

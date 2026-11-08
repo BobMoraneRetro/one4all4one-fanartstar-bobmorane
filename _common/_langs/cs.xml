@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="cs">
+		<desactive>Vypnuto</desactive>
+		<default>Výchozí</default>
+		<active>Zapnuto</active>
+		<novideo>Vypnuto</novideo>
+		<videoback>Zapnuto</videoback>
+		<intheme>Složka motivu - Výchozí</intheme>
+		<extfolder>Externí složka</extfolder>
+		<nodates>Bez data</nodates>
+		<playcountone>hra</playcountone>
+		<playcount>her</playcount>
+		<noplaycount>Nikdy nespuštěno</noplaycount>
+		<playerss>hráči</playerss>
+		<player>hráč</player>
+		<nogametime>Nikdy nehráno</nogametime>
+		<noplayerdata>Neznámé</noplayerdata>
+		<noratings>Bez hodnocení</noratings>
+		<notesur100>ze 100</notesur100>
+		<opt_nomjeu>HRY - Název hry</opt_nomjeu>
+		<nomjeucomplet>Úplný</nomjeucomplet>
+		<nomjeucourt>Bez závorek</nomjeucourt>
+		<presgame1>Toto je hra typu</presgame1>
+		<presgame2>vyvinutá společností</presgame2>
+		<presgame3>hratelná na</presgame3>
+		<presgame4>- Dostupné jazyky :</presgame4>
+		<nomjeulabel>Název hry :</nomjeulabel>
+		<genrelabel>Žánr :</genrelabel>
+		<devlabel>Vývojář :</devlabel>
+		<langlabel>Jazyky :</langlabel>
+		<gametimelabel>Doba hraní :</gametimelabel>
+		<lastgamelabel>Naposledy hráno:</lastgamelabel>
+		<viewbasicgrid>Basic: Základní mřížka</viewbasicgrid>
+		<jeux>hry</jeux>
+		<longselect>Dlouhé stisknutí "select"</longselect>
+		<favuniquement>Pouze oblíbené</favuniquement>
+		<tslesjeux>Všechny hry</tslesjeux>
+		<fanartstarsyst>Klasické</fanartstarsyst>
+		<fanartmodern>Moderní 1 (nekompatibilní s drobečkovou navigací)</fanartmodern>
+		<fanartmodern2>Moderní 2 (kompatibilní s drobečkovou navigací)</fanartmodern2>
+		<fanartfreshone>Pouze fanarty vybrané FreshOne</fanartfreshone>
+		<fanartsystcustom>Fanarty ze složky custom, jinak FreshOne</fanartsystcustom>
+		<videoangled>Zapnuto (malé, pod úhlem)</videoangled>
+		<hardware>Hardware</hardware>
+		<charsystem>Postavy</charsystem>
+		<figurines>Figurky (musí být nainstalován motiv Animatics)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>Umístění tlačítek</iconsetposition>
+		<skyblue>blankytně modrá</skyblue>
+		<purple>fialová</purple>
+		<red>červená</red>
+		<aqua>blankytně modrá</aqua>
+		<orange>oranžová</orange>
+		<green>zelená</green>
+		<yellow>žlutá</yellow>
+		<pink>růžová</pink>
+		<grey>tmavě šedá</grey>
+		<lightgrey>světle šedá</lightgrey>
+		<navy>modrá alt</navy>
+		<violet>fialová</violet>
+		<candy>candy</candy>
+		<redalt>červená alt</redalt>
+		<yellowalt>žlutá alt</yellowalt>
+		<greenalt>zelená alt</greenalt>
+		<purplealt>fialová alt</purplealt>
+		<classiquesyst>Zmizení s oddálením</classiquesyst>
+		<no>Ne</no>
+		<yes>Ano</yes>
+		<thumb>Kalibrováno pro 2D krabici</thumb>
+		<boxart>Kalibrováno pro 3D krabici</boxart>
+		<starrotate>Ano</starrotate>
+		<nostarrotate>Ne</nostarrotate>
+		<deactive>Vypnuto</deactive>
+		<speedslow1>Pomalu+</speedslow1>
+		<speedslow2>Pomalu++</speedslow2>
+		<starvideoang>Nakloněné</starvideoang>
+		<starvideodef>Standard</starvideodef>
+		<starvideobig>Velké</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Příjemná šedá</griscl>
+		<noirombre>Černý rámeček + stín</noirombre>
+		<blancombre>Bílý rámeček + stín</blancombre>
+		<ombre>Pouze stín</ombre>
+		<rien>Bez dekorace</rien>
+		<presetshowbig>RFE Show velký náhled</presetshowbig>
+		<presetshowsmall>RFE Show malý náhled</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar čtverec</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (Rychlejší navigace)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Pod velkým panelem (jako Steam)</deckgauche>
+		<deckcentre>Uprostřed řady (zoom + záře)</deckcentre>
+		<decknormal>Normální</decknormal>
+		<spotvideodroite>Vpravo, přes krabice</spotvideodroite>
+		<spotvideoaucune>Vypnuto</spotvideoaucune>
+		<spotvideogauche>Vlevo, s informacemi</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Ponechat logo</decklogogarder>
+		<decklogobandeau>Informační pruh (logo skryto)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Zpět do předchozí složky</retourdossier>
+		<ra_moncompte>Můj účet</ra_moncompte>
+		<ra_succesjeu>Úspěchy hry</ra_succesjeu>
+		<opt_raaffichage>HRY - RetroAchievements (externí nástroj)</opt_raaffichage>
+		<raaffichagepermanent>Trvalé zobrazení</raaffichagepermanent>
+		<raaffichagetemporaire>Několik sekund</raaffichagetemporaire>
+		<noteetoile>Hvězda</noteetoile>
+		<notecoeur>Srdce</notecoeur>
+		<notemanette>Ovladač</notemanette>
+		<notepouce>Palec nahoru</notepouce>
+		<notetrophee>Pohár</notetrophee>
+		<notefantome>Duch</notefantome>
+		<notecrane>Lebka</notecrane>
+		<notepourcent>V %</notepourcent>
+		<wheelclic>Cvaknutí ve stylu Hyperspin</wheelclic>
+		<bulle>Bublina</bulle>
+		<clic>Jednoduché cvaknutí</clic>
+		<clicgrave>Hluboké cvaknutí</clicgrave>
+		<frottement>Tření</frottement>
+		<poc>Puk</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>OBECNÉ - Uvítací zpráva</opt_lismoi>
+		<opt_iconset>OBECNÉ - Vzhled ikon nápovědy</opt_iconset>
+		<opt_colorhelp>OBECNÉ - Barvy textu nápovědy</opt_colorhelp>
+		<opt_horlogecouleur>OBECNÉ - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>OBECNÉ - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>SYSTÉMY - Zobrazení seznamu systémů</opt_systemview>
+		<opt_imagefondcops1>SYSTÉMY - Výběr fanartů systému</opt_imagefondcops1>
+		<opt_video4starmodern>SYSTÉMY - Video z hraní v zobrazení systémů</opt_video4starmodern>
+		<opt_video4starclassic>SYSTÉMY - Video z hraní v zobrazení systémů</opt_video4starclassic>
+		<opt_systviewselec>SYSTÉMY - Obrázek systému v kole</opt_systviewselec>
+		<opt_breadcrumbsonoff>SYSTÉMY - Svislé menu vlevo (klasické zobrazení systémů)</opt_breadcrumbsonoff>
+		<arianeauto>Automaticky (podle řazení systémů)</arianeauto>
+		<arianecategories>Kategorie (řazení podle typu hardwaru)</arianecategories>
+		<arianealpha>Písmena A až Z (abecední řazení)</arianealpha>
+		<arianealphavoisines>Písmeno a sousední (abecední řazení)</arianealphavoisines>
+		<arianeconstructeur>Výrobci (řazení podle výrobce)</arianeconstructeur>
+		<arianedecennie>Desetiletí (řazení podle roku vydání)</arianedecennie>
+		<arianeautres>OSTATNÍ</arianeautres>
+		<opt_metadataonoff>SYSTÉMY - Informace o systému (klasické zobrazení systémů)</opt_metadataonoff>
+		<opt_systannonce>HRY - Zobrazit aktuální systém při otevření</opt_systannonce>
+		<opt_infosmax>HRY - Zobrazit rozšířenou informační konzoli?</opt_infosmax>
+		<opt_gamewheelsound>OBECNÉ - Zvuk při posouvání</opt_gamewheelsound>
+		<opt_boxorthumb>HRY - Krabice hry k zobrazení</opt_boxorthumb>
+		<opt_fanarttransition>HRY - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>HRY - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>HRY - Otáčení disku</opt_cdvitesse>
+		<cdnormale>Normální</cdnormale>
+		<cdlente>Pomalé</cdlente>
+		<cdrapide>Rychlé</cdrapide>
+		<cdtresrapide>Velmi rychlé</cdtresrapide>
+		<cdimmobile>Nehybný</cdimmobile>
+		<opt_umdrotation>HRY - Otáčení UMD (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>HRY - Zvýraznit vybranou hru</opt_selectionvaleur>
+		<selegere>Lehké</selegere>
+		<selmarquee>Výrazné</selmarquee>
+		<opt_videojeu>HRY - Video hry</opt_videojeu>
+		<vjcapture>Snímek, poté video</vjcapture>
+		<vjseule>Pouze video</vjseule>
+		<vjfondu>Video s prolnutím</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>HRY - Box case type</opt_typeboite>
+		<opt_contourboite>HRY - Box outline (case)</opt_contourboite>
+		<opt_deckespace>HRY - Rozestup krabic</opt_deckespace>
+		<opt_iconenote>HRY - Ikona hodnocení</opt_iconenote>
+		<opt_extfolderbezelsyst>POKROČILÉ - Rámečky (bezel) systémů</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>POKROČILÉ - Loga vydavatelů her</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>POKROČILÉ - Fanart systémů</opt_extfolderfanart>
+		<opt_extfolderlogosyst>POKROČILÉ - Logo systému</opt_extfolderlogosyst>
+		<opt_extfoldersalon>POKROČILÉ - Umístění pozadí zobrazení RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_perfmachine>POKROČILÉ - Režim pro slabé stroje</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - Vinětace pozadí</opt_salonvignette>
+		<vignleger>Lehká</vignleger>
+		<vignfort>Silná</vignfort>
+		<opt_deckselection>BIG ART - Pozice vybrané hry</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Logo během videa</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - Otočení krabic SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - Úhel krabic her</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Nosič hry (disk, cartridge)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Rychlost animace posouvání</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Velikost náhledového videa</opt_starvideo>
+		<opt_starvideocadre>BOXART - Rámeček náhledového videa</opt_starvideocadre>
+		<vcadreactuel>Současný rámeček</vcadreactuel>
+		<vcadreombre>Pouze stín</vcadreombre>
+		<vcadreecranfin>Tenký rámeček</vcadreecranfin>
+		<vcadrebois>Dřevo</vcadrebois>
+		<vcadremetal>Kartáčovaný kov</vcadremetal>
+		<vcadrelumineux>Zářící obrazovka</vcadrelumineux>
+		<vcadretv>CRT televizor</vcadretv>
+		<vcadregalerie>Galerie</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Matné sklo</vcadreverre>
+		<vcadrecarbone>Karbon LED</vcadrecarbone>
+		<vcadreneondouble>Dvojitý neon</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Tahy štětcem</vcadrepinceau>
+		<vcadretechnodore>Zlaté techno</vcadretechnodore>
+		<vcadretechnoargent>Stříbrné techno</vcadretechnoargent>
+		<vcadreneonelec>Elektrický neon</vcadreneonelec>
+		<vcadrevitre>Sklo</vcadrevitre>
+		<vcadreflammes>Plameny</vcadreflammes>
+		<vcadreencre>Inkoust</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Hřbety otáčející se krabice</opt_boite3dtranche>
+		<b3tcharniere>Logo na jedné straně, otevírání na druhé</b3tcharniere>
+		<b3tdeuxcotes>Logo na obou stranách</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - Barva mřížky</opt_gridcolor>
+		<opt_squarecadre>ČTVEREC - Vzhled čtverců představujících hry</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>SYSTÉMY - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>SYSTÉMY - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>SYSTÉMY - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>SYSTÉMY - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>HRY - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Vítejte a poděkování</planche00>
+		<planche01>01 - Zobrazení systémů</planche01>
+		<planche02>02 - Klasické zobrazení: obrázek systému</planche02>
+		<planche03>03 - Klasické zobrazení: podrobnosti</planche03>
+		<planche04>04 - Fanarty systémů, Modern a Z-Spin</planche04>
+		<planche05>05 - 11 zobrazení her</planche05>
+		<planche06>06 - FanartStar Boxart: krabice a informace</planche06>
+		<planche07>07 - FanartStar Boxart: video</planche07>
+		<planche08>08 - Krabice a nosiče</planche08>
+		<planche09>09 - 22 obalů</planche09>
+		<planche10>10 - Nosič: nastavení podle systému</planche10>
+		<planche11>11 - Fanarty her a výběr</planche11>
+		<planche12>12 - Big Art, Spotlight, Čtverec, 16/9 a 4/3</planche12>
+		<planche13>13 - Zobrazení RFE</planche13>
+		<planche14>14 - RFE Retrofist: obrazovka televize</planche14>
+		<planche15>15 - Show Big &amp; Small: otáčející se krabice</planche15>
+		<planche16>16 - Společné volby zobrazení her</planche16>
+		<planche17>17 - Obecné: zvuky, nápověda, hodiny</planche17>
+		<planche18>18 - Přizpůsobení vlastními složkami</planche18>
+		<planche19>19 - Vlastní média her</planche19>
+		<planche20>20 - Oblékání složky</planche20>
+		<planche21>21 - Který obrázek vyhraje?</planche21>
+		<planche22>22 - Seskupené systémy</planche22>
+		<planche23>23 - Slabý počítač a odkazy</planche23>
+	</variables>
+</theme>

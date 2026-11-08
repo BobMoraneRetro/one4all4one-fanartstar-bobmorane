@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Philips' 1980 Z80 home computer with a Teletext-style display, used in Dutch schools.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico Philips com Z80 de 1980, com tela no estilo teletexto, usado em escolas holandesas.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Philips' 1980 Z80 home computer with a Teletext-style display, used in Dutch schools.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico Philips con Z80 de 1980, con pantalla de estilo teletexto, usado en escuelas neerlandesas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial Philips à Z80 sorti en 1980, avec un affichage de type télétexte, utilisé dans les écoles néerlandaises.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Philips' Z80-Heimcomputer von 1980 mit Videotext-artiger Anzeige, genutzt in niederländischen Schulen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>P2000T</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1980</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Philips</text>
+		</text>
+	</view>
+</theme>

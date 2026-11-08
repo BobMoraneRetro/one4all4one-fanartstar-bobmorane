@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Amstrad's 1990 update of the CPC 464, with an enhanced palette, hardware sprites and a cartridge slot, sold alongside the GX4000 console.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Atualização do CPC 464 de 1990, com paleta ampliada, sprites por hardware e entrada para cartuchos, vendida com o console GX4000.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Amstrad's 1990 update of the CPC 464, with an enhanced palette, hardware sprites and a cartridge slot, sold alongside the GX4000 console.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Actualización del CPC 464 de 1990, con paleta ampliada, sprites por hardware y ranura de cartuchos, vendida junto a la consola GX4000.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Évolution du CPC 464 sortie en 1990, avec une palette enrichie, des sprites matériels et un port cartouche, vendue avec la console GX4000.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Amstrads überarbeiteter CPC 464 von 1990 mit erweiterter Palette, Hardware-Sprites und Modulschacht, neben der Konsole GX4000 verkauft.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>CPC 464+</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1990</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Amstrad</text>
+		</text>
+	</view>
+</theme>

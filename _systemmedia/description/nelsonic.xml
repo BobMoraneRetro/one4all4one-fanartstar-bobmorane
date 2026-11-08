@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Nelsonic Game Watches: wristwatches with built-in LCD games, popular in the late 1980s and 1990s.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Os relógios de jogo Nelsonic: relógios de pulso com jogos LCD integrados, populares no fim dos anos 80 e nos anos 90.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Nelsonic Game Watches: wristwatches with built-in LCD games, popular in the late 1980s and 1990s.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Los relojes de juego Nelsonic: relojes de pulsera con juegos LCD integrados, populares a finales de los 80 y en los 90.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Les montres-jeux Nelsonic : des montres avec jeux LCD intégrés, populaires à la fin des années 1980 et dans les années 1990.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Nelsonic-Spieluhren: Armbanduhren mit eingebauten LCD-Spielen, beliebt in den späten 1980ern und den 1990ern.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Nelsonic</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nelsonic</text>
+		</text>
+	</view>
+</theme>

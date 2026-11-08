@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Home computer by the Hong Kong company EACA, a colour successor to the Video Genie, itself compatible with the TRS-80.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico da empresa de Hong Kong EACA, sucessor em cores do Video Genie, compatível com o TRS-80.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Home computer by the Hong Kong company EACA, a colour successor to the Video Genie, itself compatible with the TRS-80.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico de la empresa hongkonesa EACA, sucesor en color del Video Genie, compatible con el TRS-80.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial de la société hongkongaise EACA, successeur en couleur du Video Genie, lui-même compatible TRS-80.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Heimcomputer der Hongkonger Firma EACA, farbiger Nachfolger des TRS-80-kompatiblen Video Genie.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Colour Genie</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1982</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>EACA</text>
+		</text>
+	</view>
+</theme>

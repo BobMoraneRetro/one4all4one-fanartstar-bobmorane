@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ko">
+		<desactive>사용 안 함</desactive>
+		<default>기본값</default>
+		<active>사용</active>
+		<novideo>사용 안 함</novideo>
+		<videoback>사용</videoback>
+		<intheme>테마 폴더 - 기본값</intheme>
+		<extfolder>외부 폴더</extfolder>
+		<nodates>날짜 없음</nodates>
+		<playcountone>회 플레이</playcountone>
+		<playcount>회 플레이</playcount>
+		<noplaycount>실행한 적 없음</noplaycount>
+		<playerss>명</playerss>
+		<player>명</player>
+		<nogametime>플레이한 적 없음</nogametime>
+		<noplayerdata>알 수 없음</noplayerdata>
+		<noratings>평점 없음</noratings>
+		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>게임 - 게임 이름</opt_nomjeu>
+		<nomjeucomplet>전체</nomjeucomplet>
+		<nomjeucourt>괄호 없이</nomjeucourt>
+		<presgame1>이 게임의 장르:</presgame1>
+		<presgame2>개발사:</presgame2>
+		<presgame3>플레이 가능 기종:</presgame3>
+		<presgame4>- 지원 언어 :</presgame4>
+		<nomjeulabel>게임 이름 :</nomjeulabel>
+		<genrelabel>장르 :</genrelabel>
+		<devlabel>개발자 :</devlabel>
+		<langlabel>언어 :</langlabel>
+		<gametimelabel>플레이 시간 :</gametimelabel>
+		<lastgamelabel>마지막 플레이:</lastgamelabel>
+		<viewbasicgrid>Basic: 기본 그리드 보기</viewbasicgrid>
+		<jeux>게임</jeux>
+		<longselect>"select" 길게 누르기</longselect>
+		<favuniquement>즐겨찾기만</favuniquement>
+		<tslesjeux>모든 게임</tslesjeux>
+		<fanartstarsyst>클래식</fanartstarsyst>
+		<fanartmodern>모던 1 (이동 경로 미호환)</fanartmodern>
+		<fanartmodern2>모던 2 (이동 경로 호환)</fanartmodern2>
+		<fanartfreshone>FreshOne이 선택한 팬아트만</fanartfreshone>
+		<fanartsystcustom>custom 폴더의 팬아트, 없으면 FreshOne</fanartsystcustom>
+		<videoangled>사용 (작게, 기울임)</videoangled>
+		<hardware>하드웨어</hardware>
+		<charsystem>캐릭터</charsystem>
+		<figurines>피규어 (Animatics 테마 설치 필요)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>버튼 위치</iconsetposition>
+		<skyblue>하늘색</skyblue>
+		<purple>보라</purple>
+		<red>빨강</red>
+		<aqua>하늘색</aqua>
+		<orange>주황</orange>
+		<green>초록</green>
+		<yellow>노랑</yellow>
+		<pink>분홍</pink>
+		<grey>진회색</grey>
+		<lightgrey>연회색</lightgrey>
+		<navy>파랑 alt</navy>
+		<violet>보라</violet>
+		<candy>candy</candy>
+		<redalt>빨강 alt</redalt>
+		<yellowalt>노랑 alt</yellowalt>
+		<greenalt>초록 alt</greenalt>
+		<purplealt>보라 alt</purplealt>
+		<classiquesyst>줌 아웃하며 사라짐</classiquesyst>
+		<no>아니요</no>
+		<yes>예</yes>
+		<thumb>2D 박스에 맞춤</thumb>
+		<boxart>3D 박스에 맞춤</boxart>
+		<starrotate>예</starrotate>
+		<nostarrotate>아니요</nostarrotate>
+		<deactive>사용 안 함</deactive>
+		<speedslow1>느리게+</speedslow1>
+		<speedslow2>느리게++</speedslow2>
+		<starvideoang>기울임</starvideoang>
+		<starvideodef>표준</starvideodef>
+		<starvideobig>크게</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>부드러운 회색</griscl>
+		<noirombre>검은 테두리 + 그림자</noirombre>
+		<blancombre>흰 테두리 + 그림자</blancombre>
+		<ombre>그림자만</ombre>
+		<rien>장식 없음</rien>
+		<presetshowbig>RFE Show 큰 미리보기</presetshowbig>
+		<presetshowsmall>RFE Show 작은 미리보기</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar 정사각형</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (더 빠른 탐색)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>큰 패널 아래 (Steam 방식)</deckgauche>
+		<deckcentre>줄 가운데 (확대 + 광채)</deckcentre>
+		<decknormal>보통</decknormal>
+		<spotvideodroite>오른쪽, 박스 위</spotvideodroite>
+		<spotvideoaucune>사용 안 함</spotvideoaucune>
+		<spotvideogauche>왼쪽, 정보와 함께</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>로고 유지</decklogogarder>
+		<decklogobandeau>정보 띠 (로고 숨김)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>이전 폴더로 돌아가기</retourdossier>
+		<ra_moncompte>내 계정</ra_moncompte>
+		<ra_succesjeu>게임 업적</ra_succesjeu>
+		<opt_raaffichage>게임 - RetroAchievements (외부 도구)</opt_raaffichage>
+		<raaffichagepermanent>항상 표시</raaffichagepermanent>
+		<raaffichagetemporaire>몇 초간</raaffichagetemporaire>
+		<noteetoile>별</noteetoile>
+		<notecoeur>하트</notecoeur>
+		<notemanette>게임패드</notemanette>
+		<notepouce>좋아요</notepouce>
+		<notetrophee>트로피</notetrophee>
+		<notefantome>유령</notefantome>
+		<notecrane>해골</notecrane>
+		<notepourcent>% 표시</notepourcent>
+		<wheelclic>Hyperspin 스타일 클릭</wheelclic>
+		<bulle>거품</bulle>
+		<clic>단순 클릭</clic>
+		<clicgrave>낮은 클릭</clicgrave>
+		<frottement>마찰음</frottement>
+		<poc>퐁</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>일반 - 환영 메시지</opt_lismoi>
+		<opt_iconset>일반 - 도움말 아이콘 모양</opt_iconset>
+		<opt_colorhelp>일반 - 도움말 텍스트 색상</opt_colorhelp>
+		<opt_horlogecouleur>일반 - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>일반 - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>시스템 - 시스템 목록 보기</opt_systemview>
+		<opt_imagefondcops1>시스템 - 시스템 팬아트 선택</opt_imagefondcops1>
+		<opt_video4starmodern>시스템 - 시스템 보기의 게임플레이 영상</opt_video4starmodern>
+		<opt_video4starclassic>시스템 - 시스템 보기의 게임플레이 영상</opt_video4starclassic>
+		<opt_systviewselec>시스템 - 휠의 시스템 이미지</opt_systviewselec>
+		<opt_breadcrumbsonoff>시스템 - 왼쪽 세로 메뉴 (클래식 시스템 보기)</opt_breadcrumbsonoff>
+		<arianeauto>자동 (시스템 정렬 방식에 따름)</arianeauto>
+		<arianecategories>카테고리 (하드웨어 종류순)</arianecategories>
+		<arianealpha>A부터 Z까지 글자 (알파벳순)</arianealpha>
+		<arianealphavoisines>글자와 앞뒤 글자 (알파벳순)</arianealphavoisines>
+		<arianeconstructeur>제조사 (제조사순)</arianeconstructeur>
+		<arianedecennie>연대 (출시 연도순)</arianedecennie>
+		<arianeautres>기타</arianeautres>
+		<opt_metadataonoff>시스템 - 시스템 정보 (클래식 시스템 보기)</opt_metadataonoff>
+		<opt_systannonce>게임 - 열 때 현재 시스템 표시</opt_systannonce>
+		<opt_infosmax>게임 - 최대 정보 콘솔을 표시할까요?</opt_infosmax>
+		<opt_gamewheelsound>일반 - 스크롤 소리</opt_gamewheelsound>
+		<opt_boxorthumb>게임 - 표시할 게임 박스</opt_boxorthumb>
+		<opt_fanarttransition>게임 - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>게임 - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>게임 - 디스크 회전</opt_cdvitesse>
+		<cdnormale>보통</cdnormale>
+		<cdlente>느리게</cdlente>
+		<cdrapide>빠르게</cdrapide>
+		<cdtresrapide>매우 빠르게</cdtresrapide>
+		<cdimmobile>정지</cdimmobile>
+		<opt_umdrotation>게임 - UMD 회전 (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>게임 - 선택한 게임 강조</opt_selectionvaleur>
+		<selegere>약하게</selegere>
+		<selmarquee>강하게</selmarquee>
+		<opt_videojeu>게임 - 게임 동영상</opt_videojeu>
+		<vjcapture>스크린샷 후 동영상</vjcapture>
+		<vjseule>동영상만</vjseule>
+		<vjfondu>페이드 동영상</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>게임 - Box case type</opt_typeboite>
+		<opt_contourboite>게임 - Box outline (case)</opt_contourboite>
+		<opt_deckespace>게임 - 박스 간격</opt_deckespace>
+		<opt_iconenote>게임 - 평가 아이콘</opt_iconenote>
+		<opt_extfolderbezelsyst>고급 - 시스템 베젤</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>고급 - 게임 퍼블리셔 로고</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>고급 - 시스템 팬아트</opt_extfolderfanart>
+		<opt_extfolderlogosyst>고급 - 시스템 로고</opt_extfolderlogosyst>
+		<opt_extfoldersalon>고급 - RFE Retrofist Nostalgia 보기 배경 위치</opt_extfoldersalon>
+		<opt_perfmachine>고급 - 저사양 기기 모드</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - 배경 비네팅</opt_salonvignette>
+		<vignleger>약하게</vignleger>
+		<vignfort>강하게</vignfort>
+		<opt_deckselection>BIG ART - 선택한 게임의 위치</opt_deckselection>
+		<opt_decklogovideo>BIG ART - 동영상 중 로고</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - 동영상</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - SNES, N64, NGAGE, Solarus 박스 회전</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - 게임 박스 각도</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - 게임 매체 (디스크, 카트리지)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - 스크롤 애니메이션 속도</opt_boxstarspeed>
+		<opt_starvideo>BOXART - 미리보기 영상 크기</opt_starvideo>
+		<opt_starvideocadre>BOXART - 미리보기 동영상 프레임</opt_starvideocadre>
+		<vcadreactuel>현재 프레임</vcadreactuel>
+		<vcadreombre>그림자만</vcadreombre>
+		<vcadreecranfin>얇은 베젤</vcadreecranfin>
+		<vcadrebois>나무</vcadrebois>
+		<vcadremetal>브러시드 메탈</vcadremetal>
+		<vcadrelumineux>빛나는 화면</vcadrelumineux>
+		<vcadretv>CRT TV</vcadretv>
+		<vcadregalerie>갤러리</vcadregalerie>
+		<vcadrepolaroid>폴라로이드</vcadrepolaroid>
+		<vcadreneon>네온</vcadreneon>
+		<vcadrehologramme>홀로그램</vcadrehologramme>
+		<vcadreverre>젖빛 유리</vcadreverre>
+		<vcadrecarbone>카본 LED</vcadrecarbone>
+		<vcadreneondouble>더블 네온</vcadreneondouble>
+		<vcadregaming>게이밍</vcadregaming>
+		<vcadrepinceau>붓 터치</vcadrepinceau>
+		<vcadretechnodore>골드 테크</vcadretechnodore>
+		<vcadretechnoargent>실버 테크</vcadretechnoargent>
+		<vcadreneonelec>전기 네온</vcadreneonelec>
+		<vcadrevitre>유리</vcadrevitre>
+		<vcadreflammes>불꽃</vcadreflammes>
+		<vcadreencre>잉크</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - 회전하는 케이스의 옆면</opt_boite3dtranche>
+		<b3tcharniere>한쪽은 로고, 반대쪽은 여는 부분</b3tcharniere>
+		<b3tdeuxcotes>양쪽 모두 로고</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - 그리드 색상</opt_gridcolor>
+		<opt_squarecadre>정사각형 - 게임을 나타내는 사각형 스타일</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>시스템 - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>시스템 - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>시스템 - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>시스템 - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>게임 - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - 환영 및 크레딧</planche00>
+		<planche01>01 - 시스템 보기</planche01>
+		<planche02>02 - 클래식 보기: 시스템 이미지</planche02>
+		<planche03>03 - 클래식 보기: 세부 사항</planche03>
+		<planche04>04 - 시스템 팬아트, Modern 및 Z-Spin</planche04>
+		<planche05>05 - 11가지 게임 보기</planche05>
+		<planche06>06 - FanartStar Boxart: 박스와 정보</planche06>
+		<planche07>07 - FanartStar Boxart: 동영상</planche07>
+		<planche08>08 - 박스와 매체</planche08>
+		<planche09>09 - 22가지 케이스</planche09>
+		<planche10>10 - 매체: 시스템별 설정</planche10>
+		<planche11>11 - 게임 팬아트와 선택</planche11>
+		<planche12>12 - Big Art, Spotlight, 정사각형, 16/9 및 4/3</planche12>
+		<planche13>13 - RFE 보기</planche13>
+		<planche14>14 - RFE Retrofist: TV 화면</planche14>
+		<planche15>15 - Show Big &amp; Small: 뒤집히는 박스</planche15>
+		<planche16>16 - 게임 보기 공통 옵션</planche16>
+		<planche17>17 - 일반: 사운드, 도움말, 시계</planche17>
+		<planche18>18 - 나만의 폴더로 사용자 지정</planche18>
+		<planche19>19 - 게임 사용자 미디어</planche19>
+		<planche20>20 - 폴더 꾸미기</planche20>
+		<planche21>21 - 어떤 이미지가 이길까?</planche21>
+		<planche22>22 - 그룹화된 시스템</planche22>
+		<planche23>23 - 저사양 기기와 링크</planche23>
+	</variables>
+</theme>

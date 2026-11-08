@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Engine reimplementation of Bermuda Syndrome, a 1995 cinematic platform adventure set during the Second World War.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Reimplementação do motor de Bermuda Syndrome, aventura de plataforma cinematográfica de 1995 ambientada na Segunda Guerra Mundial.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Engine reimplementation of Bermuda Syndrome, a 1995 cinematic platform adventure set during the Second World War.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Reimplementación del motor de Bermuda Syndrome, aventura de plataformas cinematográfica de 1995 ambientada en la Segunda Guerra Mundial.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Réécriture du moteur de Bermuda Syndrome, jeu de plates-formes cinématique de 1995 situé pendant la Seconde Guerre mondiale.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Neuimplementierung der Engine von Bermuda Syndrome, einem cineastischen Plattform-Abenteuer von 1995 im Zweiten Weltkrieg.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Bermuda Syndrome</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1995</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Century Interactive</text>
+		</text>
+	</view>
+</theme>

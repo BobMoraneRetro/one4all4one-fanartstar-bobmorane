@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sharp's first MZ computer of 1978, a Z80 machine with a built-in screen and tape recorder that launched the MZ series.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O primeiro computador MZ da Sharp, de 1978, uma máquina com Z80 com tela e gravador integrados que iniciou a série MZ.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sharp's first MZ computer of 1978, a Z80 machine with a built-in screen and tape recorder that launched the MZ series.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El primer ordenador MZ de Sharp, de 1978, una máquina con Z80 con pantalla y grabadora integradas que inició la serie MZ.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le premier ordinateur MZ de Sharp, sorti en 1978, une machine à Z80 avec écran et magnétophone intégrés qui a lancé la série MZ.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sharps erster MZ-Computer von 1978, eine Z80-Maschine mit eingebautem Bildschirm und Kassettenrekorder, Begründer der MZ-Reihe.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>MZ-80K</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1978</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sharp</text>
+		</text>
+	</view>
+</theme>

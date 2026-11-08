@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The second generation of Taito's NESiCAxLive arcade distribution network, based on newer Type X hardware.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>A segunda geração da rede de distribuição de arcade NESiCAxLive da Taito, em hardware Type X mais recente.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>The second generation of Taito's NESiCAxLive arcade distribution network, based on newer Type X hardware.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La segunda generación de la red de distribución arcade NESiCAxLive de Taito, sobre hardware Type X más reciente.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La deuxième génération du réseau de distribution d'arcade NESiCAxLive de Taito, sur un matériel Type X plus récent.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Die zweite Generation von Taitos Arcade-Vertriebsnetz NESiCAxLive auf neuerer Type-X-Hardware.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>NESiCAxLive 2</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2017</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Taito</text>
+		</text>
+	</view>
+</theme>

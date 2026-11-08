@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's 1983 home computer version of the SG-1000, with a built-in keyboard and compatible cartridges.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Versão computador do SG-1000 lançada pela Sega em 1983, com teclado integrado e cartuchos compatíveis.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's 1983 home computer version of the SG-1000, with a built-in keyboard and compatible cartridges.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Versión ordenador de la SG-1000 lanzada por Sega en 1983, con teclado integrado y cartuchos compatibles.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Version ordinateur de la SG-1000 sortie par Sega en 1983, avec clavier intégré et cartouches compatibles.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas Computer-Version des SG-1000 von 1983 mit eingebauter Tastatur und kompatiblen Modulen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>SC-3000</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1984</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

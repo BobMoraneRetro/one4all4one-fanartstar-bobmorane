@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${extgameartpng} : Wheel art du jeu dans roms/système/@Media/wheel - Art (définie dans theme.xml)
+	${extgamesyst} : Logo clair du système du jeu (collections : système d'origine du jeu) (définie dans theme.xml)
+	${extlogoclear} : Logo clair du système (même fichier que intlogoclearpng) (définie dans theme.xml)
+	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
+	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
+	${intlogoclearpng} : Logo clair du système (définie dans theme.xml)
+	${media_fanart} : fanart du jeu (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart_exists} : vrai si le média « fanart » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart_missing} : vrai si le média « fanart » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${path_common} : dossier _common du thème (définie dans theme.xml)
+-->
 <theme>
 	<formatVersion>7</formatVersion>
-	<variables>
-		<standardsbuildsfanart>exists({game:fanart}) ? {game:fanart} : {game:thumbnail}</standardsbuildsfanart>
-		<freshbuildfanart>exists({game:image}) ? {game:image} : {game:thumbnail}</freshbuildfanart>
-		<standardsbuildsfanarttestyes>exists({game:fanart})</standardsbuildsfanarttestyes>
-		<freshbuildfanarttestyes>exists({game:image})</freshbuildfanarttestyes>
-		<intfanartfresh>${bobmediapath}/_systemmedia/_fanartsysteme/fresh/${system.theme}.jpg</intfanartfresh>
-		<intlogoclearpng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</intlogoclearpng>
-		<extlogoclear>${bobmediapath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</extlogoclear>
-		<extgameartpng>("${themePath}/../../../../roms/${system.theme}/@Media/wheel - Art/" + stem({game:rom}) + "-wheel.png")</extgameartpng>
-		<extgamesyst>${themePath}/_systemmedia/_logosyst/clearlogos/{game:system}.png</extgamesyst>
-	</variables>
 	<view name="detailed">
 		<text name="md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate, md_lbl_rating, md_lbl_genre, md_developer, md_publisher, md_name, md_flag, md_description, md_genre, md_players, md_playcount">
 			<visible>false</visible>
@@ -26,6 +30,18 @@
 			<visible>false</visible>
 		</image>
 		<textlist name="gamelist">
+			<scrollSound ifSubset="gamewheelsound:bulle">${path_common}/scrollsound/bulle.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clic">${path_common}/scrollsound/clic.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clicgrave">${path_common}/scrollsound/clicgrave.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:frottement">${path_common}/scrollsound/frottement.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:poc">${path_common}/scrollsound/poc.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360blade">${path_common}/scrollsound/xbox360-BladeSwitch_1.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360onglet">${path_common}/scrollsound/xbox360-tab_Switch.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360focus">${path_common}/scrollsound/xbox360-vk_Focus.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360touche">${path_common}/scrollsound/xbox360-vk_Select.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360retour">${path_common}/scrollsound/xbox360-btn_backG.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360selection">${path_common}/scrollsound/xbox360-snd_buttonselect.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:wheelclic">${path_common}/scrollsound/wheelclic.wav</scrollSound>
 			<pos>0.025 0.6</pos>
 			<size>0.55 0.35</size>
 			<lines>17</lines>
@@ -118,13 +134,11 @@
 				</image>
 			</itemTemplate>
 		</textlist>
-		<image name="fanartPresetback" if="{system.theme} == 'windows' 
+		<image name="fanartPresetback" if="{system.theme} == 'windows'
 			|| {system.theme} == 'switch'" extra="true">
-			<visible ifSubset="custombuilds:standardbuilds">exists({game:fanart})</visible>
-			<visible ifSubset="custombuilds:retrofreshbat">exists({game:image})</visible>
+			<visible>(${media_fanart_exists}) &amp;&amp; {game:rom} != '..'</visible>
 			<autoFade>false</autoFade>
-			<path ifSubset="custombuilds:standardbuilds">${standardsbuildsfanart}</path>
-			<path ifSubset="custombuilds:retrofreshbat">${freshbuildfanart}</path>
+			<path>${media_fanart}</path>
 			<linearSmooth>true</linearSmooth>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
@@ -135,8 +149,9 @@
 			<zIndex>1</zIndex>
 			<opacity>1</opacity>
 		</image>
-		<screenshader name="blur" if="{system.theme} == 'windows' 
+		<screenshader name="blur" if="{system.theme} == 'windows'
 			|| {system.theme} == 'switch'" extra="true">
+			<visible>{game:rom} != '..'</visible>
 			<path>:/shaders/blur.glsl</path>
 			<size>1 1</size>
 			<pos>0 0</pos>
@@ -145,8 +160,7 @@
 			<blurColor>000000</blurColor>
 		</screenshader>
 		<image name="BackifNofanart" extra="true">
-			<visible ifSubset="custombuilds:standardbuilds">!exists({game:fanart})</visible>
-			<visible ifSubset="custombuilds:retrofreshbat">!exists({game:image})</visible>
+			<visible>(${media_fanart_missing}) &amp;&amp; {game:rom} != '..'</visible>
 			<autoFade>false</autoFade>
 			<path>${intfanartfresh}</path>
 			<opacity>0.5</opacity>
@@ -161,26 +175,24 @@
 			<zIndex>2</zIndex>
 		</image>
 		<image name="fanartPreset" extra="true">
-			<visible ifSubset="custombuilds:standardbuilds">${standardsbuildsfanarttestyes}</visible>
-			<visible ifSubset="custombuilds:retrofreshbat">${freshbuildfanarttestyes}</visible>
-			<path ifSubset="custombuilds:standardbuilds">{game:fanart}</path>
-			<path ifSubset="custombuilds:retrofreshbat">{game:image}</path>
+			<visible>(${media_fanart_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_fanart}</path>
 			<autoFade>false</autoFade>
 			<linearSmooth>true</linearSmooth>
 			<pos>0.5 0.5</pos>
-			<pos if="{system.theme} == 'windows' 
+			<pos if="{system.theme} == 'windows'
 			|| {system.theme} == 'switch'">0.5 0.35</pos>
 			<origin>0.5 0.5</origin>
 			<maxSize>2 1</maxSize>
-			<maxSize if="{system.theme} == 'windows' 
+			<maxSize if="{system.theme} == 'windows'
 			|| {system.theme} == 'switch'">1 1</maxSize>
 			<color>FFFFFFDD</color>
 			<colorEnd>000000</colorEnd>
 			<gradientType>vertical</gradientType>
 			<zIndex>2</zIndex>
-			<shader if="{system.theme} == 'windows' 
+			<shader ifSubset="perfmachine:perfnormal" if="{system.theme} == 'windows'
 			|| {system.theme} == 'switch'">
-				<path>:/shaders/border.glsl</path>
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>1</cornerRadius>
 				<borderSize>0.005</borderSize>
 				<borderColor>000000</borderColor>
@@ -190,7 +202,6 @@
 				<outerShadowColor>000000</outerShadowColor>
 			</shader>
 		</image>
-		<!-- Fin Version fanart tirée de la vue traviolta -->
 		<image name="fond black" extra="true">
 			<tile>false</tile>
 			<pos>0.1 0</pos>
@@ -206,7 +217,7 @@
 			<pos>0.15 0.12</pos>
 			<maxSize>0.25 0.2</maxSize>
 			<origin>0.5 0.5</origin>
-			<path>{game:marquee}</path>
+			<path>${media_marquee}</path>
 			<path if="{system.theme} == 'switch'">${extgameartpng}</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>91</zIndex>
@@ -221,6 +232,7 @@
 			<zIndex>100</zIndex>
 		</image>
 		<text name="metadata" extra="true">
+			<visible>{game:rom} != '..'</visible>
 			<pos>0.028 0.555</pos>
 			<size>0.4 0.05</size>
 			<text>Joueurs : {game:players} | Parties : {game:playcount} | Langues : {game:lang}</text>
@@ -230,15 +242,15 @@
 			<fontPath>${themePath}/_viewgame/detailed/Cabin-Regular.ttf</fontPath>
 		</text>
 		<video name="PreviewVid" extra="true">
-			<path>{game:video}</path>
+			<path>${media_video}</path>
 			<delay>0.3</delay>
 			<origin>0.5 0.5</origin>
 			<pos>0.78 0.778</pos>
 			<maxSize>0.4 0.35</maxSize>
 			<zIndex>10</zIndex>
 			<effect>none</effect>
-			<shader>
-				<path>:/shaders/border.glsl</path>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>0.03</cornerRadius>
 				<borderSize>0.022</borderSize>
 				<borderColor>ffffff30</borderColor>
@@ -268,6 +280,30 @@
 			<linearSmooth>true</linearSmooth>
 			<horizontalAlignment>left</horizontalAlignment>
 			<zIndex>80</zIndex>
+		</image>
+		<image name="base_retourfond" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${themePath}/_viewgame/commun/retour/retour_fond.jpg</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<minSize>1 1</minSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>2</zIndex>
+		</image>
+		<image name="base_retourconsole" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${firstsystemhardware}</path>
+			<pos>0.78 0.55</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.36 0.4</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>11</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
 		</image>
 	</view>
 </theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Doujin games: independent Japanese games made by amateur circles, often sold at events such as Comiket.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos doujin: jogos japoneses independentes feitos por círculos amadores, muitas vezes vendidos em eventos como o Comiket.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Doujin games: independent Japanese games made by amateur circles, often sold at events such as Comiket.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos doujin: juegos japoneses independientes creados por círculos aficionados, a menudo vendidos en eventos como el Comiket.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux doujin : jeux japonais indépendants créés par des cercles amateurs, souvent vendus lors d'événements comme le Comiket.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Doujin-Spiele: unabhängige japanische Spiele von Amateurgruppen, oft auf Veranstaltungen wie der Comiket verkauft.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Doujin</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1999</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

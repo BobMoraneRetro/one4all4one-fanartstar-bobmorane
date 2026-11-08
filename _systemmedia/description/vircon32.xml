@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Vircon32, a 32-bit fantasy console designed as a complete virtual system, with its own games and development tools.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Vircon32, console de fantasia de 32 bits criado como um sistema virtual completo, com seus próprios jogos e ferramentas.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Vircon32, a 32-bit fantasy console designed as a complete virtual system, with its own games and development tools.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Vircon32, consola de fantasía de 32 bits diseñada como un sistema virtual completo, con sus propios juegos y herramientas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Vircon32, console imaginaire 32 bits conçue comme un système virtuel complet, avec ses propres jeux et outils de développement.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Vircon32, eine 32-Bit-Fantasy-Konsole, als vollständiges virtuelles System mit eigenen Spielen und Werkzeugen entworfen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Vircon32</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2022</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

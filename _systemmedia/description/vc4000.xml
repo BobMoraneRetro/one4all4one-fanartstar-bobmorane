@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Interton's VC 4000 of 1978, a German cartridge console sold under many names across Europe.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O VC 4000 da Interton de 1978, console alemão de cartuchos vendido com muitos nomes na Europa.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Interton's VC 4000 of 1978, a German cartridge console sold under many names across Europe.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La VC 4000 de Interton de 1978, consola alemana de cartuchos vendida con muchos nombres en Europa.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La VC 4000 d'Interton sortie en 1978, console allemande à cartouches vendue sous de nombreux noms en Europe.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Intertons VC 4000 von 1978, eine deutsche Modulkonsole, die unter vielen Namen in Europa verkauft wurde.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>VC 4000</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1977</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Interton</text>
+		</text>
+	</view>
+</theme>

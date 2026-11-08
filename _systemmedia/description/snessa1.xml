@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Super Nintendo games using the SA-1 enhancement chip, such as Super Mario RPG and Kirby Super Star.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de Super Nintendo que usam o chip de melhoria SA-1, como Super Mario RPG e Kirby Super Star.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Super Nintendo games using the SA-1 enhancement chip, such as Super Mario RPG and Kirby Super Star.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de Super Nintendo que usan el chip de mejora SA-1, como Super Mario RPG y Kirby Super Star.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux Super Nintendo utilisant la puce d'amélioration SA-1, comme Super Mario RPG et Kirby Super Star.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Super-Nintendo-Spiele mit dem Zusatzchip SA-1, etwa Super Mario RPG und Kirby Super Star.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>SNES SA-1</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+</theme>

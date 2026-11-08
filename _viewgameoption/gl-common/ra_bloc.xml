@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${ra_dossier} : valeur : ${themePath}/../../derniersjeux (définie dans theme.xml)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${ra_moncompte}, ${ra_succesjeu}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="presetstarbox,presetstarboxloop,presetdeck,presetsalon,presetspotlight,presetsquare,presetstar169,presetstar43,presetshowbig,presetshowsmall,presetspeedbull,presettraviolta_alt,presettestcoverflowboitiergrid,presettestcoverflow3dboitiergrid,presettestcoverflowsalongrid">
+		<image name="ra_panneau" extra="true">
+			<visible>exists("${ra_dossier}/points.png") &amp;&amp; {game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/commun/ra/ra_panneau.png</path>
+			<pos>0.64583 0.01111</pos>
+			<origin>0 0</origin>
+			<size>0.24063 0.07593</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>950</zIndex>
+		</image>
+		<image name="ra_avatar" extra="true">
+			<visible>exists("${ra_dossier}/points.png") &amp;&amp; {game:rom} != '..'</visible>
+			<path>${ra_dossier}/avatar.png</path>
+			<pos>0.65104 0.04907</pos>
+			<origin>0 0.5</origin>
+			<maxSize>0.03229 0.05741</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>951</zIndex>
+		</image>
+		<text name="ra_titrecompte" extra="true">
+			<visible>exists("${ra_dossier}/points.png") &amp;&amp; {game:rom} != '..'</visible>
+			<text>${ra_moncompte}</text>
+			<pos>0.69063 0.02870</pos>
+			<origin>0 0.5</origin>
+			<size>0.05 0.02</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.0157</fontSize>
+			<color>BEC8D7</color>
+			<forceUppercase>true</forceUppercase>
+			<zIndex>951</zIndex>
+		</text>
+		<image name="ra_etat" extra="true">
+			<visible>exists("${ra_dossier}/points.png") &amp;&amp; {game:rom} != '..'</visible>
+			<path>${ra_dossier}/ra_etat.png</path>
+			<pos>0.73854 0.02963</pos>
+			<origin>0 0.5</origin>
+			<maxSize>0.04167 0.01852</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>951</zIndex>
+		</image>
+		<image name="ra_points" extra="true">
+			<visible>exists("${ra_dossier}/points.png") &amp;&amp; {game:rom} != '..'</visible>
+			<path>${ra_dossier}/points.png</path>
+			<pos>0.68906 0.06111</pos>
+			<origin>0 0.5</origin>
+			<maxSize>0.075 0.03056</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>951</zIndex>
+		</image>
+		<text name="ra_titrejeu" extra="true">
+			<visible>exists("${ra_dossier}/points.png") &amp;&amp; {game:rom} != '..'</visible>
+			<text>${ra_succesjeu}</text>
+			<pos>0.78854 0.02870</pos>
+			<origin>0 0.5</origin>
+			<size>0.09 0.02</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.0157</fontSize>
+			<color>BEC8D7</color>
+			<forceUppercase>true</forceUppercase>
+			<zIndex>951</zIndex>
+		</text>
+		<image name="ra_succesjeu" extra="true">
+			<visible>exists("${ra_dossier}/ra_jeux/" + {game:cheevosId} + ".png") &amp;&amp; {game:rom} != '..'</visible>
+			<path>${ra_dossier}/ra_jeux/{game:cheevosId}.png</path>
+			<pos>0.78698 0.06111</pos>
+			<origin>0 0.5</origin>
+			<maxSize>0.08958 0.03056</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>951</zIndex>
+		</image>
+		<text name="ra_sansjeu" extra="true">
+			<visible>!exists("${ra_dossier}/ra_jeux/" + {game:cheevosId} + ".png") &amp;&amp; exists("${ra_dossier}/points.png") &amp;&amp; {game:rom} != '..'</visible>
+			<text>—</text>
+			<pos>0.78854 0.06111</pos>
+			<origin>0 0.5</origin>
+			<size>0.05 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.024</fontSize>
+			<color>BEC8D7</color>
+			<forceUppercase>true</forceUppercase>
+			<zIndex>951</zIndex>
+		</text>
+		<control name="ra_panneau,ra_avatar,ra_titrecompte,ra_etat,ra_points,ra_titrejeu,ra_succesjeu,ra_sansjeu" ifSubset="raaffichage:temporaire">
+			<storyboard event="open">
+				<animation property="opacity" from="1" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="5000" duration="600" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="5000" duration="600" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="1" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="5000" duration="600" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="1" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="5000" duration="600" mode="easeOut"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

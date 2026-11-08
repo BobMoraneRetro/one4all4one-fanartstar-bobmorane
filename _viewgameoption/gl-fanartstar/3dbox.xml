@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${boxart_boucle_3d_colonnes} : valeur : 19 1 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_boucle_3d_ecart} : valeur : -0.66375 0 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_boucle_3d_position} : valeur : -0.88687 0 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_boucle_3d_position_aide} : valeur : -0.88687 -0.02 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_boucle_3d_taille} : valeur : 2.51625 1.1 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_ecart_selection_3d} : valeur : 3.80 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_nb_boites_3d} : valeur : 29 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetstarbox}, ${presetstarboxloop}
+-->
 <theme>
 	<formatVersion>7</formatVersion>
 	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
 		<gamecarousel name="gamecarousel">
-			<maxLogoCount ifSubset="spacebox:spacemmmmore">3</maxLogoCount>
-			<maxLogoCount ifSubset="spacebox:spacemmmore">7</maxLogoCount>
-			<maxLogoCount ifSubset="spacebox:spacemmore">11</maxLogoCount>
-			<maxLogoCount ifSubset="spacebox:spacemore">15</maxLogoCount>
-			<maxLogoCount ifSubset="spacebox:spacesmall">23</maxLogoCount>
-			<maxLogoCount ifSubset="spacebox:spacessmall">33</maxLogoCount>
-			<maxLogoCount ifSubset="spacebox:spacesssmall">43</maxLogoCount>
-			<maxLogoCount ifSubset="spacebox:spacessssmall">53</maxLogoCount>
-			<maxLogoCount ifSubset="spacebox:spacenorm">21</maxLogoCount>
-			<scaledLogoSpacing ifSubset="spacebox:spacessssmall">10</scaledLogoSpacing>
-			<scaledLogoSpacing ifSubset="spacebox:spacesssmall">8</scaledLogoSpacing>
-			<scaledLogoSpacing ifSubset="spacebox:spacessmall">5</scaledLogoSpacing>
-			<scaledLogoSpacing ifSubset="spacebox:spacesmall">2</scaledLogoSpacing>
-			<scaledLogoSpacing ifSubset="spacebox:spacenorm">1.5</scaledLogoSpacing>
+			<maxLogoCount>${boxart_nb_boites_3d}</maxLogoCount>
+			<scaledLogoSpacing>${boxart_ecart_selection_3d}</scaledLogoSpacing>
 		</gamecarousel>
+	</customView>
+	<customView name="presetstarboxloop" displayName="${presetstarboxloop}" inherits="grid">
+		<imagegrid name="gamegrid">
+			<pos>${boxart_boucle_3d_position}</pos>
+			<pos ifHelpPrompts="true">${boxart_boucle_3d_position_aide}</pos>
+			<size>${boxart_boucle_3d_taille}</size>
+			<margin>${boxart_boucle_3d_ecart}</margin>
+			<autoLayout>${boxart_boucle_3d_colonnes}</autoLayout>
+		</imagegrid>
 	</customView>
 </theme>

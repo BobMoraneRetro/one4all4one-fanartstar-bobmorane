@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>WiiWare, the downloadable game service of the Wii, with small original titles such as World of Goo and Lost Winds.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>WiiWare, o serviço de jogos para download do Wii, com pequenos títulos originais como World of Goo e LostWinds.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>WiiWare, the downloadable game service of the Wii, with small original titles such as World of Goo and Lost Winds.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>WiiWare, el servicio de juegos descargables de Wii, con pequeños títulos originales como World of Goo y LostWinds.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>WiiWare, le service de jeux téléchargeables de la Wii, avec de petits titres originaux comme World of Goo et LostWinds.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>WiiWare, der Download-Spieledienst der Wii mit kleinen eigenständigen Titeln wie World of Goo und LostWinds.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>WiiWare</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2008</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+</theme>

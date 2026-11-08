@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Fallout 2 Community Edition, a reimplementation of the 1998 sequel, running natively on modern systems.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Fallout 2 Community Edition, reimplementação da sequência de 1998, nativa em sistemas modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Fallout 2 Community Edition, a reimplementation of the 1998 sequel, running natively on modern systems.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Fallout 2 Community Edition, reimplementación de la secuela de 1998, nativa en sistemas modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Fallout 2 Community Edition, réécriture de la suite sortie en 1998, en version native pour les systèmes modernes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Fallout 2 Community Edition, Neuimplementierung der Fortsetzung von 1998, nativ auf modernen Systemen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Fallout 2 CE</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1998</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Interplay</text>
+		</text>
+	</view>
+</theme>

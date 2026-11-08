@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${vidcadre_type} : Boxart : forme du cadre de la vidéo et de la capture (frameType de _common/shaders/border_video_frame.glsl, 0 à 20) (définie dans ce fichier ; valeur selon l option « BOXART - Cadre de la vidéo preview »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetstarbox}, ${presetstarboxloop}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<vidcadre_type ifSubset="starvideocadre:ombre">0</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:ecranfin">1</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:bois">2</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:metal">3</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:lumineux">4</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:tv">5</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:galerie">6</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:polaroid">7</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:neon">8</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:hologramme">9</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:verre">10</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:carbone">11</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:neondouble">12</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:gaming">13</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:pinceau">14</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:technodore">15</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:technoargent">16</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:neonelec">17</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:vitre">18</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:flammes">19</vidcadre_type>
+		<vidcadre_type ifSubset="starvideocadre:encre">20</vidcadre_type>
+	</variables>
+	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
+		<image name="screenshotgames" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
+				<frameType>${vidcadre_type}</frameType>
+				<flipY>1</flipY>
+				<time>0</time>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0</borderSize>
+				<borderColor>00000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>00000000</innerShadowColor>
+				<outerShadowSize>0</outerShadowSize>
+				<outerShadowColor>00000000</outerShadowColor>
+			</shader>
+		</image>
+		<image name="screenshotgames" ifSubset="starvideo:starvideoang" extra="true">
+			<pos>0.987 0.35</pos>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
+				<perspectiveDepth>0</perspectiveDepth>
+				<frameType>${vidcadre_type}</frameType>
+				<flipY>1</flipY>
+				<time>0</time>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0</borderSize>
+				<borderColor>00000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>00000000</innerShadowColor>
+				<outerShadowSize>0</outerShadowSize>
+				<outerShadowColor>00000000</outerShadowColor>
+			</shader>
+		</image>
+		<video name="videogameplay" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
+				<frameType>${vidcadre_type}</frameType>
+				<time>0</time>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0</borderSize>
+				<borderColor>00000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>00000000</innerShadowColor>
+				<outerShadowSize>0</outerShadowSize>
+				<outerShadowColor>00000000</outerShadowColor>
+			</shader>
+		</video>
+		<video name="videogameplay" ifSubset="starvideo:starvideoang" extra="true">
+			<pos>0.987 0.35</pos>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
+				<perspectiveDepth>0</perspectiveDepth>
+				<frameType>${vidcadre_type}</frameType>
+				<time>0</time>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0</borderSize>
+				<borderColor>00000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>00000000</innerShadowColor>
+				<outerShadowSize>0</outerShadowSize>
+				<outerShadowColor>00000000</outerShadowColor>
+			</shader>
+		</video>
+		<image name="screenshotgames_cadre" ifSubset="starvideo:starvideoang" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="screenshotgames_fond" ifSubset="starvideo:starvideoang" extra="true">
+			<visible>false</visible>
+		</image>
+	</customView>
+	<customView name="presetstarboxloop" displayName="${presetstarboxloop}" inherits="grid">
+		<image name="screenshotgames" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
+				<frameType>${vidcadre_type}</frameType>
+				<flipY>1</flipY>
+				<time>0</time>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0</borderSize>
+				<borderColor>00000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>00000000</innerShadowColor>
+				<outerShadowSize>0</outerShadowSize>
+				<outerShadowColor>00000000</outerShadowColor>
+			</shader>
+		</image>
+		<image name="screenshotgames" ifSubset="starvideo:starvideoang" extra="true">
+			<pos>0.987 0.35</pos>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
+				<perspectiveDepth>0</perspectiveDepth>
+				<frameType>${vidcadre_type}</frameType>
+				<flipY>1</flipY>
+				<time>0</time>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0</borderSize>
+				<borderColor>00000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>00000000</innerShadowColor>
+				<outerShadowSize>0</outerShadowSize>
+				<outerShadowColor>00000000</outerShadowColor>
+			</shader>
+		</image>
+		<video name="videogameplay" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
+				<frameType>${vidcadre_type}</frameType>
+				<time>0</time>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0</borderSize>
+				<borderColor>00000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>00000000</innerShadowColor>
+				<outerShadowSize>0</outerShadowSize>
+				<outerShadowColor>00000000</outerShadowColor>
+			</shader>
+		</video>
+		<video name="videogameplay" ifSubset="starvideo:starvideoang" extra="true">
+			<pos>0.987 0.35</pos>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
+				<perspectiveDepth>0</perspectiveDepth>
+				<frameType>${vidcadre_type}</frameType>
+				<time>0</time>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0</borderSize>
+				<borderColor>00000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>00000000</innerShadowColor>
+				<outerShadowSize>0</outerShadowSize>
+				<outerShadowColor>00000000</outerShadowColor>
+			</shader>
+		</video>
+		<image name="screenshotgames_cadre" ifSubset="starvideo:starvideoang" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="screenshotgames_fond" ifSubset="starvideo:starvideoang" extra="true">
+			<visible>false</visible>
+		</image>
+	</customView>
+</theme>

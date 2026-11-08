@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="vi">
+		<desactive>Tắt</desactive>
+		<default>Mặc định</default>
+		<active>Bật</active>
+		<novideo>Tắt</novideo>
+		<videoback>Bật</videoback>
+		<intheme>Thư mục theme - Mặc định</intheme>
+		<extfolder>Thư mục bên ngoài</extfolder>
+		<nodates>Không có ngày</nodates>
+		<playcountone>lượt chơi</playcountone>
+		<playcount>lượt chơi</playcount>
+		<noplaycount>Chưa từng chạy</noplaycount>
+		<playerss>người chơi</playerss>
+		<player>người chơi</player>
+		<nogametime>Chưa từng chơi</nogametime>
+		<noplayerdata>Không rõ</noplayerdata>
+		<noratings>Chưa có điểm</noratings>
+		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>TRÒ CHƠI - Tên trò chơi</opt_nomjeu>
+		<nomjeucomplet>Đầy đủ</nomjeucomplet>
+		<nomjeucourt>Không có ngoặc</nomjeucourt>
+		<presgame1>Đây là trò chơi thể loại</presgame1>
+		<presgame2>phát triển bởi</presgame2>
+		<presgame3>chơi được trên</presgame3>
+		<presgame4>- Ngôn ngữ hiện có :</presgame4>
+		<nomjeulabel>Tên trò chơi :</nomjeulabel>
+		<genrelabel>Thể loại :</genrelabel>
+		<devlabel>Nhà phát triển :</devlabel>
+		<langlabel>Ngôn ngữ :</langlabel>
+		<gametimelabel>Thời gian chơi :</gametimelabel>
+		<lastgamelabel>Chơi lần cuối:</lastgamelabel>
+		<viewbasicgrid>Basic: Dạng lưới cơ bản</viewbasicgrid>
+		<jeux>trò chơi</jeux>
+		<longselect>Nhấn giữ "select"</longselect>
+		<favuniquement>Chỉ mục yêu thích</favuniquement>
+		<tslesjeux>Tất cả trò chơi</tslesjeux>
+		<fanartstarsyst>Cổ điển</fanartstarsyst>
+		<fanartmodern>Hiện đại 1 (không tương thích thanh điều hướng)</fanartmodern>
+		<fanartmodern2>Hiện đại 2 (tương thích thanh điều hướng)</fanartmodern2>
+		<fanartfreshone>Chỉ fanart do FreshOne chọn</fanartfreshone>
+		<fanartsystcustom>Fanart từ thư mục custom, nếu không thì FreshOne</fanartsystcustom>
+		<videoangled>Bật (nhỏ, nghiêng)</videoangled>
+		<hardware>Phần cứng</hardware>
+		<charsystem>Nhân vật</charsystem>
+		<figurines>Mô hình (cần cài theme Animatics)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>Vị trí các nút</iconsetposition>
+		<skyblue>xanh da trời</skyblue>
+		<purple>tím</purple>
+		<red>đỏ</red>
+		<aqua>xanh da trời</aqua>
+		<orange>cam</orange>
+		<green>xanh lá</green>
+		<yellow>vàng</yellow>
+		<pink>hồng</pink>
+		<grey>xám đậm</grey>
+		<lightgrey>xám nhạt</lightgrey>
+		<navy>xanh dương alt</navy>
+		<violet>tím</violet>
+		<candy>candy</candy>
+		<redalt>đỏ alt</redalt>
+		<yellowalt>vàng alt</yellowalt>
+		<greenalt>xanh lá alt</greenalt>
+		<purplealt>tím alt</purplealt>
+		<classiquesyst>Biến mất với thu nhỏ</classiquesyst>
+		<no>Không</no>
+		<yes>Có</yes>
+		<thumb>Căn chỉnh cho hộp 2D</thumb>
+		<boxart>Căn chỉnh cho hộp 3D</boxart>
+		<starrotate>Có</starrotate>
+		<nostarrotate>Không</nostarrotate>
+		<deactive>Tắt</deactive>
+		<speedslow1>Chậm+</speedslow1>
+		<speedslow2>Chậm++</speedslow2>
+		<starvideoang>Nghiêng</starvideoang>
+		<starvideodef>Tiêu chuẩn</starvideodef>
+		<starvideobig>Lớn</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Xám dịu</griscl>
+		<noirombre>Khung đen + bóng</noirombre>
+		<blancombre>Khung trắng + bóng</blancombre>
+		<ombre>Chỉ bóng</ombre>
+		<rien>Không trang trí</rien>
+		<presetshowbig>RFE Show xem trước lớn</presetshowbig>
+		<presetshowsmall>RFE Show xem trước nhỏ</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar vuông</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (Điều hướng nhanh hơn)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Dưới khung lớn (như Steam)</deckgauche>
+		<deckcentre>Giữa hàng (phóng to + vầng sáng)</deckcentre>
+		<decknormal>Bình thường</decknormal>
+		<spotvideodroite>Bên phải, trên các hộp</spotvideodroite>
+		<spotvideoaucune>Tắt</spotvideoaucune>
+		<spotvideogauche>Bên trái, kèm thông tin</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Giữ logo</decklogogarder>
+		<decklogobandeau>Dải thông tin (ẩn logo)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Quay lại thư mục trước</retourdossier>
+		<ra_moncompte>Tài khoản</ra_moncompte>
+		<ra_succesjeu>Thành tích trò chơi</ra_succesjeu>
+		<opt_raaffichage>TRÒ CHƠI - RetroAchievements (công cụ ngoài)</opt_raaffichage>
+		<raaffichagepermanent>Luôn hiển thị</raaffichagepermanent>
+		<raaffichagetemporaire>Vài giây</raaffichagetemporaire>
+		<noteetoile>Ngôi sao</noteetoile>
+		<notecoeur>Trái tim</notecoeur>
+		<notemanette>Tay cầm</notemanette>
+		<notepouce>Thích</notepouce>
+		<notetrophee>Cúp</notetrophee>
+		<notefantome>Bóng ma</notefantome>
+		<notecrane>Đầu lâu</notecrane>
+		<notepourcent>Theo %</notepourcent>
+		<wheelclic>Tiếng click kiểu Hyperspin</wheelclic>
+		<bulle>Bong bóng</bulle>
+		<clic>Click đơn giản</clic>
+		<clicgrave>Click trầm</clicgrave>
+		<frottement>Cọ xát</frottement>
+		<poc>Póc</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>CHUNG - Lời chào mừng</opt_lismoi>
+		<opt_iconset>CHUNG - Giao diện biểu tượng trợ giúp</opt_iconset>
+		<opt_colorhelp>CHUNG - Màu chữ trợ giúp</opt_colorhelp>
+		<opt_horlogecouleur>CHUNG - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>CHUNG - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>HỆ MÁY - Chế độ xem danh sách hệ máy</opt_systemview>
+		<opt_imagefondcops1>HỆ MÁY - Chọn fanart của hệ máy</opt_imagefondcops1>
+		<opt_video4starmodern>HỆ MÁY - Video gameplay ở chế độ xem hệ máy</opt_video4starmodern>
+		<opt_video4starclassic>HỆ MÁY - Video gameplay ở chế độ xem hệ máy</opt_video4starclassic>
+		<opt_systviewselec>HỆ MÁY - Hình hệ máy trên bánh xe</opt_systviewselec>
+		<opt_breadcrumbsonoff>HỆ MÁY - Menu dọc bên trái (chế độ xem hệ máy cổ điển)</opt_breadcrumbsonoff>
+		<arianeauto>Tự động (theo cách sắp xếp hệ thống)</arianeauto>
+		<arianecategories>Danh mục (sắp xếp theo loại phần cứng)</arianecategories>
+		<arianealpha>Chữ cái A đến Z (sắp xếp theo bảng chữ cái)</arianealpha>
+		<arianealphavoisines>Chữ cái và lân cận (sắp xếp theo bảng chữ cái)</arianealphavoisines>
+		<arianeconstructeur>Nhà sản xuất (sắp xếp theo nhà sản xuất)</arianeconstructeur>
+		<arianedecennie>Thập niên (sắp xếp theo năm phát hành)</arianedecennie>
+		<arianeautres>KHÁC</arianeautres>
+		<opt_metadataonoff>HỆ MÁY - Thông tin hệ máy (chế độ xem hệ máy cổ điển)</opt_metadataonoff>
+		<opt_systannonce>TRÒ CHƠI - Hiển thị hệ máy hiện tại khi mở</opt_systannonce>
+		<opt_infosmax>TRÒ CHƠI - Hiển thị bảng thông tin mở rộng?</opt_infosmax>
+		<opt_gamewheelsound>CHUNG - Âm thanh khi cuộn</opt_gamewheelsound>
+		<opt_boxorthumb>TRÒ CHƠI - Hộp trò chơi hiển thị</opt_boxorthumb>
+		<opt_fanarttransition>TRÒ CHƠI - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>TRÒ CHƠI - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>TRÒ CHƠI - Xoay đĩa</opt_cdvitesse>
+		<cdnormale>Bình thường</cdnormale>
+		<cdlente>Chậm</cdlente>
+		<cdrapide>Nhanh</cdrapide>
+		<cdtresrapide>Rất nhanh</cdtresrapide>
+		<cdimmobile>Đứng yên</cdimmobile>
+		<opt_umdrotation>TRÒ CHƠI - Xoay đĩa UMD (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>TRÒ CHƠI - Làm nổi bật game được chọn</opt_selectionvaleur>
+		<selegere>Nhẹ</selegere>
+		<selmarquee>Rõ</selmarquee>
+		<opt_videojeu>TRÒ CHƠI - Video game</opt_videojeu>
+		<vjcapture>Ảnh chụp rồi video</vjcapture>
+		<vjseule>Chỉ video</vjseule>
+		<vjfondu>Video hiện dần</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>TRÒ CHƠI - Box case type</opt_typeboite>
+		<opt_contourboite>TRÒ CHƠI - Box outline (case)</opt_contourboite>
+		<opt_deckespace>TRÒ CHƠI - Khoảng cách giữa các hộp</opt_deckespace>
+		<opt_iconenote>TRÒ CHƠI - Biểu tượng đánh giá</opt_iconenote>
+		<opt_extfolderbezelsyst>NÂNG CAO - Bezel của hệ máy</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>NÂNG CAO - Logo nhà phát hành</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>NÂNG CAO - Fanart hệ máy</opt_extfolderfanart>
+		<opt_extfolderlogosyst>NÂNG CAO - Logo hệ máy</opt_extfolderlogosyst>
+		<opt_extfoldersalon>NÂNG CAO - Vị trí hình nền của chế độ xem RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_perfmachine>NÂNG CAO - Chế độ máy yếu</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - Làm tối viền nền</opt_salonvignette>
+		<vignleger>Nhẹ</vignleger>
+		<vignfort>Mạnh</vignfort>
+		<opt_deckselection>BIG ART - Vị trí trò chơi được chọn</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Logo khi phát video</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - Xoay hộp SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - Góc của hộp trò chơi</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Phương tiện game (đĩa, băng)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Tốc độ hiệu ứng cuộn</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Kích thước video xem trước</opt_starvideo>
+		<opt_starvideocadre>BOXART - Khung video xem trước</opt_starvideocadre>
+		<vcadreactuel>Khung hiện tại</vcadreactuel>
+		<vcadreombre>Chỉ bóng đổ</vcadreombre>
+		<vcadreecranfin>Viền mỏng</vcadreecranfin>
+		<vcadrebois>Gỗ</vcadrebois>
+		<vcadremetal>Kim loại chải xước</vcadremetal>
+		<vcadrelumineux>Màn hình phát sáng</vcadrelumineux>
+		<vcadretv>TV CRT</vcadretv>
+		<vcadregalerie>Phòng tranh</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Ảnh ba chiều</vcadrehologramme>
+		<vcadreverre>Kính mờ</vcadreverre>
+		<vcadrecarbone>Carbon LED</vcadrecarbone>
+		<vcadreneondouble>Neon đôi</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Nét cọ</vcadrepinceau>
+		<vcadretechnodore>Công nghệ vàng</vcadretechnodore>
+		<vcadretechnoargent>Công nghệ bạc</vcadretechnoargent>
+		<vcadreneonelec>Neon điện</vcadreneonelec>
+		<vcadrevitre>Kính</vcadrevitre>
+		<vcadreflammes>Lửa</vcadreflammes>
+		<vcadreencre>Mực</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Gáy của hộp xoay</opt_boite3dtranche>
+		<b3tcharniere>Logo một bên, phần mở ở bên kia</b3tcharniere>
+		<b3tdeuxcotes>Logo cả hai bên</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - Màu lưới</opt_gridcolor>
+		<opt_squarecadre>VUÔNG - Kiểu ô vuông đại diện cho trò chơi</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>HỆ MÁY - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>HỆ MÁY - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>HỆ MÁY - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>HỆ MÁY - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>TRÒ CHƠI - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Chào mừng và lời cảm ơn</planche00>
+		<planche01>01 - Các chế độ xem hệ máy</planche01>
+		<planche02>02 - Chế độ cổ điển: hình ảnh hệ máy</planche02>
+		<planche03>03 - Chế độ cổ điển: chi tiết</planche03>
+		<planche04>04 - Fanart hệ máy, Modern và Z-Spin</planche04>
+		<planche05>05 - 11 chế độ xem trò chơi</planche05>
+		<planche06>06 - FanartStar Boxart: hộp và thông tin</planche06>
+		<planche07>07 - FanartStar Boxart: video</planche07>
+		<planche08>08 - Hộp và phương tiện</planche08>
+		<planche09>09 - 22 loại vỏ hộp</planche09>
+		<planche10>10 - Phương tiện: cài đặt theo hệ máy</planche10>
+		<planche11>11 - Fanart trò chơi và lựa chọn</planche11>
+		<planche12>12 - Big Art, Spotlight, Vuông, 16/9 và 4/3</planche12>
+		<planche13>13 - Các chế độ xem RFE</planche13>
+		<planche14>14 - RFE Retrofist: màn hình TV</planche14>
+		<planche15>15 - Show Big &amp; Small: hộp lật mặt</planche15>
+		<planche16>16 - Tùy chọn chung của chế độ xem trò chơi</planche16>
+		<planche17>17 - Chung: âm thanh, trợ giúp, đồng hồ</planche17>
+		<planche18>18 - Tùy biến bằng thư mục của bạn</planche18>
+		<planche19>19 - Phương tiện riêng của trò chơi</planche19>
+		<planche20>20 - Trang trí thư mục</planche20>
+		<planche21>21 - Ảnh nào được ưu tiên?</planche21>
+		<planche22>22 - Các hệ máy được nhóm</planche22>
+		<planche23>23 - Máy yếu và liên kết</planche23>
+	</variables>
+</theme>

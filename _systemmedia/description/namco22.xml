@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Namco System 22, the high-end 3D arcade board of the 1990s, home to Ridge Racer and Time Crisis.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Namco System 22, placa de arcade 3D de ponta dos anos 90, com Ridge Racer e Time Crisis.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Namco System 22, the high-end 3D arcade board of the 1990s, home to Ridge Racer and Time Crisis.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Namco System 22, placa arcade 3D de gama alta de los 90, con Ridge Racer y Time Crisis.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Namco System 22, carte arcade 3D haut de gamme des années 1990, qui a accueilli Ridge Racer et Time Crisis.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Namco System 22, die High-End-3D-Arcade-Platine der 1990er, Heimat von Ridge Racer und Time Crisis.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>System 22</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Namco</text>
+		</text>
+	</view>
+</theme>

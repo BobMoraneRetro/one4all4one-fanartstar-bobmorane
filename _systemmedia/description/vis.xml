@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The Tandy Video Information System of 1992, a CD-based multimedia console running a version of Windows, sold briefly by Radio Shack.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Tandy Video Information System de 1992, console multimídia em CD com uma versão do Windows, vendido brevemente pela Radio Shack.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>The Tandy Video Information System of 1992, a CD-based multimedia console running a version of Windows, sold briefly by Radio Shack.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Tandy Video Information System de 1992, consola multimedia en CD con una versión de Windows, vendida brevemente por Radio Shack.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Tandy Video Information System de 1992, console multimédia sur CD fonctionnant sous une version de Windows, vendue brièvement par Radio Shack.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Das Tandy Video Information System von 1992, eine CD-basierte Multimedia-Konsole mit einer Windows-Version, kurz bei Radio Shack verkauft.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Tandy VIS</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Tandy / Memorex</text>
+		</text>
+	</view>
+</theme>

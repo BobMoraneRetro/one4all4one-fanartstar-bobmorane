@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="id">
+		<desactive>Nonaktif</desactive>
+		<default>Bawaan</default>
+		<active>Aktif</active>
+		<novideo>Nonaktif</novideo>
+		<videoback>Aktif</videoback>
+		<intheme>Folder tema - Bawaan</intheme>
+		<extfolder>Folder eksternal</extfolder>
+		<nodates>Tanpa tanggal</nodates>
+		<playcountone>kali main</playcountone>
+		<playcount>kali main</playcount>
+		<noplaycount>Tidak pernah dijalankan</noplaycount>
+		<playerss>pemain</playerss>
+		<player>pemain</player>
+		<nogametime>Belum pernah dimainkan</nogametime>
+		<noplayerdata>Tidak diketahui</noplayerdata>
+		<noratings>Tanpa nilai</noratings>
+		<notesur100>dari 100</notesur100>
+		<opt_nomjeu>GAME - Nama game</opt_nomjeu>
+		<nomjeucomplet>Lengkap</nomjeucomplet>
+		<nomjeucourt>Tanpa tanda kurung</nomjeucourt>
+		<presgame1>Ini adalah game bertipe</presgame1>
+		<presgame2>dikembangkan oleh</presgame2>
+		<presgame3>dapat dimainkan di</presgame3>
+		<presgame4>- Bahasa yang tersedia :</presgame4>
+		<nomjeulabel>Nama game :</nomjeulabel>
+		<genrelabel>Genre :</genrelabel>
+		<devlabel>Pengembang :</devlabel>
+		<langlabel>Bahasa :</langlabel>
+		<gametimelabel>Waktu bermain :</gametimelabel>
+		<lastgamelabel>Terakhir dimainkan:</lastgamelabel>
+		<viewbasicgrid>Basic: Tampilan kisi dasar</viewbasicgrid>
+		<jeux>game</jeux>
+		<longselect>Tekan lama "select"</longselect>
+		<favuniquement>Hanya favorit</favuniquement>
+		<tslesjeux>Semua game</tslesjeux>
+		<fanartstarsyst>Klasik</fanartstarsyst>
+		<fanartmodern>Modern 1 (tidak kompatibel dengan breadcrumb)</fanartmodern>
+		<fanartmodern2>Modern 2 (kompatibel dengan breadcrumb)</fanartmodern2>
+		<fanartfreshone>Hanya fanart pilihan FreshOne</fanartfreshone>
+		<fanartsystcustom>Fanart dari folder custom, jika tidak FreshOne</fanartsystcustom>
+		<videoangled>Aktif (kecil, miring)</videoangled>
+		<hardware>Perangkat keras</hardware>
+		<charsystem>Karakter</charsystem>
+		<figurines>Figur (tema Animatics harus terpasang)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>Posisi tombol</iconsetposition>
+		<skyblue>biru langit</skyblue>
+		<purple>ungu</purple>
+		<red>merah</red>
+		<aqua>biru langit</aqua>
+		<orange>oranye</orange>
+		<green>hijau</green>
+		<yellow>kuning</yellow>
+		<pink>merah muda</pink>
+		<grey>abu-abu tua</grey>
+		<lightgrey>abu-abu muda</lightgrey>
+		<navy>biru alt</navy>
+		<violet>ungu</violet>
+		<candy>candy</candy>
+		<redalt>merah alt</redalt>
+		<yellowalt>kuning alt</yellowalt>
+		<greenalt>hijau alt</greenalt>
+		<purplealt>ungu alt</purplealt>
+		<classiquesyst>Memudar dengan zoom mundur</classiquesyst>
+		<no>Tidak</no>
+		<yes>Ya</yes>
+		<thumb>Dikalibrasi untuk kotak 2D</thumb>
+		<boxart>Dikalibrasi untuk kotak 3D</boxart>
+		<starrotate>Ya</starrotate>
+		<nostarrotate>Tidak</nostarrotate>
+		<deactive>Nonaktif</deactive>
+		<speedslow1>Lambat+</speedslow1>
+		<speedslow2>Lambat++</speedslow2>
+		<starvideoang>Miring</starvideoang>
+		<starvideodef>Standar</starvideodef>
+		<starvideobig>Besar</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Abu-abu lembut</griscl>
+		<noirombre>Bingkai hitam + bayangan</noirombre>
+		<blancombre>Bingkai putih + bayangan</blancombre>
+		<ombre>Bayangan saja</ombre>
+		<rien>Tanpa hiasan</rien>
+		<presetshowbig>RFE Show pratinjau besar</presetshowbig>
+		<presetshowsmall>RFE Show pratinjau kecil</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar persegi</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (Navigasi lebih cepat)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Di bawah panel besar (seperti Steam)</deckgauche>
+		<deckcentre>Di tengah baris (zoom + cahaya)</deckcentre>
+		<decknormal>Normal</decknormal>
+		<spotvideodroite>Kanan, di atas kotak</spotvideodroite>
+		<spotvideoaucune>Nonaktif</spotvideoaucune>
+		<spotvideogauche>Kiri, dengan info</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Pertahankan logo</decklogogarder>
+		<decklogobandeau>Pita info (logo disembunyikan)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Kembali ke folder sebelumnya</retourdossier>
+		<ra_moncompte>Akun saya</ra_moncompte>
+		<ra_succesjeu>Pencapaian game</ra_succesjeu>
+		<opt_raaffichage>GAME - RetroAchievements (alat eksternal)</opt_raaffichage>
+		<raaffichagepermanent>Selalu tampil</raaffichagepermanent>
+		<raaffichagetemporaire>Beberapa detik</raaffichagetemporaire>
+		<noteetoile>Bintang</noteetoile>
+		<notecoeur>Hati</notecoeur>
+		<notemanette>Gamepad</notemanette>
+		<notepouce>Jempol</notepouce>
+		<notetrophee>Trofi</notetrophee>
+		<notefantome>Hantu</notefantome>
+		<notecrane>Tengkorak</notecrane>
+		<notepourcent>Dalam %</notepourcent>
+		<wheelclic>Klik gaya Hyperspin</wheelclic>
+		<bulle>Gelembung</bulle>
+		<clic>Klik sederhana</clic>
+		<clicgrave>Klik dalam</clicgrave>
+		<frottement>Gesekan</frottement>
+		<poc>Pop</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>UMUM - Pesan sambutan</opt_lismoi>
+		<opt_iconset>UMUM - Tampilan ikon bantuan</opt_iconset>
+		<opt_colorhelp>UMUM - Warna teks bantuan</opt_colorhelp>
+		<opt_horlogecouleur>UMUM - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>UMUM - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>SISTEM - Tampilan untuk daftar sistem</opt_systemview>
+		<opt_imagefondcops1>SISTEM - Pilihan fanart sistem</opt_imagefondcops1>
+		<opt_video4starmodern>SISTEM - Video gameplay di tampilan sistem</opt_video4starmodern>
+		<opt_video4starclassic>SISTEM - Video gameplay di tampilan sistem</opt_video4starclassic>
+		<opt_systviewselec>SISTEM - Gambar sistem di roda</opt_systviewselec>
+		<opt_breadcrumbsonoff>SISTEM - Menu vertikal di kiri (tampilan sistem klasik)</opt_breadcrumbsonoff>
+		<arianeauto>Otomatis (mengikuti urutan sistem)</arianeauto>
+		<arianecategories>Kategori (urut menurut jenis perangkat)</arianecategories>
+		<arianealpha>Huruf A sampai Z (urutan abjad)</arianealpha>
+		<arianealphavoisines>Huruf dan tetangganya (urutan abjad)</arianealphavoisines>
+		<arianeconstructeur>Produsen (urut menurut produsen)</arianeconstructeur>
+		<arianedecennie>Dekade (urut menurut tahun rilis)</arianedecennie>
+		<arianeautres>LAINNYA</arianeautres>
+		<opt_metadataonoff>SISTEM - Informasi sistem (tampilan sistem klasik)</opt_metadataonoff>
+		<opt_systannonce>GAME - Tampilkan sistem saat ini saat dibuka</opt_systannonce>
+		<opt_infosmax>GAME - Tampilkan konsol info maksimal?</opt_infosmax>
+		<opt_gamewheelsound>UMUM - Suara saat menggulir</opt_gamewheelsound>
+		<opt_boxorthumb>GAME - Kotak game yang ditampilkan</opt_boxorthumb>
+		<opt_fanarttransition>GAME - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>GAME - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>GAME - Putaran cakram</opt_cdvitesse>
+		<cdnormale>Normal</cdnormale>
+		<cdlente>Lambat</cdlente>
+		<cdrapide>Cepat</cdrapide>
+		<cdtresrapide>Sangat cepat</cdtresrapide>
+		<cdimmobile>Diam</cdimmobile>
+		<opt_umdrotation>GAME - Rotasi UMD (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>GAME - Sorot game yang dipilih</opt_selectionvaleur>
+		<selegere>Ringan</selegere>
+		<selmarquee>Kuat</selmarquee>
+		<opt_videojeu>GAME - Video game</opt_videojeu>
+		<vjcapture>Tangkapan layar lalu video</vjcapture>
+		<vjseule>Hanya video</vjseule>
+		<vjfondu>Video dengan efek muncul perlahan</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>GAME - Box case type</opt_typeboite>
+		<opt_contourboite>GAME - Box outline (case)</opt_contourboite>
+		<opt_deckespace>GAME - Jarak antar kotak</opt_deckespace>
+		<opt_iconenote>GAME - Ikon penilaian</opt_iconenote>
+		<opt_extfolderbezelsyst>LANJUTAN - Bezel sistem</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>LANJUTAN - Logo penerbit game</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>LANJUTAN - Fanart sistem</opt_extfolderfanart>
+		<opt_extfolderlogosyst>LANJUTAN - Logo sistem</opt_extfolderlogosyst>
+		<opt_extfoldersalon>LANJUTAN - Lokasi latar tampilan RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_perfmachine>LANJUTAN - Mode mesin berdaya rendah</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - Vinyet latar</opt_salonvignette>
+		<vignleger>Ringan</vignleger>
+		<vignfort>Kuat</vignfort>
+		<opt_deckselection>BIG ART - Posisi game yang dipilih</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Logo saat video</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - Rotasi kotak SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - Sudut kotak game</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Media game (cakram, kartrid)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Kecepatan animasi gulir</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Ukuran video pratinjau</opt_starvideo>
+		<opt_starvideocadre>BOXART - Bingkai video pratinjau</opt_starvideocadre>
+		<vcadreactuel>Bingkai saat ini</vcadreactuel>
+		<vcadreombre>Hanya bayangan</vcadreombre>
+		<vcadreecranfin>Bingkai tipis</vcadreecranfin>
+		<vcadrebois>Kayu</vcadrebois>
+		<vcadremetal>Logam brushed</vcadremetal>
+		<vcadrelumineux>Layar bercahaya</vcadrelumineux>
+		<vcadretv>TV CRT</vcadretv>
+		<vcadregalerie>Galeri</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Kaca buram</vcadreverre>
+		<vcadrecarbone>Karbon LED</vcadrecarbone>
+		<vcadreneondouble>Neon ganda</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Sapuan kuas</vcadrepinceau>
+		<vcadretechnodore>Tekno emas</vcadretechnodore>
+		<vcadretechnoargent>Tekno perak</vcadretechnoargent>
+		<vcadreneonelec>Neon listrik</vcadreneonelec>
+		<vcadrevitre>Kaca</vcadrevitre>
+		<vcadreflammes>Api</vcadreflammes>
+		<vcadreencre>Tinta</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Sisi kotak yang berputar</opt_boite3dtranche>
+		<b3tcharniere>Logo di satu sisi, bukaan di sisi lain</b3tcharniere>
+		<b3tdeuxcotes>Logo di kedua sisi</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - Warna grid</opt_gridcolor>
+		<opt_squarecadre>PERSEGI - Tampilan kotak yang mewakili game</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>SISTEM - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>SISTEM - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>SISTEM - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>SISTEM - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>GAME - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Selamat datang dan kredit</planche00>
+		<planche01>01 - Tampilan sistem</planche01>
+		<planche02>02 - Tampilan klasik: gambar sistem</planche02>
+		<planche03>03 - Tampilan klasik: detail</planche03>
+		<planche04>04 - Fanart sistem, Modern dan Z-Spin</planche04>
+		<planche05>05 - 11 tampilan game</planche05>
+		<planche06>06 - FanartStar Boxart: kotak dan info</planche06>
+		<planche07>07 - FanartStar Boxart: video</planche07>
+		<planche08>08 - Kotak dan media</planche08>
+		<planche09>09 - 22 casing</planche09>
+		<planche10>10 - Media: pengaturan per sistem</planche10>
+		<planche11>11 - Fanart game dan pilihan</planche11>
+		<planche12>12 - Big Art, Spotlight, Persegi, 16/9 dan 4/3</planche12>
+		<planche13>13 - Tampilan RFE</planche13>
+		<planche14>14 - RFE Retrofist: layar TV</planche14>
+		<planche15>15 - Show Big &amp; Small: kotak yang berbalik</planche15>
+		<planche16>16 - Opsi umum tampilan game</planche16>
+		<planche17>17 - Umum: suara, bantuan, jam</planche17>
+		<planche18>18 - Kustomisasi dengan foldermu</planche18>
+		<planche19>19 - Media game pribadi</planche19>
+		<planche20>20 - Menghias folder</planche20>
+		<planche21>21 - Gambar mana yang menang?</planche21>
+		<planche22>22 - Sistem yang dikelompokkan</planche22>
+		<planche23>23 - Mesin lemah dan tautan</planche23>
+	</variables>
+</theme>

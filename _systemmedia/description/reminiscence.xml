@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>REminiscence, a reimplementation of the engine of Flashback, Delphine Software's 1992 cinematic platform adventure.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>REminiscence, reimplementação do motor de Flashback, a aventura de plataforma cinematográfica da Delphine Software de 1992.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>REminiscence, a reimplementation of the engine of Flashback, Delphine Software's 1992 cinematic platform adventure.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>REminiscence, reimplementación del motor de Flashback, la aventura de plataformas cinematográfica de Delphine Software de 1992.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>REminiscence, réécriture du moteur de Flashback, le jeu de plates-formes cinématique de Delphine Software sorti en 1992.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>REminiscence, eine Neuimplementierung der Engine von Flashback, dem cineastischen Plattform-Abenteuer von Delphine Software von 1992.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>REminiscence</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

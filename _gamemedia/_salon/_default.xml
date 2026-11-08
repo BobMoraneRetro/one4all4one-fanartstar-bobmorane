@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<salon_video_pos>0.4977 0.2241</salon_video_pos>
+		<salon_video_taille>0.2672 0.3218</salon_video_taille>
+		<salon_capture_pos>0.4977 0.2241</salon_capture_pos>
+		<salon_capture_taille>0.2672 0.3218</salon_capture_taille>
+		<salon_disque_depart>0.5</salon_disque_depart>
+		<salon_disque_x>0.69</salon_disque_x>
+		<salon_disque_y>0.65</salon_disque_y>
+		<salon_disque_taille>0.36 0.64</salon_disque_taille>
+		<salon_video_etiree>true</salon_video_etiree>
+	</variables>
+</theme>

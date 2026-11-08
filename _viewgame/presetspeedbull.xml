@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${fanartaltpath} : champ de repli pour la fanart (selon l option) (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart »)
+	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
+	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
+	${media_box2d} : boîte 2D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box3d} : boîte 3D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart} : fanart du jeu (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart_exists} : vrai si le média « fanart » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart_missing} : vrai si le média « fanart » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_support} : support physique du jeu (cartouche, ou disque pour les systèmes à disque) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
+	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
+	${selopacite} : opacité des jeux non sélectionnés dans les grilles (1, 0.7 ou 0.45) (définie dans ce fichier ; valeur selon l option « JEUX - Mise en valeur du jeu sélectionné »)
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${devlabel}, ${gametimelabel}, ${genrelabel}, ${lastgamelabel}, ${nodates}, ${nogametime}, ${nomjeulabel}, ${noplayerdata}, ${noratings}, ${notesur100}, ${playcount}, ${playcountone}, ${player}, ${playerss}, ${presetspeedbull}, ${retourdossier}
+-->
 <theme>
 	<formatVersion>7</formatVersion>
 	<variables>
-		<intfanartfresh>${bobmediapath}/_systemmedia/_fanartsysteme/fresh/${system.theme}.jpg</intfanartfresh>
-		<!-- <nodates>Pas de date</nodates> -->
-		<!-- <noplaycount>Jamais lancé</noplaycount> -->
-		<!-- <noplayerdata>Inconnu</noplayerdata> -->
-		<!-- <noratings>Pas de note</noratings> -->
-		<!-- <playcountone>partie</playcountone> -->
-		<!-- <playcount>parties</playcount> -->
-		<!-- <playerss>joueurs</playerss> -->
-		<!-- <player>joueur</player> -->
-		<!-- <nogametime>Jamais joué</nogametime> -->
-		<!-- <nomjeulabel>Nom du jeu :</nomjeulabel> -->
-		<!-- <genrelabel>Genre :</genrelabel> -->
-		<!-- <devlabel>Developpeur :</devlabel> -->
-		<!-- <langlabel>Langues :</langlabel> -->
-		<!-- <gametimelabel>Temps de jeu :</gametimelabel> -->
-		<!-- <lastgamelabel>Dernière partie :</lastgamelabel> -->
-		<!-- <presetspeedbull>Simple : RFE speedbull</presetspeedbull> -->
+		<selopacite ifSubset="selectionvaleur:legere">0.7</selopacite>
+		<selopacite ifSubset="selectionvaleur:marquee">0.45</selopacite>
+		<selopacite ifSubset="selectionvaleur:aucune">1</selopacite>
 	</variables>
 	<customView name="presetspeedbull" displayName="${presetspeedbull}" inherits="gamecarousel">
 		<control name="fanart_extra,screenshot_extra,video_extra">
@@ -37,8 +43,45 @@
 			<color>00000000</color>
 			<maxLogoCount>5</maxLogoCount>
 			<logoAlignment>center</logoAlignment>
-			<!-- <defaultTransition>instant</defaultTransition> -->
 			<minLogoOpacity>0.8</minLogoOpacity>
+			<itemTemplate>
+				<container>
+					<image name="logo">
+						<opacity>${selopacite}</opacity>
+						<path>${media_marquee}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>1 1</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+					</image>
+					<text name="nomjeu">
+						<opacity>${selopacite}</opacity>
+						<visible>${media_marquee_missing}</visible>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<text>${titrejeu}</text>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>1 1</size>
+						<fontPath>${themePath}/_common/fonts/Cabin-Bold.ttf</fontPath>
+						<fontSize>0.022</fontSize>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<glowColor>00000099</glowColor>
+						<glowSize>2</glowSize>
+					</text>
+				</container>
+			</itemTemplate>
 		</gamecarousel>
 		<control name="gamecarouselLogo,gamecarouselLogoText">
 			<storyboard event="activate">
@@ -53,11 +96,10 @@
 				<animation property="opacity" to="0" begin="1400" duration="500" mode="EaseOut"/>
 			</storyboard>
 		</control>
-		<!--Affichage et animation du FanArt ou de l'image du jeu pour le volet superieur-->
 		<image name="image_volet_haut" extra="true">
-			<visible>!exists({game:fanart})</visible>
+			<visible>(${media_fanart_missing}) &amp;&amp; {game:rom} != '..'</visible>
 			<default>${intfanartfresh}</default>
-			<path>{game:image}</path>
+			<path>${fanartaltpath}</path>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<size>1 1</size>
@@ -80,8 +122,8 @@
 			</storyboard>
 		</image>
 		<image name="fanart_volet_haut" extra="true">
-			<visible>exists({game:fanart})</visible>
-			<path>{game:fanart}</path>
+			<visible>(${media_fanart_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_fanart}</path>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<size>1 1</size>
@@ -103,7 +145,6 @@
 				<animation property="y" to="0" begin="0" duration="150"/>
 			</storyboard>
 		</image>
-		<!--Affichage de la ligne superieure des fanarts pour l'ouverture volet-->
 		<image name="fanart-topline" extra="true">
 			<path>${themePath}/_viewgame/speedbull/white.png</path>
 			<gradientType>horizontal</gradientType>
@@ -127,11 +168,10 @@
 				<animation property="opacity" to="0" begin="1à0"/>
 			</storyboard>
 		</image>
-		<!--Affichage et animation du FanArt ou de l'image du jeu pour le volet inferieur-->
 		<image name="image_volet_bas" extra="true">
-			<visible>!exists({game:fanart})</visible>
+			<visible>(${media_fanart_missing}) &amp;&amp; {game:rom} != '..'</visible>
 			<default>${intfanartfresh}</default>
-			<path>{game:image}</path>
+			<path>${fanartaltpath}</path>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<size>1 1</size>
@@ -154,8 +194,8 @@
 			</storyboard>
 		</image>
 		<image name="fanart_volet_bas" extra="true">
-			<visible>exists({game:fanart})</visible>
-			<path>{game:fanart}</path>
+			<visible>(${media_fanart_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_fanart}</path>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<size>1 1</size>
@@ -177,7 +217,6 @@
 				<animation property="y" to="0" begin="0" duration="150"/>
 			</storyboard>
 		</image>
-		<!--Affichage de la ligne inferieure des fanarts  pour l'ouverture volet-->
 		<image name="fanart-bottomline" extra="true">
 			<path>${themePath}/_viewgame/speedbull/white.png</path>
 			<gradientType>horizontal</gradientType>
@@ -223,26 +262,28 @@
 			<maxSize>1 1</maxSize>
 			<zIndex>16</zIndex>
 		</image>
-		<!--Affichage et animation des images pour le defilement en arriere plan si pas de fanart-->
 		<image name="animatedimage1" extra="true">
-			<visible>!exists({game:fanart})</visible>
+			<visible>(${media_fanart_missing}) &amp;&amp; {game:rom} != '..'</visible>
 			<default>${intfanartfresh}</default>
-			<path>{game:image}</path>
+			<path>${fanartaltpath}</path>
 			<pos>0 0.5</pos>
 			<origin>0 0.5</origin>
 			<size>0.55 0.55</size>
 			<linearSmooth>true</linearSmooth>
 			<opacity>0</opacity>
 			<zIndex>8</zIndex>
-			<storyboard event="activate">
+			<storyboard ifSubset="perfmachine:perfnormal" event="activate">
 				<animation property="opacity" to="1" begin="1000"/>
 				<animation property="x" from="0" to="-1.1" begin="0" duration="15000" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="activate">
+				<animation property="opacity" to="1" begin="1000"/>
 			</storyboard>
 		</image>
 		<image name="animatedimage2" extra="true">
-			<visible>!exists({game:fanart})</visible>
+			<visible>(${media_fanart_missing}) &amp;&amp; {game:rom} != '..'</visible>
 			<default>${intfanartfresh}</default>
-			<path>{game:image}</path>
+			<path>${fanartaltpath}</path>
 			<pos>0.55 0.5</pos>
 			<origin>0 0.5</origin>
 			<size>0.55 0.55</size>
@@ -250,30 +291,36 @@
 			<opacity>0</opacity>
 			<flipX>true</flipX>
 			<zIndex>8</zIndex>
-			<storyboard event="activate">
+			<storyboard ifSubset="perfmachine:perfnormal" event="activate">
 				<animation property="opacity" to="1" begin="1000"/>
 				<animation property="x" from="0.55" to="-0.55" begin="0" duration="15000" repeat="forever"/>
 			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="activate">
+				<animation property="opacity" to="1" begin="1000"/>
+			</storyboard>
 		</image>
 		<image name="animatedimage3" extra="true">
-			<visible>!exists({game:fanart})</visible>
+			<visible>(${media_fanart_missing}) &amp;&amp; {game:rom} != '..'</visible>
 			<default>${intfanartfresh}</default>
-			<path>{game:image}</path>
+			<path>${fanartaltpath}</path>
 			<pos>1.1 0.5</pos>
 			<origin>0 0.5</origin>
 			<size>0.55 0.55</size>
 			<linearSmooth>true</linearSmooth>
 			<opacity>0</opacity>
 			<zIndex>8</zIndex>
-			<storyboard event="activate">
+			<storyboard ifSubset="perfmachine:perfnormal" event="activate">
 				<animation property="opacity" to="1" begin="1000"/>
 				<animation property="x" from="1.1" to="0" begin="0" duration="15000" repeat="forever"/>
 			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="activate">
+				<animation property="opacity" to="1" begin="1000"/>
+			</storyboard>
 		</image>
 		<image name="animatedimage4" extra="true">
-			<visible>!exists({game:fanart})</visible>
+			<visible>(${media_fanart_missing}) &amp;&amp; {game:rom} != '..'</visible>
 			<default>${intfanartfresh}</default>
-			<path>{game:image}</path>
+			<path>${fanartaltpath}</path>
 			<pos>0.55 0.5</pos>
 			<origin>0 0.5</origin>
 			<size>0.55 0.55</size>
@@ -281,29 +328,34 @@
 			<opacity>0</opacity>
 			<flipX>true</flipX>
 			<zIndex>8</zIndex>
-			<storyboard event="activate">
+			<storyboard ifSubset="perfmachine:perfnormal" event="activate">
 				<animation property="opacity" to="1" begin="1000"/>
 				<animation property="x" from="1.65" to="0.55" begin="0" duration="15000" repeat="forever"/>
 			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="activate">
+				<animation property="opacity" to="1" begin="1000"/>
+			</storyboard>
 		</image>
-		<!--Affichage et animation des fanart pour le defilement en arriere plan-->
 		<image name="animatedfanart1" extra="true">
-			<visible>exists({game:fanart})</visible>
-			<path>{game:fanart}</path>
+			<visible>(${media_fanart_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_fanart}</path>
 			<pos>0 0.5</pos>
 			<origin>0 0.5</origin>
 			<size>0.55 0.55</size>
 			<linearSmooth>true</linearSmooth>
 			<opacity>0</opacity>
 			<zIndex>8</zIndex>
-			<storyboard event="activate">
+			<storyboard ifSubset="perfmachine:perfnormal" event="activate">
 				<animation property="opacity" to="1" begin="1000"/>
 				<animation property="x" from="0" to="-1.1" begin="0" duration="15000" repeat="forever"/>
 			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="activate">
+				<animation property="opacity" to="1" begin="1000"/>
+			</storyboard>
 		</image>
 		<image name="animatedfanart2" extra="true">
-			<visible>exists({game:fanart})</visible>
-			<path>{game:fanart}</path>
+			<visible>(${media_fanart_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_fanart}</path>
 			<pos>0.55 0.5</pos>
 			<origin>0 0.5</origin>
 			<size>0.55 0.55</size>
@@ -311,28 +363,34 @@
 			<opacity>0</opacity>
 			<flipX>true</flipX>
 			<zIndex>8</zIndex>
-			<storyboard event="activate">
+			<storyboard ifSubset="perfmachine:perfnormal" event="activate">
 				<animation property="opacity" to="1" begin="1000"/>
 				<animation property="x" from="0.55" to="-0.55" begin="0" duration="15000" repeat="forever"/>
 			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="activate">
+				<animation property="opacity" to="1" begin="1000"/>
+			</storyboard>
 		</image>
 		<image name="animatedfanart3" extra="true">
-			<visible>exists({game:fanart})</visible>
-			<path>{game:fanart}</path>
+			<visible>(${media_fanart_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_fanart}</path>
 			<pos>1.1 0.5</pos>
 			<origin>0 0.5</origin>
 			<size>0.55 0.55</size>
 			<linearSmooth>true</linearSmooth>
 			<opacity>0</opacity>
 			<zIndex>8</zIndex>
-			<storyboard event="activate">
+			<storyboard ifSubset="perfmachine:perfnormal" event="activate">
 				<animation property="opacity" to="1" begin="1000"/>
 				<animation property="x" from="1.1" to="0" begin="0" duration="15000" repeat="forever"/>
 			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="activate">
+				<animation property="opacity" to="1" begin="1000"/>
+			</storyboard>
 		</image>
 		<image name="animatedfanart4" extra="true">
-			<visible>exists({game:fanart})</visible>
-			<path>{game:fanart}</path>
+			<visible>(${media_fanart_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_fanart}</path>
 			<pos>0.55 0.5</pos>
 			<origin>0 0.5</origin>
 			<size>0.55 0.55</size>
@@ -340,13 +398,16 @@
 			<opacity>0</opacity>
 			<flipX>true</flipX>
 			<zIndex>8</zIndex>
-			<storyboard event="activate">
+			<storyboard ifSubset="perfmachine:perfnormal" event="activate">
 				<animation property="opacity" to="1" begin="1000"/>
 				<animation property="x" from="1.65" to="0.55" begin="0" duration="15000" repeat="forever"/>
 			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="activate">
+				<animation property="opacity" to="1" begin="1000"/>
+			</storyboard>
 		</image>
 		<video name="videogame" extra="true">
-			<path>{game:video}</path>
+			<path>${media_video}</path>
 			<pos>0.5 0.5</pos>
 			<visible>true</visible>
 			<maxSize>1 0.5</maxSize>
@@ -366,8 +427,8 @@
 			<storyboard event="deactivatePrev">
 				<animation property="scale" from="1" to="0.1" begin="0" duration="250"/>
 			</storyboard>
-			<shader>
-				<path>:/shaders/border.glsl</path>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>0.03</cornerRadius>
 				<borderSize>0.012</borderSize>
 				<borderColor>000000</borderColor>
@@ -377,9 +438,9 @@
 				<outerShadowColor>00000050</outerShadowColor>
 			</shader>
 		</video>
-		<!--Affichage et animation de la boite du jeu-->
 		<image name="thumbnail" extra="true">
-			<path>{game:thumbnail}</path>
+			<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
+			<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.14 0.5</pos>
 			<maxSize>0.25 0.45</maxSize>
@@ -398,40 +459,16 @@
 				<animation property="scale" from="1" to="0.1" begin="0" duration="250"/>
 			</storyboard>
 		</image>
-		<!-- ######################## Début gestion cartouche et CD qui tournent ################################## -->
-		<!--Affichage et animation du support disque du jeu s'il existe dans le repertoire images/disc-->
-		<image name="separatedisc" ifSubset="cartdiscgest:cartcardsepare" extra="true">
+		<image name="disccartdefaut" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.85 0.51</pos>
 			<maxSize>0.2 0.4</maxSize>
-			<path>("${themePath}/../../../../roms/${system.theme}/images/disc/" + stem({game:rom}) + ".png")</path>
+			<path>${media_support}</path>
 			<linearSmooth>true</linearSmooth>
 			<opacity>0</opacity>
 			<zIndex>1</zIndex>
 			<storyboard event="activate">
-				<animation property="opacity" to="1" begin="500"/>
-				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
-				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
-				<animation property="rotation" from="-1080" to="0" begin="3500" duration="9000" repeat="forever"/>
-			</storyboard>
-			<storyboard event="deactivateNext">
-				<animation property="scale" from="1" to="0.1" begin="0" duration="250"/>
-			</storyboard>
-			<storyboard event="deactivatePrev">
-				<animation property="scale" from="1" to="0.1" begin="0" duration="250"/>
-			</storyboard>
-		</image>
-		<!--Affichage et animation du support du jeu s'il existe dans le repertoire images/card-->
-		<image name="separatecart" ifSubset="cartdiscgest:cartcardsepare" extra="true">
-			<origin>0.5 0.5</origin>
-			<pos>0.85 0.5</pos>
-			<maxSize>0.15 0.3</maxSize>
-			<path>("${themePath}/../../../../roms/${system.theme}/images/card/" + stem({game:rom}) + ".png")</path>
-			<linearSmooth>true</linearSmooth>
-			<opacity>0</opacity>
-			<zIndex>1</zIndex>
-			<storyboard event="activate">
-				<animation property="opacity" to="1" begin="500"/>
+				<animation property="opacity" to="1" begin="1000"/>
 				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
 				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
 			</storyboard>
@@ -441,63 +478,278 @@
 			<storyboard event="deactivatePrev">
 				<animation property="scale" from="1" to="0.1" begin="0" duration="250"/>
 			</storyboard>
+			<shader ifSubset="perfmachine:perfnormal" if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360' || {system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">
+				<path>${themePath}/_common/shaders/support_tourne.glsl</path>
+				<u_rond>0</u_rond>
+			</shader>
 		</image>
-		<!--BobMorane cartridge-->
-		<image name="disccartdefaut" ifSubset="cartdiscgest:nonsepare" extra="true">
+		<image name="disccartdefautrond" extra="true" if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360' || {system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">
+			<visible ifSubset="perfmachine:perflow">false</visible>
 			<origin>0.5 0.5</origin>
 			<pos>0.85 0.51</pos>
 			<maxSize>0.2 0.4</maxSize>
-			<path>{game:cartridge}</path>
+			<path>${media_support}</path>
 			<linearSmooth>true</linearSmooth>
 			<opacity>0</opacity>
 			<zIndex>1</zIndex>
-			<storyboard event="activate">
+			<shader>
+				<path>${themePath}/_common/shaders/support_tourne.glsl</path>
+				<u_rond>1</u_rond>
+			</shader>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="open">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="7000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="10000" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="open">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="2000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="5000" duration="4000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="open">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="1000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="4000" duration="2000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="open">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="open">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="4000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="7000" duration="8000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="open">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activateNext">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="7000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="10000" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activateNext">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="2000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="5000" duration="4000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activateNext">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="1000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="4000" duration="2000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activateNext">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activateNext">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="4000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="7000" duration="8000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="activateNext">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activatePrev">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="7000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="10000" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activatePrev">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="2000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="5000" duration="4000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activatePrev">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="1000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="4000" duration="2000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activatePrev">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activatePrev">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="4000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="7000" duration="8000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="activatePrev">
 				<animation property="opacity" to="1" begin="1000"/>
 				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
 				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
 			</storyboard>
 			<storyboard event="deactivateNext">
+				<animation property="opacity" from="0" to="0" duration="" mode="linear"/>
 				<animation property="scale" from="1" to="0.1" begin="0" duration="250"/>
 			</storyboard>
 			<storyboard event="deactivatePrev">
+				<animation property="opacity" from="0" to="0" duration="" mode="linear"/>
 				<animation property="scale" from="1" to="0.1" begin="0" duration="250"/>
 			</storyboard>
 		</image>
-		<control name="disccartdefaut" if="{system.theme} == 'dreamcast' 
-		|| {system.theme} == 'ps2' 
-		|| {system.theme} == '3do' 
-		|| {system.theme} == 'gc' 
-		|| {system.theme} == 'wii'  
-		|| {system.theme} == 'ps3' 
-		|| {system.theme} == 'amigacd32' 
-		|| {system.theme} == 'cdi' 
-		|| {system.theme} == 'neogeocd' 
-		|| {system.theme} == 'pce-cd' 
-		|| {system.theme} == 'pcfx' 
-		|| {system.theme} == 'psx' 
-		|| {system.theme} == 'saturn' 
-		|| {system.theme} == 'segacd' 
-		|| {system.theme} == 'xbox'">
-			<storyboard event="open">
+		<control name="disccartdefaut" if="{system.theme} == 'psx'
+		|| {system.theme} == 'ps2'
+		|| {system.theme} == 'ps3'
+		|| {system.theme} == 'saturn'
+		|| {system.theme} == 'megacd'
+		|| {system.theme} == 'dreamcast'
+		|| {system.theme} == '3do'
+		|| {system.theme} == 'cdi'
+		|| {system.theme} == 'amigacd32'
+		|| {system.theme} == 'amigacdtv'
+		|| {system.theme} == 'neogeocd'
+		|| {system.theme} == 'pce-cd'
+		|| {system.theme} == 'pcfx'
+		|| {system.theme} == 'atarijaguarcd'
+		|| {system.theme} == 'gc'
+		|| {system.theme} == 'wii'
+		|| {system.theme} == 'xbox'
+		|| {system.theme} == 'fmtowns'">
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="open">
 				<animation property="opacity" to="1" begin="1000"/>
 				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
 				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
-				<animation enabled="exists({game:cartridge})" property="rotation" from="-360" begin="3000" duration="2000" mode="EaseIn"/>
-				<animation enabled="exists({game:cartridge})" property="rotation" from="-360" begin="5000" duration="1000" mode="linear" repeat="forever"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="7000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="10000" duration="14000" mode="linear" repeat="forever"/>
 			</storyboard>
-			<storyboard event="activateNext">
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="open">
 				<animation property="opacity" to="1" begin="1000"/>
 				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
 				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
-				<animation enabled="exists({game:cartridge})" property="rotation" from="-360" begin="3000" duration="2000" mode="EaseIn"/>
-				<animation enabled="exists({game:cartridge})" property="rotation" from="-360" begin="5000" duration="1000" mode="linear" repeat="forever"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="2000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="5000" duration="4000" mode="linear" repeat="forever"/>
 			</storyboard>
-			<storyboard event="activatePrev">
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="open">
 				<animation property="opacity" to="1" begin="1000"/>
 				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
 				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
-				<animation enabled="exists({game:cartridge})" property="rotation" from="-360" begin="3000" duration="2000" mode="EaseIn"/>
-				<animation enabled="exists({game:cartridge})" property="rotation" from="-360" begin="5000" duration="1000" mode="linear" repeat="forever"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="1000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="4000" duration="2000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="open">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="open">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="4000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="7000" duration="8000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="open">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activateNext">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="7000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="10000" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activateNext">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="2000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="5000" duration="4000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activateNext">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="1000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="4000" duration="2000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activateNext">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activateNext">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="4000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="7000" duration="8000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="activateNext">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activatePrev">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="7000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="10000" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activatePrev">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="2000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="5000" duration="4000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activatePrev">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="1000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="4000" duration="2000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activatePrev">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activatePrev">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="4000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="7000" duration="8000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow" event="activatePrev">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
 			</storyboard>
 			<storyboard event="deactivateNext">
 				<animation property="opacity" from="0" to="0" duration="" mode="linear"/>
@@ -508,12 +760,11 @@
 				<animation property="scale" from="1" to="0.1" begin="0" duration="250"/>
 			</storyboard>
 		</control>
-		<!-- ######################## fin gestion cartouche et CD qui tournent ################################## -->
 		<image name="logosytemgamelistshadow" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 -0.088</pos>
-			<path>firstfile("${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
-			"${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path>
+			<path>firstfile("${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
+			"${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + ".png")</path>
 			<maxSize>0.3 0.2</maxSize>
 			<linearSmooth>true</linearSmooth>
 			<horizontalAlignment>left</horizontalAlignment>
@@ -523,32 +774,13 @@
 		<image name="logosytemgamelist" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.5015 -0.0885</pos>
-			<path>firstfile("${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
-			"${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path>
+			<path>firstfile("${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
+			"${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + ".png")</path>
 			<maxSize>0.3 0.2</maxSize>
 			<linearSmooth>true</linearSmooth>
 			<horizontalAlignment>left</horizontalAlignment>
 			<zIndex>100</zIndex>
 		</image>
-		<!-- <image name="logosytemcollectionshadow" extra="true"> -->
-			<!-- <origin>0.5 0.5</origin> -->
-			<!-- <pos>0.94 -0.015</pos> -->
-			<!-- <path if="${system.manufacturer} == 'Collections'">${extgamesyst}</path> -->
-			<!-- <maxSize>0.1 0.05</maxSize> -->
-			<!-- <linearSmooth>true</linearSmooth> -->
-			<!-- <horizontalAlignment>right</horizontalAlignment> -->
-			<!-- <color>000000</color> -->
-			<!-- <zIndex>100</zIndex> -->
-		<!-- </image> -->
-		<!-- <image name="logosytemcollectionlist" extra="true"> -->
-			<!-- <origin>0.5 0.5</origin> -->
-			<!-- <pos>0.9415 -0.0155</pos> -->
-			<!-- <path if="${system.manufacturer} == 'Collections'">${extgamesyst}</path> -->
-			<!-- <maxSize>0.1 0.05</maxSize> -->
-			<!-- <linearSmooth>true</linearSmooth> -->
-			<!-- <horizontalAlignment>right</horizontalAlignment> -->
-			<!-- <zIndex>100</zIndex> -->
-		<!-- </image> -->
 		<image name="fadehaut" extra="true">
 			<path>${themePath}/_viewgame/speedbull/fadebottom.png</path>
 			<origin>0.5 1.2</origin>
@@ -584,8 +816,8 @@
 			</storyboard>
 		</control>
 		<text name="gamename" extra="true">
-			<text>${nomjeulabel} {game:name}</text>
-			<visible>true</visible>
+			<text>${nomjeulabel} ${titrejeu}</text>
+			<visible>{game:rom} != '..'</visible>
 			<pos>-0.19 0.78</pos>
 			<size>0.3 0.05</size>
 			<fontSize>0.022</fontSize>
@@ -597,9 +829,71 @@
 			<fontPath>${themePath}/_viewgame/speedbull/Titan.ttf</fontPath>
 			<zIndex>400</zIndex>
 		</text>
+		<image name="retourfond" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${themePath}/_viewgame/commun/retour/retour_fond.jpg</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<minSize>1 1</minSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="retourconsole" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${firstsystemhardware}</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.36 0.40</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>9</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<text name="retourtexte" extra="true">
+			<text>${retourdossier}</text>
+			<visible>{game:rom} == '..'</visible>
+			<pos>-0.19 0.78</pos>
+			<size>0.3 0.05</size>
+			<fontSize>0.022</fontSize>
+			<color>ffffffff</color>
+			<glowColor>00000066</glowColor>
+			<glowSize>2</glowSize>
+			<alignment>left</alignment>
+			<lineSpacing>1.5</lineSpacing>
+			<fontPath>${themePath}/_viewgame/speedbull/Titan.ttf</fontPath>
+			<zIndex>400</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1700" duration="500" mode="Linear"/>
+				<animation property="zIndex" from="" to="350" begin="1700" duration="" mode="Linear"/>
+				<animation property="offsetX" to="0.2" begin="1600" duration="450" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1700" duration="500" mode="Linear"/>
+				<animation property="zIndex" from="" to="350" begin="1700" duration="" mode="Linear"/>
+				<animation property="offsetX" to="0.2" begin="1600" duration="450" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1700" duration="500" mode="Linear"/>
+				<animation property="zIndex" from="" to="350" begin="1700" duration="" mode="Linear"/>
+				<animation property="offsetX" to="0.2" begin="1600" duration="450" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+			</storyboard>
+		</text>
 		<text name="gamegenre" extra="true">
 			<text>${genrelabel} {game:genre}</text>
-			<visible>true</visible>
+			<visible>{game:rom} != '..'</visible>
 			<pos>-0.19 0.825</pos>
 			<size>0.284 0.02</size>
 			<fontSize>0.022</fontSize>
@@ -613,7 +907,7 @@
 		</text>
 		<text name="gamedev" extra="true">
 			<text>${devlabel} {game:developer}</text>
-			<visible>true</visible>
+			<visible>{game:rom} != '..'</visible>
 			<pos>-0.19 0.79</pos>
 			<size>0.284 0.150</size>
 			<fontSize>0.022</fontSize>
@@ -627,7 +921,7 @@
 		</text>
 		<text name="gamelang" extra="true">
 			<text>${langlabel} {game:lang}</text>
-			<visible>true</visible>
+			<visible>{game:rom} != '..'</visible>
 			<pos>-0.19 0.82</pos>
 			<size>0.284 0.150</size>
 			<fontSize>0.022</fontSize>
@@ -641,7 +935,7 @@
 		</text>
 		<text name="gametemps" extra="true">
 			<text>${gametimelabel}</text>
-			<visible>true</visible>
+			<visible>{game:rom} != '..'</visible>
 			<pos>-0.19 0.85</pos>
 			<size>0.284 0.150</size>
 			<fontSize>0.022</fontSize>
@@ -656,7 +950,7 @@
 		<text name="gametime" extra="true">
 			<visible>{game:gametime} &gt; 0 ? 1 : 0</visible>
 			<text>expandseconds({game:gametime})</text>
-			<visible>true</visible>
+			<visible>{game:rom} != '..'</visible>
 			<pos>-0.115 0.85</pos>
 			<size>0.284 0.150</size>
 			<fontSize>0.022</fontSize>
@@ -669,7 +963,7 @@
 			<zIndex>400</zIndex>
 		</text>
 		<text name="nogametime" extra="true">
-			<visible>{game:gametime} &gt; 0 ? 0 : 1</visible>
+			<visible>({game:gametime} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
 			<text>${nogametime}</text>
 			<pos>-0.115 0.85</pos>
 			<size>0.284 0.150</size>
@@ -683,8 +977,8 @@
 			<zIndex>400</zIndex>
 		</text>
 		<text name="gamelastplayed" extra="true">
-			<visible>{game:lastplayed} &gt; 1 ? 1 : 0</visible>
-			<text>${lastgamelabel} {game:lastplayed}</text>
+			<visible>({game:lastplayed} &gt; 1 ? 1 : 0) &amp;&amp; {game:rom} != '..'</visible>
+			<text>"${lastgamelabel} " + elapsed({game:lastplayed})</text>
 			<pos>-0.19 0.88</pos>
 			<size>0.284 0.150</size>
 			<fontSize>0.022</fontSize>
@@ -704,7 +998,7 @@
 			<zIndex>300</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<horizontalAlignment>left</horizontalAlignment>
-			<path>${themePath}/_ViewGame/speedbull/fadecote.png</path>
+			<path>${themePath}/_viewgame/speedbull/Fadecote.png</path>
 		</image>
 		<control name="gamename, gamegenre, gamedev, gamelang, gametemps, gametime, nogametime, gamelastplayed, nogamelastplayed, fadecotega">
 			<storyboard event="open">
@@ -743,37 +1037,37 @@
 			<path>${themePath}/_viewgame/speedbull/Bvierge.png</path>
 		</image>
 		<text name="binds_playcountone" extra="true">
-			<visible>{game:playcount} == 1 ? 1 : 0</visible>
+			<visible>({game:playcount} == 1 ? 1 : 0) &amp;&amp; {game:rom} != '..'</visible>
 			<color>FFFFFF</color>
 			<text>{game:playcount} ${playcountone}</text>
 			<origin>0.5 0.5</origin>
 			<pos>0.73 0.802</pos>
 			<size>0.08 0.035</size>
-			<fontPath>${themePath}/_viewGame/speedbull/impact.ttf</fontPath>
+			<fontPath>${themePath}/_viewgame/speedbull/impact.ttf</fontPath>
 			<alignment>center</alignment>
 			<fontSize>0.020</fontSize>
 			<zIndex>305</zIndex>
 		</text>
 		<text name="binds_playcount" extra="true">
-			<visible>{game:playcount} &gt; 1 ? 1 : 0</visible>
+			<visible>({game:playcount} &gt; 1 ? 1 : 0) &amp;&amp; {game:rom} != '..'</visible>
 			<color>FFFFFF</color>
 			<text>{game:playcount} ${playcount}</text>
 			<origin>0.5 0.5</origin>
 			<pos>0.73 0.802</pos>
 			<size>0.08 0.035</size>
-			<fontPath>${themePath}/_viewGame/speedbull/impact.ttf</fontPath>
+			<fontPath>${themePath}/_viewgame/speedbull/impact.ttf</fontPath>
 			<alignment>center</alignment>
 			<fontSize>0.020</fontSize>
 			<zIndex>305</zIndex>
 		</text>
 		<text name="binds_noplaycount" extra="true">
-			<visible>{game:playcount} &gt; 0 ? 0 : 1</visible>
+			<visible>({game:playcount} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
 			<color>FFFFFF</color>
 			<text>${nogametime}</text>
 			<origin>0.5 0.5</origin>
 			<pos>0.73 0.802</pos>
 			<size>0.08 0.035</size>
-			<fontPath>${themePath}/_viewGame/speedbull/impact.ttf</fontPath>
+			<fontPath>${themePath}/_viewgame/speedbull/impact.ttf</fontPath>
 			<alignment>center</alignment>
 			<fontSize>0.020</fontSize>
 			<zIndex>305</zIndex>
@@ -786,30 +1080,30 @@
 			<zIndex>300</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<horizontalAlignment>left</horizontalAlignment>
-			<path>${themePath}/_viewGame/speedbull/Bvierge.png</path>
+			<path>${themePath}/_viewgame/speedbull/Bvierge.png</path>
 		</image>
 		<text name="binds_releasedate" extra="true">
-			<visible>{game:releaseyear} &gt; 0 ? 1 : 0</visible>
+			<visible>({game:releaseyear} &gt; 0 ? 1 : 0) &amp;&amp; {game:rom} != '..'</visible>
 			<color>FFFFFF</color>
 			<text>{game:releaseyear}</text>
 			<origin>0.5 0.5</origin>
 			<pos>0.805 0.802</pos>
 			<size>0.05 0.035</size>
 			<forceUppercase>0</forceUppercase>
-			<fontPath>${themePath}/_viewGame/speedbull/impact.ttf</fontPath>
+			<fontPath>${themePath}/_viewgame/speedbull/impact.ttf</fontPath>
 			<alignment>center</alignment>
 			<fontSize>0.020</fontSize>
 			<zIndex>305</zIndex>
 		</text>
 		<text name="binds_noreleasedate" extra="true">
-			<visible>{game:releaseyear} &gt; 0 ? 0 : 1</visible>
+			<visible>({game:releaseyear} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
 			<color>FFFFFF</color>
 			<text>${nodates}</text>
 			<origin>0.5 0.5</origin>
 			<pos>0.805 0.802</pos>
 			<size>0.1 0.035</size>
 			<forceUppercase>0</forceUppercase>
-			<fontPath>${themePath}/_viewGame/speedbull/impact.ttf</fontPath>
+			<fontPath>${themePath}/_viewgame/speedbull/impact.ttf</fontPath>
 			<alignment>center</alignment>
 			<fontSize>0.020</fontSize>
 			<zIndex>305</zIndex>
@@ -822,11 +1116,10 @@
 			<zIndex>205</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<horizontalAlignment>left</horizontalAlignment>
-			<path>${themePath}/_viewGame/speedbull/Bvierge.png</path>
+			<path>${themePath}/_viewgame/speedbull/Bvierge.png</path>
 		</image>
 		<text name="binds_players" extra="true">
-			<visible>{game:players} &gt; 1 ? 1 : 0</visible>
-			<visible>{game:players} == 1 ? 0 : 1 &amp;&amp; {game:players} &lt; 1 ? 0 : 1 </visible>
+			<visible>(!empty({game:players}) &amp;&amp; {game:playerCount} &gt; 1) &amp;&amp; {game:rom} != '..'</visible>
 			<text>{game:players} ${playerss}</text>
 			<color>FFFFFF</color>
 			<origin>0.5 0.5</origin>
@@ -838,8 +1131,7 @@
 			<zIndex>305</zIndex>
 		</text>
 		<text name="binds_playersone" extra="true">
-			<visible>{game:players} == 0 ? 0 : 1</visible>
-			<visible>{game:players} == 1 ? 1 : 0</visible>
+			<visible>(!empty({game:players}) &amp;&amp; {game:playerCount} == 1) &amp;&amp; {game:rom} != '..'</visible>
 			<text>{game:players} ${player}</text>
 			<color>FFFFFF</color>
 			<origin>0.5 0.5</origin>
@@ -851,7 +1143,7 @@
 			<zIndex>305</zIndex>
 		</text>
 		<text name="binds_noplayers" extra="true">
-			<visible>{game:players} &gt; 0 ? 0 : 1</visible>
+			<visible>(empty({game:players})) &amp;&amp; {game:rom} != '..'</visible>
 			<text>${noplayerdata}</text>
 			<color>FFFFFF</color>
 			<origin>0.5 0.5</origin>
@@ -864,7 +1156,6 @@
 		</text>
 		<image name="notation" extra="true">
 			<origin>0.5 0.5</origin>
-			<!-- <pos>0.31 0.72</pos> -->
 			<pos>0.955 0.803</pos>
 			<maxSize>0.085 0.085</maxSize>
 			<zIndex>305</zIndex>
@@ -872,19 +1163,48 @@
 			<horizontalAlignment>left</horizontalAlignment>
 			<path>${themePath}/_viewgame/speedbull/Bvierge.png</path>
 		</image>
-		<text name="binds_rating" extra="true">
-			<visible>{game:rating} &gt; 0 ? 1 : 0</visible>
+		<text name="binds_notefond" extra="true">
+			<pos>0.9299 0.8011</pos>
 			<origin>0 0.5</origin>
-			<text>{game:stars}</text>
-			<!-- <pos>0.283 0.704</pos> -->
-			<pos>0.929 0.802</pos>
-			<fontSize>0.020</fontSize>
+			<visible>({game:rating} &gt; 0) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}${noteicone}${noteicone}${noteicone}</text>
+			<fontSize>0.016</fontSize>
 			<size>0.00 0.00</size>
 			<zIndex>305</zIndex>
-			<color>FFFFFF</color>
+			<fontPath>${themePath}/_common/fonts/notes.ttf</fontPath>
+			<color>C8CCD038</color>
+		</text>
+		<text name="binds_note1, binds_note2, binds_note3, binds_note4, binds_note5" extra="true">
+			<pos>0.9299 0.8011</pos>
+			<origin>0 0.5</origin>
+			<fontSize>0.016</fontSize>
+			<size>0.00 0.00</size>
+			<zIndex>305</zIndex>
+			<fontPath>${themePath}/_common/fonts/notes.ttf</fontPath>
+			<color>C8CCD0</color>
+		</text>
+		<text name="binds_note1" extra="true">
+			<visible>({game:rating} &gt; 0 &amp;&amp; {game:rating} &lt; 0.3) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}</text>
+		</text>
+		<text name="binds_note2" extra="true">
+			<visible>({game:rating} &gt;= 0.3 &amp;&amp; {game:rating} &lt; 0.5) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}</text>
+		</text>
+		<text name="binds_note3" extra="true">
+			<visible>({game:rating} &gt;= 0.5 &amp;&amp; {game:rating} &lt; 0.7) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}${noteicone}</text>
+		</text>
+		<text name="binds_note4" extra="true">
+			<visible>({game:rating} &gt;= 0.7 &amp;&amp; {game:rating} &lt; 0.9) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}${noteicone}${noteicone}</text>
+		</text>
+		<text name="binds_note5" extra="true">
+			<visible>({game:rating} &gt;= 0.9) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}${noteicone}${noteicone}${noteicone}</text>
 		</text>
 		<text name="binds_norating" extra="true">
-			<visible>{game:rating} &gt; 0 ? 0 : 1</visible>
+			<visible>({game:rating} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
 			<origin>0.5 0.5</origin>
 			<text>${noratings}</text>
 			<pos>0.955 0.802</pos>
@@ -895,8 +1215,53 @@
 			<zIndex>305</zIndex>
 			<color>FFFFFF</color>
 		</text>
+		<text name="binds_notechiffre" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt; 0 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">tostring(({game:rating} * 100 + 0.5) | 0) + " ${notesur100}"</text>
+			<text ifSubset="iconenote:pourcent">tostring(({game:rating} * 100 + 0.5) | 0) + " %"</text>
+		</text>
+		<control name="binds_notechiffre">
+			<origin>0.5 0.5</origin>
+			<pos>0.955 0.802</pos>
+			<fontSize>0.020</fontSize>
+			<alignment>center</alignment>
+			<size>0.075 0.035</size>
+			<fontPath>${themePath}/_viewgame/speedbull/impact.ttf</fontPath>
+			<zIndex>305</zIndex>
+			<color>FFFFFF</color>
+		</control>
+		<control name="binds_notefond">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt; 0) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note1">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt; 0 &amp;&amp; {game:rating} &lt; 0.3) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note2">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt;= 0.3 &amp;&amp; {game:rating} &lt; 0.5) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note3">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt;= 0.5 &amp;&amp; {game:rating} &lt; 0.7) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note4">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt;= 0.7 &amp;&amp; {game:rating} &lt; 0.9) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note5">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt;= 0.9) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
 		<text name="md_description">
-			<visible>true</visible>
+			<visible>false</visible>
+		</text>
+		<text name="desc_jeu" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<text>{game:desc}</text>
 			<pos>1.0967 0.820</pos>
 			<size>0.284 0.12</size>
 			<fontSize>0.022</fontSize>
@@ -905,8 +1270,31 @@
 			<glowSize>2</glowSize>
 			<alignment>left</alignment>
 			<lineSpacing>1.5</lineSpacing>
-			<fontPath>${themePath}/_ViewGame/speedbull/Titan.ttf</fontPath>
+			<fontPath>${themePath}/_viewgame/speedbull/Titan.ttf</fontPath>
 			<zIndex>400</zIndex>
+			<autoScroll>vertical</autoScroll>
+			<verticalAlignment>top</verticalAlignment>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1700" duration="500" mode="Linear"/>
+				<animation property="offsetX" to="-0.4" begin="1600" duration="450" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1700" duration="500" mode="Linear"/>
+				<animation property="offsetX" to="-0.4" begin="1600" duration="450" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1700" duration="500" mode="Linear"/>
+				<animation property="offsetX" to="-0.4" begin="1600" duration="450" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+			</storyboard>
 		</text>
 		<image name="fadecotedr" extra="true">
 			<tile>false</tile>
@@ -917,7 +1305,7 @@
 			<flipX>true</flipX>
 			<linearSmooth>true</linearSmooth>
 			<horizontalAlignment>left</horizontalAlignment>
-			<path>${themePath}/_ViewGame/speedbull/fadecote.png</path>
+			<path>${themePath}/_viewgame/speedbull/Fadecote.png</path>
 		</image>
 		<control name="md_description, fadecotedr">
 			<storyboard event="open">
@@ -942,13 +1330,18 @@
 				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
 			</storyboard>
 		</control>
-		<!-- Gestion des disparitions pendant le scrolling -->
 		<control name="systblack,dateblack,playblack,notation">
 			<zIndex>205</zIndex>
 			<opacity>1</opacity>
 		</control>
-		<control name="binds_players,binds_playersone,binds_noplayers,binds_releasedate,binds_noreleasedate,binds_playcount,binds_playcountone,binds_noplaycount,developer,binds_rating,binds_norating">
+		<control name="binds_players,binds_playersone,binds_noplayers,binds_releasedate,binds_noreleasedate,binds_playcount,binds_playcountone,binds_noplaycount,developer,binds_rating,binds_norating,binds_notechiffre">
 			<opacity>0.5</opacity>
+		</control>
+		<control name="Systblack,systblack,dateblack,playblack,playerblack,notation">
+			<visible>{game:rom} != '..'</visible>
+		</control>
+		<control name="base_retourfond, base_retourconsole, base_retourtexte">
+			<visible>false</visible>
 		</control>
 	</customView>
 </theme>

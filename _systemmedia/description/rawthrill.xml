@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Raw Thrills, the American maker of The Fast and the Furious, Big Buck Hunter and Cruis'n Blast cabinets.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Raw Thrills, fabricante americana das máquinas The Fast and the Furious, Big Buck Hunter e Cruis'n Blast.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Raw Thrills, the American maker of The Fast and the Furious, Big Buck Hunter and Cruis'n Blast cabinets.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Raw Thrills, fabricante estadounidense de las máquinas The Fast and the Furious, Big Buck Hunter y Cruis'n Blast.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade de Raw Thrills, fabricant américain des bornes The Fast and the Furious, Big Buck Hunter et Cruis'n Blast.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Raw Thrills, dem US-Hersteller der Automaten The Fast and the Furious, Big Buck Hunter und Cruis'n Blast.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Raw Thrills</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Raw Thrills</text>
+		</text>
+	</view>
+</theme>

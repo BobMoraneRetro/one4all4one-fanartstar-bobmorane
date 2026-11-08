@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Free rhythm game inspired by Guitar Hero, playable with a guitar controller or keyboard and using thousands of community songs.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogo de ritmo gratuito inspirado em Guitar Hero, jogável com guitarra ou teclado e com milhares de músicas da comunidade.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Free rhythm game inspired by Guitar Hero, playable with a guitar controller or keyboard and using thousands of community songs.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juego de ritmo gratuito inspirado en Guitar Hero, jugable con guitarra o teclado y con miles de canciones de la comunidad.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeu de rythme gratuit inspiré de Guitar Hero, jouable avec une guitare ou au clavier, avec des milliers de chansons de la communauté.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Kostenloses, von Guitar Hero inspiriertes Rhythmusspiel, mit Gitarren-Controller oder Tastatur spielbar, mit Tausenden Community-Songs.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Clone Hero</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2017</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Clone Hero team</text>
+		</text>
+	</view>
+</theme>

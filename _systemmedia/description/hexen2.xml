@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Source port of Hexen II, Raven Software's 1997 dark fantasy shooter built on the Quake engine, with four character classes.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Port de Hexen II, o jogo de tiro de fantasia sombria da Raven Software de 1997 com o motor de Quake e quatro classes de personagem.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Source port of Hexen II, Raven Software's 1997 dark fantasy shooter built on the Quake engine, with four character classes.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Port de Hexen II, el shooter de fantasía oscura de Raven Software de 1997 con el motor de Quake y cuatro clases de personaje.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Portage de Hexen II, le jeu de tir dark fantasy de Raven Software sorti en 1997 sur le moteur de Quake, avec quatre classes de personnages.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Source-Port von Hexen II, Raven Softwares Dark-Fantasy-Shooter von 1997 auf der Quake-Engine mit vier Charakterklassen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Hexen II</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1997</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Raven Software</text>
+		</text>
+	</view>
+</theme>

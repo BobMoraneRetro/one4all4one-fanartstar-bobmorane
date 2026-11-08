@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Namco's PC-based ES3 arcade platform of the 2010s, used for titles such as Tekken 7 and racing games, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Plataforma de arcade ES3 da Namco baseada em PC, dos anos 2010, usada em Tekken 7 e jogos de corrida, jogada aqui pelo TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Namco's PC-based ES3 arcade platform of the 2010s, used for titles such as Tekken 7 and racing games, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Plataforma arcade ES3 de Namco basada en PC, de los años 2010, usada para Tekken 7 y juegos de carreras, jugada aquí con TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Plate-forme d'arcade ES3 de Namco sur base PC, des années 2010, utilisée pour Tekken 7 et des jeux de course, jouée ici via TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Namcos PC-basierte Arcade-Plattform ES3 der 2010er für Titel wie Tekken 7 und Rennspiele, hier über TeknoParrot spielbar.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Namco ES3</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2013</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

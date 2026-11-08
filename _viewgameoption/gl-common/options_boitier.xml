@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	Libellés traduits (_common/_langs/<langue>.xml) : ${boxtype0}, ${boxtype1}, ${boxtype10}, ${boxtype11}, ${boxtype12}, ${boxtype13}, ${boxtype14}, ${boxtype15}, ${boxtype16}, ${boxtype17}, ${boxtype18}, ${boxtype19}, ${boxtype2}, ${boxtype20}, ${boxtype21}, ${boxtype3}, ${boxtype4}, ${boxtype5}, ${boxtype6}, ${boxtype7}, ${boxtype8}, ${boxtype9}, ${boxtypeauto}, ${no}, ${opt_contourboite}, ${opt_typeboite}, ${yes}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<subset name="contourboite" displayName="${opt_contourboite}" appliesTo="presetstarbox,presetstarboxloop,presetdeck,presetsalon,presetshowsmall,presetshowbig">
+		<include name="oui" displayName="${yes}"/>
+		<include name="non" displayName="${no}"/>
+	</subset>
+	<subset name="typeboite" displayName="${opt_typeboite}" appliesTo="presetstarbox,presetstarboxloop,presetdeck,presetsalon,presetshowsmall,presetshowbig">
+		<include name="auto" displayName="${boxtypeauto}"/>
+		<include name="t0" displayName="${boxtype0}"/>
+		<include name="t1" displayName="${boxtype1}"/>
+		<include name="t2" displayName="${boxtype2}"/>
+		<include name="t3" displayName="${boxtype3}"/>
+		<include name="t4" displayName="${boxtype4}"/>
+		<include name="t5" displayName="${boxtype5}"/>
+		<include name="t6" displayName="${boxtype6}"/>
+		<include name="t7" displayName="${boxtype7}"/>
+		<include name="t8" displayName="${boxtype8}"/>
+		<include name="t9" displayName="${boxtype9}"/>
+		<include name="t10" displayName="${boxtype10}"/>
+		<include name="t11" displayName="${boxtype11}"/>
+		<include name="t12" displayName="${boxtype12}"/>
+		<include name="t13" displayName="${boxtype13}"/>
+		<include name="t14" displayName="${boxtype14}"/>
+		<include name="t15" displayName="${boxtype15}"/>
+		<include name="t16" displayName="${boxtype16}"/>
+		<include name="t17" displayName="${boxtype17}"/>
+		<include name="t18" displayName="${boxtype18}"/>
+		<include name="t19" displayName="${boxtype19}"/>
+		<include name="t20" displayName="${boxtype20}"/>
+		<include name="t21" displayName="${boxtype21}"/>
+	</subset>
+</theme>

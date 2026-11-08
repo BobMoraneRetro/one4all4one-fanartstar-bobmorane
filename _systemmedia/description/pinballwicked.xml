@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Pinball Wicked, a collection of digital pinball tables with dark and fantastic themes.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Pinball Wicked, uma coleção de mesas de pinball digitais com temas sombrios e fantásticos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Pinball Wicked, a collection of digital pinball tables with dark and fantastic themes.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Pinball Wicked, una colección de mesas de pinball digitales con temas oscuros y fantásticos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Pinball Wicked, une collection de flippers numériques aux thèmes sombres et fantastiques.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Pinball Wicked, eine Sammlung digitaler Flippertische mit düsteren und fantastischen Themen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pinball Wicked</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2012</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

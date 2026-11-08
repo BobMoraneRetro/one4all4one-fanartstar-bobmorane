@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Sammy, the Japanese company behind the Atomiswave system and many pachislot machines.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Sammy, a empresa japonesa do sistema Atomiswave e de muitas máquinas pachislot.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Sammy, the Japanese company behind the Atomiswave system and many pachislot machines.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Sammy, la empresa japonesa del sistema Atomiswave y de muchas máquinas pachislot.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade de Sammy, la société japonaise du système Atomiswave et de nombreuses machines pachislot.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Sammy, der japanischen Firma hinter dem Atomiswave-System und vielen Pachislot-Automaten.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Sammy</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sammy</text>
+		</text>
+	</view>
+</theme>

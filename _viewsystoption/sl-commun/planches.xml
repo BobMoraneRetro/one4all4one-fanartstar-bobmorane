@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Planches explicatives (subset lismoiv3 de theme.xml ; renommer le subset pour refaire apparaître les planches après une mise à jour).
+	     Langue fr : planches/fr/ ; toutes les autres : planches/en/ (la 2e ligne <path> remplace la 1re si le fichier existe). -->
+	<view name="system">
+		<image name="splashounet" extra="true">
+			<path ifSubset="lismoiv3:planche00">${themePath}/_viewsystoption/sl-commun/planches/en/00.png</path>
+			<path ifSubset="lismoiv3:planche00">${themePath}/_viewsystoption/sl-commun/planches/${lang}/00.png</path>
+			<path ifSubset="lismoiv3:planche01">${themePath}/_viewsystoption/sl-commun/planches/en/01.png</path>
+			<path ifSubset="lismoiv3:planche01">${themePath}/_viewsystoption/sl-commun/planches/${lang}/01.png</path>
+			<path ifSubset="lismoiv3:planche02">${themePath}/_viewsystoption/sl-commun/planches/en/02.png</path>
+			<path ifSubset="lismoiv3:planche02">${themePath}/_viewsystoption/sl-commun/planches/${lang}/02.png</path>
+			<path ifSubset="lismoiv3:planche03">${themePath}/_viewsystoption/sl-commun/planches/en/03.png</path>
+			<path ifSubset="lismoiv3:planche03">${themePath}/_viewsystoption/sl-commun/planches/${lang}/03.png</path>
+			<path ifSubset="lismoiv3:planche04">${themePath}/_viewsystoption/sl-commun/planches/en/04.png</path>
+			<path ifSubset="lismoiv3:planche04">${themePath}/_viewsystoption/sl-commun/planches/${lang}/04.png</path>
+			<path ifSubset="lismoiv3:planche05">${themePath}/_viewsystoption/sl-commun/planches/en/05.png</path>
+			<path ifSubset="lismoiv3:planche05">${themePath}/_viewsystoption/sl-commun/planches/${lang}/05.png</path>
+			<path ifSubset="lismoiv3:planche06">${themePath}/_viewsystoption/sl-commun/planches/en/06.png</path>
+			<path ifSubset="lismoiv3:planche06">${themePath}/_viewsystoption/sl-commun/planches/${lang}/06.png</path>
+			<path ifSubset="lismoiv3:planche07">${themePath}/_viewsystoption/sl-commun/planches/en/07.png</path>
+			<path ifSubset="lismoiv3:planche07">${themePath}/_viewsystoption/sl-commun/planches/${lang}/07.png</path>
+			<path ifSubset="lismoiv3:planche08">${themePath}/_viewsystoption/sl-commun/planches/en/08.png</path>
+			<path ifSubset="lismoiv3:planche08">${themePath}/_viewsystoption/sl-commun/planches/${lang}/08.png</path>
+			<path ifSubset="lismoiv3:planche09">${themePath}/_viewsystoption/sl-commun/planches/en/09.png</path>
+			<path ifSubset="lismoiv3:planche09">${themePath}/_viewsystoption/sl-commun/planches/${lang}/09.png</path>
+			<path ifSubset="lismoiv3:planche10">${themePath}/_viewsystoption/sl-commun/planches/en/10.png</path>
+			<path ifSubset="lismoiv3:planche10">${themePath}/_viewsystoption/sl-commun/planches/${lang}/10.png</path>
+			<path ifSubset="lismoiv3:planche11">${themePath}/_viewsystoption/sl-commun/planches/en/11.png</path>
+			<path ifSubset="lismoiv3:planche11">${themePath}/_viewsystoption/sl-commun/planches/${lang}/11.png</path>
+			<path ifSubset="lismoiv3:planche12">${themePath}/_viewsystoption/sl-commun/planches/en/12.png</path>
+			<path ifSubset="lismoiv3:planche12">${themePath}/_viewsystoption/sl-commun/planches/${lang}/12.png</path>
+			<path ifSubset="lismoiv3:planche13">${themePath}/_viewsystoption/sl-commun/planches/en/13.png</path>
+			<path ifSubset="lismoiv3:planche13">${themePath}/_viewsystoption/sl-commun/planches/${lang}/13.png</path>
+			<path ifSubset="lismoiv3:planche14">${themePath}/_viewsystoption/sl-commun/planches/en/14.png</path>
+			<path ifSubset="lismoiv3:planche14">${themePath}/_viewsystoption/sl-commun/planches/${lang}/14.png</path>
+			<path ifSubset="lismoiv3:planche15">${themePath}/_viewsystoption/sl-commun/planches/en/15.png</path>
+			<path ifSubset="lismoiv3:planche15">${themePath}/_viewsystoption/sl-commun/planches/${lang}/15.png</path>
+			<path ifSubset="lismoiv3:planche16">${themePath}/_viewsystoption/sl-commun/planches/en/16.png</path>
+			<path ifSubset="lismoiv3:planche16">${themePath}/_viewsystoption/sl-commun/planches/${lang}/16.png</path>
+			<path ifSubset="lismoiv3:planche17">${themePath}/_viewsystoption/sl-commun/planches/en/17.png</path>
+			<path ifSubset="lismoiv3:planche17">${themePath}/_viewsystoption/sl-commun/planches/${lang}/17.png</path>
+			<path ifSubset="lismoiv3:planche18">${themePath}/_viewsystoption/sl-commun/planches/en/18.png</path>
+			<path ifSubset="lismoiv3:planche18">${themePath}/_viewsystoption/sl-commun/planches/${lang}/18.png</path>
+			<path ifSubset="lismoiv3:planche19">${themePath}/_viewsystoption/sl-commun/planches/en/19.png</path>
+			<path ifSubset="lismoiv3:planche19">${themePath}/_viewsystoption/sl-commun/planches/${lang}/19.png</path>
+			<path ifSubset="lismoiv3:planche20">${themePath}/_viewsystoption/sl-commun/planches/en/20.png</path>
+			<path ifSubset="lismoiv3:planche20">${themePath}/_viewsystoption/sl-commun/planches/${lang}/20.png</path>
+			<path ifSubset="lismoiv3:planche21">${themePath}/_viewsystoption/sl-commun/planches/en/21.png</path>
+			<path ifSubset="lismoiv3:planche21">${themePath}/_viewsystoption/sl-commun/planches/${lang}/21.png</path>
+			<path ifSubset="lismoiv3:planche22">${themePath}/_viewsystoption/sl-commun/planches/en/22.png</path>
+			<path ifSubset="lismoiv3:planche22">${themePath}/_viewsystoption/sl-commun/planches/${lang}/22.png</path>
+			<path ifSubset="lismoiv3:planche23">${themePath}/_viewsystoption/sl-commun/planches/en/23.png</path>
+			<path ifSubset="lismoiv3:planche23">${themePath}/_viewsystoption/sl-commun/planches/${lang}/23.png</path>
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>999</zIndex>
+		</image>
+	</view>
+</theme>

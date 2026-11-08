@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Source port of Doom 3, id Software's 2004 horror shooter on Mars, running natively on modern systems.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Port do código-fonte de Doom 3, o jogo de tiro de terror da id Software de 2004 em Marte, nativo em sistemas modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Source port of Doom 3, id Software's 2004 horror shooter on Mars, running natively on modern systems.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Port del código fuente de Doom 3, el shooter de terror de id Software de 2004 en Marte, nativo en sistemas modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Portage du code source de Doom 3, le FPS horrifique d'id Software sorti en 2004 sur Mars, en version native pour les systèmes modernes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Source-Port von Doom 3, dem Horror-Shooter von id Software aus dem Jahr 2004 auf dem Mars, nativ auf modernen Systemen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Doom 3</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2004</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>id Software</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Games starring the Angry Video Game Nerd, the internet critic famous for reviewing bad retro games, such as the AVGN Adventures series.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos estrelados pelo Angry Video Game Nerd, o crítico da internet famoso por analisar jogos retrô ruins, como a série AVGN Adventures.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Games starring the Angry Video Game Nerd, the internet critic famous for reviewing bad retro games, such as the AVGN Adventures series.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos protagonizados por el Angry Video Game Nerd, el crítico de internet famoso por analizar malos juegos retro, como la serie AVGN Adventures.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux mettant en scène l'Angry Video Game Nerd, le critique du web connu pour ses tests de mauvais jeux rétro, comme la série AVGN Adventures.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Spiele mit dem Angry Video Game Nerd, dem durch Kritiken schlechter Retro-Spiele bekannten Internet-Kritiker, etwa die Reihe AVGN Adventures.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>AVGN</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2013</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>ScrewAttack / FreakZone</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Visco, the Japanese developer of Neo Geo titles such as Breakers and Ganryu.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Visco, desenvolvedora japonesa de títulos de Neo Geo como Breakers e Ganryu.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Visco, the Japanese developer of Neo Geo titles such as Breakers and Ganryu.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Visco, desarrollador japonés de títulos de Neo Geo como Breakers y Ganryu.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade de Visco, développeur japonais de jeux Neo Geo comme Breakers et Ganryu.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Visco, dem japanischen Entwickler von Neo-Geo-Titeln wie Breakers und Ganryu.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Visco</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Visco</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Pinball HD, a collection of original digital pinball tables with detailed 3D graphics.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Pinball HD, uma coleção de mesas de pinball digitais originais com gráficos 3D detalhados.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Pinball HD, a collection of original digital pinball tables with detailed 3D graphics.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Pinball HD, una colección de mesas de pinball digitales originales con gráficos 3D detallados.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Pinball HD, une collection de flippers numériques originaux aux graphismes 3D détaillés.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Pinball HD, eine Sammlung eigener digitaler Flippertische mit detaillierter 3D-Grafik.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pinball HD</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2012</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

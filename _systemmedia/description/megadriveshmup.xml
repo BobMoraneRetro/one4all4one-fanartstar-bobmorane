@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Mega Drive shoot'em ups, a genre in which the console has a rich and celebrated library, from Thunder Force to Gley Lancer.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Os shoot'em ups do Mega Drive, um gênero em que o console tem uma biblioteca rica e famosa, de Thunder Force a Gley Lancer.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Mega Drive shoot'em ups, a genre in which the console has a rich and celebrated library, from Thunder Force to Gley Lancer.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Los shoot'em ups de Mega Drive, un género en el que la consola tiene un catálogo rico y célebre, de Thunder Force a Gley Lancer.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Les shoot'em up de la Mega Drive, un genre où la console a une ludothèque riche et réputée, de Thunder Force à Gley Lancer.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Shoot'em ups des Mega Drive, ein Genre mit reicher und gefeierter Auswahl, von Thunder Force bis Gley Lancer.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Mega Drive Shmup</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1990</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

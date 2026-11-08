@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>UltraStar Deluxe, the free karaoke game in the style of SingStar, scoring your singing with a microphone.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>UltraStar Deluxe, jogo de karaokê gratuito no estilo de SingStar, que avalia seu canto pelo microfone.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>UltraStar Deluxe, the free karaoke game in the style of SingStar, scoring your singing with a microphone.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>UltraStar Deluxe, juego de karaoke gratuito al estilo de SingStar, que puntúa tu canto con micrófono.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>UltraStar Deluxe, jeu de karaoké gratuit dans le style de SingStar, qui note votre chant au micro.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>UltraStar Deluxe, ein kostenloses Karaoke-Spiel im Stil von SingStar, das deinen Gesang über das Mikrofon bewertet.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>UltraStar</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1997</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

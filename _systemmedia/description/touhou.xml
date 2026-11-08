@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Touhou Project, the doujin bullet hell shoot'em up series created by ZUN, famous for its characters and music.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Touhou Project, a série doujin de shoot'em ups bullet hell criada por ZUN, famosa pelos personagens e pela música.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Touhou Project, the doujin bullet hell shoot'em up series created by ZUN, famous for its characters and music.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Touhou Project, la serie doujin de shoot'em ups bullet hell creada por ZUN, famosa por sus personajes y su música.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Touhou Project, la série doujin de shoot'em up bullet hell créée par ZUN, célèbre pour ses personnages et sa musique.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Touhou Project, die von ZUN geschaffene Doujin-Bullet-Hell-Shoot'em-up-Reihe, berühmt für ihre Figuren und Musik.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Touhou Project</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1996</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Team Shanghai Alice</text>
+		</text>
+	</view>
+</theme>

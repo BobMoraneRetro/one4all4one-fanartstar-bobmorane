@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PlayStation demo discs, such as those given with magazines, letting players try upcoming games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Discos de demonstração do PlayStation, como os dados com revistas, para experimentar os próximos jogos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PlayStation demo discs, such as those given with magazines, letting players try upcoming games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Discos de demostración de PlayStation, como los regalados con las revistas, para probar los juegos que iban a salir.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Disques de démonstration PlayStation, comme ceux offerts avec les magazines, pour essayer les jeux à venir.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PlayStation-Demo-CDs, etwa aus Zeitschriften, zum Anspielen kommender Spiele.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PlayStation Demo</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1994</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sony</text>
+		</text>
+	</view>
+</theme>

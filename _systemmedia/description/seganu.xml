@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's Nu arcade platform of the 2010s, used for titles such as Border Break and Initial D Arcade Stage, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>A plataforma de arcade Nu da Sega, dos anos 2010, usada em Border Break e Initial D Arcade Stage, jogada aqui pelo TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's Nu arcade platform of the 2010s, used for titles such as Border Break and Initial D Arcade Stage, played here through TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La plataforma arcade Nu de Sega, de los años 2010, usada para Border Break e Initial D Arcade Stage, jugada aquí con TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La plate-forme d'arcade Nu de Sega, des années 2010, utilisée pour Border Break et Initial D Arcade Stage, jouée ici via TeknoParrot.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas Arcade-Plattform Nu der 2010er, genutzt für Border Break und Initial D Arcade Stage, hier über TeknoParrot spielbar.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Sega Nu</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2013</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

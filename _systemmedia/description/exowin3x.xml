@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>eXoWin3x, a preservation collection of Windows 3.x games, preconfigured to run without setup.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>eXoWin3x, uma coleção de preservação de jogos de Windows 3.x, pré-configurados para rodar sem instalação.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>eXoWin3x, a preservation collection of Windows 3.x games, preconfigured to run without setup.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>eXoWin3x, una colección de preservación de juegos de Windows 3.x, preconfigurados para funcionar sin instalación.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>eXoWin3x, une collection de préservation de jeux Windows 3.x, préconfigurés pour fonctionner sans installation.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>eXoWin3x, eine Bewahrungssammlung von Windows-3.x-Spielen, vorkonfiguriert und ohne Einrichtung spielbar.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>eXoWin3x</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1990</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Microsoft</text>
+		</text>
+	</view>
+</theme>

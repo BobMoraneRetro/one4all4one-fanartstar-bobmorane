@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>ioRTCW, the source port of Return to Castle Wolfenstein, the 2001 first-person shooter mixing war and the occult.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>ioRTCW, port de Return to Castle Wolfenstein, o jogo de tiro em primeira pessoa de 2001 que mistura guerra e ocultismo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>ioRTCW, the source port of Return to Castle Wolfenstein, the 2001 first-person shooter mixing war and the occult.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>ioRTCW, port de Return to Castle Wolfenstein, el shooter en primera persona de 2001 que mezcla guerra y ocultismo.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>ioRTCW, portage de Return to Castle Wolfenstein, le FPS de 2001 mêlant guerre et occultisme.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>ioRTCW, der Source-Port von Return to Castle Wolfenstein, dem Ego-Shooter von 2001 zwischen Krieg und Okkultismus.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>ioRTCW</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2001</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Gray Matter / id Software</text>
+		</text>
+	</view>
+</theme>

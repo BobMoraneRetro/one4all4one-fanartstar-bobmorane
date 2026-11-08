@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Improved version of the Soviet Elektronika BK-0010 home computer, with a built-in BASIC interpreter.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Versão melhorada do computador soviético Elektronika BK-0010, com interpretador BASIC integrado.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Improved version of the Soviet Elektronika BK-0010 home computer, with a built-in BASIC interpreter.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Versión mejorada del ordenador soviético Elektronika BK-0010, con intérprete BASIC integrado.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Version améliorée de l'ordinateur soviétique Elektronika BK-0010, avec un interpréteur BASIC intégré.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Verbesserte Version des sowjetischen Heimcomputers Elektronika BK-0010 mit eingebautem BASIC-Interpreter.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>BK 0010-01</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1986</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Elektronika</text>
+		</text>
+	</view>
+</theme>

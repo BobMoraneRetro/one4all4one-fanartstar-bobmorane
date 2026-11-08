@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="pt">
+		<packcustombuildsno>Fanart com sufixo "-fanart" (padrão)</packcustombuildsno>
+		<packretrofreshbat>Fanart com sufixo "-image"</packretrofreshbat>
+		<scrapedboxart>Caixa 3D com "-boxart" na gamelist</scrapedboxart>
+		<scrapedthumbnail>Caixa 3D com "-thumbnail" na gamelist</scrapedthumbnail>
+		<gamemedianon>Não: apenas mídias da gamelist</gamemedianon>
+		<gamemediaoui>Sim: primeiro mídias personalizadas, senão a gamelist</gamemediaoui>
+		<gamemediaseul>Só: apenas mídias personalizadas (sem recorrer à gamelist)</gamemediaseul>
+		<intheme>Pasta do tema - Padrão</intheme>
+		<extfolder>Pasta externa</extfolder>
+		<opt_custombuilds>AVANÇADO - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>AVANÇADO - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>AVANÇADO - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>AVANÇADO - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

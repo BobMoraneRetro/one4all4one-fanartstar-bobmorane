@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Bandai's Super Note Club, a Japanese educational laptop toy of the 1990s.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Super Note Club da Bandai, laptop educativo japonês dos anos 90.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Bandai's Super Note Club, a Japanese educational laptop toy of the 1990s.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Super Note Club de Bandai, portátil educativo japonés de los años 90.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Super Note Club de Bandai, ordinateur portable éducatif japonais des années 1990.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Bandais Super Note Club, ein japanischer Lern-Laptop der 1990er.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Super Note Club</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1995</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Bandai</text>
+		</text>
+	</view>
+</theme>

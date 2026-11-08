@@ -1,0 +1,51 @@
+MÉDIAS PERSO DES JEUX (_gamemedia)
+==================================
+
+Ce dossier permet d'afficher vos propres images et vidéos de jeux, à la place ou en complément de celles du gamelist.
+Le même rangement est utilisé par les thèmes fanartstar, Hyperbat et CoinOps.
+
+ACTIVER
+  Dans les options du thème :
+    « AVANCÉ - Médias perso des jeux »        : Oui (médias perso d'abord, sinon gamelist)
+                                                ou Seuls (médias perso uniquement)
+    « AVANCÉ - Emplacement des médias perso » : Dossier du thème (par défaut), ou Dossier extérieur
+                                                (themes/_bobmedia/_gamemedia : partagé entre thèmes et conservé
+                                                lors des mises à jour du thème)
+
+RANGEMENT
+  _gamemedia/<système>/<type>/<nom de la rom>.<extension>
+
+  <système>  = nom du thème du système dans es_systems.cfg (balise <theme>) : snes, megadrive, psx, mame...
+  <nom de la rom> = nom du fichier de la rom, sans son extension
+                    ex. rom « Sonic The Hedgehog (Europe).zip » -> « Sonic The Hedgehog (Europe).png »
+  Noms de dossiers en minuscules (Batocera fait la différence entre majuscules et minuscules).
+
+  Le dossier _exemple montre tous les sous-dossiers possibles : copiez-le et renommez-le au nom du système.
+
+SOUS-DOSSIERS
+  3dbox       boîte 3D                         .png
+  2dbox       boîte 2D (jaquette de face)      .png
+  fanart      fanart (image de fond entière)   .jpg
+  logo        logo du jeu (clearlogo)          .png
+  screenshot  capture d'écran                  .png ou .jpg
+  video       vidéo                            .mp4 ou .avi
+  disc        disque (systèmes CD / DVD)       .png
+  cartridge   cartouche                        .png
+  cabs        borne d'arcade                   .png   (thème CoinOps ; prévu dans fanartstar)
+  roundwheel  logo rond                        .png   (prévu)
+  cover       fanart recadré                   .jpg   (thème CoinOps uniquement : à ne pas confondre avec fanart)
+  marquee     fronton de borne d'arcade        .png   (thème CoinOps uniquement)
+  banner      bandeau                          .png   (thème CoinOps uniquement)
+
+  Si un fichier perso n'existe pas, le média du gamelist est utilisé.
+
+DOSSIERS DE JEUX (_dossiers)
+  Pour les dossiers affichés dans la liste des jeux (ex. _Euro, _USA, ou un sous-système d'un système groupé) :
+  _gamemedia/_dossiers/<type>/<nom exact du dossier>.<extension>
+  types : logo (.png), fanart (.jpg ou .png), 3dbox (.png), 2dbox (.png), screenshot (.png ou .jpg), video (.mp4 ou .avi)
+  ex. _gamemedia/_dossiers/logo/_Euro.png
+  Ces médias de dossiers sont utilisés quelle que soit la valeur de « AVANCÉ - Médias perso des jeux ».
+
+AUTRES DOSSIERS
+  _manufacturer  logos des fabricants
+  _salon         décors de la vue RFE Retrofist Nostalgia (documentation dans _salon/_documentation)

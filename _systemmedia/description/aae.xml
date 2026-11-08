@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Another Arcade Emulator, specialised in vector arcade games such as Asteroids, Tempest or Star Wars, rendered with sharp, glowing lines.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Another Arcade Emulator, especializado em jogos de arcade vetoriais como Asteroids, Tempest ou Star Wars, com linhas nítidas e brilhantes.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Another Arcade Emulator, specialised in vector arcade games such as Asteroids, Tempest or Star Wars, rendered with sharp, glowing lines.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Another Arcade Emulator, especializado en juegos de arcade vectoriales como Asteroids, Tempest o Star Wars, con líneas nítidas y luminosas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Another Arcade Emulator, spécialisé dans les jeux d'arcade vectoriels comme Asteroids, Tempest ou Star Wars, affichés avec des traits nets et lumineux.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Another Arcade Emulator, spezialisiert auf Vektor-Arcade-Spiele wie Asteroids, Tempest oder Star Wars, dargestellt mit scharfen, leuchtenden Linien.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>AAE</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

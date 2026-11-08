@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Darksiders, the action-adventure series where the Horsemen of the Apocalypse fight across a ravaged Earth.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Darksiders, série de ação e aventura em que os Cavaleiros do Apocalipse lutam em uma Terra devastada.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Darksiders, the action-adventure series where the Horsemen of the Apocalypse fight across a ravaged Earth.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Darksiders, serie de acción y aventura en la que los Jinetes del Apocalipsis luchan en una Tierra devastada.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Darksiders, série d'action-aventure où les Cavaliers de l'Apocalypse combattent sur une Terre dévastée.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Darksiders, Action-Adventure-Reihe, in der die apokalyptischen Reiter auf einer verwüsteten Erde kämpfen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Darksiders</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2010</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Vigil Games / THQ</text>
+		</text>
+	</view>
+</theme>

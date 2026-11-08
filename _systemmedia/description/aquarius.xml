@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Mattel's Z80-based home computer, released in 1983 with a rubber keyboard and short-lived because of the video game crash.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico da Mattel com Z80, lançado em 1983 com teclado de borracha e de vida curta por causa da crise dos videogames.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Mattel's Z80-based home computer, released in 1983 with a rubber keyboard and short-lived because of the video game crash.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico de Mattel con Z80, lanzado en 1983 con teclado de goma, de vida corta por la crisis del videojuego.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial de Mattel à base de Z80, sorti en 1983 avec un clavier en caoutchouc, et vite arrêté à cause du krach du jeu vidéo.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Mattels Z80-Heimcomputer von 1983 mit Gummitastatur, wegen des Videospiel-Crashs nur kurz auf dem Markt.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Aquarius</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Mattel</text>
+		</text>
+	</view>
+</theme>

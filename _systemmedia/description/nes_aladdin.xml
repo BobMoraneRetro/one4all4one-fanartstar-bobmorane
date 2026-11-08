@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Camerica's Aladdin Deck Enhancer, an unlicensed NES adapter that made cheaper game cartridges by Codemasters possible.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Aladdin Deck Enhancer da Camerica, adaptador de NES sem licença que permitia cartuchos mais baratos de jogos da Codemasters.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Camerica's Aladdin Deck Enhancer, an unlicensed NES adapter that made cheaper game cartridges by Codemasters possible.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Aladdin Deck Enhancer de Camerica, adaptador de NES sin licencia que permitía cartuchos más baratos de juegos de Codemasters.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>L'Aladdin Deck Enhancer de Camerica, adaptateur NES sans licence permettant des cartouches moins chères de jeux Codemasters.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Camericas Aladdin Deck Enhancer, ein unlizenzierter NES-Adapter, der günstigere Codemasters-Module ermöglichte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Aladdin Deck Enhancer</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Camerica / Codemasters</text>
+		</text>
+	</view>
+</theme>

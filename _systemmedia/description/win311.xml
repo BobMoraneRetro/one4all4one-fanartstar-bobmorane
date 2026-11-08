@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Games for Windows 3.1 and 3.11, the 16-bit versions of Windows of the early 1990s.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos para Windows 3.1 e 3.11, as versões de 16 bits do Windows do início dos anos 90.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Games for Windows 3.1 and 3.11, the 16-bit versions of Windows of the early 1990s.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos para Windows 3.1 y 3.11, las versiones de 16 bits de Windows de principios de los 90.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux pour Windows 3.1 et 3.11, les versions 16 bits de Windows du début des années 1990.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Spiele für Windows 3.1 und 3.11, die 16-Bit-Versionen von Windows der frühen 1990er.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Windows 3.11</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Microsoft</text>
+		</text>
+	</view>
+</theme>

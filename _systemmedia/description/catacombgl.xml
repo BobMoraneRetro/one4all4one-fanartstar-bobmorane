@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Source port of the Catacomb series, early first-person games by id Software for Softdisk that led to Wolfenstein 3D.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Port da série Catacomb, primeiros jogos em primeira pessoa da id Software para a Softdisk, que levaram a Wolfenstein 3D.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Source port of the Catacomb series, early first-person games by id Software for Softdisk that led to Wolfenstein 3D.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Port de la serie Catacomb, primeros juegos en primera persona de id Software para Softdisk que llevaron a Wolfenstein 3D.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Portage de la série Catacomb, premiers jeux à la première personne d'id Software pour Softdisk, qui ont mené à Wolfenstein 3D.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Source-Port der Catacomb-Reihe, früher Ego-Spiele von id Software für Softdisk, die zu Wolfenstein 3D führten.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Catacomb</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1991</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Softdisk / id Software</text>
+		</text>
+	</view>
+</theme>

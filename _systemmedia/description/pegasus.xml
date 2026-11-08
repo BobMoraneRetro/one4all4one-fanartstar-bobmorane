@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Australian 6809-based home computer by Aamber, released in 1981.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico australiano com 6809 da Aamber, lançado em 1981.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Australian 6809-based home computer by Aamber, released in 1981.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico australiano con 6809 de Aamber, lanzado en 1981.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial australien à 6809 d'Aamber, sorti en 1981.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Australischer 6809-Heimcomputer von Aamber aus dem Jahr 1981.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pegasus</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1981</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Aamber</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>British Z80 home computer by Memotech, known for its sturdy aluminium case and good graphics.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico britânico com Z80 da Memotech, conhecido pela robusta caixa de alumínio e pelos bons gráficos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>British Z80 home computer by Memotech, known for its sturdy aluminium case and good graphics.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico británico con Z80 de Memotech, conocido por su robusta carcasa de aluminio y sus buenos gráficos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial britannique à Z80 de Memotech, connu pour son boîtier en aluminium robuste et ses bons graphismes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Britischer Z80-Heimcomputer von Memotech, bekannt für sein robustes Aluminiumgehäuse und gute Grafik.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Memotech MTX</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Memotech Ltd</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Pyxel, a retro game engine for Python with a 16-colour palette, in the spirit of fantasy consoles.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Pyxel, motor de jogos retrô para Python com paleta de 16 cores, no espírito dos consoles de fantasia.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Pyxel, a retro game engine for Python with a 16-colour palette, in the spirit of fantasy consoles.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Pyxel, motor de juegos retro para Python con una paleta de 16 colores, al estilo de las consolas de fantasía.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Pyxel, moteur de jeux rétro pour Python avec une palette de 16 couleurs, dans l'esprit des consoles imaginaires.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Pyxel, eine Retro-Spiele-Engine für Python mit 16-Farben-Palette im Stil von Fantasy-Konsolen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pyxel</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2021</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

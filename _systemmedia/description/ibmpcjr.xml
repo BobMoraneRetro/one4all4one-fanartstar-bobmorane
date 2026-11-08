@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>IBM's 1983 home computer, the PCjr, with improved graphics and sound and cartridge slots, which sold poorly despite its influence.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O computador doméstico da IBM de 1983, o PCjr, com gráficos e som melhorados e entradas de cartucho, que vendeu mal apesar da sua influência.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>IBM's 1983 home computer, the PCjr, with improved graphics and sound and cartridge slots, which sold poorly despite its influence.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El ordenador doméstico de IBM de 1983, el PCjr, con gráficos y sonido mejorados y ranuras de cartucho, que se vendió mal pese a su influencia.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>L'ordinateur familial d'IBM sorti en 1983, le PCjr, avec graphismes et son améliorés et ports cartouche, qui s'est mal vendu malgré son influence.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>IBMs Heimcomputer PCjr von 1983 mit verbesserter Grafik, Sound und Modulschächten, der sich trotz seines Einflusses schlecht verkaufte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PCjr</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>IBM</text>
+		</text>
+	</view>
+</theme>

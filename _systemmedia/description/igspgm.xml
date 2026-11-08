@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PolyGame Master, the Taiwanese company IGS's arcade system of 1997, home to Knights of Valour and DoDonPachi II.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>PolyGame Master, o sistema de arcade da empresa taiwanesa IGS de 1997, com Knights of Valour e DoDonPachi II.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PolyGame Master, the Taiwanese company IGS's arcade system of 1997, home to Knights of Valour and DoDonPachi II.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>PolyGame Master, el sistema arcade de la empresa taiwanesa IGS de 1997, con Knights of Valour y DoDonPachi II.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>PolyGame Master, le système d'arcade de la société taïwanaise IGS sorti en 1997, qui a accueilli Knights of Valour et DoDonPachi II.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PolyGame Master, das Arcade-System der taiwanischen Firma IGS von 1997, Heimat von Knights of Valour und DoDonPachi II.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PGM</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1997</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>IGS</text>
+		</text>
+	</view>
+</theme>

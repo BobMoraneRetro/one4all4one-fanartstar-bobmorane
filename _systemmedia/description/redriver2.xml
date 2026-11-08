@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>REDRIVER 2, a reverse-engineered native PC port of Driver 2, the 2000 PlayStation car chase game set in four cities.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>REDRIVER 2, port nativo para PC obtido por engenharia reversa de Driver 2, o jogo de perseguições do PlayStation de 2000 em quatro cidades.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>REDRIVER 2, a reverse-engineered native PC port of Driver 2, the 2000 PlayStation car chase game set in four cities.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>REDRIVER 2, port nativo para PC obtenido por ingeniería inversa de Driver 2, el juego de persecuciones de PlayStation de 2000 en cuatro ciudades.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>REDRIVER 2, portage PC natif obtenu par rétro-ingénierie de Driver 2, le jeu de poursuites en voiture PlayStation de 2000 situé dans quatre villes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>REDRIVER 2, ein per Reverse Engineering erstellter nativer PC-Port von Driver 2, dem PlayStation-Verfolgungsjagdspiel von 2000 in vier Städten.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>REDRIVER 2</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2000</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Reflections / GT Interactive</text>
+		</text>
+	</view>
+</theme>

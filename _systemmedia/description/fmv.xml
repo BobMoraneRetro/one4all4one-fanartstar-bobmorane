@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Full motion video games, built around filmed sequences with real actors, a genre that flourished with CD-ROM in the 1990s.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de vídeo em tela cheia, baseados em sequências filmadas com atores reais, um gênero que floresceu com o CD-ROM nos anos 90.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Full motion video games, built around filmed sequences with real actors, a genre that flourished with CD-ROM in the 1990s.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de vídeo a pantalla completa, basados en secuencias filmadas con actores reales, un género que floreció con el CD-ROM en los 90.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux en vidéo plein écran, construits autour de séquences filmées avec de vrais acteurs, un genre qui a fleuri avec le CD-ROM dans les années 1990.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Full-Motion-Video-Spiele mit gefilmten Szenen und echten Schauspielern, ein Genre, das in den 1990ern mit der CD-ROM aufblühte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>FMV</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2014</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

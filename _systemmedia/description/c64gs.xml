@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Cartridge-only console version of the Commodore 64 released in Europe in 1990, a commercial failure with a small game library.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Versão console do Commodore 64, apenas com cartuchos, lançada na Europa em 1990; um fracasso comercial com poucos jogos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Cartridge-only console version of the Commodore 64 released in Europe in 1990, a commercial failure with a small game library.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Versión consola del Commodore 64, solo con cartuchos, lanzada en Europa en 1990; un fracaso comercial con pocos juegos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Version console du Commodore 64, sans clavier et uniquement à cartouches, sortie en Europe en 1990 ; un échec commercial à la ludothèque réduite.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Konsolenversion des Commodore 64 nur für Module, 1990 in Europa erschienen; ein kommerzieller Misserfolg mit wenigen Spielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>C64 Game System</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1990</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Commodore</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${cf_angle} : vues de test Coverflow : angle des boîtes de côté, en degrés (définie dans ce fichier)
+	${cf_ecart} : vues de test Coverflow : décalage des boîtes de côté vers l extérieur (shader boite_coverflow, en largeur de boîtier DVD) (définie dans ce fichier)
+	${cf_hauteur} : vues de test Coverflow : hauteur de l élément boîte dans sa case du carrousel ou de la grille (plus petite pour les systèmes à boîte large) (définie dans ce fichier)
+	${cfr_ratio} : vues de test Coverflow : format (largeur / hauteur) de la boîte de remplacement d un jeu sans jaquette (fanart du système), plus carré pour les systèmes à CD comme dans la vue Boxart (définie dans ce fichier)
+	${cfx_format} : vues de test Coverflow : format (largeur / hauteur) de la boîte la plus large du système, pour l écart autour de la sélection quand les formats sont mélangés (0 = format de chaque boîte) (définie dans ce fichier)
+	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
+	${media_box2d} : boîte 2D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box2d_missing} : vrai si le média « box2d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box3d} : boîte 3D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box3d_missing} : vrai si le média « box3d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<cfx_format>0</cfx_format>
+		<cfx_format if="{system.theme} == 'snes' || {system.theme} == 'sfc' || {system.theme} == 'snes-msu1' || {system.theme} == 'satellaview' || {system.theme} == 'n64'">1.4</cfx_format>
+		<cfr_ratio>0.7</cfr_ratio>
+		<cfr_ratio if="{system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'amigacdtv' || {system.theme} == 'amigacd32' || {system.theme} == 'gx4000' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'psx' || {system.theme} == 'saturn' || {system.theme} == 'segacd'">0.98</cfr_ratio>
+		<cf_hauteur>0.94</cf_hauteur>
+		<cf_hauteur if="{system.theme} == 'n64' || {system.theme} == 'snes' || {system.theme} == 'dreamcast' || {system.theme} == 'saturn' || {system.theme} == 'psx' || {system.theme} == 'segacd' || {system.theme} == 'megacd' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds'">0.78</cf_hauteur>
+		<cf_ecart>0.6</cf_ecart>
+		<cf_ecart if="{system.theme} == 'n64' || {system.theme} == 'snes' || {system.theme} == 'dreamcast' || {system.theme} == 'saturn' || {system.theme} == 'psx' || {system.theme} == 'segacd' || {system.theme} == 'megacd' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds'">0.6</cf_ecart>
+		<cf_angle>55</cf_angle>
+		<cf_angle if="{system.theme} == 'n64' || {system.theme} == 'snes' || {system.theme} == 'dreamcast' || {system.theme} == 'saturn' || {system.theme} == 'psx' || {system.theme} == 'segacd' || {system.theme} == 'megacd' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds'">55</cf_angle>
+	</variables>
+	<customView name="presettestcoverflow" displayName="TEST - Coverflow" inherits="gamecarousel">
+		<image name="fanart_extra" extra="true">
+			<pos>0.5 0.5</pos>
+			<size>0 0</size>
+			<minSize>1 1</minSize>
+			<color>606060FF</color>
+			<colorEnd>606060FF</colorEnd>
+			<zIndex>4</zIndex>
+		</image>
+		<image name="screenshot_extra" extra="true">
+			<visible>false</visible>
+		</image>
+		<video name="video_extra" extra="true">
+			<visible>false</visible>
+		</video>
+		<image name="cf_degrade" extra="true">
+			<path>${themePath}/_viewgame/fanartstar/overlaydown.png</path>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<size>1 0.5</size>
+			<zIndex>5</zIndex>
+		</image>
+		<gamecarousel name="gamecarousel">
+			<type>horizontal</type>
+			<pos>0 0.14</pos>
+			<size>1 0.62</size>
+			<logoSize>0.11 0.42</logoSize>
+			<logoScale>1.35</logoScale>
+			<logoRotation>0</logoRotation>
+			<maxLogoCount>13</maxLogoCount>
+			<logoAlignment>center</logoAlignment>
+			<color>00000000</color>
+			<minLogoOpacity>1</minLogoOpacity>
+			<imageSource>thumbnail</imageSource>
+			<zIndex>10</zIndex>
+			<itemTemplate>
+				<container>
+					<image name="boite">
+						<path>${media_box2d}</path>
+						<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
+						<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>3.4 ${cf_hauteur}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite_coverflow.glsl</path>
+							<maxAngle>${cf_angle}</maxAngle>
+							<spread>0.22</spread>
+							<recul>2.2</recul>
+							<sens>-1</sens>
+							<assombrir>0.35</assombrir>
+							<ecart>${cf_ecart}</ecart>
+							<largeurCase>4.862</largeurCase>
+							<zoomSelection>1.35</zoomSelection>
+							<formatMax>${cfx_format}</formatMax>
+						</shader>
+					</image>
+					<image name="boitefond">
+						<path>${intfanartfresh}</path>
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>3.4 ${cf_hauteur}</size>
+						<linearSmooth>true</linearSmooth>
+						<saturation>0.7</saturation>
+						<shader>
+							<path>${themePath}/_common/shaders/boite_coverflow.glsl</path>
+							<maxAngle>${cf_angle}</maxAngle>
+							<spread>0.22</spread>
+							<recul>2.2</recul>
+							<sens>-1</sens>
+							<assombrir>0.35</assombrir>
+							<ecart>${cf_ecart}</ecart>
+							<largeurCase>4.862</largeurCase>
+							<zoomSelection>1.35</zoomSelection>
+							<ratioBoite>${cfr_ratio}</ratioBoite>
+							<formatMax>${cfx_format}</formatMax>
+						</shader>
+					</image>
+					<image name="boitelogo">
+						<path>${media_marquee}</path>
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; !(${media_marquee_missing})</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; !(${media_marquee_missing})</visible>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>3.4 ${cf_hauteur}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite_coverflow.glsl</path>
+							<maxAngle>${cf_angle}</maxAngle>
+							<spread>0.22</spread>
+							<recul>2.2</recul>
+							<sens>-1</sens>
+							<assombrir>0.35</assombrir>
+							<ecart>${cf_ecart}</ecart>
+							<largeurCase>4.862</largeurCase>
+							<zoomSelection>1.35</zoomSelection>
+							<ratioBoite>${cfr_ratio}</ratioBoite>
+							<contenu>0.8</contenu>
+							<formatMax>${cfx_format}</formatMax>
+						</shader>
+					</image>
+					<text name="nomjeu">
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; ${media_marquee_missing}</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; ${media_marquee_missing}</visible>
+						<text>{game:name}</text>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>1.4 0.6</size>
+						<fontPath>${themePath}/_common/fonts/Cabin-Bold.ttf</fontPath>
+						<fontSize>0.022</fontSize>
+						<lineSpacing>1.05</lineSpacing>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<verticalAlignment>center</verticalAlignment>
+						<glowColor>000000DD</glowColor>
+						<glowSize>3</glowSize>
+					</text>
+				</container>
+			</itemTemplate>
+		</gamecarousel>
+		<text name="cf_titre" extra="true">
+			<text>{game:name}</text>
+			<pos>0.5 0.86</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.8 0.05</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.04</fontSize>
+			<color>FFFFFF</color>
+			<alignment>center</alignment>
+			<glowColor>000000AA</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>20</zIndex>
+		</text>
+		<text name="cf_infos" extra="true">
+			<text>{game:releaseyear}  •  {game:genre}  •  {game:publisher}</text>
+			<pos>0.5 0.91</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.8 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.022</fontSize>
+			<color>DDDDDD</color>
+			<alignment>center</alignment>
+			<zIndex>20</zIndex>
+		</text>
+	</customView>
+</theme>

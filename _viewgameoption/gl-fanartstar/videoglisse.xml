@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetstarbox}, ${presetstarboxloop}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
+		<image name="screenshotgames" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<storyboard event="open">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="3800" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="3800" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="3800" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videogameplay" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<delay>2.8</delay>
+			<storyboard event="open">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+		<image name="screenshotgames" ifSubset="starvideo:starvideoang" extra="true">
+			<storyboard event="open">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="3800" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="3800" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="3800" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videogameplay" ifSubset="starvideo:starvideoang" extra="true">
+			<delay>2.8</delay>
+			<storyboard event="open">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+		<image name="screenshotgames_cadre" ifSubset="starvideo:starvideoang" extra="true">
+			<visible>${media_video_exists}</visible>
+			<storyboard event="open">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="screenshotgames_fond" ifSubset="starvideo:starvideoang" extra="true">
+			<visible>${media_video_exists}</visible>
+			<storyboard event="open">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="presetstarboxloop" displayName="${presetstarboxloop}" inherits="grid">
+		<image name="screenshotgames" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<storyboard event="open">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="3800" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="3800" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="3800" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videogameplay" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<delay>2.8</delay>
+			<storyboard event="open">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+		<image name="screenshotgames" ifSubset="starvideo:starvideoang" extra="true">
+			<storyboard event="open">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="3800" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="3800" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="3800" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videogameplay" ifSubset="starvideo:starvideoang" extra="true">
+			<delay>2.8</delay>
+			<storyboard event="open">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+		<image name="screenshotgames_cadre" ifSubset="starvideo:starvideoang" extra="true">
+			<visible>${media_video_exists}</visible>
+			<storyboard event="open">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="screenshotgames_fond" ifSubset="starvideo:starvideoang" extra="true">
+			<visible>${media_video_exists}</visible>
+			<storyboard event="open">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.5" to="0.5" duration="3000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="3000" duration="600" mode="EaseOut"/>
+			</storyboard>
+		</image>
+	</customView>
+</theme>

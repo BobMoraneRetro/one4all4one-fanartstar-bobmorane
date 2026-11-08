@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Native PC port of The Legend of Zelda: Majora's Mask, rebuilt from its decompiled code with widescreen, high frame rates and modern controls.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Port nativo para PC de The Legend of Zelda: Majora's Mask, reconstruído a partir do código descompilado, com tela larga, alta taxa de quadros e controles modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Native PC port of The Legend of Zelda: Majora's Mask, rebuilt from its decompiled code with widescreen, high frame rates and modern controls.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Port nativo para PC de The Legend of Zelda: Majora's Mask, reconstruido a partir de su código descompilado, con pantalla panorámica, alta tasa de imágenes y controles modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Portage PC natif de The Legend of Zelda : Majora's Mask, reconstruit à partir de son code décompilé, avec écran large, fréquence d'images élevée et commandes modernes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Nativer PC-Port von The Legend of Zelda: Majora's Mask, aus dem dekompilierten Code neu aufgebaut, mit Breitbild, hoher Bildrate und modernen Steuerungen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>2 Ship 2 Harkinian</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2024</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>HarbourMasters</text>
+		</text>
+	</view>
+</theme>

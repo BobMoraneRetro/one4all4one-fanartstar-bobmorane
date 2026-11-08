@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Yugoslav do-it-yourself home computer of 1983, published as a kit in a magazine and built by thousands of enthusiasts.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador iugoslavo para montar em casa, publicado como kit em uma revista em 1983 e construído por milhares de entusiastas.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Yugoslav do-it-yourself home computer of 1983, published as a kit in a magazine and built by thousands of enthusiasts.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador yugoslavo para montar uno mismo, publicado como kit en una revista en 1983 y construido por miles de aficionados.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur yougoslave à construire soi-même, publié en kit dans un magazine en 1983 et assemblé par des milliers de passionnés.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Jugoslawischer Heimcomputer zum Selbstbau, 1983 als Bausatz in einer Zeitschrift veröffentlicht und von Tausenden Bastlern gebaut.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Galaksija</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Voja Antonic / Elektronika inzenjering</text>
+		</text>
+	</view>
+</theme>

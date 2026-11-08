@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Welsh home computer by Dragon Data, the 64 KB version of the Dragon 32, close to the Tandy TRS-80 Color Computer.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico galês da Dragon Data, versão de 64 KB do Dragon 32, parecido com o Tandy TRS-80 Color Computer.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Welsh home computer by Dragon Data, the 64 KB version of the Dragon 32, close to the Tandy TRS-80 Color Computer.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico galés de Dragon Data, versión de 64 KB del Dragon 32, similar al Tandy TRS-80 Color Computer.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial gallois de Dragon Data, version 64 Ko du Dragon 32, proche du Tandy TRS-80 Color Computer.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Walisischer Heimcomputer von Dragon Data, 64-KB-Version des Dragon 32, dem Tandy TRS-80 Color Computer ähnlich.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Dragon 64</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Dragon Data</text>
+		</text>
+	</view>
+</theme>

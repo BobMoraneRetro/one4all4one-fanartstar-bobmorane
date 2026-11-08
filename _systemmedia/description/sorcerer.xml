@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Exidy's Sorcerer home computer of 1978, a Z80 machine using ROM cartridges for its languages and software.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O computador doméstico Sorcerer da Exidy de 1978, máquina com Z80 que usava cartuchos ROM para linguagens e programas.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Exidy's Sorcerer home computer of 1978, a Z80 machine using ROM cartridges for its languages and software.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El ordenador doméstico Sorcerer de Exidy de 1978, máquina con Z80 que usaba cartuchos ROM para sus lenguajes y programas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>L'ordinateur familial Sorcerer d'Exidy sorti en 1978, machine à Z80 utilisant des cartouches ROM pour ses langages et logiciels.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Exidys Heimcomputer Sorcerer von 1978, eine Z80-Maschine mit ROM-Modulen für Sprachen und Software.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Sorcerer</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1979</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Exidy</text>
+		</text>
+	</view>
+</theme>

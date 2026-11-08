@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Bandai's 1983 Japanese home computer, named after the Gundam mobile suit, with cartridge games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico japonês da Bandai de 1983, com o nome do mobile suit Gundam, e jogos em cartucho.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Bandai's 1983 Japanese home computer, named after the Gundam mobile suit, with cartridge games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico japonés de Bandai de 1983, con el nombre del mobile suit Gundam, y juegos en cartucho.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial japonais de Bandai sorti en 1983, nommé d'après le mobile suit Gundam, avec des jeux en cartouche.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Japanischer Heimcomputer von Bandai aus dem Jahr 1983, benannt nach dem Gundam-Mobile-Suit, mit Modulspielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>RX-78</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Bandai</text>
+		</text>
+	</view>
+</theme>

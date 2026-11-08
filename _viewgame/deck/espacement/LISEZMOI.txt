@@ -1,0 +1,33 @@
+Espacement des boîtes (option « Espacement des boîtes »)
+=========================================================
+
+Ces fichiers e<écart>.xml sont GÉNÉRÉS : ne pas les modifier à la main.
+Ils sont produits par un outil de génération (37 fichiers) ; recopier ensuite le dossier dans Hyperbat (_viewgame/deck/espacement), qui utilise les mêmes.
+
+Un fichier par cran. Le nom donne l écart entre les boîtes en pixels (1080p) :
+  e20.xml = cran 0 (normal) ; 1 cran = 4 px ; e-60.xml = cran -20 (boîtes très serrées) ; e80.xml = cran +15 (très espacées, ajouté le 25/10/2026) ; e6.xml = cran -3,5 (boîtes Boxart qui se touchent).
+Le menu (subset deckespace) charge le fichier du cran choisi ; chaque fichier ne contient que des variables.
+
+Variables (une valeur par défaut, puis des variantes « if » par groupe de systèmes : boîtes CD, DS/3DS, Saturn...) :
+
+  Big Art (vue presetdeck) — <centre|gauche> = jeu sélectionné au centre ou à gauche, <2d|3d> = boîtes 2D ou 3D
+    bigart_colonnes_<centre|gauche>_<2d|3d>   nombre de colonnes de la grille
+    bigart_ecart_<centre|gauche>_<2d|3d>      écart entre deux boîtes (fraction d écran, négatif = chevauchement des vignettes)
+    bigart_position_<centre|gauche>_<2d|3d>   position horizontale de la grille
+    bigart_taille_<centre|gauche>_<2d|3d>     largeur de la grille
+
+  Spotlight (vue presetspotlight)
+    spotlight_position    position de la grille (x y)
+    spotlight_taille      taille de la grille (largeur hauteur)
+    spotlight_ecart       écart entre les boîtes
+    spotlight_marges      marges intérieures des cases (haut droite bas gauche)
+    spotlight_colonnes    colonnes et lignes de la grille
+
+  Boxart (vue presetstarbox, carrousel)
+    boxart_nb_boites_2d / _3d          nombre de boîtes du carrousel (non entier accepté : 10.5 = boîtes plus espacées)
+    boxart_ecart_selection_2d / _3d    écart autour de la boîte sélectionnée (scaledLogoSpacing)
+
+  RFE Retrofist Nostalgia (vue presetsalon)
+    boxart_nb_boites_2d_horizontales   nombre de boîtes pour les boîtes horizontales non pivotées (snes, n64...) = 0,8 x boxart_nb_boites_2d
+
+La progression des crans se change dans l outil de génération, puis on régénère les fichiers.

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ro">
+		<desactive>Dezactivat</desactive>
+		<default>Implicit</default>
+		<active>Activat</active>
+		<novideo>Dezactivat</novideo>
+		<videoback>Activat</videoback>
+		<intheme>Folderul temei - Implicit</intheme>
+		<extfolder>Folder extern</extfolder>
+		<nodates>Fără dată</nodates>
+		<playcountone>partidă</playcountone>
+		<playcount>partide</playcount>
+		<noplaycount>Niciodată lansat</noplaycount>
+		<playerss>jucători</playerss>
+		<player>jucător</player>
+		<nogametime>Niciodată jucat</nogametime>
+		<noplayerdata>Necunoscut</noplayerdata>
+		<noratings>Fără notă</noratings>
+		<notesur100>din 100</notesur100>
+		<opt_nomjeu>JOCURI - Numele jocului</opt_nomjeu>
+		<nomjeucomplet>Complet</nomjeucomplet>
+		<nomjeucourt>Fără paranteze</nomjeucourt>
+		<presgame1>Acesta este un joc de tipul</presgame1>
+		<presgame2>dezvoltat de</presgame2>
+		<presgame3>jucabil pe</presgame3>
+		<presgame4>- Limbi disponibile :</presgame4>
+		<nomjeulabel>Numele jocului :</nomjeulabel>
+		<genrelabel>Gen :</genrelabel>
+		<devlabel>Dezvoltator :</devlabel>
+		<langlabel>Limbi :</langlabel>
+		<gametimelabel>Timp de joc :</gametimelabel>
+		<lastgamelabel>Ultima partidă:</lastgamelabel>
+		<viewbasicgrid>Basic: Vizualizare grilă de bază</viewbasicgrid>
+		<jeux>jocuri</jeux>
+		<longselect>Apăsare lungă pe "select"</longselect>
+		<favuniquement>Doar favorite</favuniquement>
+		<tslesjeux>Toate jocurile</tslesjeux>
+		<fanartstarsyst>Clasic</fanartstarsyst>
+		<fanartmodern>Modern 1 (incompatibil cu calea de navigare)</fanartmodern>
+		<fanartmodern2>Modern 2 (compatibil cu calea de navigare)</fanartmodern2>
+		<fanartfreshone>Doar fanart-uri selectate de FreshOne</fanartfreshone>
+		<fanartsystcustom>Fanarturi din dosarul custom, altfel FreshOne</fanartsystcustom>
+		<videoangled>Activat (mic, înclinat)</videoangled>
+		<hardware>Hardware</hardware>
+		<charsystem>Personaje</charsystem>
+		<figurines>Figurine (tema Animatics trebuie instalată)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>Poziția butoanelor</iconsetposition>
+		<skyblue>bleu</skyblue>
+		<purple>violet</purple>
+		<red>roșu</red>
+		<aqua>bleu</aqua>
+		<orange>portocaliu</orange>
+		<green>verde</green>
+		<yellow>galben</yellow>
+		<pink>roz</pink>
+		<grey>gri închis</grey>
+		<lightgrey>gri deschis</lightgrey>
+		<navy>albastru alt</navy>
+		<violet>violet</violet>
+		<candy>candy</candy>
+		<redalt>roșu alt</redalt>
+		<yellowalt>galben alt</yellowalt>
+		<greenalt>verde alt</greenalt>
+		<purplealt>violet alt</purplealt>
+		<classiquesyst>Dispariție cu zoom înapoi</classiquesyst>
+		<no>Nu</no>
+		<yes>Da</yes>
+		<thumb>Calibrat pentru cutie 2D</thumb>
+		<boxart>Calibrat pentru cutie 3D</boxart>
+		<starrotate>Da</starrotate>
+		<nostarrotate>Nu</nostarrotate>
+		<deactive>Dezactivat</deactive>
+		<speedslow1>Lent+</speedslow1>
+		<speedslow2>Lent++</speedslow2>
+		<starvideoang>Înclinat</starvideoang>
+		<starvideodef>Standard</starvideodef>
+		<starvideobig>Mare</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Gri plăcut</griscl>
+		<noirombre>Ramă neagră + umbră</noirombre>
+		<blancombre>Ramă albă + umbră</blancombre>
+		<ombre>Doar umbră</ombre>
+		<rien>Fără decor</rien>
+		<presetshowbig>RFE Show previzualizare mare</presetshowbig>
+		<presetshowsmall>RFE Show previzualizare mică</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar pătrat</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (Navigare mai rapidă)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Sub panoul mare (ca Steam)</deckgauche>
+		<deckcentre>În centrul rândului (zoom + strălucire)</deckcentre>
+		<decknormal>Normal</decknormal>
+		<spotvideodroite>În dreapta, peste cutii</spotvideodroite>
+		<spotvideoaucune>Dezactivat</spotvideoaucune>
+		<spotvideogauche>În stânga, cu informațiile</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Păstrează logo-ul</decklogogarder>
+		<decklogobandeau>Bandă de informații (logo ascuns)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Înapoi la dosarul anterior</retourdossier>
+		<ra_moncompte>Contul meu</ra_moncompte>
+		<ra_succesjeu>Realizările jocului</ra_succesjeu>
+		<opt_raaffichage>JOCURI - RetroAchievements (instrument extern)</opt_raaffichage>
+		<raaffichagepermanent>Afișare permanentă</raaffichagepermanent>
+		<raaffichagetemporaire>Câteva secunde</raaffichagetemporaire>
+		<noteetoile>Stea</noteetoile>
+		<notecoeur>Inimă</notecoeur>
+		<notemanette>Controler</notemanette>
+		<notepouce>Degetul mare sus</notepouce>
+		<notetrophee>Trofeu</notetrophee>
+		<notefantome>Fantomă</notefantome>
+		<notecrane>Craniu</notecrane>
+		<notepourcent>În %</notepourcent>
+		<wheelclic>Clic în stil Hyperspin</wheelclic>
+		<bulle>Bulă</bulle>
+		<clic>Clic simplu</clic>
+		<clicgrave>Clic grav</clicgrave>
+		<frottement>Frecare</frottement>
+		<poc>Poc</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>GENERAL - Mesaj de bun venit</opt_lismoi>
+		<opt_iconset>GENERAL - Aspectul pictogramelor de ajutor</opt_iconset>
+		<opt_colorhelp>GENERAL - Culorile textului de ajutor</opt_colorhelp>
+		<opt_horlogecouleur>GENERAL - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>GENERAL - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>SISTEME - Vizualizare pentru lista de sisteme</opt_systemview>
+		<opt_imagefondcops1>SISTEME - Alegerea fanart-urilor sistemului</opt_imagefondcops1>
+		<opt_video4starmodern>SISTEME - Video de gameplay în vizualizarea sistemelor</opt_video4starmodern>
+		<opt_video4starclassic>SISTEME - Video de gameplay în vizualizarea sistemelor</opt_video4starclassic>
+		<opt_systviewselec>SISTEME - Imaginea sistemului în roată</opt_systviewselec>
+		<opt_breadcrumbsonoff>SISTEME - Meniu vertical în stânga (vizualizare clasică a sistemelor)</opt_breadcrumbsonoff>
+		<arianeauto>Automat (după sortarea sistemelor)</arianeauto>
+		<arianecategories>Categorii (sortare după tipul de hardware)</arianecategories>
+		<arianealpha>Litere de la A la Z (sortare alfabetică)</arianealpha>
+		<arianealphavoisines>Litera și vecinele ei (sortare alfabetică)</arianealphavoisines>
+		<arianeconstructeur>Producători (sortare după producător)</arianeconstructeur>
+		<arianedecennie>Decenii (sortare după anul lansării)</arianedecennie>
+		<arianeautres>ALTELE</arianeautres>
+		<opt_metadataonoff>SISTEME - Informații despre sistem (vizualizare clasică a sistemelor)</opt_metadataonoff>
+		<opt_systannonce>JOCURI - Afișează sistemul curent la deschidere</opt_systannonce>
+		<opt_infosmax>JOCURI - Afișați consola de informații extinsă?</opt_infosmax>
+		<opt_gamewheelsound>GENERAL - Sunet la derulare</opt_gamewheelsound>
+		<opt_boxorthumb>JOCURI - Cutia jocului de afișat</opt_boxorthumb>
+		<opt_fanarttransition>JOCURI - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>JOCURI - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>JOCURI - Rotirea discului</opt_cdvitesse>
+		<cdnormale>Normală</cdnormale>
+		<cdlente>Lentă</cdlente>
+		<cdrapide>Rapidă</cdrapide>
+		<cdtresrapide>Foarte rapidă</cdtresrapide>
+		<cdimmobile>Nemișcat</cdimmobile>
+		<opt_umdrotation>JOCURI - Rotirea UMD (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>JOCURI - Evidențiază jocul selectat</opt_selectionvaleur>
+		<selegere>Ușoară</selegere>
+		<selmarquee>Puternică</selmarquee>
+		<opt_videojeu>JOCURI - Videoclipul jocului</opt_videojeu>
+		<vjcapture>Captură, apoi video</vjcapture>
+		<vjseule>Doar video</vjseule>
+		<vjfondu>Video cu tranziție</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>JOCURI - Box case type</opt_typeboite>
+		<opt_contourboite>JOCURI - Box outline (case)</opt_contourboite>
+		<opt_deckespace>JOCURI - Spațierea cutiilor</opt_deckespace>
+		<opt_iconenote>JOCURI - Pictogramă notă</opt_iconenote>
+		<opt_extfolderbezelsyst>AVANSAT - Bezel-uri ale sistemelor</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>AVANSAT - Logo-urile editorilor de jocuri</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>AVANSAT - Fanart al sistemelor</opt_extfolderfanart>
+		<opt_extfolderlogosyst>AVANSAT - Logo sistem</opt_extfolderlogosyst>
+		<opt_extfoldersalon>AVANSAT - Locația fundalurilor vizualizării RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_perfmachine>AVANSAT - Mod mașină slabă</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - Vignetare fundal</opt_salonvignette>
+		<vignleger>Ușoară</vignleger>
+		<vignfort>Puternică</vignfort>
+		<opt_deckselection>BIG ART - Poziția jocului selectat</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Logo în timpul videoclipului</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Videoclip</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - Rotirea cutiilor SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - Unghiul cutiilor de joc</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Suportul jocului (disc, cartuș)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Viteza animației de derulare</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Dimensiunea videoclipului de previzualizare</opt_starvideo>
+		<opt_starvideocadre>BOXART - Cadrul videoclipului de previzualizare</opt_starvideocadre>
+		<vcadreactuel>Cadrul actual</vcadreactuel>
+		<vcadreombre>Doar umbră</vcadreombre>
+		<vcadreecranfin>Ramă subțire</vcadreecranfin>
+		<vcadrebois>Lemn</vcadrebois>
+		<vcadremetal>Metal periat</vcadremetal>
+		<vcadrelumineux>Ecran luminos</vcadrelumineux>
+		<vcadretv>Televizor CRT</vcadretv>
+		<vcadregalerie>Galerie</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologramă</vcadrehologramme>
+		<vcadreverre>Sticlă mată</vcadreverre>
+		<vcadrecarbone>Carbon LED</vcadrecarbone>
+		<vcadreneondouble>Neon dublu</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Tușe de pensulă</vcadrepinceau>
+		<vcadretechnodore>Tehno auriu</vcadretechnodore>
+		<vcadretechnoargent>Tehno argintiu</vcadretechnoargent>
+		<vcadreneonelec>Neon electric</vcadreneonelec>
+		<vcadrevitre>Geam</vcadrevitre>
+		<vcadreflammes>Flăcări</vcadreflammes>
+		<vcadreencre>Cerneală</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Laturile cutiei care se întoarce</opt_boite3dtranche>
+		<b3tcharniere>Logo pe o parte, deschidere pe cealaltă</b3tcharniere>
+		<b3tdeuxcotes>Logo pe ambele părți</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - Culoarea grilei</opt_gridcolor>
+		<opt_squarecadre>PĂTRAT - Aspectul pătratelor care reprezintă jocurile</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>SISTEME - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>SISTEME - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>SISTEME - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>SISTEME - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>JOCURI - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Bun venit și mulțumiri</planche00>
+		<planche01>01 - Vizualizările sistemelor</planche01>
+		<planche02>02 - Vizualizare clasică: imaginea sistemului</planche02>
+		<planche03>03 - Vizualizare clasică: detaliile</planche03>
+		<planche04>04 - Fanarturi de sistem, Modern și Z-Spin</planche04>
+		<planche05>05 - Cele 11 vizualizări de jocuri</planche05>
+		<planche06>06 - FanartStar Boxart: cutii și informații</planche06>
+		<planche07>07 - FanartStar Boxart: videoclipul</planche07>
+		<planche08>08 - Cutii și suporturi</planche08>
+		<planche09>09 - Cele 22 de carcase</planche09>
+		<planche10>10 - Suportul: setări pe sistem</planche10>
+		<planche11>11 - Fanarturi de jocuri și selecție</planche11>
+		<planche12>12 - Big Art, Spotlight, Pătrat, 16/9 și 4/3</planche12>
+		<planche13>13 - Vizualizările RFE</planche13>
+		<planche14>14 - RFE Retrofist: ecranul televizorului</planche14>
+		<planche15>15 - Show Big &amp; Small: cutia care se întoarce</planche15>
+		<planche16>16 - Opțiuni comune ale vizualizărilor de jocuri</planche16>
+		<planche17>17 - General: sunete, ajutor, ceas</planche17>
+		<planche18>18 - Personalizează cu dosarele tale</planche18>
+		<planche19>19 - Media proprii ale jocurilor</planche19>
+		<planche20>20 - Îmbrăcarea unui dosar</planche20>
+		<planche21>21 - Ce imagine câștigă?</planche21>
+		<planche22>22 - Sistemele grupate</planche22>
+		<planche23>23 - Calculator slab și linkuri</planche23>
+	</variables>
+</theme>

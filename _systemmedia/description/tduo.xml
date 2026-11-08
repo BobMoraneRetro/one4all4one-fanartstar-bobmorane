@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>NEC's TurboDuo of 1992, a North American console combining the TurboGrafx-16 and its CD-ROM drive in one unit.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O TurboDuo da NEC de 1992, console norte-americano que unia o TurboGrafx-16 e seu leitor de CD-ROM em um só aparelho.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>NEC's TurboDuo of 1992, a North American console combining the TurboGrafx-16 and its CD-ROM drive in one unit.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El TurboDuo de NEC de 1992, consola norteamericana que unía la TurboGrafx-16 y su lector de CD-ROM en una sola unidad.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le TurboDuo de NEC sorti en 1992, console nord-américaine réunissant la TurboGrafx-16 et son lecteur CD-ROM dans un seul boîtier.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>NECs TurboDuo von 1992, eine nordamerikanische Konsole, die TurboGrafx-16 und CD-ROM-Laufwerk in einem Gerät vereinte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>TurboDuo</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>NEC</text>
+		</text>
+	</view>
+</theme>

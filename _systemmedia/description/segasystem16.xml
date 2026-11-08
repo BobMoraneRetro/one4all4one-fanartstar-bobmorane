@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega System 16, the 68000-based arcade board of the mid 1980s, home to Shinobi, Golden Axe and Altered Beast.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Sega System 16, placa de arcade com 68000 de meados dos anos 80, com Shinobi, Golden Axe e Altered Beast.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega System 16, the 68000-based arcade board of the mid 1980s, home to Shinobi, Golden Axe and Altered Beast.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Sega System 16, placa arcade con 68000 de mediados de los 80, con Shinobi, Golden Axe y Altered Beast.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Sega System 16, carte arcade à 68000 du milieu des années 1980, qui a accueilli Shinobi, Golden Axe et Altered Beast.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sega System 16, die 68000-basierte Arcade-Platine der Mitte der 1980er, Heimat von Shinobi, Golden Axe und Altered Beast.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>System 16</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1985</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

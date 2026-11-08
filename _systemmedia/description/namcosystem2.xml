@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Namco System 2, the 68000-based arcade board of the late 1980s, home to Final Lap, Assault and Valkyrie no Densetsu.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Namco System 2, placa de arcade com 68000 do fim dos anos 80, com Final Lap, Assault e Valkyrie no Densetsu.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Namco System 2, the 68000-based arcade board of the late 1980s, home to Final Lap, Assault and Valkyrie no Densetsu.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Namco System 2, placa arcade con 68000 de finales de los 80, con Final Lap, Assault y Valkyrie no Densetsu.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Namco System 2, carte arcade à 68000 de la fin des années 1980, qui a accueilli Final Lap, Assault et Valkyrie no Densetsu.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Namco System 2, die 68000-basierte Arcade-Platine der späten 1980er, Heimat von Final Lap, Assault und Valkyrie no Densetsu.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>System 2</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1987</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Namco</text>
+		</text>
+	</view>
+</theme>

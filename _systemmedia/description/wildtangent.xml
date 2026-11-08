@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Casual PC games from WildTangent, often preinstalled on computers in the 2000s.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos casuais de PC da WildTangent, muitas vezes pré-instalados nos computadores nos anos 2000.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Casual PC games from WildTangent, often preinstalled on computers in the 2000s.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos casuales de PC de WildTangent, a menudo preinstalados en los ordenadores en los años 2000.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux PC grand public de WildTangent, souvent préinstallés sur les ordinateurs dans les années 2000.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Gelegenheitsspiele für PC von WildTangent, in den 2000ern oft auf Computern vorinstalliert.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>WildTangent</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2000</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>WildTangent</text>
+		</text>
+	</view>
+</theme>

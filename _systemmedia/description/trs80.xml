@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Tandy's TRS-80 of 1977, sold in Radio Shack stores, one of the first mass-market personal computers.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O TRS-80 da Tandy de 1977, vendido nas lojas Radio Shack, um dos primeiros computadores pessoais de massa.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Tandy's TRS-80 of 1977, sold in Radio Shack stores, one of the first mass-market personal computers.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El TRS-80 de Tandy de 1977, vendido en las tiendas Radio Shack, uno de los primeros ordenadores personales de gran consumo.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le TRS-80 de Tandy sorti en 1977, vendu dans les magasins Radio Shack, l'un des premiers ordinateurs personnels grand public.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Tandys TRS-80 von 1977, in Radio-Shack-Läden verkauft, einer der ersten Personal Computer für den Massenmarkt.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>TRS-80</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1977</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Tandy Radio Shack</text>
+		</text>
+	</view>
+</theme>

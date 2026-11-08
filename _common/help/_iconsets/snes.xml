@@ -1,6 +1,5 @@
 <theme>
 	<formatVersion>4</formatVersion>
-	
 	<view name="menu, system, detailed, gamecarousel, grid">
 		<helpsystem name="help">
 			<iconColor>FFFFFFFF</iconColor>
@@ -15,7 +14,6 @@
 			<iconR>./snes/r.png</iconR>
 			<iconStart>./snes/start.png</iconStart>
 			<iconSelect>./snes/select.png</iconSelect>
-		</helpsystem>		
+		</helpsystem>
 	</view>
-	
 </theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sharp's 1984 MZ-800, a successor to the MZ-700 with improved graphics, popular in Central Europe.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O MZ-800 da Sharp de 1984, sucessor do MZ-700 com gráficos melhorados, popular na Europa Central.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sharp's 1984 MZ-800, a successor to the MZ-700 with improved graphics, popular in Central Europe.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El MZ-800 de Sharp de 1984, sucesor del MZ-700 con gráficos mejorados, popular en Europa central.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le MZ-800 de Sharp sorti en 1984, successeur du MZ-700 aux graphismes améliorés, populaire en Europe centrale.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sharps MZ-800 von 1984, Nachfolger des MZ-700 mit verbesserter Grafik, beliebt in Mitteleuropa.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>MZ-800</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1984</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sharp</text>
+		</text>
+	</view>
+</theme>

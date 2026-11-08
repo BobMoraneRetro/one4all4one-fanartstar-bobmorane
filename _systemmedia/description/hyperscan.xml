@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Mattel's 2006 console that combined games with RFID trading cards scanned to unlock characters; it was quickly discontinued.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console da Mattel de 2006 que combinava jogos com cartas colecionáveis RFID lidas para liberar personagens; foi logo descontinuado.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Mattel's 2006 console that combined games with RFID trading cards scanned to unlock characters; it was quickly discontinued.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola de Mattel de 2006 que combinaba juegos con cartas coleccionables RFID escaneadas para desbloquear personajes; se retiró pronto.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console de Mattel sortie en 2006, qui associait les jeux à des cartes à collectionner RFID scannées pour débloquer des personnages ; vite arrêtée.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Mattels Konsole von 2006, die Spiele mit RFID-Sammelkarten zum Freischalten von Figuren kombinierte; sie wurde schnell eingestellt.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>HyperScan</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2006</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Mattel</text>
+		</text>
+	</view>
+</theme>

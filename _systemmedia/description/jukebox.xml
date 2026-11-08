@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Music player: listen to your music collection directly from the frontend.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Reprodutor de música: ouça sua coleção de músicas direto da interface.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Music player: listen to your music collection directly from the frontend.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Reproductor de música: escucha tu colección musical directamente desde la interfaz.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Lecteur de musique : écoutez votre collection de musique directement depuis l'interface.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Musikplayer: Höre deine Musiksammlung direkt über die Oberfläche.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Jukebox</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Media</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="oc">
+		<packcustombuildsno>Fanart amb sufixe "-fanart" (per defaut)</packcustombuildsno>
+		<packretrofreshbat>Fanart amb sufixe "-image"</packretrofreshbat>
+		<scrapedboxart>Bóstia 3D amb "-boxart" dins la gamelist</scrapedboxart>
+		<scrapedthumbnail>Bóstia 3D amb "-thumbnail" dins la gamelist</scrapedthumbnail>
+		<gamemedianon>Non : sonque los mèdias de la gamelist</gamemedianon>
+		<gamemediaoui>Òc : mèdias personals d'en primièr, siquenon la gamelist</gamemediaoui>
+		<gamemediaseul>Sonque : mèdias personals sonque (sens recors a la gamelist)</gamemediaseul>
+		<intheme>Dorsièr del tèma - Per defaut</intheme>
+		<extfolder>Dorsièr extèrne</extfolder>
+		<opt_custombuilds>AVANÇAT - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>AVANÇAT - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>AVANÇAT - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>AVANÇAT - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Pro Pinball: Timeshock!, a realistic pinball simulation from the Pro Pinball series by Cunning Developments.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Pro Pinball: Timeshock!, simulação de pinball realista da série Pro Pinball da Cunning Developments.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Pro Pinball: Timeshock!, a realistic pinball simulation from the Pro Pinball series by Cunning Developments.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Pro Pinball: Timeshock!, simulación de pinball realista de la serie Pro Pinball de Cunning Developments.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Pro Pinball : Timeshock!, simulation de flipper réaliste de la série Pro Pinball de Cunning Developments.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Pro Pinball: Timeshock!, eine realistische Flippersimulation aus der Pro-Pinball-Reihe von Cunning Developments.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pro Pinball: Timeshock!</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1997</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Cunning Developments</text>
+		</text>
+	</view>
+</theme>

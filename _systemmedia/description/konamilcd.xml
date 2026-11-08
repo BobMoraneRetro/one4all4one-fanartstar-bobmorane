@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Konami's LCD handheld games of the late 1980s and early 1990s, simplified versions of its arcade and console hits.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos portáteis LCD da Konami do fim dos anos 80 e início dos 90, versões simplificadas dos seus sucessos de arcade e console.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Konami's LCD handheld games of the late 1980s and early 1990s, simplified versions of its arcade and console hits.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos portátiles LCD de Konami de finales de los 80 y principios de los 90, versiones simplificadas de sus éxitos de arcade y consola.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux portables LCD de Konami de la fin des années 1980 et du début des années 1990, versions simplifiées de ses succès d'arcade et de console.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Konamis LCD-Handheldspiele der späten 1980er und frühen 1990er, vereinfachte Fassungen seiner Arcade- und Konsolenhits.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Konami LCD</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1989</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Konami</text>
+		</text>
+	</view>
+</theme>

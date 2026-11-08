@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Plex media server: browse and watch your films, series and music from the frontend.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Servidor de mídia Plex: navegue e assista seus filmes, séries e músicas pela interface.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Plex media server: browse and watch your films, series and music from the frontend.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Servidor multimedia Plex: explora y reproduce tus películas, series y música desde la interfaz.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Serveur multimédia Plex : parcourez et regardez vos films, séries et musiques depuis l'interface.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Plex-Medienserver: Durchsuche und sieh deine Filme, Serien und Musik direkt über die Oberfläche.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Plex</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2002</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Plex</text>
+		</text>
+	</view>
+</theme>

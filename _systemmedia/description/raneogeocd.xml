@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>NeoGeo CD games with RetroAchievements support: unlock achievements and climb the leaderboards while you play.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de NeoGeo CD compatíveis com RetroAchievements: desbloqueie conquistas e suba nos rankings enquanto joga.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>NeoGeo CD games with RetroAchievements support: unlock achievements and climb the leaderboards while you play.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de NeoGeo CD compatibles con RetroAchievements: desbloquea logros y sube en las clasificaciones mientras juegas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux NeoGeo CD compatibles RetroAchievements : débloquez des succès et grimpez dans les classements en jouant.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>NeoGeo CD-Spiele mit RetroAchievements-Unterstützung: Schalte Erfolge frei und steige in den Bestenlisten auf.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>RA NeoGeo CD</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>RetroAchievements</text>
+		</text>
+	</view>
+</theme>

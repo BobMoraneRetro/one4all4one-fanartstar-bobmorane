@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's RingEdge arcade board of 2009, a PC-based system used for Initial D, Border Break and music games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>A placa de arcade RingEdge da Sega de 2009, sistema baseado em PC usado em Initial D, Border Break e jogos musicais.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's RingEdge arcade board of 2009, a PC-based system used for Initial D, Border Break and music games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La placa arcade RingEdge de Sega de 2009, sistema basado en PC usado para Initial D, Border Break y juegos musicales.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La carte arcade RingEdge de Sega sortie en 2009, système sur base PC utilisé pour Initial D, Border Break et des jeux musicaux.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas Arcade-Platine RingEdge von 2009, ein PC-basiertes System für Initial D, Border Break und Musikspiele.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>RingEdge</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2009</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

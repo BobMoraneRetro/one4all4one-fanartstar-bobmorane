@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Hitachi's Japanese home computer of 1980, built around a Motorola 6809 processor.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico japonês da Hitachi de 1980, baseado em um processador Motorola 6809.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Hitachi's Japanese home computer of 1980, built around a Motorola 6809 processor.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico japonés de Hitachi de 1980, basado en un procesador Motorola 6809.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial japonais d'Hitachi sorti en 1980, construit autour d'un processeur Motorola 6809.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Japanischer Heimcomputer von Hitachi aus dem Jahr 1980 mit Motorola-6809-Prozessor.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Basic Master Level 3</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1980</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Hitachi</text>
+		</text>
+	</view>
+</theme>

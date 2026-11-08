@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	Libellés traduits (_common/_langs/<langue>.xml) : ${nomjeucomplet}, ${nomjeucourt}, ${opt_nomjeu}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<subset name="nomjeu" displayName="${opt_nomjeu}" appliesTo="presetstarbox,presetstarboxloop,presetdeck,presetsalon,presetspotlight,presetsquare,presetstar169,presetstar43,presetshowbig,presetshowsmall,presetspeedbull,presettraviolta_alt,presettestcoverflowboitiergrid,presettestcoverflow3dboitiergrid,presettestcoverflowsalongrid">
+		<include name="complet" displayName="${nomjeucomplet}"/>
+		<include name="court" displayName="${nomjeucourt}"/>
+	</subset>
+	<variables>
+		<titrejeu>{game:name}</titrejeu>
+		<titrejeu ifSubset="nomjeu:court">{game:nameShort}</titrejeu>
+		<titrejeu ifSubset="nomjeu:complet">{game:name}</titrejeu>
+		<titrejeulangue>{game:name} ( {game:lang} )</titrejeulangue>
+		<titrejeulangue ifSubset="nomjeu:court">{game:nameShort}</titrejeulangue>
+		<titrejeulangue ifSubset="nomjeu:complet">{game:name} ( {game:lang} )</titrejeulangue>
+	</variables>
+</theme>

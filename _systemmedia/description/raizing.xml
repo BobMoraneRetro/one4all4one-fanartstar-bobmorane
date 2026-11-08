@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Raizing (Eighting), the Japanese developer of the shoot'em ups Battle Garegga, Mahou Daisakusen and Armed Police Batrider.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Raizing (Eighting), desenvolvedora japonesa dos shoot'em ups Battle Garegga, Mahou Daisakusen e Armed Police Batrider.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Raizing (Eighting), the Japanese developer of the shoot'em ups Battle Garegga, Mahou Daisakusen and Armed Police Batrider.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Raizing (Eighting), desarrollador japonés de los shoot'em ups Battle Garegga, Mahou Daisakusen y Armed Police Batrider.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade de Raizing (Eighting), développeur japonais des shoot'em up Battle Garegga, Mahou Daisakusen et Armed Police Batrider.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Raizing (Eighting), dem japanischen Entwickler der Shoot'em ups Battle Garegga, Mahou Daisakusen und Armed Police Batrider.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Raizing</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Raizing / 8ing</text>
+		</text>
+	</view>
+</theme>

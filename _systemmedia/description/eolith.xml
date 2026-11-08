@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Eolith, a South Korean company of the late 1990s and 2000s, also known for publishing late Neo Geo titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Eolith, empresa sul-coreana do fim dos anos 90 e dos anos 2000, conhecida também por publicar jogos tardios de Neo Geo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Eolith, a South Korean company of the late 1990s and 2000s, also known for publishing late Neo Geo titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Eolith, empresa surcoreana de finales de los 90 y los 2000, conocida también por publicar juegos tardíos de Neo Geo.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade d'Eolith, société sud-coréenne de la fin des années 1990 et des années 2000, connue aussi pour avoir édité des jeux Neo Geo tardifs.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Eolith, einer südkoreanischen Firma der späten 1990er und 2000er, auch als Herausgeber später Neo-Geo-Titel bekannt.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Eolith</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Eolith</text>
+		</text>
+	</view>
+</theme>

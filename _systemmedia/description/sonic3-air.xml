@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sonic 3 Angel Island Revisited, a widescreen remaster of Sonic 3 &amp; Knuckles made by fans, with many options and mods.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Sonic 3 Angel Island Revisited, remasterização em tela larga de Sonic 3 &amp; Knuckles feita por fãs, com muitas opções e mods.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sonic 3 Angel Island Revisited, a widescreen remaster of Sonic 3 &amp; Knuckles made by fans, with many options and mods.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Sonic 3 Angel Island Revisited, remasterización panorámica de Sonic 3 &amp; Knuckles hecha por fans, con muchas opciones y mods.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Sonic 3 Angel Island Revisited, remaster en écran large de Sonic 3 &amp; Knuckles créé par des fans, avec de nombreuses options et mods.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sonic 3 Angel Island Revisited, ein Breitbild-Remaster von Sonic 3 &amp; Knuckles von Fans, mit vielen Optionen und Mods.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Sonic 3 A.I.R.</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

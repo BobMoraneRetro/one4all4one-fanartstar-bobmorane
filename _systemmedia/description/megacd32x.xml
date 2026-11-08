@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Games that used both the Mega-CD and the 32X add-ons at once on the Mega Drive, a rare combination known as the Sega CD 32X.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos que usavam ao mesmo tempo o Mega-CD e o 32X no Mega Drive, uma combinação rara.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Games that used both the Mega-CD and the 32X add-ons at once on the Mega Drive, a rare combination known as the Sega CD 32X.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos que usaban a la vez el Mega-CD y el 32X en la Mega Drive, una combinación poco común.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux utilisant à la fois le Mega-CD et le 32X sur la Mega Drive, une combinaison rare.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Spiele, die gleichzeitig Mega-CD und 32X am Mega Drive nutzten, eine seltene Kombination.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Mega-CD 32X</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1994</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

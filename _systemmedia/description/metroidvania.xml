@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Metroidvania games: exploration of interconnected worlds unlocked by new abilities, in the tradition of Metroid and Castlevania.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos Metroidvania: exploração de mundos interligados liberados com novas habilidades, na tradição de Metroid e Castlevania.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Metroidvania games: exploration of interconnected worlds unlocked by new abilities, in the tradition of Metroid and Castlevania.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos Metroidvania: exploración de mundos interconectados que se abren con nuevas habilidades, en la tradición de Metroid y Castlevania.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux Metroidvania : exploration de mondes interconnectés débloqués grâce à de nouvelles capacités, dans la lignée de Metroid et Castlevania.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Metroidvania-Spiele: Erkundung verbundener Welten, die sich durch neue Fähigkeiten öffnen, in der Tradition von Metroid und Castlevania.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Metroidvania</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2024</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

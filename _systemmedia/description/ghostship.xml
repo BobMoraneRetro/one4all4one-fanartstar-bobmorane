@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Native PC port of Super Mario 64 built from its decompiled code, with high resolutions, frame rates and mod support.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Port nativo para PC de Super Mario 64 construído a partir do código decompilado, com alta resolução, alta taxa de quadros e suporte a mods.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Native PC port of Super Mario 64 built from its decompiled code, with high resolutions, frame rates and mod support.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Port nativo para PC de Super Mario 64 construido a partir de su código descompilado, con alta resolución, alta tasa de imágenes y mods.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Portage PC natif de Super Mario 64 construit à partir de son code décompilé, avec hautes résolutions, fréquence d'images élevée et prise en charge des mods.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Nativer PC-Port von Super Mario 64 aus dem dekompilierten Code, mit hohen Auflösungen, Bildraten und Mod-Unterstützung.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Ghost Ship</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2024</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

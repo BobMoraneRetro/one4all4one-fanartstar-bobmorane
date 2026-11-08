@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Xbox Live Arcade games on Xbox 360, home to independent hits such as Braid, Limbo and Castle Crashers.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos Xbox Live Arcade no Xbox 360, lar de sucessos independentes como Braid, Limbo e Castle Crashers.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Xbox Live Arcade games on Xbox 360, home to independent hits such as Braid, Limbo and Castle Crashers.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de Xbox Live Arcade en Xbox 360, hogar de éxitos independientes como Braid, Limbo y Castle Crashers.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux Xbox Live Arcade sur Xbox 360, qui ont accueilli des succès indépendants comme Braid, Limbo et Castle Crashers.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Xbox-Live-Arcade-Spiele auf der Xbox 360, Heimat von Indie-Hits wie Braid, Limbo und Castle Crashers.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Xbox 360 XBLA</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2005</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Microsoft</text>
+		</text>
+	</view>
+</theme>

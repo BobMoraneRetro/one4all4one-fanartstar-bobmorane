@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>DuskLight, a modern independent game distributed as a native PC port.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>DuskLight, jogo independente moderno distribuído como port nativo para PC.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>DuskLight, a modern independent game distributed as a native PC port.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>DuskLight, juego independiente moderno distribuido como port nativo para PC.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>DuskLight, jeu indépendant moderne distribué en portage PC natif.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>DuskLight, ein modernes unabhängiges Spiel, vertrieben als nativer PC-Port.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>DuskLight</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2025</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

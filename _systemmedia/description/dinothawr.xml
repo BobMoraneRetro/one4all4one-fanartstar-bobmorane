@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Dinothawr, a free puzzle game in which a dinosaur pushes blocks of ice to free its frozen friends, created for libretro.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Dinothawr, jogo de quebra-cabeça gratuito em que um dinossauro empurra blocos de gelo para libertar seus amigos congelados, criado para o libretro.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Dinothawr, a free puzzle game in which a dinosaur pushes blocks of ice to free its frozen friends, created for libretro.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Dinothawr, juego de puzles gratuito en el que un dinosaurio empuja bloques de hielo para liberar a sus amigos congelados, creado para libretro.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Dinothawr, jeu de réflexion gratuit où un dinosaure pousse des blocs de glace pour libérer ses amis gelés, créé pour libretro.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Dinothawr, ein kostenloses Rätselspiel, in dem ein Dinosaurier Eisblöcke schiebt, um seine eingefrorenen Freunde zu befreien, entwickelt für libretro.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Dinothawr</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2013</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Themaister / Agnes Heyer</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Amstrad's PCW word processor computer of 1985, a huge success in offices and homes, which also had games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O computador de processamento de texto PCW da Amstrad de 1985, enorme sucesso em escritórios e lares, que também tinha jogos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Amstrad's PCW word processor computer of 1985, a huge success in offices and homes, which also had games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El ordenador de procesamiento de texto PCW de Amstrad de 1985, un gran éxito en oficinas y hogares, que también tenía juegos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>L'ordinateur de traitement de texte PCW d'Amstrad sorti en 1985, énorme succès dans les bureaux et les foyers, qui avait aussi des jeux.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Amstrads Textverarbeitungscomputer PCW von 1985, ein großer Erfolg in Büros und Haushalten, der auch Spiele hatte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Amstrad PCW</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1985</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Amstrad</text>
+		</text>
+	</view>
+</theme>

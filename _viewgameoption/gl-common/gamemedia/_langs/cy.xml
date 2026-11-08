@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="cy">
+		<packcustombuildsno>Fanart gyda'r ôl-ddodiad "-fanart" (rhagosodedig)</packcustombuildsno>
+		<packretrofreshbat>Fanart gyda'r ôl-ddodiad "-image"</packretrofreshbat>
+		<scrapedboxart>Bocs 3D gyda "-boxart" yn y gamelist</scrapedboxart>
+		<scrapedthumbnail>Bocs 3D gyda "-thumbnail" yn y gamelist</scrapedthumbnail>
+		<gamemedianon>Na: cyfryngau'r gamelist yn unig</gamemedianon>
+		<gamemediaoui>Ie: cyfryngau personol yn gyntaf, fel arall y gamelist</gamemediaoui>
+		<gamemediaseul>Yn unig: cyfryngau personol yn unig (heb droi at y gamelist)</gamemediaseul>
+		<intheme>Ffolder y thema - Rhagosodedig</intheme>
+		<extfolder>Ffolder allanol</extfolder>
+		<opt_custombuilds>UWCH - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>UWCH - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>UWCH - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>UWCH - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

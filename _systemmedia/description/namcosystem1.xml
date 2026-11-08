@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Namco System 1, the 8-bit arcade board of the late 1980s, home to Pac-Mania, Splatterhouse and Galaga '88.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Namco System 1, placa de arcade de 8 bits do fim dos anos 80, com Pac-Mania, Splatterhouse e Galaga '88.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Namco System 1, the 8-bit arcade board of the late 1980s, home to Pac-Mania, Splatterhouse and Galaga '88.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Namco System 1, placa arcade de 8 bits de finales de los 80, con Pac-Mania, Splatterhouse y Galaga '88.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Namco System 1, carte arcade 8 bits de la fin des années 1980, qui a accueilli Pac-Mania, Splatterhouse et Galaga '88.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Namco System 1, die 8-Bit-Arcade-Platine der späten 1980er, Heimat von Pac-Mania, Splatterhouse und Galaga '88.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>System 1</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1987</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Namco</text>
+		</text>
+	</view>
+</theme>

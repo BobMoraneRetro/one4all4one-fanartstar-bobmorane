@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Pong and its descendants: the table tennis game that launched the video game industry in 1972, here as a native port.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Pong e seus descendentes: o jogo de tênis de mesa que iniciou a indústria dos videogames em 1972, aqui como port nativo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Pong and its descendants: the table tennis game that launched the video game industry in 1972, here as a native port.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Pong y sus descendientes: el juego de tenis de mesa que inició la industria del videojuego en 1972, aquí como port nativo.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Pong et ses descendants : le jeu de tennis de table qui a lancé l'industrie du jeu vidéo en 1972, ici en portage natif.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Pong und seine Nachfahren: das Tischtennisspiel, das 1972 die Videospielindustrie begründete, hier als nativer Port.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pong</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1972</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

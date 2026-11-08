@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PC games from the Epic Games Store, launched through the Epic Games launcher.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de PC da Epic Games Store, iniciados pelo inicializador da Epic Games.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PC games from the Epic Games Store, launched through the Epic Games launcher.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de PC de la Epic Games Store, lanzados desde el lanzador de Epic Games.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux PC de l'Epic Games Store, lancés via le lanceur Epic Games.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PC-Spiele aus dem Epic Games Store, gestartet über den Epic-Games-Launcher.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Epic Games</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2018</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Epic Games</text>
+		</text>
+	</view>
+</theme>

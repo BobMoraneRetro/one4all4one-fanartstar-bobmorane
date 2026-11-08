@@ -1,8 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<variables lang="en">
-
+		<desactive>Disabled</desactive>
+		<default>Default</default>
+		<active>Enabled</active>
+		<novideo>Disabled</novideo>
+		<videoback>Enabled</videoback>
+		<intheme>Theme folder - Default</intheme>
+		<extfolder>External folder</extfolder>
 		<nodates>No date</nodates>
 		<playcountone>play</playcountone>
 		<playcount>plays</playcount>
@@ -12,6 +18,10 @@
 		<nogametime>Never played</nogametime>
 		<noplayerdata>Unknown</noplayerdata>
 		<noratings>No rating</noratings>
+		<notesur100>of 100</notesur100>
+		<opt_nomjeu>GAMES - Game name</opt_nomjeu>
+		<nomjeucomplet>Full</nomjeucomplet>
+		<nomjeucourt>Without parentheses</nomjeucourt>
 		<presgame1>This is a game of type</presgame1>
 		<presgame2>developed by</presgame2>
 		<presgame3>playable on</presgame3>
@@ -22,87 +32,23 @@
 		<langlabel>Languages :</langlabel>
 		<gametimelabel>Play time :</gametimelabel>
 		<lastgamelabel>Last played :</lastgamelabel>
-		<!-- ####### LOGOS ###### -->
-		<logosimple>Simple logo (Full + Region)</logosimple>
-		<!-- ###################### -->
+		<viewbasicgrid>Basic : Simple grid view</viewbasicgrid>
+		<jeux>games</jeux>
+		<longselect>Long press on "select"</longselect>
+		<favuniquement>Favorites only</favuniquement>
+		<tslesjeux>All games</tslesjeux>
+		<fanartstarsyst>Classic</fanartstarsyst>
+		<fanartmodern>Modern 1 (breadcrumb incompatible)</fanartmodern>
+		<fanartmodern2>Modern 2 (breadcrumb compatible)</fanartmodern2>
 		<fanartfreshone>Fanarts selected by FreshOne only</fanartfreshone>
 		<fanartsystcustom>Fanarts from custom folder, otherwise FreshOne</fanartsystcustom>
-		<!-- ###################### -->
-		<yes>Yes</yes>
-		<no>No</no>
-		<rien>No</rien>
-		<desactive>Disabled</desactive>
-		<!-- system view list -->
-		<systlist>System list view</systlist>
-		<viewbasicgrid>Basic : Simple grid view</viewbasicgrid>
-		<viewchoicecoinops>Customisable : RFE coinops</viewchoicecoinops>
-		<viewchoice.hyperbat>Customisable : HS Hyperbat</viewchoice.hyperbat>
-		<presetsquare>FanartStar square</presetsquare>
-		<presetstar169>FanartStar 16/9</presetstar169>
-		<presetstar43>FanartStar 4/3</presetstar43>
-		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetspeedbull>Simple : RFE speedbull</presetspeedbull>
-		<presettraviolta_alt>Simple : RFE traviolta</presettraviolta_alt>
-		<presetshowbig>Simple : RFE Show Big preview</presetshowbig>
-		<presetshowsmall>Simple : RFE Show Small preview</presetshowsmall>
-		<!-- Fanart suffix -->
-		<packcustombuild>SCRAP - Fanart structure?</packcustombuild>
-		<packcustombuildsno>Fanart with "-fanart" suffix (default)</packcustombuildsno>
-		<packretrofreshbat>Fanart with "-image" suffix</packretrofreshbat>
-		<!-- help management -->
-		<iconset>Help - Help icon appearance</iconset>
-		<colorhelp>Help - Help text colors</colorhelp>
-		<systviewvideo>System view - Animated system presentation</systviewvideo>
-		<systviewfanart>System view - System fanart selection</systviewfanart>
-		<systviewtotal>System view - Show number of games</systviewtotal>
-		<!-- ############ -->
-		<!-- official category menu display -->
-		<menuofficiel>Show breadcrumb navigation</menuofficiel>
-		<menutxt>Official hardware sort: horizontal text</menutxt>
-		<menuorb>Official hardware sort: horizontal orb</menuorb>
-		<menuorbvert>Official hardware sort: vertical orb</menuorbvert>
-		<menuorbcrcl>Official hardware sort: half-circle orb</menuorbcrcl>
-		<menucust>Bob custom hardware sort: horizontal text</menucust>
-		<menucustorb>Bob custom hardware sort: horizontal orb</menucustorb>
-		<menucustorbvert>Bob custom hardware sort: vertical orb</menucustorbvert>
-		<menucustorbcrcl>Bob custom hardware sort: half-circle orb</menucustorbcrcl>
-		<menutxtzspin>Official hardware sort: vertical text</menutxtzspin>
-		<menutxtzspincust>Bob custom hardware sort: vertical text</menutxtzspincust>
-		<!-- Max info console -->
-		<infosmax>Show max info console?</infosmax>
-		<!-- Brief display on system startup -->
-		<systannounce>Show current system on startup</systannounce>
-		<classiquesyst>Zoom-out disappearance</classiquesyst>
-		<default>Set by theme</default>
-		<speedslow2>Slow++</speedslow2>
-		<speedslow1>Slow+</speedslow1>
-		<default>Default</default>
-		<spacerstar>-----------------------------    ↓ Start of advanced options specific to Fanart Star views ↓   -------------------</spacerstar>
-		<mediastar>-------------------------- Recommended media for Fanart Star game view = Video, Marquee, Thumbnail ---------------</mediastar>
-		<fanarstargridcolor>Grid color</fanarstargridcolor>
-		<starvideo>Preview video size</starvideo>
-		<starvideobig>Large</starvideobig>
-		<starvideodef>Standard</starvideodef>
-		<starvideoang>Angled</starvideoang>
-		<starthumb>Display 2D or 3D covers?</starthumb>
-		<starbox2d>Thumbnail</starbox2d>
-		<starbox3d>Boxart</starbox3d>
-		<starboxang>Game box angle</starboxang>
-		<active>Enabled</active>
-		<deactive>Disabled</deactive>
-		<customfanart>Choose fanarts to use</customfanart>
-		<fanartgamelist>Scraped fanart in the Gamelist</fanartgamelist>
-		<fanartcustom>Custom fanart in _Gamemedia-SystemName-medium_artwork</fanartcustom>
-		<!-- Welcome message -->
-		<lismoi>Welcome message</lismoi>
-		<tumasbienlu>Home and Credits</tumasbienlu>
-		<hyperspin>ADDON : Unified Hyperspin-style image and gameplay</hyperspin>
-		<gameplayp1>Small random gameplay video with bezel if available</gameplayp1>
-		<gameplay1>Large random gameplay video with bezel if available</gameplay1>
-		<gameplayp>Small random gameplay video</gameplayp>
-		<gameplay>Large random gameplay video</gameplay>
-		<custom>Custom video from custom folder</custom>
-		<default>Default</default>
+		<videoangled>Enabled (small angled)</videoangled>
+		<hardware>Hardware</hardware>
+		<charsystem>Characters</charsystem>
+		<figurines>Figurines (Animatics theme must be installed)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>Button position</iconsetposition>
 		<skyblue>sky blue</skyblue>
 		<purple>purple</purple>
 		<red>red</red>
@@ -120,55 +66,251 @@
 		<yellowalt>yellow alt</yellowalt>
 		<greenalt>green alt</greenalt>
 		<purplealt>purple alt</purplealt>
-		<iconsetposition>Button position</iconsetposition>
-		<!-- FanartStar specific spacer -->
-		<spacerstar>--------- Recommended media for Fanart Star game view = Fanart, Video, Marquee, Thumbnail, Boxart ---------------</spacerstar>
-		<mediastar>-----------------------------    ↓ Start of advanced options specific to FanartStar boxart view ↓   -------------------</mediastar>
-		<mediastar2>-------------------------    ↓ Start of advanced options specific to FanartStar 16/9 and 4/3 view ↓   -------------------</mediastar2>
-		<mediastar3>----------------------------    ↓ Start of advanced options specific to FanartStar Square view ↓   -------------------</mediastar3>
-		<!-- fanartstar square -->
-		<squarecadre>Style of squares representing games</squarecadre>
+		<classiquesyst>Zoom-out disappearance</classiquesyst>
+		<no>No</no>
+		<yes>Yes</yes>
+		<thumb>Calibrated for 2D box</thumb>
+		<boxart>Calibrated for 3D box</boxart>
+		<starrotate>Yes</starrotate>
+		<nostarrotate>No</nostarrotate>
+		<deactive>Disabled</deactive>
+		<speedslow1>Slow+</speedslow1>
+		<speedslow2>Slow++</speedslow2>
+		<starvideoang>Angled</starvideoang>
+		<starvideodef>Standard</starvideodef>
+		<starvideobig>Large</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Nice grey</griscl>
 		<noirombre>Black frame + shadow</noirombre>
 		<blancombre>White frame + shadow</blancombre>
 		<ombre>Shadow only</ombre>
 		<rien>No decoration</rien>
-		<!-- fanartstarsystem -->
-		<fanartstarsyst>Classic</fanartstarsyst>
-		<fanartmodern>Modern 1 (breadcrumb incompatible)</fanartmodern>
-		<fanartmodern2>Modern 2 (breadcrumb compatible)</fanartmodern2>
-		<video4starmodern>Gameplay video on system view</video4starmodern>
-		<video4starclassic>Gameplay video on system view</video4starclassic>
-		<novideo>Disabled</novideo>
-		<videoback>Enabled</videoback>
-		<videoangled>Enabled (small angled)</videoangled>
-		<systviewselec>System image in the wheel</systviewselec>
-		<hardware>Hardware</hardware>
-		<charsystem>Characters</charsystem>
-		<figurines>Figurines (Animatics theme must be installed)</figurines>
-		<!-- fanartstar boxart -->
-		<spacebox>Space between game boxes</spacebox>
-		<spacessssmall>Space ----</spacessssmall>
-		<spacesssmall>Space ---</spacesssmall>
-		<spacessmall>Space --</spacessmall>
-		<spacesmall>Space -</spacesmall>
-		<spacenorm>Default</spacenorm>
-		<spacemore>Space +</spacemore>
-		<spacemmore>Space ++</spacemmore>
-		<spacemmmore>Space +++</spacemmmore>
-		<spacemmmmore>Space ++++</spacemmmmore>
-		<boxstarspeed>Scroll animation speed</boxstarspeed>
-		<fanartstarrotated>Rotation of SNES, N64, NGAGE, Solarus boxes</fanartstarrotated>
-		<starrotate>Yes</starrotate>
-		<nostarrotate>No</nostarrotate>
-		<jeux>games</jeux>
-		<longselect>Long press on "select"</longselect>
-		<favuniquement>Favorites only</favuniquement>
-		<tslesjeux>All games</tslesjeux>
-		<breadcrumbsonoff>Left vertical menu (classic system view)</breadcrumbsonoff>
-		<metadataonoff>System information (classic system view)</metadataonoff>
-		<!-- ######## VARIABLES NON UTILISÃ‰ES (commentÃ©es) ######## -->
-		<!-- Total: 1 variables -->
-		<!-- <vide>   </vide> -->
-	
-</variables>
+		<presetshowbig>RFE Show Big preview</presetshowbig>
+		<presetshowsmall>RFE Show Small preview</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar square</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (Faster navigation)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Under the large panel (like Steam)</deckgauche>
+		<deckcentre>Centre of the row (zoom + glow)</deckcentre>
+		<decknormal>Normal</decknormal>
+		<spotvideodroite>Right, over the boxes</spotvideodroite>
+		<spotvideoaucune>Disabled</spotvideoaucune>
+		<spotvideogauche>Left, with the info</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Keep the logo</decklogogarder>
+		<decklogobandeau>Info banner (logo hidden)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Back to previous folder</retourdossier>
+		<ra_moncompte>My account</ra_moncompte>
+		<ra_succesjeu>Game achievements</ra_succesjeu>
+		<opt_raaffichage>GAMES - RetroAchievements (external tool)</opt_raaffichage>
+		<raaffichagepermanent>Always visible</raaffichagepermanent>
+		<raaffichagetemporaire>A few seconds</raaffichagetemporaire>
+		<noteetoile>Star</noteetoile>
+		<notecoeur>Heart</notecoeur>
+		<notemanette>Gamepad</notemanette>
+		<notepouce>Thumbs up</notepouce>
+		<notetrophee>Trophy</notetrophee>
+		<notefantome>Ghost</notefantome>
+		<notecrane>Skull</notecrane>
+		<notepourcent>As %</notepourcent>
+		<wheelclic>Hyperspin-style click</wheelclic>
+		<bulle>Bubble</bulle>
+		<clic>Simple click</clic>
+		<clicgrave>Deep click</clicgrave>
+		<frottement>Rubbing</frottement>
+		<poc>Pop</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>GENERAL - Welcome message</opt_lismoi>
+		<opt_iconset>GENERAL - Help icon appearance</opt_iconset>
+		<opt_colorhelp>GENERAL - Help text colors</opt_colorhelp>
+		<opt_horlogecouleur>GENERAL - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>GENERAL - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>SYSTEMS - System list view</opt_systemview>
+		<opt_imagefondcops1>SYSTEMS - System fanart selection</opt_imagefondcops1>
+		<opt_video4starmodern>SYSTEMS - Gameplay video on system view</opt_video4starmodern>
+		<opt_video4starclassic>SYSTEMS - Gameplay video on system view</opt_video4starclassic>
+		<opt_systviewselec>SYSTEMS - System image in the wheel</opt_systviewselec>
+		<opt_breadcrumbsonoff>SYSTEMS - Left vertical menu (classic system view)</opt_breadcrumbsonoff>
+		<arianeauto>Automatic (follows the system sort)</arianeauto>
+		<arianecategories>Categories (sort by hardware type)</arianecategories>
+		<arianealpha>Letters A to Z (alphabetical sort)</arianealpha>
+		<arianealphavoisines>Letter and its neighbours (alphabetical sort)</arianealphavoisines>
+		<arianeconstructeur>Manufacturers (sort by manufacturer)</arianeconstructeur>
+		<arianedecennie>Decades (sort by release year)</arianedecennie>
+		<arianeautres>OTHERS</arianeautres>
+		<opt_metadataonoff>SYSTEMS - System info: shown (classic view)</opt_metadataonoff>
+		<opt_systannonce>GAMES - Show current system on startup</opt_systannonce>
+		<opt_infosmax>GAMES - Show max info console?</opt_infosmax>
+		<opt_gamewheelsound>GENERAL - Scrolling sound</opt_gamewheelsound>
+		<opt_boxorthumb>GAMES - Game box to display</opt_boxorthumb>
+		<opt_fanarttransition>GAMES - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>GAMES - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>GAMES - Disc rotation</opt_cdvitesse>
+		<cdnormale>Normal</cdnormale>
+		<cdlente>Slow</cdlente>
+		<cdrapide>Fast</cdrapide>
+		<cdtresrapide>Very fast</cdtresrapide>
+		<cdimmobile>Still</cdimmobile>
+		<opt_umdrotation>GAMES - UMD rotation (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>GAMES - Highlight the selected game</opt_selectionvaleur>
+		<selegere>Light</selegere>
+		<selmarquee>Strong</selmarquee>
+		<opt_videojeu>GAMES - Game video</opt_videojeu>
+		<vjcapture>Screenshot then video</vjcapture>
+		<vjseule>Video only</vjseule>
+		<vjfondu>Video with fade-in</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>GAMES - Box case type</opt_typeboite>
+		<opt_contourboite>GAMES - Box outline (case)</opt_contourboite>
+		<opt_deckespace>GAMES - Box spacing</opt_deckespace>
+		<opt_iconenote>GAMES - Rating icon</opt_iconenote>
+		<opt_extfolderbezelsyst>ADVANCED - Location of system bezels</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>ADVANCED - Location of publisher logos</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>ADVANCED - Location of system fanarts</opt_extfolderfanart>
+		<opt_extfolderlogosyst>ADVANCED - Location of system logos</opt_extfolderlogosyst>
+		<opt_extfoldersalon>ADVANCED - Location of RFE Retrofist Nostalgia view backgrounds</opt_extfoldersalon>
+		<opt_perfmachine>ADVANCED - Low-end machine mode</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - Background vignette</opt_salonvignette>
+		<vignleger>Light</vignleger>
+		<vignfort>Strong</vignfort>
+		<opt_deckselection>BIG ART - Selected game position</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Logo during video</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - Rotation of SNES, N64, NGAGE, Solarus boxes</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - Game box angle</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Game medium (disc, cartridge)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Scroll animation speed</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Preview video size</opt_starvideo>
+		<opt_starvideocadre>BOXART - Preview video frame</opt_starvideocadre>
+		<vcadreactuel>Current frame</vcadreactuel>
+		<vcadreombre>Shadow only</vcadreombre>
+		<vcadreecranfin>Thin bezel</vcadreecranfin>
+		<vcadrebois>Wood</vcadrebois>
+		<vcadremetal>Brushed metal</vcadremetal>
+		<vcadrelumineux>Glowing screen</vcadrelumineux>
+		<vcadretv>CRT TV</vcadretv>
+		<vcadregalerie>Gallery</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Frosted glass</vcadreverre>
+		<vcadrecarbone>Carbon LED</vcadrecarbone>
+		<vcadreneondouble>Double neon</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Brush strokes</vcadrepinceau>
+		<vcadretechnodore>Gold tech</vcadretechnodore>
+		<vcadretechnoargent>Silver tech</vcadretechnoargent>
+		<vcadreneonelec>Electric neon</vcadreneonelec>
+		<vcadrevitre>Glass pane</vcadrevitre>
+		<vcadreflammes>Flames</vcadreflammes>
+		<vcadreencre>Ink</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Sides of the flipping box</opt_boite3dtranche>
+		<b3tcharniere>Logo on one side, opening on the other</b3tcharniere>
+		<b3tdeuxcotes>Logo on both sides</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - Grid color</opt_gridcolor>
+		<opt_squarecadre>SQUARE - Style of squares representing games</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>SYSTEMS - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>SYSTEMS - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>SYSTEMS - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>SYSTEMS - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>GAMES - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Welcome and credits</planche00>
+		<planche01>01 - The system views</planche01>
+		<planche02>02 - Classic view: the system image</planche02>
+		<planche03>03 - Classic view: the details</planche03>
+		<planche04>04 - System fanarts, Modern and Z-Spin</planche04>
+		<planche05>05 - The 11 game views</planche05>
+		<planche06>06 - FanartStar Boxart: boxes and info</planche06>
+		<planche07>07 - FanartStar Boxart: the video</planche07>
+		<planche08>08 - Boxes and media</planche08>
+		<planche09>09 - The 22 cases</planche09>
+		<planche10>10 - The medium: per-system settings</planche10>
+		<planche11>11 - Game fanarts and selection</planche11>
+		<planche12>12 - Big Art, Spotlight, Square, 16/9 and 4/3</planche12>
+		<planche13>13 - The RFE views</planche13>
+		<planche14>14 - RFE Retrofist: the TV screen</planche14>
+		<planche15>15 - Show Big &amp; Small: the flipping box</planche15>
+		<planche16>16 - Common options of the game views</planche16>
+		<planche17>17 - General: sounds, help, clock</planche17>
+		<planche18>18 - Customize with your folders</planche18>
+		<planche19>19 - Custom game media</planche19>
+		<planche20>20 - Dressing a folder</planche20>
+		<planche21>21 - Which image wins?</planche21>
+		<planche22>22 - Grouped systems</planche22>
+		<planche23>23 - Low-end machine and links</planche23>
+	</variables>
 </theme>

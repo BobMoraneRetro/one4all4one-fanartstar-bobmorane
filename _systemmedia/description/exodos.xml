@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>eXoDOS, a huge preservation collection of MS-DOS games, each preconfigured to run in DOSBox.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>eXoDOS, uma enorme coleção de preservação de jogos de MS-DOS, cada um pré-configurado para o DOSBox.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>eXoDOS, a huge preservation collection of MS-DOS games, each preconfigured to run in DOSBox.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>eXoDOS, una enorme colección de preservación de juegos de MS-DOS, cada uno preconfigurado para DOSBox.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>eXoDOS, une immense collection de préservation de jeux MS-DOS, chacun préconfiguré pour DOSBox.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>eXoDOS, eine riesige Bewahrungssammlung von MS-DOS-Spielen, jedes für DOSBox vorkonfiguriert.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>eXoDOS</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1981</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Microsoft</text>
+		</text>
+	</view>
+</theme>

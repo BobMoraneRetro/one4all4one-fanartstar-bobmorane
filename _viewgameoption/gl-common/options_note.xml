@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	Libellés traduits (_common/_langs/<langue>.xml) : ${notecoeur}, ${notecrane}, ${noteetoile}, ${notefantome}, ${notemanette}, ${notepouce}, ${notepourcent}, ${notesur100}, ${notetrophee}, ${opt_iconenote}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<subset name="iconenote" displayName="${opt_iconenote}" appliesTo="presetspotlight,presetshowbig,presetshowsmall,presetspeedbull,presetsquare,presetstar169,presetstar43,presetstarbox,presetstarboxloop,presettraviolta_alt">
+		<include name="etoile" displayName="${noteetoile}"/>
+		<include name="coeur" displayName="${notecoeur}"/>
+		<include name="manette" displayName="${notemanette}"/>
+		<include name="pouce" displayName="${notepouce}"/>
+		<include name="trophee" displayName="${notetrophee}"/>
+		<include name="fantome" displayName="${notefantome}"/>
+		<include name="crane" displayName="${notecrane}"/>
+		<include name="sur100" displayName="${notesur100}"/>
+		<include name="pourcent" displayName="${notepourcent}"/>
+	</subset>
+	<variables>
+		<noteicone ifSubset="iconenote:coeur">&#xf004;</noteicone>
+		<noteicone ifSubset="iconenote:manette">&#xf11b;</noteicone>
+		<noteicone ifSubset="iconenote:pouce">&#xf164;</noteicone>
+		<noteicone ifSubset="iconenote:trophee">&#xf091;</noteicone>
+		<noteicone ifSubset="iconenote:fantome">&#xf6e2;</noteicone>
+		<noteicone ifSubset="iconenote:crane">&#xf54c;</noteicone>
+		<noteicone ifSubset="iconenote:etoile">&#xf005;</noteicone>
+	</variables>
+</theme>

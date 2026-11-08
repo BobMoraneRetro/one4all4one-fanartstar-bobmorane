@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ru">
+		<packcustombuildsno>Фанарт с суффиксом "-fanart" (по умолчанию)</packcustombuildsno>
+		<packretrofreshbat>Фанарт с суффиксом "-image"</packretrofreshbat>
+		<scrapedboxart>3D-коробка с "-boxart" в gamelist</scrapedboxart>
+		<scrapedthumbnail>3D-коробка с "-thumbnail" в gamelist</scrapedthumbnail>
+		<gamemedianon>Нет: только медиа из gamelist</gamemedianon>
+		<gamemediaoui>Да: сначала свои медиа, иначе gamelist</gamemediaoui>
+		<gamemediaseul>Только: только свои медиа (без замены из gamelist)</gamemediaseul>
+		<intheme>Папка темы - По умолчанию</intheme>
+		<extfolder>Внешняя папка</extfolder>
+		<opt_custombuilds>ДОПОЛНИТЕЛЬНО - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>ДОПОЛНИТЕЛЬНО - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>ДОПОЛНИТЕЛЬНО - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>ДОПОЛНИТЕЛЬНО - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

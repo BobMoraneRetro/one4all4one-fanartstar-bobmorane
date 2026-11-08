@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Dream Pinball 3D, a pinball game with fantasy-themed tables designed for PC and consoles.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Dream Pinball 3D, jogo de pinball com mesas de temática fantástica, feito para PC e consoles.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Dream Pinball 3D, a pinball game with fantasy-themed tables designed for PC and consoles.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Dream Pinball 3D, juego de pinball con mesas de temática fantástica, creado para PC y consolas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Dream Pinball 3D, jeu de flipper aux tables sur des thèmes fantastiques, conçu pour PC et consoles.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Dream Pinball 3D, ein Flipperspiel mit fantasievoll gestalteten Tischen für PC und Konsolen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Dream Pinball 3D</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2006</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>SouthPeak Games</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Educational handheld by Benesse sold in Japan from 2000, based on the WonderSwan hardware.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console portátil educativo da Benesse vendido no Japão a partir de 2000, baseado no hardware do WonderSwan.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Educational handheld by Benesse sold in Japan from 2000, based on the WonderSwan hardware.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola portátil educativa de Benesse vendida en Japón desde 2000, basada en el hardware de la WonderSwan.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console portable éducative de Benesse vendue au Japon à partir de 2000, basée sur le matériel de la WonderSwan.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Lern-Handheld von Benesse, ab 2000 in Japan verkauft, basierend auf der WonderSwan-Hardware.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pocket Challenge V2</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2000</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Benesse Corporation</text>
+		</text>
+	</view>
+</theme>

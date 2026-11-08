@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${gm_box2d} : chemin du média perso « box2d » (_gamemedia/<système>/box2d/<rom>) (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml)
+	${gm_box3d} : chemin du média perso « box3d » (_gamemedia/<système>/box3d/<rom>) (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml)
+	${path_game_media} : dossier des médias perso des jeux (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml ; valeur selon l option « AVANCÉ - Emplacement des médias perso »)
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<media_box3d ifSubset="gamemedia:oui">firstfile(${gm_box3d},{game:boxart},"${path_game_media}_dossiers/3dbox/" + {game:stem} + ".png")</media_box3d>
+		<media_box3d ifSubset="gamemedia:seul">firstfile(${gm_box3d},"${path_game_media}_dossiers/3dbox/" + {game:stem} + ".png")</media_box3d>
+		<media_box3d ifSubset="gamemedia:non">firstfile({game:boxart},"${path_game_media}_dossiers/3dbox/" + {game:stem} + ".png")</media_box3d>
+		<media_box3d_missing ifSubset="gamemedia:oui">(!exists(${gm_box3d}) &amp;&amp; !exists({game:boxart}) &amp;&amp; !exists("${path_game_media}_dossiers/3dbox/" + {game:stem} + ".png"))</media_box3d_missing>
+		<media_box3d_missing ifSubset="gamemedia:seul">(!exists(${gm_box3d}) &amp;&amp; !exists("${path_game_media}_dossiers/3dbox/" + {game:stem} + ".png"))</media_box3d_missing>
+		<media_box3d_missing ifSubset="gamemedia:non">(!exists({game:boxart}) &amp;&amp; !exists("${path_game_media}_dossiers/3dbox/" + {game:stem} + ".png"))</media_box3d_missing>
+		<media_box2d ifSubset="gamemedia:oui">firstfile(${gm_box2d},{game:thumbnail},"${path_game_media}_dossiers/2dbox/" + {game:stem} + ".png")</media_box2d>
+		<media_box2d ifSubset="gamemedia:seul">firstfile(${gm_box2d},"${path_game_media}_dossiers/2dbox/" + {game:stem} + ".png")</media_box2d>
+		<media_box2d ifSubset="gamemedia:non">firstfile({game:thumbnail},"${path_game_media}_dossiers/2dbox/" + {game:stem} + ".png")</media_box2d>
+		<media_box2d_missing ifSubset="gamemedia:oui">(!exists(${gm_box2d}) &amp;&amp; !exists({game:thumbnail}) &amp;&amp; !exists("${path_game_media}_dossiers/2dbox/" + {game:stem} + ".png"))</media_box2d_missing>
+		<media_box2d_missing ifSubset="gamemedia:seul">(!exists(${gm_box2d}) &amp;&amp; !exists("${path_game_media}_dossiers/2dbox/" + {game:stem} + ".png"))</media_box2d_missing>
+		<media_box2d_missing ifSubset="gamemedia:non">(!exists({game:thumbnail}) &amp;&amp; !exists("${path_game_media}_dossiers/2dbox/" + {game:stem} + ".png"))</media_box2d_missing>
+	</variables>
+</theme>

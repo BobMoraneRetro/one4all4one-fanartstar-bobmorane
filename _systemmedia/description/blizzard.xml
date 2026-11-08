@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PC games from Blizzard Entertainment, the studio behind Warcraft, StarCraft and Diablo, launched through Battle.net.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de PC da Blizzard Entertainment, o estúdio de Warcraft, StarCraft e Diablo, iniciados pelo Battle.net.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PC games from Blizzard Entertainment, the studio behind Warcraft, StarCraft and Diablo, launched through Battle.net.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de PC de Blizzard Entertainment, el estudio de Warcraft, StarCraft y Diablo, lanzados desde Battle.net.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux PC de Blizzard Entertainment, le studio de Warcraft, StarCraft et Diablo, lancés via Battle.net.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PC-Spiele von Blizzard Entertainment, dem Studio hinter Warcraft, StarCraft und Diablo, gestartet über Battle.net.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Blizzard</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Blizzard Entertainment</text>
+		</text>
+	</view>
+</theme>

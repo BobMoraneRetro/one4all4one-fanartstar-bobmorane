@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega Ages 2500, the PlayStation 2 series of remakes and compilations of Sega classics, sold at a budget price in Japan.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Sega Ages 2500, a série de PlayStation 2 de remakes e coletâneas de clássicos da Sega, vendida a preço baixo no Japão.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega Ages 2500, the PlayStation 2 series of remakes and compilations of Sega classics, sold at a budget price in Japan.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Sega Ages 2500, la serie de PlayStation 2 de remakes y recopilaciones de clásicos de Sega, vendida a bajo precio en Japón.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Sega Ages 2500, la série PlayStation 2 de remakes et compilations de classiques Sega, vendue à petit prix au Japon.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sega Ages 2500, die PlayStation-2-Reihe mit Remakes und Sammlungen von Sega-Klassikern, in Japan zum Budgetpreis verkauft.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Sega Ages 2500</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2003</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega / 3D Ages</text>
+		</text>
+	</view>
+</theme>

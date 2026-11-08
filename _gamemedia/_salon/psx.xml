@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<salon_video_pos>0.5148 0.3532</salon_video_pos>
+		<salon_video_taille>0.2922 0.3449</salon_video_taille>
+		<salon_capture_pos>0.5148 0.3532</salon_capture_pos>
+		<salon_capture_taille>0.2922 0.3449</salon_capture_taille>
+		<salon_disque_depart>0.5</salon_disque_depart>
+		<salon_disque_y>0.65</salon_disque_y>
+		<salon_disque_taille ifSubset="boxorthumb:boxart">0.2447 0.4350</salon_disque_taille>
+		<salon_disque_taille ifSubset="boxorthumb:thumb">0.2900 0.5156</salon_disque_taille>
+		<salon_disque_x ifSubset="boxorthumb:boxart">0.6772</salon_disque_x>
+		<salon_disque_x ifSubset="boxorthumb:thumb">0.6900</salon_disque_x>
+	</variables>
+</theme>

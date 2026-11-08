@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ar">
+		<packcustombuildsno>فان آرت باللاحقة "-fanart" (افتراضي)</packcustombuildsno>
+		<packretrofreshbat>فان آرت باللاحقة "-image"</packretrofreshbat>
+		<scrapedboxart>علبة 3D مع "-boxart" في gamelist</scrapedboxart>
+		<scrapedthumbnail>علبة 3D مع "-thumbnail" في gamelist</scrapedthumbnail>
+		<gamemedianon>لا: وسائط قائمة الألعاب فقط</gamemedianon>
+		<gamemediaoui>نعم: الوسائط المخصصة أولاً، وإلا قائمة الألعاب</gamemediaoui>
+		<gamemediaseul>فقط: الوسائط المخصصة فقط (بدون الرجوع إلى قائمة الألعاب)</gamemediaseul>
+		<intheme>مجلد السمة - افتراضي</intheme>
+		<extfolder>مجلد خارجي</extfolder>
+		<opt_custombuilds>متقدم - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>متقدم - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>متقدم - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>متقدم - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

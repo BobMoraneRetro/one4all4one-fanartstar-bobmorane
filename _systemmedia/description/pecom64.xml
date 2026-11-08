@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Yugoslav home computer of 1987 produced by Ei Niš, used in Serbian schools.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico iugoslavo de 1987 produzido pela Ei Niš, usado em escolas sérvias.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Yugoslav home computer of 1987 produced by Ei Niš, used in Serbian schools.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico yugoslavo de 1987 fabricado por Ei Niš, usado en escuelas serbias.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial yougoslave de 1987 produit par Ei Niš, utilisé dans les écoles serbes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Jugoslawischer Heimcomputer von 1987 von Ei Niš, genutzt in serbischen Schulen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pecom 64</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1987</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Ei Nis (Elektronska Industrija Nis)</text>
+		</text>
+	</view>
+</theme>

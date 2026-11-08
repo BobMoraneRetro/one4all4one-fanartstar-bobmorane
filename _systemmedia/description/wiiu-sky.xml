@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Skylanders games on Wii U, where real figurines placed on the Portal of Power come to life in the game.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Os jogos Skylanders no Wii U, em que bonecos reais colocados no Portal do Poder ganham vida no jogo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Skylanders games on Wii U, where real figurines placed on the Portal of Power come to life in the game.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Los juegos de Skylanders en Wii U, en los que figuras reales colocadas en el Portal de Poder cobran vida en el juego.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Les jeux Skylanders sur Wii U, où de vraies figurines posées sur le Portail du Pouvoir prennent vie dans le jeu.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Skylanders-Spiele für Wii U, bei denen echte Figuren auf dem Portal der Macht im Spiel lebendig werden.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Skylanders (Wii U)</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2011</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Activision</text>
+		</text>
+	</view>
+</theme>

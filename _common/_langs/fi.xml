@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="fi">
+		<desactive>Pois käytöstä</desactive>
+		<default>Oletus</default>
+		<active>Käytössä</active>
+		<novideo>Pois päältä</novideo>
+		<videoback>Päällä</videoback>
+		<intheme>Teeman kansio - Oletus</intheme>
+		<extfolder>Ulkoinen kansio</extfolder>
+		<nodates>Ei päivämäärää</nodates>
+		<playcountone>pelikerta</playcountone>
+		<playcount>pelikertaa</playcount>
+		<noplaycount>Ei koskaan käynnistetty</noplaycount>
+		<playerss>pelaajaa</playerss>
+		<player>pelaaja</player>
+		<nogametime>Ei koskaan pelattu</nogametime>
+		<noplayerdata>Tuntematon</noplayerdata>
+		<noratings>Ei arvosanaa</noratings>
+		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>PELIT - Pelin nimi</opt_nomjeu>
+		<nomjeucomplet>Koko nimi</nomjeucomplet>
+		<nomjeucourt>Ilman sulkeita</nomjeucourt>
+		<presgame1>Tämä on peli tyyppiä</presgame1>
+		<presgame2>kehittäjä</presgame2>
+		<presgame3>pelattavissa alustalla</presgame3>
+		<presgame4>- Saatavilla olevat kielet :</presgame4>
+		<nomjeulabel>Pelin nimi :</nomjeulabel>
+		<genrelabel>Lajityyppi :</genrelabel>
+		<devlabel>Kehittäjä :</devlabel>
+		<langlabel>Kielet :</langlabel>
+		<gametimelabel>Peliaika :</gametimelabel>
+		<lastgamelabel>Viimeksi pelattu:</lastgamelabel>
+		<viewbasicgrid>Basic: Perusruudukkonäkymä</viewbasicgrid>
+		<jeux>peliä</jeux>
+		<longselect>Pitkä painallus "select"</longselect>
+		<favuniquement>Vain suosikit</favuniquement>
+		<tslesjeux>Kaikki pelit</tslesjeux>
+		<fanartstarsyst>Klassinen</fanartstarsyst>
+		<fanartmodern>Moderni 1 (ei yhteensopiva murupolun kanssa)</fanartmodern>
+		<fanartmodern2>Moderni 2 (yhteensopiva murupolun kanssa)</fanartmodern2>
+		<fanartfreshone>Vain FreshOnen valitsemat fanartit</fanartfreshone>
+		<fanartsystcustom>Fanartit custom-kansiosta, muuten FreshOne</fanartsystcustom>
+		<videoangled>Päällä (pieni, vino)</videoangled>
+		<hardware>Laitteisto</hardware>
+		<charsystem>Hahmot</charsystem>
+		<figurines>Figuurit (Animatics-teema on asennettava)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>Painikkeiden sijainti</iconsetposition>
+		<skyblue>taivaansininen</skyblue>
+		<purple>violetti</purple>
+		<red>punainen</red>
+		<aqua>taivaansininen</aqua>
+		<orange>oranssi</orange>
+		<green>vihreä</green>
+		<yellow>keltainen</yellow>
+		<pink>pinkki</pink>
+		<grey>tummanharmaa</grey>
+		<lightgrey>vaaleanharmaa</lightgrey>
+		<navy>sininen alt</navy>
+		<violet>violetti</violet>
+		<candy>candy</candy>
+		<redalt>punainen alt</redalt>
+		<yellowalt>keltainen alt</yellowalt>
+		<greenalt>vihreä alt</greenalt>
+		<purplealt>violetti alt</purplealt>
+		<classiquesyst>Häivytys loitontaen</classiquesyst>
+		<no>Ei</no>
+		<yes>Kyllä</yes>
+		<thumb>Kalibroitu 2D-kotelolle</thumb>
+		<boxart>Kalibroitu 3D-kotelolle</boxart>
+		<starrotate>Kyllä</starrotate>
+		<nostarrotate>Ei</nostarrotate>
+		<deactive>Pois käytöstä</deactive>
+		<speedslow1>Hidas+</speedslow1>
+		<speedslow2>Hidas++</speedslow2>
+		<starvideoang>Kallistettu</starvideoang>
+		<starvideodef>Vakio</starvideodef>
+		<starvideobig>Suuri</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Mukava harmaa</griscl>
+		<noirombre>Musta kehys + varjo</noirombre>
+		<blancombre>Valkoinen kehys + varjo</blancombre>
+		<ombre>Vain varjo</ombre>
+		<rien>Ei koristelua</rien>
+		<presetshowbig>RFE Show suuri esikatselu</presetshowbig>
+		<presetshowsmall>RFE Show pieni esikatselu</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar neliö</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (Nopeampi selaus)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Suuren paneelin alla (kuten Steam)</deckgauche>
+		<deckcentre>Rivin keskellä (zoomaus + hehku)</deckcentre>
+		<decknormal>Normaali</decknormal>
+		<spotvideodroite>Oikealla, kansien päällä</spotvideodroite>
+		<spotvideoaucune>Pois käytöstä</spotvideoaucune>
+		<spotvideogauche>Vasemmalla, tietojen kanssa</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Säilytä logo</decklogogarder>
+		<decklogobandeau>Tietopalkki (logo piilotettu)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Takaisin edelliseen kansioon</retourdossier>
+		<ra_moncompte>Oma tili</ra_moncompte>
+		<ra_succesjeu>Pelin saavutukset</ra_succesjeu>
+		<opt_raaffichage>PELIT - RetroAchievements (ulkoinen työkalu)</opt_raaffichage>
+		<raaffichagepermanent>Aina näkyvissä</raaffichagepermanent>
+		<raaffichagetemporaire>Muutama sekunti</raaffichagetemporaire>
+		<noteetoile>Tähti</noteetoile>
+		<notecoeur>Sydän</notecoeur>
+		<notemanette>Peliohjain</notemanette>
+		<notepouce>Peukku ylös</notepouce>
+		<notetrophee>Pokaali</notetrophee>
+		<notefantome>Haamu</notefantome>
+		<notecrane>Pääkallo</notecrane>
+		<notepourcent>Prosentteina</notepourcent>
+		<wheelclic>Hyperspin-tyylinen napsahdus</wheelclic>
+		<bulle>Kupla</bulle>
+		<clic>Yksinkertainen napsahdus</clic>
+		<clicgrave>Syvä napsahdus</clicgrave>
+		<frottement>Hankaus</frottement>
+		<poc>Pops</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>YLEISET - Tervetuloviesti</opt_lismoi>
+		<opt_iconset>YLEISET - Ohjekuvakkeiden ulkoasu</opt_iconset>
+		<opt_colorhelp>YLEISET - Ohjetekstin värit</opt_colorhelp>
+		<opt_horlogecouleur>YLEISET - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>YLEISET - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>JÄRJESTELMÄT - Järjestelmäluettelon näkymä</opt_systemview>
+		<opt_imagefondcops1>JÄRJESTELMÄT - Järjestelmän fanartien valinta</opt_imagefondcops1>
+		<opt_video4starmodern>JÄRJESTELMÄT - Pelivideo järjestelmänäkymässä</opt_video4starmodern>
+		<opt_video4starclassic>JÄRJESTELMÄT - Pelivideo järjestelmänäkymässä</opt_video4starclassic>
+		<opt_systviewselec>JÄRJESTELMÄT - Järjestelmän kuva kiekossa</opt_systviewselec>
+		<opt_breadcrumbsonoff>JÄRJESTELMÄT - Pystyvalikko vasemmalla (klassinen järjestelmänäkymä)</opt_breadcrumbsonoff>
+		<arianeauto>Automaattinen (järjestelmien lajittelun mukaan)</arianeauto>
+		<arianecategories>Kategoriat (lajittelu laitetyypin mukaan)</arianecategories>
+		<arianealpha>Kirjaimet A–Z (aakkosjärjestys)</arianealpha>
+		<arianealphavoisines>Kirjain ja sen naapurit (aakkosjärjestys)</arianealphavoisines>
+		<arianeconstructeur>Valmistajat (lajittelu valmistajan mukaan)</arianeconstructeur>
+		<arianedecennie>Vuosikymmenet (lajittelu julkaisuvuoden mukaan)</arianedecennie>
+		<arianeautres>MUUT</arianeautres>
+		<opt_metadataonoff>JÄRJESTELMÄT - Järjestelmän tiedot (klassinen järjestelmänäkymä)</opt_metadataonoff>
+		<opt_systannonce>PELIT - Näytä nykyinen järjestelmä avattaessa</opt_systannonce>
+		<opt_infosmax>PELIT - Näytä laaja tietokonsoli?</opt_infosmax>
+		<opt_gamewheelsound>YLEISET - Vierityksen ääni</opt_gamewheelsound>
+		<opt_boxorthumb>PELIT - Näytettävä pelikotelo</opt_boxorthumb>
+		<opt_fanarttransition>PELIT - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>PELIT - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>PELIT - Levyn pyöriminen</opt_cdvitesse>
+		<cdnormale>Normaali</cdnormale>
+		<cdlente>Hidas</cdlente>
+		<cdrapide>Nopea</cdrapide>
+		<cdtresrapide>Erittäin nopea</cdtresrapide>
+		<cdimmobile>Paikallaan</cdimmobile>
+		<opt_umdrotation>PELIT - UMD-levyjen pyöriminen (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>PELIT - Korosta valittu peli</opt_selectionvaleur>
+		<selegere>Kevyt</selegere>
+		<selmarquee>Voimakas</selmarquee>
+		<opt_videojeu>PELIT - Pelivideo</opt_videojeu>
+		<vjcapture>Kuvakaappaus, sitten video</vjcapture>
+		<vjseule>Vain video</vjseule>
+		<vjfondu>Video häivytyksellä</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>PELIT - Box case type</opt_typeboite>
+		<opt_contourboite>PELIT - Box outline (case)</opt_contourboite>
+		<opt_deckespace>PELIT - Koteloiden väli</opt_deckespace>
+		<opt_iconenote>PELIT - Arvosanakuvake</opt_iconenote>
+		<opt_extfolderbezelsyst>LISÄASETUKSET - Järjestelmien bezelit</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>LISÄASETUKSET - Pelijulkaisijoiden logot</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>LISÄASETUKSET - Järjestelmien fanart</opt_extfolderfanart>
+		<opt_extfolderlogosyst>LISÄASETUKSET - Järjestelmän logo</opt_extfolderlogosyst>
+		<opt_extfoldersalon>LISÄASETUKSET - RFE Retrofist Nostalgia -näkymän taustojen sijainti</opt_extfoldersalon>
+		<opt_perfmachine>LISÄASETUKSET - Heikon koneen tila</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - Taustan vinjetointi</opt_salonvignette>
+		<vignleger>Kevyt</vignleger>
+		<vignfort>Voimakas</vignfort>
+		<opt_deckselection>BIG ART - Valitun pelin sijainti</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Logo videon aikana</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - SNES-, N64-, NGAGE-, Solarus-koteloiden kierto</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - Pelikoteloiden kulma</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Pelin tallennusväline (levy, kasetti)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Vieritysanimaation nopeus</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Esikatseluvideon koko</opt_starvideo>
+		<opt_starvideocadre>BOXART - Esikatseluvideon kehys</opt_starvideocadre>
+		<vcadreactuel>Nykyinen kehys</vcadreactuel>
+		<vcadreombre>Vain varjo</vcadreombre>
+		<vcadreecranfin>Ohut reunus</vcadreecranfin>
+		<vcadrebois>Puu</vcadrebois>
+		<vcadremetal>Harjattu metalli</vcadremetal>
+		<vcadrelumineux>Hehkuva näyttö</vcadrelumineux>
+		<vcadretv>Kuvaputki-TV</vcadretv>
+		<vcadregalerie>Galleria</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologrammi</vcadrehologramme>
+		<vcadreverre>Huurrettu lasi</vcadreverre>
+		<vcadrecarbone>Hiilikuitu-LED</vcadrecarbone>
+		<vcadreneondouble>Kaksoisneon</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Siveltimenvedot</vcadrepinceau>
+		<vcadretechnodore>Kultatekno</vcadretechnodore>
+		<vcadretechnoargent>Hopeatekno</vcadretechnoargent>
+		<vcadreneonelec>Sähköneon</vcadreneonelec>
+		<vcadrevitre>Lasi</vcadrevitre>
+		<vcadreflammes>Liekit</vcadreflammes>
+		<vcadreencre>Muste</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Kääntyvän kotelon reunat</opt_boite3dtranche>
+		<b3tcharniere>Logo toisella puolella, avautuminen toisella</b3tcharniere>
+		<b3tdeuxcotes>Logo molemmilla puolilla</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - Ruudukon väri</opt_gridcolor>
+		<opt_squarecadre>NELIÖ - Pelejä esittävien neliöiden ulkoasu</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>JÄRJESTELMÄT - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>JÄRJESTELMÄT - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>JÄRJESTELMÄT - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>JÄRJESTELMÄT - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>PELIT - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Tervetuloa ja kiitokset</planche00>
+		<planche01>01 - Järjestelmänäkymät</planche01>
+		<planche02>02 - Klassinen näkymä: järjestelmän kuva</planche02>
+		<planche03>03 - Klassinen näkymä: yksityiskohdat</planche03>
+		<planche04>04 - Järjestelmien fanartit, Modern ja Z-Spin</planche04>
+		<planche05>05 - 11 pelinäkymää</planche05>
+		<planche06>06 - FanartStar Boxart: kotelot ja tiedot</planche06>
+		<planche07>07 - FanartStar Boxart: video</planche07>
+		<planche08>08 - Kotelot ja tallenteet</planche08>
+		<planche09>09 - 22 koteloa</planche09>
+		<planche10>10 - Tallenne: asetukset järjestelmittäin</planche10>
+		<planche11>11 - Pelien fanartit ja valinta</planche11>
+		<planche12>12 - Big Art, Spotlight, Neliö, 16/9 ja 4/3</planche12>
+		<planche13>13 - RFE-näkymät</planche13>
+		<planche14>14 - RFE Retrofist: television ruutu</planche14>
+		<planche15>15 - Show Big &amp; Small: kääntyvä kotelo</planche15>
+		<planche16>16 - Pelinäkymien yhteiset asetukset</planche16>
+		<planche17>17 - Yleiset: äänet, ohje, kello</planche17>
+		<planche18>18 - Mukauta omilla kansioillasi</planche18>
+		<planche19>19 - Omat pelimediat</planche19>
+		<planche20>20 - Kansion pukeminen</planche20>
+		<planche21>21 - Mikä kuva voittaa?</planche21>
+		<planche22>22 - Ryhmitellyt järjestelmät</planche22>
+		<planche23>23 - Heikko kone ja linkit</planche23>
+	</variables>
+</theme>

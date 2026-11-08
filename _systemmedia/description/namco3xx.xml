@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Namco System 357 and 369, arcade boards derived from the PlayStation 3, used for Tekken 6 and Tekken Tag Tournament 2.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Os Namco System 357 e 369, placas de arcade derivadas do PlayStation 3, usadas em Tekken 6 e Tekken Tag Tournament 2.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Namco System 357 and 369, arcade boards derived from the PlayStation 3, used for Tekken 6 and Tekken Tag Tournament 2.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Los Namco System 357 y 369, placas arcade derivadas de la PlayStation 3, usadas para Tekken 6 y Tekken Tag Tournament 2.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Les Namco System 357 et 369, cartes arcade dérivées de la PlayStation 3, utilisées pour Tekken 6 et Tekken Tag Tournament 2.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Namco System 357 und 369, von der PlayStation 3 abgeleitete Arcade-Platinen für Tekken 6 und Tekken Tag Tournament 2.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>System 357/369</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Namco</text>
+		</text>
+	</view>
+</theme>

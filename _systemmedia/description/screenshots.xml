@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Your screenshots: browse the captures taken while playing.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Suas capturas de tela: navegue pelas imagens tiradas enquanto joga.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Your screenshots: browse the captures taken while playing.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Tus capturas de pantalla: explora las imágenes tomadas mientras juegas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Vos captures d'écran : parcourez les images prises pendant vos parties.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Deine Screenshots: Durchsuche die beim Spielen aufgenommenen Bilder.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Screenshots</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

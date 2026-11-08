@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>French home computer by Micronique, part of the Hector family descended from the Victor Lambda, popular in France in the early 1980s.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico francês da Micronique, da família Hector derivada do Victor Lambda, popular na França no início dos anos 80.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>French home computer by Micronique, part of the Hector family descended from the Victor Lambda, popular in France in the early 1980s.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico francés de Micronique, de la familia Hector derivada del Victor Lambda, popular en Francia a principios de los 80.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial français de Micronique, de la famille Hector issue du Victor Lambda, apprécié en France au début des années 1980.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Französischer Heimcomputer von Micronique aus der Hector-Familie, abgeleitet vom Victor Lambda, Anfang der 1980er in Frankreich beliebt.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Hector HR</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Micronique</text>
+		</text>
+	</view>
+</theme>

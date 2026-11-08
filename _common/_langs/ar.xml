@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ar">
+		<desactive>معطّل</desactive>
+		<default>افتراضي</default>
+		<active>مفعّل</active>
+		<novideo>معطّل</novideo>
+		<videoback>مفعّل</videoback>
+		<intheme>مجلد السمة - افتراضي</intheme>
+		<extfolder>مجلد خارجي</extfolder>
+		<nodates>لا يوجد تاريخ</nodates>
+		<playcountone>مرة لعب</playcountone>
+		<playcount>مرات لعب</playcount>
+		<noplaycount>لم يُشغَّل أبدًا</noplaycount>
+		<playerss>لاعبون</playerss>
+		<player>لاعب</player>
+		<nogametime>لم تُلعب قط</nogametime>
+		<noplayerdata>غير معروف</noplayerdata>
+		<noratings>لا يوجد تقييم</noratings>
+		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>الألعاب - اسم اللعبة</opt_nomjeu>
+		<nomjeucomplet>كامل</nomjeucomplet>
+		<nomjeucourt>بدون أقواس</nomjeucourt>
+		<presgame1>هذه لعبة من نوع</presgame1>
+		<presgame2>من تطوير</presgame2>
+		<presgame3>قابلة للعب على</presgame3>
+		<presgame4>- اللغات المتاحة :</presgame4>
+		<nomjeulabel>اسم اللعبة :</nomjeulabel>
+		<genrelabel>النوع :</genrelabel>
+		<devlabel>المطوّر :</devlabel>
+		<langlabel>اللغات :</langlabel>
+		<gametimelabel>مدة اللعب :</gametimelabel>
+		<lastgamelabel>آخر لعب:</lastgamelabel>
+		<viewbasicgrid>Basic: عرض شبكي بسيط</viewbasicgrid>
+		<jeux>ألعاب</jeux>
+		<longselect>ضغطة طويلة على "select"</longselect>
+		<favuniquement>المفضلة فقط</favuniquement>
+		<tslesjeux>كل الألعاب</tslesjeux>
+		<fanartstarsyst>كلاسيكي</fanartstarsyst>
+		<fanartmodern>حديث 1 (غير متوافق مع مسار التنقل)</fanartmodern>
+		<fanartmodern2>حديث 2 (متوافق مع مسار التنقل)</fanartmodern2>
+		<fanartfreshone>فان آرت مختارة من FreshOne فقط</fanartfreshone>
+		<fanartsystcustom>خلفيات من المجلد المخصص، وإلا FreshOne</fanartsystcustom>
+		<videoangled>مفعّل (صغير ومائل)</videoangled>
+		<hardware>العتاد</hardware>
+		<charsystem>الشخصيات</charsystem>
+		<figurines>المجسّمات (يجب تثبيت سمة Animatics)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>موضع الأزرار</iconsetposition>
+		<skyblue>أزرق سماوي</skyblue>
+		<purple>بنفسجي</purple>
+		<red>أحمر</red>
+		<aqua>أزرق سماوي</aqua>
+		<orange>برتقالي</orange>
+		<green>أخضر</green>
+		<yellow>أصفر</yellow>
+		<pink>وردي</pink>
+		<grey>رمادي داكن</grey>
+		<lightgrey>رمادي فاتح</lightgrey>
+		<navy>أزرق alt</navy>
+		<violet>بنفسجي</violet>
+		<candy>candy</candy>
+		<redalt>أحمر alt</redalt>
+		<yellowalt>أصفر alt</yellowalt>
+		<greenalt>أخضر alt</greenalt>
+		<purplealt>بنفسجي alt</purplealt>
+		<classiquesyst>اختفاء مع تصغير</classiquesyst>
+		<no>لا</no>
+		<yes>نعم</yes>
+		<thumb>معايَر لعلبة 2D</thumb>
+		<boxart>معايَر لعلبة 3D</boxart>
+		<starrotate>نعم</starrotate>
+		<nostarrotate>لا</nostarrotate>
+		<deactive>معطّل</deactive>
+		<speedslow1>بطيء+</speedslow1>
+		<speedslow2>بطيء++</speedslow2>
+		<starvideoang>مائل</starvideoang>
+		<starvideodef>قياسي</starvideodef>
+		<starvideobig>كبير</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>رمادي لطيف</griscl>
+		<noirombre>إطار أسود + ظل</noirombre>
+		<blancombre>إطار أبيض + ظل</blancombre>
+		<ombre>ظل فقط</ombre>
+		<rien>بدون زخرفة</rien>
+		<presetshowbig>RFE Show معاينة كبيرة</presetshowbig>
+		<presetshowsmall>RFE Show معاينة صغيرة</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar مربع</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (تنقل أسرع)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>تحت اللوحة الكبيرة (مثل Steam)</deckgauche>
+		<deckcentre>وسط الصف (تكبير + هالة)</deckcentre>
+		<decknormal>عادي</decknormal>
+		<spotvideodroite>على اليمين، فوق العلب</spotvideodroite>
+		<spotvideoaucune>معطّل</spotvideoaucune>
+		<spotvideogauche>على اليسار، مع المعلومات</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>إبقاء الشعار</decklogogarder>
+		<decklogobandeau>شريط معلومات (الشعار مخفي)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>العودة إلى المجلد السابق</retourdossier>
+		<ra_moncompte>حسابي</ra_moncompte>
+		<ra_succesjeu>إنجازات اللعبة</ra_succesjeu>
+		<opt_raaffichage>الألعاب - RetroAchievements (أداة خارجية)</opt_raaffichage>
+		<raaffichagepermanent>عرض دائم</raaffichagepermanent>
+		<raaffichagetemporaire>بضع ثوانٍ</raaffichagetemporaire>
+		<noteetoile>نجمة</noteetoile>
+		<notecoeur>قلب</notecoeur>
+		<notemanette>يد تحكم</notemanette>
+		<notepouce>إعجاب</notepouce>
+		<notetrophee>كأس</notetrophee>
+		<notefantome>شبح</notefantome>
+		<notecrane>جمجمة</notecrane>
+		<notepourcent>بالنسبة المئوية</notepourcent>
+		<wheelclic>نقرة بأسلوب Hyperspin</wheelclic>
+		<bulle>فقاعة</bulle>
+		<clic>نقرة بسيطة</clic>
+		<clicgrave>نقرة عميقة</clicgrave>
+		<frottement>احتكاك</frottement>
+		<poc>فرقعة</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>عام - رسالة الترحيب</opt_lismoi>
+		<opt_iconset>عام - مظهر أيقونات المساعدة</opt_iconset>
+		<opt_colorhelp>عام - ألوان نص المساعدة</opt_colorhelp>
+		<opt_horlogecouleur>عام - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>عام - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>الأنظمة - عرض قائمة الأنظمة</opt_systemview>
+		<opt_imagefondcops1>الأنظمة - اختيار فان آرت النظام</opt_imagefondcops1>
+		<opt_video4starmodern>الأنظمة - فيديو اللعب في عرض الأنظمة</opt_video4starmodern>
+		<opt_video4starclassic>الأنظمة - فيديو اللعب في عرض الأنظمة</opt_video4starclassic>
+		<opt_systviewselec>الأنظمة - صورة النظام في العجلة</opt_systviewselec>
+		<opt_breadcrumbsonoff>الأنظمة - قائمة عمودية على اليسار (عرض النظام الكلاسيكي)</opt_breadcrumbsonoff>
+		<arianeauto>تلقائي (حسب ترتيب الأنظمة)</arianeauto>
+		<arianecategories>الفئات (الترتيب حسب نوع الجهاز)</arianecategories>
+		<arianealpha>الحروف من A إلى Z (ترتيب أبجدي)</arianealpha>
+		<arianealphavoisines>الحرف وجيرانه (ترتيب أبجدي)</arianealphavoisines>
+		<arianeconstructeur>الشركات المصنعة (الترتيب حسب الشركة)</arianeconstructeur>
+		<arianedecennie>العقود (الترتيب حسب سنة الإصدار)</arianedecennie>
+		<arianeautres>أخرى</arianeautres>
+		<opt_metadataonoff>الأنظمة - معلومات النظام (عرض النظام الكلاسيكي)</opt_metadataonoff>
+		<opt_systannonce>الألعاب - عرض النظام الحالي عند الفتح</opt_systannonce>
+		<opt_infosmax>الألعاب - عرض لوحة المعلومات الكاملة؟</opt_infosmax>
+		<opt_gamewheelsound>عام - صوت التمرير</opt_gamewheelsound>
+		<opt_boxorthumb>الألعاب - علبة اللعبة المعروضة</opt_boxorthumb>
+		<opt_fanarttransition>الألعاب - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>الألعاب - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>الألعاب - دوران القرص</opt_cdvitesse>
+		<cdnormale>عادي</cdnormale>
+		<cdlente>بطيء</cdlente>
+		<cdrapide>سريع</cdrapide>
+		<cdtresrapide>سريع جدًا</cdtresrapide>
+		<cdimmobile>ثابت</cdimmobile>
+		<opt_umdrotation>الألعاب - دوران أقراص UMD (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>الألعاب - إبراز اللعبة المحددة</opt_selectionvaleur>
+		<selegere>خفيف</selegere>
+		<selmarquee>واضح</selmarquee>
+		<opt_videojeu>الألعاب - فيديو اللعبة</opt_videojeu>
+		<vjcapture>لقطة شاشة ثم فيديو</vjcapture>
+		<vjseule>فيديو فقط</vjseule>
+		<vjfondu>فيديو مع ظهور تدريجي</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>الألعاب - Box case type</opt_typeboite>
+		<opt_contourboite>الألعاب - Box outline (case)</opt_contourboite>
+		<opt_deckespace>الألعاب - تباعد العلب</opt_deckespace>
+		<opt_iconenote>الألعاب - أيقونة التقييم</opt_iconenote>
+		<opt_extfolderbezelsyst>متقدم - إطارات (bezel) الأنظمة</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>متقدم - شعارات ناشري الألعاب</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>متقدم - فان آرت الأنظمة</opt_extfolderfanart>
+		<opt_extfolderlogosyst>متقدم - شعار النظام</opt_extfolderlogosyst>
+		<opt_extfoldersalon>متقدم - موقع خلفيات عرض RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_perfmachine>متقدم - وضع الأجهزة الضعيفة</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - تظليل حواف الخلفية</opt_salonvignette>
+		<vignleger>خفيف</vignleger>
+		<vignfort>قوي</vignfort>
+		<opt_deckselection>BIG ART - موضع اللعبة المحددة</opt_deckselection>
+		<opt_decklogovideo>BIG ART - الشعار أثناء الفيديو</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - الفيديو</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - تدوير علب SNES وN64 وNGAGE وSolarus</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - زاوية علب الألعاب</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - وسيط اللعبة (قرص، خرطوشة)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - سرعة حركة التمرير</opt_boxstarspeed>
+		<opt_starvideo>BOXART - حجم فيديو المعاينة</opt_starvideo>
+		<opt_starvideocadre>BOXART - إطار فيديو المعاينة</opt_starvideocadre>
+		<vcadreactuel>الإطار الحالي</vcadreactuel>
+		<vcadreombre>ظل فقط</vcadreombre>
+		<vcadreecranfin>حافة رفيعة</vcadreecranfin>
+		<vcadrebois>خشب</vcadrebois>
+		<vcadremetal>معدن مصقول</vcadremetal>
+		<vcadrelumineux>شاشة مضيئة</vcadrelumineux>
+		<vcadretv>تلفاز CRT</vcadretv>
+		<vcadregalerie>معرض</vcadregalerie>
+		<vcadrepolaroid>بولارويد</vcadrepolaroid>
+		<vcadreneon>نيون</vcadreneon>
+		<vcadrehologramme>هولوغرام</vcadrehologramme>
+		<vcadreverre>زجاج مصنفر</vcadreverre>
+		<vcadrecarbone>كربون LED</vcadrecarbone>
+		<vcadreneondouble>نيون مزدوج</vcadreneondouble>
+		<vcadregaming>ألعاب</vcadregaming>
+		<vcadrepinceau>ضربات فرشاة</vcadrepinceau>
+		<vcadretechnodore>تقني ذهبي</vcadretechnodore>
+		<vcadretechnoargent>تقني فضي</vcadretechnoargent>
+		<vcadreneonelec>نيون كهربائي</vcadreneonelec>
+		<vcadrevitre>زجاج</vcadrevitre>
+		<vcadreflammes>لهب</vcadreflammes>
+		<vcadreencre>حبر</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - جوانب العلبة الدوارة</opt_boite3dtranche>
+		<b3tcharniere>الشعار على جانب والفتحة على الآخر</b3tcharniere>
+		<b3tdeuxcotes>الشعار على الجانبين</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - لون الشبكة</opt_gridcolor>
+		<opt_squarecadre>مربع - شكل المربعات التي تمثل الألعاب</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>الأنظمة - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>الأنظمة - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>الأنظمة - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>الأنظمة - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>الألعاب - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - الترحيب والشكر</planche00>
+		<planche01>01 - عروض الأنظمة</planche01>
+		<planche02>02 - العرض الكلاسيكي: صورة النظام</planche02>
+		<planche03>03 - العرض الكلاسيكي: التفاصيل</planche03>
+		<planche04>04 - فن الأنظمة، Modern و Z-Spin</planche04>
+		<planche05>05 - عروض الألعاب الإحدى عشر</planche05>
+		<planche06>06 - FanartStar Boxart: العلب والمعلومات</planche06>
+		<planche07>07 - FanartStar Boxart: الفيديو</planche07>
+		<planche08>08 - العلب والوسائط</planche08>
+		<planche09>09 - العلب الـ 22</planche09>
+		<planche10>10 - الوسيط: إعدادات لكل نظام</planche10>
+		<planche11>11 - فن الألعاب والاختيار</planche11>
+		<planche12>12 - Big Art و Spotlight ومربع و16/9 و4/3</planche12>
+		<planche13>13 - عروض RFE</planche13>
+		<planche14>14 - RFE Retrofist: شاشة التلفاز</planche14>
+		<planche15>15 - Show Big &amp; Small: العلبة التي تنقلب</planche15>
+		<planche16>16 - الخيارات المشتركة لعروض الألعاب</planche16>
+		<planche17>17 - عام: الأصوات، المساعدة، الساعة</planche17>
+		<planche18>18 - التخصيص بمجلداتك</planche18>
+		<planche19>19 - وسائط الألعاب الخاصة</planche19>
+		<planche20>20 - تزيين مجلد</planche20>
+		<planche21>21 - أي صورة تفوز؟</planche21>
+		<planche22>22 - الأنظمة المجمّعة</planche22>
+		<planche23>23 - جهاز ضعيف وروابط</planche23>
+	</variables>
+</theme>

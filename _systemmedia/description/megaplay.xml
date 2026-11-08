@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's arcade board based on the Mega Drive, which ran adapted versions of Mega Drive games in arcades.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Placa de arcade da Sega baseada no Mega Drive, que rodava versões adaptadas dos jogos do Mega Drive nos fliperamas.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's arcade board based on the Mega Drive, which ran adapted versions of Mega Drive games in arcades.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Placa arcade de Sega basada en la Mega Drive, que ejecutaba versiones adaptadas de juegos de Mega Drive en los salones.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Carte arcade de Sega basée sur la Mega Drive, qui faisait tourner des versions adaptées des jeux Mega Drive en salle.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas Arcade-Platine auf Mega-Drive-Basis, die angepasste Mega-Drive-Spiele in Spielhallen laufen ließ.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Mega-Play</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

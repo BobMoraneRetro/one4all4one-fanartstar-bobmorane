@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The CD-ROM add-on for NEC's TurboGrafx-16, known in Japan as the PC Engine CD-ROM², one of the first CD-based game systems.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O acessório de CD-ROM do TurboGrafx-16 da NEC, chamado PC Engine CD-ROM² no Japão, um dos primeiros sistemas de jogo em CD.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>The CD-ROM add-on for NEC's TurboGrafx-16, known in Japan as the PC Engine CD-ROM², one of the first CD-based game systems.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El accesorio CD-ROM de la TurboGrafx-16 de NEC, llamado PC Engine CD-ROM² en Japón, uno de los primeros sistemas de juego en CD.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>L'extension CD-ROM de la TurboGrafx-16 de NEC, appelée PC Engine CD-ROM² au Japon, l'un des premiers systèmes de jeu sur CD.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Die CD-ROM-Erweiterung für NECs TurboGrafx-16, in Japan PC Engine CD-ROM² genannt, eines der ersten CD-basierten Spielsysteme.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>TurboGrafx-CD</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1988</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>NEC</text>
+		</text>
+	</view>
+</theme>

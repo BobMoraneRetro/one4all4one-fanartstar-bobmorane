@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Fightcade, the online platform for playing classic arcade fighting games against other players with rollback netcode.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Fightcade, a plataforma online para jogar contra outras pessoas nos clássicos de luta de arcade, com netcode de rollback.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Fightcade, the online platform for playing classic arcade fighting games against other players with rollback netcode.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Fightcade, la plataforma en línea para jugar contra otros a los clásicos de lucha de arcade, con netcode de rollback.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Fightcade, la plate-forme en ligne pour affronter d'autres joueurs sur les jeux de combat d'arcade classiques, avec un netcode à rollback.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Fightcade, die Online-Plattform, um klassische Arcade-Kampfspiele mit Rollback-Netcode gegen andere zu spielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Fightcade</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2015</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Fightcade</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Examu's PC-based arcade board of 2008, used for fighting games such as Arcana Heart 2 and Arcana Heart 3.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Placa de arcade baseada em PC da Examu de 2008, usada em jogos de luta como Arcana Heart 2 e Arcana Heart 3.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Examu's PC-based arcade board of 2008, used for fighting games such as Arcana Heart 2 and Arcana Heart 3.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Placa arcade basada en PC de Examu de 2008, usada para juegos de lucha como Arcana Heart 2 y Arcana Heart 3.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Carte arcade sur base PC d'Examu sortie en 2008, utilisée pour des jeux de combat comme Arcana Heart 2 et Arcana Heart 3.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PC-basierte Arcade-Platine von Examu aus dem Jahr 2008, genutzt für Kampfspiele wie Arcana Heart 2 und Arcana Heart 3.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>eX-Board</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2008</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Examu Inc.</text>
+		</text>
+	</view>
+</theme>

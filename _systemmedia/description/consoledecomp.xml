@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Console classics rebuilt as native PC programs from their decompiled code, with modern resolutions and enhancements.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Clássicos de console reconstruídos como programas nativos de PC a partir do código decompilado, com resoluções modernas e melhorias.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Console classics rebuilt as native PC programs from their decompiled code, with modern resolutions and enhancements.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Clásicos de consola reconstruidos como programas nativos de PC a partir de su código descompilado, con resoluciones modernas y mejoras.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Classiques des consoles reconstruits en programmes PC natifs à partir de leur code décompilé, avec résolutions modernes et améliorations.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Konsolen-Klassiker, aus dekompiliertem Code als native PC-Programme neu gebaut, mit modernen Auflösungen und Verbesserungen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Console Decomp</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2026</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

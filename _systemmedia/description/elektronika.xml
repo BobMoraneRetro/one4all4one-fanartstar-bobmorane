@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Soviet LCD handheld games of the Elektronika IM series, the most famous being Nu, Pogodi!, inspired by Nintendo's Game &amp; Watch.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos portáteis LCD soviéticos da série Elektronika IM, o mais famoso Nu, Pogodi!, inspirados nos Game &amp; Watch da Nintendo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Soviet LCD handheld games of the Elektronika IM series, the most famous being Nu, Pogodi!, inspired by Nintendo's Game &amp; Watch.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos portátiles LCD soviéticos de la serie Elektronika IM, el más famoso Nu, Pogodi!, inspirados en los Game &amp; Watch de Nintendo.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux portables LCD soviétiques de la série Elektronika IM, le plus célèbre étant Nu, Pogodi!, inspirés des Game &amp; Watch de Nintendo.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sowjetische LCD-Handheldspiele der Reihe Elektronika IM, das bekannteste ist Nu, Pogodi!, nach dem Vorbild von Nintendos Game &amp; Watch.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Elektronika IM</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1984</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Elektronika</text>
+		</text>
+	</view>
+</theme>

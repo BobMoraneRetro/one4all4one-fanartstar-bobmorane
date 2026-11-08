@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>A compilation of pool and snooker games from various systems.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Uma compilação de jogos de sinuca e snooker de vários sistemas.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>A compilation of pool and snooker games from various systems.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Una recopilación de juegos de billar y snooker de distintos sistemas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Une compilation de jeux de billard et de snooker issus de différents systèmes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Eine Sammlung von Billard- und Snooker-Spielen verschiedener Systeme.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Billard</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

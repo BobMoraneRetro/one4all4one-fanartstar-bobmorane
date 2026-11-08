@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Bandai's Super Vision 8000, a Japanese console of 1979 with built-in keypad controllers.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Super Vision 8000 da Bandai, console japonês de 1979 com controles de teclado integrados.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Bandai's Super Vision 8000, a Japanese console of 1979 with built-in keypad controllers.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La Super Vision 8000 de Bandai, consola japonesa de 1979 con mandos de teclado integrados.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La Super Vision 8000 de Bandai, console japonaise de 1979 aux manettes à pavé numérique intégrées.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Bandais Super Vision 8000, eine japanische Konsole von 1979 mit eingebauten Tastenfeld-Controllern.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Super Vision 8000</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1979</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Bandai</text>
+		</text>
+	</view>
+</theme>

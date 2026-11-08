@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Philips' VG 5000 home computer of 1984, sold mainly in France.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O computador doméstico VG 5000 da Philips de 1984, vendido principalmente na França.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Philips' VG 5000 home computer of 1984, sold mainly in France.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El ordenador doméstico VG 5000 de Philips de 1984, vendido sobre todo en Francia.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>L'ordinateur familial VG 5000 de Philips sorti en 1984, vendu surtout en France.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Philips' Heimcomputer VG 5000 von 1984, vor allem in Frankreich verkauft.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>VG 5000</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1984</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Philips</text>
+		</text>
+	</view>
+</theme>

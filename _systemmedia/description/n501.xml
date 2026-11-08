@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Samsung's NUON-enhanced DVD player, which could also run games designed for VM Labs' NUON processor.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Reprodutor de DVD da Samsung com tecnologia NUON, capaz também de rodar jogos feitos para o processador NUON da VM Labs.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Samsung's NUON-enhanced DVD player, which could also run games designed for VM Labs' NUON processor.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Reproductor de DVD de Samsung con tecnología NUON, capaz también de ejecutar juegos creados para el procesador NUON de VM Labs.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Lecteur DVD Samsung doté de la technologie NUON, capable aussi de lancer des jeux conçus pour le processeur NUON de VM Labs.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Samsungs DVD-Spieler mit NUON-Technik, der auch Spiele für den NUON-Prozessor von VM Labs ausführen konnte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>NUON</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2001</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Samsung</text>
+		</text>
+	</view>
+</theme>

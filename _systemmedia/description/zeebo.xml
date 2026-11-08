@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Zeebo, a 2009 console sold in Brazil and Mexico, with games downloaded over the mobile network.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Zeebo, console de 2009 vendido no Brasil e no México, com jogos baixados pela rede móvel.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Zeebo, a 2009 console sold in Brazil and Mexico, with games downloaded over the mobile network.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Zeebo, consola de 2009 vendida en Brasil y México, con juegos descargados por la red móvil.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Zeebo, console sortie en 2009 au Brésil et au Mexique, avec des jeux téléchargés via le réseau mobile.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Zeebo, eine Konsole von 2009, in Brasilien und Mexiko verkauft, mit über das Mobilfunknetz geladenen Spielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Zeebo</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2009</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Tectoy Qualcomm</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Casual games from PopCap, the studio behind Bejeweled, Zuma, Peggle and Plants vs. Zombies.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos casuais da PopCap, o estúdio de Bejeweled, Zuma, Peggle e Plants vs. Zombies.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Casual games from PopCap, the studio behind Bejeweled, Zuma, Peggle and Plants vs. Zombies.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos casuales de PopCap, el estudio de Bejeweled, Zuma, Peggle y Plants vs. Zombies.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux grand public de PopCap, le studio de Bejeweled, Zuma, Peggle et Plants vs. Zombies.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Gelegenheitsspiele von PopCap, dem Studio hinter Bejeweled, Zuma, Peggle und Plants vs. Zombies.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PopCap</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>PopCap Games</text>
+		</text>
+	</view>
+</theme>

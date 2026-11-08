@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${fanartsource} : champ du gamelist où chercher la fanart (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart »)
+	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
+	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
+	${intlogoclearpng} : Logo clair du système (définie dans theme.xml)
+	${media_box2d} : boîte 2D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box3d} : boîte 3D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart} : fanart du jeu (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart_exists} : vrai si le média « fanart » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart_missing} : vrai si le média « fanart » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart_orthumb} : média « fanart_orthumb » du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_image} : capture du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_wheel} : logo « wheel » du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
+	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
+	${selopacite} : opacité des jeux non sélectionnés dans les grilles (1, 0.7 ou 0.45) (définie dans ce fichier ; valeur selon l option « JEUX - Mise en valeur du jeu sélectionné »)
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${nodates}, ${nogametime}, ${noplayerdata}, ${noratings}, ${notesur100}, ${playcount}, ${playcountone}, ${player}, ${playerss}, ${presetsquare}, ${presgame1}, ${presgame2}, ${presgame3}, ${presgame4}, ${retourdossier}
+-->
 <theme>
 	<formatVersion>7</formatVersion>
 	<variables>
-		<standardsbuildsfanart>exists({game:fanart}) ? {game:fanart} : {game:thumbnail}</standardsbuildsfanart>
-		<freshbuildfanart>exists({game:image}) ? {game:image} : {game:thumbnail}</freshbuildfanart>
-		<standardsbuildsfanarttest>!exists({game:fanart})</standardsbuildsfanarttest>
-		<standardsbuildsfanarttestyes>exists({game:fanart})</standardsbuildsfanarttestyes>
-		<freshbuildfanarttest>!exists({game:image})</freshbuildfanarttest>
-		<freshbuildfanarttestyes>exists({game:image})</freshbuildfanarttestyes>
-		<intfanartfresh>${bobmediapath}/_systemmedia/_fanartsysteme/fresh/${system.theme}.jpg</intfanartfresh>
-		<!-- <nodates>Pas de date</nodates> -->
-		<!-- <noplaycount>Jamais lancé</noplaycount> -->
-		<!-- <noplayerdata>Inconnu</noplayerdata> -->
-		<!-- <noratings>Pas de note</noratings> -->
-		<!-- <playcountone>partie</playcountone> -->
-		<!-- <playcount>parties</playcount> -->
-		<!-- <playerss>joueurs</playerss> -->
-		<!-- <player>joueur</player> -->
-		<!-- <nogametime>Jamais joué</nogametime> -->
-		<!-- <presgame1>C'est un Jeu de type</presgame1> -->
-		<!-- <presgame2>développé par</presgame2> -->
-		<!-- <presgame3>jouable sur</presgame3> -->
-		<!-- <presgame4>- Langues disponibles :</presgame4> -->
-		<!-- <presetsquare>FanartStar carré</presetsquare> -->
+		<selopacite ifSubset="selectionvaleur:legere">0.7</selopacite>
+		<selopacite ifSubset="selectionvaleur:marquee">0.45</selopacite>
+		<selopacite ifSubset="selectionvaleur:aucune">1</selopacite>
 	</variables>
 	<customView name="presetsquare" displayName="${presetsquare}" inherits="grid">
 		<control name="fanart_extra, defautfanartextra">
@@ -36,8 +42,7 @@
 			<autoLayout>9 1</autoLayout>
 			<padding>0.03 0.05 0.03 0.12</padding>
 			<margin>0.001 0.06</margin>
-			<imageSource ifSubset="custombuilds:standardbuilds">fanart</imageSource>
-			<imageSource ifSubset="custombuilds:retrofreshbat">image</imageSource>
+			<imageSource>${fanartsource}</imageSource>
 			<scrollbarColor>808080FF</scrollbarColor>
 			<scrollbarCorner>0</scrollbarCorner>
 			<scrollbarSize>0.003</scrollbarSize>
@@ -54,8 +59,7 @@
 				</storyboard>
 				<container>
 					<image name="backgroundtile">
-						<path ifSubset="custombuilds:standardbuilds">${standardsbuildsfanart}</path>
-						<path ifSubset="custombuilds:retrofreshbat">${freshbuildfanart}</path>
+						<path>${media_fanart_orthumb}</path>
 						<pos>0 0</pos>
 						<origin>0 0</origin>
 						<minSize>0.95 0.95</minSize>
@@ -75,8 +79,8 @@
 						</storyboard>
 					</image>
 					<image name="nofanart">
-						<visible ifSubset="custombuilds:standardbuilds">!exists({game:fanart})</visible>
-						<visible ifSubset="custombuilds:retrofreshbat">!exists({game:image})</visible>
+						<opacity>${selopacite}</opacity>
+						<visible>${media_fanart_missing}</visible>
 						<path>${intfanartfresh}</path>
 						<saturation>0</saturation>
 						<pos>0 0</pos>
@@ -86,15 +90,18 @@
 						<zIndex>3</zIndex>
 						<storyboard event="activate">
 							<animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="deactivate">
 							<animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="scroll">
 							<animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/>
 						</storyboard>
 					</image>
 					<image name="cadre">
+						<opacity>${selopacite}</opacity>
 						<path ifSubset="squarecadre:ombre">${themePath}/_viewgame/fanartstar/cadresquareombre.png</path>
 						<path ifSubset="squarecadre:blancombre">${themePath}/_viewgame/fanartstar/cadresquareblanc.png</path>
 						<path ifSubset="squarecadre:noirombre">${themePath}/_viewgame/fanartstar/cadresquarenoir.png</path>
@@ -107,14 +114,34 @@
 						<size ifSubset="squarecadre:noirombre">0.98 0.985</size>
 						<zIndex ifSubset="squarecadre:ombre">1</zIndex>
 						<zIndex ifSubset="squarecadre:noirombre|blancombre">999</zIndex>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
 					</image>
 					<image name="logo" extra="true" pos="0.5" origin="0.55" maxSize="0.85" linearSmooth="true">
-						<path>{game:marquee}</path>
+						<opacity>${selopacite}</opacity>
+						<path>${media_marquee}</path>
 						<zIndex>6</zIndex>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
 					</image>
 					<text name="ifnologojeux">
-						<visible>!exists({game:marquee})</visible>
-						<text>{game:name}</text>
+						<opacity>${selopacite}</opacity>
+						<visible>${media_marquee_missing}</visible>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<text>${titrejeu}</text>
 						<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
 						<color>ffffff</color>
 						<alignment>center</alignment>
@@ -133,15 +160,19 @@
 						<pos>0.705 0</pos>
 						<zIndex>999</zIndex>
 						<maxSize>0.2 0.2</maxSize>
-						<opacity>1</opacity>
+						<opacity>${selopacite}</opacity>
 						<storyboard event="open">
 							<animation property="color" to="ffffff" begin="0" duration="35" mode="Linear"/>
 						</storyboard>
 						<storyboard event="activate">
 							<animation property="color" to="ebe134" begin="0" duration="250" mode="Linear"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="scroll">
 							<animation property="color" to="ffffff" begin="0" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
 						</storyboard>
 					</image>
 				</container>
@@ -189,8 +220,7 @@
 			<color>ffffff</color>
 		</image>
 		<image name="defautfanart" extra="true">
-			<visible ifSubset="custombuilds:standardbuilds">${standardsbuildsfanarttest}</visible>
-			<visible ifSubset="custombuilds:retrofreshbat">${freshbuildfanarttest}</visible>
+			<visible>(${media_fanart_missing}) &amp;&amp; {game:rom} != '..'</visible>
 			<path>${intfanartfresh}</path>
 			<autoFade>false</autoFade>
 			<pos>0.5 0.5</pos>
@@ -202,9 +232,9 @@
 			<zIndex>2</zIndex>
 		</image>
 		<image name="defautboxart" extra="true">
-			<visible ifSubset="custombuilds:standardbuilds">${standardsbuildsfanarttest}</visible>
-			<visible ifSubset="custombuilds:retrofreshbat">${freshbuildfanarttest}</visible>
-			<path>{game:thumbnail}</path>
+			<visible>(${media_fanart_missing}) &amp;&amp; {game:rom} != '..'</visible>
+			<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
+			<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
 			<autoFade>false</autoFade>
 			<pos>0.96 0.7</pos>
 			<maxSize>0.4 0.6</maxSize>
@@ -213,10 +243,8 @@
 			<zIndex>2</zIndex>
 		</image>
 		<image name="fanart" extra="true">
-			<visible ifSubset="custombuilds:standardbuilds">${standardsbuildsfanarttestyes}</visible>
-			<visible ifSubset="custombuilds:retrofreshbat">${freshbuildfanarttestyes}</visible>
-			<path ifSubset="custombuilds:standardbuilds">${standardsbuildsfanart}</path>
-			<path ifSubset="custombuilds:retrofreshbat">${freshbuildfanart}</path>
+			<visible>${media_fanart_exists}</visible>
+			<path>${media_fanart}</path>
 			<autoFade>false</autoFade>
 			<pos>0.56 0.45</pos>
 			<size>0 0.9</size>
@@ -232,16 +260,51 @@
 			<zIndex>3</zIndex>
 		</image>
 		<video name="md_video">
+			<visible>false</visible>
+		</video>
+		<image name="grid_capture, grid_capturefixe" extra="true">
+			<path>${media_image}</path>
 			<pos>0.049 0.44</pos>
-			<maxSize>0.35 0.35</maxSize>
+			<maxSize>0.40 0.33</maxSize>
+			<origin>0 0.5</origin>
+			<zIndex>3.05</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>0.03</cornerRadius>
+				<borderSize>0.022</borderSize>
+				<borderColor>ffffff30</borderColor>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
+		</image>
+		<image name="grid_capture" extra="true">
+			<visible>${media_video_exists}</visible>
+			<storyboard event="open">
+				<animation property="opacity" from="1" to="1" duration="0"/>
+				<animation property="opacity" from="1" to="0" begin="900" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="0"/>
+				<animation property="opacity" from="1" to="0" begin="900" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="grid_capturefixe" extra="true">
+			<visible>!${media_video_exists}</visible>
+		</image>
+		<video name="grid_video" extra="true">
+			<path>${media_video}</path>
+			<pos>0.049 0.44</pos>
+			<maxSize>0.40 0.33</maxSize>
 			<origin>0 0.5</origin>
 			<delay>0.4</delay>
-			<showSnapshotNoVideo>true</showSnapshotNoVideo>
-			<showSnapshotDelay>true</showSnapshotDelay>
-			<zIndex>3</zIndex>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<zIndex>3.1</zIndex>
 			<effect>none</effect>
-			<shader>
-				<path>:/shaders/border.glsl</path>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>0.03</cornerRadius>
 				<borderSize>0.022</borderSize>
 				<borderColor>ffffff30</borderColor>
@@ -255,12 +318,10 @@
 			<autoFade>false</autoFade>
 			<origin>0.5 0.5</origin>
 			<pos>0.942 0.052</pos>
-			<!-- <path>firstfile("${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png", -->
-			<!-- "${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path> -->
 			<path>firstfile(
-                    "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + ({game:system:theme}) + "-${lang}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + ({game:system:theme}) + "-" + {game:region} +".png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + ({game:system:theme}) + ".png",
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + ({game:system:theme}) + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + ({game:system:theme}) + "-" + {game:region} +".png",
+					"${path_syst_logo}/clearlogos/" + ({game:system:theme}) + ".png",
 					"${themePath}/../es-theme-carbon//art/logos/" + ({game:system:theme}) + ".png",
 					"${themePath}/../es-theme-carbon//art/logos/" + ({game:system:theme}) + ".svg")</path>
 			<maxSize>0.1 0.1</maxSize>
@@ -272,12 +333,10 @@
 			<autoFade>false</autoFade>
 			<origin>0.5 0.5</origin>
 			<pos>0.94 0.05</pos>
-			<!-- <path>firstfile("${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png", -->
-			<!-- "${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path> -->
 			<path>firstfile(
-                    "${bobmediapath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + ({game:system:theme}) + "-${lang}.png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + ({game:system:theme}) + "-" + {game:region} +".png",
-					"${bobmediapath}/_systemmedia/_logosyst/clearlogos/" + ({game:system:theme}) + ".png",
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + ({game:system:theme}) + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + ({game:system:theme}) + "-" + {game:region} +".png",
+					"${path_syst_logo}/clearlogos/" + ({game:system:theme}) + ".png",
 					"${themePath}/../es-theme-carbon//art/logos/" + ({game:system:theme}) + ".png",
 					"${themePath}/../es-theme-carbon//art/logos/" + ({game:system:theme}) + ".svg")</path>
 			<maxSize>0.1 0.1</maxSize>
@@ -285,6 +344,11 @@
 			<zIndex>91</zIndex>
 		</image>
 		<image name="md_wheel">
+			<visible>false</visible>
+		</image>
+		<image name="logowheel" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_wheel}</path>
 			<pos>0.05 0.15</pos>
 			<origin>0 0.5</origin>
 			<maxSize>0.25 0.23</maxSize>
@@ -292,9 +356,9 @@
 			<linearSmooth>true</linearSmooth>
 			<horizontalAlignment>left</horizontalAlignment>
 		</image>
-		<!-- Case description et titre du jeu en texte -->
 		<text name="gamename" extra="true">
-			<text>{game:name}</text>
+			<visible>{game:rom} != '..'</visible>
+			<text>${titrejeu}</text>
 			<opacity>0.7</opacity>
 			<pos>0.252 0.63</pos>
 			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
@@ -307,7 +371,79 @@
 			<glowSize>3</glowSize>
 			<zIndex>305</zIndex>
 		</text>
+		<image name="retourfond" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${themePath}/_viewgame/commun/retour/retour_fond.jpg</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<minSize>1 1</minSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>2</zIndex>
+		</image>
+		<image name="retourlogosyst" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${intlogoclearpng}</path>
+			<pos>0.05 0.16</pos>
+			<origin>0 0.5</origin>
+			<maxSize>0.25 0.15</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>10</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="retourconsole" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${firstsystemhardware}</path>
+			<pos>0.72 0.36</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.36 0.42</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>10</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+				<animation property="x" from="0.75" to="0.72" duration="500" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="retourfleche" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${themePath}/_viewgame/commun/retour/retour.png</path>
+			<pos>0.052 0.63</pos>
+			<origin>0 0.5</origin>
+			<maxSize>0.012 0.022</maxSize>
+			<color>FFFFFFE6</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>305</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<text name="retourtexte" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<text>${retourdossier}</text>
+			<opacity>0.9</opacity>
+			<pos>0.267 0.63</pos>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<color>ffffffff</color>
+			<origin>0.5 0.5</origin>
+			<size>0.4 0.02</size>
+			<alignment>left</alignment>
+			<glowColor>00000016</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>305</zIndex>
+		</text>
 		<text name="developer" extra="true">
+			<visible>{game:rom} != '..'</visible>
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<color>EFEFFF</color>
 			<glowColor>00000040</glowColor>
@@ -321,6 +457,11 @@
 			<opacity>0.8</opacity>
 		</text>
 		<text name="md_description">
+			<visible>false</visible>
+		</text>
+		<text name="desc_jeu" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<text>{game:desc}</text>
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<color>EFEFFF</color>
 			<glowColor>00000040</glowColor>
@@ -330,9 +471,11 @@
 			<size>0.3 0.035</size>
 			<alignment>left</alignment>
 			<fontSize>0.015</fontSize>
-			<singleLineScroll>false</singleLineScroll>
 			<lineSpacing>1.1</lineSpacing>
 			<opacity>0.8</opacity>
+			<autoScroll>vertical</autoScroll>
+			<verticalAlignment>top</verticalAlignment>
+			<zIndex>305</zIndex>
 		</text>
 		<image name="dateblack" extra="true">
 			<tile>false</tile>
@@ -345,7 +488,7 @@
 			<path>${themePath}/_viewgame/fanartstar/Bvierge.png</path>
 		</image>
 		<text name="binds_releasedate" extra="true">
-			<visible>{game:releaseyear} &gt; 0 ? 1 : 0</visible>
+			<visible>({game:releaseyear} &gt; 0 ? 1 : 0) &amp;&amp; {game:rom} != '..'</visible>
 			<color>FFFFFF</color>
 			<text>{game:releaseyear}</text>
 			<origin>0.5 0.5</origin>
@@ -358,7 +501,7 @@
 			<zIndex>305</zIndex>
 		</text>
 		<text name="binds_noreleasedate" extra="true">
-			<visible>{game:releaseyear} &gt; 0 ? 0 : 1</visible>
+			<visible>({game:releaseyear} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
 			<color>FFFFFF</color>
 			<text>${nodates}</text>
 			<origin>0.5 0.5</origin>
@@ -380,10 +523,8 @@
 			<horizontalAlignment>left</horizontalAlignment>
 			<path>${themePath}/_viewgame/fanartstar/Bvierge.png</path>
 		</image>
-		<!-- Début Nombre de joueurs et de partie avec prise en compte singulier et pluriel -->
 		<text name="binds_players" extra="true">
-			<visible>{game:players} &gt; 1 ? 1 : 0</visible>
-			<visible>{game:players} == 1 ? 0 : 1 &amp;&amp; {game:players} &lt; 1 ? 0 : 1 </visible>
+			<visible>(!empty({game:players}) &amp;&amp; {game:playerCount} &gt; 1) &amp;&amp; {game:rom} != '..'</visible>
 			<text>{game:players} ${playerss}</text>
 			<color>FFFFFF</color>
 			<origin>0.5 0.5</origin>
@@ -395,8 +536,7 @@
 			<zIndex>305</zIndex>
 		</text>
 		<text name="binds_player_one" extra="true">
-			<visible>{game:players} == 0 ? 0 : 1</visible>
-			<visible>{game:players} == 1 ? 1 : 0</visible>
+			<visible>(!empty({game:players}) &amp;&amp; {game:playerCount} == 1) &amp;&amp; {game:rom} != '..'</visible>
 			<text>{game:players} ${player}</text>
 			<color>FFFFFF</color>
 			<origin>0.5 0.5</origin>
@@ -408,7 +548,7 @@
 			<zIndex>305</zIndex>
 		</text>
 		<text name="binds_noplayers" extra="true">
-			<visible>{game:players} &gt; 0 ? 0 : 1</visible>
+			<visible>(empty({game:players})) &amp;&amp; {game:rom} != '..'</visible>
 			<text>${noplayerdata}</text>
 			<color>FFFFFF</color>
 			<origin>0.5 0.5</origin>
@@ -430,7 +570,7 @@
 			<path>${themePath}/_viewgame/fanartstar/Bvierge.png</path>
 		</image>
 		<text name="binds_playcount_one" extra="true">
-			<visible>{game:playcount} == 1 ? 1 : 0</visible>
+			<visible>({game:playcount} == 1 ? 1 : 0) &amp;&amp; {game:rom} != '..'</visible>
 			<color>FFFFFF</color>
 			<text>{game:playcount} ${playcountone}</text>
 			<origin>0.5 0.5</origin>
@@ -442,7 +582,7 @@
 			<zIndex>305</zIndex>
 		</text>
 		<text name="binds_playcount" extra="true">
-			<visible>{game:playcount} &gt; 1 ? 1 : 0</visible>
+			<visible>({game:playcount} &gt; 1 ? 1 : 0) &amp;&amp; {game:rom} != '..'</visible>
 			<color>FFFFFF</color>
 			<text>{game:playcount} ${playcount}</text>
 			<origin>0.5 0.5</origin>
@@ -454,7 +594,7 @@
 			<zIndex>305</zIndex>
 		</text>
 		<text name="binds_noplaycount" extra="true">
-			<visible>{game:playcount} &gt; 0 ? 0 : 1</visible>
+			<visible>({game:playcount} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
 			<color>FFFFFF</color>
 			<text>${nogametime}</text>
 			<origin>0.5 0.5</origin>
@@ -465,7 +605,6 @@
 			<fontSize>0.020</fontSize>
 			<zIndex>305</zIndex>
 		</text>
-		<!-- Début Nombre de joueurs et de partie avec prise en compte singulier et pluriel -->
 		<image name="notation" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.31 0.72</pos>
@@ -475,17 +614,48 @@
 			<horizontalAlignment>left</horizontalAlignment>
 			<path>${themePath}/_viewgame/fanartstar/Bvierge.png</path>
 		</image>
-		<text name="binds_rating" extra="true">
-			<visible>{game:rating} &gt; 0 ? 1 : 0</visible>
-			<text>{game:stars}</text>
-			<pos>0.283 0.704</pos>
-			<fontSize>0.020</fontSize>
+		<text name="binds_notefond" extra="true">
+			<pos>0.2839 0.7176</pos>
+			<origin>0 0.5</origin>
+			<visible>({game:rating} &gt; 0) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}${noteicone}${noteicone}${noteicone}</text>
+			<fontSize>0.016</fontSize>
 			<size>0.00 0.00</size>
 			<zIndex>305</zIndex>
-			<color>FFFFFF</color>
+			<fontPath>${themePath}/_common/fonts/notes.ttf</fontPath>
+			<color>C8CCD038</color>
+		</text>
+		<text name="binds_note1, binds_note2, binds_note3, binds_note4, binds_note5" extra="true">
+			<pos>0.2839 0.7176</pos>
+			<origin>0 0.5</origin>
+			<fontSize>0.016</fontSize>
+			<size>0.00 0.00</size>
+			<zIndex>305</zIndex>
+			<fontPath>${themePath}/_common/fonts/notes.ttf</fontPath>
+			<color>C8CCD0</color>
+		</text>
+		<text name="binds_note1" extra="true">
+			<visible>({game:rating} &gt; 0 &amp;&amp; {game:rating} &lt; 0.3) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}</text>
+		</text>
+		<text name="binds_note2" extra="true">
+			<visible>({game:rating} &gt;= 0.3 &amp;&amp; {game:rating} &lt; 0.5) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}</text>
+		</text>
+		<text name="binds_note3" extra="true">
+			<visible>({game:rating} &gt;= 0.5 &amp;&amp; {game:rating} &lt; 0.7) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}${noteicone}</text>
+		</text>
+		<text name="binds_note4" extra="true">
+			<visible>({game:rating} &gt;= 0.7 &amp;&amp; {game:rating} &lt; 0.9) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}${noteicone}${noteicone}</text>
+		</text>
+		<text name="binds_note5" extra="true">
+			<visible>({game:rating} &gt;= 0.9) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}${noteicone}${noteicone}${noteicone}</text>
 		</text>
 		<text name="binds_norating" extra="true">
-			<visible>{game:rating} &gt; 0 ? 0 : 1</visible>
+			<visible>({game:rating} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
 			<text>${noratings}</text>
 			<origin>0.5 0.5</origin>
 			<pos>0.309 0.7185</pos>
@@ -496,15 +666,55 @@
 			<zIndex>305</zIndex>
 			<color>FFFFFF</color>
 		</text>
+		<text name="binds_notechiffre" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt; 0 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">tostring(({game:rating} * 100 + 0.5) | 0) + " ${notesur100}"</text>
+			<text ifSubset="iconenote:pourcent">tostring(({game:rating} * 100 + 0.5) | 0) + " %"</text>
+		</text>
+		<control name="binds_notechiffre">
+			<origin>0.5 0.5</origin>
+			<pos>0.309 0.7185</pos>
+			<fontSize>0.020</fontSize>
+			<alignment>center</alignment>
+			<size>0.075 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<zIndex>305</zIndex>
+			<color>FFFFFF</color>
+		</control>
+		<control name="binds_notefond">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt; 0) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note1">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt; 0 &amp;&amp; {game:rating} &lt; 0.3) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note2">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt;= 0.3 &amp;&amp; {game:rating} &lt; 0.5) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note3">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt;= 0.5 &amp;&amp; {game:rating} &lt; 0.7) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note4">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt;= 0.7 &amp;&amp; {game:rating} &lt; 0.9) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note5">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt;= 0.9) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
 		<control name="systblack,dateblack,playblack,notation,playerblack">
 			<zIndex>205</zIndex>
 			<opacity>0.7</opacity>
 		</control>
-		<control name="binds_player_one,binds_players,binds_noplayers,binds_releasedate,binds_noreleasedate,binds_playcount,binds_playcount_one,binds_noplaycount,binds_rating,binds_norating">
+		<control name="binds_player_one,binds_players,binds_noplayers,binds_releasedate,binds_noreleasedate,binds_playcount,binds_playcount_one,binds_noplaycount,binds_rating,binds_norating,binds_notechiffre">
 			<color>FFFFFF</color>
 			<opacity>0.5</opacity>
 		</control>
-		<!-- Début petit menu playlist avec 2 playlist prises en compte niquement -->
 		<text name="longpress" extra="true">
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<text>Appuie long sur "select"</text>
@@ -558,7 +768,6 @@
 			<opacity>0.8</opacity>
 		</text>
 		<text name="favoris_noselect" extra="true">
-			<!-- <visible>startswith(lower({system:filter}), "favoris")</visible> -->
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<text>Favoris uniquement</text>
 			<fontSize>0.02</fontSize>
@@ -611,6 +820,11 @@
 				<animation property="opacity" to="0" begin="3000" duration="1500" mode="linear" autoreverse="" repeat=""/>
 			</storyboard>
 		</control>
-		<!-- Fin petit menu playlist avec 2 playlist prises en compte niquement -->
+		<control name="systblack,dateblack,playblack,playerblack,notation">
+			<visible>{game:rom} != '..'</visible>
+		</control>
+		<control name="base_retourfond, base_retourconsole, base_retourtexte">
+			<visible>false</visible>
+		</control>
 	</customView>
 </theme>

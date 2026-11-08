@@ -35,7 +35,7 @@
  <linearSmooth>true</linearSmooth>
  <color>FFFFFFFF</color>
  <zIndex>1</zIndex>
- <shader>
+ <shader ifSubset="perfmachine:perfnormal">
  <path>:/shaders/border.glsl</path>
  <cornerRadius>0</cornerRadius>
  <innerShadowSize>0.025</innerShadowSize>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Modern first-person shooters inspired by the fast, level-based shooters of the 1990s such as Doom and Quake.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de tiro em primeira pessoa modernos inspirados nos FPS rápidos dos anos 90, como Doom e Quake.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Modern first-person shooters inspired by the fast, level-based shooters of the 1990s such as Doom and Quake.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Shooters en primera persona modernos inspirados en los FPS rápidos de los años 90 como Doom y Quake.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux de tir à la première personne modernes inspirés des FPS nerveux des années 1990 comme Doom et Quake.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Moderne Ego-Shooter im Stil der schnellen Shooter der 1990er-Jahre wie Doom und Quake.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Boomer Shooter</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2010</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

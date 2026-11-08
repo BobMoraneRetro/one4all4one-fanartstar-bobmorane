@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>NES games enhanced with MSU-1 patches, which add CD-quality music and sometimes video to the original games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de NES melhorados com patches MSU-1, que acrescentam música com qualidade de CD e às vezes vídeo aos jogos originais.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>NES games enhanced with MSU-1 patches, which add CD-quality music and sometimes video to the original games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de NES mejorados con parches MSU-1, que añaden música con calidad de CD y a veces vídeo a los juegos originales.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux NES améliorés par des patchs MSU-1, qui ajoutent une musique de qualité CD, et parfois de la vidéo, aux jeux d'origine.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>NES-Spiele mit MSU-1-Patches, die den Originalspielen Musik in CD-Qualität und teils Video hinzufügen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>NES MSU-1</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+</theme>

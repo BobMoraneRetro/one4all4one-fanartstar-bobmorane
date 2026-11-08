@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>French home computer by Exelvision, designed by former Texas Instruments engineers, with a wireless infrared keyboard.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico francês da Exelvision, criado por ex-engenheiros da Texas Instruments, com teclado sem fio por infravermelho.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>French home computer by Exelvision, designed by former Texas Instruments engineers, with a wireless infrared keyboard.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico francés de Exelvision, diseñado por antiguos ingenieros de Texas Instruments, con teclado inalámbrico por infrarrojos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial français d'Exelvision, conçu par d'anciens ingénieurs de Texas Instruments, avec un clavier sans fil infrarouge.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Französischer Heimcomputer von Exelvision, von ehemaligen Texas-Instruments-Ingenieuren entwickelt, mit kabelloser Infrarot-Tastatur.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>EXL 100</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1984</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Exelvision</text>
+		</text>
+	</view>
+</theme>

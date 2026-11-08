@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's Europa-R arcade board, a powerful PC-based system used for Sega Rally 3.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>A placa de arcade Europa-R da Sega, potente sistema baseado em PC usado em Sega Rally 3.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's Europa-R arcade board, a powerful PC-based system used for Sega Rally 3.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La placa arcade Europa-R de Sega, potente sistema basado en PC usado para Sega Rally 3.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La carte arcade Europa-R de Sega, puissant système sur base PC utilisé pour Sega Rally 3.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas Arcade-Platine Europa-R, ein leistungsstarkes PC-basiertes System, genutzt für Sega Rally 3.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Europa-R</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

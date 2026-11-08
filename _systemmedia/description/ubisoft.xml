@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PC games from Ubisoft, launched through Ubisoft Connect.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de PC da Ubisoft, iniciados pelo Ubisoft Connect.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PC games from Ubisoft, launched through Ubisoft Connect.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de PC de Ubisoft, lanzados desde Ubisoft Connect.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux PC d'Ubisoft, lancés via Ubisoft Connect.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PC-Spiele von Ubisoft, gestartet über Ubisoft Connect.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Ubisoft</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Ubisoft</text>
+		</text>
+	</view>
+</theme>

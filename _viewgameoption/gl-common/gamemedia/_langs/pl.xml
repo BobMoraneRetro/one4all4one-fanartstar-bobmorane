@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="pl">
+		<packcustombuildsno>Fanart z przyrostkiem "-fanart" (domyślnie)</packcustombuildsno>
+		<packretrofreshbat>Fanart z przyrostkiem "-image"</packretrofreshbat>
+		<scrapedboxart>Pudełko 3D z "-boxart" w gamelist</scrapedboxart>
+		<scrapedthumbnail>Pudełko 3D z "-thumbnail" w gamelist</scrapedthumbnail>
+		<gamemedianon>Nie: tylko media z gamelisty</gamemedianon>
+		<gamemediaoui>Tak: najpierw własne media, w przeciwnym razie gamelista</gamemediaoui>
+		<gamemediaseul>Tylko: tylko własne media (bez zastępowania z gamelisty)</gamemediaseul>
+		<intheme>Folder motywu - Domyślnie</intheme>
+		<extfolder>Folder zewnętrzny</extfolder>
+		<opt_custombuilds>ZAAWANSOWANE - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>ZAAWANSOWANE - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>ZAAWANSOWANE - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>ZAAWANSOWANE - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

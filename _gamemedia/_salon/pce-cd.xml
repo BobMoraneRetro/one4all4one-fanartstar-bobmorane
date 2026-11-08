@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<salon_disque_taille ifSubset="boxorthumb:boxart">0.2576 0.4579</salon_disque_taille>
+		<salon_disque_taille ifSubset="boxorthumb:thumb">0.2895 0.5147</salon_disque_taille>
+		<salon_disque_x ifSubset="boxorthumb:boxart">0.6777</salon_disque_x>
+		<salon_disque_x ifSubset="boxorthumb:thumb">0.6900</salon_disque_x>
+	</variables>
+</theme>

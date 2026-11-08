@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The original Doom played with real-time ray-traced lighting, reflections and shadows on modern graphics cards.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Doom original com iluminação, reflexos e sombras por ray tracing em tempo real em placas de vídeo modernas.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>The original Doom played with real-time ray-traced lighting, reflections and shadows on modern graphics cards.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Doom original con iluminación, reflejos y sombras por trazado de rayos en tiempo real en tarjetas gráficas modernas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Doom original joué avec un éclairage, des reflets et des ombres en ray tracing en temps réel sur les cartes graphiques modernes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Das ursprüngliche Doom mit Echtzeit-Raytracing für Licht, Spiegelungen und Schatten auf modernen Grafikkarten.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Doom RTX</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1993</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>id Software</text>
+		</text>
+	</view>
+</theme>

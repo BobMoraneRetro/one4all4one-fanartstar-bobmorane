@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Open-source reimplementation of Theme Hospital, Bullfrog's 1997 hospital management game, with higher resolutions and fixes.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Reimplementação livre de Theme Hospital, jogo de gestão de hospital da Bullfrog de 1997, com resoluções maiores e correções.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Open-source reimplementation of Theme Hospital, Bullfrog's 1997 hospital management game, with higher resolutions and fixes.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Reimplementación libre de Theme Hospital, juego de gestión hospitalaria de Bullfrog de 1997, con mayores resoluciones y correcciones.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Réécriture libre de Theme Hospital, jeu de gestion d'hôpital de Bullfrog sorti en 1997, avec des résolutions plus élevées et des corrections.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Quelloffene Neuimplementierung von Theme Hospital, Bullfrogs Krankenhaus-Simulation von 1997, mit höheren Auflösungen und Korrekturen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>CorsixTH</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

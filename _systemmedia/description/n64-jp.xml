@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The Japanese releases of the Nintendo 64 library, including many titles never released in the West.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>As versões japonesas da biblioteca do Nintendo 64, com muitos títulos nunca lançados no Ocidente.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>The Japanese releases of the Nintendo 64 library, including many titles never released in the West.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Las versiones japonesas del catálogo de Nintendo 64, con muchos títulos que nunca salieron en Occidente.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Les versions japonaises de la ludothèque Nintendo 64, dont de nombreux titres jamais sortis en Occident.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Die japanischen Fassungen der Nintendo 64-Spiele, darunter viele Titel, die nie im Westen erschienen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Nintendo 64 (Japan)</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1996</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+</theme>

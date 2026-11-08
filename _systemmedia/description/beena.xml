@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's educational console for young children, the successor of the Sega Pico, using interactive storybook cartridges.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console educativo da Sega para crianças pequenas, sucessor do Sega Pico, com cartuchos em forma de livros interativos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's educational console for young children, the successor of the Sega Pico, using interactive storybook cartridges.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola educativa de Sega para niños pequeños, sucesora de la Sega Pico, con cartuchos en forma de libros interactivos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console éducative de Sega pour les jeunes enfants, successeur de la Sega Pico, utilisant des cartouches en forme de livres interactifs.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sega-Lernkonsole für kleine Kinder, Nachfolger des Sega Pico, mit Steckmodulen in Form interaktiver Bilderbücher.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Beena</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2005</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

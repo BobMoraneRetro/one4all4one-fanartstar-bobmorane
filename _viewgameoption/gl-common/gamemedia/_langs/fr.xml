@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="fr">
+		<packcustombuildsno>Fanart avec suffixe "-fanart" (par défaut)</packcustombuildsno>
+		<packretrofreshbat>Fanart avec suffixe "-image"</packretrofreshbat>
+		<scrapedboxart>Dans "-boxart" (2D dans "-thumbnail")</scrapedboxart>
+		<scrapedthumbnail>Dans "-thumbnail" (2D dans "-boxart")</scrapedthumbnail>
+		<gamemedianon>Non : médias du gamelist uniquement</gamemedianon>
+		<gamemediaoui>Oui : médias perso d'abord, sinon gamelist</gamemediaoui>
+		<gamemediaseul>Seuls : médias perso uniquement (sans repli sur le gamelist)</gamemediaseul>
+		<intheme>Dossier du thème - Par défaut</intheme>
+		<extfolder>Dossier extérieur</extfolder>
+		<opt_custombuilds>AVANCÉ - Champ du gamelist utilisé pour le fanart</opt_custombuilds>
+		<opt_scrap3dbox>AVANCÉ - Champ du gamelist utilisé pour la boîte 3D</opt_scrap3dbox>
+		<opt_gamemedia>AVANCÉ - Médias perso des jeux</opt_gamemedia>
+		<opt_extfoldergamemedia>AVANCÉ - Emplacement des médias perso</opt_extfoldergamemedia>
+	</variables>
+</theme>

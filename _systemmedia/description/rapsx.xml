@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sony PlayStation games with RetroAchievements support: unlock achievements and climb the leaderboards while you play.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de Sony PlayStation compatíveis com RetroAchievements: desbloqueie conquistas e suba nos rankings enquanto joga.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sony PlayStation games with RetroAchievements support: unlock achievements and climb the leaderboards while you play.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de Sony PlayStation compatibles con RetroAchievements: desbloquea logros y sube en las clasificaciones mientras juegas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux Sony PlayStation compatibles RetroAchievements : débloquez des succès et grimpez dans les classements en jouant.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sony PlayStation-Spiele mit RetroAchievements-Unterstützung: Schalte Erfolge frei und steige in den Bestenlisten auf.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>RA Sony PlayStation</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>RetroAchievements</text>
+		</text>
+	</view>
+</theme>

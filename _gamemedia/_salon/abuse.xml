@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<salon_disque_tourne>true</salon_disque_tourne>
+	</variables>
+</theme>

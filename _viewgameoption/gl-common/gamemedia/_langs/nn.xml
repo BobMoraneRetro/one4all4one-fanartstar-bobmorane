@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="nn">
+		<packcustombuildsno>Fanart med suffikset "-fanart" (standard)</packcustombuildsno>
+		<packretrofreshbat>Fanart med suffikset "-image"</packretrofreshbat>
+		<scrapedboxart>3D-boks med "-boxart" i gamelist</scrapedboxart>
+		<scrapedthumbnail>3D-boks med "-thumbnail" i gamelist</scrapedthumbnail>
+		<gamemedianon>Nei: berre medium frå gamelist</gamemedianon>
+		<gamemediaoui>Ja: eigne medium først, elles gamelist</gamemediaoui>
+		<gamemediaseul>Berre: berre eigne media (ingen reserve frå gamelist)</gamemediaseul>
+		<intheme>Temamappe - Standard</intheme>
+		<extfolder>Ekstern mappe</extfolder>
+		<opt_custombuilds>AVANSERT - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>AVANSERT - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>AVANSERT - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>AVANSERT - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

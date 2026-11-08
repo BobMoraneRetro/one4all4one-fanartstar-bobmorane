@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Source port of Quake III Arena, id Software's 1999 arena shooter, a landmark of competitive multiplayer.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Port de Quake III Arena, o jogo de tiro em arena da id Software de 1999, referência do multijogador competitivo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Source port of Quake III Arena, id Software's 1999 arena shooter, a landmark of competitive multiplayer.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Port de Quake III Arena, el shooter de arena de id Software de 1999, referencia del multijugador competitivo.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Portage de Quake III Arena, le jeu de tir en arène d'id Software sorti en 1999, référence du multijoueur compétitif.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Source-Port von Quake III Arena, dem Arena-Shooter von id Software von 1999, ein Meilenstein des kompetitiven Mehrspielermodus.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Quake III</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1999</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>id Software</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega System 18, the successor of the System 16, home to Shadow Dancer, Alien Storm and Moonwalker.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Sega System 18, sucessor do System 16, com Shadow Dancer, Alien Storm e Moonwalker.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega System 18, the successor of the System 16, home to Shadow Dancer, Alien Storm and Moonwalker.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Sega System 18, sucesor del System 16, con Shadow Dancer, Alien Storm y Moonwalker.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Sega System 18, successeur du System 16, qui a accueilli Shadow Dancer, Alien Storm et Moonwalker.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sega System 18, Nachfolger des System 16, Heimat von Shadow Dancer, Alien Storm und Moonwalker.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>System 18</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1989</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

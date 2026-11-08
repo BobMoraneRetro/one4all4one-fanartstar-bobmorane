@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>OpenMoHAA, the open-source reimplementation of Medal of Honor: Allied Assault, the 2002 Second World War shooter.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>OpenMoHAA, reimplementação livre de Medal of Honor: Allied Assault, o jogo de tiro de 2002 sobre a Segunda Guerra Mundial.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>OpenMoHAA, the open-source reimplementation of Medal of Honor: Allied Assault, the 2002 Second World War shooter.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>OpenMoHAA, reimplementación libre de Medal of Honor: Allied Assault, el shooter de 2002 sobre la Segunda Guerra Mundial.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>OpenMoHAA, réécriture libre de Medal of Honor : Allied Assault, le jeu de tir de 2002 sur la Seconde Guerre mondiale.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>OpenMoHAA, die quelloffene Neuimplementierung von Medal of Honor: Allied Assault, dem Weltkriegs-Shooter von 2002.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>MOH: Allied Assault</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2002</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

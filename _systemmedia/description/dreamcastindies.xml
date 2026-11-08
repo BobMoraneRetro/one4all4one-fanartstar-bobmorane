@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Independent games released for the Dreamcast long after its commercial end, by a still very active homebrew scene.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos independentes lançados para Dreamcast muito depois do fim da sua comercialização, por uma cena homebrew ainda muito ativa.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Independent games released for the Dreamcast long after its commercial end, by a still very active homebrew scene.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos independientes lanzados para Dreamcast mucho después de su retirada, por una escena homebrew aún muy activa.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux indépendants sortis sur Dreamcast bien après la fin de sa commercialisation, par une scène homebrew toujours très active.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Unabhängige Spiele, die lange nach dem Verkaufsende für die Dreamcast erschienen sind, von einer weiterhin sehr aktiven Homebrew-Szene.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Dreamcast Indies</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1998</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

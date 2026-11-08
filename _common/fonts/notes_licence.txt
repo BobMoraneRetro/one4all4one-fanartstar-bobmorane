@@ -1,0 +1,3 @@
+notes.ttf : sous-ensemble (7 icônes) de « Font Awesome 6 Free Solid » 6.7.2, https://fontawesome.com
+Police sous licence SIL Open Font License 1.1 (https://openfontlicense.org) - Font Awesome Free License : https://fontawesome.com/license/free
+Icônes : étoile f005, cœur f004, manette f11b, pouce f164, trophée f091, fantôme f6e2, crâne f54c

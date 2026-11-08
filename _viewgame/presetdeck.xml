@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${bigart_colonnes_centre_2d} : Big Art (presetdeck) : colonnes, puis marge / position X / largeur de la grille, par mode (c / g) et 2D / 3D (suffixe 3) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_colonnes_centre_3d} : valeur : 13 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_colonnes_gauche_2d} : valeur : 15 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_colonnes_gauche_3d} : valeur : 19 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_ecart_centre_2d} : valeur : -0.02079 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_ecart_centre_3d} : valeur : -0.06151 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_ecart_gauche_2d} : valeur : -0.01347 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_ecart_gauche_3d} : valeur : -0.05420 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_position_centre_2d} : valeur : -0.05727 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_position_centre_3d} : valeur : 0.08525 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_position_gauche_2d} : valeur : -0.55370 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_position_gauche_3d} : valeur : -0.39623 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_taille_centre_2d} : valeur : 1.42804 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_taille_centre_3d} : valeur : 0.93940 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_taille_gauche_2d} : valeur : 1.73442 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_taille_gauche_3d} : valeur : 1.46020 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiercouleurjeu} : valeur : 0 (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
+	${deckgrisinfo} : Big Art : couleur grise des infos (définie dans ce fichier)
+	${deckor} : Big Art : couleur dorée (note, favori) (définie dans ce fichier)
+	${deckpolice} : Big Art : police des textes (définie dans ce fichier)
+	${deckpolicejoueurs} : Big Art : police des icônes de joueurs (définie dans ce fichier)
+	${decktailleinfo} : Big Art : taille du texte des infos (définie dans ce fichier)
+	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
+	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
+	${intlogoclearpng} : Logo clair du système (définie dans theme.xml)
+	${media_box2d} : boîte 2D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box2d_missing} : vrai si le média « box2d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box3d} : boîte 3D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box3d_missing} : vrai si le média « box3d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart_chain} : média « fanart_chain » du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_image} : capture du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
+	${selopacite} : opacité des jeux non sélectionnés dans les grilles (1, 0.7 ou 0.45) (définie dans ce fichier ; valeur selon l option « JEUX - Mise en valeur du jeu sélectionné »)
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${decknormal}, ${gametimelabel}, ${lastgamelabel}, ${noplaycount}, ${noplayerdata}, ${opt_deckespace}, ${presetdeck}, ${retourdossier}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<selopacite ifSubset="selectionvaleur:legere">0.7</selopacite>
+		<selopacite ifSubset="selectionvaleur:marquee">0.45</selopacite>
+		<selopacite ifSubset="selectionvaleur:aucune">1</selopacite>
+		<deckpolice>${themePath}/_common/fonts/Cabin-Bold.ttf</deckpolice>
+		<deckpolicejoueurs>${themePath}/_common/fonts/players.ttf</deckpolicejoueurs>
+		<deckgrisinfo>C0C5CA</deckgrisinfo>
+		<decktailleinfo>0.0155</decktailleinfo>
+		<deckor>FFD24AFF</deckor>
+	</variables>
+	<subset name="deckespace" displayName="${opt_deckespace}" appliesTo="presetdeck, presetspotlight, presetstarbox, presetstarboxloop,presetsalon">
+		<include name="e20" displayName="0 (${decknormal})">${themePath}/_viewgame/deck/espacement/e20.xml</include>
+		<include name="e-60" displayName="-20">${themePath}/_viewgame/deck/espacement/e-60.xml</include>
+		<include name="e-56" displayName="-19">${themePath}/_viewgame/deck/espacement/e-56.xml</include>
+		<include name="e-52" displayName="-18">${themePath}/_viewgame/deck/espacement/e-52.xml</include>
+		<include name="e-48" displayName="-17">${themePath}/_viewgame/deck/espacement/e-48.xml</include>
+		<include name="e-44" displayName="-16">${themePath}/_viewgame/deck/espacement/e-44.xml</include>
+		<include name="e-40" displayName="-15">${themePath}/_viewgame/deck/espacement/e-40.xml</include>
+		<include name="e-36" displayName="-14">${themePath}/_viewgame/deck/espacement/e-36.xml</include>
+		<include name="e-32" displayName="-13">${themePath}/_viewgame/deck/espacement/e-32.xml</include>
+		<include name="e-28" displayName="-12">${themePath}/_viewgame/deck/espacement/e-28.xml</include>
+		<include name="e-24" displayName="-11">${themePath}/_viewgame/deck/espacement/e-24.xml</include>
+		<include name="e-20" displayName="-10">${themePath}/_viewgame/deck/espacement/e-20.xml</include>
+		<include name="e-16" displayName="-9">${themePath}/_viewgame/deck/espacement/e-16.xml</include>
+		<include name="e-12" displayName="-8">${themePath}/_viewgame/deck/espacement/e-12.xml</include>
+		<include name="e-8" displayName="-7">${themePath}/_viewgame/deck/espacement/e-8.xml</include>
+		<include name="e-4" displayName="-6">${themePath}/_viewgame/deck/espacement/e-4.xml</include>
+		<include name="e0" displayName="-5">${themePath}/_viewgame/deck/espacement/e0.xml</include>
+		<include name="e4" displayName="-4">${themePath}/_viewgame/deck/espacement/e4.xml</include>
+		<include name="e6" displayName="-3.5">${themePath}/_viewgame/deck/espacement/e6.xml</include>
+		<include name="e8" displayName="-3">${themePath}/_viewgame/deck/espacement/e8.xml</include>
+		<include name="e12" displayName="-2">${themePath}/_viewgame/deck/espacement/e12.xml</include>
+		<include name="e16" displayName="-1">${themePath}/_viewgame/deck/espacement/e16.xml</include>
+		<include name="e24" displayName="+1">${themePath}/_viewgame/deck/espacement/e24.xml</include>
+		<include name="e28" displayName="+2">${themePath}/_viewgame/deck/espacement/e28.xml</include>
+		<include name="e32" displayName="+3">${themePath}/_viewgame/deck/espacement/e32.xml</include>
+		<include name="e36" displayName="+4">${themePath}/_viewgame/deck/espacement/e36.xml</include>
+		<include name="e40" displayName="+5">${themePath}/_viewgame/deck/espacement/e40.xml</include>
+		<include name="e44" displayName="+6">${themePath}/_viewgame/deck/espacement/e44.xml</include>
+		<include name="e48" displayName="+7">${themePath}/_viewgame/deck/espacement/e48.xml</include>
+		<include name="e52" displayName="+8">${themePath}/_viewgame/deck/espacement/e52.xml</include>
+		<include name="e56" displayName="+9">${themePath}/_viewgame/deck/espacement/e56.xml</include>
+		<include name="e60" displayName="+10">${themePath}/_viewgame/deck/espacement/e60.xml</include>
+		<include name="e64" displayName="+11">${themePath}/_viewgame/deck/espacement/e64.xml</include>
+		<include name="e68" displayName="+12">${themePath}/_viewgame/deck/espacement/e68.xml</include>
+		<include name="e72" displayName="+13">${themePath}/_viewgame/deck/espacement/e72.xml</include>
+		<include name="e76" displayName="+14">${themePath}/_viewgame/deck/espacement/e76.xml</include>
+		<include name="e80" displayName="+15">${themePath}/_viewgame/deck/espacement/e80.xml</include>
+	</subset>
+	<customView name="presetdeck" displayName="${presetdeck}" inherits="grid">
+		<imagegrid name="gamegrid">
+			<imageSource ifSubset="boxorthumb:boxart">boxart</imageSource>
+			<imageSource ifSubset="boxorthumb:thumb">thumbnail</imageSource>
+			<scrollDirection>horizontalCenter</scrollDirection>
+			<autoLayout ifSubset="deckselection:gauche,boxorthumb:boxart">${bigart_colonnes_gauche_3d} 1</autoLayout>
+			<autoLayout ifSubset="deckselection:gauche,boxorthumb:thumb">${bigart_colonnes_gauche_2d} 1</autoLayout>
+			<animateSelection ifSubset="deckselection:gauche">false</animateSelection>
+			<autoLayout ifSubset="deckselection:centre,boxorthumb:boxart">${bigart_colonnes_centre_3d} 1</autoLayout>
+			<autoLayout ifSubset="deckselection:centre,boxorthumb:thumb">${bigart_colonnes_centre_2d} 1</autoLayout>
+			<animateSelection ifSubset="deckselection:centre">true</animateSelection>
+			<showVideoAtDelay>-1</showVideoAtDelay>
+			<zIndex>60</zIndex>
+			<padding>0 0.035 0 0.035</padding>
+			<margin ifSubset="deckselection:gauche,boxorthumb:boxart">${bigart_ecart_gauche_3d} 0</margin>
+			<pos ifSubset="deckselection:gauche,boxorthumb:boxart">${bigart_position_gauche_3d} 0.54450</pos>
+			<size ifSubset="deckselection:gauche,boxorthumb:boxart">${bigart_taille_gauche_3d} 0.39100</size>
+			<margin ifSubset="deckselection:gauche,boxorthumb:thumb">${bigart_ecart_gauche_2d} 0</margin>
+			<pos ifSubset="deckselection:gauche,boxorthumb:thumb">${bigart_position_gauche_2d} 0.54450</pos>
+			<size ifSubset="deckselection:gauche,boxorthumb:thumb">${bigart_taille_gauche_2d} 0.39100</size>
+			<margin ifSubset="deckselection:centre,boxorthumb:boxart">${bigart_ecart_centre_3d} 0</margin>
+			<pos ifSubset="deckselection:centre,boxorthumb:boxart">${bigart_position_centre_3d} 0.54347</pos>
+			<size ifSubset="deckselection:centre,boxorthumb:boxart">${bigart_taille_centre_3d} 0.39307</size>
+			<margin ifSubset="deckselection:centre,boxorthumb:thumb">${bigart_ecart_centre_2d} 0</margin>
+			<pos ifSubset="deckselection:centre,boxorthumb:thumb">${bigart_position_centre_2d} 0.54347</pos>
+			<size ifSubset="deckselection:centre,boxorthumb:thumb">${bigart_taille_centre_2d} 0.39307</size>
+			<autoLayoutSelectedZoom ifSubset="deckselection:gauche">1</autoLayoutSelectedZoom>
+			<autoLayoutSelectedZoom ifSubset="deckselection:centre">1</autoLayoutSelectedZoom>
+			<itemTemplate>
+				<container>
+					<image name="sansboite">
+						<opacity>${selopacite}</opacity>
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<path>${intfanartfresh}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<minSize>1 1</minSize>
+						<saturation>0.7</saturation>
+						<linearSmooth>true</linearSmooth>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case_deck.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize ifSubset="deckselection:gauche">0.02</outerShadowSize>
+							<outerShadowSize ifSubset="deckselection:centre">0.04</outerShadowSize>
+							<outerShadowColor ifSubset="deckselection:centre">00000073</outerShadowColor>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+							<haloEteint>1</haloEteint>
+							<refletPilote>1</refletPilote>
+							<refletPhase>0</refletPhase>
+						</shader>
+						<scaleOrigin>0 0</scaleOrigin>
+						<storyboard event="activate" ifSubset="deckselection:centre">
+							<animation property="scale" from="1" to="1.15" duration="150" mode="easeOut"/>
+							<animation property="shader.haloEteint" from="1" to="1" duration="0"/>
+							<animation property="shader.haloEteint" from="1" to="0" begin="200" duration="450" mode="easeOut"/>
+							<animation property="shader.refletPhase" from="0" to="1" begin="350" duration="1200" mode="easeInOut"/>
+							<animation property="shader.refletPhase" from="-3" to="1" begin="1550" duration="8000" mode="linear" repeat="forever"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="deckselection:centre">
+							<animation property="scale" from="1.15" to="1" duration="150" mode="easeOut"/>
+							<animation property="shader.haloEteint" from="1" to="1" duration="0"/>
+							<animation property="shader.refletPhase" from="0" to="0" duration="0"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+					</image>
+					<image name="sansboitelogo">
+						<opacity>${selopacite}</opacity>
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<path>${media_marquee}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.8 0.45</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<scaleOrigin>0 0</scaleOrigin>
+						<storyboard event="activate" ifSubset="deckselection:centre">
+							<animation property="scale" from="1" to="1.15" duration="150" mode="easeOut"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="deckselection:centre">
+							<animation property="scale" from="1.15" to="1" duration="150" mode="easeOut"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+					</image>
+					<text name="sansboitenom">
+						<opacity>${selopacite}</opacity>
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; ${media_marquee_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; ${media_marquee_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+						<text>${titrejeu}</text>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>0.86 0.6</size>
+						<fontPath>${deckpolice}</fontPath>
+						<fontSize>0.022</fontSize>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<verticalAlignment>center</verticalAlignment>
+						<glowColor>000000CC</glowColor>
+						<glowSize>2</glowSize>
+						<scaleOrigin>0 0</scaleOrigin>
+						<storyboard event="activate" ifSubset="deckselection:centre">
+							<animation property="scale" from="1" to="1.15" duration="150" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="deckselection:centre">
+							<animation property="scale" from="1.15" to="1" duration="150" mode="easeOut"/>
+						</storyboard>
+					</text>
+					<image name="retourfond">
+						<opacity>${selopacite}</opacity>
+						<visible>{game:rom} == '..'</visible>
+						<path>${intfanartfresh}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<minSize>1 1</minSize>
+						<saturation>0.4</saturation>
+						<color>5A5A5AFF</color>
+						<linearSmooth>true</linearSmooth>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case_deck.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize ifSubset="deckselection:gauche">0.02</outerShadowSize>
+							<outerShadowSize ifSubset="deckselection:centre">0.04</outerShadowSize>
+							<outerShadowColor ifSubset="deckselection:centre">00000073</outerShadowColor>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+							<haloEteint>1</haloEteint>
+							<refletPilote>1</refletPilote>
+							<refletPhase>0</refletPhase>
+						</shader>
+						<scaleOrigin>0 0</scaleOrigin>
+						<storyboard event="activate" ifSubset="deckselection:centre">
+							<animation property="scale" from="1" to="1.15" duration="150" mode="easeOut"/>
+							<animation property="shader.haloEteint" from="1" to="1" duration="0"/>
+							<animation property="shader.haloEteint" from="1" to="0" begin="200" duration="450" mode="easeOut"/>
+							<animation property="shader.refletPhase" from="0" to="1" begin="350" duration="1200" mode="easeInOut"/>
+							<animation property="shader.refletPhase" from="-3" to="1" begin="1550" duration="8000" mode="linear" repeat="forever"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="deckselection:centre">
+							<animation property="scale" from="1.15" to="1" duration="150" mode="easeOut"/>
+							<animation property="shader.haloEteint" from="1" to="1" duration="0"/>
+							<animation property="shader.refletPhase" from="0" to="0" duration="0"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+					</image>
+					<image name="retourfleche">
+						<opacity>${selopacite}</opacity>
+						<visible>{game:rom} == '..'</visible>
+						<path>${themePath}/_viewgame/commun/retour/retour.png</path>
+						<pos>0.5 0.42</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.5 0.3</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<scaleOrigin>0 0</scaleOrigin>
+						<storyboard event="activate" ifSubset="deckselection:centre">
+							<animation property="scale" from="1" to="1.15" duration="150" mode="easeOut"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="deckselection:centre">
+							<animation property="scale" from="1.15" to="1" duration="150" mode="easeOut"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+					</image>
+					<image name="retourlogo">
+						<opacity>${selopacite}</opacity>
+						<visible>{game:rom} == '..'</visible>
+						<path>${media_marquee}</path>
+						<pos>0.5 0.72</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.75 0.15</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<scaleOrigin>0 0</scaleOrigin>
+						<storyboard event="activate" ifSubset="deckselection:centre">
+							<animation property="scale" from="1" to="1.15" duration="150" mode="easeOut"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="deckselection:centre">
+							<animation property="scale" from="1.15" to="1" duration="150" mode="easeOut"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+					</image>
+					<image name="boite">
+						<opacity>${selopacite}</opacity>
+						<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
+						<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>1 1</maxSize>
+						<maxSize if="{system.theme} == 'snes' || {system.theme} == 'n64'">0.88 1</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize ifSubset="deckselection:gauche">0.02</outerShadowSize>
+							<outerShadowSize ifSubset="deckselection:centre">0.04</outerShadowSize>
+							<outerShadowColor ifSubset="deckselection:centre">00000073</outerShadowColor>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+						</shader>
+						<storyboard event="activate" ifSubset="deckselection:centre">
+							<animation property="opacity" from="1" to="0" duration="0"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="deckselection:centre">
+							<animation property="opacity" from="0" to="${selopacite}" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="boitesel" ifSubset="deckselection:centre">
+						<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
+						<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>1 1</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<opacity>0</opacity>
+						<scaleOrigin>0 0</scaleOrigin>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/border_dvd_case_deck.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.04</outerShadowSize>
+							<outerShadowColor>00000001</outerShadowColor>
+							<saturation>1</saturation>
+							<enabled ifSubset="contourboite:non">false</enabled>
+							<haloEteint>0</haloEteint>
+							<refletPilote>1</refletPilote>
+							<refletPhase>0</refletPhase>
+						</shader>
+						<storyboard ifSubset="perfmachine:perfnormal" event="activate">
+							<animation property="opacity" from="0" to="1" duration="0"/>
+							<animation property="scale" from="1" to="1.15" duration="150" mode="easeOut"/>
+							<animation property="shader.haloEteint" from="1" to="1" duration="0"/>
+							<animation property="shader.haloEteint" from="1" to="0" begin="200" duration="450" mode="easeOut"/>
+							<animation property="shader.refletPhase" from="0" to="1" begin="350" duration="1200" mode="easeInOut"/>
+							<animation property="shader.refletPhase" from="-3" to="1" begin="1550" duration="8000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="opacity" from="0" to="1" duration="0"/>
+							<animation property="scale" from="1" to="1.15" duration="150" mode="easeOut"/>
+							<animation property="shader.haloEteint" from="1" to="1" duration="0"/>
+							<animation property="shader.haloEteint" from="1" to="0" begin="200" duration="450" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" from="1" to="0" duration="0"/>
+							<animation property="scale" from="1.15" to="1" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="favori">
+						<opacity>${selopacite}</opacity>
+						<visible>false</visible>
+						<path>${themePath}/_viewgameoption/gl-common/infoicone/yesfull.png</path>
+						<pos>0.92 0.06</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.16 0.12</maxSize>
+						<color>${deckor}</color>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
+					</image>
+				</container>
+			</itemTemplate>
+		</imagegrid>
+		<gridtile name="default">
+			<padding>0</padding>
+			<selectionMode>image</selectionMode>
+			<imageSizeMode>maxSize</imageSizeMode>
+			<backgroundColor>00000000</backgroundColor>
+			<backgroundCenterColor>00000000</backgroundCenterColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
+			<imageColor>FFFFFFFF</imageColor>
+		</gridtile>
+		<gridtile name="selected">
+			<padding>0</padding>
+			<backgroundColor>00000000</backgroundColor>
+			<backgroundCenterColor>00000000</backgroundCenterColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
+			<imageColor>FFFFFFFF</imageColor>
+		</gridtile>
+		<image name="gridtile.marquee, gridtile.marquee:selected">
+			<visible>false</visible>
+		</image>
+		<image name="fanart_extra, defautfanartextra, grid_capture" extra="true">
+			<visible>false</visible>
+		</image>
+		<video name="md_video">
+			<visible>false</visible>
+		</video>
+		<video name="grid_video" extra="true">
+			<visible>false</visible>
+		</video>
+		<image name="deck_fond, deck_retourfond" extra="true">
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<minSize>1 1</minSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>1</zIndex>
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="activate">
+				<animation property="opacity" from="0.4" to="1" duration="450" mode="easeOut"/>
+				<animation property="scale" from="1.08" to="1" duration="1800" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="deck_fond" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_fanart_chain}</path>
+			<color>D0D0D0FF</color>
+			<storyboard event="open">
+				<animation property="opacity" from="0.4" to="1" duration="450" mode="easeOut"/>
+				<animation property="scale" from="1.08" to="1" duration="1800" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="deck_retourfond" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${themePath}/_viewgame/commun/retour/retour_fond.jpg</path>
+			<color>FFFFFFFF</color>
+			<storyboard event="open">
+				<animation property="opacity" from="0.4" to="1" duration="450" mode="easeOut"/>
+				<animation property="scale" from="1.08" to="1" duration="1800" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="deck_masque_fond, deck_retourmasquefond" extra="true">
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<minSize>1 1</minSize>
+			<clipRect>0 0.575 0.025 0.32</clipRect>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>65</zIndex>
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0.4" to="1" duration="450" mode="easeOut"/>
+				<animation property="scale" from="1.08" to="1" duration="1800" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0.4" to="1" duration="450" mode="easeOut"/>
+				<animation property="scale" from="1.08" to="1" duration="1800" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="deck_masque_fond" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_fanart_chain}</path>
+			<color>D0D0D0FF</color>
+		</image>
+		<image name="deck_retourmasquefond" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${themePath}/_viewgame/commun/retour/retour_fond.jpg</path>
+			<color>FFFFFFFF</color>
+		</image>
+		<image name="deck_masque_degrade" extra="true">
+			<path>${themePath}/_viewgame/deck/degrade_fond.png</path>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<clipRect>0 0.575 0.025 0.32</clipRect>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>66</zIndex>
+		</image>
+		<image name="deck_retourconsole, deck_retourlogosyst, deck_retourpetitefleche" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<origin>0.5 0.5</origin>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>3</zIndex>
+		</image>
+		<image name="deck_retourconsole" extra="true">
+			<path>${firstsystemhardware}</path>
+			<pos>0.73 0.31</pos>
+			<maxSize>0.40 0.44</maxSize>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+				<animation property="x" from="0.76" to="0.73" duration="700" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+				<animation property="x" from="0.76" to="0.73" duration="700" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="deck_retourlogosyst" extra="true">
+			<path>${intlogoclearpng}</path>
+			<pos>0.27 0.24</pos>
+			<maxSize>0.34 0.15</maxSize>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="deck_retourpetitefleche" extra="true">
+			<path>${themePath}/_viewgame/commun/retour/retour.png</path>
+			<pos>0.115 0.385</pos>
+			<maxSize>0.03 0.045</maxSize>
+			<color>DCE2EAFF</color>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<text name="deck_retourtexte" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<text>${retourdossier}</text>
+			<pos>0.135 0.385</pos>
+			<origin>0 0.5</origin>
+			<size>0.45 0.05</size>
+			<fontPath>${deckpolice}</fontPath>
+			<fontSize>0.034</fontSize>
+			<color>DCE2EA</color>
+			<forceUppercase>1</forceUppercase>
+			<alignment>left</alignment>
+			<zIndex>3</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+		</text>
+		<image name="deck_degrade" extra="true">
+			<path>${themePath}/_viewgame/deck/degrade_fond.png</path>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>5</zIndex>
+		</image>
+		<image name="deck_ombrelogo" extra="true">
+			<path>${intlogoclearpng}</path>
+			<pos>0.98204 0.03185</pos>
+			<origin>1 0</origin>
+			<maxSize>0.075 0.058</maxSize>
+			<color>0000008C</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>89</zIndex>
+		</image>
+		<image name="deck_logosyst" extra="true">
+			<path>${intlogoclearpng}</path>
+			<pos>0.981 0.03</pos>
+			<origin>1 0</origin>
+			<maxSize>0.075 0.058</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>90</zIndex>
+		</image>
+		<text name="deck_titrerangee" extra="true">
+			<text>{game:system:fullName}</text>
+			<pos>0.0185 0.560</pos>
+			<origin>0 0.5</origin>
+			<size>0.5 0.04</size>
+			<fontPath>${deckpolice}</fontPath>
+			<fontSize>0.026</fontSize>
+			<color>D8D8D8</color>
+			<glowColor>00000080</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>1 1</glowOffset>
+			<zIndex>70</zIndex>
+		</text>
+		<image name="deck_panneaufond" extra="true">
+			<path>${themePath}/_viewgame/deck/blanc.png</path>
+			<pos>0.019 0.5795</pos>
+			<size>0.357 0.321</size>
+			<color>0B0D10FF</color>
+			<zIndex>70</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="200" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="200" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="deck_panneau" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>0.1975 0.7400</pos>
+			<origin>0.5 0.5</origin>
+			<minSize>0.357 0.321</minSize>
+			<clipRect>0.019 0.5795 0.357 0.321</clipRect>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>72</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="200" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="200" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<video name="deck_video" extra="true">
+			<path>${media_video}</path>
+			<pos>0.1975 0.7400</pos>
+			<origin>0.5 0.5</origin>
+			<minSize>0.357 0.321</minSize>
+			<clipRect>0.019 0.5795 0.357 0.321</clipRect>
+			<delay>1.2</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>fade</effect>
+			<zIndex>74</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="200" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="200" mode="easeOut"/>
+			</storyboard>
+		</video>
+		<image name="deck_reflet" extra="true">
+			<path>${themePath}/_viewgame/deck/reflet.png</path>
+			<pos>-0.21 0.5795</pos>
+			<size>0.21 0.321</size>
+			<clipRect>0.019 0.5795 0.357 0.321</clipRect>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>75.5</zIndex>
+			<storyboard ifSubset="perfmachine:perfnormal" event="open">
+				<animation property="x" from="-0.21" to="0.40" begin="300" duration="1600" mode="easeInOut"/>
+				<animation property="x" from="-2.0" to="0.40" begin="1900" duration="9000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal" event="activate">
+				<animation property="x" from="-0.21" to="0.40" begin="300" duration="1600" mode="easeInOut"/>
+				<animation property="x" from="-2.0" to="0.40" begin="1900" duration="9000" mode="linear" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="deck_cadre" extra="true">
+			<path>${themePath}/_viewgame/deck/cadre_panneau.png</path>
+			<pos>0.01015 0.57093</pos>
+			<size>0.37292 0.33628</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>76</zIndex>
+		</image>
+		<image name="deck_logojeu" extra="true">
+			<visible ifSubset="decklogovideo:garder">{game:rom} != '..'</visible>
+			<visible ifSubset="decklogovideo:bandeau">{game:rom} != '..' &amp;&amp; ((${media_video_exists}) ? 0 : 1)</visible>
+			<path>${media_marquee}</path>
+			<pos>0.035 0.879</pos>
+			<origin>0 1</origin>
+			<maxSize>0.17 0.10</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>75</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="deck_logojeuvideo" extra="true">
+			<visible ifSubset="decklogovideo:garder">false</visible>
+			<visible ifSubset="decklogovideo:bandeau">(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_marquee}</path>
+			<pos>0.035 0.879</pos>
+			<origin>0 1</origin>
+			<maxSize>0.17 0.10</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>75</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+				<animation property="opacity" from="1" to="0" begin="850" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+				<animation property="opacity" from="1" to="0" begin="850" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="deck_bandeauvideo" extra="true">
+			<visible ifSubset="decklogovideo:garder">false</visible>
+			<visible ifSubset="decklogovideo:bandeau">(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/deck/bandeau_video.png</path>
+			<pos>0.019 0.7725</pos>
+			<size>0.357 0.128</size>
+			<zIndex>75.1</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" duration="1200"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="0" duration="1200"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="60"/>
+			</storyboard>
+		</image>
+		<text name="deck_bandeaudevedit, deck_bandeaudev, deck_bandeauedit" extra="true">
+			<pos>0.03 0.826</pos>
+			<origin>0 0.5</origin>
+			<size>0.245 0.03</size>
+			<fontPath>${deckpolice}</fontPath>
+			<fontSize>0.0165</fontSize>
+			<color>FFFFFF</color>
+			<alignment>left</alignment>
+			<glowColor>00000080</glowColor>
+			<glowSize>1</glowSize>
+			<zIndex>75.2</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" duration="1200"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="0" duration="1200"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="60"/>
+			</storyboard>
+		</text>
+		<text name="deck_bandeaudevedit" extra="true">
+			<visible ifSubset="decklogovideo:garder">false</visible>
+			<visible ifSubset="decklogovideo:bandeau">(${media_video_exists}) &amp;&amp; {game:rom} != '..' &amp;&amp; {game:publisher} != {game:developer} &amp;&amp; !empty({game:developer}) &amp;&amp; !empty({game:publisher})</visible>
+			<text>{game:developer}  •  {game:publisher}</text>
+		</text>
+		<text name="deck_bandeaudev" extra="true">
+			<visible ifSubset="decklogovideo:garder">false</visible>
+			<visible ifSubset="decklogovideo:bandeau">(${media_video_exists}) &amp;&amp; {game:rom} != '..' &amp;&amp; !empty({game:developer}) &amp;&amp; ({game:publisher} == {game:developer} || empty({game:publisher}))</visible>
+			<text>{game:developer}</text>
+		</text>
+		<text name="deck_bandeauedit" extra="true">
+			<visible ifSubset="decklogovideo:garder">false</visible>
+			<visible ifSubset="decklogovideo:bandeau">(${media_video_exists}) &amp;&amp; {game:rom} != '..' &amp;&amp; empty({game:developer}) &amp;&amp; !empty({game:publisher})</visible>
+			<text>{game:publisher}</text>
+		</text>
+		<text name="deck_bandeaunotefond" extra="true">
+			<visible ifSubset="decklogovideo:garder">false</visible>
+			<visible ifSubset="decklogovideo:bandeau">(${media_video_exists}) &amp;&amp; {game:rom} != '..' &amp;&amp; {game:rating} &gt; 0</visible>
+			<text>${noteicone}${noteicone}${noteicone}${noteicone}${noteicone}</text>
+			<pos>0.309 0.826</pos>
+			<origin>0 0.5</origin>
+			<size>0.06 0.03</size>
+			<fontPath>${themePath}/_common/fonts/notes.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+			<alignment>left</alignment>
+			<color>FFFFFF40</color>
+			<zIndex>75.2</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" duration="1200"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="0" duration="1200"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="60"/>
+			</storyboard>
+		</text>
+		<text name="deck_bandeaunote1, deck_bandeaunote2, deck_bandeaunote3, deck_bandeaunote4, deck_bandeaunote5" extra="true">
+			<pos>0.309 0.826</pos>
+			<origin>0 0.5</origin>
+			<size>0.06 0.03</size>
+			<fontPath>${themePath}/_common/fonts/notes.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+			<alignment>left</alignment>
+			<color>E8202AFF</color>
+			<zIndex>75.3</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" duration="1200"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="0" duration="1200"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="60"/>
+			</storyboard>
+		</text>
+		<text name="deck_bandeaunote1" extra="true">
+			<visible ifSubset="decklogovideo:garder">false</visible>
+			<visible ifSubset="decklogovideo:bandeau">(${media_video_exists}) &amp;&amp; {game:rom} != '..' &amp;&amp; {game:rating} &gt; 0 &amp;&amp; {game:rating} &lt; 0.3</visible>
+			<text>${noteicone}</text>
+		</text>
+		<text name="deck_bandeaunote2" extra="true">
+			<visible ifSubset="decklogovideo:garder">false</visible>
+			<visible ifSubset="decklogovideo:bandeau">(${media_video_exists}) &amp;&amp; {game:rom} != '..' &amp;&amp; {game:rating} &gt;= 0.3 &amp;&amp; {game:rating} &lt; 0.5</visible>
+			<text>${noteicone}${noteicone}</text>
+		</text>
+		<text name="deck_bandeaunote3" extra="true">
+			<visible ifSubset="decklogovideo:garder">false</visible>
+			<visible ifSubset="decklogovideo:bandeau">(${media_video_exists}) &amp;&amp; {game:rom} != '..' &amp;&amp; {game:rating} &gt;= 0.5 &amp;&amp; {game:rating} &lt; 0.7</visible>
+			<text>${noteicone}${noteicone}${noteicone}</text>
+		</text>
+		<text name="deck_bandeaunote4" extra="true">
+			<visible ifSubset="decklogovideo:garder">false</visible>
+			<visible ifSubset="decklogovideo:bandeau">(${media_video_exists}) &amp;&amp; {game:rom} != '..' &amp;&amp; {game:rating} &gt;= 0.7 &amp;&amp; {game:rating} &lt; 0.9</visible>
+			<text>${noteicone}${noteicone}${noteicone}${noteicone}</text>
+		</text>
+		<text name="deck_bandeaunote5" extra="true">
+			<visible ifSubset="decklogovideo:garder">false</visible>
+			<visible ifSubset="decklogovideo:bandeau">(${media_video_exists}) &amp;&amp; {game:rom} != '..' &amp;&amp; {game:rating} &gt;= 0.9</visible>
+			<text>${noteicone}${noteicone}${noteicone}${noteicone}${noteicone}</text>
+		</text>
+		<text name="deck_bandeaudesc" extra="true">
+			<visible ifSubset="decklogovideo:garder">false</visible>
+			<visible ifSubset="decklogovideo:bandeau">(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<text>{game:desc}</text>
+			<pos>0.03 0.8425</pos>
+			<size>0.335 0.037</size>
+			<clipRect>0.03 0.8425 0.335 0.037</clipRect>
+			<fontPath>${deckpolice}</fontPath>
+			<fontSize>0.0145</fontSize>
+			<color>E6E6E6</color>
+			<lineSpacing>1.2</lineSpacing>
+			<alignment>left</alignment>
+			<verticalAlignment>top</verticalAlignment>
+			<autoScroll>vertical</autoScroll>
+			<glowColor>00000080</glowColor>
+			<glowSize>1</glowSize>
+			<zIndex>75.2</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" duration="1200"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="0" duration="1200"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="60"/>
+			</storyboard>
+		</text>
+		<image name="deck_retourfleche, deck_retourlogo" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<origin>0.5 0.5</origin>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>75</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="deck_retourfleche" extra="true">
+			<path>${themePath}/_viewgame/commun/retour/retour.png</path>
+			<pos>0.1975 0.7095</pos>
+			<maxSize>0.09 0.13</maxSize>
+			<color>FFFFFFE6</color>
+		</image>
+		<image name="deck_retourlogo" extra="true">
+			<path>${media_marquee}</path>
+			<pos>0.1975 0.8295</pos>
+			<maxSize>0.2 0.065</maxSize>
+		</image>
+		<image name="deck_favori" extra="true">
+			<visible>{game:favorite} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/deck/etoile.png</path>
+			<pos>0.0185 0.917</pos>
+			<origin>0 0.5</origin>
+			<maxSize>0.0135 0.024</maxSize>
+			<color>${deckor}</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>80</zIndex>
+		</image>
+		<text name="md_name">
+			<visible>false</visible>
+		</text>
+		<text name="deck_nom, deck_nomfavori, deck_retournom" extra="true">
+			<origin>0 0.5</origin>
+			<fontPath>${deckpolice}</fontPath>
+			<fontSize>0.025</fontSize>
+			<color>FFFFFF</color>
+			<alignment>left</alignment>
+			<zIndex>80</zIndex>
+		</text>
+		<text name="deck_nom" extra="true">
+			<text>${titrejeu}</text>
+			<pos>0.0185 0.917</pos>
+			<size>0.62 0.035</size>
+			<visible>({game:favorite} ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
+		</text>
+		<text name="deck_nomfavori" extra="true">
+			<text>${titrejeu}</text>
+			<pos>0.0365 0.917</pos>
+			<size>0.60 0.035</size>
+			<visible>{game:favorite} &amp;&amp; {game:rom} != '..'</visible>
+		</text>
+		<text name="deck_retournom" extra="true">
+			<pos>0.0185 0.917</pos>
+			<size>0.62 0.035</size>
+			<text>${retourdossier}</text>
+			<visible>{game:rom} == '..'</visible>
+		</text>
+		<image name="deck_play, deck_pause" extra="true">
+			<pos>0.0182 0.944</pos>
+			<origin>0 0.5</origin>
+			<maxSize>0.012 0.016</maxSize>
+			<zIndex>80</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="deck_play" extra="true">
+			<visible>{game:playcount} &gt; 0 &amp;&amp; {game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/deck/play.png</path>
+		</image>
+		<image name="deck_pause" extra="true">
+			<visible>({game:playcount} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/deck/pause.png</path>
+		</image>
+		<text name="md_lbl_lastplayed">
+			<visible>false</visible>
+		</text>
+		<datetime name="md_lastplayed">
+			<visible>false</visible>
+		</datetime>
+		<text name="deck_dernierjeu, deck_dernierjeutemps, deck_jamaislance" extra="true">
+			<pos>0.0297 0.944</pos>
+			<origin>0 0.5</origin>
+			<size>0.34 0.025</size>
+			<fontPath>${deckpolice}</fontPath>
+			<fontSize>${decktailleinfo}</fontSize>
+			<color>${deckgrisinfo}</color>
+			<forceUppercase>1</forceUppercase>
+			<alignment>left</alignment>
+			<zIndex>80</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+		</text>
+		<text name="deck_dernierjeu" extra="true">
+			<visible>{game:playcount} &gt; 0 &amp;&amp; ({game:gametime} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
+			<text>"${lastgamelabel} " + elapsed({game:lastplayed})</text>
+		</text>
+		<text name="deck_dernierjeutemps" extra="true">
+			<visible>{game:playcount} &gt; 0 &amp;&amp; {game:gametime} &gt; 0 &amp;&amp; {game:rom} != '..'</visible>
+			<text>"${lastgamelabel} " + elapsed({game:lastplayed}) + "  •  ${gametimelabel} " + expandseconds({game:gametime})</text>
+		</text>
+		<text name="deck_jamaislance" extra="true">
+			<visible>({game:playcount} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noplaycount}</text>
+		</text>
+		<text name="deck_genre, deck_genrelarge, deck_genreinconnu" extra="true">
+			<text>{game:genre}</text>
+			<origin>0 0.5</origin>
+			<size>0.36 0.03</size>
+			<fontPath>${deckpolice}</fontPath>
+			<fontSize>${decktailleinfo}</fontSize>
+			<color>${deckgrisinfo}</color>
+			<forceUppercase>1</forceUppercase>
+			<alignment>left</alignment>
+			<zIndex>80</zIndex>
+		</text>
+		<text name="deck_genre" extra="true">
+			<visible>!empty({game:players}) &amp;&amp; (!contains({game:players}, '-') || {game:playerCount} &gt; 9) &amp;&amp; {game:rom} != '..'</visible>
+			<pos>0.453 0.944</pos>
+		</text>
+		<text name="deck_genrelarge" extra="true">
+			<visible>contains({game:players}, '-') &amp;&amp; {game:playerCount} &lt;= 9 &amp;&amp; {game:rom} != '..'</visible>
+			<pos>0.471 0.944</pos>
+		</text>
+		<text name="deck_genreinconnu" extra="true">
+			<visible>({game:players} != '' ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
+			<pos>0.506 0.944</pos>
+		</text>
+		<image name="deck_pastille, deck_pastillelarge, deck_pastilleinconnu" extra="true">
+			<pos>0.414 0.944</pos>
+			<origin>0 0.5</origin>
+			<zIndex>80</zIndex>
+		</image>
+		<image name="deck_pastille" extra="true">
+			<visible>!empty({game:players}) &amp;&amp; (!contains({game:players}, '-') || {game:playerCount} &gt; 9) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/deck/pastille_contour.png</path>
+			<size>0.027 0.038</size>
+		</image>
+		<image name="deck_pastillelarge" extra="true">
+			<visible>contains({game:players}, '-') &amp;&amp; {game:playerCount} &lt;= 9 &amp;&amp; {game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/deck/pastille_contour.png</path>
+			<size>0.045 0.038</size>
+		</image>
+		<text name="deck_nbjoueurs, deck_nbjoueurs10" extra="true">
+			<pos>0.4189 0.944</pos>
+			<origin>0 0.5</origin>
+			<size>0.08 0.04</size>
+			<fontPath>${deckpolicejoueurs}</fontPath>
+			<fontSize>0.03</fontSize>
+			<color>${deckgrisinfo}</color>
+			<alignment>left</alignment>
+			<zIndex>81</zIndex>
+		</text>
+		<text name="deck_nbjoueurs" extra="true">
+			<text>{game:players}</text>
+			<visible>!empty({game:players}) &amp;&amp; {game:playerCount} &lt;= 9 &amp;&amp; {game:rom} != '..'</visible>
+		</text>
+		<text name="deck_nbjoueurs10" extra="true">
+			<text>9</text>
+			<visible>!empty({game:players}) &amp;&amp; {game:playerCount} &gt; 9 &amp;&amp; {game:rom} != '..'</visible>
+		</text>
+		<image name="deck_pastilleinconnu" extra="true">
+			<visible>({game:players} != '' ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/deck/pastille_contour_large.png</path>
+			<size>0.080 0.030</size>
+		</image>
+		<text name="deck_inconnu" extra="true">
+			<text>${noplayerdata}</text>
+			<visible>({game:players} != '' ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
+			<pos>0.454 0.944</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.080 0.03</size>
+			<fontPath>${deckpolice}</fontPath>
+			<fontSize>${decktailleinfo}</fontSize>
+			<color>${deckgrisinfo}</color>
+			<forceUppercase>1</forceUppercase>
+			<alignment>center</alignment>
+			<zIndex>81</zIndex>
+		</text>
+		<text name="deck_annee, deck_anneeinconnue" extra="true">
+			<pos>0.383 0.944</pos>
+			<origin>0 0.5</origin>
+			<size>0.1 0.03</size>
+			<fontPath>${deckpolice}</fontPath>
+			<fontSize>${decktailleinfo}</fontSize>
+			<color>${deckgrisinfo}</color>
+			<alignment>left</alignment>
+			<zIndex>80</zIndex>
+		</text>
+		<text name="deck_annee" extra="true">
+			<text>{game:releaseYear}</text>
+			<visible>(contains({game:releaseYear}, '19') || contains({game:releaseYear}, '20')) &amp;&amp; {game:rom} != '..'</visible>
+		</text>
+		<text name="deck_anneeinconnue" extra="true">
+			<text>–</text>
+			<visible>!(contains({game:releaseYear}, '19') || contains({game:releaseYear}, '20')) &amp;&amp; {game:rom} != '..'</visible>
+		</text>
+		<image name="BandeauBas" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="deck_bandeau" extra="true" ifHelpPrompts="true">
+			<path>${themePath}/_viewgame/deck/blanc.png</path>
+			<pos>0 0.967</pos>
+			<size>1 0.033</size>
+			<color>0E1014F0</color>
+			<zIndex>85</zIndex>
+		</image>
+		<helpsystem name="help">
+			<pos>0.5 0.984</pos>
+			<origin>0.5 0.5</origin>
+			<fontSize>0.018</fontSize>
+			<fontPath>${deckpolice}</fontPath>
+			<textColor>E6E6E6</textColor>
+			<iconColor>FFFFFF</iconColor>
+		</helpsystem>
+		<control name="base_retourfond, base_retourconsole, base_retourtexte">
+			<visible>false</visible>
+		</control>
+	</customView>
+</theme>

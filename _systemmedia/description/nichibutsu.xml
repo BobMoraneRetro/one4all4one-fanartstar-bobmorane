@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Nichibutsu (Nihon Bussan), the Japanese company behind Crazy Climber, Moon Cresta and many mahjong games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Nichibutsu (Nihon Bussan), a empresa japonesa de Crazy Climber, Moon Cresta e muitos jogos de mahjong.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Nichibutsu (Nihon Bussan), the Japanese company behind Crazy Climber, Moon Cresta and many mahjong games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Nichibutsu (Nihon Bussan), la empresa japonesa de Crazy Climber, Moon Cresta y muchos mahjong.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade de Nichibutsu (Nihon Bussan), la société japonaise de Crazy Climber, Moon Cresta et de nombreux mahjong.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Nichibutsu (Nihon Bussan), der japanischen Firma hinter Crazy Climber, Moon Cresta und vielen Mahjong-Spielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Nichibutsu</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nichibutsu</text>
+		</text>
+	</view>
+</theme>

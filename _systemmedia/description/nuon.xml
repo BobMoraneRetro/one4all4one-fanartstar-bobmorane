@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>VM Labs' NUON, a media processor built into some DVD players in the early 2000s, with a handful of games such as Tempest 3000.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O NUON da VM Labs, processador multimídia embutido em alguns reprodutores de DVD no início dos anos 2000, com poucos jogos como Tempest 3000.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>VM Labs' NUON, a media processor built into some DVD players in the early 2000s, with a handful of games such as Tempest 3000.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El NUON de VM Labs, procesador multimedia integrado en algunos reproductores de DVD a principios de los 2000, con pocos juegos como Tempest 3000.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le NUON de VM Labs, processeur multimédia intégré à certains lecteurs DVD au début des années 2000, avec quelques jeux comme Tempest 3000.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>VM Labs' NUON, ein Medienprozessor in einigen DVD-Spielern der frühen 2000er, mit wenigen Spielen wie Tempest 3000.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>NUON</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2000</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>VM Labs</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The Pinball Arcade, faithful digital recreations of real pinball tables from Williams, Bally, Stern and Gottlieb.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>The Pinball Arcade, recriações digitais fiéis de mesas de pinball reais da Williams, Bally, Stern e Gottlieb.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>The Pinball Arcade, faithful digital recreations of real pinball tables from Williams, Bally, Stern and Gottlieb.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>The Pinball Arcade, recreaciones digitales fieles de mesas de pinball reales de Williams, Bally, Stern y Gottlieb.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>The Pinball Arcade, recréations numériques fidèles de vrais flippers de Williams, Bally, Stern et Gottlieb.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>The Pinball Arcade, getreue digitale Nachbildungen echter Flippertische von Williams, Bally, Stern und Gottlieb.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>The Pinball Arcade</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2012</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>FarSight Studios</text>
+		</text>
+	</view>
+</theme>

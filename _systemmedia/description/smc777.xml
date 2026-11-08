@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sony's 1983 SMC-777 Japanese home computer, with colour graphics and a built-in floppy drive.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O computador doméstico japonês SMC-777 da Sony de 1983, com gráficos coloridos e unidade de disquete integrada.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sony's 1983 SMC-777 Japanese home computer, with colour graphics and a built-in floppy drive.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El ordenador doméstico japonés SMC-777 de Sony de 1983, con gráficos en color y unidad de disquete integrada.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>L'ordinateur familial japonais SMC-777 de Sony sorti en 1983, avec graphismes couleur et lecteur de disquettes intégré.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sonys japanischer Heimcomputer SMC-777 von 1983 mit Farbgrafik und eingebautem Diskettenlaufwerk.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>SMC-777</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sony</text>
+		</text>
+	</view>
+</theme>

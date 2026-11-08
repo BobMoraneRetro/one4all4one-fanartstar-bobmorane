@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>NES and Famicom games played with HD packs that replace the original graphics with high-definition versions.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de NES e Famicom com pacotes HD que substituem os gráficos originais por versões em alta definição.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>NES and Famicom games played with HD packs that replace the original graphics with high-definition versions.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de NES y Famicom con packs HD que sustituyen los gráficos originales por versiones en alta definición.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux NES et Famicom joués avec des packs HD qui remplacent les graphismes d'origine par des versions haute définition.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>NES- und Famicom-Spiele mit HD-Paketen, die die Originalgrafik durch hochauflösende Fassungen ersetzen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>NES HD</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+</theme>

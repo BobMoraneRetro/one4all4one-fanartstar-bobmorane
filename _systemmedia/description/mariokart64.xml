@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Native PC port of Mario Kart 64 built from its decompiled code, with high resolutions and frame rates.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Port nativo para PC de Mario Kart 64 construído a partir do código decompilado, com alta resolução e taxa de quadros.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Native PC port of Mario Kart 64 built from its decompiled code, with high resolutions and frame rates.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Port nativo para PC de Mario Kart 64 construido a partir de su código descompilado, con alta resolución y tasa de imágenes.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Portage PC natif de Mario Kart 64 construit à partir de son code décompilé, avec hautes résolutions et fréquence d'images élevée.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Nativer PC-Port von Mario Kart 64 aus dem dekompilierten Code, mit hohen Auflösungen und Bildraten.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Mario Kart 64</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1996</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+</theme>

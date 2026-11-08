@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Apple's Pippin multimedia platform, sold by Bandai in 1996 as the Pippin @mark (Atmark), a commercial failure with few games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>A plataforma multimídia Pippin da Apple, vendida pela Bandai em 1996 como Pippin @mark (Atmark), um fracasso comercial com poucos jogos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Apple's Pippin multimedia platform, sold by Bandai in 1996 as the Pippin @mark (Atmark), a commercial failure with few games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La plataforma multimedia Pippin de Apple, vendida por Bandai en 1996 como Pippin @mark (Atmark), un fracaso comercial con pocos juegos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La plate-forme multimédia Pippin d'Apple, vendue par Bandai en 1996 sous le nom Pippin @mark (Atmark), un échec commercial aux rares jeux.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Apples Multimedia-Plattform Pippin, 1996 von Bandai als Pippin @mark (Atmark) verkauft, ein kommerzieller Misserfolg mit wenigen Spielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pippin</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1996</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Apple / Bandai</text>
+		</text>
+	</view>
+</theme>

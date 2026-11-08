@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Slot Shots Pinball Collection, digital pinball tables mixing pinball and slot machine themes.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Slot Shots Pinball Collection, mesas de pinball digitais que misturam pinball e temas de caça-níqueis.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Slot Shots Pinball Collection, digital pinball tables mixing pinball and slot machine themes.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Slot Shots Pinball Collection, mesas de pinball digitales que mezclan pinball y temas de tragamonedas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Slot Shots Pinball Collection, des flippers numériques mêlant flipper et thèmes de machines à sous.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Slot Shots Pinball Collection, digitale Flippertische, die Flipper mit Spielautomaten-Themen verbinden.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Slot Shots Pinball</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2012</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

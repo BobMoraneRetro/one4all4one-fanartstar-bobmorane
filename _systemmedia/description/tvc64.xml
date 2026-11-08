@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The 64 KB model of the Hungarian Videoton TVC home computer.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O modelo de 64 KB do computador doméstico húngaro Videoton TVC.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>The 64 KB model of the Hungarian Videoton TVC home computer.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El modelo de 64 KB del ordenador doméstico húngaro Videoton TVC.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le modèle 64 Ko de l'ordinateur familial hongrois Videoton TVC.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Das 64-KB-Modell des ungarischen Heimcomputers Videoton TVC.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>TVC 64</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1985</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Videoton</text>
+		</text>
+	</view>
+</theme>

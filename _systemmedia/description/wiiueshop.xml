@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Digital games from the Nintendo eShop on Wii U, including independent titles and Virtual Console classics.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos digitais da Nintendo eShop no Wii U, com títulos independentes e clássicos do Virtual Console.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Digital games from the Nintendo eShop on Wii U, including independent titles and Virtual Console classics.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos digitales de la Nintendo eShop en Wii U, con títulos independientes y clásicos de la Consola Virtual.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux dématérialisés du Nintendo eShop sur Wii U, dont des titres indépendants et des classiques de la Console virtuelle.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Digitale Spiele aus dem Nintendo eShop der Wii U, darunter Indie-Titel und Virtual-Console-Klassiker.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Wii U eShop</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2012</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+</theme>

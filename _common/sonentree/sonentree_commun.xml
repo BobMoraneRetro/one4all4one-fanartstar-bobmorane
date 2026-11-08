@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${sonentree_dossier} : dossier du module son d entrée (sons/, vide.png) ; seule ligne à adapter dans un autre thème (définie dans ce fichier)
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<sonentree_dossier>${themePath}/_common/sonentree</sonentree_dossier>
+	</variables>
+	<view name="detailed, grid, gamecarousel, coinops, hyperbat, nesicaxlive1">
+		<image name="sonentree" extra="true">
+			<path>${sonentree_dossier}/vide.png</path>
+			<pos>0 0</pos>
+			<size>0.001 0.001</size>
+			<zIndex>0</zIndex>
+			<storyboard>
+				<animation property="opacity" from="1" to="1" duration="10"/>
+				<sound path="${sonentree_dossier}/sons/_defaut.wav"/>
+			</storyboard>
+		</image>
+	</view>
+</theme>

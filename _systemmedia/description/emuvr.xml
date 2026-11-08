@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>EmuVR places your games in a virtual 1990s bedroom, where you insert cartridges and play on a CRT television in virtual reality.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O EmuVR coloca seus jogos em um quarto virtual dos anos 90, onde você insere cartuchos e joga em uma TV de tubo em realidade virtual.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>EmuVR places your games in a virtual 1990s bedroom, where you insert cartridges and play on a CRT television in virtual reality.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>EmuVR coloca tus juegos en un dormitorio virtual de los años 90, donde insertas cartuchos y juegas en un televisor de tubo en realidad virtual.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>EmuVR place vos jeux dans une chambre virtuelle des années 1990, où l'on insère les cartouches et joue sur un téléviseur cathodique en réalité virtuelle.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>EmuVR versetzt deine Spiele in ein virtuelles Kinderzimmer der 1990er, wo du in virtueller Realität Module einlegst und an einem Röhrenfernseher spielst.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>EmuVR</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2022</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

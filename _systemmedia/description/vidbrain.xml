@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Umtech's VideoBrain Family Computer of 1977, an early home computer with cartridge-based software.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O VideoBrain Family Computer da Umtech de 1977, um dos primeiros computadores domésticos, com programas em cartucho.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Umtech's VideoBrain Family Computer of 1977, an early home computer with cartridge-based software.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El VideoBrain Family Computer de Umtech de 1977, uno de los primeros ordenadores domésticos, con programas en cartucho.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le VideoBrain Family Computer d'Umtech sorti en 1977, un des premiers ordinateurs familiaux, aux logiciels en cartouche.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Umtechs VideoBrain Family Computer von 1977, ein früher Heimcomputer mit Software auf Modulen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>VideoBrain</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1977</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Umtech Incorporated</text>
+		</text>
+	</view>
+</theme>

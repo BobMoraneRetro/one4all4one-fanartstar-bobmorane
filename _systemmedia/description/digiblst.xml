@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Handheld console for children released in 2005, playing cartridge games and video cartoons on its small colour screen.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console portátil para crianças lançado em 2005, que rodava jogos e desenhos animados em cartucho na sua pequena tela colorida.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Handheld console for children released in 2005, playing cartridge games and video cartoons on its small colour screen.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola portátil para niños lanzada en 2005, que reproducía juegos y dibujos animados en cartucho en su pequeña pantalla a color.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console portable pour enfants sortie en 2005, qui lisait des jeux et des dessins animés en cartouche sur son petit écran couleur.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Handheld-Konsole für Kinder aus dem Jahr 2005, die Spiele und Zeichentrickfilme von Modulen auf einem kleinen Farbbildschirm abspielte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>digiBLAST</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2005</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nikko Entertainment B.V. / Grey Innovation</text>
+		</text>
+	</view>
+</theme>

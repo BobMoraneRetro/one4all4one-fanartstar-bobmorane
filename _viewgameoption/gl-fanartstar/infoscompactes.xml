@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetstarbox}, ${presetstarboxloop}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
+		<text name="gamename" extra="true">
+			<fontSize>0.019</fontSize>
+		</text>
+		<text name="stardescription" extra="true">
+			<fontSize>0.016</fontSize>
+			<pos ifSubset="starboxcases:casesmasquees">0.0525 0.262</pos>
+			<pos ifSubset="starboxcases:casesaffichees">0.0525 0.285</pos>
+			<size ifSubset="starboxcases:casesmasquees">0.3 0.0945</size>
+			<size ifSubset="starboxcases:casesaffichees">0.3 0.0756</size>
+		</text>
+		<image name="playblack" extra="true">
+			<pos>0.077 0.267</pos>
+			<maxSize>0.064 0.064</maxSize>
+		</image>
+		<image name="dateblack" extra="true">
+			<pos>0.133 0.267</pos>
+			<maxSize>0.064 0.064</maxSize>
+		</image>
+		<image name="playerblack" extra="true">
+			<pos>0.189 0.267</pos>
+			<maxSize>0.064 0.064</maxSize>
+		</image>
+		<image name="notation" extra="true">
+			<pos>0.245 0.267</pos>
+			<maxSize>0.064 0.064</maxSize>
+		</image>
+		<control name="binds_playcount_one,binds_playcount,binds_noplaycount">
+			<pos>0.077 0.266</pos>
+			<size>0.06 0.026</size>
+			<fontSize>0.015</fontSize>
+		</control>
+		<control name="binds_releasedate">
+			<pos>0.133 0.266</pos>
+			<size>0.0375 0.026</size>
+			<fontSize>0.015</fontSize>
+		</control>
+		<control name="binds_noreleasedate">
+			<pos>0.133 0.266</pos>
+			<size>0.075 0.026</size>
+			<fontSize>0.015</fontSize>
+		</control>
+		<control name="binds_players,binds_player_one,binds_noplayers">
+			<pos>0.189 0.266</pos>
+			<size>0.056 0.026</size>
+			<fontSize>0.015</fontSize>
+		</control>
+		<control name="binds_norating,binds_notechiffre">
+			<pos>0.245 0.266</pos>
+			<size>0.056 0.026</size>
+			<fontSize>0.015</fontSize>
+		</control>
+		<control name="binds_notefond,binds_note1,binds_note2,binds_note3,binds_note4,binds_note5">
+			<pos>0.2254 0.266</pos>
+			<fontSize>0.012</fontSize>
+		</control>
+		<image name="favorite" extra="true">
+			<pos>0.0075 0.196</pos>
+			<maxSize>0.036 0.036</maxSize>
+		</image>
+		<image name="rondregion" extra="true">
+			<pos>0.031 0.238</pos>
+			<maxSize>0.027 0.027</maxSize>
+		</image>
+		<control name="md_notkidgame,md_kidgame">
+			<pos>0.025 0.268</pos>
+			<maxSize>0.015 0.018</maxSize>
+		</control>
+		<image name="pulse" extra="true">
+			<pos>0.024 0.268</pos>
+			<maxSize>0.029 0.029</maxSize>
+		</image>
+		<control name="md_nomanual,md_manual">
+			<pos>0.025 0.298</pos>
+			<maxSize>0.015 0.018</maxSize>
+		</control>
+		<image name="pulse2" extra="true">
+			<pos>0.024 0.298</pos>
+			<maxSize>0.029 0.029</maxSize>
+		</image>
+		<control name="md_nosavestate,md_savestate">
+			<pos>0.025 0.328</pos>
+			<maxSize>0.015 0.018</maxSize>
+		</control>
+		<image name="pulse3" extra="true">
+			<pos>0.024 0.328</pos>
+			<maxSize>0.029 0.029</maxSize>
+		</image>
+		<control name="md_notcheevos,md_cheevos">
+			<pos>0.025 0.358</pos>
+			<maxSize>0.015 0.018</maxSize>
+		</control>
+		<image name="pulse4" extra="true">
+			<pos>0.024 0.358</pos>
+			<maxSize>0.029 0.029</maxSize>
+		</image>
+		<control name="controle_pistolet,controle_volant,controle_trackball,controle_spinner,controle_defaut">
+			<pos>0.0245 0.3875</pos>
+			<maxSize>0.015 0.018</maxSize>
+		</control>
+		<image name="pulse5" extra="true">
+			<pos>0.024 0.388</pos>
+			<maxSize>0.029 0.029</maxSize>
+		</image>
+		<control name="longpress,allgames_select,allgames_noselect">
+			<fontSize>0.016</fontSize>
+			<pos>0.053 0.376</pos>
+		</control>
+		<control name="favoris_noselect,favoris_select">
+			<fontSize>0.016</fontSize>
+			<pos>0.107 0.376</pos>
+			<pos lang="es">0.123 0.376</pos>
+		</control>
+	</customView>
+	<customView name="presetstarboxloop" displayName="${presetstarboxloop}" inherits="grid">
+		<text name="gamename" extra="true">
+			<fontSize>0.019</fontSize>
+		</text>
+		<text name="stardescription" extra="true">
+			<fontSize>0.016</fontSize>
+			<pos ifSubset="starboxcases:casesmasquees">0.0525 0.262</pos>
+			<pos ifSubset="starboxcases:casesaffichees">0.0525 0.285</pos>
+			<size ifSubset="starboxcases:casesmasquees">0.3 0.0945</size>
+			<size ifSubset="starboxcases:casesaffichees">0.3 0.0756</size>
+		</text>
+		<image name="playblack" extra="true">
+			<pos>0.077 0.267</pos>
+			<maxSize>0.064 0.064</maxSize>
+		</image>
+		<image name="dateblack" extra="true">
+			<pos>0.133 0.267</pos>
+			<maxSize>0.064 0.064</maxSize>
+		</image>
+		<image name="playerblack" extra="true">
+			<pos>0.189 0.267</pos>
+			<maxSize>0.064 0.064</maxSize>
+		</image>
+		<image name="notation" extra="true">
+			<pos>0.245 0.267</pos>
+			<maxSize>0.064 0.064</maxSize>
+		</image>
+		<control name="binds_playcount_one,binds_playcount,binds_noplaycount">
+			<pos>0.077 0.266</pos>
+			<size>0.06 0.026</size>
+			<fontSize>0.015</fontSize>
+		</control>
+		<control name="binds_releasedate">
+			<pos>0.133 0.266</pos>
+			<size>0.0375 0.026</size>
+			<fontSize>0.015</fontSize>
+		</control>
+		<control name="binds_noreleasedate">
+			<pos>0.133 0.266</pos>
+			<size>0.075 0.026</size>
+			<fontSize>0.015</fontSize>
+		</control>
+		<control name="binds_players,binds_player_one,binds_noplayers">
+			<pos>0.189 0.266</pos>
+			<size>0.056 0.026</size>
+			<fontSize>0.015</fontSize>
+		</control>
+		<control name="binds_norating,binds_notechiffre">
+			<pos>0.245 0.266</pos>
+			<size>0.056 0.026</size>
+			<fontSize>0.015</fontSize>
+		</control>
+		<control name="binds_notefond,binds_note1,binds_note2,binds_note3,binds_note4,binds_note5">
+			<pos>0.2254 0.266</pos>
+			<fontSize>0.012</fontSize>
+		</control>
+		<image name="favorite" extra="true">
+			<pos>0.0075 0.196</pos>
+			<maxSize>0.036 0.036</maxSize>
+		</image>
+		<image name="rondregion" extra="true">
+			<pos>0.031 0.238</pos>
+			<maxSize>0.027 0.027</maxSize>
+		</image>
+		<control name="md_notkidgame,md_kidgame">
+			<pos>0.025 0.268</pos>
+			<maxSize>0.015 0.018</maxSize>
+		</control>
+		<image name="pulse" extra="true">
+			<pos>0.024 0.268</pos>
+			<maxSize>0.029 0.029</maxSize>
+		</image>
+		<control name="md_nomanual,md_manual">
+			<pos>0.025 0.298</pos>
+			<maxSize>0.015 0.018</maxSize>
+		</control>
+		<image name="pulse2" extra="true">
+			<pos>0.024 0.298</pos>
+			<maxSize>0.029 0.029</maxSize>
+		</image>
+		<control name="md_nosavestate,md_savestate">
+			<pos>0.025 0.328</pos>
+			<maxSize>0.015 0.018</maxSize>
+		</control>
+		<image name="pulse3" extra="true">
+			<pos>0.024 0.328</pos>
+			<maxSize>0.029 0.029</maxSize>
+		</image>
+		<control name="md_notcheevos,md_cheevos">
+			<pos>0.025 0.358</pos>
+			<maxSize>0.015 0.018</maxSize>
+		</control>
+		<image name="pulse4" extra="true">
+			<pos>0.024 0.358</pos>
+			<maxSize>0.029 0.029</maxSize>
+		</image>
+		<control name="controle_pistolet,controle_volant,controle_trackball,controle_spinner,controle_defaut">
+			<pos>0.0245 0.3875</pos>
+			<maxSize>0.015 0.018</maxSize>
+		</control>
+		<image name="pulse5" extra="true">
+			<pos>0.024 0.388</pos>
+			<maxSize>0.029 0.029</maxSize>
+		</image>
+		<control name="longpress,allgames_select,allgames_noselect">
+			<fontSize>0.016</fontSize>
+			<pos>0.053 0.376</pos>
+		</control>
+		<control name="favoris_noselect,favoris_select">
+			<fontSize>0.016</fontSize>
+			<pos>0.107 0.376</pos>
+			<pos lang="es">0.123 0.376</pos>
+		</control>
+	</customView>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Nichibutsu's 1983 Japanese console, designed mainly for board games such as mahjong, with a dedicated keypad.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console japonês da Nichibutsu de 1983, pensado principalmente para jogos de tabuleiro como mahjong, com teclado próprio.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Nichibutsu's 1983 Japanese console, designed mainly for board games such as mahjong, with a dedicated keypad.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola japonesa de Nichibutsu de 1983, pensada sobre todo para juegos de mesa como el mahjong, con un teclado propio.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console japonaise de Nichibutsu sortie en 1983, conçue surtout pour les jeux de plateau comme le mahjong, avec un clavier dédié.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Japanische Konsole von Nichibutsu aus dem Jahr 1983, vor allem für Brettspiele wie Mahjong, mit eigenem Tastenfeld.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>My Vision</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nichibutsu</text>
+		</text>
+	</view>
+</theme>

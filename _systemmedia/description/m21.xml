@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Olivetti's portable version of its M24 PC compatible, released in 1984.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Versão portátil do compatível PC M24 da Olivetti, lançada em 1984.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Olivetti's portable version of its M24 PC compatible, released in 1984.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Versión portátil del compatible PC M24 de Olivetti, lanzada en 1984.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Version transportable du compatible PC M24 d'Olivetti, sortie en 1984.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Tragbare Version von Olivettis PC-kompatiblem M24, 1984 erschienen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Olivetti M21</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1984</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Olivetti</text>
+		</text>
+	</view>
+</theme>

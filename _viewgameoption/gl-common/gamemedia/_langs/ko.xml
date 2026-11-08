@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ko">
+		<packcustombuildsno>접미사 "-fanart" 팬아트 (기본값)</packcustombuildsno>
+		<packretrofreshbat>접미사 "-image" 팬아트</packretrofreshbat>
+		<scrapedboxart>gamelist의 "-boxart" 3D 박스</scrapedboxart>
+		<scrapedthumbnail>gamelist의 "-thumbnail" 3D 박스</scrapedthumbnail>
+		<gamemedianon>아니요: 게임리스트 미디어만</gamemedianon>
+		<gamemediaoui>예: 사용자 미디어 우선, 없으면 게임리스트</gamemediaoui>
+		<gamemediaseul>전용: 사용자 미디어만 (gamelist 대체 없음)</gamemediaseul>
+		<intheme>테마 폴더 - 기본값</intheme>
+		<extfolder>외부 폴더</extfolder>
+		<opt_custombuilds>고급 - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>고급 - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>고급 - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>고급 - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

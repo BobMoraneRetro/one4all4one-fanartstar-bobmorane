@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's ALLS arcade platform of 2018, a PC-based system used for maimai, chunithm and Initial D titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>A plataforma de arcade ALLS da Sega de 2018, sistema baseado em PC usado em maimai, chunithm e Initial D.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's ALLS arcade platform of 2018, a PC-based system used for maimai, chunithm and Initial D titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La plataforma arcade ALLS de Sega de 2018, sistema basado en PC usado para maimai, chunithm e Initial D.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La plate-forme d'arcade ALLS de Sega sortie en 2018, système sur base PC utilisé pour maimai, chunithm et les Initial D.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas Arcade-Plattform ALLS von 2018, ein PC-basiertes System für maimai, chunithm und Initial-D-Titel.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Sega ALLS</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2018</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

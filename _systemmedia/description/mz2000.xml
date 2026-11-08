@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sharp's 1982 Japanese personal computer with a built-in monitor and tape drive, part of the MZ series.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador pessoal japonês da Sharp de 1982, com monitor e unidade de fita integrados, da série MZ.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sharp's 1982 Japanese personal computer with a built-in monitor and tape drive, part of the MZ series.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador personal japonés de Sharp de 1982, con monitor y unidad de casete integrados, de la serie MZ.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur personnel japonais de Sharp sorti en 1982, avec moniteur et lecteur de cassettes intégrés, de la série MZ.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Japanischer Personal Computer von Sharp aus dem Jahr 1982 mit eingebautem Monitor und Kassettenlaufwerk, Teil der MZ-Reihe.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>MZ-2000</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1982</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sharp</text>
+		</text>
+	</view>
+</theme>

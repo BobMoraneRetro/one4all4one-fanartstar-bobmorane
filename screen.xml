@@ -1,26 +1,52 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-Theme: es-theme-carbon
-author: Fabrice CARUSO
-license: creative commons CC-BY-NC-SA
-originally based on: "Carbon" by Eric Hettervik (Rookervik)
-originally based on: "simple" by nils bonenberger
+	Variables utilisées dans ce fichier :
+	${horlogecouleur} : couleur de l horloge quand la barre d aide est masquée (définie dans ce fichier ; valeur selon l option « GÉNÉRAL - Couleur de l’horloge »)
+	${horlogecouleuraide} : couleur de l horloge quand la barre d aide est affichée (définie dans ce fichier ; valeur selon l option « GÉNÉRAL - Couleur de l’horloge »)
+	${horlogetaille} : taille du texte de l horloge (définie dans ce fichier ; valeur selon l option « GÉNÉRAL - Taille de l’horloge »)
 -->
 <theme>
 	<formatVersion>7</formatVersion>
+	<variables>
+		<horlogecouleur ifSubset="horlogecouleur:blanc">FFFFFFFF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:lightgrey">D3D3D3FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:grey">777777FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:yellow">FFD24AFF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:orange">FF8C1AFF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:red">FF3B30FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:green">3DDC84FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:skyblue">4FC3F7FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:pink">FF5FA2FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:purple">C377E0FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:default">777777FF</horlogecouleur>
+		<horlogecouleuraide ifSubset="horlogecouleur:blanc">FFFFFFFF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:lightgrey">D3D3D3FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:grey">777777FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:yellow">FFD24AFF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:orange">FF8C1AFF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:red">FF3B30FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:green">3DDC84FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:skyblue">4FC3F7FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:pink">FF5FA2FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:purple">C377E0FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:default">FFFFFFFF</horlogecouleuraide>
+		<horlogetaille ifSubset="horlogetaille:petite">0.012</horlogetaille>
+		<horlogetaille ifSubset="horlogetaille:grande">0.019</horlogetaille>
+		<horlogetaille ifSubset="horlogetaille:tresgrande">0.024</horlogetaille>
+		<horlogetaille ifSubset="horlogetaille:normale">0.015</horlogetaille>
+	</variables>
 	<view name="screen">
 		<text name="clock" ifHelpPrompts="false">
-			<color>777777FF</color>
-			<fontSize>0.015</fontSize>
+			<color>${horlogecouleur}</color>
+			<fontSize>${horlogetaille}</fontSize>
 			<pos>0.94 0.975</pos>
 			<alignment>right</alignment>
 			<verticalAlignment>center</verticalAlignment>
 			<fontPath>./_common/fonts/Digital-Serial-Bold-folder.ttf</fontPath>
 		</text>
 		<text name="clock" ifHelpPrompts="true">
-			<!-- <color>777777FF</color> -->
-			<color>FFFFFFFF</color>
-			<fontSize>0.015</fontSize>
+			<color>${horlogecouleuraide}</color>
+			<fontSize>${horlogetaille}</fontSize>
 			<pos>0.94 0.973</pos>
 			<alignment>right</alignment>
 			<verticalAlignment>center</verticalAlignment>
@@ -31,7 +57,6 @@ originally based on: "simple" by nils bonenberger
 			<size>0.065 0.016</size>
 			<itemSpacing>0.003</itemSpacing>
 			<color>FFFFFF90</color>
-			<!-- controllers -->
 			<imagePath>./_common/controlactivity/gamepad.svg</imagePath>
 			<gunPath>./_common/controlactivity/gun.svg</gunPath>
 			<wheelPath>./_common/controlactivity/wheel.svg</wheelPath>
@@ -42,87 +67,13 @@ originally based on: "simple" by nils bonenberger
 			<pos>0.01 0.01</pos>
 			<size>0.022 0.018</size>
 			<horizontalAlignment>right</horizontalAlignment>
-			<incharge>./_Common/battery/incharge.svg</incharge>
+			<incharge>./_common/battery/incharge.svg</incharge>
 			<full>./_common/battery/full.svg</full>
 			<at75>./_common/battery/75.svg</at75>
 			<at50>./_common/battery/50.svg</at50>
 			<at25>./_common/battery/25.svg</at25>
 			<empty>./_common/battery/empty.svg</empty>
-			<!-- <planemodeIcon>./_common/icons/planemode.png</planemodeIcon> -->
 			<color>FFFFFFFF</color>
 		</batteryIndicator>
-		<!-- Hide batteryIndicator and replace it with a stackpanel -->
-		<!-- <batteryIndicator name="batteryIndicator"> -->
-		<!-- <visible>false</visible> -->
-		<!-- </batteryIndicator> -->
-		<!-- <stackpanel name="batteryIndicatorReplacement" extra="true"> -->
-		<!-- <pos>-0.176 0.038</pos> -->
-		<!-- <size>0.28 0.0275</size> -->
-		<!-- <pos verticalScreen="true">0.7 0.04</pos> -->
-		<!-- <size verticalScreen="true">0.28 0.023</size> -->
-		<!-- <orientation>horizontal</orientation> -->
-		<!-- <separator>2</separator> -->
-		<!-- <reverse>true</reverse> -->
-		<!-- <batteryText name="ss.batterytext"> -->
-		<!-- <fontSize>0.019</fontSize> -->
-		<!-- <fontSize tinyScreen="true">0.025</fontSize> -->
-		<!-- <color>FFFFFFA0</color> -->
-		<!-- <padding>4 0</padding> -->
-		<!-- </batteryText> -->
-		<!-- <batteryIcon name="ss.battery"> -->
-		<!-- <incharge>./_Common/battery/incharge.svg</incharge> -->
-		<!-- <full>./_Common/battery/full.svg</full> -->
-		<!-- <at75>./_Common/battery/75.svg</at75> -->
-		<!-- <at50>./_Common/battery/50.svg</at50> -->
-		<!-- <at25>./_Common/battery/25.svg</at25> -->
-		<!-- <empty>./_Common/battery/empty.svg</empty> -->
-		<!-- <planemodeIcon>./_Common/icons/Planemode.png</planemodeIcon> -->
-		<!-- <maxSize>1 1</maxSize> -->
-		<!-- <linearSmooth>true</linearSmooth> -->
-		<!-- <padding>1 1</padding> -->
-		<!-- <color>FFFFFFA0</color> -->
-		<!-- </batteryIcon> -->
-		<!-- <text name="ss.separator1"> -->
-		<!-- <text>-</text> -->
-		<!-- <fontSize>0.01</fontSize> -->
-		<!-- <color>00000000</color> -->
-		<!-- </text> -->
-		<!-- <networkIcon name="ss.network"> -->
-		<!-- <networkIcon>./../art/icons/Network.png</networkIcon> -->
-		<!-- <planemodeIcon>./../art/icons/Planemode.png</planemodeIcon> -->
-		<!-- <maxSize>1 1</maxSize> -->
-		<!-- <linearSmooth>true</linearSmooth> -->
-		<!-- <padding>1 1</padding> -->
-		<!-- <color>FFFFFFA0</color> -->
-		<!-- </networkIcon> -->
-		<!-- <text name="ss.separator2"> -->
-		<!-- <text>AAAA</text> -->
-		<!-- <fontSize>0.01</fontSize> -->
-		<!-- <color>00000000</color> -->
-		<!-- </text> -->
-		<!-- <text name="ss.cheevosUser" if="${global.cheevos}" tinyScreen="false"> -->
-		<!-- <text>${global.cheevos.username}</text> -->
-		<!-- <alignment>center</alignment> -->
-		<!-- <fontSize>0.022</fontSize> -->
-		<!-- <fontSize tinyScreen="true">0.025</fontSize> -->
-		<!-- <color>FFFFFFA0</color> -->
-		<!-- </text> -->
-		<!-- <text name="ss.separator2"> -->
-		<!-- <text>AA</text> -->
-		<!-- <fontSize>0.01</fontSize> -->
-		<!-- <color>00000000</color> -->
-		<!-- </text> -->
-		<!-- <webImage name="ss.cheevosUserPic" if="${global.cheevos}" tinyScreen="false"> -->
-		<!-- <visible>{global:cheevos}</visible> -->
-		<!-- <linearSmooth>true</linearSmooth> -->
-		<!-- <path>https://media.retroachievements.org/UserPic/${global.cheevos.username}.png</path> -->
-		<!-- <maxSize>1 1</maxSize> -->
-		<!-- <color>FFFFFFFF</color> -->
-		<!-- </webImage> -->
-		<!-- </stackpanel> -->
-		<!-- <stackpanel name="batteryIndicatorReplacement" extra="true" tinyScreen="true"> -->
-		<!-- <pos>0.708 0.015</pos> -->
-		<!-- <size>0.28 0.06</size> -->
-		<!-- </stackpanel> -->
 	</view>
 </theme>

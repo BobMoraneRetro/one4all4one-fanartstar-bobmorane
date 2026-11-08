@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PC games obtained through Amazon Prime Gaming and the Amazon Games launcher.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de PC obtidos pelo Amazon Prime Gaming e pelo inicializador Amazon Games.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PC games obtained through Amazon Prime Gaming and the Amazon Games launcher.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de PC obtenidos a través de Amazon Prime Gaming y el lanzador Amazon Games.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux PC obtenus via Amazon Prime Gaming et le lanceur Amazon Games.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PC-Spiele aus Amazon Prime Gaming und dem Amazon-Games-Launcher.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Amazon Games</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2020</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Amazon</text>
+		</text>
+	</view>
+</theme>

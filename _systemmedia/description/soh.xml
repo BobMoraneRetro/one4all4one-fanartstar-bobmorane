@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Ship of Harkinian, the native PC port of The Legend of Zelda: Ocarina of Time, with widescreen, high frame rates and many enhancements.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Ship of Harkinian, port nativo para PC de The Legend of Zelda: Ocarina of Time, com tela larga, alta taxa de quadros e muitas melhorias.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Ship of Harkinian, the native PC port of The Legend of Zelda: Ocarina of Time, with widescreen, high frame rates and many enhancements.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ship of Harkinian, port nativo para PC de The Legend of Zelda: Ocarina of Time, con pantalla panorámica, alta tasa de imágenes y muchas mejoras.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ship of Harkinian, portage PC natif de The Legend of Zelda : Ocarina of Time, avec écran large, fréquence d'images élevée et nombreuses améliorations.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Ship of Harkinian, der native PC-Port von The Legend of Zelda: Ocarina of Time, mit Breitbild, hoher Bildrate und vielen Verbesserungen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Ship of Harkinian</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2022</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>HarbourMasters</text>
+		</text>
+	</view>
+</theme>

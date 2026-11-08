@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Virtual reality games for PC headsets such as HTC Vive, Oculus Rift, Valve Index and Windows Mixed Reality.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de realidade virtual para óculos de PC como HTC Vive, Oculus Rift, Valve Index e Windows Mixed Reality.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Virtual reality games for PC headsets such as HTC Vive, Oculus Rift, Valve Index and Windows Mixed Reality.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de realidad virtual para visores de PC como HTC Vive, Oculus Rift, Valve Index y Windows Mixed Reality.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux en réalité virtuelle pour les casques PC comme le HTC Vive, l'Oculus Rift, le Valve Index et Windows Mixed Reality.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Virtual-Reality-Spiele für PC-Headsets wie HTC Vive, Oculus Rift, Valve Index und Windows Mixed Reality.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PC VR</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2016</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>HTC / Oculus / Pico / Valve / WMR</text>
+		</text>
+	</view>
+</theme>

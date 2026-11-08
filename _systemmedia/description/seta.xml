@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Seta, the Japanese company that also co-developed the Aleck 64 board with Nintendo.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Seta, a empresa japonesa que também codesenvolveu a placa Aleck 64 com a Nintendo.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Seta, the Japanese company that also co-developed the Aleck 64 board with Nintendo.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Seta, la empresa japonesa que también codesarrolló la placa Aleck 64 con Nintendo.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade de Seta, la société japonaise qui a aussi co-développé la carte Aleck 64 avec Nintendo.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Seta, der japanischen Firma, die mit Nintendo auch die Aleck-64-Platine entwickelte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Seta</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Seta</text>
+		</text>
+	</view>
+</theme>

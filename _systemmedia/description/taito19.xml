@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>A selection of Taito arcade games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Uma seleção de jogos de arcade da Taito.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>A selection of Taito arcade games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Una selección de juegos de arcade de Taito.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Une sélection de jeux d'arcade Taito.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Eine Auswahl von Taito-Arcade-Spielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Taito 19</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Taito</text>
+		</text>
+	</view>
+</theme>

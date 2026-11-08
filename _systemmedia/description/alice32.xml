@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>French home computer sold by Matra and Hachette, a member of the Alice family derived from the Tandy MC-10.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico francês vendido pela Matra e Hachette, da família Alice derivada do Tandy MC-10.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>French home computer sold by Matra and Hachette, a member of the Alice family derived from the Tandy MC-10.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico francés vendido por Matra y Hachette, miembro de la familia Alice derivada del Tandy MC-10.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial français vendu par Matra et Hachette, membre de la famille Alice dérivée du Tandy MC-10.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Französischer Heimcomputer von Matra und Hachette, Teil der vom Tandy MC-10 abgeleiteten Alice-Familie.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Alice 32</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1984</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Matra &amp; Hachette</text>
+		</text>
+	</view>
+</theme>

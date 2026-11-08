@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega System 32, the 32-bit arcade board of 1990, home to Rad Mobile, Golden Axe: The Revenge of Death Adder and SegaSonic the Hedgehog.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Sega System 32, placa de arcade de 32 bits de 1990, com Rad Mobile, Golden Axe: The Revenge of Death Adder e SegaSonic the Hedgehog.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega System 32, the 32-bit arcade board of 1990, home to Rad Mobile, Golden Axe: The Revenge of Death Adder and SegaSonic the Hedgehog.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Sega System 32, placa arcade de 32 bits de 1990, con Rad Mobile, Golden Axe: The Revenge of Death Adder y SegaSonic the Hedgehog.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Sega System 32, carte arcade 32 bits de 1990, qui a accueilli Rad Mobile, Golden Axe : The Revenge of Death Adder et SegaSonic the Hedgehog.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sega System 32, die 32-Bit-Arcade-Platine von 1990, Heimat von Rad Mobile, Golden Axe: The Revenge of Death Adder und SegaSonic the Hedgehog.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>System 32</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1990</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

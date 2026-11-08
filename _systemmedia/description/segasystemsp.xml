@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega System SP, an arcade board derived from the Naomi, used mainly for card-based games such as Love and Berry.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Sega System SP, placa de arcade derivada da Naomi, usada principalmente em jogos com cartas como Love and Berry.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega System SP, an arcade board derived from the Naomi, used mainly for card-based games such as Love and Berry.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Sega System SP, placa arcade derivada de la Naomi, usada sobre todo en juegos con cartas como Love and Berry.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Sega System SP, carte arcade dérivée de la Naomi, utilisée surtout pour des jeux à cartes comme Love and Berry.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sega System SP, eine von der Naomi abgeleitete Arcade-Platine, vor allem für Kartenspiele wie Love and Berry.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>System SP</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2004</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

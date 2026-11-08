@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>StepMania, the open-source rhythm game in the style of Dance Dance Revolution, played on a dance mat or keyboard.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>StepMania, jogo de ritmo livre no estilo de Dance Dance Revolution, jogado em um tapete de dança ou no teclado.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>StepMania, the open-source rhythm game in the style of Dance Dance Revolution, played on a dance mat or keyboard.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>StepMania, juego de ritmo libre al estilo de Dance Dance Revolution, jugado en una alfombra de baile o con teclado.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>StepMania, jeu de rythme libre dans le style de Dance Dance Revolution, joué sur un tapis de danse ou au clavier.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>StepMania, ein quelloffenes Rhythmusspiel im Stil von Dance Dance Revolution, mit Tanzmatte oder Tastatur spielbar.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>StepMania</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2001</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>StepMania team</text>
+		</text>
+	</view>
+</theme>

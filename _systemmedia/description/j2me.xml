@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Java games for mobile phones (J2ME), the mobile gaming format of the 2000s before smartphones.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos Java para celulares (J2ME), o formato de jogos móveis dos anos 2000, antes dos smartphones.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Java games for mobile phones (J2ME), the mobile gaming format of the 2000s before smartphones.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos Java para teléfonos móviles (J2ME), el formato de juego móvil de los años 2000, antes de los smartphones.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux Java pour téléphones mobiles (J2ME), le format du jeu sur mobile des années 2000, avant les smartphones.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Java-Spiele für Mobiltelefone (J2ME), das Handyspiel-Format der 2000er vor den Smartphones.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>J2ME</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2001</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sun Microsystems</text>
+		</text>
+	</view>
+</theme>

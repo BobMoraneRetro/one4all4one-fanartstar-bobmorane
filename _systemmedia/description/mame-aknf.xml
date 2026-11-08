@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>All Killer No Filler: a curated selection of the best arcade games from MAME, without clones or weak titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>All Killer No Filler: uma seleção dos melhores jogos de arcade do MAME, sem clones nem títulos fracos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>All Killer No Filler: a curated selection of the best arcade games from MAME, without clones or weak titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>All Killer No Filler: una selección cuidada de los mejores juegos de arcade de MAME, sin clones ni títulos flojos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>All Killer No Filler : une sélection soignée des meilleurs jeux d'arcade de MAME, sans clones ni titres faibles.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>All Killer No Filler: eine kuratierte Auswahl der besten Arcade-Spiele aus MAME, ohne Klone und schwache Titel.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>MAME AKNF</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

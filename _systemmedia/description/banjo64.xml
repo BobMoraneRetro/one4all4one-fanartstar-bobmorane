@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Native PC port of Banjo-Kazooie, built from the decompiled Nintendo 64 code, with higher resolutions and frame rates.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Port nativo para PC de Banjo-Kazooie, construído a partir do código decompilado do Nintendo 64, com resoluções e taxas de quadros maiores.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Native PC port of Banjo-Kazooie, built from the decompiled Nintendo 64 code, with higher resolutions and frame rates.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Port nativo para PC de Banjo-Kazooie, construido a partir del código descompilado de Nintendo 64, con mayor resolución y tasa de imágenes.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Portage PC natif de Banjo-Kazooie, construit à partir du code Nintendo 64 décompilé, avec des résolutions et des fréquences d'images plus élevées.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Nativer PC-Port von Banjo-Kazooie aus dem dekompilierten Nintendo-64-Code, mit höheren Auflösungen und Bildraten.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Banjo-Kazooie</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2024</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Ports Nintendo</text>
+		</text>
+	</view>
+</theme>

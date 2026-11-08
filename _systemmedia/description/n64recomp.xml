@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Nintendo 64 games statically recompiled into native PC programs, with high resolutions, frame rates and modern controls.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de Nintendo 64 recompilados como programas nativos de PC, com alta resolução, alta taxa de quadros e controles modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Nintendo 64 games statically recompiled into native PC programs, with high resolutions, frame rates and modern controls.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de Nintendo 64 recompilados como programas nativos de PC, con alta resolución, alta tasa de imágenes y controles modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux Nintendo 64 recompilés en programmes PC natifs, avec hautes résolutions, fréquence d'images élevée et commandes modernes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Nintendo-64-Spiele, statisch in native PC-Programme rekompiliert, mit hohen Auflösungen, Bildraten und modernen Steuerungen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>N64 Recomp</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1996</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sumatra PDF, a lightweight document reader for PDF, comics (CBZ/CBR) and e-books, used to read manuals and magazines.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Sumatra PDF, leitor de documentos leve para PDF, quadrinhos (CBZ/CBR) e livros digitais, para ler manuais e revistas.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sumatra PDF, a lightweight document reader for PDF, comics (CBZ/CBR) and e-books, used to read manuals and magazines.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Sumatra PDF, lector de documentos ligero para PDF, cómics (CBZ/CBR) y libros electrónicos, para leer manuales y revistas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Sumatra PDF, lecteur de documents léger pour les PDF, les bandes dessinées (CBZ/CBR) et les livres numériques, pour lire manuels et magazines.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Sumatra PDF, ein schlanker Dokumentenbetrachter für PDF, Comics (CBZ/CBR) und E-Books, zum Lesen von Anleitungen und Zeitschriften.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Sumatra PDF</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

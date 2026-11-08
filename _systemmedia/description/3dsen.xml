@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>3dSen is an emulator that turns classic NES games into real-time 3D dioramas, each game being remodelled by hand.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>3dSen é um emulador que transforma jogos clássicos de NES em dioramas 3D em tempo real, cada jogo remodelado à mão.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>3dSen is an emulator that turns classic NES games into real-time 3D dioramas, each game being remodelled by hand.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>3dSen es un emulador que convierte los juegos clásicos de NES en dioramas 3D en tiempo real, cada juego remodelado a mano.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>3dSen est un émulateur qui transforme les jeux NES classiques en dioramas 3D en temps réel, chaque jeu étant remodelé à la main.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>3dSen ist ein Emulator, der klassische NES-Spiele in Echtzeit-3D-Dioramen verwandelt, wobei jedes Spiel von Hand neu modelliert wird.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>3dSen</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2020</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Geod Studio</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Bandai's barcode reader add-on for the Famicom: special cartridges used barcodes scanned from cards to unlock characters and items.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Leitor de códigos de barras da Bandai para o Famicom: cartuchos especiais usavam códigos lidos de cartões para liberar personagens e itens.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Bandai's barcode reader add-on for the Famicom: special cartridges used barcodes scanned from cards to unlock characters and items.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Lector de códigos de barras de Bandai para la Famicom: cartuchos especiales usaban códigos escaneados de tarjetas para desbloquear personajes y objetos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Lecteur de codes-barres de Bandai pour la Famicom : des cartouches spéciales utilisaient des codes-barres scannés sur des cartes pour débloquer personnages et objets.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Bandais Barcode-Lesegerät für das Famicom: Spezialmodule nutzten von Karten eingescannte Barcodes, um Figuren und Gegenstände freizuschalten.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Datach</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Bandai</text>
+		</text>
+	</view>
+</theme>

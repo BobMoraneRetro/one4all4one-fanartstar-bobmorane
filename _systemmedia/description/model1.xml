@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega's first 3D arcade board, home to Virtua Racing and Virtua Fighter, which opened the era of polygon arcade games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Primeira placa de arcade 3D da Sega, com Virtua Racing e Virtua Fighter, que abriu a era dos jogos de arcade em polígonos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sega's first 3D arcade board, home to Virtua Racing and Virtua Fighter, which opened the era of polygon arcade games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Primera placa arcade 3D de Sega, con Virtua Racing y Virtua Fighter, que abrió la era de los juegos de arcade poligonales.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Première carte arcade 3D de Sega, qui a accueilli Virtua Racing et Virtua Fighter et ouvert l'ère des jeux d'arcade en polygones.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Segas erste 3D-Arcade-Platine mit Virtua Racing und Virtua Fighter, die das Zeitalter der Polygon-Arcade-Spiele einläutete.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Model 1</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

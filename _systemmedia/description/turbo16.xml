@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>NEC's TurboGrafx-16, the North American version of the PC Engine, released in 1989.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O TurboGrafx-16 da NEC, versão norte-americana do PC Engine, lançado em 1989.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>NEC's TurboGrafx-16, the North American version of the PC Engine, released in 1989.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La TurboGrafx-16 de NEC, versión norteamericana de la PC Engine, lanzada en 1989.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La TurboGrafx-16 de NEC, version nord-américaine de la PC Engine, sortie en 1989.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>NECs TurboGrafx-16, die nordamerikanische Version der PC Engine, 1989 erschienen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>TurboGrafx-16</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1989</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>NEC</text>
+		</text>
+	</view>
+</theme>

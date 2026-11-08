@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Native PC port of Perfect Dark, Rare's Nintendo 64 shooter, rebuilt from its decompiled code with modern resolutions and controls.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Port nativo para PC de Perfect Dark, o jogo de tiro da Rare para Nintendo 64, reconstruído a partir do código decompilado com resoluções e controles modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Native PC port of Perfect Dark, Rare's Nintendo 64 shooter, rebuilt from its decompiled code with modern resolutions and controls.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Port nativo para PC de Perfect Dark, el shooter de Rare para Nintendo 64, reconstruido a partir de su código descompilado con resoluciones y controles modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Portage PC natif de Perfect Dark, le jeu de tir de Rare sur Nintendo 64, reconstruit à partir de son code décompilé avec résolutions et commandes modernes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Nativer PC-Port von Perfect Dark, Rares Nintendo-64-Shooter, aus dem dekompilierten Code mit modernen Auflösungen und Steuerungen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Perfect Dark</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2000</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Rare</text>
+		</text>
+	</view>
+</theme>

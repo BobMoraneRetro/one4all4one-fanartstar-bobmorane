@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The 128 KB version of the British Enterprise computer, known for its colourful graphics and Z80 processor.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>A versão de 128 KB do computador britânico Enterprise, conhecido pelos gráficos coloridos e pelo processador Z80.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>The 128 KB version of the British Enterprise computer, known for its colourful graphics and Z80 processor.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La versión de 128 KB del ordenador británico Enterprise, conocido por sus gráficos coloridos y su procesador Z80.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La version 128 Ko de l'ordinateur britannique Enterprise, connu pour ses graphismes colorés et son processeur Z80.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Die 128-KB-Version des britischen Enterprise-Computers, bekannt für seine farbenfrohe Grafik und den Z80-Prozessor.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Enterprise 128</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1986</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Enterprise Computers</text>
+		</text>
+	</view>
+</theme>

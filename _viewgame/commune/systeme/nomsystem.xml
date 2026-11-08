@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
+-->
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="detailed, coinops, hyperbat, grid, gamecarousel, nesicaxlive1">
@@ -14,14 +18,12 @@
 			<storyboard>
 				<animation property="offsetY" from="0" to="-0.02" duration="390" mode="easeOut" autoreverse="true" begin="250"/>
 				<animation property="color" from="000000" duration="500" mode="easeOut" begin="0"/>
-				<!-- <animation property="scale" from="0.2" duration="150" mode="easeOut" begin="0"/> -->
 				<animation property="opacity" from="1" to="0" duration="150" mode="linear" begin="1000"/>
-				<!-- <animation property="scale" from="1" to="0" duration="150" mode="easeOut" begin="1000"/> -->
 				<animation property="saturation" from="1" to="0" duration="150" mode="bump" begin="1000"/>
 			</storyboard>
 		</image>
 		<image name="logotransition" extra="true">
-			<path>"${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png"</path>
+			<path>"${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + ".png"</path>
 			<linearSmooth>true</linearSmooth>
 			<maxSize>0.5 0.2</maxSize>
 			<pos>0.5 0.5</pos>

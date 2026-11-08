@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Yugoslav 8-bit computer of 1984 built by PEL Varaždin, widely used in Croatian and Yugoslav schools.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador iugoslavo de 8 bits de 1984 fabricado pela PEL Varaždin, muito usado em escolas croatas e iugoslavas.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Yugoslav 8-bit computer of 1984 built by PEL Varaždin, widely used in Croatian and Yugoslav schools.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador yugoslavo de 8 bits de 1984 fabricado por PEL Varaždin, muy usado en escuelas croatas y yugoslavas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur 8 bits yougoslave de 1984 fabriqué par PEL Varaždin, très utilisé dans les écoles croates et yougoslaves.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Jugoslawischer 8-Bit-Computer von 1984 von PEL Varaždin, weit verbreitet in kroatischen und jugoslawischen Schulen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Orao</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1984</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>PEL Varazdin</text>
+		</text>
+	</view>
+</theme>

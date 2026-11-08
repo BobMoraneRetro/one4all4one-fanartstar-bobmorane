@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Digital games from the Nintendo eShop on Switch, from independent titles to download-only releases.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos digitais da Nintendo eShop no Switch, de títulos independentes a lançamentos apenas digitais.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Digital games from the Nintendo eShop on Switch, from independent titles to download-only releases.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos digitales de la Nintendo eShop en Switch, desde títulos independientes hasta lanzamientos solo digitales.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux dématérialisés du Nintendo eShop sur Switch, des titres indépendants aux sorties uniquement en téléchargement.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Digitale Spiele aus dem Nintendo eShop der Switch, von Indie-Titeln bis zu reinen Download-Veröffentlichungen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Switch eShop</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2017</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+</theme>

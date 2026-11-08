@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade classics rebuilt as native PC programs from their decompiled code, playable without emulation.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Clássicos de arcade reconstruídos como programas nativos de PC a partir do código descompilado, jogáveis sem emulação.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade classics rebuilt as native PC programs from their decompiled code, playable without emulation.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Clásicos de arcade reconstruidos como programas nativos de PC a partir de su código descompilado, jugables sin emulación.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Classiques de l'arcade reconstruits en programmes PC natifs à partir de leur code décompilé, jouables sans émulation.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Klassiker, aus dekompiliertem Code als native PC-Programme neu gebaut und ohne Emulation spielbar.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Arcade Decomp</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2026</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

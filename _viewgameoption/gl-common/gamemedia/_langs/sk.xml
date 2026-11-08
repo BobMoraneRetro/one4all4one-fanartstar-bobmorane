@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="sk">
+		<packcustombuildsno>Fanart s príponou "-fanart" (predvolené)</packcustombuildsno>
+		<packretrofreshbat>Fanart s príponou "-image"</packretrofreshbat>
+		<scrapedboxart>3D krabica s "-boxart" v gameliste</scrapedboxart>
+		<scrapedthumbnail>3D krabica s "-thumbnail" v gameliste</scrapedthumbnail>
+		<gamemedianon>Nie: iba médiá z gamelistu</gamemedianon>
+		<gamemediaoui>Áno: najprv vlastné médiá, inak gamelist</gamemediaoui>
+		<gamemediaseul>Iba: iba vlastné médiá (bez náhrady z gamelistu)</gamemediaseul>
+		<intheme>Priečinok témy - Predvolené</intheme>
+		<extfolder>Externý priečinok</extfolder>
+		<opt_custombuilds>POKROČILÉ - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>POKROČILÉ - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>POKROČILÉ - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>POKROČILÉ - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

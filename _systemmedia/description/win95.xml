@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Games for Windows 95, the 1995 version of Windows that made the PC a mainstream gaming platform with DirectX.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos para Windows 95, a versão de 1995 que fez do PC uma plataforma de jogos popular graças ao DirectX.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Games for Windows 95, the 1995 version of Windows that made the PC a mainstream gaming platform with DirectX.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos para Windows 95, la versión de 1995 que convirtió el PC en una plataforma de juego de masas gracias a DirectX.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux pour Windows 95, la version de 1995 qui a fait du PC une plate-forme de jeu grand public grâce à DirectX.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Spiele für Windows 95, die Version von 1995, die den PC mit DirectX zur verbreiteten Spieleplattform machte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Windows 95</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1995</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Microsoft</text>
+		</text>
+	</view>
+</theme>

@@ -2,26 +2,23 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="splash">
-		<!--Définition de l'arriere plan de la vue gamesplash-->
 		<splash name="splash">
 			<backgroundColor>000000FF</backgroundColor>
 		</splash>
-		<!--Désactivation de l'image par defaut du gamesplash-->
 		<image name="background">
 			<visible>false</visible>
 		</image>
-		<!--Désactivation du texte par defaut du gamesplash-->
 		<text name="label">
 			<visible>false</visible>
 		</text>
-		<!--Définition de l'image "fanart" du gamelist de jeu avec un contour blanc en shader-->
 		<image name="background_fanart" extra="true">
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
 			<size>0 1</size>
 			<path>firstfile(
 			{game:fanart},
-			"${themePath}/_systemmedia/systgamesplash/nofanart/" + {game:system:theme} + ".png")</path>
+			"${themePath}/_systemmedia/systgamesplash/nofanart/" + {game:system:theme} + ".png",
+			"${themePath}/_systemmedia/systgamesplash/nofanart/" + {game:system:theme} + ".jpg")</path>
 			<roundCorners>0</roundCorners>
 			<linearSmooth>true</linearSmooth>
 			<color>FFFFFFFF</color>
@@ -159,9 +156,6 @@
 			<zIndex>1000</zIndex>
 		</text>
 		<text name="numberfavorites" extra="true">
-			<!-- <visible>{game:lastplayed} &gt; 1 ? 1 : 0</visible> -->
-			<!-- <text>${lastgamelabel} {game:lastplayed}</text> -->
-			<!-- <text>'' + '${lastgamelabel}' + ' ' + {game:lastplayed}.elapsed().proper() + ''</text> -->
 			<text>'Total system favorites games :' + ' ' + {system:favorites}.tointeger()</text>
 			<origin>1 1</origin>
 			<pos>0.99 0.13</pos>

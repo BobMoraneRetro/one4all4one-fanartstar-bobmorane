@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="vi">
+		<packcustombuildsno>Fanart có hậu tố "-fanart" (mặc định)</packcustombuildsno>
+		<packretrofreshbat>Fanart có hậu tố "-image"</packretrofreshbat>
+		<scrapedboxart>Hộp 3D với "-boxart" trong gamelist</scrapedboxart>
+		<scrapedthumbnail>Hộp 3D với "-thumbnail" trong gamelist</scrapedthumbnail>
+		<gamemedianon>Không: chỉ media của gamelist</gamemedianon>
+		<gamemediaoui>Có: ưu tiên media tùy chỉnh, nếu không thì gamelist</gamemediaoui>
+		<gamemediaseul>Chỉ: chỉ media riêng (không dùng gamelist thay thế)</gamemediaseul>
+		<intheme>Thư mục theme - Mặc định</intheme>
+		<extfolder>Thư mục bên ngoài</extfolder>
+		<opt_custombuilds>NÂNG CAO - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>NÂNG CAO - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>NÂNG CAO - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>NÂNG CAO - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

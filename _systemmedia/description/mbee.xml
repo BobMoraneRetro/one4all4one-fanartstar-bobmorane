@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Australian home computer of 1982, first sold as a kit, widely used in Australian schools.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Computador doméstico australiano de 1982, vendido primeiro como kit, muito usado nas escolas australianas.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Australian home computer of 1982, first sold as a kit, widely used in Australian schools.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Ordenador doméstico australiano de 1982, vendido primero como kit, muy usado en las escuelas australianas.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Ordinateur familial australien sorti en 1982, d'abord vendu en kit, très utilisé dans les écoles australiennes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Australischer Heimcomputer von 1982, zunächst als Bausatz verkauft, weit verbreitet in australischen Schulen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>MicroBee</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1982</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Applied Technology</text>
+		</text>
+	</view>
+</theme>

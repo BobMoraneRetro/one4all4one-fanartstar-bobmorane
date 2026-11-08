@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Small electronic and LCD games given away in McDonald's Happy Meals.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Pequenos jogos eletrônicos e LCD dados nos McLanche Feliz do McDonald's.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Small electronic and LCD games given away in McDonald's Happy Meals.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Pequeños juegos electrónicos y LCD regalados en los Happy Meals de McDonald's.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Petits jeux électroniques et LCD offerts dans les Happy Meals de McDonald's.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Kleine elektronische und LCD-Spiele aus den Happy Meals von McDonald's.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>McDonald's</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>McDonalds</text>
+		</text>
+	</view>
+</theme>

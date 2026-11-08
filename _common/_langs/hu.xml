@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="hu">
+		<desactive>Kikapcsolva</desactive>
+		<default>Alapértelmezett</default>
+		<active>Bekapcsolva</active>
+		<novideo>Kikapcsolva</novideo>
+		<videoback>Bekapcsolva</videoback>
+		<intheme>Téma mappája - Alapértelmezett</intheme>
+		<extfolder>Külső mappa</extfolder>
+		<nodates>Nincs dátum</nodates>
+		<playcountone>játék</playcountone>
+		<playcount>játék</playcount>
+		<noplaycount>Soha nem indított</noplaycount>
+		<playerss>játékos</playerss>
+		<player>játékos</player>
+		<nogametime>Soha nem játszott</nogametime>
+		<noplayerdata>Ismeretlen</noplayerdata>
+		<noratings>Nincs értékelés</noratings>
+		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>JÁTÉKOK - A játék neve</opt_nomjeu>
+		<nomjeucomplet>Teljes</nomjeucomplet>
+		<nomjeucourt>Zárójelek nélkül</nomjeucourt>
+		<presgame1>Ez egy ilyen típusú játék:</presgame1>
+		<presgame2>fejlesztő:</presgame2>
+		<presgame3>játszható ezen:</presgame3>
+		<presgame4>- Elérhető nyelvek :</presgame4>
+		<nomjeulabel>Játék neve :</nomjeulabel>
+		<genrelabel>Műfaj :</genrelabel>
+		<devlabel>Fejlesztő :</devlabel>
+		<langlabel>Nyelvek :</langlabel>
+		<gametimelabel>Játékidő :</gametimelabel>
+		<lastgamelabel>Utoljára játszva:</lastgamelabel>
+		<viewbasicgrid>Basic: Egyszerű rácsnézet</viewbasicgrid>
+		<jeux>játék</jeux>
+		<longselect>Hosszú nyomás a "select" gombon</longselect>
+		<favuniquement>Csak kedvencek</favuniquement>
+		<tslesjeux>Összes játék</tslesjeux>
+		<fanartstarsyst>Klasszikus</fanartstarsyst>
+		<fanartmodern>Modern 1 (nem kompatibilis a morzsamenüvel)</fanartmodern>
+		<fanartmodern2>Modern 2 (kompatibilis a morzsamenüvel)</fanartmodern2>
+		<fanartfreshone>Csak a FreshOne által válogatott fanartok</fanartfreshone>
+		<fanartsystcustom>Fanartok a custom mappából, különben FreshOne</fanartsystcustom>
+		<videoangled>Bekapcsolva (kicsi, döntött)</videoangled>
+		<hardware>Hardver</hardware>
+		<charsystem>Karakterek</charsystem>
+		<figurines>Figurák (az Animatics témának telepítve kell lennie)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
+		<iconsetposition>Gombok helyzete</iconsetposition>
+		<skyblue>égkék</skyblue>
+		<purple>lila</purple>
+		<red>piros</red>
+		<aqua>égkék</aqua>
+		<orange>narancs</orange>
+		<green>zöld</green>
+		<yellow>sárga</yellow>
+		<pink>rózsaszín</pink>
+		<grey>sötétszürke</grey>
+		<lightgrey>világosszürke</lightgrey>
+		<navy>kék alt</navy>
+		<violet>lila</violet>
+		<candy>candy</candy>
+		<redalt>piros alt</redalt>
+		<yellowalt>sárga alt</yellowalt>
+		<greenalt>zöld alt</greenalt>
+		<purplealt>lila alt</purplealt>
+		<classiquesyst>Eltűnés kicsinyítéssel</classiquesyst>
+		<no>Nem</no>
+		<yes>Igen</yes>
+		<thumb>2D dobozra kalibrálva</thumb>
+		<boxart>3D dobozra kalibrálva</boxart>
+		<starrotate>Igen</starrotate>
+		<nostarrotate>Nem</nostarrotate>
+		<deactive>Kikapcsolva</deactive>
+		<speedslow1>Lassú+</speedslow1>
+		<speedslow2>Lassú++</speedslow2>
+		<starvideoang>Döntött</starvideoang>
+		<starvideodef>Standard</starvideodef>
+		<starvideobig>Nagy</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Kellemes szürke</griscl>
+		<noirombre>Fekete keret + árnyék</noirombre>
+		<blancombre>Fehér keret + árnyék</blancombre>
+		<ombre>Csak árnyék</ombre>
+		<rien>Díszítés nélkül</rien>
+		<presetshowbig>RFE Show nagy előnézet</presetshowbig>
+		<presetshowsmall>RFE Show kis előnézet</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar négyzet</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (Gyorsabb navigáció)</presetstarboxloop>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>A nagy panel alatt (mint a Steam)</deckgauche>
+		<deckcentre>A sor közepén (nagyítás + ragyogás)</deckcentre>
+		<decknormal>Normál</decknormal>
+		<spotvideodroite>Jobbra, a dobozok fölött</spotvideodroite>
+		<spotvideoaucune>Kikapcsolva</spotvideoaucune>
+		<spotvideogauche>Balra, az információkkal</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Logó megtartása</decklogogarder>
+		<decklogobandeau>Információs sáv (logó elrejtve)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Vissza az előző mappába</retourdossier>
+		<ra_moncompte>Fiókom</ra_moncompte>
+		<ra_succesjeu>Játék teljesítményei</ra_succesjeu>
+		<opt_raaffichage>JÁTÉKOK - RetroAchievements (külső eszköz)</opt_raaffichage>
+		<raaffichagepermanent>Állandó megjelenítés</raaffichagepermanent>
+		<raaffichagetemporaire>Néhány másodperc</raaffichagetemporaire>
+		<noteetoile>Csillag</noteetoile>
+		<notecoeur>Szív</notecoeur>
+		<notemanette>Kontroller</notemanette>
+		<notepouce>Hüvelykujj fel</notepouce>
+		<notetrophee>Trófea</notetrophee>
+		<notefantome>Szellem</notefantome>
+		<notecrane>Koponya</notecrane>
+		<notepourcent>%-ban</notepourcent>
+		<wheelclic>Hyperspin stílusú kattanás</wheelclic>
+		<bulle>Buborék</bulle>
+		<clic>Egyszerű kattanás</clic>
+		<clicgrave>Mély kattanás</clicgrave>
+		<frottement>Súrlódás</frottement>
+		<poc>Pukk</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
+		<opt_lismoi>ÁLTALÁNOS - Üdvözlő üzenet</opt_lismoi>
+		<opt_iconset>ÁLTALÁNOS - A súgóikonok megjelenése</opt_iconset>
+		<opt_colorhelp>ÁLTALÁNOS - A súgószöveg színei</opt_colorhelp>
+		<opt_horlogecouleur>ÁLTALÁNOS - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>ÁLTALÁNOS - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>RENDSZEREK - A rendszerlista nézete</opt_systemview>
+		<opt_imagefondcops1>RENDSZEREK - A rendszer fanartjainak kiválasztása</opt_imagefondcops1>
+		<opt_video4starmodern>RENDSZEREK - Játékvideó a rendszernézetben</opt_video4starmodern>
+		<opt_video4starclassic>RENDSZEREK - Játékvideó a rendszernézetben</opt_video4starclassic>
+		<opt_systviewselec>RENDSZEREK - Rendszerkép a kerékben</opt_systviewselec>
+		<opt_breadcrumbsonoff>RENDSZEREK - Függőleges menü balra (klasszikus rendszernézet)</opt_breadcrumbsonoff>
+		<arianeauto>Automatikus (a rendszerek rendezése szerint)</arianeauto>
+		<arianecategories>Kategóriák (rendezés hardvertípus szerint)</arianecategories>
+		<arianealpha>Betűk A-tól Z-ig (betűrendes rendezés)</arianealpha>
+		<arianealphavoisines>Betű és szomszédai (betűrendes rendezés)</arianealphavoisines>
+		<arianeconstructeur>Gyártók (rendezés gyártó szerint)</arianeconstructeur>
+		<arianedecennie>Évtizedek (rendezés megjelenési év szerint)</arianedecennie>
+		<arianeautres>EGYÉB</arianeautres>
+		<opt_metadataonoff>RENDSZEREK - Rendszerinformáció (klasszikus rendszernézet)</opt_metadataonoff>
+		<opt_systannonce>JÁTÉKOK - Aktuális rendszer megjelenítése megnyitáskor</opt_systannonce>
+		<opt_infosmax>JÁTÉKOK - Bővített információs konzol megjelenítése?</opt_infosmax>
+		<opt_gamewheelsound>ÁLTALÁNOS - Görgetési hang</opt_gamewheelsound>
+		<opt_boxorthumb>JÁTÉKOK - Megjelenítendő játékdoboz</opt_boxorthumb>
+		<opt_fanarttransition>JÁTÉKOK - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>JÁTÉKOK - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>JÁTÉKOK - Lemez forgása</opt_cdvitesse>
+		<cdnormale>Normál</cdnormale>
+		<cdlente>Lassú</cdlente>
+		<cdrapide>Gyors</cdrapide>
+		<cdtresrapide>Nagyon gyors</cdtresrapide>
+		<cdimmobile>Álló</cdimmobile>
+		<opt_umdrotation>JÁTÉKOK - UMD forgatása (PSP)</opt_umdrotation>
+		<opt_selectionvaleur>JÁTÉKOK - Kiválasztott játék kiemelése</opt_selectionvaleur>
+		<selegere>Enyhe</selegere>
+		<selmarquee>Erős</selmarquee>
+		<opt_videojeu>JÁTÉKOK - Játékvideó</opt_videojeu>
+		<vjcapture>Képernyőkép, majd videó</vjcapture>
+		<vjseule>Csak videó</vjseule>
+		<vjfondu>Videó áttűnéssel</vjfondu>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>JÁTÉKOK - Box case type</opt_typeboite>
+		<opt_contourboite>JÁTÉKOK - Box outline (case)</opt_contourboite>
+		<opt_deckespace>JÁTÉKOK - Dobozok távolsága</opt_deckespace>
+		<opt_iconenote>JÁTÉKOK - Értékelés ikonja</opt_iconenote>
+		<opt_extfolderbezelsyst>HALADÓ - Rendszer bezelek</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>HALADÓ - Játékkiadók logói</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>HALADÓ - Rendszer fanart</opt_extfolderfanart>
+		<opt_extfolderlogosyst>HALADÓ - Rendszerlogó</opt_extfolderlogosyst>
+		<opt_extfoldersalon>HALADÓ - Az RFE Retrofist Nostalgia nézet háttereinek helye</opt_extfoldersalon>
+		<opt_perfmachine>HALADÓ - Gyenge gép mód</opt_perfmachine>
+		<opt_salonvignette>RETROFIST - Háttér vignettálása</opt_salonvignette>
+		<vignleger>Enyhe</vignleger>
+		<vignfort>Erős</vignfort>
+		<opt_deckselection>BIG ART - A kiválasztott játék helye</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Logó a videó alatt</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Videó</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - SNES, N64, NGAGE, Solarus dobozok elforgatása</opt_fanartstarrotated>
+		<opt_starboxang>BOXART · RETROFIST - A játékdobozok szöge</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Játékhordozó (lemez, kazetta)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - A görgetési animáció sebessége</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Előnézeti videó mérete</opt_starvideo>
+		<opt_starvideocadre>BOXART - Előnézeti videó kerete</opt_starvideocadre>
+		<vcadreactuel>Jelenlegi keret</vcadreactuel>
+		<vcadreombre>Csak árnyék</vcadreombre>
+		<vcadreecranfin>Vékony keret</vcadreecranfin>
+		<vcadrebois>Fa</vcadrebois>
+		<vcadremetal>Szálcsiszolt fém</vcadremetal>
+		<vcadrelumineux>Világító képernyő</vcadrelumineux>
+		<vcadretv>Képcsöves TV</vcadretv>
+		<vcadregalerie>Galéria</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Tejüveg</vcadreverre>
+		<vcadrecarbone>Karbon LED</vcadrecarbone>
+		<vcadreneondouble>Dupla neon</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Ecsetvonások</vcadrepinceau>
+		<vcadretechnodore>Arany techno</vcadretechnodore>
+		<vcadretechnoargent>Ezüst techno</vcadretechnoargent>
+		<vcadreneonelec>Elektromos neon</vcadreneonelec>
+		<vcadrevitre>Üveglap</vcadrevitre>
+		<vcadreflammes>Lángok</vcadreflammes>
+		<vcadreencre>Tinta</vcadreencre>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - A forgó doboz oldalai</opt_boite3dtranche>
+		<b3tcharniere>Logó az egyik oldalon, nyitás a másikon</b3tcharniere>
+		<b3tdeuxcotes>Logó mindkét oldalon</b3tdeuxcotes>
+		<opt_gridcolor>16/9 · 4/3 - Rács színe</opt_gridcolor>
+		<opt_squarecadre>NÉGYZET - A játékokat jelölő négyzetek megjelenése</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>RENDSZEREK - Floating controller (classic view)</opt_manetteflottante>
+		<opt_choixbande>RENDSZEREK - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>RENDSZEREK - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>RENDSZEREK - System info: layout (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>JÁTÉKOK - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Üdvözlet és köszönet</planche00>
+		<planche01>01 - A rendszernézetek</planche01>
+		<planche02>02 - Klasszikus nézet: a rendszer képe</planche02>
+		<planche03>03 - Klasszikus nézet: a részletek</planche03>
+		<planche04>04 - Rendszer-fanartok, Modern és Z-Spin</planche04>
+		<planche05>05 - A 11 játéknézet</planche05>
+		<planche06>06 - FanartStar Boxart: dobozok és infók</planche06>
+		<planche07>07 - FanartStar Boxart: a videó</planche07>
+		<planche08>08 - Dobozok és adathordozók</planche08>
+		<planche09>09 - A 22 tok</planche09>
+		<planche10>10 - Az adathordozó: rendszerenkénti beállítások</planche10>
+		<planche11>11 - Játék-fanartok és kiválasztás</planche11>
+		<planche12>12 - Big Art, Spotlight, Négyzet, 16/9 és 4/3</planche12>
+		<planche13>13 - Az RFE nézetek</planche13>
+		<planche14>14 - RFE Retrofist: a tévé képernyője</planche14>
+		<planche15>15 - Show Big &amp; Small: a megforduló doboz</planche15>
+		<planche16>16 - A játéknézetek közös beállításai</planche16>
+		<planche17>17 - Általános: hangok, súgó, óra</planche17>
+		<planche18>18 - Testreszabás saját mappákkal</planche18>
+		<planche19>19 - Saját játékmédiák</planche19>
+		<planche20>20 - Mappa öltöztetése</planche20>
+		<planche21>21 - Melyik kép nyer?</planche21>
+		<planche22>22 - Csoportosított rendszerek</planche22>
+		<planche23>23 - Gyenge gép és linkek</planche23>
+	</variables>
+</theme>

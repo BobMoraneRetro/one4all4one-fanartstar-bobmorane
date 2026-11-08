@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Rayman Redemption, a fan-made reimagining of the original 1995 Rayman with new levels, abilities and improvements.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Rayman Redemption, reinterpretação feita por fãs do Rayman original de 1995, com novas fases, habilidades e melhorias.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Rayman Redemption, a fan-made reimagining of the original 1995 Rayman with new levels, abilities and improvements.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Rayman Redemption, reinterpretación hecha por fans del Rayman original de 1995, con nuevos niveles, habilidades y mejoras.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Rayman Redemption, réinterprétation créée par des fans du Rayman original de 1995, avec de nouveaux niveaux, capacités et améliorations.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Rayman Redemption, eine von Fans erstellte Neuauflage des ursprünglichen Rayman von 1995 mit neuen Levels, Fähigkeiten und Verbesserungen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Rayman Redemption</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2020</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Ports Sony</text>
+		</text>
+	</view>
+</theme>

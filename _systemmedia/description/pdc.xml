@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Low-cost handheld from the 2000s that ran built-in and cartridge games derived from 8-bit console hardware.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Console portátil de baixo custo dos anos 2000, com jogos integrados e em cartucho derivados do hardware de consoles de 8 bits.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Low-cost handheld from the 2000s that ran built-in and cartridge games derived from 8-bit console hardware.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Consola portátil de bajo coste de los 2000, con juegos integrados y en cartucho derivados del hardware de consolas de 8 bits.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Console portable bon marché des années 2000, avec des jeux intégrés et en cartouche dérivés du matériel des consoles 8 bits.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Günstiger Handheld aus den 2000ern mit eingebauten und Modulspielen auf Basis von 8-Bit-Konsolenhardware.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pocket Dream Console</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2004</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Conny</text>
+		</text>
+	</view>
+</theme>

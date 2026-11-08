@@ -1,6 +1,5 @@
 <theme>
 	<formatVersion>4</formatVersion>
-	
 	<view name="menu, system, detailed, gamecarousel, grid">
 		<helpsystem name="help">
 			<iconColor>FFFFFFFF</iconColor>
@@ -15,7 +14,6 @@
 			<iconR>./psx/r.png</iconR>
 			<iconStart>./psx/start.png</iconStart>
 			<iconSelect>./psx/select.png</iconSelect>
-		</helpsystem>		
+		</helpsystem>
 	</view>
-	
 </theme>

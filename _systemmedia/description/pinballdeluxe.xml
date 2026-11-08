@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Pinball Deluxe: Reloaded, a collection of digital pinball tables in the style of 1980s and 1990s machines.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Pinball Deluxe: Reloaded, uma coleção de mesas de pinball digitais no estilo das máquinas dos anos 80 e 90.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Pinball Deluxe: Reloaded, a collection of digital pinball tables in the style of 1980s and 1990s machines.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Pinball Deluxe: Reloaded, una colección de mesas de pinball digitales al estilo de las máquinas de los 80 y 90.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Pinball Deluxe : Reloaded, une collection de flippers numériques dans le style des machines des années 1980 et 1990.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Pinball Deluxe: Reloaded, eine Sammlung digitaler Flippertische im Stil der Automaten der 1980er und 1990er.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Pinball Deluxe</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2012</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

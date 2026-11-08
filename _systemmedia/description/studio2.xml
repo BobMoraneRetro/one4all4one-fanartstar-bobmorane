@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>RCA's Studio II console of 1977, with black and white graphics and keypads instead of joysticks.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O console Studio II da RCA de 1977, com gráficos em preto e branco e teclados no lugar de joysticks.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>RCA's Studio II console of 1977, with black and white graphics and keypads instead of joysticks.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>La consola Studio II de RCA de 1977, con gráficos en blanco y negro y teclados en lugar de joysticks.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>La console Studio II de RCA sortie en 1977, aux graphismes noir et blanc et aux pavés numériques à la place des joysticks.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>RCAs Konsole Studio II von 1977 mit Schwarz-Weiß-Grafik und Tastenfeldern statt Joysticks.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Studio II</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1977</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>RCA</text>
+		</text>
+	</view>
+</theme>

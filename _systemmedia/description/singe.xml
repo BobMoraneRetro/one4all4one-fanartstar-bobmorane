@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Singe, an engine for LaserDisc-style interactive movie games such as Dragon's Lair and Space Ace, and new fan-made titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Singe, motor para jogos de filme interativo no estilo LaserDisc como Dragon's Lair e Space Ace, e novas criações de fãs.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Singe, an engine for LaserDisc-style interactive movie games such as Dragon's Lair and Space Ace, and new fan-made titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Singe, motor para juegos de película interactiva de tipo LaserDisc como Dragon's Lair y Space Ace, y nuevas creaciones de fans.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Singe, moteur pour les jeux vidéo interactifs de type LaserDisc comme Dragon's Lair et Space Ace, et de nouvelles créations de fans.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Singe, eine Engine für interaktive LaserDisc-Filmspiele wie Dragon's Lair und Space Ace sowie neue Fan-Projekte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Singe</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1990</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

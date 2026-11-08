@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Namco System 11, an arcade board based on the PlayStation, home to the first Tekken games and Soul Edge.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Namco System 11, placa de arcade baseada no PlayStation, com os primeiros Tekken e Soul Edge.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Namco System 11, an arcade board based on the PlayStation, home to the first Tekken games and Soul Edge.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Namco System 11, placa arcade basada en la PlayStation, con los primeros Tekken y Soul Edge.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Namco System 11, carte arcade basée sur la PlayStation, qui a accueilli les premiers Tekken et Soul Edge.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Namco System 11, eine auf der PlayStation basierende Arcade-Platine, Heimat der ersten Tekken-Spiele und von Soul Edge.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>System 11</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1994</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Namco</text>
+		</text>
+	</view>
+</theme>

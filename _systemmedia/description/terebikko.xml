@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Bandai's Terebikko (See 'n Say Video Phone), an interactive toy phone that reacted to special VHS tapes.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O Terebikko da Bandai (See 'n Say Video Phone), telefone de brinquedo interativo que reagia a fitas VHS especiais.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Bandai's Terebikko (See 'n Say Video Phone), an interactive toy phone that reacted to special VHS tapes.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El Terebikko de Bandai (See 'n Say Video Phone), teléfono de juguete interactivo que reaccionaba a cintas VHS especiales.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Terebikko de Bandai (See 'n Say Video Phone), téléphone jouet interactif qui réagissait à des cassettes VHS spéciales.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Bandais Terebikko (See 'n Say Video Phone), ein interaktives Spielzeugtelefon, das auf spezielle VHS-Kassetten reagierte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Terebikko</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1988</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Bandai</text>
+		</text>
+	</view>
+</theme>

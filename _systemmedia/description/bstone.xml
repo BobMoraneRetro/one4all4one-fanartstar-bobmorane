@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Source port of Blake Stone, the 1993 first-person shooter built on the Wolfenstein 3D engine by JAM Productions.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Port do código-fonte de Blake Stone, jogo de tiro em primeira pessoa de 1993 da JAM Productions baseado no motor de Wolfenstein 3D.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Source port of Blake Stone, the 1993 first-person shooter built on the Wolfenstein 3D engine by JAM Productions.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Port del código fuente de Blake Stone, shooter en primera persona de 1993 de JAM Productions basado en el motor de Wolfenstein 3D.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Portage du code source de Blake Stone, FPS de 1993 de JAM Productions basé sur le moteur de Wolfenstein 3D.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Source-Port von Blake Stone, dem Ego-Shooter von JAM Productions aus dem Jahr 1993 auf Basis der Wolfenstein-3D-Engine.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Blake Stone</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1993</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

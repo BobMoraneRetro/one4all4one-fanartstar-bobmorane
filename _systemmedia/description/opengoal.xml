@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>OpenGOAL, a native PC port of the Jak and Daxter games, rebuilt from the original PlayStation 2 code.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>OpenGOAL, port nativo para PC dos jogos de Jak and Daxter, reconstruído a partir do código original do PlayStation 2.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>OpenGOAL, a native PC port of the Jak and Daxter games, rebuilt from the original PlayStation 2 code.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>OpenGOAL, port nativo para PC de los juegos de Jak and Daxter, reconstruido a partir del código original de PlayStation 2.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>OpenGOAL, portage PC natif des jeux Jak and Daxter, reconstruit à partir du code PlayStation 2 d'origine.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>OpenGOAL, ein nativer PC-Port der Jak-and-Daxter-Spiele, aus dem ursprünglichen PlayStation-2-Code neu gebaut.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>OpenGOAL</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

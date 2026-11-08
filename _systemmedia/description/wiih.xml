@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>ROM hacks for Wii: fan-made modifications of existing games, with new levels, translations or improvements.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Hacks de ROM para Wii: modificações de jogos existentes feitas por fãs, com novas fases, traduções ou melhorias.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>ROM hacks for Wii: fan-made modifications of existing games, with new levels, translations or improvements.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Hacks de ROM para Wii: modificaciones de juegos existentes hechas por fans, con nuevos niveles, traducciones o mejoras.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Hacks de ROM pour Wii : modifications de jeux existants créées par des fans, avec nouveaux niveaux, traductions ou améliorations.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>ROM-Hacks für Wii: von Fans veränderte Spiele mit neuen Levels, Übersetzungen oder Verbesserungen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Wii Hacks</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2006</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>WipEout Phantom Edition, an enhanced native PC port of the original 1995 WipEout futuristic racing game, rebuilt from its source code.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>WipEout Phantom Edition, port nativo para PC melhorado do WipEout original de 1995, jogo de corrida futurista, reconstruído a partir do código.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>WipEout Phantom Edition, an enhanced native PC port of the original 1995 WipEout futuristic racing game, rebuilt from its source code.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>WipEout Phantom Edition, port nativo para PC mejorado del WipEout original de 1995, juego de carreras futurista, reconstruido a partir de su código.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>WipEout Phantom Edition, portage PC natif amélioré du WipEout original de 1995, jeu de course futuriste, reconstruit à partir de son code source.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>WipEout Phantom Edition, ein verbesserter nativer PC-Port des ursprünglichen WipEout von 1995, eines futuristischen Rennspiels, aus dem Quellcode neu gebaut.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>WipEout Phantom Edition</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1995</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Psygnosis</text>
+		</text>
+	</view>
+</theme>

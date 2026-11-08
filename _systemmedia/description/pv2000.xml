@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Casio's PV-2000, a Japanese console-computer hybrid of 1983 with a keyboard and cartridge games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O PV-2000 da Casio, híbrido japonês de console e computador de 1983 com teclado e jogos em cartucho.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Casio's PV-2000, a Japanese console-computer hybrid of 1983 with a keyboard and cartridge games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El PV-2000 de Casio, híbrido japonés de consola y ordenador de 1983 con teclado y juegos en cartucho.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Le PV-2000 de Casio, hybride console-ordinateur japonais de 1983 avec clavier et jeux en cartouche.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Casios PV-2000, ein japanischer Konsolen-Computer-Hybrid von 1983 mit Tastatur und Modulspielen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PV-2000</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Casio</text>
+		</text>
+	</view>
+</theme>

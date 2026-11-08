@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Fallout Community Edition, a reimplementation of the 1997 post-apocalyptic role-playing game running natively on modern systems.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Fallout Community Edition, reimplementação do RPG pós-apocalíptico de 1997, nativa em sistemas modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Fallout Community Edition, a reimplementation of the 1997 post-apocalyptic role-playing game running natively on modern systems.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Fallout Community Edition, reimplementación del juego de rol postapocalíptico de 1997, nativa en sistemas modernos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Fallout Community Edition, réécriture du jeu de rôle post-apocalyptique de 1997, en version native pour les systèmes modernes.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Fallout Community Edition, Neuimplementierung des postapokalyptischen Rollenspiels von 1997, nativ auf modernen Systemen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Fallout CE</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1997</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Interplay</text>
+		</text>
+	</view>
+</theme>

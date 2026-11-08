@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Arcade games from Allumer, a Japanese developer of the 1990s that worked mainly on Seta hardware.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade da Allumer, desenvolvedora japonesa dos anos 90 que trabalhou principalmente em hardware da Seta.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Arcade games from Allumer, a Japanese developer of the 1990s that worked mainly on Seta hardware.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Allumer, desarrollador japonés de los años 90 que trabajó sobre todo en hardware de Seta.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade d'Allumer, développeur japonais des années 1990 qui a surtout travaillé sur du matériel Seta.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele von Allumer, einem japanischen Entwickler der 1990er-Jahre, der vor allem für Seta-Hardware arbeitete.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Allumer</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Allumer</text>
+		</text>
+	</view>
+</theme>

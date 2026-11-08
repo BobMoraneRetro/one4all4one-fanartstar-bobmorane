@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Starship, a native PC port of Star Fox 64 built from its decompiled code, with modern resolutions and enhancements.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Starship, port nativo para PC de Star Fox 64 construído a partir do código decompilado, com resoluções modernas e melhorias.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Starship, a native PC port of Star Fox 64 built from its decompiled code, with modern resolutions and enhancements.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Starship, port nativo para PC de Star Fox 64 construido a partir de su código descompilado, con resoluciones modernas y mejoras.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Starship, portage PC natif de Star Fox 64 construit à partir de son code décompilé, avec résolutions modernes et améliorations.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Starship, ein nativer PC-Port von Star Fox 64 aus dem dekompilierten Code, mit modernen Auflösungen und Verbesserungen.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Starship</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2026</text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>

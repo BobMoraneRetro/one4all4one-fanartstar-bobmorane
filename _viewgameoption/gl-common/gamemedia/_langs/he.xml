@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="he">
+		<packcustombuildsno>פאנארט עם הסיומת "-fanart" (ברירת מחדל)</packcustombuildsno>
+		<packretrofreshbat>פאנארט עם הסיומת "-image"</packretrofreshbat>
+		<scrapedboxart>קופסת 3D עם "-boxart" ב-gamelist</scrapedboxart>
+		<scrapedthumbnail>קופסת 3D עם "-thumbnail" ב-gamelist</scrapedthumbnail>
+		<gamemedianon>לא: מדיה מרשימת המשחקים בלבד</gamemedianon>
+		<gamemediaoui>כן: מדיה אישית תחילה, אחרת רשימת המשחקים</gamemediaoui>
+		<gamemediaseul>בלבד: מדיה אישית בלבד (ללא חזרה ל-gamelist)</gamemediaseul>
+		<intheme>תיקיית ערכת הנושא - ברירת מחדל</intheme>
+		<extfolder>תיקייה חיצונית</extfolder>
+		<opt_custombuilds>מתקדם - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>מתקדם - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>מתקדם - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>מתקדם - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

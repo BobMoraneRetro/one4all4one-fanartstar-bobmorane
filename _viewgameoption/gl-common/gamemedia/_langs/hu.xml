@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="hu">
+		<packcustombuildsno>Fanart "-fanart" utótaggal (alapértelmezett)</packcustombuildsno>
+		<packretrofreshbat>Fanart "-image" utótaggal</packretrofreshbat>
+		<scrapedboxart>3D doboz "-boxart" a gamelistben</scrapedboxart>
+		<scrapedthumbnail>3D doboz "-thumbnail" a gamelistben</scrapedthumbnail>
+		<gamemedianon>Nem: csak a gamelist médiái</gamemedianon>
+		<gamemediaoui>Igen: először saját média, különben a gamelist</gamemediaoui>
+		<gamemediaseul>Csak: csak saját média (gamelist tartalék nélkül)</gamemediaseul>
+		<intheme>Téma mappája - Alapértelmezett</intheme>
+		<extfolder>Külső mappa</extfolder>
+		<opt_custombuilds>HALADÓ - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>HALADÓ - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>HALADÓ - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>HALADÓ - Custom media folder</opt_extfoldergamemedia>
+	</variables>
+</theme>

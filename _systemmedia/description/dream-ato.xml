@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sammy Atomiswave arcade games converted to run on the Dreamcast, whose hardware the Atomiswave was based on.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de arcade Sammy Atomiswave convertidos para o Dreamcast, cujo hardware serviu de base para a Atomiswave.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Sammy Atomiswave arcade games converted to run on the Dreamcast, whose hardware the Atomiswave was based on.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de arcade de Sammy Atomiswave convertidos para la Dreamcast, cuyo hardware sirvió de base a la Atomiswave.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux d'arcade Sammy Atomiswave convertis pour la Dreamcast, dont le matériel a servi de base à l'Atomiswave.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Arcade-Spiele für Sammy Atomiswave, für die Dreamcast umgesetzt, auf deren Hardware die Atomiswave basierte.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Atomiswave (Dreamcast)</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2000</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>Sega</text>
+		</text>
+	</view>
+</theme>

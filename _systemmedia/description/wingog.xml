@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PC games from GOG.com, CD Projekt's store of DRM-free games, known for preserving and updating classic titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Jogos de PC do GOG.com, a loja sem DRM da CD Projekt, conhecida por preservar e atualizar jogos clássicos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>PC games from GOG.com, CD Projekt's store of DRM-free games, known for preserving and updating classic titles.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Juegos de PC de GOG.com, la tienda sin DRM de CD Projekt, conocida por preservar y actualizar los clásicos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Jeux PC de GOG.com, la boutique sans DRM de CD Projekt, connue pour préserver et mettre à jour les jeux classiques.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>PC-Spiele von GOG.com, dem DRM-freien Shop von CD Projekt, bekannt für die Bewahrung und Aktualisierung klassischer Titel.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>GOG.com</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>2008</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>CD Projekt</text>
+		</text>
+	</view>
+</theme>

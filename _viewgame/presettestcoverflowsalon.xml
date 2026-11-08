@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiercouleurjeu} : valeur : 0 (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
+	${cfr_ratio} : vues de test Coverflow : format (largeur / hauteur) de la boîte de remplacement d un jeu sans jaquette (fanart du système), plus carré pour les systèmes à CD comme dans la vue Boxart (définie dans ce fichier)
+	${cfs_angle} : vue de test Coverflow RFE : angle des boîtes de côté, en degrés (définie dans ce fichier)
+	${cfs_ecart} : vue de test Coverflow RFE : décalage minimal des boîtes de côté vers l extérieur (en largeur de boîtier DVD) (définie dans ce fichier)
+	${cfs_hauteur} : vue de test Coverflow RFE : hauteur de l élément boîte dans sa case du carrousel ou de la grille (plus petite pour les systèmes à boîte large) (définie dans ce fichier)
+	${cfx_format} : vues de test Coverflow : format (largeur / hauteur) de la boîte la plus large du système, pour l écart autour de la sélection quand les formats sont mélangés (0 = format de chaque boîte) (définie dans ce fichier)
+	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
+	${media_box2d} : boîte 2D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box2d_missing} : vrai si le média « box2d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box3d} : boîte 3D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box3d_missing} : vrai si le média « box3d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_image} : capture du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${path_salon} : vue RFE Retrofist Nostalgia : dossier _salon (décors et réglages par système), dans le thème ou dans _bobmedia/_gamemedia (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des décors de la vue RFE Retrofist Nostalgia »)
+	${salon_calque} : vue Salon : image posée sur l écran (vitre, quadrillage LCD...), vide = aucune ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/ (7 fichiers))
+	${salon_capture_pos} : vue Salon : centre de la capture d écran du jeu ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (51 fichiers))
+	${salon_capture_taille} : vue Salon : largeur hauteur de la capture d écran du jeu ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (51 fichiers))
+	${salon_couleur} : vue Salon : couleur multipliée sur la vidéo et la capture (FFFFFFFF = aucune ; ex. 8BAC0F pour la Game Boy) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/ (4 fichiers))
+	${salon_defaut} : vue Salon : décor et réglages par défaut, _default (systèmes 4:3), _default16 (systèmes 16:9 listés), ou selon le type du système : arcade, computers (computer), extension, pinball, port, portable, auto-collection, custom-collection, retrobat (type vide : retrobat, kodi, screenshots) (définie dans _viewgame/presetsalon.xml)
+	${salon_ecran2} : vue Salon : true = 2e écran (2 consoles reliées, ex. gbc2players), même vidéo, capture, couleur et calque que le 1er ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _gamemedia/_salon/gbc2players.xml, _viewgame/presetsalon.xml)
+	${salon_saturation} : vue Salon : saturation de la vidéo et de la capture (1 = normale, 0 = noir et blanc, à combiner avec salon_couleur) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/ (4 fichiers))
+	${salon_video2_pos} : vue Salon : centre du 2e écran (si salon_ecran2) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _gamemedia/_salon/gbc2players.xml, _viewgame/presetsalon.xml)
+	${salon_video2_taille} : vue Salon : largeur hauteur du 2e écran (si salon_ecran2) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _gamemedia/_salon/gbc2players.xml, _viewgame/presetsalon.xml)
+	${salon_video_etiree} : vue Salon : true = vidéo étirée à la taille de l écran de la TV (size), false = proportions gardées (maxSize) ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (45 fichiers))
+	${salon_video_pos} : vue Salon : centre de l écran de la TV (vidéo sous le décor) (définie dans _gamemedia/_salon/ (51 fichiers))
+	${salon_video_taille} : vue Salon : largeur hauteur de l écran de la TV (définie dans _gamemedia/_salon/ (51 fichiers))
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<cfx_format>0</cfx_format>
+		<cfx_format if="{system.theme} == 'snes' || {system.theme} == 'sfc' || {system.theme} == 'snes-msu1' || {system.theme} == 'satellaview' || {system.theme} == 'n64'">1.4</cfx_format>
+		<cfr_ratio>0.7</cfr_ratio>
+		<cfr_ratio if="{system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'amigacdtv' || {system.theme} == 'amigacd32' || {system.theme} == 'gx4000' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'psx' || {system.theme} == 'saturn' || {system.theme} == 'segacd'">0.98</cfr_ratio>
+		<cfs_hauteur>0.94</cfs_hauteur>
+		<cfs_hauteur if="{system.theme} == 'n64' || {system.theme} == 'snes' || {system.theme} == 'dreamcast' || {system.theme} == 'saturn' || {system.theme} == 'psx' || {system.theme} == 'segacd' || {system.theme} == 'megacd' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds'">0.78</cfs_hauteur>
+		<cfs_ecart>0.4</cfs_ecart>
+		<cfs_angle>35</cfs_angle>
+	</variables>
+	<customView name="presettestcoverflowsalon" displayName="TEST - Coverflow RFE" inherits="gamecarousel">
+		<control name="fanart_extra,screenshot_extra,video_extra">
+			<visible>false</visible>
+		</control>
+		<image name="md_image">
+			<visible>false</visible>
+		</image>
+		<image name="gamecarouselLogo">
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="salonfond" extra="true">
+			<path>firstfile("${path_salon}/" + {system:theme} + ".png", "${path_salon}/${salon_defaut}.png")</path>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>5</zIndex>
+		</image>
+		<image name="salonvignettage" extra="true">
+			<visible ifSubset="salonvignette:leger">true</visible>
+			<visible ifSubset="salonvignette:fort">true</visible>
+			<visible ifSubset="salonvignette:aucun">false</visible>
+			<path>${themePath}/_viewgame/fanartstar/overlay.png</path>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<color>000000</color>
+			<opacity ifSubset="salonvignette:leger">0.6</opacity>
+			<opacity ifSubset="salonvignette:fort">1</opacity>
+			<zIndex>6</zIndex>
+		</image>
+		<image name="salonnoir" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/salon/noir.png</path>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<zIndex>2.5</zIndex>
+		</image>
+		<image name="salonimage" if="!${salon_video_etiree}" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_capture_taille}</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecapture" if="!${salon_video_etiree}" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_capture_taille}</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="salonimageetiree" if="${salon_video_etiree}" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_capture_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecaptureetiree" if="${salon_video_etiree}" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_capture_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<video name="salonvideo" if="!${salon_video_etiree}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_video_taille}</maxSize>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>3</zIndex>
+		</video>
+		<video name="salonvideoetiree" if="${salon_video_etiree}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>3</zIndex>
+		</video>
+		<image name="saloncalque" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${salon_calque}</path>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>4</zIndex>
+		</image>
+		<image name="salonnoir2" if="${salon_ecran2}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/salon/noir.png</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<zIndex>2.5</zIndex>
+		</image>
+		<image name="salonimage2" if="${salon_ecran2} &amp;&amp; !${salon_video_etiree}" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_video2_taille}</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecapture2" if="${salon_ecran2} &amp;&amp; !${salon_video_etiree}" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_video2_taille}</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="salonimageetiree2" if="${salon_ecran2} &amp;&amp; ${salon_video_etiree}" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecaptureetiree2" if="${salon_ecran2} &amp;&amp; ${salon_video_etiree}" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<video name="salonvideo2" if="${salon_ecran2} &amp;&amp; !${salon_video_etiree}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_video2_taille}</maxSize>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>3</zIndex>
+		</video>
+		<video name="salonvideoetiree2" if="${salon_ecran2} &amp;&amp; ${salon_video_etiree}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>3</zIndex>
+		</video>
+		<image name="saloncalque2" if="${salon_ecran2}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${salon_calque}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>4</zIndex>
+		</image>
+		<gamecarousel name="gamecarousel">
+			<type>horizontal</type>
+			<pos>0.091 0.665</pos>
+			<size>0.818 0.27</size>
+			<logoSize>0.06 0.21</logoSize>
+			<logoScale>1.25</logoScale>
+			<logoRotation>0</logoRotation>
+			<maxLogoCount>15</maxLogoCount>
+			<logoAlignment>center</logoAlignment>
+			<color>00000000</color>
+			<minLogoOpacity>1</minLogoOpacity>
+			<imageSource>thumbnail</imageSource>
+			<zIndex>10</zIndex>
+			<itemTemplate>
+				<container>
+					<image name="boite">
+						<path>${media_box2d}</path>
+						<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
+						<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>3.4 ${cfs_hauteur}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite_coverflow_boitier.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.02</outerShadowSize>
+							<saturation>1</saturation>
+							<maxAngle>${cfs_angle}</maxAngle>
+							<spread>0.22</spread>
+							<recul>2.2</recul>
+							<sens>-1</sens>
+							<assombrir>0.35</assombrir>
+							<ecart>${cfs_ecart}</ecart>
+							<largeurCase>3.741</largeurCase>
+							<zoomSelection>1.25</zoomSelection>
+							<masqueX>0.33</masqueX>
+							<fonduX>0.065</fonduX>
+							<formatMax>${cfx_format}</formatMax>
+						</shader>
+					</image>
+					<image name="boitefond">
+						<path>${intfanartfresh}</path>
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>3.4 ${cfs_hauteur}</size>
+						<linearSmooth>true</linearSmooth>
+						<saturation>0.7</saturation>
+						<shader>
+							<path>${themePath}/_common/shaders/boite_coverflow_boitier.glsl</path>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<borderSize>0</borderSize>
+							<cornerRadius>0</cornerRadius>
+							<innerShadowSize>0</innerShadowSize>
+							<outerShadowSize>0.02</outerShadowSize>
+							<saturation>1</saturation>
+							<maxAngle>${cfs_angle}</maxAngle>
+							<spread>0.22</spread>
+							<recul>2.2</recul>
+							<sens>-1</sens>
+							<assombrir>0.35</assombrir>
+							<ecart>${cfs_ecart}</ecart>
+							<largeurCase>3.741</largeurCase>
+							<zoomSelection>1.25</zoomSelection>
+							<masqueX>0.33</masqueX>
+							<fonduX>0.065</fonduX>
+							<ratioBoite>${cfr_ratio}</ratioBoite>
+							<formatMax>${cfx_format}</formatMax>
+						</shader>
+					</image>
+					<image name="boitelogo">
+						<path>${media_marquee}</path>
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; !(${media_marquee_missing})</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; !(${media_marquee_missing})</visible>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>3.4 ${cfs_hauteur}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite_coverflow.glsl</path>
+							<maxAngle>${cfs_angle}</maxAngle>
+							<spread>0.22</spread>
+							<recul>2.2</recul>
+							<sens>-1</sens>
+							<assombrir>0.35</assombrir>
+							<ecart>${cfs_ecart}</ecart>
+							<largeurCase>3.741</largeurCase>
+							<zoomSelection>1.25</zoomSelection>
+							<masqueX>0.33</masqueX>
+							<fonduX>0.065</fonduX>
+							<ratioBoite>${cfr_ratio}</ratioBoite>
+							<contenu>0.8</contenu>
+							<formatMax>${cfx_format}</formatMax>
+						</shader>
+					</image>
+					<text name="nomjeu">
+						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; ${media_marquee_missing}</visible>
+						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; ${media_marquee_missing}</visible>
+						<text>{game:name}</text>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>1.4 0.6</size>
+						<fontPath>${themePath}/_common/fonts/Cabin-Bold.ttf</fontPath>
+						<fontSize>0.014</fontSize>
+						<lineSpacing>1.05</lineSpacing>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<verticalAlignment>center</verticalAlignment>
+						<glowColor>000000DD</glowColor>
+						<glowSize>3</glowSize>
+					</text>
+				</container>
+			</itemTemplate>
+		</gamecarousel>
+		<text name="cf_titre" extra="true">
+			<text>{game:name}</text>
+			<pos>0.015 0.025</pos>
+			<origin>0 0</origin>
+			<size>0.3 0.04</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.032</fontSize>
+			<color>FFFFFF</color>
+			<alignment>left</alignment>
+			<glowColor>000000CC</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>20</zIndex>
+		</text>
+		<text name="cf_infos" extra="true">
+			<text>{game:releaseyear}  •  {game:genre}  •  {game:publisher}</text>
+			<pos>0.015 0.07</pos>
+			<origin>0 0</origin>
+			<size>0.3 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.018</fontSize>
+			<color>DDDDDD</color>
+			<alignment>left</alignment>
+			<glowColor>000000CC</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>20</zIndex>
+		</text>
+	</customView>
+</theme>

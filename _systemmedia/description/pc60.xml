@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>NEC's 1981 PC-6001 Japanese home computer, an affordable machine with a large library of games.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>O computador doméstico japonês PC-6001 da NEC de 1981, uma máquina acessível com uma grande biblioteca de jogos.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>NEC's 1981 PC-6001 Japanese home computer, an affordable machine with a large library of games.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>El ordenador doméstico japonés PC-6001 de NEC de 1981, una máquina asequible con un gran catálogo de juegos.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>L'ordinateur familial japonais PC-6001 de NEC sorti en 1981, machine abordable à la grande ludothèque.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>NECs japanischer Heimcomputer PC-6001 von 1981, ein günstiges Gerät mit großer Spielebibliothek.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>PC-6001</text>
+		</text>
+		<text name="info3" extra="true">
+			<text>1981</text>
+		</text>
+		<text name="info4" extra="true">
+			<text>NEC</text>
+		</text>
+	</view>
+</theme>

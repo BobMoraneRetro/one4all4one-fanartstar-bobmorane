@@ -1,0 +1,28 @@
+Module « Son à l'entrée d'un système »
+======================================
+
+Contenu
+  sonentree_commun.xml   : joue sons/_defaut.wav à l'entrée de chaque système
+  sonentree_systeme.xml  : joue sons/<système>.wav, sinon .mp3, sinon .ogg, sinon sons/_defaut.wav
+  sonentree_musique.xml  : même choix de son, joué comme musique du thème (bgsound) : coupé quand on quitte le système.
+                           Nécessite l'option RetroBat « musiques du thème » activée.
+  sons/                  : _defaut.wav + un fichier par système, nommé comme le dossier du système (snes.wav, megadrive.wav...)
+  vide.png               : image transparente 1x1 qui porte l'animation sonore
+
+Intégration dans un autre thème
+  1. Copier ce dossier dans <thème>/_common/sonentree
+     (si l'emplacement est différent, changer la ligne <sonentree_dossier> en tête des trois XML).
+  2. Ajouter le menu dans le fichier des options, APRÈS l'inclusion des vues :
+	<subset name="sonentree" displayName="${opt_sonentree}">
+		<include name="sonentreenon" displayName="${desactive}"/>
+		<include name="sonentreecommun" displayName="${sonentreecommun}">${themePath}/_common/sonentree/sonentree_commun.xml</include>
+		<include name="sonentreesysteme" displayName="${sonentreesysteme}">${themePath}/_common/sonentree/sonentree_systeme.xml</include>
+		<include name="sonentreemusique" displayName="${sonentreemusique}">${themePath}/_common/sonentree/sonentree_musique.xml</include>
+	</subset>
+  3. Ajouter les libellés dans les fichiers de langue : opt_sonentree, sonentreecommun, sonentreesysteme, sonentreemusique
+     (${desactive} doit exister, sinon le remplacer).
+  4. Le son des choix « commun » et « système » se rejoue aussi à l'ouverture d'un dossier (limite du moteur).
+  5. Vues couvertes : detailed, grid, gamecarousel, coinops, hyperbat, nesicaxlive1
+     (les vues personnalisées héritent de ces vues). Ajouter un nom de vue dans la ligne <view name="..."> si besoin.
+
+Formats : .wav conseillé (court, < 1 s).

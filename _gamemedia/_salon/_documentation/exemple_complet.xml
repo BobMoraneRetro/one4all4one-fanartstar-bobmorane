@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Vue RFE Retrofist Nostalgia : exemple de <système>.xml avec TOUTES les options (détail : LISEZMOI.txt).
+	RFE Retrofist Nostalgia view: example <system>.xml with ALL options (details: README.txt).
+	Vista RFE Retrofist Nostalgia: ejemplo de <sistema>.xml con TODAS las opciones (detalles: LEEME.txt).
+	Vista RFE Retrofist Nostalgia: exemplo de <sistema>.xml com TODAS as opções (detalhes: LEIAME.txt).
+
+	Copier dans le dossier _salon sous le nom du système (ex. psx.xml), à côté de son décor (psx.png),
+	puis garder seulement les lignes utiles : une ligne absente garde la valeur par défaut.
+	Copy into the _salon folder named after the system (e.g. psx.xml), next to its background (psx.png),
+	then keep only the lines you need: a missing line keeps its default value.
+
+	salon_video_pos / salon_video_taille       écran de la TV : centre, largeur hauteur (fraction d écran)
+	salon_video_etiree                         true = vidéo étirée, false = proportions gardées
+	salon_capture_pos / salon_capture_taille   capture : centre, largeur hauteur
+	salon_disque_depart / _x / _y / _taille    support (disque, cartouche) : départ, x sorti, y, taille ; ifSubset thumb = boîte 2D, boxart = boîte 3D (en dernier)
+	salon_disque_tourne                        true = le disque tourne (défaut des systèmes à CD/DVD)
+	salon_support_mixte                        true = disques et cartouches mélangés : la forme de l image décide
+	salon_support_umd / salon_umd_*            PSP : seul le disque de l UMD tourne ; centre et rayons en fraction de l image
+	salon_couleur / salon_saturation           couleur multipliée (FFFFFFFF = aucune), saturation (1 normale, 0 noir et blanc)
+	salon_calque                               image posée sur l écran (vitre, grille LCD), vide = aucune
+	salon_ecran2 / salon_video2_pos / _taille  2e écran (2 consoles reliées)
+	salon_perspective                          0 = aucune, 1 = par angles, 2 = par les 4 coins de l écran
+	salon_persp_angle_x / _y / _profondeur     mode 1 : angles en degrés, profondeur (1 = défaut)
+	salon_coin_hg / _hd / _bd / _bg            mode 2 : coins de l écran en pixels du décor 1920x1080 (x y)
+	salon_coins_proportions                    mode 2 : 0 = l image remplit l écran, 1 = proportions gardées
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<salon_video_pos>0.5148 0.3532</salon_video_pos>
+		<salon_video_taille>0.2922 0.3449</salon_video_taille>
+		<salon_video_etiree>false</salon_video_etiree>
+		<salon_capture_pos>0.5148 0.3532</salon_capture_pos>
+		<salon_capture_taille>0.2922 0.3449</salon_capture_taille>
+		<salon_disque_depart>0.5</salon_disque_depart>
+		<salon_disque_y>0.65</salon_disque_y>
+		<salon_disque_taille ifSubset="boxorthumb:thumb">0.2900 0.5156</salon_disque_taille>
+		<salon_disque_taille ifSubset="boxorthumb:boxart">0.2447 0.4350</salon_disque_taille>
+		<salon_disque_x ifSubset="boxorthumb:thumb">0.6900</salon_disque_x>
+		<salon_disque_x ifSubset="boxorthumb:boxart">0.6772</salon_disque_x>
+		<salon_disque_tourne>true</salon_disque_tourne>
+		<salon_support_mixte>false</salon_support_mixte>
+		<salon_support_umd>false</salon_support_umd>
+		<salon_umd_cx>0.5</salon_umd_cx>
+		<salon_umd_cy>0.49</salon_umd_cy>
+		<salon_umd_rayon>0.45</salon_umd_rayon>
+		<salon_umd_rayon_centre>0.23</salon_umd_rayon_centre>
+		<salon_couleur>FFFFFFFF</salon_couleur>
+		<salon_saturation>1</salon_saturation>
+		<salon_calque></salon_calque>
+		<salon_ecran2>false</salon_ecran2>
+		<salon_video2_pos>0.5 0.5</salon_video2_pos>
+		<salon_video2_taille>0 0</salon_video2_taille>
+		<salon_perspective>0</salon_perspective>
+		<salon_persp_angle_x>0</salon_persp_angle_x>
+		<salon_persp_angle_y>0</salon_persp_angle_y>
+		<salon_persp_profondeur>1</salon_persp_profondeur>
+		<salon_coin_hg>711 198</salon_coin_hg>
+		<salon_coin_hd>1266 198</salon_coin_hd>
+		<salon_coin_bd>1266 565</salon_coin_bd>
+		<salon_coin_bg>711 565</salon_coin_bg>
+		<salon_coins_proportions>0</salon_coins_proportions>
+	</variables>
+</theme>

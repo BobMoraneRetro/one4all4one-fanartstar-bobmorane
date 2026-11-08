@@ -1,0 +1,32 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Internet radio: listen to your favourite stations directly from the frontend.</text>
+		</text>
+		<text name="info1" extra="true" lang="PT">
+			<text>Rádio pela internet: ouça suas estações favoritas direto da interface.</text>
+		</text>
+		<text name="info1" extra="true" lang="EN">
+			<text>Internet radio: listen to your favourite stations directly from the frontend.</text>
+		</text>
+		<text name="info1" extra="true" lang="ES">
+			<text>Radio por internet: escucha tus emisoras favoritas directamente desde la interfaz.</text>
+		</text>
+		<text name="info1" extra="true" lang="FR">
+			<text>Radio internet : écoutez vos stations préférées directement depuis l'interface.</text>
+		</text>
+		<text name="info1" extra="true" lang="DE">
+			<text>Internetradio: Höre deine Lieblingssender direkt über die Oberfläche.</text>
+		</text>
+		<text name="info2" extra="true">
+			<text>Radio</text>
+		</text>
+		<text name="info3" extra="true">
+			<text></text>
+		</text>
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+	</view>
+</theme>
