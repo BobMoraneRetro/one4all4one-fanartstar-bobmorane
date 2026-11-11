@@ -19,4 +19,5 @@
 	<include>${themePath}/_viewgame/presettestcoverflowboitiergrid.xml</include>
 	<include>${themePath}/_viewgame/presettestcoverflow3dboitiergrid.xml</include>
 	<include>${themePath}/_viewgame/presettestcoverflowsalongrid.xml</include>
+	<include>${themePath}/_viewgame/presettestetagere.xml</include>
 </theme>

@@ -309,11 +309,12 @@
 		<planche18>18 - ゲーム名、評価、間隔</planche18>
 		<planche19>19 - 全般：サウンド、ヘルプ、時計</planche19>
 		<planche20>20 - 自分のフォルダーでカスタマイズ</planche20>
-		<planche21>21 - ゲームのカスタムメディア</planche21>
-		<planche22>22 - フォルダーを飾る</planche22>
-		<planche23>23 - どの画像が優先？</planche23>
-		<planche24>24 - グループ化されたシステム</planche24>
-		<planche25>25 - RetroAchievements</planche25>
-		<planche26>26 - 低スペック機とリンク</planche26>
+		<planche21>21 - スクレイプ：正しい名前</planche21>
+		<planche22>22 - ゲームのカスタムメディア</planche22>
+		<planche23>23 - フォルダーを飾る</planche23>
+		<planche24>24 - どの画像が優先？</planche24>
+		<planche25>25 - グループ化されたシステム</planche25>
+		<planche26>26 - RetroAchievements</planche26>
+		<planche27>27 - 低スペック機とリンク</planche27>
 	</variables>
 </theme>

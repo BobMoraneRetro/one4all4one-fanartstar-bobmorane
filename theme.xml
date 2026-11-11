@@ -71,6 +71,7 @@
 		<include name="planche24" displayName="${planche24}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
 		<include name="planche25" displayName="${planche25}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
 		<include name="planche26" displayName="${planche26}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche27" displayName="${planche27}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
 		<include name="desactive" displayName="${desactive}"/>
 	</subset>
 	<region region="fr">Region fr</region>

@@ -309,11 +309,12 @@
 		<planche18>18 - Назва гри, оцінка та інтервал</planche18>
 		<planche19>19 - Загальні: звуки, довідка, годинник</planche19>
 		<planche20>20 - Налаштування власними теками</planche20>
-		<planche21>21 - Власні медіафайли ігор</planche21>
-		<planche22>22 - Оформлення теки</planche22>
-		<planche23>23 - Яке зображення переможе?</planche23>
-		<planche24>24 - Згруповані системи</planche24>
-		<planche25>25 - RetroAchievements</planche25>
-		<planche26>26 - Слабкий комп'ютер і посилання</planche26>
+		<planche21>21 - Скрапінг: правильні назви</planche21>
+		<planche22>22 - Власні медіафайли ігор</planche22>
+		<planche23>23 - Оформлення теки</planche23>
+		<planche24>24 - Яке зображення переможе?</planche24>
+		<planche25>25 - Згруповані системи</planche25>
+		<planche26>26 - RetroAchievements</planche26>
+		<planche27>27 - Слабкий комп'ютер і посилання</planche27>
 	</variables>
 </theme>

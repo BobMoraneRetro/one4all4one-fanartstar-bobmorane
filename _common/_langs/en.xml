@@ -309,11 +309,12 @@
 		<planche18>18 - Game name, rating and spacing</planche18>
 		<planche19>19 - General: sounds, help, clock</planche19>
 		<planche20>20 - Customize with your folders</planche20>
-		<planche21>21 - Custom game media</planche21>
-		<planche22>22 - Dressing a folder</planche22>
-		<planche23>23 - Which image wins?</planche23>
-		<planche24>24 - Grouped systems</planche24>
-		<planche25>25 - RetroAchievements</planche25>
-		<planche26>26 - Low-end machine and links</planche26>
+		<planche21>21 - Scraping: the right names</planche21>
+		<planche22>22 - Custom game media</planche22>
+		<planche23>23 - Dressing a folder</planche23>
+		<planche24>24 - Which image wins?</planche24>
+		<planche25>25 - Grouped systems</planche25>
+		<planche26>26 - RetroAchievements</planche26>
+		<planche27>27 - Low-end machine and links</planche27>
 	</variables>
 </theme>

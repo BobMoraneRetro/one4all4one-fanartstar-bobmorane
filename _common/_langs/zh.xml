@@ -309,11 +309,12 @@
 		<planche18>18 - 游戏名称、评分与间距</planche18>
 		<planche19>19 - 常规：声音、帮助、时钟</planche19>
 		<planche20>20 - 用自己的文件夹自定义</planche20>
-		<planche21>21 - 游戏自定义媒体</planche21>
-		<planche22>22 - 装饰文件夹</planche22>
-		<planche23>23 - 哪张图片优先？</planche23>
-		<planche24>24 - 分组的系统</planche24>
-		<planche25>25 - RetroAchievements</planche25>
-		<planche26>26 - 低配机器与链接</planche26>
+		<planche21>21 - 刮削：正确的名称</planche21>
+		<planche22>22 - 游戏自定义媒体</planche22>
+		<planche23>23 - 装饰文件夹</planche23>
+		<planche24>24 - 哪张图片优先？</planche24>
+		<planche25>25 - 分组的系统</planche25>
+		<planche26>26 - RetroAchievements</planche26>
+		<planche27>27 - 低配机器与链接</planche27>
 	</variables>
 </theme>

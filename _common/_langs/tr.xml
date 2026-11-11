@@ -309,11 +309,12 @@
 		<planche18>18 - Oyun adı, puan ve aralık</planche18>
 		<planche19>19 - Genel: sesler, yardım, saat</planche19>
 		<planche20>20 - Kendi klasörlerinle özelleştir</planche20>
-		<planche21>21 - Kişisel oyun medyası</planche21>
-		<planche22>22 - Bir klasörü giydirmek</planche22>
-		<planche23>23 - Hangi görsel kazanır?</planche23>
-		<planche24>24 - Gruplanmış sistemler</planche24>
-		<planche25>25 - RetroAchievements</planche25>
-		<planche26>26 - Zayıf makine ve bağlantılar</planche26>
+		<planche21>21 - Scrape: doğru adlar</planche21>
+		<planche22>22 - Kişisel oyun medyası</planche22>
+		<planche23>23 - Bir klasörü giydirmek</planche23>
+		<planche24>24 - Hangi görsel kazanır?</planche24>
+		<planche25>25 - Gruplanmış sistemler</planche25>
+		<planche26>26 - RetroAchievements</planche26>
+		<planche27>27 - Zayıf makine ve bağlantılar</planche27>
 	</variables>
 </theme>

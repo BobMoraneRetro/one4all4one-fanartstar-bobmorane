@@ -309,11 +309,12 @@
 		<planche18>18 - Tên game, điểm và khoảng cách</planche18>
 		<planche19>19 - Chung: âm thanh, trợ giúp, đồng hồ</planche19>
 		<planche20>20 - Tùy biến bằng thư mục của bạn</planche20>
-		<planche21>21 - Phương tiện riêng của trò chơi</planche21>
-		<planche22>22 - Trang trí thư mục</planche22>
-		<planche23>23 - Ảnh nào được ưu tiên?</planche23>
-		<planche24>24 - Các hệ máy được nhóm</planche24>
-		<planche25>25 - RetroAchievements</planche25>
-		<planche26>26 - Máy yếu và liên kết</planche26>
+		<planche21>21 - Scrape: tên đúng</planche21>
+		<planche22>22 - Phương tiện riêng của trò chơi</planche22>
+		<planche23>23 - Trang trí thư mục</planche23>
+		<planche24>24 - Ảnh nào được ưu tiên?</planche24>
+		<planche25>25 - Các hệ máy được nhóm</planche25>
+		<planche26>26 - RetroAchievements</planche26>
+		<planche27>27 - Máy yếu và liên kết</planche27>
 	</variables>
 </theme>

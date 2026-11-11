@@ -144,7 +144,7 @@
 		</image>
 		<video name="videogameplay" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
 			<path>${media_video}</path>
-			<delay>1</delay>
+			<delay>0.5</delay>
 			<pos>0.98 0.375</pos>
 			<maxSize ifSubset="starvideo:starvideobig">0.4 0.54</maxSize>
 			<maxSize ifSubset="starvideo:starvideodef">0.3 0.54</maxSize>
@@ -242,7 +242,7 @@
 		</image>
 		<video name="videogameplay" ifSubset="starvideo:starvideoang" extra="true">
 			<path>${media_video}</path>
-			<delay>1</delay>
+			<delay>0.5</delay>
 			<pos>0.995 0.35</pos>
 			<size>0.38 0.47</size>
 			<origin>1 0.5</origin>

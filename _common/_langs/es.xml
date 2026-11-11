@@ -309,11 +309,12 @@
 		<planche18>18 - Nombre del juego, nota y espaciado</planche18>
 		<planche19>19 - General: sonidos, ayuda, reloj</planche19>
 		<planche20>20 - Personalizar con tus carpetas</planche20>
-		<planche21>21 - Medios propios de los juegos</planche21>
-		<planche22>22 - Vestir una carpeta</planche22>
-		<planche23>23 - ¿Qué imagen gana?</planche23>
-		<planche24>24 - Los sistemas agrupados</planche24>
-		<planche25>25 - RetroAchievements</planche25>
-		<planche26>26 - Equipo poco potente y enlaces</planche26>
+		<planche21>21 - El scraping: los nombres correctos</planche21>
+		<planche22>22 - Medios propios de los juegos</planche22>
+		<planche23>23 - Vestir una carpeta</planche23>
+		<planche24>24 - ¿Qué imagen gana?</planche24>
+		<planche25>25 - Los sistemas agrupados</planche25>
+		<planche26>26 - RetroAchievements</planche26>
+		<planche27>27 - Equipo poco potente y enlaces</planche27>
 	</variables>
 </theme>

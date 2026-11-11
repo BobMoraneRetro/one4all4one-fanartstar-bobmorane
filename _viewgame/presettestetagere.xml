@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiercouleurjeu} : valeur : 0 (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
+	${ete_angle} : vue de test Étagère : angle des boîtes rangées, en degrés (shader boite3d_case_etagere) (définie dans ce fichier)
+	${ete_cols} : vue de test Étagère : nombre de boîtes affichées dans la rangée (colonnes lignes) ; plus il est grand, plus les tranches sont fines ; à changer avec ete_pas et ete_taille (définie dans ce fichier)
+	${ete_pas} : vue de test Étagère : écart entre deux tranches = 1 / nombre de colonnes (shader boite3d_case_etagere) (définie dans ce fichier)
+	${ete_planche} : vue de test Étagère : position de la planche, sous les boîtes rangées, selon le format de boîte du système (définie dans ce fichier)
+	${ete_taille} : vue de test Étagère : taille des éléments de la boîte 3D dans leur case de la grille, selon le format de boîte du système (la boîte occupe 60 % de l élément) (définie dans ce fichier)
+	${ete_taillenom} : vue de test Étagère : largeur et hauteur du nom du jeu écrit sur la tranche quand il n a ni boîte ni logo (définie dans ce fichier)
+	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
+	${intlogoclearpng} : Logo clair du système (définie dans theme.xml)
+	${media_box2d} : boîte 2D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box2d_missing} : vrai si le média « box2d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_image} : capture du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${jeux}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<ete_cols>35 1</ete_cols>
+		<ete_pas>0.02857</ete_pas>
+		<ete_taille>9.2023 0.9953</ete_taille>
+		<ete_taillenom>5.90 0.075</ete_taillenom>
+		<ete_planche>0.5 0.7617</ete_planche>
+		<ete_cols if="{system.theme} == 'ps2' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'wii' || {system.theme} == 'gc' || {system.theme} == 'ps3' || {system.theme} == 'ps4' || {system.theme} == 'ps5' || {system.theme} == 'wiiu'">49 1</ete_cols>
+		<ete_pas if="{system.theme} == 'ps2' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'wii' || {system.theme} == 'gc' || {system.theme} == 'ps3' || {system.theme} == 'ps4' || {system.theme} == 'ps5' || {system.theme} == 'wiiu'">0.02041</ete_pas>
+		<ete_taille if="{system.theme} == 'ps2' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'wii' || {system.theme} == 'gc' || {system.theme} == 'ps3' || {system.theme} == 'ps4' || {system.theme} == 'ps5' || {system.theme} == 'wiiu'">12.8832 0.9953</ete_taille>
+		<ete_taillenom if="{system.theme} == 'ps2' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'wii' || {system.theme} == 'gc' || {system.theme} == 'ps3' || {system.theme} == 'ps4' || {system.theme} == 'ps5' || {system.theme} == 'wiiu'">8.26 0.075</ete_taillenom>
+		<ete_planche if="{system.theme} == 'ps2' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'wii' || {system.theme} == 'gc' || {system.theme} == 'ps3' || {system.theme} == 'ps4' || {system.theme} == 'ps5' || {system.theme} == 'wiiu'">0.5 0.7617</ete_planche>
+		<ete_cols if="{system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcenginecd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == 'segacd' || {system.theme} == 'megacd'">53 1</ete_cols>
+		<ete_pas if="{system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcenginecd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == 'segacd' || {system.theme} == 'megacd'">0.01887</ete_pas>
+		<ete_taille if="{system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcenginecd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == 'segacd' || {system.theme} == 'megacd'">13.9349 0.7064</ete_taille>
+		<ete_taillenom if="{system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcenginecd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == 'segacd' || {system.theme} == 'megacd'">6.34 0.075</ete_taillenom>
+		<ete_planche if="{system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcenginecd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == 'segacd' || {system.theme} == 'megacd'">0.5 0.7159</ete_planche>
+		<ete_cols if="{system.theme} == 'dreamcast'">31 1</ete_cols>
+		<ete_pas if="{system.theme} == 'dreamcast'">0.03226</ete_pas>
+		<ete_taille if="{system.theme} == 'dreamcast'">8.1506 0.7064</ete_taille>
+		<ete_taillenom if="{system.theme} == 'dreamcast'">3.71 0.075</ete_taillenom>
+		<ete_planche if="{system.theme} == 'dreamcast'">0.5 0.7159</ete_planche>
+		<ete_cols if="{system.theme} == 'nds' || {system.theme} == '3ds'">49 1</ete_cols>
+		<ete_pas if="{system.theme} == 'nds' || {system.theme} == '3ds'">0.02041</ete_pas>
+		<ete_taille if="{system.theme} == 'nds' || {system.theme} == '3ds'">12.8832 0.7942</ete_taille>
+		<ete_taillenom if="{system.theme} == 'nds' || {system.theme} == '3ds'">6.59 0.075</ete_taillenom>
+		<ete_planche if="{system.theme} == 'nds' || {system.theme} == '3ds'">0.5 0.7298</ete_planche>
+		<ete_cols if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'">35 1</ete_cols>
+		<ete_pas if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'">0.02857</ete_pas>
+		<ete_taille if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'">10.9335 0.6096</ete_taille>
+		<ete_taillenom if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'">3.61 0.075</ete_taillenom>
+		<ete_planche if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'">0.5 0.7006</ete_planche>
+		<ete_cols if="{system.theme} == 'switch' || {system.theme} == 'windows'">49 1</ete_cols>
+		<ete_pas if="{system.theme} == 'switch' || {system.theme} == 'windows'">0.02041</ete_pas>
+		<ete_taille if="{system.theme} == 'switch' || {system.theme} == 'windows'">12.8832 1.1391</ete_taille>
+		<ete_taillenom if="{system.theme} == 'switch' || {system.theme} == 'windows'">9.45 0.075</ete_taillenom>
+		<ete_planche if="{system.theme} == 'switch' || {system.theme} == 'windows'">0.5 0.7844</ete_planche>
+		<ete_angle>89</ete_angle>
+	</variables>
+	<customView name="presettestetagere" displayName="TEST - Étagère" inherits="grid">
+		<image name="fanart_extra, defautfanartextra" extra="true">
+			<pos>0.5 0</pos>
+			<origin>0.5 0</origin>
+			<size>1 0</size>
+			<color>CCCCCCFF</color>
+			<colorEnd>CCCCCCFF</colorEnd>
+			<zIndex>4</zIndex>
+		</image>
+		<image name="fanart_extra" extra="true">
+			<opacity>1</opacity>
+		</image>
+		<image name="fanart_extra, defautfanartextra" extra="true">
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<storyboard event="open">
+				<animation property="scale" from="1" to="1.05" duration="9000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="scale" from="1" to="1.05" duration="9000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="scale" from="1" to="1.05" duration="9000" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="screenshot_extra" extra="true">
+			<visible>false</visible>
+		</image>
+		<video name="video_extra" extra="true">
+			<visible>false</visible>
+		</video>
+		<image name="cf_degrade" extra="true">
+			<path>${themePath}/_viewgame/fanartstar/overlaydown.png</path>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<size>1 0.26</size>
+			<color>FFFFFFA0</color>
+			<zIndex>5</zIndex>
+		</image>
+		<image name="ete_fondrangee" extra="true">
+			<path>${themePath}/_viewgame/etagere/fond.png</path>
+			<pos>${ete_planche}</pos>
+			<origin>0.5 1</origin>
+			<size>1 0.38</size>
+			<color>FFFFFF88</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>6</zIndex>
+		</image>
+		<image name="ete_planche" extra="true">
+			<path>${themePath}/_viewgame/etagere/planche.png</path>
+			<pos>${ete_planche}</pos>
+			<origin>0.5 0</origin>
+			<size>1 0.07407</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>7</zIndex>
+		</image>
+		<imagegrid name="gamegrid">
+			<imageSource>thumbnail</imageSource>
+			<scrollDirection>horizontalCenter</scrollDirection>
+			<scrollLoop>true</scrollLoop>
+			<pos>0 0.27</pos>
+			<size>1 0.66</size>
+			<margin>0 0</margin>
+			<padding>0 0</padding>
+			<autoLayout>${ete_cols}</autoLayout>
+			<autoLayoutSelectedZoom>1</autoLayoutSelectedZoom>
+			<animateSelection>true</animateSelection>
+			<showVideoAtDelay>-1</showVideoAtDelay>
+			<zIndex>10</zIndex>
+			<itemTemplate>
+				<container>
+					<image name="face">
+						<path>${media_box2d}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${ete_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_case_etagere.glsl</path>
+							<u_tranches ifSubset="boite3dtranche:deuxcotes">1</u_tranches>
+							<u_tranches ifSubset="boite3dtranche:charniere">0</u_tranches>
+							<u_mode>0.0</u_mode>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.04</u_pitch>
+							<u_angle>${ete_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<caseType ifSubset="contourboite:non">7</caseType>
+							<saturation>1</saturation>
+							<sens>1</sens>
+							<pas>${ete_pas}</pas>
+							<masqueX>0.5</masqueX>
+							<fonduX>0.12</fonduX>
+							<assombrir>0.3</assombrir>
+							<u_sortie>0</u_sortie>
+							<echelleRepos>0.8</echelleRepos>
+						</shader>
+						<storyboard event="activate">
+							<animation property="shader.u_sortie" from="0" to="1" begin="150" duration="800" mode="linear"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="shader.u_sortie" to="0" duration="180" mode="linear"/>
+						</storyboard>
+					</image>
+					<image name="facefond">
+						<path>${intfanartfresh}</path>
+						<visible>${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${ete_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_case_etagere.glsl</path>
+							<u_tranches ifSubset="boite3dtranche:deuxcotes">1</u_tranches>
+							<u_tranches ifSubset="boite3dtranche:charniere">0</u_tranches>
+							<u_mode>0.0</u_mode>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.04</u_pitch>
+							<u_angle>${ete_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<caseType ifSubset="contourboite:non">7</caseType>
+							<saturation>0.7</saturation>
+							<sens>1</sens>
+							<pas>${ete_pas}</pas>
+							<recadre>1</recadre>
+							<masqueX>0.5</masqueX>
+							<fonduX>0.12</fonduX>
+							<assombrir>0.3</assombrir>
+							<u_sortie>0</u_sortie>
+							<echelleRepos>0.8</echelleRepos>
+						</shader>
+						<storyboard event="activate">
+							<animation property="shader.u_sortie" from="0" to="1" begin="150" duration="800" mode="linear"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="shader.u_sortie" to="0" duration="180" mode="linear"/>
+						</storyboard>
+					</image>
+					<image name="facelogo">
+						<path>${media_marquee}</path>
+						<visible>${media_box2d_missing} &amp;&amp; !(${media_marquee_missing})</visible>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${ete_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_case_etagere.glsl</path>
+							<u_tranches ifSubset="boite3dtranche:deuxcotes">1</u_tranches>
+							<u_tranches ifSubset="boite3dtranche:charniere">0</u_tranches>
+							<u_mode>4</u_mode>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.04</u_pitch>
+							<u_angle>${ete_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<caseType ifSubset="contourboite:non">7</caseType>
+							<saturation>1</saturation>
+							<sens>1</sens>
+							<pas>${ete_pas}</pas>
+							<contenu>0.8</contenu>
+							<masqueX>0.5</masqueX>
+							<fonduX>0.12</fonduX>
+							<assombrir>0.3</assombrir>
+							<u_sortie>0</u_sortie>
+							<echelleRepos>0.8</echelleRepos>
+						</shader>
+						<storyboard event="activate">
+							<animation property="shader.u_sortie" from="0" to="1" begin="150" duration="800" mode="linear"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="shader.u_sortie" to="0" duration="180" mode="linear"/>
+						</storyboard>
+					</image>
+					<image name="logotranche">
+						<path>${media_marquee}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${ete_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_case_etagere.glsl</path>
+							<u_tranches ifSubset="boite3dtranche:deuxcotes">1</u_tranches>
+							<u_tranches ifSubset="boite3dtranche:charniere">0</u_tranches>
+							<u_mode>3.2</u_mode>
+							<u_logo_scale>0.68</u_logo_scale>
+							<logoEpaisseur>0.85</logoEpaisseur>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.04</u_pitch>
+							<u_angle>${ete_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
+							<caseType ifSubset="contourboite:non">7</caseType>
+							<saturation>1</saturation>
+							<sens>1</sens>
+							<pas>${ete_pas}</pas>
+							<masqueX>0.5</masqueX>
+							<fonduX>0.12</fonduX>
+							<assombrir>0.3</assombrir>
+							<u_sortie>0</u_sortie>
+							<echelleRepos>0.8</echelleRepos>
+						</shader>
+						<storyboard event="activate">
+							<animation property="shader.u_sortie" from="0" to="1" begin="150" duration="800" mode="linear"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="shader.u_sortie" to="0" duration="180" mode="linear"/>
+						</storyboard>
+					</image>
+					<text name="nomjeu">
+						<visible>${media_box2d_missing} &amp;&amp; ${media_marquee_missing}</visible>
+						<text>${titrejeu}</text>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${ete_taillenom}</size>
+							<rotation>-90</rotation>
+							<rotationOrigin>0.5 0.5</rotationOrigin>
+						<fontPath>${themePath}/_common/fonts/Cabin-Bold.ttf</fontPath>
+						<fontSize>0.022</fontSize>
+						<lineSpacing>1.05</lineSpacing>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<verticalAlignment>center</verticalAlignment>
+						<glowColor>000000DD</glowColor>
+						<glowSize>3</glowSize>
+					</text>
+				</container>
+			</itemTemplate>
+		</imagegrid>
+		<gridtile name="default">
+			<padding>0</padding>
+			<backgroundColor>00000000</backgroundColor>
+			<backgroundCenterColor>00000000</backgroundCenterColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
+		</gridtile>
+		<gridtile name="selected">
+			<padding>0</padding>
+			<backgroundColor>00000000</backgroundColor>
+			<backgroundCenterColor>00000000</backgroundCenterColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
+		</gridtile>
+		<image name="gridtile.marquee, gridtile.marquee:selected, gridtile.favorite, gridtile.favorite:selected, gridtile.image">
+			<visible>false</visible>
+		</image>
+		<image name="grid_capture, BandeauBas" extra="true">
+			<visible>false</visible>
+		</image>
+		<video name="md_video, grid_video">
+			<visible>false</visible>
+		</video>
+		<text name="md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate, md_lbl_rating, md_lbl_genre, md_developer, md_publisher, md_name, md_description, md_genre, md_players, md_playcount">
+			<visible>false</visible>
+		</text>
+		<datetime name="md_lastplayed, md_releasedate">
+			<visible>false</visible>
+		</datetime>
+		<rating name="md_rating">
+			<visible>false</visible>
+		</rating>
+		<image name="md_image, md_flag">
+			<visible>false</visible>
+		</image>
+		<text name="cf_titre" extra="true">
+			<text>${titrejeu}</text>
+			<pos>0.5 0.86</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.5 0.05</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.04</fontSize>
+			<color>FFFFFF</color>
+			<alignment>center</alignment>
+			<glowColor>000000AA</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>20</zIndex>
+		</text>
+		<text name="cf_infos" extra="true">
+			<visible>({game:releaseyear} &gt; 0 ? 1 : 0) &amp;&amp; {game:rom} != '..'</visible>
+			<text>{game:releaseyear}  •  {game:genre}  •  {game:publisher}</text>
+			<pos>0.5 0.905</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.5 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.022</fontSize>
+			<color>DDDDDD</color>
+			<alignment>center</alignment>
+			<zIndex>20</zIndex>
+		</text>
+		<text name="cf_infossansannee" extra="true">
+			<visible>({game:releaseyear} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
+			<text>{game:genre}  •  {game:publisher}</text>
+			<pos>0.5 0.905</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.5 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.022</fontSize>
+			<color>DDDDDD</color>
+			<alignment>center</alignment>
+			<zIndex>20</zIndex>
+		</text>
+		<image name="cf_logosysteme" extra="true">
+			<path>${intlogoclearpng}</path>
+			<pos>0.025 0.045</pos>
+			<origin>0 0</origin>
+			<maxSize>0.15 0.075</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>20</zIndex>
+		</image>
+		<text name="cf_total" extra="true">
+			<text>{system:total} ${jeux}</text>
+			<pos>0.025 0.13</pos>
+			<origin>0 0.5</origin>
+			<size>0.2 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>CCCCCC</color>
+			<alignment>left</alignment>
+			<glowColor>00000088</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>20</zIndex>
+		</text>
+		<image name="cf_favori" extra="true">
+			<visible>{game:favorite} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/deck/etoile.png</path>
+			<pos>0.885 0.06</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.022 0.039</maxSize>
+			<color>FFD040FF</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>20</zIndex>
+		</image>
+		<image name="cf_joueursicone" extra="true">
+			<visible>!empty({game:players}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${themePath}/_viewgameoption/gl-common/infoicone/manette.png</path>
+			<pos>0.92 0.06</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.022 0.039</maxSize>
+			<color>DDDDDDFF</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>20</zIndex>
+		</image>
+		<text name="cf_joueurs" extra="true">
+			<visible>!empty({game:players}) &amp;&amp; {game:rom} != '..'</visible>
+			<text>{game:players}</text>
+			<pos>0.935 0.06</pos>
+			<origin>0 0.5</origin>
+			<size>0.05 0.04</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.026</fontSize>
+			<color>DDDDDD</color>
+			<alignment>left</alignment>
+			<glowColor>00000088</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>20</zIndex>
+		</text>
+		<image name="cf_capture, cf_capturefixe" extra="true">
+			<path>${media_image}</path>
+			<pos>0.125 0.88</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.2 0.15</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<zIndex>19</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>0.05</cornerRadius>
+				<borderSize>0.008</borderSize>
+				<borderColor>FFFFFF40</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<outerShadowSize>0.03</outerShadowSize>
+				<outerShadowColor>000000A0</outerShadowColor>
+			</shader>
+		</image>
+		<image name="cf_capture" extra="true">
+			<visible>{game:rom} != '..' &amp;&amp; ${media_video_exists}</visible>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" mode="easeIn"/>
+				<animation property="opacity" from="1" to="0" begin="1000" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" mode="easeIn"/>
+				<animation property="opacity" from="1" to="0" begin="1000" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" mode="easeIn"/>
+				<animation property="opacity" from="1" to="0" begin="1000" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="60" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="60" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="cf_capturefixe" extra="true">
+			<visible>{game:rom} != '..' &amp;&amp; !${media_video_exists}</visible>
+		</image>
+		<video name="cf_video" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay>1</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<pos>0.125 0.88</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.2 0.15</maxSize>
+			<zIndex>20</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>0.05</cornerRadius>
+				<borderSize>0.008</borderSize>
+				<borderColor>FFFFFF40</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<outerShadowSize>0.03</outerShadowSize>
+				<outerShadowColor>000000A0</outerShadowColor>
+			</shader>
+		</video>
+		<image name="cf_descfond" extra="true">
+			<visible>{game:rom} != '..' &amp;&amp; !empty({game:desc})</visible>
+			<path>${themePath}/_viewgame/deck/blanc.png</path>
+			<pos>0.975 0.955</pos>
+			<origin>1 1</origin>
+			<size>0.2 0.15</size>
+			<color>08080CB4</color>
+			<zIndex>19</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>0.05</cornerRadius>
+				<borderSize>0.008</borderSize>
+				<borderColor>FFFFFF28</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<outerShadowSize>0.03</outerShadowSize>
+				<outerShadowColor>000000A0</outerShadowColor>
+			</shader>
+		</image>
+		<text name="cf_description" extra="true">
+			<visible>{game:rom} != '..' &amp;&amp; !empty({game:desc})</visible>
+			<text>{game:desc}</text>
+			<pos>0.964 0.94</pos>
+			<origin>1 1</origin>
+			<size>0.178 0.12</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.017</fontSize>
+			<lineSpacing>1.2</lineSpacing>
+			<color>E6E6E6</color>
+			<alignment>left</alignment>
+			<verticalAlignment>top</verticalAlignment>
+			<autoScroll>vertical</autoScroll>
+			<zIndex>20</zIndex>
+		</text>
+	</customView>
+</theme>

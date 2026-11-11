@@ -309,11 +309,12 @@
 		<planche18>18 - 게임 이름, 평점 및 간격</planche18>
 		<planche19>19 - 일반: 사운드, 도움말, 시계</planche19>
 		<planche20>20 - 나만의 폴더로 사용자 지정</planche20>
-		<planche21>21 - 게임 사용자 미디어</planche21>
-		<planche22>22 - 폴더 꾸미기</planche22>
-		<planche23>23 - 어떤 이미지가 이길까?</planche23>
-		<planche24>24 - 그룹화된 시스템</planche24>
-		<planche25>25 - RetroAchievements</planche25>
-		<planche26>26 - 저사양 기기와 링크</planche26>
+		<planche21>21 - 스크랩: 올바른 이름</planche21>
+		<planche22>22 - 게임 사용자 미디어</planche22>
+		<planche23>23 - 폴더 꾸미기</planche23>
+		<planche24>24 - 어떤 이미지가 이길까?</planche24>
+		<planche25>25 - 그룹화된 시스템</planche25>
+		<planche26>26 - RetroAchievements</planche26>
+		<planche27>27 - 저사양 기기와 링크</planche27>
 	</variables>
 </theme>

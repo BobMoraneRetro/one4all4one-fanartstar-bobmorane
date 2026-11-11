@@ -309,11 +309,12 @@
 		<planche18>18 - Nazwa gry, ocena i odstępy</planche18>
 		<planche19>19 - Ogólne: dźwięki, pomoc, zegar</planche19>
 		<planche20>20 - Dostosuj własnymi folderami</planche20>
-		<planche21>21 - Własne media gier</planche21>
-		<planche22>22 - Ubieranie folderu</planche22>
-		<planche23>23 - Który obraz wygrywa?</planche23>
-		<planche24>24 - Zgrupowane systemy</planche24>
-		<planche25>25 - RetroAchievements</planche25>
-		<planche26>26 - Słaby komputer i linki</planche26>
+		<planche21>21 - Scraping: właściwe nazwy</planche21>
+		<planche22>22 - Własne media gier</planche22>
+		<planche23>23 - Ubieranie folderu</planche23>
+		<planche24>24 - Który obraz wygrywa?</planche24>
+		<planche25>25 - Zgrupowane systemy</planche25>
+		<planche26>26 - RetroAchievements</planche26>
+		<planche27>27 - Słaby komputer i linki</planche27>
 	</variables>
 </theme>
