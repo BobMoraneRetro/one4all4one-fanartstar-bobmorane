@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
+-->
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
@@ -14,6 +18,19 @@
 			<zIndex>160</zIndex>
 			<minLogoOpacity>0.4</minLogoOpacity>
 			<maxLogoCount>7</maxLogoCount>
+			<itemTemplate>
+				<container>
+					<image name="logo" extra="true" pos="0.5 0.5" origin="0.5" maxSize="1" linearSmooth="true">
+						<path>firstfile(
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
+					</image>
+				</container>
+			</itemTemplate>
 		</carousel>
 	</view>
 </theme>
