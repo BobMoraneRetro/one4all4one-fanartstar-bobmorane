@@ -43,6 +43,7 @@
 		<fanartfreshone>Sonque los fanarts seleccionats per FreshOne</fanartfreshone>
 		<fanartsystcustom>Fanarts del dorsièr custom, siquenon FreshOne</fanartsystcustom>
 		<videoangled>Activat (pichon en angle)</videoangled>
+		<videoangledglisse>Activat (pichon en angle, que lisa)</videoangledglisse>
 		<hardware>Material</hardware>
 		<charsystem>Personatges</charsystem>
 		<figurines>Figurinas (lo tèma Animatics deu èsser installat)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>SISTÈMAS - Causida dels fanarts del sistèma</opt_imagefondcops1>
 		<opt_video4starmodern>SISTÈMAS - Vidèo de gameplay sus la vista sistèma</opt_video4starmodern>
 		<opt_video4starclassic>SISTÈMAS - Vidèo de gameplay sus la vista sistèma</opt_video4starclassic>
+		<opt_videocadreclassic>SISTÈMAS - Quadre de la vidèo de gameplay</opt_videocadreclassic>
 		<opt_systviewselec>SISTÈMAS - Imatge del sistèma dins la ròda</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTÈMAS - Menú vertical a esquèrra (vista sistèma classica)</opt_breadcrumbsonoff>
 		<arianeauto>Automatic (segon la tria dels sistèmas)</arianeauto>

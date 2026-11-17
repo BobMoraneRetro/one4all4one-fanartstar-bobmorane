@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<include>${themePath}/_viewsystoption/sl-fanartstar/videoangleclassic.xml</include>
+	<view name="system">
+		<video name="gameplayvideostarangled" extra="true">
+			<delay>0</delay>
+			<storyboard ifSubset="perfmachine:perfnormal">
+				<animation property="offsetX" from="0.5" to="0.5" duration="1000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="1000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow">
+				<animation property="offsetX" from="0.5" to="0.5" duration="1000"/>
+				<animation property="offsetX" from="0.5" to="-0.01" begin="1000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="offsetX" to="0.5" duration="0"/>
+			</storyboard>
+		</video>
+		<image name="cadreclassic" extra="true">
+			<storyboard ifSubset="perfmachine:perfnormal">
+				<animation property="offsetX" from="0.5" to="0.5" duration="1000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="1000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow">
+				<animation property="offsetX" from="0.5" to="0.5" duration="1000"/>
+				<animation property="offsetX" from="0.5" to="-0.01" begin="1000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="offsetX" to="0.5" duration="0"/>
+			</storyboard>
+		</image>
+		<image name="fondclassic" extra="true">
+			<storyboard ifSubset="perfmachine:perfnormal">
+				<animation property="offsetX" from="0.5" to="0.5" duration="1000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="1000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow">
+				<animation property="offsetX" from="0.5" to="0.5" duration="1000"/>
+				<animation property="offsetX" from="0.5" to="-0.01" begin="1000" duration="600" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="offsetX" to="0.5" duration="0"/>
+			</storyboard>
+		</image>
+	</view>
+</theme>

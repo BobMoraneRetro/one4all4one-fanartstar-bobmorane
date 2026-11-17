@@ -43,6 +43,7 @@
 		<fanartfreshone>Só fanarts seleccionados por FreshOne</fanartfreshone>
 		<fanartsystcustom>Fanarts do cartafol custom, se non FreshOne</fanartsystcustom>
 		<videoangled>Activado (pequeno en ángulo)</videoangled>
+		<videoangledglisse>Activado (pequeno en ángulo, que esvara)</videoangledglisse>
 		<hardware>Hardware</hardware>
 		<charsystem>Personaxes</charsystem>
 		<figurines>Figuras (debe estar instalado o tema Animatics)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>SISTEMAS - Escolla dos fanarts do sistema</opt_imagefondcops1>
 		<opt_video4starmodern>SISTEMAS - Vídeo de xogo na vista de sistemas</opt_video4starmodern>
 		<opt_video4starclassic>SISTEMAS - Vídeo de xogo na vista de sistemas</opt_video4starclassic>
+		<opt_videocadreclassic>SISTEMAS - Marco do vídeo de xogo</opt_videocadreclassic>
 		<opt_systviewselec>SISTEMAS - Imaxe do sistema na roda</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEMAS - Menú vertical á esquerda (vista clásica de sistemas)</opt_breadcrumbsonoff>
 		<arianeauto>Automático (segundo a orde dos sistemas)</arianeauto>

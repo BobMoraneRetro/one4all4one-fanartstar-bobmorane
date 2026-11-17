@@ -7,6 +7,8 @@
 	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
 	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
 	${intlogoclearpng} : Logo clair du système (définie dans theme.xml)
+	${media_box2d} : boîte 2D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box3d} : boîte 3D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_fanart} : fanart du jeu (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_fanart_exists} : vrai si le média « fanart » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_fanart_missing} : vrai si le média « fanart » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
@@ -244,9 +246,9 @@
 		<video name="PreviewVid" extra="true">
 			<path>${media_video}</path>
 			<delay>0.3</delay>
-			<origin>0.5 0.5</origin>
-			<pos>0.78 0.778</pos>
-			<maxSize>0.4 0.35</maxSize>
+			<origin>1 0.5</origin>
+			<pos>0.9 0.778</pos>
+			<maxSize>0.33 0.35</maxSize>
 			<zIndex>10</zIndex>
 			<effect>none</effect>
 			<shader ifSubset="perfmachine:perfnormal">
@@ -260,6 +262,26 @@
 				<outerShadowColor>00000050</outerShadowColor>
 			</shader>
 		</video>
+		<image name="boitedetail" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
+			<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
+			<origin>1 1</origin>
+			<pos>0.995 0.953</pos>
+			<maxSize>0.085 0.25</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>10</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0</borderSize>
+				<borderColor>00000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>00000000</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
+		</image>
 		<image name="LogoSytemgamelistShadow" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.942 0.052</pos>

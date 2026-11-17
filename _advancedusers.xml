@@ -19,7 +19,7 @@
 		<include name="non" displayName="${no}"/>
 		<include name="oui" displayName="${yes}">${themePath}/_viewgameoption/gl-common/infosmax.xml</include>
 	</subset>
-	<subset name="boxorthumb" displayName="${opt_boxorthumb}" appliesTo="presetstarbox,presetstarboxloop,presetsquare,presetstar169,presetstar43,presetspeedbull,presetshowbig,presetshowsmall,presettraviolta_alt,presetdeck,presetsalon">
+	<subset name="boxorthumb" displayName="${opt_boxorthumb}" appliesTo="presetstarbox,presetstarboxloop,presetsquare,presetstar169,presetstar43,presetspeedbull,presetshowbig,presetshowsmall,presettraviolta_alt,presetdeck,presetsalon,detailed">
 		<include name="thumb" displayName="${thumb}">./_viewgameoption/gl-fanartstar/2dbox.xml</include>
 		<include name="boxart" displayName="${boxart}">./_viewgameoption/gl-fanartstar/3dbox.xml</include>
 	</subset>

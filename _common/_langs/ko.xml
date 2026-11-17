@@ -43,6 +43,7 @@
 		<fanartfreshone>FreshOne이 선택한 팬아트만</fanartfreshone>
 		<fanartsystcustom>custom 폴더의 팬아트, 없으면 FreshOne</fanartsystcustom>
 		<videoangled>사용 (작게, 기울임)</videoangled>
+		<videoangledglisse>사용 (작게, 기울임, 슬라이드)</videoangledglisse>
 		<hardware>하드웨어</hardware>
 		<charsystem>캐릭터</charsystem>
 		<figurines>피규어 (Animatics 테마 설치 필요)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>시스템 - 시스템 팬아트 선택</opt_imagefondcops1>
 		<opt_video4starmodern>시스템 - 시스템 보기의 게임플레이 영상</opt_video4starmodern>
 		<opt_video4starclassic>시스템 - 시스템 보기의 게임플레이 영상</opt_video4starclassic>
+		<opt_videocadreclassic>시스템 - 게임플레이 영상 프레임</opt_videocadreclassic>
 		<opt_systviewselec>시스템 - 휠의 시스템 이미지</opt_systviewselec>
 		<opt_breadcrumbsonoff>시스템 - 왼쪽 세로 메뉴 (클래식 시스템 보기)</opt_breadcrumbsonoff>
 		<arianeauto>자동 (시스템 정렬 방식에 따름)</arianeauto>

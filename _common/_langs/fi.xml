@@ -43,6 +43,7 @@
 		<fanartfreshone>Vain FreshOnen valitsemat fanartit</fanartfreshone>
 		<fanartsystcustom>Fanartit custom-kansiosta, muuten FreshOne</fanartsystcustom>
 		<videoangled>Päällä (pieni, vino)</videoangled>
+		<videoangledglisse>Päällä (pieni, vino, liukuva)</videoangledglisse>
 		<hardware>Laitteisto</hardware>
 		<charsystem>Hahmot</charsystem>
 		<figurines>Figuurit (Animatics-teema on asennettava)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>JÄRJESTELMÄT - Järjestelmän fanartien valinta</opt_imagefondcops1>
 		<opt_video4starmodern>JÄRJESTELMÄT - Pelivideo järjestelmänäkymässä</opt_video4starmodern>
 		<opt_video4starclassic>JÄRJESTELMÄT - Pelivideo järjestelmänäkymässä</opt_video4starclassic>
+		<opt_videocadreclassic>JÄRJESTELMÄT - Pelivideon kehys</opt_videocadreclassic>
 		<opt_systviewselec>JÄRJESTELMÄT - Järjestelmän kuva kiekossa</opt_systviewselec>
 		<opt_breadcrumbsonoff>JÄRJESTELMÄT - Pystyvalikko vasemmalla (klassinen järjestelmänäkymä)</opt_breadcrumbsonoff>
 		<arianeauto>Automaattinen (järjestelmien lajittelun mukaan)</arianeauto>

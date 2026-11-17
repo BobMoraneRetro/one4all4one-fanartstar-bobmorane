@@ -43,6 +43,7 @@
 		<fanartfreshone>Fanarts seleccionados únicamente por FreshOne</fanartfreshone>
 		<fanartsystcustom>Fanarts de la carpeta custom, si no FreshOne</fanartsystcustom>
 		<videoangled>Activado (pequeño en ángulo)</videoangled>
+		<videoangledglisse>Activado (pequeño en ángulo, que se desliza)</videoangledglisse>
 		<hardware>Hardware</hardware>
 		<charsystem>Personajes</charsystem>
 		<figurines>Figuras (el tema Animatics debe estar instalado)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>SISTEMAS - Selección de fanarts del sistema</opt_imagefondcops1>
 		<opt_video4starmodern>SISTEMAS - Vídeo de gameplay en la vista de sistemas</opt_video4starmodern>
 		<opt_video4starclassic>SISTEMAS - Vídeo de gameplay en la vista de sistemas</opt_video4starclassic>
+		<opt_videocadreclassic>SISTEMAS - Marco del vídeo de gameplay</opt_videocadreclassic>
 		<opt_systviewselec>SISTEMAS - Imagen del sistema en la rueda</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEMAS - Menú vertical a la izquierda (vista clásica del sistema)</opt_breadcrumbsonoff>
 		<arianeauto>Automático (según el orden de los sistemas)</arianeauto>

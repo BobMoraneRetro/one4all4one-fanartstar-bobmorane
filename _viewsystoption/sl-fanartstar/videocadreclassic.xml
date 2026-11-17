@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${vidcadresyst_type} : vue système classique : forme du cadre de la vidéo de gameplay (frameType de _common/shaders/border_video_frame.glsl, 0 à 20) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Cadre de la vidéo de gameplay »)
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<vidcadresyst_type ifSubset="videocadreclassic:ombre">0</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:ecranfin">1</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:bois">2</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:metal">3</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:lumineux">4</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:tv">5</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:galerie">6</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:polaroid">7</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:neon">8</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:hologramme">9</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:verre">10</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:carbone">11</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:neondouble">12</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:gaming">13</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:pinceau">14</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:technodore">15</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:technoargent">16</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:neonelec">17</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:vitre">18</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:flammes">19</vidcadresyst_type>
+		<vidcadresyst_type ifSubset="videocadreclassic:encre">20</vidcadresyst_type>
+	</variables>
+	<view name="system">
+		<video name="gameplayvideostar" extra="true">
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
+				<frameType>${vidcadresyst_type}</frameType>
+				<time>0</time>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0</borderSize>
+				<borderColor>00000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>00000000</innerShadowColor>
+				<outerShadowSize>0</outerShadowSize>
+				<outerShadowColor>00000000</outerShadowColor>
+			</shader>
+			<storyboard ifSubset="perfmachine:perfnormal">
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+		<video name="gameplayvideostarangled" ifSubset="metadataonoff:deactivate" extra="true">
+			<pos>0.987 0.35</pos>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
+				<perspectiveDepth>0</perspectiveDepth>
+				<frameType>${vidcadresyst_type}</frameType>
+				<time>0</time>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0</borderSize>
+				<borderColor>00000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>00000000</innerShadowColor>
+				<outerShadowSize>0</outerShadowSize>
+				<outerShadowColor>00000000</outerShadowColor>
+			</shader>
+			<storyboard ifSubset="perfmachine:perfnormal">
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+		<image name="cadreclassic, fondclassic" ifSubset="metadataonoff:deactivate" extra="true">
+			<visible>false</visible>
+		</image>
+		<video name="gameplayvideostarangled" ifSubset="video4starclassic:videoangled|videoangledglisse" extra="true">
+			<pos>0.987 0.35</pos>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
+				<perspectiveDepth>0</perspectiveDepth>
+				<frameType>${vidcadresyst_type}</frameType>
+				<time>0</time>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0</borderSize>
+				<borderColor>00000000</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>00000000</innerShadowColor>
+				<outerShadowSize>0</outerShadowSize>
+				<outerShadowColor>00000000</outerShadowColor>
+			</shader>
+			<storyboard ifSubset="perfmachine:perfnormal">
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+		<image name="cadreclassic, fondclassic" ifSubset="video4starclassic:videoangled|videoangledglisse" extra="true">
+			<visible>false</visible>
+		</image>
+		<video name="gameplayvideostarangled" ifSubset="video4starclassic:videoangledglisse" extra="true">
+			<storyboard ifSubset="perfmachine:perfnormal">
+				<animation property="offsetX" from="0.5" to="0.5" duration="1000"/>
+				<animation property="offsetX" from="0.5" to="0.038" begin="1000" duration="600" mode="EaseOut"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+	</view>
+</theme>

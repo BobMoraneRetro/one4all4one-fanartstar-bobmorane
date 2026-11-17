@@ -43,6 +43,7 @@
 		<fanartfreshone>Chỉ fanart do FreshOne chọn</fanartfreshone>
 		<fanartsystcustom>Fanart từ thư mục custom, nếu không thì FreshOne</fanartsystcustom>
 		<videoangled>Bật (nhỏ, nghiêng)</videoangled>
+		<videoangledglisse>Bật (nhỏ, nghiêng, trượt vào)</videoangledglisse>
 		<hardware>Phần cứng</hardware>
 		<charsystem>Nhân vật</charsystem>
 		<figurines>Mô hình (cần cài theme Animatics)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>HỆ MÁY - Chọn fanart của hệ máy</opt_imagefondcops1>
 		<opt_video4starmodern>HỆ MÁY - Video gameplay ở chế độ xem hệ máy</opt_video4starmodern>
 		<opt_video4starclassic>HỆ MÁY - Video gameplay ở chế độ xem hệ máy</opt_video4starclassic>
+		<opt_videocadreclassic>HỆ MÁY - Khung video gameplay</opt_videocadreclassic>
 		<opt_systviewselec>HỆ MÁY - Hình hệ máy trên bánh xe</opt_systviewselec>
 		<opt_breadcrumbsonoff>HỆ MÁY - Menu dọc bên trái (chế độ xem hệ máy cổ điển)</opt_breadcrumbsonoff>
 		<arianeauto>Tự động (theo cách sắp xếp hệ thống)</arianeauto>

@@ -43,6 +43,7 @@
 		<fanartfreshone>Doar fanart-uri selectate de FreshOne</fanartfreshone>
 		<fanartsystcustom>Fanarturi din dosarul custom, altfel FreshOne</fanartsystcustom>
 		<videoangled>Activat (mic, înclinat)</videoangled>
+		<videoangledglisse>Activat (mic, înclinat, glisant)</videoangledglisse>
 		<hardware>Hardware</hardware>
 		<charsystem>Personaje</charsystem>
 		<figurines>Figurine (tema Animatics trebuie instalată)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>SISTEME - Alegerea fanart-urilor sistemului</opt_imagefondcops1>
 		<opt_video4starmodern>SISTEME - Video de gameplay în vizualizarea sistemelor</opt_video4starmodern>
 		<opt_video4starclassic>SISTEME - Video de gameplay în vizualizarea sistemelor</opt_video4starclassic>
+		<opt_videocadreclassic>SISTEME - Cadrul videoclipului de gameplay</opt_videocadreclassic>
 		<opt_systviewselec>SISTEME - Imaginea sistemului în roată</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEME - Meniu vertical în stânga (vizualizare clasică a sistemelor)</opt_breadcrumbsonoff>
 		<arianeauto>Automat (după sortarea sistemelor)</arianeauto>

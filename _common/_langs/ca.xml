@@ -43,6 +43,7 @@
 		<fanartfreshone>Només fanarts seleccionats per FreshOne</fanartfreshone>
 		<fanartsystcustom>Fanarts de la carpeta custom, si no FreshOne</fanartsystcustom>
 		<videoangled>Activat (petit en angle)</videoangled>
+		<videoangledglisse>Activat (petit en angle, que llisca)</videoangledglisse>
 		<hardware>Maquinari</hardware>
 		<charsystem>Personatges</charsystem>
 		<figurines>Figures (cal instal·lar el tema Animatics)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>SISTEMES - Tria dels fanarts del sistema</opt_imagefondcops1>
 		<opt_video4starmodern>SISTEMES - Vídeo de joc a la vista de sistemes</opt_video4starmodern>
 		<opt_video4starclassic>SISTEMES - Vídeo de joc a la vista de sistemes</opt_video4starclassic>
+		<opt_videocadreclassic>SISTEMES - Marc del vídeo de joc</opt_videocadreclassic>
 		<opt_systviewselec>SISTEMES - Imatge del sistema a la roda</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEMES - Menú vertical a l'esquerra (vista clàssica de sistemes)</opt_breadcrumbsonoff>
 		<arianeauto>Automàtic (segons l'ordre dels sistemes)</arianeauto>

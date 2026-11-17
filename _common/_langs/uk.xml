@@ -43,6 +43,7 @@
 		<fanartfreshone>Лише фанарти, відібрані FreshOne</fanartfreshone>
 		<fanartsystcustom>Фанарти з теки custom, інакше FreshOne</fanartsystcustom>
 		<videoangled>Увімкнено (маленьке, під кутом)</videoangled>
+		<videoangledglisse>Увімкнено (маленьке, під кутом, висувне)</videoangledglisse>
 		<hardware>Обладнання</hardware>
 		<charsystem>Персонажі</charsystem>
 		<figurines>Фігурки (потрібна тема Animatics)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>СИСТЕМИ - Вибір фанартів системи</opt_imagefondcops1>
 		<opt_video4starmodern>СИСТЕМИ - Відео геймплею у вигляді систем</opt_video4starmodern>
 		<opt_video4starclassic>СИСТЕМИ - Відео геймплею у вигляді систем</opt_video4starclassic>
+		<opt_videocadreclassic>СИСТЕМИ - Рамка відео геймплею</opt_videocadreclassic>
 		<opt_systviewselec>СИСТЕМИ - Зображення системи в колесі</opt_systviewselec>
 		<opt_breadcrumbsonoff>СИСТЕМИ - Вертикальне меню ліворуч (класичний вигляд систем)</opt_breadcrumbsonoff>
 		<arianeauto>Автоматично (за сортуванням систем)</arianeauto>

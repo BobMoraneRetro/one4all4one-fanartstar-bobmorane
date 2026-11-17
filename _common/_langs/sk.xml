@@ -43,6 +43,7 @@
 		<fanartfreshone>Iba fanarty vybrané FreshOne</fanartfreshone>
 		<fanartsystcustom>Fanarty z priečinka custom, inak FreshOne</fanartsystcustom>
 		<videoangled>Zapnuté (malé, pod uhlom)</videoangled>
+		<videoangledglisse>Zapnuté (malé, pod uhlom, vysúvacie)</videoangledglisse>
 		<hardware>Hardvér</hardware>
 		<charsystem>Postavy</charsystem>
 		<figurines>Figúrky (musí byť nainštalovaná téma Animatics)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>SYSTÉMY - Výber fanartov systému</opt_imagefondcops1>
 		<opt_video4starmodern>SYSTÉMY - Video z hrania v zobrazení systémov</opt_video4starmodern>
 		<opt_video4starclassic>SYSTÉMY - Video z hrania v zobrazení systémov</opt_video4starclassic>
+		<opt_videocadreclassic>SYSTÉMY - Rámik videa z hrania</opt_videocadreclassic>
 		<opt_systviewselec>SYSTÉMY - Obrázok systému v kolese</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTÉMY - Zvislé menu vľavo (klasické zobrazenie systémov)</opt_breadcrumbsonoff>
 		<arianeauto>Automaticky (podľa triedenia systémov)</arianeauto>

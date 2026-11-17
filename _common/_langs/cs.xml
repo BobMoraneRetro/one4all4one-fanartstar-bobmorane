@@ -43,6 +43,7 @@
 		<fanartfreshone>Pouze fanarty vybrané FreshOne</fanartfreshone>
 		<fanartsystcustom>Fanarty ze složky custom, jinak FreshOne</fanartsystcustom>
 		<videoangled>Zapnuto (malé, pod úhlem)</videoangled>
+		<videoangledglisse>Zapnuto (malé, pod úhlem, vysouvací)</videoangledglisse>
 		<hardware>Hardware</hardware>
 		<charsystem>Postavy</charsystem>
 		<figurines>Figurky (musí být nainstalován motiv Animatics)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>SYSTÉMY - Výběr fanartů systému</opt_imagefondcops1>
 		<opt_video4starmodern>SYSTÉMY - Video z hraní v zobrazení systémů</opt_video4starmodern>
 		<opt_video4starclassic>SYSTÉMY - Video z hraní v zobrazení systémů</opt_video4starclassic>
+		<opt_videocadreclassic>SYSTÉMY - Rámeček videa z hraní</opt_videocadreclassic>
 		<opt_systviewselec>SYSTÉMY - Obrázek systému v kole</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTÉMY - Svislé menu vlevo (klasické zobrazení systémů)</opt_breadcrumbsonoff>
 		<arianeauto>Automaticky (podle řazení systémů)</arianeauto>

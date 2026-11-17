@@ -43,6 +43,7 @@
 		<fanartfreshone>רק פאנארט שנבחר על ידי FreshOne</fanartfreshone>
 		<fanartsystcustom>פאנארט מתיקיית custom, אחרת FreshOne</fanartsystcustom>
 		<videoangled>מופעל (קטן ובזווית)</videoangled>
+		<videoangledglisse>מופעל (קטן ובזווית, גולש)</videoangledglisse>
 		<hardware>חומרה</hardware>
 		<charsystem>דמויות</charsystem>
 		<figurines>פסלונים (יש להתקין את ערכת Animatics)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>מערכות - בחירת פאנארט המערכת</opt_imagefondcops1>
 		<opt_video4starmodern>מערכות - וידאו משחק בתצוגת המערכות</opt_video4starmodern>
 		<opt_video4starclassic>מערכות - וידאו משחק בתצוגת המערכות</opt_video4starclassic>
+		<opt_videocadreclassic>מערכות - מסגרת וידאו המשחק</opt_videocadreclassic>
 		<opt_systviewselec>מערכות - תמונת המערכת בגלגל</opt_systviewselec>
 		<opt_breadcrumbsonoff>מערכות - תפריט אנכי משמאל (תצוגת מערכות קלאסית)</opt_breadcrumbsonoff>
 		<arianeauto>אוטומטי (לפי מיון המערכות)</arianeauto>

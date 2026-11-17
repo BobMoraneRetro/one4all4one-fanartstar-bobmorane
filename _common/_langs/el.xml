@@ -43,6 +43,7 @@
 		<fanartfreshone>Μόνο fanart επιλεγμένα από το FreshOne</fanartfreshone>
 		<fanartsystcustom>Fanart από τον φάκελο custom, αλλιώς FreshOne</fanartsystcustom>
 		<videoangled>Ενεργοποιημένο (μικρό, υπό γωνία)</videoangled>
+		<videoangledglisse>Ενεργοποιημένο (μικρό, υπό γωνία, συρόμενο)</videoangledglisse>
 		<hardware>Υλικό</hardware>
 		<charsystem>Χαρακτήρες</charsystem>
 		<figurines>Φιγούρες (απαιτείται το θέμα Animatics)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>ΣΥΣΤΗΜΑΤΑ - Επιλογή fanart συστήματος</opt_imagefondcops1>
 		<opt_video4starmodern>ΣΥΣΤΗΜΑΤΑ - Βίντεο gameplay στην προβολή συστημάτων</opt_video4starmodern>
 		<opt_video4starclassic>ΣΥΣΤΗΜΑΤΑ - Βίντεο gameplay στην προβολή συστημάτων</opt_video4starclassic>
+		<opt_videocadreclassic>ΣΥΣΤΗΜΑΤΑ - Πλαίσιο βίντεο gameplay</opt_videocadreclassic>
 		<opt_systviewselec>ΣΥΣΤΗΜΑΤΑ - Εικόνα συστήματος στον τροχό</opt_systviewselec>
 		<opt_breadcrumbsonoff>ΣΥΣΤΗΜΑΤΑ - Κάθετο μενού αριστερά (κλασική προβολή συστημάτων)</opt_breadcrumbsonoff>
 		<arianeauto>Αυτόματο (ανάλογα με την ταξινόμηση συστημάτων)</arianeauto>

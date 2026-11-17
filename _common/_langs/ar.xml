@@ -43,6 +43,7 @@
 		<fanartfreshone>فان آرت مختارة من FreshOne فقط</fanartfreshone>
 		<fanartsystcustom>خلفيات من المجلد المخصص، وإلا FreshOne</fanartsystcustom>
 		<videoangled>مفعّل (صغير ومائل)</videoangled>
+		<videoangledglisse>مفعّل (صغير ومائل، منزلق)</videoangledglisse>
 		<hardware>العتاد</hardware>
 		<charsystem>الشخصيات</charsystem>
 		<figurines>المجسّمات (يجب تثبيت سمة Animatics)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>الأنظمة - اختيار فان آرت النظام</opt_imagefondcops1>
 		<opt_video4starmodern>الأنظمة - فيديو اللعب في عرض الأنظمة</opt_video4starmodern>
 		<opt_video4starclassic>الأنظمة - فيديو اللعب في عرض الأنظمة</opt_video4starclassic>
+		<opt_videocadreclassic>الأنظمة - إطار فيديو اللعب</opt_videocadreclassic>
 		<opt_systviewselec>الأنظمة - صورة النظام في العجلة</opt_systviewselec>
 		<opt_breadcrumbsonoff>الأنظمة - قائمة عمودية على اليسار (عرض النظام الكلاسيكي)</opt_breadcrumbsonoff>
 		<arianeauto>تلقائي (حسب ترتيب الأنظمة)</arianeauto>

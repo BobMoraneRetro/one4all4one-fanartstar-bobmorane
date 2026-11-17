@@ -43,6 +43,7 @@
 		<fanartfreshone>FreshOne-k hautatutako fanartak soilik</fanartfreshone>
 		<fanartsystcustom>custom karpetako fanartak, bestela FreshOne</fanartsystcustom>
 		<videoangled>Gaituta (txikia, angeluan)</videoangled>
+		<videoangledglisse>Gaituta (txikia, angeluan, irristatzen)</videoangledglisse>
 		<hardware>Hardwarea</hardware>
 		<charsystem>Pertsonaiak</charsystem>
 		<figurines>Irudiak (Animatics gaia instalatuta egon behar da)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>SISTEMAK - Sistemaren fanarten aukeraketa</opt_imagefondcops1>
 		<opt_video4starmodern>SISTEMAK - Joko-bideoa sistemen ikuspegian</opt_video4starmodern>
 		<opt_video4starclassic>SISTEMAK - Joko-bideoa sistemen ikuspegian</opt_video4starclassic>
+		<opt_videocadreclassic>SISTEMAK - Joko-bideoaren markoa</opt_videocadreclassic>
 		<opt_systviewselec>SISTEMAK - Sistemaren irudia gurpilean</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEMAK - Ezkerreko menu bertikala (sistema ikuspegi klasikoa)</opt_breadcrumbsonoff>
 		<arianeauto>Automatikoa (sistemen ordenaren arabera)</arianeauto>

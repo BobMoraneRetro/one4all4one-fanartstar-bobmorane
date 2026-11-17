@@ -43,6 +43,7 @@
 		<fanartfreshone>Yalnızca FreshOne tarafından seçilen fanartlar</fanartfreshone>
 		<fanartsystcustom>custom klasöründeki fanartlar, yoksa FreshOne</fanartsystcustom>
 		<videoangled>Etkin (küçük, eğik)</videoangled>
+		<videoangledglisse>Etkin (küçük, eğik, kayan)</videoangledglisse>
 		<hardware>Donanım</hardware>
 		<charsystem>Karakterler</charsystem>
 		<figurines>Figürler (Animatics teması kurulu olmalı)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>SİSTEMLER - Sistem fanart seçimi</opt_imagefondcops1>
 		<opt_video4starmodern>SİSTEMLER - Sistem görünümünde oynanış videosu</opt_video4starmodern>
 		<opt_video4starclassic>SİSTEMLER - Sistem görünümünde oynanış videosu</opt_video4starclassic>
+		<opt_videocadreclassic>SİSTEMLER - Oynanış videosu çerçevesi</opt_videocadreclassic>
 		<opt_systviewselec>SİSTEMLER - Çarktaki sistem görseli</opt_systviewselec>
 		<opt_breadcrumbsonoff>SİSTEMLER - Solda dikey menü (klasik sistem görünümü)</opt_breadcrumbsonoff>
 		<arianeauto>Otomatik (sistem sıralamasına göre)</arianeauto>

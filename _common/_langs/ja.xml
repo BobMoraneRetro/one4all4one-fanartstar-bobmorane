@@ -43,6 +43,7 @@
 		<fanartfreshone>FreshOne選定のファンアートのみ</fanartfreshone>
 		<fanartsystcustom>customフォルダのファンアート、なければFreshOne</fanartsystcustom>
 		<videoangled>有効（小さく斜め）</videoangled>
+		<videoangledglisse>有効（小さく斜め、スライド）</videoangledglisse>
 		<hardware>ハードウェア</hardware>
 		<charsystem>キャラクター</charsystem>
 		<figurines>フィギュア（Animaticsテーマが必要）</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>システム - システムのファンアート選択</opt_imagefondcops1>
 		<opt_video4starmodern>システム - システムビューのゲームプレイ動画</opt_video4starmodern>
 		<opt_video4starclassic>システム - システムビューのゲームプレイ動画</opt_video4starclassic>
+		<opt_videocadreclassic>システム - ゲームプレイ動画の枠</opt_videocadreclassic>
 		<opt_systviewselec>システム - ホイールのシステム画像</opt_systviewselec>
 		<opt_breadcrumbsonoff>システム - 左側の縦メニュー（クラシックシステムビュー）</opt_breadcrumbsonoff>
 		<arianeauto>自動（システムの並び順に合わせる）</arianeauto>

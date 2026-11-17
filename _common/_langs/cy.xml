@@ -43,6 +43,7 @@
 		<fanartfreshone>Fanarts a ddewiswyd gan FreshOne yn unig</fanartfreshone>
 		<fanartsystcustom>Fanarts o'r ffolder custom, fel arall FreshOne</fanartsystcustom>
 		<videoangled>Wedi'i alluogi (bach ar ongl)</videoangled>
+		<videoangledglisse>Wedi'i alluogi (bach ar ongl, sy'n llithro)</videoangledglisse>
 		<hardware>Caledwedd</hardware>
 		<charsystem>Cymeriadau</charsystem>
 		<figurines>Ffigurynnau (rhaid gosod thema Animatics)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>SYSTEMAU - Dewis fanarts y system</opt_imagefondcops1>
 		<opt_video4starmodern>SYSTEMAU - Fideo chwarae ar olwg y systemau</opt_video4starmodern>
 		<opt_video4starclassic>SYSTEMAU - Fideo chwarae ar olwg y systemau</opt_video4starclassic>
+		<opt_videocadreclassic>SYSTEMAU - Ffrâm y fideo chwarae</opt_videocadreclassic>
 		<opt_systviewselec>SYSTEMAU - Delwedd y system yn yr olwyn</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTEMAU - Dewislen fertigol ar y chwith (golwg system glasurol)</opt_breadcrumbsonoff>
 		<arianeauto>Awtomatig (yn dilyn trefn y systemau)</arianeauto>

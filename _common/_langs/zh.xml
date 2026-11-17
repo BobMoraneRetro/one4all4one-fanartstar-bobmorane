@@ -43,6 +43,7 @@
 		<fanartfreshone>仅 FreshOne 精选的背景图</fanartfreshone>
 		<fanartsystcustom>custom 文件夹中的同人图，否则 FreshOne</fanartsystcustom>
 		<videoangled>开启（小，倾斜）</videoangled>
+		<videoangledglisse>开启（小，倾斜，滑入）</videoangledglisse>
 		<hardware>硬件</hardware>
 		<charsystem>角色</charsystem>
 		<figurines>手办（需安装 Animatics 主题）</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>系统 - 系统背景图选择</opt_imagefondcops1>
 		<opt_video4starmodern>系统 - 系统视图中的游戏视频</opt_video4starmodern>
 		<opt_video4starclassic>系统 - 系统视图中的游戏视频</opt_video4starclassic>
+		<opt_videocadreclassic>系统 - 游戏视频边框</opt_videocadreclassic>
 		<opt_systviewselec>系统 - 轮盘中的系统图片</opt_systviewselec>
 		<opt_breadcrumbsonoff>系统 - 左侧竖向菜单（经典系统视图）</opt_breadcrumbsonoff>
 		<arianeauto>自动（跟随系统排序方式）</arianeauto>

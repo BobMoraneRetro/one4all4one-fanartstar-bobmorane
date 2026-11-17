@@ -43,6 +43,7 @@
 		<fanartfreshone>Hanya fanart pilihan FreshOne</fanartfreshone>
 		<fanartsystcustom>Fanart dari folder custom, jika tidak FreshOne</fanartsystcustom>
 		<videoangled>Aktif (kecil, miring)</videoangled>
+		<videoangledglisse>Aktif (kecil, miring, bergeser)</videoangledglisse>
 		<hardware>Perangkat keras</hardware>
 		<charsystem>Karakter</charsystem>
 		<figurines>Figur (tema Animatics harus terpasang)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>SISTEM - Pilihan fanart sistem</opt_imagefondcops1>
 		<opt_video4starmodern>SISTEM - Video gameplay di tampilan sistem</opt_video4starmodern>
 		<opt_video4starclassic>SISTEM - Video gameplay di tampilan sistem</opt_video4starclassic>
+		<opt_videocadreclassic>SISTEM - Bingkai video gameplay</opt_videocadreclassic>
 		<opt_systviewselec>SISTEM - Gambar sistem di roda</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEM - Menu vertikal di kiri (tampilan sistem klasik)</opt_breadcrumbsonoff>
 		<arianeauto>Otomatis (mengikuti urutan sistem)</arianeauto>

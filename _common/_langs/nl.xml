@@ -43,6 +43,7 @@
 		<fanartfreshone>Alleen door FreshOne geselecteerde fanarts</fanartfreshone>
 		<fanartsystcustom>Fanarts uit de map custom, anders FreshOne</fanartsystcustom>
 		<videoangled>Ingeschakeld (klein, schuin)</videoangled>
+		<videoangledglisse>Ingeschakeld (klein, schuin, schuivend)</videoangledglisse>
 		<hardware>Hardware</hardware>
 		<charsystem>Personages</charsystem>
 		<figurines>Figuren (thema Animatics moet geïnstalleerd zijn)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>SYSTEMEN - Keuze van de systeemfanarts</opt_imagefondcops1>
 		<opt_video4starmodern>SYSTEMEN - Gameplayvideo in de systeemweergave</opt_video4starmodern>
 		<opt_video4starclassic>SYSTEMEN - Gameplayvideo in de systeemweergave</opt_video4starclassic>
+		<opt_videocadreclassic>SYSTEMEN - Kader van de gameplayvideo</opt_videocadreclassic>
 		<opt_systviewselec>SYSTEMEN - Systeemafbeelding in het wiel</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTEMEN - Verticaal menu links (klassieke systeemweergave)</opt_breadcrumbsonoff>
 		<arianeauto>Automatisch (volgt de systeemsortering)</arianeauto>

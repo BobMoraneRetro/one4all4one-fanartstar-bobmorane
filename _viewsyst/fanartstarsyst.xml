@@ -46,6 +46,10 @@
 		<manettehalopos ifSubset="video4starclassic:novideo">0.13 0.68</manettehalopos>
 		<manettehalotaille ifSubset="video4starclassic:videoback">0.058 0.014</manettehalotaille>
 		<manettehalotaille ifSubset="video4starclassic:novideo">0.14 0.03</manettehalotaille>
+		<manettepos ifSubset="video4starclassic:videoangled|videoangledglisse">0.13 0.58</manettepos>
+		<manettetaille ifSubset="video4starclassic:videoangled|videoangledglisse">0.17 0.17</manettetaille>
+		<manettehalopos ifSubset="video4starclassic:videoangled|videoangledglisse">0.13 0.68</manettehalopos>
+		<manettehalotaille ifSubset="video4starclassic:videoangled|videoangledglisse">0.14 0.03</manettehalotaille>
 		<metatitrepolice ifSubset="metasyst:metastandard">0.025</metatitrepolice>
 		<metatitrepolice ifSubset="metasyst:metacompacte">0.019</metatitrepolice>
 		<metaanneepolice ifSubset="metasyst:metastandard">0.025</metaanneepolice>

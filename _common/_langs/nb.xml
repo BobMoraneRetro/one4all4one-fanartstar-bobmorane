@@ -43,6 +43,7 @@
 		<fanartfreshone>Bare fanarts valgt av FreshOne</fanartfreshone>
 		<fanartsystcustom>Fanarts fra custom-mappen, ellers FreshOne</fanartsystcustom>
 		<videoangled>Aktivert (liten, skrå)</videoangled>
+		<videoangledglisse>Aktivert (liten, skrå, glidende)</videoangledglisse>
 		<hardware>Maskinvare</hardware>
 		<charsystem>Figurer</charsystem>
 		<figurines>Samlefigurer (temaet Animatics må være installert)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>SYSTEMER - Valg av systemets fanarts</opt_imagefondcops1>
 		<opt_video4starmodern>SYSTEMER - Spillvideo i systemvisningen</opt_video4starmodern>
 		<opt_video4starclassic>SYSTEMER - Spillvideo i systemvisningen</opt_video4starclassic>
+		<opt_videocadreclassic>SYSTEMER - Ramme for spillvideoen</opt_videocadreclassic>
 		<opt_systviewselec>SYSTEMER - Systembilde i hjulet</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTEMER - Vertikal meny til venstre (klassisk systemvisning)</opt_breadcrumbsonoff>
 		<arianeauto>Automatisk (følger systemsorteringen)</arianeauto>

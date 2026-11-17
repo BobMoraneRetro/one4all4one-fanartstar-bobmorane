@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<video name="gameplayvideostar" extra="true">
+			<visible>false</visible>
+		</video>
+		<video name="gameplayvideostarangled" extra="true">
+			<visible>true</visible>
+			<path>{random}</path>
+			<delay>0.3</delay>
+			<pos>0.995 0.35</pos>
+			<size>0.38 0.47</size>
+			<origin>1 0.5</origin>
+			<effect>none</effect>
+			<zIndex>4</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>0</tiltAngle>
+				<tiltAngleX>30</tiltAngleX>
+				<perspectiveDepth>0.8</perspectiveDepth>
+			</shader>
+		</video>
+		<image name="cadreclassic" extra="true">
+			<visible>true</visible>
+			<path>${themePath}/_viewgame/fanartstar/169alt1.png</path>
+			<pos>1 0.35</pos>
+			<size>0.39 0.505</size>
+			<origin>1 0.5</origin>
+			<effect>none</effect>
+			<zIndex>4</zIndex>
+			<autoFade>false</autoFade>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>0</tiltAngle>
+				<tiltAngleX>30</tiltAngleX>
+				<perspectiveDepth>0.8</perspectiveDepth>
+			</shader>
+		</image>
+		<image name="fondclassic" extra="true">
+			<visible>true</visible>
+			<path>${themePath}/_viewgame/fanartstar/fiber.png</path>
+			<pos>0.995 0.35</pos>
+			<size>0.38 0.472</size>
+			<origin>1 0.5</origin>
+			<effect>none</effect>
+			<zIndex>3</zIndex>
+			<autoFade>false</autoFade>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>0</tiltAngle>
+				<tiltAngleX>30</tiltAngleX>
+				<perspectiveDepth>0.8</perspectiveDepth>
+			</shader>
+		</image>
+		<control name="gameplayvideostarangled,cadreclassic,fondclassic">
+			<offsetX>0.038</offsetX>
+			<offsetX ifSubset="perfmachine:perflow">-0.01</offsetX>
+			<offsetX ifSubset="perfmachine:perfnormal">0.038</offsetX>
+			<offsetY>0</offsetY>
+		</control>
+	</view>
+</theme>

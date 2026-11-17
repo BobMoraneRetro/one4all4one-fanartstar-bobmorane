@@ -43,6 +43,7 @@
 		<fanartfreshone>Csak a FreshOne által válogatott fanartok</fanartfreshone>
 		<fanartsystcustom>Fanartok a custom mappából, különben FreshOne</fanartsystcustom>
 		<videoangled>Bekapcsolva (kicsi, döntött)</videoangled>
+		<videoangledglisse>Bekapcsolva (kicsi, döntött, becsúszó)</videoangledglisse>
 		<hardware>Hardver</hardware>
 		<charsystem>Karakterek</charsystem>
 		<figurines>Figurák (az Animatics témának telepítve kell lennie)</figurines>
@@ -169,6 +170,7 @@
 		<opt_imagefondcops1>RENDSZEREK - A rendszer fanartjainak kiválasztása</opt_imagefondcops1>
 		<opt_video4starmodern>RENDSZEREK - Játékvideó a rendszernézetben</opt_video4starmodern>
 		<opt_video4starclassic>RENDSZEREK - Játékvideó a rendszernézetben</opt_video4starclassic>
+		<opt_videocadreclassic>RENDSZEREK - Játékvideó kerete</opt_videocadreclassic>
 		<opt_systviewselec>RENDSZEREK - Rendszerkép a kerékben</opt_systviewselec>
 		<opt_breadcrumbsonoff>RENDSZEREK - Függőleges menü balra (klasszikus rendszernézet)</opt_breadcrumbsonoff>
 		<arianeauto>Automatikus (a rendszerek rendezése szerint)</arianeauto>
